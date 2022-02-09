@@ -37,7 +37,11 @@
                 "(Value=\"MapCanSeeSelf_?\")": 1,
                 "(Value=\"MapCanSeeVisualMap_?\")": 1,
                 "(Value=\"MapCanSeeWaypoint_?\")": 1,
-                "(Value=\"MapCanMakeWaypoint_?\")": 1
+                "(Value=\"MapCanMakeWaypoint_?\")": 1,
+				"(Value=\"CanSeeStatuses_?\")": 1,
+                "(Value=\"CanSeeHealth_?\")": 1,
+                "(Value=\"CanSeeOtherPlayersBillboards_?\")": 1,
+				"(Value=\"MapCanSeeCreatures_?\")": 1
             },
             "GlobalStat_ActorClass": "/Script/Icarus.IcarusPlayerCharacter",
             "GlobalStat_GrantedStats": {
@@ -86,58 +90,67 @@
             "Name": "Module_MovementSpeed",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": 5
+                "(Value=\"BaseMovementSpeed_+%\")": 10
             }
         },
         {
             "Name": "Module_FallDamage",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseFallDamageResistance_%\")": 25
+				"(Value=\"BaseFallDamageResistance_%\")": 25,
+                "(Value=\"BaseChanceToResistSprain_%\")": 50,
+                "(Value=\"BaseSprainModifierDuration_+%\")": -50,
+				"(Value=\"BaseExposureResistance_+%\")": 15
             }
         },
         {
             "Name": "Module_Consumption",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseOxygenConsumption_+%\")": -10,
-                "(Value=\"BaseFoodConsumption_+%\")": -10,
-                "(Value=\"BaseWaterConsumption_+%\")": -10
+                "(Value=\"BaseOxygenConsumption_+%\")": -30,
+                "(Value=\"BaseFoodConsumption_+%\")": -30,
+                "(Value=\"BaseWaterConsumption_+%\")": -30,
+				"(Value=\"BaseColdResistance_%\")": 10
             }
         },
         {
             "Name": "Module_Slots",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseBackpackSlots_+\")": 2
+                "(Value=\"BaseBackpackSlots_+\")": 6
             }
         },
         {
             "Name": "Module_Slots2",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseBackpackSlots_+\")": 5
+                "(Value=\"BaseBackpackSlots_+\")": 12
             }
         },
         {
             "Name": "Module_Fire_Damage_Resistence",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseFireDamageResistance_%\")": 50
+                "(Value=\"BaseFireDamageResistance_%\")": 50,
+				"(Value=\"BaseHeatResistance_%\")": 15
             }
         },
         {
             "Name": "Module_Posion_Damage_Resitance",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BasePoisonDamageResistance_%\")": 50
+                "(Value=\"BasePoisonDamageResistance_%\")": 50,
+				"(Value=\"BaseMaximumStamina_+\")": 50,
+				"(Value=\"BaseColdResistance_%\")": 5
             }
         },
         {
             "Name": "Module_Carry_Weight",
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
-                "(Value=\"BaseWeightCapacity_+\")": 5
+                "(Value=\"BaseWeightCapacity_+\")": 35,
+				"(Value=\"BaseOverencumberedPenalty_+%\")": -15
+				
             }
         },
         {
@@ -155,6 +168,7 @@
             "GrantedStats": {
                 "(Value=\"BaseOreCarryWeight_+%\")": -45,
                 "(Value=\"BaseWoodCarryWeight_+%\")": -45,
+				"(Value=\"BaseStoneCarryWeight_+%\")": -35,
                 "(Value=\"BaseBackpackSlots_+\")": 6
             }
         },
@@ -163,6 +177,8 @@
             "EquippableModifier": "BlueprintGeneratedClass'/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C'",
             "GrantedStats": {
                 "(Value=\"BaseBowReloadSpeed_+%\")": 25,
+				"(Value=\"BaseBowItemWear_+%\")": -50,
+				"(Value=\"BaseBowEquipSpeed_+%\")": 50,
                 "(Value=\"BaseArrowProjectileSpeed_+%\")": 10,
                 "(Value=\"BaseBowAimDownSightsSpeed_+%\")": 10,
                 "(Value=\"BaseBackpackSlots_+\")": 6
@@ -221,6 +237,7 @@
                 "(Value=\"BaseFallDamageResistance_%\")": 25,
                 "(Value=\"BaseChanceToResistSprain_%\")": 50,
                 "(Value=\"BaseSprainModifierDuration_+%\")": -50,
+				"(Value=\"BaseExposureResistance_+%\")": 5,
                 "(Value=\"BaseBackpackSlots_+\")": 6,
                 "(Value=\"BaseMovementSpeed_+%\")": 5
             }
