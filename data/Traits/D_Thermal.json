@@ -1,0 +1,154 @@
+{
+    "RowStruct": "/Script/Icarus.ThermalData",
+    "Defaults": {
+        "InnerRadius": 350,
+        "OuterRadius": 1000,
+        "EffectFalloff": 1,
+        "TemperatureChange": 500,
+        "bCanBeObstructed": true,
+        "OcclusionTraceOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 50
+        },
+        "EffectOriginOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "bStartsEnabled": false,
+        "FireNavigationModifierClass": "None",
+        "FireNavigationModifierRadius": 0
+    },
+    "Rows": [
+        {
+            "Name": "Campfire",
+            "InnerRadius": 150,
+            "TemperatureChange": 1500,
+            "FireNavigationModifierClass": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavArea_Fire.NavArea_Fire_C'",
+            "FireNavigationModifierRadius": 4250
+        },
+        {
+            "Name": "Fireplace",
+            "InnerRadius": 150,
+            "OuterRadius": 1500,
+            "EffectFalloff": 4,
+            "TemperatureChange": 2000,
+            "OcclusionTraceOffset": {
+                "X": 50,
+                "Z": 75
+            },
+            "EffectOriginOffset": {
+                "X": 50,
+                "Z": 75
+            },
+            "FireNavigationModifierClass": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavArea_Fire.NavArea_Fire_C'",
+            "FireNavigationModifierRadius": 4250
+        },
+        {
+            "Name": "Stone_Furnace",
+            "InnerRadius": 50,
+            "OuterRadius": 400,
+            "OcclusionTraceOffset": {
+                "X": 20
+            }
+        },
+        {
+            "Name": "Concrete_Furnace",
+            "InnerRadius": 50,
+            "OuterRadius": 400,
+            "TemperatureChange": 250,
+            "OcclusionTraceOffset": {
+                "X": -40,
+                "Y": 40,
+                "Z": 170
+            }
+        },
+        {
+            "Name": "Torch_Wall",
+            "InnerRadius": 50,
+            "OuterRadius": 500,
+            "TemperatureChange": 250,
+            "bCanBeObstructed": false,
+            "OcclusionTraceOffset": {
+                "X": 40,
+                "Z": 40
+            },
+            "EffectOriginOffset": {
+                "X": 40,
+                "Z": 40
+            }
+        },
+        {
+            "Name": "Torch_Floor",
+            "InnerRadius": 50,
+            "OuterRadius": 500,
+            "TemperatureChange": 250,
+            "OcclusionTraceOffset": {
+                "Z": 250
+            },
+            "EffectOriginOffset": {
+                "Z": 250
+            }
+        },
+        {
+            "Name": "Wood_Flare",
+            "InnerRadius": 50,
+            "OuterRadius": 500,
+            "TemperatureChange": 250,
+            "EffectOriginOffset": {
+                "Z": 50
+            }
+        },
+        {
+            "Name": "OnFire_Modifier",
+            "InnerRadius": 0,
+            "OuterRadius": 300,
+            "EffectFalloff": 3,
+            "TemperatureChange": 30000,
+            "bCanBeObstructed": false,
+            "bStartsEnabled": true
+        },
+        {
+            "Name": "Firepit",
+            "InnerRadius": 150,
+            "OuterRadius": 1250,
+            "EffectFalloff": 2,
+            "TemperatureChange": 2000,
+            "FireNavigationModifierClass": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavArea_Fire.NavArea_Fire_C'",
+            "FireNavigationModifierRadius": 4250
+        },
+        {
+            "Name": "Brazier",
+            "InnerRadius": 150,
+            "OuterRadius": 500,
+            "TemperatureChange": 1500,
+            "EffectOriginOffset": {
+                "Z": 50
+            },
+            "FireNavigationModifierClass": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavArea_Fire.NavArea_Fire_C'",
+            "FireNavigationModifierRadius": 4250
+        },
+        {
+            "Name": "Kitchen_Stove",
+            "InnerRadius": 150,
+            "OuterRadius": 500,
+            "EffectFalloff": 4,
+            "EffectOriginOffset": {
+                "Z": 50
+            }
+        },
+        {
+            "Name": "Thermal_Heater_Large",
+            "InnerRadius": 250,
+            "EffectFalloff": 10,
+            "TemperatureChange": 2000
+        },
+        {
+            "Name": "Thermal_Cooler_Large",
+            "InnerRadius": 250,
+            "EffectFalloff": 10,
+            "TemperatureChange": -2000
+        }
+    ]
+}

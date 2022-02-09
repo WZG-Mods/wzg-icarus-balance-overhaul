@@ -1,0 +1,200 @@
+{
+    "RowStruct": "/Script/Icarus.MapIconsData",
+    "Defaults": {
+        "ActorClass": "None",
+        "MapIcon": "None",
+        "Color": {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0
+        },
+        "RequiredPlayerStatToShow": {
+            "Value": "None"
+        },
+        "RequiredActorStatToShow": {
+            "Value": "None"
+        },
+        "RequireOwnershipToShow": false,
+        "ZOrder": 0,
+        "ScaleFactor": 1,
+        "GetsRotation": false,
+        "BrushSize": {
+            "X": 100,
+            "Y": 100
+        },
+        "UpdateOnTick": true
+    },
+    "Rows": [
+        {
+            "Name": "Player",
+            "ActorClass": "/Script/Icarus.IcarusPlayerCharacterSurvival",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_PlayerP.Icon_PlayerP'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeBroadcastOthers_?"
+            },
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            },
+            "ZOrder": 100,
+            "GetsRotation": true
+        },
+        {
+            "Name": "Metaresource",
+            "ActorClass": "/Game/BP/Objects/World/Resources/Nodes/BP_OreDeposit.BP_OreDeposit_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "Radar",
+            "ActorClass": "/Game/BP/Objects/World/Items/Deployables/Radar/BP_Radar.BP_Radar_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Radar.Icon_Radar'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeRadars_?"
+            }
+        },
+        {
+            "Name": "Grave",
+            "ActorClass": "/Game/BP/Objects/World/Items/Deployables/BP_Gravestone_DBNO.BP_Gravestone_DBNO_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Revive.Icon_Revive'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeGraves_?"
+            }
+        },
+        {
+            "Name": "Grid",
+            "ActorClass": "/Game/BP/Building/BP_Grid_Base.BP_Grid_Base_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Buildings.Icon_Buildings'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeBuildings_?"
+            }
+        },
+        {
+            "Name": "Waypoint",
+            "ActorClass": "/Game/UI/Compass/BP_IcarusWaypointActor.BP_IcarusWaypointActor_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Waypoint.Icon_Waypoint'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeWaypoint_?"
+            },
+            "BrushSize": {
+                "X": 30,
+                "Y": 30
+            }
+        },
+        {
+            "Name": "EquipmentPod",
+            "ActorClass": "/Game/BP/Objects/World/Items/WorldObjects/BP_EquipmentPod.BP_EquipmentPod_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Equipment.Icon_Equipment'",
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "Dropship",
+            "ActorClass": "/Game/BP/DropShipEditor/BP_DropShip.BP_DropShip_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Dropship.Icon_Dropship'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeDropship_?"
+            },
+            "RequireOwnershipToShow": true
+        },
+        {
+            "Name": "Portable_Beacon",
+            "ActorClass": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_Portable_Beacon.BP_Portable_Beacon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Beacon.Icon_Beacon'",
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "MapProxyMammoth",
+            "ActorClass": "/Game/BP/Quests/Implementations/Bw3_Mammoth/BP_BW3_KillMammoth.BP_BW3_KillMammoth_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Mammoth.Icon_Mammoth'"
+        },
+        {
+            "Name": "CrashedSatellite",
+            "ActorClass": "/Game/BP/Quests/Implementations/Bw4_Satellites/BP_BW4_Satellite_Object.BP_BW4_Satellite_Object_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Satellite.Icon_Satellite'"
+        },
+        {
+            "Name": "Respawn_Dropped_Loot",
+            "ActorClass": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Overflow_Bag.BP_Overflow_Bag_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Grave.Icon_Grave'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeGraves_?"
+            },
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "Scanning_Location",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Scanning.BP_Location_Scanning_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Radar.Icon_Radar'"
+        },
+        {
+            "Name": "Extermination_BossLocation",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Boss.BP_Location_Boss_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Kill.Icon_Kill'"
+        },
+        {
+            "Name": "Mission_Crate",
+            "ActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Faction_Mission_Crate.BP_Faction_Mission_Crate_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Crate.Icon_Crate'",
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "Mission_Crate_Proxy",
+            "ActorClass": "/Game/BP/PlayerMap/MapIconProxyActor_MissionGenericContainer.MapIconProxyActor_MissionGenericContainer_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Crate.Icon_Crate'",
+            "RequiredActorStatToShow": {
+                "Value": "MapIsBroadcastingForMap_?"
+            }
+        },
+        {
+            "Name": "Target_Location",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Target.BP_Location_Target_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location1.Icon_Location1'"
+        },
+        {
+            "Name": "Target_Location_2",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Target2.BP_Location_Target2_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location2.Icon_Location2'"
+        },
+        {
+            "Name": "Target_Location_3",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Target3.BP_Location_Target3_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location3.Icon_Location3'"
+        },
+        {
+            "Name": "Target_Location_4",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Target4.BP_Location_Target4_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location4.Icon_Location4'"
+        },
+        {
+            "Name": "Target_Location_5",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Target5.BP_Location_Target5_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location5.Icon_Location5'",
+            "Color": {
+                "B": 255,
+                "G": 255,
+                "R": 255,
+                "A": 255
+            }
+        },
+        {
+            "Name": "Flora",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Flora.BP_Location_Flora_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Flora.Icon_Flora'"
+        },
+        {
+            "Name": "Mission_Exotic",
+            "ActorClass": "/Game/BP/LocationMarkers/BP_Location_Exotic.BP_Location_Exotic_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'"
+        }
+    ]
+}

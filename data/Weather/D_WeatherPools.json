@@ -1,0 +1,681 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusWeatherPoolData",
+    "Defaults": {
+        "WeatherEvents": []
+    },
+    "Rows": [
+        {
+            "Name": "DefaultWeatherPool",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Medium_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Long_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "LightWeatherPool_1",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Light_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "HeavyWeatherPool_1",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Heavy_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Heavy_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Heavy_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "Multi_MedToHeavy_1",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Medium_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Heavy_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 5400
+                },
+                {
+                    "Event": {
+                        "RowName": "Heavy_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 5400
+                },
+                {
+                    "Event": {
+                        "RowName": "Heavy_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 5400
+                }
+            ]
+        },
+        {
+            "Name": "NoWeatherPool"
+        },
+        {
+            "Name": "CosmeticWeatherPool_1",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "MediumWeatherPool_1",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Medium_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 3600
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Long_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.75,
+                    "MinimumSecondsBeforeUse": 1800
+                },
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Lightning_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "ThunderStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_SevereWind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_SnowStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Blizzard_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_SevereWind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Heatwave_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Shamal_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "HeavyWeatherPool_2",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Medium_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 3600
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Long_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.10000000149011612,
+                    "StormTimeScalarForWeightedSelection": 0.75,
+                    "MinimumSecondsBeforeUse": 1800
+                },
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.10000000149011612,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.10000000149011612,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Lightning_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "ThunderStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_SevereWind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Snow_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.10000000149011612,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_SnowStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Blizzard_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_SevereWind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Heatwave_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Shamal_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.10000000149011612,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        },
+        {
+            "Name": "2A_Expedition_Arctic",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Medium_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 3600
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Long_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.75,
+                    "MinimumSecondsBeforeUse": 1800
+                },
+                {
+                    "Event": {
+                        "RowName": "Cosmetic_Rain_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.5,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Medium_Lightning_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "ThunderStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 4800
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_SnowStorm_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.10000000149011612,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Arctic_Blizzard_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 0.10000000149011612,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Wind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_SevereWind_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Heatwave_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Desert_Shamal_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                },
+                {
+                    "Event": {
+                        "RowName": "Light_Sand_1",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2,
+                    "StormTimeScalarForWeightedSelection": 1,
+                    "MinimumSecondsBeforeUse": 0
+                }
+            ]
+        }
+    ]
+}

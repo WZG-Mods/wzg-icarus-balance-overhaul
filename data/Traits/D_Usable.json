@@ -1,0 +1,261 @@
+{
+    "RowStruct": "/Script/Icarus.UsableData",
+    "Defaults": {
+        "Uses": [],
+        "bAlwaysShowContextMenu": false
+    },
+    "Rows": [
+        {
+            "Name": "Consume",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Place",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Repair",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ],
+            "bAlwaysShowContextMenu": true
+        },
+        {
+            "Name": "Repairable_Deployable",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Apply_Bandage",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume_From_Menu",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Spoiled",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [
+                        {
+                            "Stat": {
+                                "Value": "CanEatSpoiledFood_?"
+                            },
+                            "ComparisonType": "Equals",
+                            "Value": 1
+                        }
+                    ]
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [
+                        {
+                            "Stat": {
+                                "Value": "CanEatSpoiledFood_?"
+                            },
+                            "ComparisonType": "Equals",
+                            "Value": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Food",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Food",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Water",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Water",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Oxygen",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Oxygen",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_FoodWater",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_FoodWater",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": []
+                }
+            ]
+        }
+    ]
+}

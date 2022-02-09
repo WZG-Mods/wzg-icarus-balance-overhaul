@@ -1,0 +1,706 @@
+{
+    "RowStruct": "/Script/Icarus.ActionData",
+    "Defaults": {
+        "Behaviour": "None",
+        "TP_ActionMontage": "None",
+        "TP_SuccessAnimations": [],
+        "TP_ActionFailMontageVariations": [],
+        "TP_ActionMissMontageVariations": [],
+        "FP_ActionMontage": "None",
+        "FP_SuccessAnimations": [],
+        "FP_ActionFailMontageVariations": [],
+        "FP_ActionMissMontageVariations": [],
+        "BeginStaminaActionNotify": "None",
+        "WaitForActionComplete": false,
+        "ActionCooldown": 0,
+        "CooldownMultipliers": [],
+        "RequiredStat": {
+            "Value": "None"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Melee_1H_Generic",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0",
+                "Action_1",
+                "Action_2"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWepAttack_Montage.1ST_CHA_1HWEPAttack_Montage",
+            "FP_ActionMissMontageVariations": [
+                "Action_0",
+                "Action_1",
+                "Action_2"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.800000011920929,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_1H_Axe",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_1_Success",
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Fail",
+                        "Action_1_Fail"
+                    ]
+                }
+            ],
+            "TP_ActionFailMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "TP_ActionMissMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HAxeSwingSlow_Montage.1ST_CHA_1HAxeSwingSlow_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_1_Success",
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_1_Fail",
+                        "Action_0_Fail"
+                    ]
+                }
+            ],
+            "FP_ActionFailMontageVariations": [
+                "Action_1_Fail",
+                "Action_0_Fail"
+            ],
+            "FP_ActionMissMontageVariations": [
+                "Action_1_Fail",
+                "Action_0_Fail"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.800000011920929,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_1H_Knife",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNI_Attack_Montage.3RD_CHA_1HKNI_Attack_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0",
+                        "Action_1",
+                        "Action_2"
+                    ]
+                }
+            ],
+            "TP_ActionMissMontageVariations": [
+                "Action_0",
+                "Action_1",
+                "Action_2"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Attack_Montage.1ST_CHA_1HKNI_Attack_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0",
+                        "Action_1",
+                        "Action_2"
+                    ]
+                }
+            ],
+            "FP_ActionMissMontageVariations": [
+                "Action_0",
+                "Action_1",
+                "Action_2"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.5,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_1H_Extinguish_Fire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Melee_ExtinguishFire.BP_Actionable_Melee_ExtinguishFire_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_FireFlapperSwat_Montage.3RD_CHA_FireFlapperSwat_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWepAttack_Montage.1ST_CHA_1HWEPAttack_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0",
+                        "Action_1",
+                        "Action_2"
+                    ]
+                }
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Melee_1H_MetaAxe",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Meta_Melee.BP_ActionableBehaviour_Meta_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Fail",
+                        "Action_1_Fail"
+                    ]
+                }
+            ],
+            "TP_ActionFailMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "TP_ActionMissMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HAxeSwingSlow_Montage.1ST_CHA_1HAxeSwingSlow_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Fail",
+                        "Action_1_Fail"
+                    ]
+                }
+            ],
+            "FP_ActionFailMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "FP_ActionMissMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.800000011920929,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_2H_Spear",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Spear_Melee.BP_ActionableBehaviour_Spear_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPRAttack_Montage.3RD_CHA_SPRAttack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Attack_Montage.1ST_CHA_SPR_Attack_Montage",
+            "FP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 1,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_Chainsaw",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_ChainsawMelee.BP_ActionableBehaviour_Generic_ChainsawMelee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Chainsaw_Attack_Montage.3RD_CHA_Chainsaw_Attack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0",
+                "Action_1",
+                "Action_2"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_2H_CHAINSAW_TEMP.1ST_CHA_2H_CHAINSAW_TEMP",
+            "FP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.10000000149011612,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Throw_1H_Generic",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable.BP_ActionableBehaviour_Throwable_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNI_Throw_Montage.3RD_CHA_1HKNI_Throw_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Throw_Montage.1ST_CHA_1HKNI_Throw_Montage"
+        },
+        {
+            "Name": "Throw_1H_Spear",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable_Spear.BP_ActionableBehaviour_Throwable_Spear_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPR_Throw_Montage.3RD_CHA_SPR_Throw_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Montage.1ST_CHA_SPR_Montage"
+        },
+        {
+            "Name": "Throw_Grenade",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable_Grenade.BP_ActionableBehaviour_Throwable_Grenade_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_GRE_Montage.3RD_CHA_GRE_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GRE_Montage.1ST_CHA_GRE_Montage"
+        },
+        {
+            "Name": "Deployable_Generic",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_DeployableBase.BP_ActionableBehaviour_DeployableBase_C'"
+        },
+        {
+            "Name": "Deployable_Large",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Deployable_LargeDeployable.BP_ActionableBehaviour_Deployable_LargeDeployable_C'"
+        },
+        {
+            "Name": "Buildings",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Building.BP_ActionableBehaviour_Building_C'"
+        },
+        {
+            "Name": "Building_UpgradeTool",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_BuildingUpgrade.BP_ActionableBehaviour_BuildingUpgrade_C'"
+        },
+        {
+            "Name": "Building_RepairTool",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Hold_BuildingRepairTool.BP_ActionableBehaviour_Hold_BuildingRepairTool_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWepAttack_Montage.1ST_CHA_1HWEPAttack_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.800000011920929
+        },
+        {
+            "Name": "Ore_Scanner",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Ore_Scanner.BP_ActionableBehaviour_Ore_Scanner_C'",
+            "ActionCooldown": 0.009999999776482582
+        },
+        {
+            "Name": "Ore_Scanner_MK1",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Ore_Scanner_MK1.BP_ActionableBehaviour_Ore_Scanner_MK1_C'",
+            "ActionCooldown": 0.009999999776482582
+        },
+        {
+            "Name": "RoadPlace",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_CurvedSplinePlace.BP_ActionableBehaviour_CurvedSplinePlace_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "PowerPlace",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_CurvedSplinePlace_Power.BP_ActionableBehaviour_CurvedSplinePlace_Power_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "WaterPlace",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_CurvedSplinePlace_Water.BP_ActionableBehaviour_CurvedSplinePlace_Water_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "FuelPlace",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_CurvedSplinePlace_Fuel.BP_ActionableBehaviour_CurvedSplinePlace_Fuel_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Binoculars",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Binoculars.BP_ActionableBehaviour_Binoculars_C'"
+        },
+        {
+            "Name": "Generic_Consumable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Consumable.BP_ActionableBehaviour_Generic_Consumable_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Light",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Light.BP_ActionableBehaviour_Light_C'",
+            "ActionCooldown": 0.20000000298023224
+        },
+        {
+            "Name": "Lantern",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Light.BP_ActionableBehaviour_Light_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HLampOnOff_Montage.3RD_CHA_1HLampOnOff_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "None",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HLamp_OnOff_Montage.1ST_CHA_1HLamp_OnOff_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "None",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
+            "ActionCooldown": 0.20000000298023224
+        },
+        {
+            "Name": "Generic_Fillable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Fillable.BP_ActionableBehaviour_Generic_Fillable_C'",
+            "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Fishing_Rod",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Fishing_Rod.BP_ActionableBehaviour_Fishing_Rod_C'"
+        },
+        {
+            "Name": "FireExtinguisher",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_FireExtinguisher.BP_Actionable_FireExtinguisher_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FireExtinguisherUse_Montage.3RD_CHA_MAL_FireExtinguisherUse_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "None",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_FireExtinguisherUse_Montage.1ST_CHA_FireExtinguisherUse_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "None",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "DEV_Meta_Reveal",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Meta_Reveal.BP_ActionableBehaviour_Meta_Reveal_C'"
+        },
+        {
+            "Name": "DEV_Inspection_Tool",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Inspection_Tool.BP_ActionableBehaviour_Inspection_Tool_C'"
+        },
+        {
+            "Name": "DEV_Flying_Hammer",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Flying_Hammer.BP_ActionableBehaviour_Flying_Hammer_C'"
+        },
+        {
+            "Name": "Melee_Fists",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_ActionFailMontageVariations": [
+                "Action_0_Fail",
+                "Action_1_Fail"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Fist_Attack_Montage.1ST_CHA_Fist_Attack_Montage",
+            "FP_ActionFailMontageVariations": [
+                "Action_0",
+                "Action_1"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.5,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Bandage_Consumable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Bandage_Consumable.BP_Actionable_Bandage_Consumable_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "FlameThrower",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_FlameThrower.BP_Actionable_FlameThrower_C'"
+        },
+        {
+            "Name": "DEV_Pyromancy_Flame",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Pyromancy_Flame.BP_ActionableBehaviour_Pyromancy_Flame_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RHPickUp_Montage.3RD_CHA_RHPickUp_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RHPickup_Montage.1ST_CHA_RHPickup_Montage"
+        },
+        {
+            "Name": "Jackhammer",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Jackhammer_Use_Montage.3RD_CHA_MAL_Jackhammer_Use_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Jackhammer_Use_Montage.1ST_CHA_Jackhammer_Use_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                }
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.5,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Foliage",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Deployable_Foliage.BP_ActionableBehaviour_Deployable_Foliage_C'"
+        },
+        {
+            "Name": "Bow_Shoot",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_FireArm_FireController_Charge.BP_ActionableBehaviour_FireArm_FireController_Charge_C'"
+        },
+        {
+            "Name": "Bow_Aim",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AimController_Base.BP_ActionableBehaviour_Firearm_AimController_Base_C'"
+        },
+        {
+            "Name": "Bow_Ammo",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AmmoController_VisibleProjectile.BP_ActionableBehaviour_Firearm_AmmoController_VisibleProjectile_C'"
+        },
+        {
+            "Name": "Weapon_Semi_Auto",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_FireArm_FireController_SemiAuto.BP_ActionableBehaviour_FireArm_FireController_SemiAuto_C'"
+        },
+        {
+            "Name": "Weapon_Magazine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AmmoController_Base.BP_ActionableBehaviour_Firearm_AmmoController_Base_C'"
+        },
+        {
+            "Name": "Weapon_RoundFeed",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AmmoController_SingleRoundReload.BP_ActionableBehaviour_Firearm_AmmoController_SingleRoundReload_C'"
+        },
+        {
+            "Name": "Melee_2H_Shovel",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Shovel.BP_Actionable_Shovel_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShovelAttack_Montage.3RD_CHA_ShovelAttack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_ShovelAttack_Montage.1ST_CHA_ShovelAttack_Montage",
+            "FP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 1,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Weapon_Generic_Aim",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AimController_Base.BP_ActionableBehaviour_Firearm_AimController_Base_C'"
+        },
+        {
+            "Name": "Throw_Axe",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable.BP_ActionableBehaviour_Throwable_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNI_Throw_Montage.3RD_CHA_1HKNI_Throw_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Throw_Montage.1ST_CHA_1HKNI_Throw_Montage",
+            "RequiredStat": {
+                "Value": "CanThrowAxe_?"
+            }
+        },
+        {
+            "Name": "Throw_Firewhacker",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable_Spear.BP_ActionableBehaviour_Throwable_Spear_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPR_Throw_Montage.3RD_CHA_SPR_Throw_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Montage.1ST_CHA_SPR_Montage",
+            "RequiredStat": {
+                "Value": "CanThrowFirewhacker_?"
+            }
+        },
+        {
+            "Name": "Crossbow_Ammo",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/Firearm/BP_ActionableBehaviour_Firearm_AmmoController_VisibleProjectile.BP_ActionableBehaviour_Firearm_AmmoController_VisibleProjectile_C'"
+        },
+        {
+            "Name": "Sickle",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HSickleHarvest_Montage.3RD_CHA_1HSickleHarvest_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Fail"
+                    ]
+                }
+            ],
+            "TP_ActionFailMontageVariations": [
+                "Action_0_Fail"
+            ],
+            "TP_ActionMissMontageVariations": [
+                "Action_0_Fail"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SickleSwing_Montage.1ST_CHA_SickleSwing_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Success"
+                    ]
+                },
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Combat",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0_Fail"
+                    ]
+                }
+            ],
+            "FP_ActionFailMontageVariations": [
+                "Action_0_Fail"
+            ],
+            "FP_ActionMissMontageVariations": [
+                "Action_0_Fail"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.800000011920929,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        }
+    ]
+}

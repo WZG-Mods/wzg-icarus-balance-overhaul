@@ -1,0 +1,54 @@
+{
+    "RowStruct": "/Script/Icarus.ProcessorRecipe",
+    "Defaults": {
+        "Requirements": [],
+        "RequiredMillijoules": 5000,
+        "RecipeSets": [],
+        "Inputs": [
+            {
+                "Element": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                "Count": 1,
+                "DynamicProperties": []
+            }
+        ],
+        "ResourceInputs": [],
+        "Outputs": [
+            {
+                "Element": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                "Count": 1,
+                "DynamicProperties": []
+            }
+        ],
+        "ResourceOutputs": [],
+        "ExperienceGranted": 10
+    },
+    "Rows": [
+        {
+            "Name": "Ore_Meta",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Meta_Extractor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Meta_Resource",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ]
+        }
+    ]
+}

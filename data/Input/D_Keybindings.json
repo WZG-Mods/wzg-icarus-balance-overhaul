@@ -1,0 +1,1623 @@
+{
+    "RowStruct": "/Script/Icarus.KeybindData",
+    "Defaults": {
+        "bOverrideActionName": false,
+        "ActionNameOverride": "None",
+        "DisplayName": "",
+        "BindContext": {
+            "RowName": "Global",
+            "DataTableName": "D_KeybindContexts"
+        },
+        "InputContext": "Both",
+        "bIsAxis": false,
+        "Visibility": "VisibleRemap",
+        "KeyboardActionMapping": {
+            "ActionName": "None",
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false,
+            "Key": "None"
+        },
+        "KeyboardAxisMapping": {
+            "AxisName": "None",
+            "Scale": 1,
+            "Key": "None"
+        },
+        "GamepadActionMapping": {
+            "ActionName": "None",
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false,
+            "Key": "None"
+        },
+        "GamepadAxisMapping": {
+            "AxisName": "None",
+            "Scale": 1,
+            "Key": "None"
+        }
+    },
+    "Columns": [
+        {
+            "Name": "ActionName",
+            "Key": true,
+            "Cardinality": "Multiple"
+        }
+    ],
+    "Rows": [
+        {
+            "Name": "MoveForward",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"MoveForward-DisplayName\", \"Move Forward\")",
+            "bIsAxis": true,
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "MoveForward",
+                "Key": {
+                    "KeyName": "W"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "AxisName": "MoveForward",
+                "Key": {
+                    "KeyName": "Gamepad_LeftY"
+                }
+            }
+        },
+        {
+            "Name": "MoveBack",
+            "bOverrideActionName": true,
+            "ActionNameOverride": "MoveForward",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"MoveBack-DisplayName\", \"Move Back\")",
+            "InputContext": "KeyboardOnly",
+            "bIsAxis": true,
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "MoveForward",
+                "Scale": -1,
+                "Key": {
+                    "KeyName": "S"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "MoveLeft",
+            "bOverrideActionName": true,
+            "ActionNameOverride": "MoveRight",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"MoveLeft-DisplayName\", \"Move Left\")",
+            "InputContext": "KeyboardOnly",
+            "bIsAxis": true,
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "MoveRight",
+                "Scale": -1,
+                "Key": {
+                    "KeyName": "A"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "MoveRight",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"MoveRight-DisplayName\", \"Move Right\")",
+            "bIsAxis": true,
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "MoveRight",
+                "Key": {
+                    "KeyName": "D"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "AxisName": "MoveRight",
+                "Key": {
+                    "KeyName": "Gamepad_LeftX"
+                }
+            }
+        },
+        {
+            "Name": "Interact",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Interact-DisplayName\", \"Interact\")",
+            "KeyboardActionMapping": {
+                "ActionName": "Interact",
+                "Key": {
+                    "KeyName": "F"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Interact",
+                "Key": {
+                    "KeyName": "Gamepad_FaceButton_Top"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "AltInteract",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"AltInteract-DisplayName\", \"Alternate Interact\")",
+            "KeyboardActionMapping": {
+                "ActionName": "AltInteract",
+                "Key": {
+                    "KeyName": "X"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "AltInteract",
+                "Key": {
+                    "KeyName": "Gamepad_LeftShoulder"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "SwapCamera",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"SwapCamera-DisplayName\", \"Swap Camera\")",
+            "KeyboardActionMapping": {
+                "ActionName": "SwapCamera",
+                "Key": {
+                    "KeyName": "C"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "SwapCamera",
+                "Key": {
+                    "KeyName": "Gamepad_DPad_Down"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Inventory",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Inventory-DisplayName\", \"Inventory\")",
+            "BindContext": {
+                "RowName": "Survival"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Inventory",
+                "Key": {
+                    "KeyName": "I"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Crafting",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Crafting-DisplayName\", \"Crafting\")",
+            "BindContext": {
+                "RowName": "Survival"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Crafting",
+                "Key": {
+                    "KeyName": "O"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Map",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Map-DisplayName\", \"Map\")",
+            "BindContext": {
+                "RowName": "Survival"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Map",
+                "Key": {
+                    "KeyName": "M"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Tech",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Tech-DisplayName\", \"Tech\")",
+            "BindContext": {
+                "RowName": "Survival"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Tech",
+                "Key": {
+                    "KeyName": "P"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "HideUI",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"HideUI-DisplayName\", \"Hide UI\")",
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "HideUI",
+                "Key": {
+                    "KeyName": "NumPadNine"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Screenshot",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Screenshot-DisplayName\", \"Take Screenshot\")",
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Screenshot",
+                "Key": {
+                    "KeyName": "F3"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "FreeLook",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"FreeLook-DisplayName\", \"Free Look\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "FreeLook",
+                "Key": {
+                    "KeyName": "LeftAlt"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Escape",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Escape-DisplayName\", \"Escape\")",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "ActionName": "Escape",
+                "Key": {
+                    "KeyName": "Escape"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Escape",
+                "Key": {
+                    "KeyName": "Gamepad_Special_Right"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "ToggleMenus",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"ToggleMenus-DisplayName\", \"Toggle Menu\")",
+            "KeyboardActionMapping": {
+                "ActionName": "ToggleMenus",
+                "Key": {
+                    "KeyName": "Tab"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "ToggleMenus",
+                "Key": {
+                    "KeyName": "Gamepad_Special_Left"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "LookUp",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"LookUp-DisplayName\", \"Look Up/Down\")",
+            "bIsAxis": true,
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "LookUp",
+                "Scale": -1,
+                "Key": {
+                    "KeyName": "MouseY"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "AxisName": "LookUp",
+                "Key": {
+                    "KeyName": "Gamepad_RightY"
+                }
+            }
+        },
+        {
+            "Name": "LookRight",
+            "bOverrideActionName": true,
+            "ActionNameOverride": "LookRight",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"LookRight-DisplayName\", \"Look Left/Right\")",
+            "bIsAxis": true,
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "AxisName": "LookRight",
+                "Key": {
+                    "KeyName": "MouseX"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "AxisName": "LookRight",
+                "Key": {
+                    "KeyName": "Gamepad_RightX"
+                }
+            }
+        },
+        {
+            "Name": "Fire",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Fire-DisplayName\", \"Fire\")",
+            "BindContext": {
+                "RowName": "Weapons"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Fire",
+                "Key": {
+                    "KeyName": "LeftMouseButton"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Fire",
+                "Key": {
+                    "KeyName": "Gamepad_RightTrigger"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "AltFire",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"AltFire-DisplayName\", \"Alternate Fire\")",
+            "BindContext": {
+                "RowName": "Weapons"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "AltFire",
+                "Key": {
+                    "KeyName": "RightMouseButton"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "AltFire",
+                "Key": {
+                    "KeyName": "Gamepad_LeftTrigger"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Reload",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Reload-DisplayName\", \"Reload\")",
+            "BindContext": {
+                "RowName": "Weapons"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Reload",
+                "Key": {
+                    "KeyName": "R"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Reload",
+                "Key": {
+                    "KeyName": "Gamepad_FaceButton_Left"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "ChangeFireMode",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"ChangeFireMode-DisplayName\", \"Change Fire Mode\")",
+            "BindContext": {
+                "RowName": "Weapons"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "ChangeFireMode",
+                "Key": {
+                    "KeyName": "Comma"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "ChangeFireMode",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Sprint",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Sprint-DisplayName\", \"Sprint\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Sprint",
+                "Key": {
+                    "KeyName": "LeftShift"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Sprint",
+                "Key": {
+                    "KeyName": "Gamepad_LeftThumbstick"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Jump",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Jump-DisplayName\", \"Jump\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Jump",
+                "Key": {
+                    "KeyName": "SpaceBar"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Jump",
+                "Key": {
+                    "KeyName": "Gamepad_FaceButton_Bottom"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Crouch",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Crouch-DisplayName\", \"Crouch\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Crouch",
+                "Key": {
+                    "KeyName": "LeftControl"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Crouch",
+                "Key": {
+                    "KeyName": "Gamepad_RightThumbstick"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "DropItem",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"DropItem-DisplayName\", \"Drop Item\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "DropItem",
+                "Key": {
+                    "KeyName": "Q"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "DropItem",
+                "Key": {
+                    "KeyName": "Gamepad_DPad_Up"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hands",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hands-DisplayName\", \"Hands\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hands",
+                "Key": {
+                    "KeyName": "H"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "HotbarForward",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"HotbarForward-DisplayName\", \"Hotbar Forward\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "HotbarForward",
+                "Key": {
+                    "KeyName": "MouseScrollDown"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "HotbarForward",
+                "Key": {
+                    "KeyName": "Gamepad_DPad_Right"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "HotbarBack",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"HotbarBack-DisplayName\", \"Hotbar Back\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "HotbarBack",
+                "Key": {
+                    "KeyName": "MouseScrollUp"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "HotbarBack",
+                "Key": {
+                    "KeyName": "Gamepad_DPad_Left"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar0",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar0-DisplayName\", \"Hotbar 1\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar0",
+                "Key": {
+                    "KeyName": "One"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar1",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar1-DisplayName\", \"Hotbar 2\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar1",
+                "Key": {
+                    "KeyName": "Two"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar2",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar2-DisplayName\", \"Hotbar 3\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar2",
+                "Key": {
+                    "KeyName": "Three"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar3",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar3-DisplayName\", \"Hotbar 4\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar3",
+                "Key": {
+                    "KeyName": "Four"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar4",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar4-DisplayName\", \"Hotbar 5\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar4",
+                "Key": {
+                    "KeyName": "Five"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar5",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar5-DisplayName\", \"Hotbar 6\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar5",
+                "Key": {
+                    "KeyName": "Six"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar6",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar6-DisplayName\", \"Hotbar 7\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar6",
+                "Key": {
+                    "KeyName": "Seven"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar7",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar7-DisplayName\", \"Hotbar 8\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar7",
+                "Key": {
+                    "KeyName": "Eight"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar8",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar8-DisplayName\", \"Hotbar 9\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar8",
+                "Key": {
+                    "KeyName": "Nine"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Hotbar9",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Hotbar9-DisplayName\", \"Hotbar 0\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "Hotbar9",
+                "Key": {
+                    "KeyName": "Zero"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "PreviousMenu",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"PreviousMenu-DisplayName\", \"Previous Menu\")",
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "PreviousMenu",
+                "Key": {
+                    "KeyName": "Gamepad_LeftShoulder"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "NextMenu",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"NextMenu-DisplayName\", \"Next Menu\")",
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "NextMenu",
+                "Key": {
+                    "KeyName": "Gamepad_RightShoulder"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "HotbarBackSlot",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"HotbarBackSlot-DisplayName\", \"Hotbar Backpack\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "HotbarBackSlot",
+                "Key": {
+                    "KeyName": "G"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "DestroyBuildingPiece",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"DestroyBuildingPiece-DisplayName\", \"Destroy Building Piece\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "DestroyBuildingPiece",
+                "Key": {
+                    "KeyName": "Y"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "DestroyBuildingPiece",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "UnfocusGrid",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"UnfocusGrid-DisplayName\", \"Unfocus Building Grid\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "UnfocusGrid",
+                "Key": {
+                    "KeyName": "End"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "UnfocusGrid",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "FocusGrid",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"FocusGrid-DisplayName\", \"Focus Building Grid\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "FocusGrid",
+                "Key": {
+                    "KeyName": "Home"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "FocusGrid",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "TextChat",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"TextChat-DisplayName\", \"Text Chat\")",
+            "KeyboardActionMapping": {
+                "ActionName": "TextChat",
+                "Key": {
+                    "KeyName": "Enter"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "TextChat",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "ToggleSuitLight",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"ToggleSuitLight-DisplayName\", \"Toggle Suit Light\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "ToggleSuitLight",
+                "Key": {
+                    "KeyName": "L"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "ToggleSuitLight",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "Emote",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"Emote-DisplayName\", \"Play Emote\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "KeyboardActionMapping": {
+                "ActionName": "Emote",
+                "Key": {
+                    "KeyName": "Add"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "Emote",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "NextSubMenu",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"NextSubMenu-DisplayName\", \"Next Sub Menu\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "NextSubMenu",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "PreviousSubMenu",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"PreviousSubMenu-DisplayName\", \"Next Sub Menu\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "PreviousSubMenu",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "IncreaseCraftCount",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"IncreaseCraftCount-DisplayName\", \"Increase Number to Craft\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "IncreaseCraftCount",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "DecreaseCraftCount",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"DecreaseCraftCount-DisplayName\", \"Decrease Number to Craft\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "DecreaseCraftCount",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "StartStopCraft",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"StartStopCraft-DisplayName\", \"Start/Stop Crafting\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "StartStopCraft",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "RefreshTab",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"RefreshTab-DisplayName\", \"Refresh Talents/Blueprints\")",
+            "BindContext": {
+                "RowName": "Hidden"
+            },
+            "InputContext": "ControllerOnly",
+            "Visibility": "Invisible",
+            "KeyboardActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "ActionName": "RefreshTab",
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        },
+        {
+            "Name": "TogglePhotoMode",
+            "DisplayName": "NSLOCTEXT(\"D_Keybindings\", \"TogglePhotoMode-DisplayName\", \"Toggle Photo Mode\")",
+            "BindContext": {
+                "RowName": "Character"
+            },
+            "InputContext": "KeyboardOnly",
+            "KeyboardActionMapping": {
+                "ActionName": "TogglePhotoMode",
+                "Key": {
+                    "KeyName": "NumPadEight"
+                }
+            },
+            "KeyboardAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadActionMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            },
+            "GamepadAxisMapping": {
+                "Key": {
+                    "KeyName": "None"
+                }
+            }
+        }
+    ]
+}

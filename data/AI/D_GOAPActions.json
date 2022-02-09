@@ -1,0 +1,729 @@
+{
+    "RowStruct": "/Script/Icarus.GOAPAction",
+    "Defaults": {
+        "Description": "None",
+        "Preconditions": [],
+        "Effects": [],
+        "Cost": 1,
+        "TimeOut": 10,
+        "TickRate": 1,
+        "DefaultNavFilterOverride": "None",
+        "AssociatedMovementState": "Undefined",
+        "RangeCheckBehaviour": "CustomFunction",
+        "ActionBP": "None",
+        "BehaviourTree": "None",
+        "AudioState": "Idle"
+    },
+    "Rows": [
+        {
+            "Name": "Wander",
+            "Description": "Wander",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "TimeOut": 60,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Wander.BP_IcarusGOAPAction_Wander_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wander.BT_IcarusGOAP_Wander'"
+        },
+        {
+            "Name": "Search_For_Food",
+            "Description": "Search_For_Food",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Found_Food",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Found_Food",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Cost": 2,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_FindFood.BP_IcarusGOAPAction_FindFood_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_SearchForInteractables.BT_IcarusGOAP_SearchForInteractables'"
+        },
+        {
+            "Name": "Eat_Food_Foliage",
+            "Description": "Eat_Food_Foliage",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Cost": 2,
+            "TimeOut": 45,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatPlantFood.BP_IcarusGOAPAction_EatPlantFood_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Eat_Food_Corpse",
+            "Description": "Eat_Food_Corpse",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Cost": 2,
+            "TimeOut": 45,
+            "TickRate": 2,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatNearbyCarcasses.BP_IcarusGOAPAction_EatNearbyCarcasses_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Eat_Food_Bait",
+            "Description": "Eat_Food_Bait",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 45,
+            "TickRate": 2,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatBait.BP_IcarusGOAPAction_EatBait_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Eat_Food_Container",
+            "Description": "Eat_Food_Container",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hungry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Cost": 2,
+            "TimeOut": 45,
+            "TickRate": 2,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatNearbyCarcasses.BP_IcarusGOAPAction_EatNearbyCarcasses_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Drink_Water",
+            "Description": "Drink_Water",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Thirsty",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Thirsty",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 45,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_DrinkWater.BP_IcarusGOAPAction_DrinkWater_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Run_For_Safety",
+            "Description": "Run_For_Safety",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 35,
+            "AssociatedMovementState": "Sprint",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_RunForSafety.BP_IcarusGOAPAction_RunForSafety_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_RunForSafety.BT_IcarusNPCGOAP_RunForSafety'",
+            "AudioState": "Fleeing"
+        },
+        {
+            "Name": "Melee_Attack",
+            "Description": "Melee_Attack",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Run",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Melee_Attack.BP_IcarusGOAPAction_Melee_Attack_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack.BT_IcarusNPCGOAP_Melee_Attack'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Search_For_Attacker",
+            "Description": "Search_For_Attacker",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Jog",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_FindEnemy.BP_IcarusGOAPAction_FindEnemy_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Search_For_LastAttacker.BT_IcarusGOAP_Search_For_LastAttacker'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Charge",
+            "Description": "Charge",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Scared",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sprint",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Charge.BP_IcarusGOAPAction_Charge_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Charge.BT_IcarusNPCGOAP_Charge'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Be_Cautious",
+            "Description": "Be_Cautious",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Cautious",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Cautious",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "AssociatedMovementState": "Stationary",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_BeCautious.BP_IcarusGOAPAction_BeCautious_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_BeCautious.BT_IcarusNPCGOAP_BeCautious'"
+        },
+        {
+            "Name": "Rest",
+            "Description": "Rest",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Tired",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Tired",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 90,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Rest.BP_IcarusGOAPAction_Rest_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Rest.BT_IcarusGOAP_Rest'",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Melee_Attack_Assailant",
+            "Description": "Melee_Attack_Assailant",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 30,
+            "TickRate": 0.10000000149011612,
+            "AssociatedMovementState": "Attacking",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Melee_Attack.BP_IcarusGOAPAction_Melee_Attack_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack.BT_IcarusNPCGOAP_Melee_Attack'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Investigate_Last_Hostile_Stimulus",
+            "Description": "Investigate_Last_Hostile_Stimulus",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "TimeOut": 30,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Jog",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_InvestigateHostileStimulus.BP_IcarusGOAPAction_InvestigateHostileStimulus_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Investigate_Hostile_Stimulus.BT_IcarusGOAP_Investigate_Hostile_Stimulus'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Relax_At_Last_Hostile_Location",
+            "Description": "Relax_At_Last_Hostile_Location",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 30,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Jog",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_InvestigateHostileStimulus.BP_IcarusGOAPAction_InvestigateHostileStimulus_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Relax_At_Hostile_Stimulus.BT_IcarusGOAP_Relax_At_Hostile_Stimulus'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Find_Company",
+            "Description": "Find_Company",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Lonely",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "HasParent",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Lonely",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "AssociatedMovementState": "Sprint",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_FindCompany.BP_IcarusGOAPAction_FindCompany_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_FindCompany.BT_IcarusGOAP_FindCompany'"
+        },
+        {
+            "Name": "Get_Parent",
+            "Description": "Get_Parent",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "HasParent",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "HasParent",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "AssociatedMovementState": "Jog",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GetParent.BP_IcarusGOAPAction_GetParent_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GetParent.BT_IcarusGOAP_GetParent'"
+        },
+        {
+            "Name": "Warn_Aggressor",
+            "Description": "Attempt to \"scare off\" a hostile target, or show signs of aggression without attacking",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Protective",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Protective",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 20,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sneak",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_WarnAggressor.BP_IcarusGOAPAction_WarnAggressor_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_WarnAggressor.BT_IcarusNPCGOAP_WarnAggressor'",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Goto_Anchor",
+            "Description": "Goto_Anchor",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Distant",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Distant",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "AssociatedMovementState": "Sprint",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GotoAnchorPoint.BP_IcarusGOAPAction_GotoAnchorPoint_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GotoAnchorPoint.BT_IcarusGOAP_GotoAnchorPoint'"
+        },
+        {
+            "Name": "Approach_Attraction",
+            "Description": "Approach_Attraction",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Attracted",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Attracted",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 5,
+            "AssociatedMovementState": "Walk",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_ApproachAttraction.BP_IcarusGOAPAction_ApproachAttraction_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait'"
+        },
+        {
+            "Name": "Pack_Follow",
+            "Description": "Pack_Follow",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Pack_Follower_Away",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Pack_Follower_Away",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_FollowLeader.BP_IcarusGOAPAction_FollowLeader_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_FollowLeader.BT_IcarusGOAP_FollowLeader'"
+        },
+        {
+            "Name": "Stalk_Pack_Target",
+            "Description": "Stalk_Target",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Stalk_Target_Nearby",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Stalk_Target_Nearby",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "AssociatedMovementState": "Walk"
+        },
+        {
+            "Name": "Retreat_And_Regenerate",
+            "Description": "Retreat_And_Regenerate",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "WantsToRecover",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "WantsToRecover",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sprint",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_RetreatAndRegenerate.BP_IcarusGOAPAction_RetreatAndRegenerate_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_RetreatAndRegenerate.BT_IcarusGOAP_RetreatAndRegenerate'",
+            "AudioState": "Fleeing"
+        },
+        {
+            "Name": "Emerge_From_Retreat",
+            "Description": "Emerge_From_Retreat",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "HasRetreated",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "HasRetreated",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Attacking",
+            "ActionBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EmergeFromRetreat.BP_IcarusGOAPAction_EmergeFromRetreat_C'",
+            "BehaviourTree": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_EmergeFromRetreat.BT_IcarusGOAP_EmergeFromRetreat'"
+        }
+    ]
+}

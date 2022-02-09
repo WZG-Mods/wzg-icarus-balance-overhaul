@@ -1,0 +1,2311 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusWeatherEvent",
+    "Defaults": {
+        "Difficulty": "Light",
+        "Weighting": 1,
+        "AvaliableBiomes": [],
+        "WeatherImage": "None",
+        "WeatherName": "",
+        "WeatherDescription": "",
+        "WeatherActions": [],
+        "MusicCues": [],
+        "ScriptedEventConfig": [],
+        "ChanceToActivateScriptedEvent": 1
+    },
+    "Rows": [
+        {
+            "Name": "Medium_Rain",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumRain.WeatherEvent_MediumRain'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Rain-WeatherName\", \"Storm\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Rain-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 420
+                }
+            ]
+        },
+        {
+            "Name": "Medium_Snow",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSnow.WeatherEvent_MediumSnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Snow-WeatherName\", \"Medium Snow\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Snow-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Medium_Sand",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSand.WeatherEvent_MediumSand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Sand-WeatherName\", \"Medium Sand\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Sand-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 360
+                }
+            ]
+        },
+        {
+            "Name": "Long_Wind",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Extreme.Winds_Extreme'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Long_Wind-WeatherName\", \"Severe Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Long_Wind-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Unzip_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Rain_Chaos",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 5
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 5
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 5
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 5
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Rain_Damage",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Snow_Chaos",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Snow_Damage",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSnow_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Sand_Chaos",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Debug_Sand_Damage",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "NoBiome",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumSand_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Light_Rain_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightRain.WeatherEvent_LightRain'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Rain_1-WeatherName\", \"Rain\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Rain_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "LightRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "LightRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightRain_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "LightRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 420
+                }
+            ]
+        },
+        {
+            "Name": "Heavy_Rain_1",
+            "Difficulty": "Heavy",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavyRain.WeatherEvent_HeavyRain'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Rain_1-WeatherName\", \"Heavy Rain\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Rain_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "HeavyRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyRain_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyRain_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 420
+                }
+            ]
+        },
+        {
+            "Name": "Light_Sand_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Sand_1-WeatherName\", \"Light Sand\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Sand_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "LightSand_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSand_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSand_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 360
+                }
+            ]
+        },
+        {
+            "Name": "Heavy_Sand_1",
+            "Difficulty": "Heavy",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySand.WeatherEvent_HeavySand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Sand_1-WeatherName\", \"Heavy Sand\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Sand_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "HeavySand_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySand_Chaos",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySand_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySand_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 360
+                }
+            ]
+        },
+        {
+            "Name": "Light_Snow_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Snow_1-WeatherName\", \"Light Snow\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Snow_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "LightSnow_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSnow_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSnow_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSnow_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "LightSnow_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Heavy_Snow_1",
+            "Difficulty": "Heavy",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Snow_1-WeatherName\", \"Heavy Snow\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Heavy_Snow_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "HeavySnow_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySnow_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySnow_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySnow_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavySnow_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Cosmetic_Rain_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightRain.WeatherEvent_LightRain'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Rain_1-WeatherName\", \"Showers\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Rain_1-WeatherDescription\", \"Minor showers approaching.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "CosmeticRain_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticRain_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 180
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticRain_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Cosmetic_Snow_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Snow_1-WeatherName\", \"Very Light Snow\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Snow_1-WeatherDescription\", \"Minor snow flurries approaching.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "CosmeticSnow_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticSnow_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 180
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticSnow_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Cosmetic_Sand_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Sand_1-WeatherName\", \"Very Light Sand\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Sand_1-WeatherDescription\", \"Minor sand storm approaching.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "CosmeticSand_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticSand_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 180
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticSand_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Tutorial_Rain_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumRain.WeatherEvent_MediumRain'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Tutorial_Rain_1-WeatherName\", \"Medium Rain\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Tutorial_Rain_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "TutorialRain_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "TutorialRain_Damage_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "TutorialRain_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 190
+                }
+            ]
+        },
+        {
+            "Name": "Medium_Lightning_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Lightning_Medium.Lightning_Medium'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Lightning_1-WeatherName\", \"Flash Storm\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Medium_Lightning_1-WeatherDescription\", \"Dense thunder clouds approaching.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 40
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "MediumLightning_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 60
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 220
+                }
+            ]
+        },
+        {
+            "Name": "Light_Wind_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Light.Winds_Light'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Wind_1-WeatherName\", \"Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Light_Wind_1-WeatherDescription\", \"Minor winds approaching\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 410
+                }
+            ]
+        },
+        {
+            "Name": "ThunderStorm_1",
+            "Difficulty": "Heavy",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Lightning_Extreme.Lightning_Extreme'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"ThunderStorm_1-WeatherName\", \"Thunder Storm\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"ThunderStorm_1-WeatherDescription\", \"Incoming rain and lightning! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ThunderStorm_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ThunderStorm_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "ThunderStorm_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "ThunderStorm_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "ThunderStorm_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 420
+                }
+            ]
+        },
+        {
+            "Name": "Arctic_Wind_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Wind_1-WeatherName\", \"Arctic Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Wind_1-WeatherDescription\", \"Minor winds approaching\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticWinds_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 40
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "LightWinds_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 360
+                }
+            ]
+        },
+        {
+            "Name": "Arctic_SevereWind_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_ExtremeSnowstorm.WeatherEvent_ExtremeSnowstorm'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_SevereWind_1-WeatherName\", \"Severe Arctic Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_SevereWind_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Damage",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "LongWinds_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Arctic_Snow_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Snow_1-WeatherName\", \"Snow\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Snow_1-WeatherDescription\", \"Incoming storm!\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticSnow_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnow_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnow_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnow_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 490
+                }
+            ]
+        },
+        {
+            "Name": "Arctic_SnowStorm_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_SnowStorm_1-WeatherName\", \"Snow Storm\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_SnowStorm_1-WeatherDescription\", \"Incoming Snow Storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSevereWinds_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticSnowStorm_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 400
+                }
+            ]
+        },
+        {
+            "Name": "Arctic_Blizzard_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Blizzard_1-WeatherName\", \"Blizzard\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Blizzard_1-WeatherDescription\", \"Incoming Blizzard! Find shelter to keep warm.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 400
+                }
+            ]
+        },
+        {
+            "Name": "Desert_Wind_1",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSand.WeatherEvent_MediumSand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Wind_1-WeatherName\", \"Arid Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Wind_1-WeatherDescription\", \"Minor winds approaching\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "DesertNormalWinds_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 40
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertNormalWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertNormalWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertNormalWinds_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 360
+                }
+            ]
+        },
+        {
+            "Name": "Desert_SevereWind_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_ExtremeSandstorm.WeatherEvent_ExtremeSandstorm'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_SevereWind_1-WeatherName\", \"Severe Desert Winds\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_SevereWind_1-WeatherDescription\", \"Incoming storm! Find shelter to protect yourself.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 160
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "DesertSevereWinds_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 45
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 450
+                }
+            ]
+        },
+        {
+            "Name": "Desert_Heatwave_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Heatwave_1-WeatherName\", \"Heatwave\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Heatwave_1-WeatherDescription\", \"Long Heatwave incoming! Find shelter to cool off.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "Heatwave_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "Heatwave_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "Heatwave_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "Heatwave_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "Heatwave_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 400
+                }
+            ]
+        },
+        {
+            "Name": "Desert_Shamal_1",
+            "Difficulty": "Medium",
+            "AvaliableBiomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySand.WeatherEvent_HeavySand'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Shamal_1-WeatherName\", \"Shamal\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Desert_Shamal_1-WeatherDescription\", \"Incoming Shamal! Find shelter to keep warm.\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "Shamal_Start_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Chaos_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Body_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 30
+                },
+                {
+                    "Action": {
+                        "RowName": "Shamal_Stop_1",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 120
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 400
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+{
+    "RowStruct": "/Script/Icarus.FlammableData",
+    "Defaults": {
+        "Behaviour": "None",
+        "AudioData": {
+            "Weighting": 0,
+            "LocationType": "ActorLocation"
+        },
+        "CombustionFuelDensity": 1,
+        "CombustionFuelDensityVariance": 0.10000000149011612,
+        "bInfiniteCombustionFuel": false,
+        "ThermalConductivity": 1,
+        "HeatCapacity": 1000,
+        "SurfaceAreaMultiplier": 1,
+        "CombustingBoundsScale": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "HeatOfCombustion": 20,
+        "HeatReleaseRate": 10,
+        "bDetachAfterCombusted": true,
+        "MinCombustionTemperature": 300,
+        "MaxCombustionTemperature": 800,
+        "bAffectsTemperature": true,
+        "TemperatureFalloffStrength": 7.5
+    },
+    "Rows": [
+        {
+            "Name": "Flammable_Actor",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Actor.BP_Flammable_Actor_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 0.5
+        },
+        {
+            "Name": "Flammable_Player",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Player.BP_Flammable_Player_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 0.5
+        },
+        {
+            "Name": "Flammable_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Deployable.BP_Flammable_Deployable_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 1
+        },
+        {
+            "Name": "Flammable_Arrow",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Payload.BP_Flammable_Payload_C",
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 10,
+            "SurfaceAreaMultiplier": 5,
+            "CombustingBoundsScale": {
+                "X": 1.5,
+                "Y": 20,
+                "Z": 5
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 5,
+            "TemperatureFalloffStrength": 100
+        },
+        {
+            "Name": "Flammable_Building_Wood",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Building.BP_Flammable_Building_C",
+            "AudioData": {
+                "Weighting": 0.75,
+                "LocationType": "BoundsOrigin"
+            },
+            "bInfiniteCombustionFuel": true,
+            "ThermalConductivity": 0.8500000238418579,
+            "HeatCapacity": 1.2999999523162842,
+            "CombustingBoundsScale": {
+                "X": 1.350000023841858,
+                "Y": 1.350000023841858,
+                "Z": 1.350000023841858
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 3
+        },
+        {
+            "Name": "Flammable_Tree",
+            "Behaviour": "/Game/BP/Systems/Disaster/BP_FlammableFISM_Tree.BP_FlammableFISM_Tree_C",
+            "AudioData": {
+                "Weighting": 1,
+                "LocationType": "BoundsBase"
+            },
+            "CombustionFuelDensity": 0.20000000298023224,
+            "ThermalConductivity": 0.8500000238418579,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.75,
+                "Y": 1.75,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 10,
+            "HeatReleaseRate": 2
+        },
+        {
+            "Name": "Flammable_Sapling",
+            "Behaviour": "/Game/BP/Systems/Disaster/BP_FlammableFISM_Sappling.BP_FlammableFISM_Sappling_C",
+            "AudioData": {
+                "Weighting": 0.15000000596046448,
+                "LocationType": "BoundsOrigin"
+            },
+            "CombustionFuelDensity": 0.10000000149011612,
+            "ThermalConductivity": 0.8500000238418579,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 10,
+            "HeatReleaseRate": 2
+        },
+        {
+            "Name": "Flammable_Bush",
+            "Behaviour": "/Game/BP/Systems/Disaster/BP_FlammableFISM_ResourceNode.BP_FlammableFISM_ResourceNode_C",
+            "AudioData": {
+                "Weighting": 0.15000000596046448,
+                "LocationType": "BoundsOrigin"
+            },
+            "CombustionFuelDensity": 0.4000000059604645,
+            "ThermalConductivity": 0.8500000238418579,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 10,
+            "HeatReleaseRate": 2
+        },
+        {
+            "Name": "Flammable_Campfire",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_ActiveCombustion.BP_Flammable_ActiveCombustion_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "SurfaceAreaMultiplier": 10,
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 100,
+            "MaxCombustionTemperature": 500,
+            "TemperatureFalloffStrength": 10000
+        },
+        {
+            "Name": "Flammable_Torch",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_ActiveCombustion.BP_Flammable_ActiveCombustion_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "SurfaceAreaMultiplier": 10,
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 100,
+            "MaxCombustionTemperature": 500,
+            "TemperatureFalloffStrength": 10000
+        },
+        {
+            "Name": "Flammable_Actor_Persistent",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_Actor_Persistent.BP_Flammable_Actor_Persistent_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "CombustingBoundsScale": {
+                "X": 1.25,
+                "Y": 1.25,
+                "Z": 1.25
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 0.5
+        },
+        {
+            "Name": "Flammable_Firepit",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_ActiveCombustion.BP_Flammable_ActiveCombustion_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "SurfaceAreaMultiplier": 10,
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 100,
+            "MaxCombustionTemperature": 500,
+            "TemperatureFalloffStrength": 10000
+        },
+        {
+            "Name": "Flammable_FactionBoss",
+            "Behaviour": "/Game/BP/Behaviours/Flammable/BP_Flammable_FactionBoss.BP_Flammable_FactionBoss_C",
+            "AudioData": {
+                "Weighting": 0.5
+            },
+            "bInfiniteCombustionFuel": true,
+            "HeatCapacity": 1,
+            "SurfaceAreaMultiplier": 20,
+            "CombustingBoundsScale": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "HeatOfCombustion": 5,
+            "HeatReleaseRate": 0.5,
+            "bAffectsTemperature": false
+        }
+    ]
+}

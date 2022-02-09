@@ -1,0 +1,488 @@
+{
+    "RowStruct": "/Script/Icarus.RepGraphClassPolicy",
+    "Defaults": {
+        "Class": "None",
+        "Description": "",
+        "Policy": "NotRouted",
+        "Settings": {
+            "RowName": "None",
+            "DataTableName": "D_RepGraphClassSettings"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Icarus.GameStateBase",
+            "Class": "/Script/Icarus.IcarusGameStateBase",
+            "Description": "Gamestate replication for highest priority replication",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_GameStateBase"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusActor",
+            "Class": "/Script/Icarus.IcarusActor",
+            "Description": "Spatialized dynamic, default for all IcarusActors which don't specify their own class policy",
+            "Policy": "Spatialize_Dynamic",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusItem",
+            "Class": "/Script/Icarus.IcarusItem",
+            "Description": "Spatialized dynamic, default for all IcarusItems which don't specify their own class policy",
+            "Policy": "Spatialize_Dynamic",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_Item"
+            }
+        },
+        {
+            "Name": "Engine.Pawn",
+            "Class": "/Script/Engine.Pawn",
+            "Description": "Spatialized dynamic, default for all Pawn which don't specify their own class policy",
+            "Policy": "Spatialize_Dynamic",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Engine.PlayerState",
+            "Class": "/Script/Engine.PlayerState",
+            "Description": "Always Relevant (for connection, manually routed through UIRGN_AlwaysRelevant_ForConnection)",
+            "Policy": "ManuallyRouted",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusPlayerCharacter",
+            "Class": "/Script/Icarus.IcarusPlayerCharacter",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusNPCCharacter",
+            "Class": "/Script/Icarus.IcarusNPCCharacter",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "Spatialize_Dynamic",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_NPC"
+            }
+        },
+        {
+            "Name": "Icarus.FLOD",
+            "Class": "/Script/Icarus.FLOD",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_FLOD"
+            }
+        },
+        {
+            "Name": "Icarus.FLODTile",
+            "Class": "/Script/Icarus.FLODTile",
+            "Description": "Spatialized static, distance culled based on FLODTile relevance radius",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_FLODTile"
+            }
+        },
+        {
+            "Name": "Icarus.FLODTileBehaviourHarness",
+            "Class": "/Script/Icarus.FLODTileBehaviourHarness",
+            "Description": "Manually routed, added as dependant actor to FLODTile",
+            "Policy": "ManuallyRouted"
+        },
+        {
+            "Name": "Icarus.ResourceDeposit",
+            "Class": "/Script/Icarus.ResourceDeposit",
+            "Description": "Spatialized static, level streamed, distance culled (includes BP_MetaDeposit)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_ForMap"
+            }
+        },
+        {
+            "Name": "Icarus.Deployable",
+            "Class": "/Script/Icarus.Deployable",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_HighFrequency_Building"
+            }
+        },
+        {
+            "Name": "Icarus.BuildingBase",
+            "Class": "/Script/Icarus.BuildingBase",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_HighFrequency_Building"
+            }
+        },
+        {
+            "Name": "Icarus.WaterBody",
+            "Class": "/Script/Icarus.WaterBody",
+            "Description": "Spatialized static, level streamed, distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_HighCull"
+            }
+        },
+        {
+            "Name": "Icarus.VoxelResource",
+            "Class": "/Script/Icarus.VoxelResource",
+            "Description": "Spatialized domancy, dormancy state modified by FLODActorComponent",
+            "Policy": "Spatialize_Dormancy",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_VoxelRock_C",
+            "Class": "/Game/BP/Objects/World/Resources/Rocks/BP_VoxelRock.BP_VoxelRock_C",
+            "Description": "Spatialized static, level streamed, distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.TreeBase",
+            "Class": "/Script/Icarus.TreeBase",
+            "Description": "Spatialized domancy, dormancy state modified by FLODActorComponent",
+            "Policy": "Spatialize_Dormancy",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_Tree"
+            }
+        },
+        {
+            "Name": "Icarus.GenericResourceBase",
+            "Class": "/Script/Icarus.GenericResourceBase",
+            "Description": "Spatialized domancy, dormancy state modified by FLODActorComponent",
+            "Policy": "Spatialize_Dormancy",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_FLODItemActor_C",
+            "Class": "/Game/BP/Objects/World/Resources/Nodes/BP_FLODItemActor.BP_FLODItemActor_C",
+            "Description": "Spatialized domancy, dormancy state modified by FLODActorComponent",
+            "Policy": "Spatialize_Dormancy",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.FishActor",
+            "Class": "/Script/Icarus.FishActor",
+            "Description": "Spatialized dynamic, runtime-spawned, distance culled (lower priority)",
+            "Policy": "Spatialize_Dynamic",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_LowCull"
+            }
+        },
+        {
+            "Name": "Icarus.WeatherController",
+            "Class": "/Script/Icarus.WeatherController",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_AtmosphereController_C",
+            "Class": "/Game/ASS/ENV/ATM/BP_AtmosphereController.BP_AtmosphereController_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.MapManager_C",
+            "Class": "/Game/BP/PlayerMap/MapManager.MapManager_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_IcarusWaypointActor_C",
+            "Class": "/Game/UI/Compass/BP_IcarusWaypointActor.BP_IcarusWaypointActor_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_IcarusSplineActor_C",
+            "Class": "/Game/BP/Building/Roads/BP_IcarusSplineActor.BP_IcarusSplineActor_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_Grid_Base_C",
+            "Class": "/Game/BP/Building/BP_Grid_Base.BP_Grid_Base_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.FMODAmbientSound",
+            "Class": "/Script/FMODStudio.FMODAmbientSound",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_TreeFallAudio_C",
+            "Class": "/Game/BP/Audio/Environment/BP_TreeFallAudio.BP_TreeFallAudio_C",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_AISpawner_C",
+            "Class": "/Game/BP/AI/BP_AISpawner.BP_AISpawner_C",
+            "Description": "Spatialized static (TODO: does this need to be replicated at all?)",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_DestructibleMeshActor_C",
+            "Class": "/Game/BP/Objects/World/Items/Deployables/BP_DestructibleMeshActor.BP_DestructibleMeshActor_C",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.CheatController",
+            "Class": "/Script/Icarus.CheatController",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusRocket",
+            "Class": "/Script/Icarus.IcarusRocket",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.IcarusRocketPart",
+            "Class": "/Script/Icarus.IcarusRocketPart",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.SeatBase",
+            "Class": "/Script/Icarus.SeatBase",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.HuntingClue",
+            "Class": "/Script/Icarus.HuntingClue",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency"
+            }
+        },
+        {
+            "Name": "Icarus.BP_Overflow_Bag",
+            "Class": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Overflow_Bag.BP_Overflow_Bag_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_GraveStone",
+            "Class": "/Game/BP/Objects/World/Items/Deployables/BP_Gravestone.BP_Gravestone_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.OneShotAudio",
+            "Class": "/Script/Icarus.OneShotAudio",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency"
+            }
+        },
+        {
+            "Name": "Icarus.DisasterController",
+            "Class": "/Script/Icarus.DisasterController",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.SeatBase_0",
+            "Class": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_BedBase.BP_BedBase_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_FlareArrow",
+            "Class": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Flare_Arrow.BP_SkeletalItem_Flare_Arrow_C",
+            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.ScriptedEvent",
+            "Class": "/Script/Icarus.ScriptedEvent",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.Payload",
+            "Class": "/Script/Icarus.IcarusPayload",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.MapIconProxy",
+            "Class": "/Game/BP/PlayerMap/MapIconProxyActor.MapIconProxyActor_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_ForMap"
+            }
+        },
+        {
+            "Name": "Icarus.Quests",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.QuestsManager",
+            "Class": "/Script/Icarus.QuestManager",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_Faction_Satellite",
+            "Class": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Faction_Satellite.BP_Faction_Satellite_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.BP_Faction_Mission_Blocker",
+            "Class": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Faction_Mission_Blocker.BP_Faction_Mission_Blocker_C",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.DialogueManager",
+            "Class": "/Script/Icarus.DialogueManager",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.QuestScene",
+            "Class": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_IcarusQuestScene.BP_IcarusQuestScene_C",
+            "Description": "Non statefull, spawned, scenery",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_HighCull"
+            }
+        },
+        {
+            "Name": "Icarus.WorldObject",
+            "Class": "/Game/BP/Objects/World/Items/WorldObjects/BP_WorldObject.BP_WorldObject_C",
+            "Description": "Non statefull, spawned, scenery",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.MissionSnapping",
+            "Class": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Faction_Mission_DeployableSnapActor.BP_Faction_Mission_DeployableSnapActor_C",
+            "Description": "Non statefull, spawned, scenery",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.SearchAreaProxy",
+            "Class": "/Script/Icarus.MapSearchAreaProxy",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_ForMap"
+            }
+        }
+    ]
+}

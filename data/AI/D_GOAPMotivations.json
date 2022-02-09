@@ -1,0 +1,366 @@
+{
+    "RowStruct": "/Script/Icarus.GOAPMotivation",
+    "Defaults": {
+        "Description": "None",
+        "UpdateTick": 1,
+        "MinValue": 0,
+        "MaxValue": 100,
+        "StartingValue": 0,
+        "StartingValueDeviation": 0,
+        "MotivationTriggers": [],
+        "MotivationBP": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Hunger",
+            "Description": "Hunger",
+            "StartingValue": 20,
+            "StartingValueDeviation": 50,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Hungry",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Hunger.BP_IcarusGOAPMotivation_Hunger_C'"
+        },
+        {
+            "Name": "Thirst",
+            "Description": "Thirst",
+            "StartingValue": 20,
+            "StartingValueDeviation": 50,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Thirsty",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Thirst.BP_IcarusGOAPMotivation_Thirst_C'"
+        },
+        {
+            "Name": "Threat",
+            "Description": "Threat",
+            "UpdateTick": 0.10000000149011612,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Scared",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {
+                        "(Value=\"BaseAwarenessLevel_+\")": 1
+                    }
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Safety.BP_IcarusGOAPMotivation_Safety_C'"
+        },
+        {
+            "Name": "Cautious",
+            "Description": "Cautious",
+            "UpdateTick": 0.33000001311302185,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Cautious",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {
+                        "(Value=\"BaseAwarenessLevel_+\")": 1
+                    }
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Safety.BP_IcarusGOAPMotivation_Safety_C'"
+        },
+        {
+            "Name": "Tiredness",
+            "Description": "Tiredness",
+            "StartingValue": 20,
+            "StartingValueDeviation": 50,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Tired",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Tiredness.BP_IcarusGOAPMotivation_Tiredness_C'"
+        },
+        {
+            "Name": "Aggression",
+            "Description": "Aggression",
+            "UpdateTick": 0.25,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Angry",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {
+                        "(Value=\"BaseAwarenessLevel_+\")": 2
+                    }
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Aggression.BP_IcarusGOAPMotivation_Aggression_C'"
+        },
+        {
+            "Name": "Loneliness",
+            "Description": "Loneliness",
+            "UpdateTick": 2,
+            "StartingValue": 100,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Lonely",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Loneliness.BP_IcarusGOAPMotivation_Loneliness_C'"
+        },
+        {
+            "Name": "Protective",
+            "Description": "Protective",
+            "UpdateTick": 0.10000000149011612,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Angry",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {
+                        "(Value=\"BaseAwarenessLevel_+\")": 1
+                    }
+                },
+                {
+                    "TriggerThreshold": 25,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Protective",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {
+                        "(Value=\"BaseAwarenessLevel_+\")": 1
+                    }
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Protective.BP_IcarusGOAPMotivation_Protective_C'"
+        },
+        {
+            "Name": "Anchored",
+            "Description": "Anchored",
+            "UpdateTick": 3,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Distant",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Anchored.BP_IcarusGOAPMotivation_Anchored_C'"
+        },
+        {
+            "Name": "Attraction",
+            "Description": "Attraction",
+            "UpdateTick": 0.5,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Attracted",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Attraction.BP_IcarusGOAPMotivation_Attraction_C'"
+        },
+        {
+            "Name": "Pack_Follower",
+            "Description": "Pack_Follower",
+            "UpdateTick": 2,
+            "StartingValue": 100,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Pack_Follower_Away",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_PackFollower.BP_IcarusGOAPMotivation_PackFollower_C'"
+        },
+        {
+            "Name": "Stalk_Pack_Target",
+            "Description": "Stalk_Target",
+            "UpdateTick": 2,
+            "StartingValue": 100,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Stalk_Target_Nearby",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_StalkTarget.BP_IcarusGOAPMotivation_StalkTarget_C'"
+        },
+        {
+            "Name": "Self_Preservation",
+            "Description": "Self_Preservation",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "WantsToRecover",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_SelfPreservation.BP_IcarusGOAPMotivation_SelfPreservation_C'"
+        },
+        {
+            "Name": "Emerge_From_Retreat",
+            "Description": "Emerge_From_Retreat",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "HasRetreated",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_EmergeFromRetreat.BP_IcarusGOAPMotivation_EmergeFromRetreat_C'"
+        }
+    ]
+}

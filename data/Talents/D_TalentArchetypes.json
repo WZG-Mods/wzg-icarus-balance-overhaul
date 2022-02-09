@@ -1,0 +1,114 @@
+{
+    "RowStruct": "/Script/Icarus.TalentArchetype",
+    "Defaults": {
+        "Model": {
+            "RowName": "None",
+            "DataTableName": "D_TalentModels"
+        },
+        "DisplayName": "",
+        "BackgroundTexture": "None",
+        "Icon": "None",
+        "RequiredLevel": 0
+    },
+    "Columns": [
+        {
+            "Name": "Model",
+            "Key": true,
+            "Cardinality": "Multiple",
+            "ForwardDeclare": "struct"
+        }
+    ],
+    "Rows": [
+        {
+            "Name": "Survival",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Survival-DisplayName\", \"Survival\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Survival.Icon_Survival"
+        },
+        {
+            "Name": "Construction",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Construction-DisplayName\", \"Construction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Construction.Icon_Construction"
+        },
+        {
+            "Name": "Combat",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Combat-DisplayName\", \"Combat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Combat.Icon_Combat"
+        },
+        {
+            "Name": "Blueprint_Player",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Player-DisplayName\", \"Tier 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Personal.Icon_TechTier_Personal"
+        },
+        {
+            "Name": "Blueprint_Crafting",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Crafting-DisplayName\", \"Tier 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_CraftingBench.Icon_TechTier_CraftingBench",
+            "RequiredLevel": 10
+        },
+        {
+            "Name": "Blueprint_Machine",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Machine-DisplayName\", \"Tier 3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_MachineBench.Icon_TechTier_MachineBench",
+            "RequiredLevel": 20
+        },
+        {
+            "Name": "Blueprint_Fabricator",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Fabricator-DisplayName\", \"Tier 4\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Fabricator.Icon_TechTier_Fabricator",
+            "RequiredLevel": 30
+        },
+        {
+            "Name": "Solo",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Solo-DisplayName\", \"Solo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Solo.Icon_Solo"
+        },
+        {
+            "Name": "Prospect",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect-DisplayName\", \"Prospect Overview\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Workshop",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "INVTEXT(\"[DNT] Workshop\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity"
+        },
+        {
+            "Name": "Outpost",
+            "Model": {
+                "RowName": "Outpost"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Outpost-DisplayName\", \"Outpost Overview\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        }
+    ]
+}

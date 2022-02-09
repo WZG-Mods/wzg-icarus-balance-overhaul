@@ -1,0 +1,1040 @@
+{
+    "RowStruct": "/Script/Icarus.VehicularData",
+    "Defaults": {
+        "ComponentType": "None",
+        "Behaviour": "None",
+        "Durability": 0,
+        "CollisionProfile": "OverlapAllDynamic",
+        "EngineData": {
+            "TorqueCurve": {
+                "EditorCurveData": {
+                    "Keys": [
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 0,
+                            "Value": 400,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        },
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 1890.7607421875,
+                            "Value": 500,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        },
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 5729.57763671875,
+                            "Value": 400,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        }
+                    ],
+                    "DefaultValue": 3.4028234663852886e+38,
+                    "PreInfinityExtrap": "RCCE_Constant",
+                    "PostInfinityExtrap": "RCCE_Constant"
+                },
+                "ExternalCurve": "None"
+            },
+            "MaxRPM": 5729.57763671875,
+            "MOI": 1,
+            "DampingRateFullThrottle": 0.15000000596046448,
+            "DampingRateZeroThrottleClutchEngaged": 2,
+            "DampingRateZeroThrottleClutchDisengaged": 0.3499999940395355
+        },
+        "TransmissionData": {
+            "bUseGearAutoBox": true,
+            "GearSwitchTime": 0.5,
+            "GearAutoBoxLatency": 2,
+            "FinalRatio": 4,
+            "ForwardGears": [
+                {
+                    "Ratio": 4,
+                    "DownRatio": 0.5,
+                    "UpRatio": 0.6499999761581421
+                },
+                {
+                    "Ratio": 2,
+                    "DownRatio": 0.5,
+                    "UpRatio": 0.6499999761581421
+                },
+                {
+                    "Ratio": 1.5,
+                    "DownRatio": 0.5,
+                    "UpRatio": 0.6499999761581421
+                },
+                {
+                    "Ratio": 1.100000023841858,
+                    "DownRatio": 0.5,
+                    "UpRatio": 0.6499999761581421
+                },
+                {
+                    "Ratio": 1,
+                    "DownRatio": 0.5,
+                    "UpRatio": 0.6499999761581421
+                }
+            ],
+            "ReverseGearRatio": -4,
+            "NeutralGearUpRatio": 0.15000000596046448,
+            "ClutchStrength": 10
+        },
+        "DifferentialData": {
+            "DifferentialType": "LimitedSlip_4W",
+            "FrontRearSplit": 0.44999998807907104,
+            "FrontLeftRightSplit": 0.5,
+            "RearLeftRightSplit": 0.5,
+            "CentreBias": 1.2999999523162842,
+            "FrontBias": 1.2999999523162842,
+            "RearBias": 1.2999999523162842
+        },
+        "FuelItem": {
+            "RowName": "None",
+            "DataTableName": "D_ItemsStatic"
+        },
+        "FuelCapacity": 0,
+        "WheelData": {
+            "ShapeRadius": 30,
+            "ShapeWidth": 10,
+            "Mass": 20,
+            "MOIRatio": 0.5,
+            "DampingRate": 0.25,
+            "SteerAngle": 70,
+            "MaxBrakeTorque": 1500,
+            "MaxHandBrakeTorque": 3000
+        },
+        "SuspensionData": {
+            "SuspensionNaturalFrequency": 7,
+            "SuspensionDampingRatio": 1
+        },
+        "TireData": {
+            "TireConfig": "None",
+            "TireThickness": 0,
+            "LatStiffMaxLoad": 2,
+            "LatStiffValue": 17,
+            "LongStiffValue": 1000
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Engine_Test_1",
+            "ComponentType": "Engine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Engine.BP_Vehicular_Engine_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": [
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 0,
+                                "Value": 600,
+                                "ArriveTangent": 0.5298815369606018,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 0.529018759727478,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 2000,
+                                "Value": 1000,
+                                "ArriveTangent": -0.002645797561854124,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.002645797561854124,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 4800,
+                                "Value": 700,
+                                "ArriveTangent": -0.18202891945838928,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.18213249742984772,
+                                "LeaveTangentWeight": 0
+                            }
+                        ]
+                    }
+                },
+                "MaxRPM": 4800
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            }
+        },
+        {
+            "Name": "Engine_Gasoline_Mk1",
+            "ComponentType": "Engine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Engine.BP_Vehicular_Engine_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": [
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 0,
+                                "Value": 500,
+                                "ArriveTangent": 0.0013367856154218316,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 0.0013371941167861223,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_Break",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 1000,
+                                "Value": 500,
+                                "ArriveTangent": 0.009579054079949856,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 1.0815168619155884,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 2500,
+                                "Value": 2000,
+                                "ArriveTangent": -0.17513155937194824,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.1751381903886795,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 3000,
+                                "Value": 1500,
+                                "ArriveTangent": -1.2511730194091797,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -1.251172423362732,
+                                "LeaveTangentWeight": 0
+                            }
+                        ]
+                    }
+                },
+                "MaxRPM": 3000
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            }
+        },
+        {
+            "Name": "Engine_Gasoline_Mk2",
+            "ComponentType": "Engine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Engine.BP_Vehicular_Engine_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": [
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 0,
+                                "Value": 1250,
+                                "ArriveTangent": 0.0013367856154218316,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 0.0013371941167861223,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_Break",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 1000,
+                                "Value": 1250,
+                                "ArriveTangent": 0.009579054079949856,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 1.0815168619155884,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 5000,
+                                "Value": 3000,
+                                "ArriveTangent": -0.17513155937194824,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.1751381903886795,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 6000,
+                                "Value": 2000,
+                                "ArriveTangent": -1.2511730194091797,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -1.251172423362732,
+                                "LeaveTangentWeight": 0
+                            }
+                        ]
+                    }
+                },
+                "MaxRPM": 6000
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            }
+        },
+        {
+            "Name": "Engine_Gasoline_Mk3",
+            "ComponentType": "Engine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Engine.BP_Vehicular_Engine_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": [
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 0,
+                                "Value": 1000,
+                                "ArriveTangent": 0.0013367856154218316,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 0.0013371941167861223,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_Break",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 1000,
+                                "Value": 1000,
+                                "ArriveTangent": 0.009579054079949856,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 1.0815168619155884,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 6000,
+                                "Value": 4000,
+                                "ArriveTangent": -0.17513155937194824,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.1751381903886795,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 8000,
+                                "Value": 2500,
+                                "ArriveTangent": -1.2511730194091797,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -1.251172423362732,
+                                "LeaveTangentWeight": 0
+                            }
+                        ]
+                    }
+                },
+                "MaxRPM": 8000
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            }
+        },
+        {
+            "Name": "Gearbox_Test_1",
+            "ComponentType": "Gearbox",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_VehicularBase.BP_VehicularBase_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "GearSwitchTime": 0.25,
+                "GearAutoBoxLatency": 1.5,
+                "ForwardGears": [
+                    {
+                        "Ratio": 3,
+                        "DownRatio": 0.3499999940395355,
+                        "UpRatio": 0.6499999761581421
+                    },
+                    {
+                        "Ratio": 1.5,
+                        "DownRatio": 0.3499999940395355,
+                        "UpRatio": 0.6499999761581421
+                    },
+                    {
+                        "Ratio": 1,
+                        "DownRatio": 0.3499999940395355,
+                        "UpRatio": 0.6499999761581421
+                    },
+                    {
+                        "Ratio": 0.800000011920929,
+                        "DownRatio": 0.3499999940395355,
+                        "UpRatio": 0.6499999761581421
+                    }
+                ],
+                "ReverseGearRatio": -2.299999952316284,
+                "ClutchStrength": 20
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 1,
+                "FrontBias": 1,
+                "RearBias": 1
+            },
+            "TireData": {
+                "LatStiffMaxLoad": 3,
+                "LatStiffValue": 20
+            }
+        },
+        {
+            "Name": "Drivetrain_Test_1",
+            "ComponentType": "Drivetrain",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_VehicularBase.BP_VehicularBase_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            }
+        },
+        {
+            "Name": "Fueltank_Test_1",
+            "ComponentType": "Fueltank",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_FuelTank.BP_Vehicular_FuelTank_C'",
+            "CollisionProfile": "InteractableOverlap",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "FuelItem": {
+                "RowName": "Vehicle_Fueltank"
+            },
+            "FuelCapacity": 100
+        },
+        {
+            "Name": "Wheel_Test_1",
+            "ComponentType": "Wheel",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Wheel.BP_Vehicular_Wheel_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "WheelData": {
+                "ShapeRadius": 1,
+                "ShapeWidth": 100,
+                "Mass": 40,
+                "SteerAngle": 35,
+                "MaxBrakeTorque": 4000,
+                "MaxHandBrakeTorque": 6000
+            }
+        },
+        {
+            "Name": "Suspension_Test_1",
+            "ComponentType": "Suspension",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Suspension.BP_Vehicular_Suspension_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "SuspensionData": {
+                "SuspensionNaturalFrequency": 8,
+                "SuspensionDampingRatio": 0.8999999761581421
+            }
+        },
+        {
+            "Name": "Tire_Test_1",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Rover/Vehicle_Rover_TireConfig.Vehicle_Rover_TireConfig'",
+                "TireThickness": 78,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Engine_BackBuggy",
+            "ComponentType": "Engine",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Engine.BP_Vehicular_Engine_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": [
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 0,
+                                "Value": 240,
+                                "ArriveTangent": 0.06060188263654709,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": 0.0605902224779129,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 2000,
+                                "Value": 400,
+                                "ArriveTangent": -0.002645797561854124,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.002645797561854124,
+                                "LeaveTangentWeight": 0
+                            },
+                            {
+                                "InterpMode": "RCIM_Cubic",
+                                "TangentMode": "RCTM_User",
+                                "TangentWeightMode": "RCTWM_WeightedNone",
+                                "Time": 4800,
+                                "Value": 280,
+                                "ArriveTangent": -0.06748537719249725,
+                                "ArriveTangentWeight": 0,
+                                "LeaveTangent": -0.06745865195989609,
+                                "LeaveTangentWeight": 0
+                            }
+                        ]
+                    }
+                },
+                "MaxRPM": 5500
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            }
+        },
+        {
+            "Name": "Tire_BackBuggy",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Rover/Vehicle_Rover_TireConfig.Vehicle_Rover_TireConfig'",
+                "TireThickness": 11,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Wheel_BackBuggy",
+            "ComponentType": "Wheel",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Wheel.BP_Vehicular_Wheel_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "WheelData": {
+                "ShapeRadius": 19,
+                "ShapeWidth": 25,
+                "Mass": 5,
+                "SteerAngle": 30,
+                "MaxBrakeTorque": 1000,
+                "MaxHandBrakeTorque": 1500
+            }
+        },
+        {
+            "Name": "Tire_Offroad_Mk1",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Tires/DA_Tire_OffRoad_Mk1.DA_Tire_OffRoad_Mk1'",
+                "TireThickness": 78,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Tire_Offroad_Mk4",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Tires/DA_Tire_OffRoad_Mk4.DA_Tire_OffRoad_Mk4'",
+                "TireThickness": 78,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Tire_Sand_Mk1",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Tires/DA_Tire_Sand_Mk1.DA_Tire_Sand_Mk1'",
+                "TireThickness": 78,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Tire_Sand_Mk4",
+            "ComponentType": "Tire",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Tire.BP_Vehicular_Tire_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "TireData": {
+                "TireConfig": "TireConfig'/Game/BP/Vehicles/Tires/DA_Tire_Sand_Mk4.DA_Tire_Sand_Mk4'",
+                "TireThickness": 78,
+                "LatStiffMaxLoad": 25,
+                "LatStiffValue": 180,
+                "LongStiffValue": 10000
+            }
+        },
+        {
+            "Name": "Wheel_Rover_Standard",
+            "ComponentType": "Wheel",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Vehicular/BP_Vehicular_Wheel.BP_Vehicular_Wheel_C'",
+            "EngineData": {
+                "TorqueCurve": {
+                    "EditorCurveData": {
+                        "Keys": []
+                    }
+                },
+                "MaxRPM": 0,
+                "MOI": 0,
+                "DampingRateFullThrottle": 0,
+                "DampingRateZeroThrottleClutchEngaged": 0,
+                "DampingRateZeroThrottleClutchDisengaged": 0
+            },
+            "TransmissionData": {
+                "bUseGearAutoBox": false,
+                "GearSwitchTime": 0,
+                "GearAutoBoxLatency": 0,
+                "FinalRatio": 0,
+                "ForwardGears": [],
+                "ReverseGearRatio": 0,
+                "NeutralGearUpRatio": 0,
+                "ClutchStrength": 0
+            },
+            "DifferentialData": {
+                "FrontRearSplit": 0,
+                "FrontLeftRightSplit": 0,
+                "RearLeftRightSplit": 0,
+                "CentreBias": 0,
+                "FrontBias": 0,
+                "RearBias": 0
+            },
+            "WheelData": {
+                "ShapeRadius": 1,
+                "ShapeWidth": 100,
+                "Mass": 40,
+                "MOIRatio": 1,
+                "SteerAngle": 35,
+                "MaxBrakeTorque": 4000,
+                "MaxHandBrakeTorque": 6000
+            },
+            "TireData": {
+                "LatStiffMaxLoad": 0.009999999776482582,
+                "LatStiffValue": 0.009999999776482582,
+                "LongStiffValue": 0
+            }
+        }
+    ]
+}

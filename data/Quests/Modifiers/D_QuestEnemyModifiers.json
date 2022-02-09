@@ -1,0 +1,49 @@
+{
+    "RowStruct": "/Script/Icarus.QuestEnemyModifier",
+    "Defaults": {
+        "PossibleEnemies": [],
+        "MaxEnemies": 5,
+        "bSpawnAllInitially": true,
+        "bRespawnEnemies": true,
+        "SpawnInterval": 10,
+        "SpawnDistance": 6000,
+        "OverrideClass": "None"
+    },
+    "Rows": [
+        {
+            "Name": "EnemyExampleRespawning",
+            "PossibleEnemies": [
+                {
+                    "RowName": "Snow_Wolf",
+                    "DataTableName": "D_AISetup"
+                }
+            ],
+            "MaxEnemies": 3,
+            "bSpawnAllInitially": false,
+            "SpawnInterval": 30
+        },
+        {
+            "Name": "EnemyExample",
+            "PossibleEnemies": [
+                {
+                    "RowName": "Bear",
+                    "DataTableName": "D_AISetup"
+                }
+            ],
+            "bRespawnEnemies": false
+        },
+        {
+            "Name": "SatelliteBoss",
+            "PossibleEnemies": [
+                {
+                    "RowName": "Bear",
+                    "DataTableName": "D_AISetup"
+                }
+            ],
+            "MaxEnemies": 1,
+            "bRespawnEnemies": false,
+            "SpawnDistance": 5000,
+            "OverrideClass": "/Game/BP/Quests/Modifiers/BP_QuestEnemyModifier_Boss.BP_QuestEnemyModifier_Boss_C"
+        }
+    ]
+}

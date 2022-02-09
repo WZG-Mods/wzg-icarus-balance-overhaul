@@ -1,0 +1,46 @@
+{
+    "RowStruct": "/Script/Icarus.AISpawnRuleData",
+    "Defaults": {
+        "SpawnFilter": "None",
+        "InverseCondition": false,
+        "FilterParams": {}
+    },
+    "Rows": [
+        {
+            "Name": "Away_From_Dropships",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_DropshipWithinDistance.BP_SpawnFilter_DropshipWithinDistance_C",
+            "InverseCondition": true,
+            "FilterParams": {
+                "Distance": 20000
+            }
+        },
+        {
+            "Name": "Bear_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Bear.BP_SpawnFilter_PopulationCheck_Bear_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "PolarBear_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_PolarBear.BP_SpawnFilter_PopulationCheck_PolarBear_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "MammothArctic_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_MammothArctic.BP_SpawnFilter_PopulationCheck_MammothArctic_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "MammothDesert_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_MammothDesert.BP_SpawnFilter_PopulationCheck_MammothDesert_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        }
+    ]
+}

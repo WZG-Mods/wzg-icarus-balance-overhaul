@@ -1,0 +1,81 @@
+{
+    "RowStruct": "/Script/Icarus.StatAfflictions",
+    "Defaults": {
+        "AfflictionStat": {
+            "Value": "None"
+        },
+        "ResistanceStat": {
+            "Value": "None"
+        },
+        "DurationInSeconds": 0,
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Wound",
+            "AfflictionStat": {
+                "Value": "AttacksCauseWound_%"
+            },
+            "ResistanceStat": {
+                "Value": "WoundResistance_%"
+            },
+            "Modifier": {
+                "RowName": "Wound"
+            }
+        },
+        {
+            "Name": "Slow",
+            "AfflictionStat": {
+                "Value": "AttacksCauseSlow_%"
+            },
+            "ResistanceStat": {
+                "Value": "SlowResistance_%"
+            },
+            "DurationInSeconds": 5,
+            "Modifier": {
+                "RowName": "Slow"
+            }
+        },
+        {
+            "Name": "Immobilise",
+            "AfflictionStat": {
+                "Value": "AttacksCauseImmobilise_%"
+            },
+            "ResistanceStat": {
+                "Value": "ImmobiliseResistance_%"
+            },
+            "DurationInSeconds": 3,
+            "Modifier": {
+                "RowName": "Pinned"
+            }
+        },
+        {
+            "Name": "Deep_Wound",
+            "AfflictionStat": {
+                "Value": "AttacksCauseDeepWound_%"
+            },
+            "ResistanceStat": {
+                "Value": "DeepWoundResistance_%"
+            },
+            "Modifier": {
+                "RowName": "DeepWound"
+            }
+        },
+        {
+            "Name": "Poison",
+            "AfflictionStat": {
+                "Value": "AttacksCausePoison_%"
+            },
+            "ResistanceStat": {
+                "Value": "PoisonResistance_%"
+            },
+            "DurationInSeconds": 60,
+            "Modifier": {
+                "RowName": "Poison_DOT"
+            }
+        }
+    ]
+}

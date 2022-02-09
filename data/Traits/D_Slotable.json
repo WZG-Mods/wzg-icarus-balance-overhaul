@@ -1,0 +1,77 @@
+{
+    "RowStruct": "/Script/Icarus.SlotableData",
+    "Defaults": {
+        "Behaviour": "None",
+        "StringIDQueries": []
+    },
+    "Rows": [
+        {
+            "Name": "GenericSlotable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/Data/Inventory/BP_Slotable.BP_Slotable_C'"
+        },
+        {
+            "Name": "OxygenRefill",
+            "Behaviour": "BlueprintGeneratedClass'/Game/Data/Inventory/BP_Slotable.BP_Slotable_C'",
+            "StringIDQueries": [
+                {
+                    "SocketStringID": "tank",
+                    "SlotVisualizerScale": {
+                        "X": 0.125,
+                        "Y": 0.125,
+                        "Z": 0.5
+                    },
+                    "SlotVisualizerMesh": "/Game/Assets/Developer/Debug_mesh/SM_CenterLower_Pivot_Cube.SM_CenterLower_Pivot_Cube",
+                    "AmountOfPhysicsTime": -1,
+                    "SlotQuery": {
+                        "RowName": "Oxygen_Refill",
+                        "DataTableName": "D_TagQueries"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "OxygenTanksOnly",
+            "Behaviour": "BlueprintGeneratedClass'/Game/Data/Inventory/BP_Slotable.BP_Slotable_C'"
+        },
+        {
+            "Name": "SkinningBench",
+            "Behaviour": "BlueprintGeneratedClass'/Game/Data/Inventory/BP_Slotable.BP_Slotable_C'",
+            "StringIDQueries": [
+                {
+                    "SocketStringID": "corpse",
+                    "SlotVisualizerScale": {
+                        "X": 0.5,
+                        "Y": 1,
+                        "Z": 1
+                    },
+                    "SlotVisualizerMesh": "/Game/ThirdPartyAssets/StarterContent/Shapes/Shape_Cube.Shape_Cube",
+                    "AmountOfPhysicsTime": 0.10000000149011612,
+                    "SlotQuery": {
+                        "RowName": "SkinningBenchSlots",
+                        "DataTableName": "D_TagQueries"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Fuel_Only",
+            "Behaviour": "BlueprintGeneratedClass'/Game/Data/Inventory/BP_Slotable.BP_Slotable_C'",
+            "StringIDQueries": [
+                {
+                    "SocketStringID": "fuel",
+                    "SlotVisualizerScale": {
+                        "X": 0.20000000298023224,
+                        "Y": 0.20000000298023224,
+                        "Z": 0.20000000298023224
+                    },
+                    "SlotVisualizerMesh": "/Game/Assets/Developer/Debug_mesh/SM_CenterLower_Pivot_Cube.SM_CenterLower_Pivot_Cube",
+                    "AmountOfPhysicsTime": -1,
+                    "SlotQuery": {
+                        "RowName": "Any_Fuel",
+                        "DataTableName": "D_TagQueries"
+                    }
+                }
+            ]
+        }
+    ]
+}

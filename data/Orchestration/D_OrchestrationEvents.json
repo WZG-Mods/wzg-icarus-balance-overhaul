@@ -1,0 +1,130 @@
+{
+    "RowStruct": "/Script/Icarus.OrchestrationEventDescription",
+    "Defaults": {
+        "RequiredFlags": [],
+        "StateFlagToSetOnExecute": {
+            "RowName": "None",
+            "DataTableName": "D_OrchestrationStateFlags"
+        }
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "IcarusBeginPlay",
+            "RequiredFlags": [
+                {
+                    "RowName": "GameModeHasBegunPlay",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "ActorsPreparedForBeginPlay",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ],
+            "StateFlagToSetOnExecute": {
+                "RowName": "IcarusHasBegunPlay"
+            }
+        },
+        {
+            "Name": "DatabaseReloadBegin",
+            "RequiredFlags": [
+                {
+                    "RowName": "DatabaseReloadRequired",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "FLODHasSpawned",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "FLODHasFinishedLoading",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        },
+        {
+            "Name": "DatabaseReloadComplete",
+            "RequiredFlags": [
+                {
+                    "RowName": "DatabaseReloaded",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ],
+            "StateFlagToSetOnExecute": {
+                "RowName": "DatabaseReloadCompleted"
+            }
+        },
+        {
+            "Name": "RaiseTheCurtain",
+            "RequiredFlags": [
+                {
+                    "RowName": "IcarusHasBegunPlay",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "FLODHasFinishedLoading",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ],
+            "StateFlagToSetOnExecute": {
+                "RowName": "RaisedTheCurtain"
+            }
+        },
+        {
+            "Name": "ProspectInfoFetched",
+            "RequiredFlags": [
+                {
+                    "RowName": "IcarusHasBegunPlay",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "ProspectInfoFetched",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        },
+        {
+            "Name": "WorldStatsReady",
+            "RequiredFlags": [
+                {
+                    "RowName": "WorldStatsSet",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                },
+                {
+                    "RowName": "ProspectInfoFetched",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        },
+        {
+            "Name": "BuildingsFinishedLoading",
+            "RequiredFlags": [
+                {
+                    "RowName": "GameModeBuildingCheckComplete",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ],
+            "StateFlagToSetOnExecute": {
+                "RowName": "BuildingsFinishedLoading"
+            }
+        },
+        {
+            "Name": "LocalPlayerInitialized",
+            "RequiredFlags": [
+                {
+                    "RowName": "LocalPlayerInitialized",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        },
+        {
+            "Name": "PlayerTrackerInitialized",
+            "RequiredFlags": [
+                {
+                    "RowName": "PlayerTrackerInitialized",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+{
+    "RowStruct": "/Script/Icarus.TalentTree",
+    "Defaults": {
+        "DisplayName": "",
+        "BackgroundTexture": "None",
+        "Icon": "None",
+        "Archetype": {
+            "RowName": "None",
+            "DataTableName": "D_TalentArchetypes"
+        },
+        "FirstRank": {
+            "RowName": "None",
+            "DataTableName": "D_TalentRanks"
+        },
+        "RequiredLevel": 0
+    },
+    "Columns": [
+        {
+            "Name": "Archetype",
+            "Key": true,
+            "Cardinality": "Multiple",
+            "ForwardDeclare": "struct"
+        }
+    ],
+    "Rows": [
+        {
+            "Name": "Survival_Resources",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Resources-DisplayName\", \"Resources\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_Resources_Background.Survival_Resources_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextGrab.Icon_ContextGrab",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Survival_Exploration",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Exploration-DisplayName\", \"Exploration\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_Exploration_Background.Survival_Exploration_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Agility.Icon_Agility",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Bows",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Bows-DisplayName\", \"Bows\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Bow_Background.Combat_Bow_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Ranged.Icon_Ranged",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Spears",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Spears-DisplayName\", \"Spears\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Spear_Background.Combat_Spear_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSkin.Icon_ContextSkin",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Blades",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Blades-DisplayName\", \"Blades\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Blades_Background.Combat_Blades_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Bleeding.Icon_Bleeding",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Repairing",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Repairing-DisplayName\", \"Repairing\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Repairing_Background.Construction_Repairing_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Fuel.Icon_Fuel",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Tools",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Tools-DisplayName\", \"Tools\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Tools_Background.Construction_Tools_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextChop.Icon_ContextChop",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Building",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Building-DisplayName\", \"Building\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Building_Background.Construction_Building_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextMine.Icon_ContextMine",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Firearms",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Firearms-DisplayName\", \"Firearms\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Firearms_Background.Combat_Firearms_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Flaticons_Icons/003-axe.003-axe",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Blueprint_T1_Player",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Personal.Icon_TechTier_Personal",
+            "Archetype": {
+                "RowName": "Blueprint_Player"
+            }
+        },
+        {
+            "Name": "Blueprint_T2_Crafting",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_CraftingBench.Icon_TechTier_CraftingBench",
+            "Archetype": {
+                "RowName": "Blueprint_Crafting"
+            }
+        },
+        {
+            "Name": "Blueprint_T3_Machine",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_MachineBench.Icon_TechTier_MachineBench",
+            "Archetype": {
+                "RowName": "Blueprint_Machine"
+            }
+        },
+        {
+            "Name": "Blueprint_T4_Fabricator",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Fabricator.Icon_TechTier_Fabricator",
+            "Archetype": {
+                "RowName": "Blueprint_Fabricator"
+            }
+        },
+        {
+            "Name": "Survival_Hunting",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Hunting-DisplayName\", \"Hunting\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Hunting_Background.Construction_Hunting_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSkin.Icon_ContextSkin",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Survival_Produce",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Produce-DisplayName\", \"Cooking / Farming\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_CookingFarming_Background.Survival_CookingFarming_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextGrab.Icon_ContextGrab",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Solo_Player",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Solo_Player-DisplayName\", \"Solo\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Solo_Background.Solo_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Radar.Icon_Radar",
+            "Archetype": {
+                "RowName": "Solo"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Prospect",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect"
+            }
+        },
+        {
+            "Name": "Workshop",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Meta1.Icon_Meta1",
+            "Archetype": {
+                "RowName": "Workshop"
+            }
+        },
+        {
+            "Name": "Outpost",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Outpost"
+            }
+        }
+    ]
+}

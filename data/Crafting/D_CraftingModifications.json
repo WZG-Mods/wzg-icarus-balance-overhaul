@@ -1,0 +1,316 @@
+{
+    "RowStruct": "/Script/Icarus.CraftingModifications",
+    "Defaults": {
+        "Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "RequiredStat": []
+    },
+    "Rows": [
+        {
+            "Name": "Furnace_Smelting_Speed",
+            "Query": {
+                "RowName": "Any_Furnace"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedBenchSmeltingSpeed_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseSmeltingSpeed_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Building_Health",
+            "Query": {
+                "RowName": "Any_Building"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedBuildingMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Health",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedWoodBuildingMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Storage",
+            "Query": {
+                "RowName": "Any_DeployableStorage"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedDeployableStorageGenericSlots_+"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseGenericSlots_+"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Hedgehog",
+            "Query": {
+                "RowName": "Any_Hedgehog"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedHedgehogDamage_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseHedgehogDamage_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Lightning_Rod",
+            "Query": {
+                "RowName": "Any_LightningRod"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedLightningRodMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Extractor",
+            "Query": {
+                "RowName": "Any_Extractor"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedExtractorFuelUsage_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseFuelTransmutationResourceCost_+%"
+                    }
+                },
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedExtractorProcessingSpeed_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseCraftingSpeed_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Radar",
+            "Query": {
+                "RowName": "Any_Radar"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedRadarScanningSpeed_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseRadarScanningSpeed_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Pickaxe",
+            "Query": {
+                "RowName": "Any_Pickaxe"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedPickaxeMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Knife",
+            "Query": {
+                "RowName": "Any_Knife"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedKnifeFellingDamage_+"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseFellingDamage_+"
+                    }
+                },
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedKnifeMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Axe",
+            "Query": {
+                "RowName": "Any_Axe"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedAxeMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Bow",
+            "Query": {
+                "RowName": "Any_Bow"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedBowMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Spear",
+            "Query": {
+                "RowName": "Any_Spear"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedSpearMaximumHealth_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Campfire",
+            "Query": {
+                "RowName": "Any_Campfire"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCampfireEnergyTransmutationCost_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseEnergyTransmutationResourceCost_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Burn_Chance",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedWoodBuildingBurnChance_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseBurnChance_%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Wind_Resistance",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedWoodBuildingWindDamageResistance_%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseWindDamageResistance_%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Growth_Speed",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropGrowthSpeed_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BasePlantedCropGrowthSpeed_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Spoilage",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseInventorySpoilRate_+%"
+                    }
+                }
+            ]
+        }
+    ]
+}

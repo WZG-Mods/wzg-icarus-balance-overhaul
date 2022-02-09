@@ -1,0 +1,285 @@
+{
+    "RowStruct": "/Script/Icarus.ErrorCode",
+    "Defaults": {
+        "Code": "",
+        "Description": ""
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Error_Shared_InvalidProspectInfo",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidProspectInfo-Code\", \"Invalid Prospect Information - 001\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidProspectInfo-Description\", \"Invalid prospect information (from backend/session)\")"
+        },
+        {
+            "Name": "Error_Shared_InvalidProspectData",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidProspectData-Code\", \"Invalid Prospect Data - 002\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidProspectData-Description\", \"Invalid prospect data table row\")"
+        },
+        {
+            "Name": "Error_Shared_InvalidPlayerState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidPlayerState-Code\", \"Invalid Player State - 003\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidPlayerState-Description\", \"Invalid player controller player state\")"
+        },
+        {
+            "Name": "Error_Shared_InvalidSessionState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidSessionState-Code\", \"Invalid Unreal Session State - 004\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Shared_InvalidSessionState-Description\", \"Invalid Unreal session state when attempting JoinSession\")"
+        },
+        {
+            "Name": "Error_Session_FailedToCreateSession",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToCreateSession-Code\", \"Failed to Create Unreal Session - 005\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToCreateSession-Description\", \"Failed to create Unreal session when attempting CreateSession\")"
+        },
+        {
+            "Name": "Error_Session_FailedToJoinSession",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToJoinSession-Code\", \"Failed to Join Unreal Session - 006\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToJoinSession-Description\", \"Failed to join Unreal session when attempting JoinSession\")"
+        },
+        {
+            "Name": "Error_UpdateSession_FailedToUpdateSession",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_UpdateSession_FailedToUpdateSession-Code\", \"Failed to Update Unreal Session - 007\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_UpdateSession_FailedToUpdateSession-Description\", \"Failed to update Unreal session\")"
+        },
+        {
+            "Name": "Error_Session_FailedToFindHostedSession",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToFindHostedSession-Code\", \"Failed to find hosted Unreal session - 008\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToFindHostedSession-Description\", \"Failed to find Unreal session when attempting Join/Resume prospect\")"
+        },
+        {
+            "Name": "Error_Session_MismatchSessionGatewayAddress",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGatewayAddress-Code\", \"Matchmaking host mismatch - 009\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGatewayAddress-Description\", \"GatewayAddress of Unreal session and local differs (different server environments)\")"
+        },
+        {
+            "Name": "Error_Session_MismatchSessionGameVersion",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGameVersion-Code\", \"Game version mismatch - 010\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGameVersion-Description\", \"GameVersion of Unreal session and local differs (game created on different version)\")"
+        },
+        {
+            "Name": "Error_HostLobby_InvalidProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLobby_InvalidProspectState-Code\", \"Invalid prospect state - 011\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLobby_InvalidProspectState-Description\", \"Prospect is in an incompatible state when trying to host lobby\")"
+        },
+        {
+            "Name": "Error_HostLaunch_InvalidProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_InvalidProspectState-Code\", \"Invalid prospect state - 012\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_InvalidProspectState-Description\", \"Prospect is in an incompatible state when trying to launch as host\")"
+        },
+        {
+            "Name": "Error_HostLaunch_InvalidSessionState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_InvalidSessionState-Code\", \"Invalid session state - 013\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_InvalidSessionState-Description\", \"Unreal session is not in correct state to launch as host\")"
+        },
+        {
+            "Name": "Error_HostLaunch_FailedToInitialisePlayers",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToInitialisePlayers-Code\", \"Failed to initialize players - 014\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToInitialisePlayers-Description\", \"Failed to initialize players (i.e. missing host / malformed connected player state)\")"
+        },
+        {
+            "Name": "Error_HostLaunch_FailedToCreateProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToCreateProspect-Code\", \"Failed to create prospect - 015\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToCreateProspect-Description\", \"Failed to create prospect against backend (rpc error). Please try again\")"
+        },
+        {
+            "Name": "Error_HostLaunch_FailedToSetResourceSplit",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToSetResourceSplit-Code\", \"Failed to set resource split - 016\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_HostLaunch_FailedToSetResourceSplit-Description\", \"Failed to set resource split against backend (rpc error)\")"
+        },
+        {
+            "Name": "Error_Join_InvalidProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_InvalidProspectState-Code\", \"Invalid prospect state - 017\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_InvalidProspectState-Description\", \"Prospect is in an incompatible state when trying to join prospect/session\")"
+        },
+        {
+            "Name": "Error_Join_FailedToJoinProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_FailedToJoinProspect-Code\", \"Failed to join prospect - 018\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_FailedToJoinProspect-Description\", \"Failed to join prospect against backend (rpc error)\")"
+        },
+        {
+            "Name": "Error_Resume_InvalidProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_InvalidProspectState-Code\", \"Invalid prospect state - 019\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_InvalidProspectState-Description\", \"Prospect is in an incompatible state when trying to resume prospect/session\")"
+        },
+        {
+            "Name": "Error_Resume_FailedToResumeProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspect-Code\", \"Failed to resume prospect - 020\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspect-Description\", \"Failed to resume prospect against backend (rpc error)\")"
+        },
+        {
+            "Name": "Error_BP_ReadyUp_InvalidProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_BP_ReadyUp_InvalidProspectState-Code\", \"Invalid Prospect State - 021\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_BP_ReadyUp_InvalidProspectState-Description\", \"Prospect is in an incompatible state when trying to launch through UI\")"
+        },
+        {
+            "Name": "Error_CanJoin_FailedToJoin",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_CanJoin_FailedToJoin-Code\", \"Attempting Join Prospect Failed  - 022\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_CanJoin_FailedToJoin-Description\", \"Attempting Join Prospect Failed (rpc error)\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToUpdateProspectState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToUpdateProspectState-Code\", \"Failed to Update Prospect State - 023\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToUpdateProspectState-Description\", \"Failed to update prospect state after several attempts (rpc error)\")"
+        },
+        {
+            "Name": "Error_Runtime_InvalidHost",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_InvalidHost-Code\", \"Invalid Host - 024\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_InvalidHost-Description\", \"Invalid host attempted to update the prospect\")"
+        },
+        {
+            "Name": "Error_Runtime_ProspectUpdateTimedOut",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ProspectUpdateTimedOut-Code\", \"Prospect Update Timed Out - 025\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ProspectUpdateTimedOut-Description\", \"During runtime the time between successful prospect updates was too long (runtime error)\")"
+        },
+        {
+            "Name": "Error_Runtime_ClientFailedToInitialisePlayer",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ClientFailedToInitialisePlayer-Code\", \"Client Failed To Initialize Player - 026\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ClientFailedToInitialisePlayer-Description\", \"Failure was encountered when client tried to initialize player (runtime error)\")"
+        },
+        {
+            "Name": "Error_Launch_FailedToPackageLoadout",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Launch_FailedToPackageLoadout-Code\", \"Failed to Prepare Players Loadout - 027\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Launch_FailedToPackageLoadout-Description\", \"Failure was encountered when trying to prepare the players dropship and inventory (rpc error)\")"
+        },
+        {
+            "Name": "Error_Runtime_NetworkFailureConnectionLost",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_NetworkFailureConnectionLost-Code\", \"Network failure, lost connection to host - 028\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_NetworkFailureConnectionLost-Description\", \"Network failure, lost connection to host (P2P session error)\")"
+        },
+        {
+            "Name": "Error_Resume_FailedToResumeProspectSuccess",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectSuccess-Code\", \"Failed to resume prospect - 029\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectSuccess-Description\", \"Failed to resume prospect, response unsuccessful\")"
+        },
+        {
+            "Name": "Error_Resume_FailedToResumeProspectInvalidProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectInvalidProspect-Code\", \"Failed to resume prospect - 030\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectInvalidProspect-Description\", \"Failed to resume prospect, retrieved prospect invalid\")"
+        },
+        {
+            "Name": "Error_Resume_FailedToResumeProspectHostMigration",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectHostMigration-Code\", \"Failed to resume prospect - 031\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_FailedToResumeProspectHostMigration-Description\", \"Failed to resume prospect, host migration failed\")"
+        },
+        {
+            "Name": "Error_Claim_FailedToClaimProspectInvalidProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToClaimProspectInvalidProspect-Code\", \"Failed to claim Prospect - 032\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToClaimProspectInvalidProspect-Description\", \"Failed to Claim Prospect Invalid Prospect\")"
+        },
+        {
+            "Name": "Error_Claim_FailedToClaimProspectBackedError",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToClaimProspectBackedError-Code\", \"Failed to claim prospect - 033\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToClaimProspectBackedError-Description\", \"Failed to Claim Prospect (rpc error)\")"
+        },
+        {
+            "Name": "Error_SessionInvite_NoSelectedCharacter",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_SessionInvite_NoSelectedCharacter-Code\", \"Failed to join friend\\'s prospect - 034\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_SessionInvite_NoSelectedCharacter-Description\", \"Failed to join friend\\'s prospect, please have a character selected and try again\")"
+        },
+        {
+            "Name": "Error_Runtime_ProspectEndedUnknownReason",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ProspectEndedUnknownReason-Code\", \"Prospect ended for an unknown reason - 035\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_ProspectEndedUnknownReason-Description\", \"Prospect ended for an unknown reason\")"
+        },
+        {
+            "Name": "Error_Session_SessionNodeTimedOut",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_SessionNodeTimedOut-Code\", \"Session node timed out - 036\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_SessionNodeTimedOut-Description\", \"Session operations timed out for an unknown reason\")"
+        },
+        {
+            "Name": "Error_Session_KickedDuringFriendsCheck",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_KickedDuringFriendsCheck-Code\", \"Failed Friend Check - 037\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_KickedDuringFriendsCheck-Description\", \"You are not a valid friend of anyone currently in the prospect\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_GetPlayerCharacterProfileResultFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerCharacterProfileResultFailed-Code\", \"Failed To Initialize Player - 038\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerCharacterProfileResultFailed-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_CharacterLoadoutFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_CharacterLoadoutFailed-Code\", \"Failed To Initialize Player - 039\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_CharacterLoadoutFailed-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_InvalidPlayerState",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidPlayerState-Code\", \"Failed To Initialize Player - 040\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidPlayerState-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_InvalidChrSlot",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidChrSlot-Code\", \"Failed To Initialize Player - 041\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidChrSlot-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_InvalidPlayer",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidPlayer-Code\", \"Failed To Initialize Player - 042\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InvalidPlayer-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_InitialiseConnectedPlayerFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InitialiseConnectedPlayerFailed-Code\", \"Failed To Initialize Player - 043\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_InitialiseConnectedPlayerFailed-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Login_FailedAuthentication",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedAuthentication-Code\", \"Failed To Login - 044\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedAuthentication-Description\", \"Failure was encountered when trying to authenticate account. Please try again\")"
+        },
+        {
+            "Name": "Error_Login_VersionMisMatch",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_VersionMisMatch-Code\", \"Failed To Login - 045\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_VersionMisMatch-Description\", \"You are running an older version of the game! If you want to play online please update Icarus\")"
+        },
+        {
+            "Name": "Error_UpdateSession_GetProspectFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_UpdateSession_GetProspectFailed-Code\", \"Failed to UpdateSession, request to get prospect information failed - 046\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_UpdateSession_GetProspectFailed-Description\", \"Failure was encountered trying to update the unreal session with the most relevant prospect information\")"
+        },
+        {
+            "Name": "Error_Join_AlreadyAssociatedMember",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_AlreadyAssociatedMember-Code\", \"Failed to join prospect - 047\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Join_AlreadyAssociatedMember-Description\", \"Failed to join prospect, already have an associated character with the prospect. Please try resume using that character instead\")"
+        },
+        {
+            "Name": "Error_Resume_NotAssociatedMember",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_NotAssociatedMember-Code\", \"Failed to resume prospect - 048\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Resume_NotAssociatedMember-Description\", \"Failed to resume prospect, not an associated member of the prospect\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_GetPlayerUserProfileResultFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerUserProfileResultFailed-Code\", \"Failed To Initialize Player - 049\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerUserProfileResultFailed-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_FailedToInitialisePlayer_GetPlayerLoadoutFailed",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerLoadoutFailed-Code\", \"Failed To Retrieve Player Loadout - 050\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_FailedToInitialisePlayer_GetPlayerLoadoutFailed-Description\", \"Failure was encountered when trying to initialize player. Please try again\")"
+        },
+        {
+            "Name": "Error_Runtime_KickedByHostingPlayer",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_KickedByHostingPlayer-Code\", \"Kicked from prospect - 051\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_KickedByHostingPlayer-Description\", \"You were kicked from the prospect session by the hosting player\")"
+        },
+        {
+            "Name": "Error_Claim_FailedToFindOutpostSave",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToFindOutpostSave-Code\", \"Failed to host Outpost - 052\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Claim_FailedToFindOutpostSave-Description\", \"Could not find local save for this Outpost. Check for invalid characters in the filename (.<>:\\\"/\\\\|?*)\")"
+        },
+        {
+            "Name": "Error_Login_FailedToThirdParty",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedToThirdParty-Code\", \"Failed To Login - 053\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedToThirdParty-Description\", \"Steam is offline. Only offline play will be avaliable. Ensure you have launched the game through steam and you are connected to the internet. If this still fails ensure you are not running the game in \\'Run As Administrator\\' compatibility mode.\")"
+        },
+        {
+            "Name": "Error_Session_FailedToSetActiveProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToSetActiveProspect-Code\", \"Failed to set active prospect - 054\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToSetActiveProspect-Description\", \"Failure was encountered attempting to set the active prospect.\")"
+        },
+        {
+            "Name": "Error_Session_FailedToUpdateActiveProspect",
+            "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToUpdateActiveProspect-Code\", \"Failed to update active prospect - 055\")",
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_FailedToUpdateActiveProspect-Description\", \"Failure was encountered attempting to update the active prospect.\")"
+        }
+    ]
+}

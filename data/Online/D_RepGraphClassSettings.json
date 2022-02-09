@@ -1,0 +1,96 @@
+{
+    "RowStruct": "/Script/Icarus.RepGraphClassSettings",
+    "Defaults": {
+        "Description": "",
+        "DistancePriorityScale": 1,
+        "StarvationPriorityScale": 1,
+        "AccumulatedNetPriorityBias": 0,
+        "ReplicationPeriodFrame": 1,
+        "ActorChannelFrameTimeout": 4,
+        "NetCullDistance": 15000
+    },
+    "Rows": [
+        {
+            "Name": "Spatialize_Default",
+            "Description": "All default values"
+        },
+        {
+            "Name": "AlwaysRelevant_GameStateBase",
+            "Description": "Gamestate replication with highest priority",
+            "DistancePriorityScale": 0,
+            "AccumulatedNetPriorityBias": -3,
+            "ActorChannelFrameTimeout": 0,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "AlwaysRelevant_Default",
+            "Description": "No distance based priority settings or actor channel timeout",
+            "DistancePriorityScale": 0,
+            "ActorChannelFrameTimeout": 0,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "AlwaysRelevant_FLOD",
+            "Description": "FLOD specific replication settings",
+            "DistancePriorityScale": 0,
+            "AccumulatedNetPriorityBias": -2,
+            "ActorChannelFrameTimeout": 0,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "Spatialized_FLODTile",
+            "Description": "FLODTile specific replicaiton settings",
+            "StarvationPriorityScale": 0,
+            "AccumulatedNetPriorityBias": -1,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "Spatialized_LowFrequency",
+            "Description": "Lowered replication frequency",
+            "ReplicationPeriodFrame": 6
+        },
+        {
+            "Name": "Spatialized_LowFrequency_LowCull",
+            "Description": "Lowered NetCullDistance and replication frequency",
+            "ReplicationPeriodFrame": 6,
+            "NetCullDistance": 5000
+        },
+        {
+            "Name": "Spatialized_LowFrequency_HighCull",
+            "Description": "Increased NetCullDistance, decreased replication frequency",
+            "ReplicationPeriodFrame": 6,
+            "NetCullDistance": 50000
+        },
+        {
+            "Name": "AlwaysRelevant_ForMap",
+            "Description": "No distance based priority settings or actor channel timeout",
+            "DistancePriorityScale": 0,
+            "ReplicationPeriodFrame": 6,
+            "ActorChannelFrameTimeout": 0,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "Spatialized_LowFrequency_NPC",
+            "Description": "Lowered replication frequency, large net cull",
+            "ReplicationPeriodFrame": 3,
+            "NetCullDistance": 50000
+        },
+        {
+            "Name": "Spatialized_LowFrequency_Tree",
+            "Description": "Lowered replication frequency, large net cull",
+            "ReplicationPeriodFrame": 3,
+            "NetCullDistance": 50000
+        },
+        {
+            "Name": "Spatialized_LowFrequency_Item",
+            "Description": "Lowered replication frequency, average net cull",
+            "ReplicationPeriodFrame": 3
+        },
+        {
+            "Name": "Spatialized_HighFrequency_Building",
+            "Description": "High replication frequency, long distance cull",
+            "ReplicationPeriodFrame": 8,
+            "NetCullDistance": 100000
+        }
+    ]
+}

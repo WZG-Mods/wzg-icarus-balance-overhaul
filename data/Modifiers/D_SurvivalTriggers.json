@@ -1,0 +1,104 @@
+{
+    "RowStruct": "/Script/Icarus.SurvivalTriggers",
+    "Defaults": {
+        "Food": [],
+        "Water": [],
+        "Oxygen": [],
+        "Cold": {
+            "Modifier": {
+                "RowName": "None",
+                "DataTableName": "D_ModifierStates"
+            },
+            "Query": {
+                "RowName": "None",
+                "DataTableName": "D_TagQueries"
+            }
+        },
+        "Heat": {
+            "Modifier": {
+                "RowName": "None",
+                "DataTableName": "D_ModifierStates"
+            },
+            "Query": {
+                "RowName": "None",
+                "DataTableName": "D_TagQueries"
+            }
+        },
+        "Weight": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Player",
+            "Food": [
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Hungry",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0.10000000149011612
+                },
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Famished",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0
+                }
+            ],
+            "Water": [
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Thirsty",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0.10000000149011612
+                },
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Dehydrated",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0
+                }
+            ],
+            "Oxygen": [
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Disoriented",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0.10000000149011612
+                },
+                {
+                    "Modifier": {
+                        "RowName": "Affliction_Suffocation",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "PercentTrigger": 0
+                }
+            ],
+            "Cold": {
+                "Modifier": {
+                    "RowName": "Affliction_Cold"
+                },
+                "Query": {
+                    "RowName": "Is_Cold"
+                }
+            },
+            "Heat": {
+                "Modifier": {
+                    "RowName": "Affliction_Overheating"
+                },
+                "Query": {
+                    "RowName": "Is_Hot"
+                }
+            },
+            "Weight": {
+                "RowName": "Overburdened"
+            }
+        }
+    ]
+}

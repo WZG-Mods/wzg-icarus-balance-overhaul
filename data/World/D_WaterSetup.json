@@ -1,0 +1,60 @@
+{
+    "RowStruct": "/Script/Icarus.WaterSetup",
+    "Defaults": {
+        "Material": "None",
+        "Fish": [],
+        "FishDensity": 1,
+        "Sound": "None",
+        "IsInCave": false
+    },
+    "Rows": [
+        {
+            "Name": "Default",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT.MI_WaterRVT",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_03_Aggressive",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE"
+        },
+        {
+            "Name": "Cave_Calm",
+            "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_CalmCave.MI_Profile_CalmCave",
+            "FishDensity": 0.25,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
+            "IsInCave": true
+        },
+        {
+            "Name": "Cave_Glow",
+            "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_GlowyCave.MI_Profile_GlowyCave",
+            "FishDensity": 0.25,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
+            "IsInCave": true
+        },
+        {
+            "Name": "TutorialLake",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT.MI_WaterRVT",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE"
+        }
+    ]
+}

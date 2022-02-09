@@ -1,0 +1,45 @@
+{
+    "RowStruct": "/Script/Icarus.KeybindContext",
+    "Defaults": {
+        "DisplayName": "",
+        "SharedWithContexts": []
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Global",
+            "DisplayName": "NSLOCTEXT(\"D_KeybindContexts\", \"Global-DisplayName\", \"Global\")"
+        },
+        {
+            "Name": "Character",
+            "DisplayName": "NSLOCTEXT(\"D_KeybindContexts\", \"Character-DisplayName\", \"On Foot\")",
+            "SharedWithContexts": [
+                {
+                    "RowName": "Survival",
+                    "DataTableName": "D_KeybindContexts"
+                }
+            ]
+        },
+        {
+            "Name": "Weapons",
+            "DisplayName": "NSLOCTEXT(\"D_KeybindContexts\", \"Weapons-DisplayName\", \"Weapons\")",
+            "SharedWithContexts": [
+                {
+                    "RowName": "Survival",
+                    "DataTableName": "D_KeybindContexts"
+                },
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_KeybindContexts"
+                }
+            ]
+        },
+        {
+            "Name": "Survival",
+            "DisplayName": "NSLOCTEXT(\"D_KeybindContexts\", \"Survival-DisplayName\", \"In Prospect\")"
+        },
+        {
+            "Name": "Hidden"
+        }
+    ]
+}

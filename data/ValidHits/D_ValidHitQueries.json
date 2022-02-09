@@ -1,0 +1,151 @@
+{
+    "RowStruct": "/Script/Icarus.ValidHitQuery",
+    "Defaults": {
+        "HitSource": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "HitTarget": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "HitSuccessType": {
+            "RowName": "None",
+            "DataTableName": "D_ValidHitTypes"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Tree",
+            "HitSource": {
+                "RowName": "Deals_Felling_Damage"
+            },
+            "HitTarget": {
+                "RowName": "Any_Tree"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Voxel_T1",
+            "HitSource": {
+                "RowName": "T1_Pickaxe"
+            },
+            "HitTarget": {
+                "RowName": "T1_Voxel"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Voxel_T2",
+            "HitSource": {
+                "RowName": "T2_Pickaxe"
+            },
+            "HitTarget": {
+                "RowName": "T2_Voxel"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Foliage",
+            "HitSource": {
+                "RowName": "Any_Sickle"
+            },
+            "HitTarget": {
+                "RowName": "Any_Foliage"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "NPC",
+            "HitSource": {
+                "RowName": "Any_Weapon_Tool_Projectile"
+            },
+            "HitTarget": {
+                "RowName": "Any_NPC"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Combat"
+            }
+        },
+        {
+            "Name": "Player",
+            "HitSource": {
+                "RowName": "Any_Weapon_Tool_Projectile"
+            },
+            "HitTarget": {
+                "RowName": "Any_Player"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Combat"
+            }
+        },
+        {
+            "Name": "Building_On_Fire",
+            "HitSource": {
+                "RowName": "Any_Tool"
+            },
+            "HitTarget": {
+                "RowName": "Any_Building_On_Fire"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Building_Has_Snow",
+            "HitSource": {
+                "RowName": "Any_Tool"
+            },
+            "HitTarget": {
+                "RowName": "Any_Building_With_Snow"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Building_Projectile",
+            "HitSource": {
+                "RowName": "Any_Projectile"
+            },
+            "HitTarget": {
+                "RowName": "Any_Building"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Combat"
+            }
+        },
+        {
+            "Name": "Building_Damaged",
+            "HitSource": {
+                "RowName": "Building_Repair_Tool"
+            },
+            "HitTarget": {
+                "RowName": "Any_Building"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Tool"
+            }
+        },
+        {
+            "Name": "Deployable",
+            "HitSource": {
+                "RowName": "Any_Weapon_Tool_Projectile"
+            },
+            "HitTarget": {
+                "RowName": "Any_Deployable"
+            },
+            "HitSuccessType": {
+                "RowName": "HitSuccess_Combat"
+            }
+        }
+    ]
+}

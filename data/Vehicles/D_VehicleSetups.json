@@ -1,0 +1,2215 @@
+{
+    "RowStruct": "/Script/Icarus.VehicleSetup",
+    "Defaults": {
+        "VehicleSetupData": {
+            "Mass": 1500,
+            "bReverseAsBrake": true,
+            "DragCoefficient": 0.30000001192092896,
+            "ChassisWidth": 180,
+            "ChassisHeight": 140,
+            "InertiaTensorScale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+            },
+            "MinNormalizedTireLoad": 0,
+            "MinNormalizedTireLoadFiltered": 0.23080000281333923,
+            "MaxNormalizedTireLoad": 3,
+            "MaxNormalizedTireLoadFiltered": 3,
+            "ThresholdLongitudinalSpeed": 5,
+            "LowForwardSpeedSubStepCount": 3,
+            "HighForwardSpeedSubStepCount": 1,
+            "IdleBrakeInput": 0,
+            "StopThreshold": 10,
+            "WrongDirectionThreshold": 100,
+            "ThrottleInputRate": {
+                "RiseRate": 6,
+                "FallRate": 10
+            },
+            "BrakeInputRate": {
+                "RiseRate": 6,
+                "FallRate": 10
+            },
+            "HandbrakeInputRate": {
+                "RiseRate": 12,
+                "FallRate": 12
+            },
+            "SteeringInputRate": {
+                "RiseRate": 2.5,
+                "FallRate": 5
+            },
+            "AckermannAccuracy": 1,
+            "SteeringCurve": {
+                "EditorCurveData": {
+                    "Keys": [
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 0,
+                            "Value": 1,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        },
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 20,
+                            "Value": 0.8999999761581421,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        },
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 60,
+                            "Value": 0.800000011920929,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        },
+                        {
+                            "InterpMode": "RCIM_Linear",
+                            "TangentMode": "RCTM_Auto",
+                            "TangentWeightMode": "RCTWM_WeightedNone",
+                            "Time": 120,
+                            "Value": 0.699999988079071,
+                            "ArriveTangent": 0,
+                            "ArriveTangentWeight": 0,
+                            "LeaveTangent": 0,
+                            "LeaveTangentWeight": 0
+                        }
+                    ],
+                    "DefaultValue": 3.4028234663852886e+38,
+                    "PreInfinityExtrap": "RCCE_Constant",
+                    "PostInfinityExtrap": "RCCE_Constant"
+                },
+                "ExternalCurve": "None"
+            },
+            "WheelCollision": {
+                "ObjectType": "ECC_Vehicle",
+                "CollisionEnabled": "QueryAndPhysics",
+                "SleepFamily": "Normal",
+                "DOFMode": "Default",
+                "bUseCCD": false,
+                "bIgnoreAnalyticCollisions": false,
+                "bNotifyRigidBodyCollision": false,
+                "bLockTranslation": true,
+                "bLockRotation": true,
+                "bLockXTranslation": false,
+                "bLockYTranslation": false,
+                "bLockZTranslation": false,
+                "bLockXRotation": false,
+                "bLockYRotation": false,
+                "bLockZRotation": false,
+                "bOverrideMaxAngularVelocity": false,
+                "bOverrideMaxDepenetrationVelocity": false,
+                "bOverrideWalkableSlopeOnInstance": false,
+                "bInterpolateWhenSubStepping": true,
+                "CollisionProfileName": "Vehicle",
+                "PositionSolverIterationCount": 8,
+                "VelocitySolverIterationCount": 1,
+                "CollisionResponses": {
+                    "ResponseArray": [
+                        {
+                            "Channel": "PlayerView",
+                            "Response": "ECR_Block"
+                        },
+                        {
+                            "Channel": "ProjectilePrediction",
+                            "Response": "ECR_Block"
+                        }
+                    ]
+                },
+                "MaxDepenetrationVelocity": 0,
+                "MassInKgOverride": 100,
+                "LinearDamping": 0.009999999776482582,
+                "AngularDamping": 0,
+                "CustomDOFPlaneNormal": {
+                    "X": 0,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "COMNudge": {
+                    "X": 0,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "MassScale": 1,
+                "InertiaTensorScale": {
+                    "X": 1,
+                    "Y": 1,
+                    "Z": 1
+                },
+                "WalkableSlopeOverride": {
+                    "WalkableSlopeBehavior": "WalkableSlope_Default",
+                    "WalkableSlopeAngle": 0
+                },
+                "PhysMaterialOverride": "None",
+                "MaxAngularVelocity": 3600,
+                "CustomSleepThresholdMultiplier": 1,
+                "StabilizationThresholdMultiplier": 1,
+                "PhysicsBlendWeight": 0,
+                "bSimulatePhysics": false,
+                "bOverrideMass": false,
+                "bEnableGravity": true,
+                "bAutoWeld": false,
+                "bStartAwake": true,
+                "bGenerateWakeEvents": false,
+                "bUpdateMassWhenScaleChanges": false
+            },
+            "WheelSweepType": "SimpleAndComplex",
+            "WheelSetupData": [
+                {
+                    "SocketName": "None",
+                    "Offset": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "MaxSteerAngle": 70,
+                    "bAffectedByHandbrake": true,
+                    "SuspensionForceOffset": 0,
+                    "SuspensionMaxRaise": 10,
+                    "SuspensionMaxDrop": 10,
+                    "WheelData": {
+                        "ShapeRadius": 30,
+                        "ShapeWidth": 10,
+                        "Mass": 20,
+                        "MOIRatio": 0.5,
+                        "DampingRate": 0.25,
+                        "SteerAngle": 70,
+                        "MaxBrakeTorque": 1500,
+                        "MaxHandBrakeTorque": 3000
+                    },
+                    "TireData": {
+                        "TireConfig": "None",
+                        "TireThickness": 0,
+                        "LatStiffMaxLoad": 2,
+                        "LatStiffValue": 17,
+                        "LongStiffValue": 1000
+                    },
+                    "SuspensionData": {
+                        "SuspensionNaturalFrequency": 7,
+                        "SuspensionDampingRatio": 1
+                    }
+                },
+                {
+                    "SocketName": "None",
+                    "Offset": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "MaxSteerAngle": 70,
+                    "bAffectedByHandbrake": true,
+                    "SuspensionForceOffset": 0,
+                    "SuspensionMaxRaise": 10,
+                    "SuspensionMaxDrop": 10,
+                    "WheelData": {
+                        "ShapeRadius": 30,
+                        "ShapeWidth": 10,
+                        "Mass": 20,
+                        "MOIRatio": 0.5,
+                        "DampingRate": 0.25,
+                        "SteerAngle": 70,
+                        "MaxBrakeTorque": 1500,
+                        "MaxHandBrakeTorque": 3000
+                    },
+                    "TireData": {
+                        "TireConfig": "None",
+                        "TireThickness": 0,
+                        "LatStiffMaxLoad": 2,
+                        "LatStiffValue": 17,
+                        "LongStiffValue": 1000
+                    },
+                    "SuspensionData": {
+                        "SuspensionNaturalFrequency": 7,
+                        "SuspensionDampingRatio": 1
+                    }
+                },
+                {
+                    "SocketName": "None",
+                    "Offset": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "MaxSteerAngle": 70,
+                    "bAffectedByHandbrake": true,
+                    "SuspensionForceOffset": 0,
+                    "SuspensionMaxRaise": 10,
+                    "SuspensionMaxDrop": 10,
+                    "WheelData": {
+                        "ShapeRadius": 30,
+                        "ShapeWidth": 10,
+                        "Mass": 20,
+                        "MOIRatio": 0.5,
+                        "DampingRate": 0.25,
+                        "SteerAngle": 70,
+                        "MaxBrakeTorque": 1500,
+                        "MaxHandBrakeTorque": 3000
+                    },
+                    "TireData": {
+                        "TireConfig": "None",
+                        "TireThickness": 0,
+                        "LatStiffMaxLoad": 2,
+                        "LatStiffValue": 17,
+                        "LongStiffValue": 1000
+                    },
+                    "SuspensionData": {
+                        "SuspensionNaturalFrequency": 7,
+                        "SuspensionDampingRatio": 1
+                    }
+                },
+                {
+                    "SocketName": "None",
+                    "Offset": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "MaxSteerAngle": 70,
+                    "bAffectedByHandbrake": true,
+                    "SuspensionForceOffset": 0,
+                    "SuspensionMaxRaise": 10,
+                    "SuspensionMaxDrop": 10,
+                    "WheelData": {
+                        "ShapeRadius": 30,
+                        "ShapeWidth": 10,
+                        "Mass": 20,
+                        "MOIRatio": 0.5,
+                        "DampingRate": 0.25,
+                        "SteerAngle": 70,
+                        "MaxBrakeTorque": 1500,
+                        "MaxHandBrakeTorque": 3000
+                    },
+                    "TireData": {
+                        "TireConfig": "None",
+                        "TireThickness": 0,
+                        "LatStiffMaxLoad": 2,
+                        "LatStiffValue": 17,
+                        "LongStiffValue": 1000
+                    },
+                    "SuspensionData": {
+                        "SuspensionNaturalFrequency": 7,
+                        "SuspensionDampingRatio": 1
+                    }
+                }
+            ],
+            "NoTireConfig": "None"
+        },
+        "Engines": [
+            {
+                "Type": "Engine",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Gearboxes": [
+            {
+                "Type": "Gearbox",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Drivetrains": [
+            {
+                "Type": "Drivetrain",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Fueltanks": [
+            {
+                "Type": "Fueltank",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Wheels": [
+            {
+                "Type": "Wheel",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Wheel",
+                "TypeIndex": 1,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Wheel",
+                "TypeIndex": 2,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Wheel",
+                "TypeIndex": 3,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Suspensions": [
+            {
+                "Type": "Suspension",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Suspension",
+                "TypeIndex": 1,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Suspension",
+                "TypeIndex": 2,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Suspension",
+                "TypeIndex": 3,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ],
+        "Tires": [
+            {
+                "Type": "Tire",
+                "TypeIndex": 0,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Tire",
+                "TypeIndex": 1,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Tire",
+                "TypeIndex": 2,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            },
+            {
+                "Type": "Tire",
+                "TypeIndex": 3,
+                "SocketName": "None",
+                "SocketOffset": {
+                    "Rotation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0,
+                        "W": 1
+                    },
+                    "Translation": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "Scale3D": {
+                        "X": 1,
+                        "Y": 1,
+                        "Z": 1
+                    }
+                },
+                "DefaultItem": {
+                    "RowName": "None",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            }
+        ]
+    },
+    "Rows": [
+        {
+            "Name": "Test_Vehicle_Rover",
+            "VehicleSetupData": {
+                "DragCoefficient": 0.20000000298023224,
+                "ChassisWidth": 300,
+                "ChassisHeight": 250,
+                "ThrottleInputRate": {
+                    "RiseRate": 0.5
+                },
+                "WheelCollision": {
+                    "CollisionResponses": {
+                        "ResponseArray": []
+                    }
+                },
+                "WheelSetupData": [
+                    {
+                        "SocketName": "J_L_F_Wheel_Soc",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 35,
+                        "bAffectedByHandbrake": false,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "J_R_F_Wheel_Soc",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 35,
+                        "bAffectedByHandbrake": false,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "J_L_R_Wheel_Soc",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "J_R_R_Wheel_Soc",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    }
+                ],
+                "NoTireConfig": "TireConfig'/Game/BP/Vehicles/NoTireConfig.NoTireConfig'"
+            },
+            "Engines": [
+                {
+                    "Type": "Engine",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_Engine",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Engine",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Gearboxes": [
+                {
+                    "Type": "Gearbox",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_Gearbox",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Gearbox",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Drivetrains": [
+                {
+                    "Type": "Drivetrain",
+                    "TypeIndex": 0,
+                    "SocketName": "DriveShaft_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Drivetrain",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Fueltanks": [
+                {
+                    "Type": "Fueltank",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_Fueltank",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Fueltank",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Wheels": [
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 0,
+                    "SocketName": "J_L_F_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Rover_Wheel_Standard",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 1,
+                    "SocketName": "J_R_F_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Rover_Wheel_Standard",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 2,
+                    "SocketName": "J_L_R_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Rover_Wheel_Standard",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 3,
+                    "SocketName": "J_R_R_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Rover_Wheel_Standard",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Suspensions": [
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 0,
+                    "SocketName": "J_L_F_Suspension_Top",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 1,
+                    "SocketName": "J_R_F_Suspension_Top",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": -1.1368682416908887e-13,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 2,
+                    "SocketName": "J_L_R_Suspension_Top",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 3,
+                    "SocketName": "J_R_R_Suspension_Top",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Tires": [
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 0,
+                    "SocketName": "J_L_F_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 1,
+                    "SocketName": "J_R_F_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 2,
+                    "SocketName": "J_L_R_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 3,
+                    "SocketName": "J_R_R_Wheel_Soc",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Test_Trailer",
+            "VehicleSetupData": {
+                "DragCoefficient": 0.20000000298023224,
+                "ChassisWidth": 300,
+                "ChassisHeight": 250,
+                "StopThreshold": 0,
+                "WheelCollision": {
+                    "CollisionResponses": {
+                        "ResponseArray": []
+                    }
+                },
+                "WheelSetupData": [
+                    {
+                        "SocketName": "L_wheel_JNT",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "R_wheel_JNT",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 20,
+                        "SuspensionMaxDrop": 20,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    }
+                ],
+                "NoTireConfig": "TireConfig'/Game/BP/Vehicles/NoTireConfig.NoTireConfig'"
+            },
+            "Engines": [],
+            "Gearboxes": [],
+            "Drivetrains": [],
+            "Fueltanks": [],
+            "Wheels": [
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 0,
+                    "SocketName": "L_wheel_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Wheel_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 1,
+                    "SocketName": "R_wheel_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Wheel_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Suspensions": [
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 0,
+                    "SocketName": "L_suspension_base_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 1,
+                    "SocketName": "R_suspension_base_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": -1.1368682416908887e-13,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Suspension",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Tires": [
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 0,
+                    "SocketName": "R_wheel_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 1,
+                    "SocketName": "R_wheel_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 0.4399999976158142,
+                            "Y": 0.4399999976158142,
+                            "Z": 0.4399999976158142
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_Tire_1",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "BackBuggy",
+            "VehicleSetupData": {
+                "Mass": 500,
+                "DragCoefficient": 0.20000000298023224,
+                "ChassisWidth": 80,
+                "ChassisHeight": 90,
+                "WheelCollision": {
+                    "CollisionResponses": {
+                        "ResponseArray": []
+                    }
+                },
+                "WheelSetupData": [
+                    {
+                        "SocketName": "SOCKET_F_L_Wheel",
+                        "Offset": {
+                            "X": 0,
+                            "Y": -10,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 30,
+                        "bAffectedByHandbrake": false,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 10,
+                        "SuspensionMaxDrop": 8,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "SOCKET_F_R_Wheel",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 10,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 30,
+                        "bAffectedByHandbrake": false,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 10,
+                        "SuspensionMaxDrop": 8,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "SOCKET_R_L_Wheel",
+                        "Offset": {
+                            "X": 0,
+                            "Y": -10,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 10,
+                        "SuspensionMaxDrop": 8,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    },
+                    {
+                        "SocketName": "SOCKET_R_R_Wheel",
+                        "Offset": {
+                            "X": 0,
+                            "Y": 10,
+                            "Z": 0
+                        },
+                        "MaxSteerAngle": 0,
+                        "bAffectedByHandbrake": true,
+                        "SuspensionForceOffset": 0,
+                        "SuspensionMaxRaise": 10,
+                        "SuspensionMaxDrop": 8,
+                        "WheelData": {
+                            "ShapeRadius": 30,
+                            "ShapeWidth": 10,
+                            "Mass": 20,
+                            "MOIRatio": 0.5,
+                            "DampingRate": 0.25,
+                            "SteerAngle": 70,
+                            "MaxBrakeTorque": 1500,
+                            "MaxHandBrakeTorque": 3000
+                        },
+                        "TireData": {
+                            "TireConfig": "None",
+                            "TireThickness": 0,
+                            "LatStiffMaxLoad": 2,
+                            "LatStiffValue": 17,
+                            "LongStiffValue": 1000
+                        },
+                        "SuspensionData": {
+                            "SuspensionNaturalFrequency": 7,
+                            "SuspensionDampingRatio": 1
+                        }
+                    }
+                ],
+                "NoTireConfig": "TireConfig'/Game/BP/Vehicles/NoTireConfig.NoTireConfig'"
+            },
+            "Engines": [
+                {
+                    "Type": "Engine",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_Engine",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Engine",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Gearboxes": [
+                {
+                    "Type": "Gearbox",
+                    "TypeIndex": 0,
+                    "SocketName": "root_JNT",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Gearbox",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Drivetrains": [
+                {
+                    "Type": "Drivetrain",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_DriveTrain",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Drivetrain",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Fueltanks": [
+                {
+                    "Type": "Fueltank",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_Fueltank",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Fueltank",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Wheels": [
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_F_L_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Wheel",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 1,
+                    "SocketName": "SOCKET_F_R_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Wheel",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 2,
+                    "SocketName": "SOCKET_R_L_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Wheel",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Wheel",
+                    "TypeIndex": 3,
+                    "SocketName": "SOCKET_R_R_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Wheel",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Suspensions": [
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_F_L_Suspension",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Suspension_F",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 1,
+                    "SocketName": "SOCKET_F_R_Suspension",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Suspension_F",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 2,
+                    "SocketName": "SOCKET_R_L_Suspension",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Suspension_R",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Suspension",
+                    "TypeIndex": 3,
+                    "SocketName": "SOCKET_R_R_Suspension",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Suspension_R",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ],
+            "Tires": [
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 0,
+                    "SocketName": "SOCKET_F_L_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Tire",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 1,
+                    "SocketName": "SOCKET_F_R_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Tire",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 2,
+                    "SocketName": "SOCKET_R_L_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Tire",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                },
+                {
+                    "Type": "Tire",
+                    "TypeIndex": 3,
+                    "SocketName": "SOCKET_R_R_Wheel",
+                    "SocketOffset": {
+                        "Rotation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0,
+                            "W": 1
+                        },
+                        "Translation": {
+                            "X": 0,
+                            "Y": 0,
+                            "Z": 0
+                        },
+                        "Scale3D": {
+                            "X": 1,
+                            "Y": 1,
+                            "Z": 1
+                        }
+                    },
+                    "DefaultItem": {
+                        "RowName": "Vehicle_BackBuggy_Tire",
+                        "DataTableName": "D_ItemTemplate"
+                    }
+                }
+            ]
+        }
+    ]
+}

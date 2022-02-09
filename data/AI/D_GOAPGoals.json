@@ -1,0 +1,296 @@
+{
+    "RowStruct": "/Script/Icarus.GOAPGoal",
+    "Defaults": {
+        "Description": "None",
+        "State": {
+            "Properties": []
+        },
+        "Priority": 10,
+        "bIsRepeatable": false,
+        "GoalBP": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Run_For_Safety",
+            "Description": "Run_For_Safety",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Scared",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 3,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_RunForSafety.BP_IcarusGOAPGoal_RunForSafety_C'"
+        },
+        {
+            "Name": "Eliminate_Threat",
+            "Description": "Eliminate_Threat",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Scared",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 4,
+            "bIsRepeatable": true,
+            "GoalBP": "Class'/Script/Icarus.IcarusGOAPGoal'"
+        },
+        {
+            "Name": "Rest",
+            "Description": "Rest",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Tired",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 7,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_Rest.BP_IcarusGOAPGoal_Rest_C'"
+        },
+        {
+            "Name": "Satisfy_Thirst",
+            "Description": "Satisfy_Thirst",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Thirsty",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 7,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_SatisfyThirst.BP_IcarusGOAPGoal_SatisfyThirst_C'"
+        },
+        {
+            "Name": "Satisfy_Hunger",
+            "Description": "Satisfy_Hunger",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Hungry",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 7,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_SatisfyHunger.BP_IcarusGOAPGoal_SatisfyHunger_C'"
+        },
+        {
+            "Name": "Be_Cautious",
+            "Description": "Be_Cautious",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Cautious",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 5,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_BeCautious.BP_IcarusGOAPGoal_BeCautious_C'"
+        },
+        {
+            "Name": "Wander",
+            "Description": "Wander",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Wander",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": true
+                    }
+                ]
+            },
+            "Priority": 11,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_Wander.BP_IcarusGOAPGoal_Wander_C'"
+        },
+        {
+            "Name": "Kill_Assailant",
+            "Description": "Kill_Assailant",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Angry",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 2,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_Attack.BP_IcarusGOAPGoal_Attack_C'"
+        },
+        {
+            "Name": "Find_Company",
+            "Description": "Find_Company",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Lonely",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 4,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_FindCompany.BP_IcarusGOAPGoal_FindCompany_C'"
+        },
+        {
+            "Name": "Warn_Aggressor",
+            "Description": "Warn_Aggressor",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Protective",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 5,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_WarnAggressor.BP_IcarusGOAPGoal_WarnAggressor_C'"
+        },
+        {
+            "Name": "Return_to_Anchor",
+            "Description": "Return_to_Anchor",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Distant",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 0,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_ReturnToAnchor.BP_IcarusGOAPGoal_ReturnToAnchor_C'"
+        },
+        {
+            "Name": "Satisfy_Attraction",
+            "Description": "Satisfy_Attraction",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Attracted",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 6,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_SatisfyAttraction.BP_IcarusGOAPGoal_SatisfyAttraction_C'"
+        },
+        {
+            "Name": "Follow_Pack_Leader",
+            "Description": "Satisfy_Attraction",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Pack_Follower_Away",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 3,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_FollowPackLeader.BP_IcarusGOAPGoal_FollowPackLeader_C'"
+        },
+        {
+            "Name": "Stalk_Pack_Target",
+            "Description": "Stalk_Target",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Stalk_Target_Nearby",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": true
+                    }
+                ]
+            },
+            "Priority": 3,
+            "bIsRepeatable": true,
+            "GoalBP": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_StalkTarget.BP_IcarusGOAPGoal_StalkTarget_C'"
+        },
+        {
+            "Name": "Self_Preserve",
+            "Description": "Self_Preserve",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "WantsToRecover",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 0,
+            "GoalBP": "Class'/Script/Icarus.IcarusGOAPGoal'"
+        },
+        {
+            "Name": "Emerge_From_Retreat",
+            "Description": "Emerge_From_Retreat",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "HasRetreated",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 1,
+            "GoalBP": "Class'/Script/Icarus.IcarusGOAPGoal'"
+        }
+    ]
+}
