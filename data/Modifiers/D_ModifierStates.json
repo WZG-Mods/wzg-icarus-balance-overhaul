@@ -3560,7 +3560,10 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_GreenTea_Modifier-ModifierDescription\", \"Keeps you warm, boosts health.\")",
             "GrantedStats": {
                 "(Value=\"BaseHealthRegen_+%\")": 25,
-                "(Value=\"BaseColdResistance_%\")": 10
+				"(Value=\"BaseWaterConsumption_+%\")": -25,
+				"(Value=\"BaseMaximumStamina_+%\")": 50,
+                "(Value=\"BaseStaminaRegen_+%\")": 50,
+                "(Value=\"BaseHeatResistance_%\")": 25
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
@@ -3571,8 +3574,10 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_WildTea_Modifier-ModifierName\", \"Gorse Tea\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_WildTea_Modifier-ModifierDescription\", \"Keeps you warm, slows thirst.\")",
             "GrantedStats": {
-                "(Value=\"BaseWaterConsumption_+%\")": -25,
-                "(Value=\"BaseColdResistance_%\")": 10
+                "(Value=\"BaseWaterConsumption_+%\")": -30,
+				"(Value=\"BaseFoodConsumption_+%\")": -10,
+				"(Value=\"BaseHealthRegen_+%\")": 25,
+                "(Value=\"BaseColdResistance_%\")": 15
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
@@ -3583,7 +3588,9 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Cocoa_Modifier-ModifierName\", \"Hot Cocoa\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Cocoa_Modifier-ModifierDescription\", \"Keeps you warm, slows hunger.\")",
             "GrantedStats": {
-                "(Value=\"BaseFoodConsumption_+%\")": -25,
+                "(Value=\"BaseFoodConsumption_+%\")": -30,
+				"(Value=\"BaseWaterConsumption_+%\")": -10,
+				"(Value=\"BaseHealthRegen_+%\")": 25,
                 "(Value=\"BaseColdResistance_%\")": 25
             },
             "MergeType": "Replace",
@@ -3595,9 +3602,10 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Coffee_Modifier-ModifierName\", \"Hot Coffee\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Coffee_Modifier-ModifierDescription\", \"Keeps you warm, boosts energy.\")",
             "GrantedStats": {
-                "(Value=\"BaseColdResistance_%\")": 10,
-                "(Value=\"BaseMaximumStamina_+%\")": 10,
-                "(Value=\"BaseStaminaRegen_+%\")": 10
+                "(Value=\"BaseMaximumStamina_+%\")": 50,
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+				"(Value=\"BaseWaterConsumption_+%\")": 15,
+				"(Value=\"BaseColdResistance_%\")": 25
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
