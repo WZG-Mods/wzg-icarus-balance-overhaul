@@ -16688,6 +16688,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseKnifeCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -19206,41 +19211,6 @@
                     "DynamicProperties": []
                 }
             ]
-        },
-        {
-            "Name": "Faction_Mission_Drill",
-            "Requirement": {
-                "RowName": "Faction_Mission_Drill"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Machining_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Refined_Metal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Faction_Mission_Drill",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "MachiningBench"
-            }
         },
         {
             "Name": "Platinum_Knife",
@@ -23155,6 +23125,126 @@
             "Audio": {
                 "RowName": "SkinningBench"
             }
+        },
+        {
+            "Name": "Deep_Mining_Drill_Biofuel",
+            "Requirement": {
+                "RowName": "Deep_Mining_Drill_Biofuel"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Copper",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 24,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Deep_Mining_Drill_Biofuel",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ]
+        },
+        {
+            "Name": "Deep_Mining_Drill_Electric",
+            "Requirement": {
+                "RowName": "Deep_Mining_Drill_Electric"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Carbon_Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Deep_Mining_Drill_Electric",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ]
         }
     ]
 }
