@@ -183,11 +183,11 @@
             }
         },
         {
-            "Name": "Backpack",
+            "Name": "Any_Utility",
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Backpack"
+                        "TagName": "Item.Utility"
                     }
                 ],
                 "QueryTokenStream": [
@@ -198,7 +198,7 @@
                     0
                 ],
                 "UserDescription": "Any Item that needs to be carried on the players back",
-                "AutoDescription": " ANY( Item.Backpack )"
+                "AutoDescription": " ANY( Item.Utility )"
             }
         },
         {
@@ -765,28 +765,20 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Backpack"
-                    },
-                    {
-                        "TagName": "Item.Meta"
+                        "TagName": "Item.Utility"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    6,
-                    1,
                     5,
-                    2,
-                    2,
                     1,
-                    0,
                     3,
                     1,
-                    1
+                    0
                 ],
                 "UserDescription": "General Inventory Slot",
-                "AutoDescription": " NONE(  ALL(  ALL( Item.Backpack ),  NONE( Item.Meta ) ) )"
+                "AutoDescription": " ALL(  NONE( Item.Utility ) )"
             }
         },
         {
@@ -2600,25 +2592,75 @@
             }
         },
         {
-            "Name": "Any_Meta_Backpack",
+            "Name": "Any_Backpack",
             "Query": {
                 "TagDictionary": [
                     {
                         "TagName": "Item.Backpack"
-                    },
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Backpack )"
+            }
+        },
+        {
+            "Name": "Any_Light",
+            "Query": {
+                "TagDictionary": [
                     {
-                        "TagName": "Item.Meta"
+                        "TagName": "Item.Upgrade.Vision"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     2,
-                    2,
-                    0,
-                    1
+                    1,
+                    0
                 ],
-                "AutoDescription": " ALL( Item.Backpack, Item.Meta )"
+                "AutoDescription": " ALL( Item.Upgrade.Vision )"
+            }
+        },
+        {
+            "Name": "Any_UtilityItem",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Utility )"
+            }
+        },
+        {
+            "Name": "Any_UtilityItem_ShowBackpack",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Utility.ShowBackpack )"
             }
         }
     ]

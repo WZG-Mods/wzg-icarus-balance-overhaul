@@ -51,12 +51,13 @@
             "FlySound": "None",
             "ImpactSound": "None"
         },
-        "bUseActorPooling": false
+        "bUseActorPooling": false,
+        "OnHitAINoiseEventRange": 300
     },
     "Rows": [
         {
             "Name": "Fire_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 15,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -78,7 +79,7 @@
         },
         {
             "Name": "Flare_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_FlareArrow.BP_BallisticBehaviour_FlareArrow_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_FlareArrow.BP_BallisticBehaviour_FlareArrow_C",
             "Damage": 15,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -87,8 +88,7 @@
             "Weight": 0.20000000298023224,
             "GravityScale": 0.5,
             "AllowPickupAfterSettle": false,
-            "TrailParticle": "/Game/ThirdPartyAssets/StarterContent/Particles/P_Flare_Smoke.P_Flare_Smoke",
-            "BreakChance": 1,
+            "BreakChance": 0,
             "ProjectileBounceSettings": {
                 "bBounceAngleAffectsFriction": false,
                 "Bounciness": 0.6000000238418579,
@@ -96,7 +96,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_FireArrow_BallisticPhysicsAsset.SK_ARR_FireArrow_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_FlareArrow_BallisticPhysicsAsset.SK_ARR_FlareArrow_BallisticPhysicsAsset",
             "SpawnPositionOffset": {
                 "X": 94
             },
@@ -107,7 +107,7 @@
         },
         {
             "Name": "Stone_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 35,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -134,7 +134,7 @@
         },
         {
             "Name": "Steel_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 35,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -161,7 +161,7 @@
         },
         {
             "Name": "Flint_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 70,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -188,7 +188,7 @@
         },
         {
             "Name": "Bone_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 60,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -215,7 +215,7 @@
         },
         {
             "Name": "Aluminium_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 80,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -242,7 +242,7 @@
         },
         {
             "Name": "Titanium_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 90,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -269,7 +269,7 @@
         },
         {
             "Name": "Carbon_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 90,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -296,7 +296,7 @@
         },
         {
             "Name": "Composite_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 100,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -323,7 +323,7 @@
         },
         {
             "Name": "Meta_Arrow_Shengong",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 70,
             "DamageVariationPercentage": 5,
             "bCanKillCam": true,
@@ -350,8 +350,8 @@
         },
         {
             "Name": "Meta_Arrow_Inaris",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
-            "Damage": 75,
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 80,
             "DamageVariationPercentage": 5,
             "bCanKillCam": true,
             "Weight": 0.10000000149011612,
@@ -377,7 +377,7 @@
         },
         {
             "Name": "Meta_Arrow_Printed",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 70,
             "DamageVariationPercentage": 5,
             "bCanKillCam": true,
@@ -404,7 +404,7 @@
         },
         {
             "Name": "Metal_Bolt",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 90,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -431,7 +431,7 @@
         },
         {
             "Name": "Copper_Bolt",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 95,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -458,7 +458,7 @@
         },
         {
             "Name": "Steel_Bolt",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 100,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -485,7 +485,7 @@
         },
         {
             "Name": "Steel_Bolt_variationA",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 100,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -512,7 +512,7 @@
         },
         {
             "Name": "Platinum_Bolt",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 110,
             "DamageVariationPercentage": 5,
             "bCanKillCam": true,
@@ -539,7 +539,7 @@
         },
         {
             "Name": "Titanium_Bolt",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 120,
             "DamageVariationPercentage": 5,
             "bCanKillCam": true,
@@ -566,7 +566,7 @@
         },
         {
             "Name": "Wood_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 110,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -593,7 +593,7 @@
         },
         {
             "Name": "Bone_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 225,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -620,7 +620,7 @@
         },
         {
             "Name": "Metal_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 340,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -647,7 +647,7 @@
         },
         {
             "Name": "Titanium_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 340,
             "DamageVariationPercentage": 5,
             "bHomingProjectile": false,
@@ -674,7 +674,7 @@
         },
         {
             "Name": "Platinum_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 340,
             "DamageVariationPercentage": 5,
             "bHomingProjectile": false,
@@ -701,7 +701,7 @@
         },
         {
             "Name": "Steel_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 360,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -728,7 +728,7 @@
         },
         {
             "Name": "Steel_Spear_variationA",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 360,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -755,7 +755,7 @@
         },
         {
             "Name": "Carbon_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 440,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -782,7 +782,7 @@
         },
         {
             "Name": "Composite_Spear",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 600,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -809,7 +809,7 @@
         },
         {
             "Name": "Meta_Spear_Printed",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 110,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -836,7 +836,7 @@
         },
         {
             "Name": "Dev_Fireball",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 5,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -856,7 +856,7 @@
         },
         {
             "Name": "Shell_Buckshot",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
             "bUnbreakableDuringKillCam": false,
@@ -875,7 +875,7 @@
         },
         {
             "Name": "Frag_Grenade",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -897,7 +897,7 @@
         },
         {
             "Name": "Smoke_Grenade",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -919,7 +919,7 @@
         },
         {
             "Name": "Knife_Stone",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 28,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -946,7 +946,7 @@
         },
         {
             "Name": "Knife_Bone",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 32,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -973,7 +973,7 @@
         },
         {
             "Name": "Knife_Metal",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 46,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1000,7 +1000,7 @@
         },
         {
             "Name": "Meta_Knife_Inaris",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 46,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1027,7 +1027,7 @@
         },
         {
             "Name": "Knife_Titanium",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 60,
             "DamageVariationPercentage": 5,
             "bHomingProjectile": false,
@@ -1054,7 +1054,7 @@
         },
         {
             "Name": "Knife_Platinum",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 60,
             "DamageVariationPercentage": 5,
             "bHomingProjectile": false,
@@ -1081,7 +1081,7 @@
         },
         {
             "Name": "Knife_Combat",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 65,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1108,7 +1108,7 @@
         },
         {
             "Name": "Knife_MetaAlpha",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 100,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1135,7 +1135,7 @@
         },
         {
             "Name": "Torch",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 1,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1151,7 +1151,7 @@
         },
         {
             "Name": "Rifle_Round",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
             "bCanKillCam": true,
@@ -1170,7 +1170,7 @@
         },
         {
             "Name": "Orbital_Strike",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -1187,7 +1187,7 @@
         },
         {
             "Name": "Collision_Projectile",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 1,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1215,7 +1215,7 @@
         },
         {
             "Name": "Fire_Whacker",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 1,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1248,7 +1248,7 @@
         },
         {
             "Name": "Axe_Stone",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1276,7 +1276,7 @@
         },
         {
             "Name": "Axe_Metal",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1304,7 +1304,7 @@
         },
         {
             "Name": "Axe_Meta_Inaris",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1332,7 +1332,7 @@
         },
         {
             "Name": "Axe_Platinum",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1360,7 +1360,7 @@
         },
         {
             "Name": "Axe_Meta",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1388,7 +1388,7 @@
         },
         {
             "Name": "Axe_Titanium",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1416,7 +1416,7 @@
         },
         {
             "Name": "WaterBomb",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 1,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1426,7 +1426,7 @@
             "GravityScale": 0.5,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_ExtinguishFire_Splash.BP_Payload_ExtinguishFire_Splash_C",
             "TrailParticle": "/Game/Fx/Particles/P_ArrowTrail.P_ArrowTrail",
-            "BreakChance": 100,
+            "BreakChance": 1,
             "DurabilityDamage": 100000,
             "PostDeployLifetime": 120,
             "ProjectileBounceSettings": {
@@ -1447,7 +1447,7 @@
         },
         {
             "Name": "Poison_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 15,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -1456,7 +1456,7 @@
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Poison.BP_Payload_Poison_C",
             "PayloadDeploymentType": "OnBounceImmediate",
             "TrailParticle": "/Game/Fx/Particles/P_ArrowSmokeTrail.P_ArrowSmokeTrail",
-            "BreakChance": 100,
+            "BreakChance": 1,
             "DurabilityDamage": 100,
             "PostDeployLifetime": 60,
             "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_Poison_BallisticPhysicsAsset.SK_ARR_Poison_BallisticPhysicsAsset",
@@ -1470,7 +1470,7 @@
         },
         {
             "Name": "Axe_Steel",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1498,7 +1498,7 @@
         },
         {
             "Name": "SK_AXE_Steel_variationA",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1526,7 +1526,7 @@
         },
         {
             "Name": "Steel_Knife",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1553,7 +1553,7 @@
         },
         {
             "Name": "Steel_Knife_variationA",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1580,7 +1580,7 @@
         },
         {
             "Name": "Rifle_Round_Incendiary",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
             "bCanKillCam": true,
@@ -1601,7 +1601,7 @@
         },
         {
             "Name": "Sandworm_Spit",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 10,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1628,7 +1628,7 @@
         },
         {
             "Name": "Sandworm_Spit_Large",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 50,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1655,7 +1655,7 @@
         },
         {
             "Name": "Knife_Worm",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 32,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1682,7 +1682,7 @@
         },
         {
             "Name": "Spear_Worm",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 225,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1709,7 +1709,7 @@
         },
         {
             "Name": "Worm_Arrow",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 60,
             "DamageVariationPercentage": 10,
             "bCanKillCam": true,
@@ -1736,7 +1736,7 @@
         },
         {
             "Name": "Sandworm_Spit_Multi",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 10,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1763,7 +1763,7 @@
         },
         {
             "Name": "Cave_worm_Spit",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 10,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
@@ -1790,7 +1790,7 @@
         },
         {
             "Name": "Meta_Spear_Shengong",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 110,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1817,7 +1817,7 @@
         },
         {
             "Name": "Meta_Spear_Inaris",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 110,
             "DamageVariationPercentage": 10,
             "bHomingProjectile": false,
@@ -1844,7 +1844,7 @@
         },
         {
             "Name": "Pistol_Round",
-            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C'",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 15,
             "bHomingProjectile": false,
             "bCanKillCam": true,

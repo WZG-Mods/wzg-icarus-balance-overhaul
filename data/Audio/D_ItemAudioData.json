@@ -47,6 +47,7 @@
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "DamagedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DMG_GENERIC.SFX_DEP_DMG_GENERIC",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DST_GENERIC.SFX_DEP_DST_GENERIC",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD_REPAIR.SFX_BLD_WOOD_REPAIR",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         },
         {
@@ -106,7 +107,7 @@
             "Name": "Metal_Axe",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_METALAXE.SFX_IMPACT_METALAXE",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_METALAXE_V2.SFX_IMPACT_METALAXE_V2",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
             "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
             "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
@@ -128,7 +129,7 @@
             "Name": "Stone_Axe",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_STONEAXE.SFX_IMPACT_STONEAXE",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_STONEAXE_V2.SFX_IMPACT_STONEAXE_V2",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
             "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
             "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
@@ -169,6 +170,28 @@
             }
         },
         {
+            "Name": "Meta_Pickaxe",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Pickaxes/SFX_IMPACT_META_SHEN_PICKAXE.SFX_IMPACT_META_SHEN_PICKAXE",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Whoosh": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_WHOOSH_META.SFX_WEP_AXE_WHOOSH_META"
+                    ]
+                },
+                "Throw": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_AXE_THROW_GENERIC.SFX_BALLISTIC_AXE_THROW_GENERIC"
+                    ]
+                }
+            }
+        },
+        {
             "Name": "Stone_Pickaxe",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
@@ -194,7 +217,7 @@
             "Name": "Meta_Axe",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_METALAXE.SFX_IMPACT_METALAXE",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_METALAXE_V2.SFX_IMPACT_METALAXE_V2",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
             "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
             "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
@@ -202,7 +225,7 @@
             "AnimSounds": {
                 "Whoosh": {
                     "FMODEvents": [
-                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_WHOOSH_METAL.SFX_WEP_AXE_WHOOSH_METAL"
+                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_WHOOSH_META.SFX_WEP_AXE_WHOOSH_META"
                     ]
                 },
                 "Throw": {
@@ -529,6 +552,14 @@
             "ConsumableExpiredSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_EXPIRE.SFX_CONSUME_EXPIRE"
         },
         {
+            "Name": "Food_Crunch",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_FOOD_CRUNCH.SFX_CONSUME_FOOD_CRUNCH",
+            "ConsumableExpiredSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_EXPIRE.SFX_CONSUME_EXPIRE"
+        },
+        {
             "Name": "Oxite",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
@@ -623,7 +654,31 @@
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
             "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
             "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Whoosh": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_WHOOSH.SFX_WEP_AXE_WHOOSH"
+                    ]
+                }
+            }
+        },
+        {
+            "Name": "RepairToolMetal",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/D_Items/SFX_BUILDING_REPAIR_TOOL_METAL.SFX_BUILDING_REPAIR_TOOL_METAL",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Whoosh": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_WHOOSH.SFX_WEP_AXE_WHOOSH"
+                    ]
+                }
+            }
         },
         {
             "Name": "Rifle",
@@ -746,6 +801,20 @@
                     ]
                 }
             }
+        },
+        {
+            "Name": "Backpack",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_BACKPACK_ON.SFX_CHAR_MOVE_BACKPACK_ON"
+        },
+        {
+            "Name": "Carcass",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "SlottedSound": "/Game/FMOD/Events/SFX/Deployable/Skinning_Bench/SFX_SKINNINGBENCH_ANIMAL_SLOT.SFX_SKINNINGBENCH_ANIMAL_SLOT"
         }
     ]
 }
