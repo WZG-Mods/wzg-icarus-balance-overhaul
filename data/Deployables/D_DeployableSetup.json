@@ -6,6 +6,7 @@
         "DeployableName": "",
         "PreviewStaticMesh": "None",
         "DeployedSound": "None",
+        "ItemAddedSounds": {},
         "AudioOcclusionAmount": 0,
         "SnapToSurfaceNormal": true,
         "MaxSurfaceSnapAngle": 22.5,
@@ -90,7 +91,7 @@
             "Name": "Radar",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Radar/BP_Radarv3.BP_Radarv3_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Radar.SM_DEP_Radar",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
             "SupportsCustomRotation": false
         },
         {
@@ -104,7 +105,11 @@
             "Name": "Oxite_Dissolver",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/OxiteDissolver/BP_Oxite_Dissolver.BP_Oxite_Dissolver_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver.SM_DEP_Oxite_Dissolver",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "ItemAddedSounds": {
+                "(RowName=\"Oxite\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Deployable/Oxite_Dissolver_Add/SFX_DEP_OXITE_KIT_DISSOLVER_ADD_OXITE_M.SFX_DEP_OXITE_KIT_DISSOLVER_ADD_OXITE_M",
+                "(RowName=\"Sulfur\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Deployable/Oxite_Dissolver_Add/SFX_DEP_OXITE_KIT_DISSOLVER_ADD_SULFUR_M.SFX_DEP_OXITE_KIT_DISSOLVER_ADD_SULFUR_M"
+            }
         },
         {
             "Name": "Mortar_And_Pestle",
@@ -746,7 +751,7 @@
             "Name": "Storm_Warning_Radar_Mk1",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_Storm_Radar_Mk1.BP_Storm_Radar_Mk1_C",
             "PreviewStaticMesh": "/Game/ThirdPartyAssets/StarterContent/Shapes/Shape_Cube.Shape_Cube",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SnapToSurfaceNormal": false
         },
         {
@@ -809,6 +814,9 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/OxiteDissolver/BP_BasicOxiteDissolver.BP_BasicOxiteDissolver_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxidizer.SM_DEP_Oxidizer",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "ItemAddedSounds": {
+                "(RowName=\"Oxite\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Deployable/Basic_Oxite_Dissolver/SFX_DEP_OXITE_DISSOLVER_ADD_OXITE.SFX_DEP_OXITE_DISSOLVER_ADD_OXITE"
+            },
             "SupportsCustomRotation": false
         },
         {
@@ -1262,6 +1270,26 @@
             "MaxRestackingAmount": 1
         },
         {
+            "Name": "Jaguar_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Jaguar_Trophy.BP_Jaguar_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Jaguar_Trophy.SM_DEP_Jaguar_Trophy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Jaguar_Black_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Jaguar_Black_Trophy.BP_Jaguar_Black_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Jaguar_Trophy.SM_DEP_Jaguar_Trophy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
             "Name": "Iron_Door",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_Door_Iron.BP_Door_Iron_C",
             "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Door_Iron.SM_BLD_Door_Iron",
@@ -1319,17 +1347,6 @@
                 "X": -20,
                 "Y": -30,
                 "Z": -30
-            }
-        },
-        {
-            "Name": "ChillyBin",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_ChillyBin.BP_ChillyBin_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_SML_Metal.SM_DEP_Crate_SML_Metal",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "NavigationFallbackExtents": {
-                "X": 0,
-                "Y": 0,
-                "Z": 0
             }
         },
         {
@@ -1673,7 +1690,7 @@
             "Name": "Faction_Mission_Radar",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Faction_Mission_Radar.BP_Faction_Mission_Radar_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Radar.SM_DEP_Radar",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
@@ -1869,7 +1886,7 @@
             "Name": "Survey_Radar",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_SurveyRadar.BP_SurveyRadar_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Scanner_Bio.SM_DEP_Scanner_Bio",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -2096,9 +2113,19 @@
             "MaxRestackingAmount": 1
         },
         {
+            "Name": "Water_Sprinkler",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Sprinklers/BP_Water_Sprinkler.BP_Water_Sprinkler_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Sprinkler_SML.SM_DEP_Sprinkler_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "CeilingPlacement"
+        },
+        {
             "Name": "Meta_Furnace_Printed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furnaces/BP_Meta_Furnace_Printed.BP_Meta_Furnace_Printed_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CampFire_LEET.SM_DEP_CampFire_LEET",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Furnace_LEET.SM_DEP_Furnace_LEET",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
