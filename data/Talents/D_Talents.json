@@ -7644,19 +7644,19 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseShotgunReloadSpeed_+%\")": -10
+                        "(Value=\"BaseShotgunReloadSpeed_+%\")": 10
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseShotgunReloadSpeed_+%\")": -15
+                        "(Value=\"BaseShotgunReloadSpeed_+%\")": 15
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseShotgunReloadSpeed_+%\")": -20
+                        "(Value=\"BaseShotgunReloadSpeed_+%\")": 20
                     },
                     "GrantedFlags": []
                 }
@@ -10925,8 +10925,8 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 650,
-                "Y": 1050
+                "X": 550,
+                "Y": 1300
             },
             "Size": {
                 "X": 128,
@@ -10935,7 +10935,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseExperience_+%\")": 10
+                        "(Value=\"BaseExperience_+%\")": 8
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseExperience_+%\")": 15
                     },
                     "GrantedFlags": []
                 }
@@ -10944,12 +10950,16 @@
                 {
                     "RowName": "Solo_Crafting_Basics",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Solo_Weight_Capacity",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
-                "RowName": "Journeyman"
+                "RowName": "Master"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Exploration_Aura_Oxygen_Consumption",
@@ -13487,7 +13497,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 50,
+                "X": 1200,
                 "Y": 50
             },
             "Size": {
@@ -13524,7 +13534,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 450,
+                "X": 250,
                 "Y": 50
             },
             "Size": {
@@ -13561,7 +13571,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 650,
+                "X": 400,
                 "Y": 550
             },
             "Size": {
@@ -13610,7 +13620,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 850,
+                "X": 750,
                 "Y": 50
             },
             "Size": {
@@ -13647,8 +13657,8 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 650,
-                "Y": 1300
+                "X": 850,
+                "Y": 800
             },
             "Size": {
                 "X": 128,
@@ -13664,77 +13674,11 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Solo_Xp",
+                    "RowName": "Solo_Consumables",
                     "DataTableName": "D_Talents"
-                }
-            ],
-            "RequiredRank": {
-                "RowName": "Master"
-            },
-            "DrawMethodOverride": "XThenY"
-        },
-        {
-            "Name": "Solo_Blueprint_1",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Blueprint_1-DisplayName\", \"Blueprint Boost\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Blueprint_1-Description\", \"Gives three Blueprint points\")",
-            "Icon": "/Game/Assets/2DArt/UI/Talents/Solo/Talent_Solo_BlueprintBoost.Talent_Solo_BlueprintBoost",
-            "TalentTree": {
-                "RowName": "Solo_Player"
-            },
-            "Position": {
-                "X": 50,
-                "Y": 550
-            },
-            "Size": {
-                "X": 128,
-                "Y": 128
-            },
-            "Rewards": [
+                },
                 {
-                    "GrantedStats": {},
-                    "GrantedFlags": [
-                        {
-                            "RowName": "Talent_Solo_Blueprints1",
-                            "DataTableName": "D_CharacterFlags"
-                        }
-                    ]
-                }
-            ],
-            "RequiredRank": {
-                "RowName": "Apprentice"
-            },
-            "DrawMethodOverride": "YThenX"
-        },
-        {
-            "Name": "Solo_Blueprint_2",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Blueprint_2-DisplayName\", \"Blueprint Boost II\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Blueprint_2-Description\", \"Gives three Blueprint points\")",
-            "Icon": "/Game/Assets/2DArt/UI/Talents/Solo/Talent_Solo_BlueprintBoost.Talent_Solo_BlueprintBoost",
-            "TalentTree": {
-                "RowName": "Solo_Player"
-            },
-            "Position": {
-                "X": 50,
-                "Y": 800
-            },
-            "Size": {
-                "X": 128,
-                "Y": 128
-            },
-            "Rewards": [
-                {
-                    "GrantedStats": {},
-                    "GrantedFlags": [
-                        {
-                            "RowName": "Talent_Solo_Blueprints2",
-                            "DataTableName": "D_CharacterFlags"
-                        }
-                    ]
-                }
-            ],
-            "RequiredTalents": [
-                {
-                    "RowName": "Solo_Blueprint_1",
+                    "RowName": "Solo_Health_Regen",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -13752,7 +13696,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 50,
+                "X": 1200,
                 "Y": 300
             },
             "Size": {
@@ -13777,8 +13721,13 @@
                 {
                     "RowName": "Solo_Health",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Solo_Stamina_Regen",
@@ -13789,7 +13738,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 450,
+                "X": 250,
                 "Y": 300
             },
             "Size": {
@@ -13827,7 +13776,7 @@
             },
             "Position": {
                 "X": 850,
-                "Y": 800
+                "Y": 1050
             },
             "Size": {
                 "X": 128,
@@ -13845,7 +13794,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Solo_Consumables",
+                    "RowName": "Solo_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -13863,7 +13812,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 250,
+                "X": 100,
                 "Y": 1300
             },
             "Size": {
@@ -13871,6 +13820,13 @@
                 "Y": 128
             },
             "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseLeatherHarvestedFromAnimals_+%\")": 25,
+                        "(Value=\"BaseFurHarvestedFromAnimals_+%\")": 25
+                    },
+                    "GrantedFlags": []
+                },
                 {
                     "GrantedStats": {
                         "(Value=\"BaseLeatherHarvestedFromAnimals_+%\")": 50,
@@ -13899,7 +13855,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 450,
+                "X": 250,
                 "Y": 800
             },
             "Size": {
@@ -13918,16 +13874,16 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Solo_Detection",
+                    "RowName": "Solo_Consumables",
                     "DataTableName": "D_Talents"
                 },
                 {
-                    "RowName": "Solo_Consumables",
+                    "RowName": "Solo_Mining_Rewards",
                     "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
-                "RowName": "Journeyman"
+                "RowName": "Apprentice"
             },
             "DrawMethodOverride": "YThenX"
         },
@@ -13974,7 +13930,7 @@
                 }
             ],
             "RequiredRank": {
-                "RowName": "Journeyman"
+                "RowName": "Master"
             },
             "DrawMethodOverride": "XThenY"
         },
@@ -13987,7 +13943,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 850,
+                "X": 600,
                 "Y": 300
             },
             "Size": {
@@ -14006,6 +13962,12 @@
                         "(Value=\"BasePhysicalDamageResistance_%\")": 10
                     },
                     "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 15
+                    },
+                    "GrantedFlags": []
                 }
             ],
             "RequiredTalents": [
@@ -14013,7 +13975,8 @@
                     "RowName": "Solo_Movement",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Solo_Detection",
@@ -14024,7 +13987,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 250,
+                "X": 750,
                 "Y": 550
             },
             "Size": {
@@ -14041,11 +14004,11 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Solo_Health_Regen",
+                    "RowName": "Solo_Damage_Reduction",
                     "DataTableName": "D_Talents"
                 },
                 {
-                    "RowName": "Solo_Stamina_Regen",
+                    "RowName": "Solo_Sprain_Reduction",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -20411,7 +20374,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 250,
+                "X": 100,
                 "Y": 1050
             },
             "Size": {
@@ -20419,6 +20382,13 @@
                 "Y": 128
             },
             "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeatHarvestedFromAnimals_+%\")": 25,
+                        "(Value=\"BaseBoneHarvestedFromAnimals_+%\")": 25
+                    },
+                    "GrantedFlags": []
+                },
                 {
                     "GrantedStats": {
                         "(Value=\"BaseMeatHarvestedFromAnimals_+%\")": 50,
@@ -23441,6 +23411,518 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Solo_Sprain_Reduction",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-DisplayName\", \"Steel Ankles\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-Description\", \"Reduced chance of sprain from fall damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_CushionedFall.Talent_Exploration_CushionedFall",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToResistSprain_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToResistSprain_%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToResistSprain_%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Melee_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Melee_Damage-DisplayName\", \"Heavy Hitter\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Melee_Damage-Description\", \"A general increase to melee damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Tools/Talent_Tools_StrongBack.Talent_Tools_StrongBack",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeleeDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeleeDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Extra_Resources",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Extra_Resources-DisplayName\", \"More Than A Handful\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Extra_Resources-Description\", \"Increased yield from harvesting by hand\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_SkilledPicker.Talent_Resources_SkilledPicker",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 400,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Crafting_Basics",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Felling_Rewards",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Felling_Rewards-DisplayName\", \"Precision Logging\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Felling_Rewards-Description\", \"Increased wood from felling\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_LumberYield.Talent_Resources_LumberYield",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFellingRewards_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFellingRewards_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Stamina_Regen",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Solo_Mining_Rewards",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Mining_Rewards-DisplayName\", \"Miner Rewards\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Mining_Rewards-Description\", \"Increased yield from mining ore deposits\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_MetalMiner.Talent_Resources_MetalMiner",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMiningRewards_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMiningRewards_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Felling_Rewards",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Solo_Base_Maintenance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Base_Maintenance-DisplayName\", \"Efficient Home Maintenance\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Base_Maintenance-Description\", \"Decreased stamina cost for Firewhacker use and faster repair time with hammers\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Repairing/Talent_Repairing_HammerTime.Talent_Repairing_HammerTime",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1200,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCarryingFirewhackerStaminaRegen_+%\")": 5,
+                        "(Value=\"BaseRepairToolActionHoldTime_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Health_Regen",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Solo_Weight_Capacity",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Solo_Hedgehog_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Hedgehog_Damage-DisplayName\", \"Gotta Damage Fast\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Hedgehog_Damage-Description\", \"Hedgehogs deal more damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_EnhancedDefences.Talent_Building_EnhancedDefences",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1200,
+                "Y": 1300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedHedgehogDamage_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Base_Maintenance",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Solo_Bow_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Bow_Damage-DisplayName\", \"Honed Heads\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Bow_Damage-Description\", \"Adds a bonus to arrow damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Bows/Talent_Bow_IncreasedArrowDamage1.Talent_Bow_IncreasedArrowDamage1",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1400,
+                "Y": 550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseBowProjectileDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseBowProjectileDamage_+%\")": 10,
+                        "(Value=\"BaseBowReloadSpeed_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Firearm_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Firearm_Damage-DisplayName\", \"Bring A Gun To A Gun Fight\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Firearm_Damage-Description\", \"Increased firearm projectile damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Firearms/Talent_Firearms_LetMeGetThatForYou.Talent_Firearms_LetMeGetThatForYou",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1400,
+                "Y": 800
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFirearmProjectileDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFirearmProjectileDamage_+%\")": 10,
+                        "(Value=\"BaseFirearmReloadSpeed_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Knife_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Knife_Damage-DisplayName\", \"Slice And Dice\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Knife_Damage-Description\", \"Increased knife melee and thrown knife damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Blades/Talent_Blades_DeadlyStab.Talent_Blades_DeadlyStab",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1600,
+                "Y": 550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeDamage_+%\")": 10,
+                        "(Value=\"BaseKnifeProjectileDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Spear_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Spear_Damage-DisplayName\", \"Stick Of Destiny\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Spear_Damage-Description\", \"Increased spear melee and thrown spear damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Spears/Talent_Spear_DeadlyThrust1.Talent_Spear_DeadlyThrust1",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1600,
+                "Y": 800
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSpearDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSpearDamage_+%\")": 10,
+                        "(Value=\"BaseSpearProjectileDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Animal_Healthbar",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Animal_Healthbar-DisplayName\", \"Health Monitor\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Animal_Healthbar-Description\", \"See animal health bars\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_HealthBars.Talent_Hunting_HealthBars",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CanTrackAnimalHealthbar_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Melee_Damage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Solo_Longer_Food_Buffs",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Longer_Food_Buffs-DisplayName\", \"Sweet, Savoury, Satisfied\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Longer_Food_Buffs-Description\", \"Food buffs persist longer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_Cooking_LongLastingEffects.Talent_Cooking_LongLastingEffects",
+            "TalentTree": {
+                "RowName": "Solo_Player"
+            },
+            "Position": {
+                "X": 1050,
+                "Y": 550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Solo_Health_Regen",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
         }
     ]
 }

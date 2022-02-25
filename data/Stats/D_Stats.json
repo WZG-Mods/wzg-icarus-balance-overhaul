@@ -2518,9 +2518,6 @@
         },
         {
             "Name": "ReloadSpeedMilliseconds_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ReloadSpeedMilliseconds_+-Title\", \"Reload Speed\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ReloadSpeedMilliseconds_+-PositiveTitleFormat\", \"{0} milliseconds\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ReloadSpeedMilliseconds_+-NegativeTitleFormat\", \"-{0} milliseconds\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
@@ -2528,8 +2525,14 @@
         },
         {
             "Name": "BaseReloadSpeedMilliseconds_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReloadSpeedMilliseconds_+-PositiveDescription\", \"+{0} milliseconds to Reload Speed\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReloadSpeedMilliseconds_+-NegativeDescription\", \"-{0} milliseconds to Reload Speed\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReloadSpeedMilliseconds_+-PositiveDescription\", \"{0} seconds to Reload\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReloadSpeedMilliseconds_+-NegativeDescription\", \"-{0} seconds to Reload\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -7621,6 +7624,29 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Crafting"
+            }
+        },
+        {
+            "Name": "DisplayReloadSpeedMilliseconds_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DisplayReloadSpeedMilliseconds_+-Title\", \"Reload Speed\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"DisplayReloadSpeedMilliseconds_+-PositiveTitleFormat\", \"{0} seconds\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"DisplayReloadSpeedMilliseconds_+-NegativeTitleFormat\", \"-{0} seconds\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FoodConsumption_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Consumption"
             }
         }
     ]
