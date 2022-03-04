@@ -7443,7 +7443,10 @@
                     "RowName": "Firearm_Reload_Pistol",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            }
         },
         {
             "Name": "Firearm_Damage_Rifle",
@@ -7592,7 +7595,7 @@
             },
             "Position": {
                 "X": 100,
-                "Y": 50
+                "Y": 250
             },
             "Size": {
                 "X": 128,
@@ -7616,6 +7619,12 @@
                         "(Value=\"BasePistolReloadSpeed_+%\")": 20
                     },
                     "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Firearm_Cheap_Pistol_Ammo",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "ForbiddenFlags": [
@@ -7716,7 +7725,7 @@
         {
             "Name": "Firearm_Cheap_Rifle_Ammo",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Rifle_Ammo-DisplayName\", \"Rifle Reduction\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Rifle_Ammo-Description\", \"Cheaper rifle ammo crafting\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Rifle_Ammo-Description\", \"Cheaper bulk rifle ammo crafting\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Firearms/Talent_Firearms_RifleAmmunitions.Talent_Firearms_RifleAmmunitions",
             "TalentTree": {
                 "RowName": "Combat_Firearms"
@@ -7746,7 +7755,7 @@
         {
             "Name": "Firearm_Cheap_Shotgun_Ammo",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Shotgun_Ammo-DisplayName\", \"Shotgun Slash\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Shotgun_Ammo-Description\", \"Cheaper shotgun ammo crafting\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Shotgun_Ammo-Description\", \"Cheaper bulk shotgun ammo crafting\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Firearms/Talent_Firearms_ShotgunAmmunitions.Talent_Firearms_ShotgunAmmunitions",
             "TalentTree": {
                 "RowName": "Combat_Firearms"
@@ -8227,7 +8236,7 @@
             },
             "Position": {
                 "X": 650,
-                "Y": 250
+                "Y": 500
             },
             "Size": {
                 "X": 128,
@@ -8273,8 +8282,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 550,
-                "Y": 50
+                "X": 650,
+                "Y": 250
             },
             "Size": {
                 "X": 128,
@@ -8300,12 +8309,19 @@
                     "GrantedFlags": []
                 }
             ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Repair_Stamina_Regen",
+                    "DataTableName": "D_Talents"
+                }
+            ],
             "ForbiddenFlags": [
                 {
                     "DataTableName": "D_SessionFlags",
                     "RowName": "Tutorial_TalentsLocked"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Repair_Flapper_Movement",
@@ -8316,7 +8332,7 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 450,
+                "X": 350,
                 "Y": 250
             },
             "Size": {
@@ -8333,7 +8349,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Repair_Extinguish_Speed",
+                    "RowName": "Repair_Stamina_Regen",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -8351,8 +8367,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 350,
-                "Y": 650
+                "X": 250,
+                "Y": 750
             },
             "Size": {
                 "X": 128,
@@ -8393,8 +8409,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 150,
-                "Y": 50
+                "X": 50,
+                "Y": 250
             },
             "Size": {
                 "X": 128,
@@ -8420,6 +8436,12 @@
                     "GrantedFlags": []
                 }
             ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Repair_Stamina_Regen",
+                    "DataTableName": "D_Talents"
+                }
+            ],
             "RequiredRank": {
                 "RowName": "Novice"
             },
@@ -8434,8 +8456,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 350,
-                "Y": 1050
+                "X": 250,
+                "Y": 1250
             },
             "Size": {
                 "X": 128,
@@ -8472,8 +8494,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 150,
-                "Y": 450
+                "X": 50,
+                "Y": 500
             },
             "Size": {
                 "X": 128,
@@ -8513,8 +8535,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 550,
-                "Y": 850
+                "X": 500,
+                "Y": 1000
             },
             "Size": {
                 "X": 128,
@@ -8532,6 +8554,10 @@
                 {
                     "RowName": "Repair_Waterbomb_Recipe",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Repair_Fire_Resistance",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
@@ -8548,8 +8574,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 450,
-                "Y": 450
+                "X": 350,
+                "Y": 500
             },
             "Size": {
                 "X": 128,
@@ -8589,7 +8615,7 @@
             },
             "Position": {
                 "X": 650,
-                "Y": 650
+                "Y": 750
             },
             "Size": {
                 "X": 128,
@@ -8622,8 +8648,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 550,
-                "Y": 1050
+                "X": 500,
+                "Y": 1250
             },
             "Size": {
                 "X": 128,
@@ -8657,7 +8683,7 @@
             },
             "Position": {
                 "X": 50,
-                "Y": 850
+                "Y": 900
             },
             "Size": {
                 "X": 128,
@@ -9778,7 +9804,7 @@
             },
             "Position": {
                 "X": 450,
-                "Y": 1250
+                "Y": 1050
             },
             "Size": {
                 "X": 128,
@@ -9794,7 +9820,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Revive_Regeneration",
+                    "RowName": "Exploration_Healing_Revive",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -9957,7 +9983,7 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 650,
+                "X": 750,
                 "Y": 250
             },
             "Size": {
@@ -10000,7 +10026,7 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 650,
+                "X": 750,
                 "Y": 650
             },
             "Size": {
@@ -10094,6 +10120,12 @@
                         "(Value=\"BaseHealthRestoredOnRevivedDownedPlayer_%\")": 25
                     },
                     "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRestoredOnRevivedDownedPlayer_%\")": 50
+                    },
+                    "GrantedFlags": []
                 }
             ],
             "RequiredTalents": [
@@ -10120,7 +10152,7 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 350,
+                "X": 250,
                 "Y": 1050
             },
             "Size": {
@@ -10165,19 +10197,19 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -5
+                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -10
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -15
+                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -25
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -30
+                        "(Value=\"BaseJumpingStaminaActionCost_+%\")": -50
                     },
                     "GrantedFlags": []
                 }
@@ -10437,7 +10469,7 @@
             },
             "Position": {
                 "X": 150,
-                "Y": 1050
+                "Y": 1250
             },
             "Size": {
                 "X": 128,
@@ -10523,8 +10555,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 550,
-                "Y": 1450
+                "X": 700,
+                "Y": 1350
             },
             "Size": {
                 "X": 128,
@@ -10541,7 +10573,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Increased_Exposure_Decay",
+                    "RowName": "Exploration_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -10559,8 +10591,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 750,
-                "Y": 1450
+                "X": 600,
+                "Y": 1550
             },
             "Size": {
                 "X": 128,
@@ -10577,7 +10609,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Increased_Exposure_Decay",
+                    "RowName": "Exploration_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -10595,8 +10627,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 650,
-                "Y": 1650
+                "X": 500,
+                "Y": 1350
             },
             "Size": {
                 "X": 128,
@@ -10613,7 +10645,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Increased_Exposure_Decay",
+                    "RowName": "Exploration_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -10632,7 +10664,7 @@
             },
             "Position": {
                 "X": 150,
-                "Y": 1250
+                "Y": 1450
             },
             "Size": {
                 "X": 128,
@@ -10815,7 +10847,7 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 650,
+                "X": 750,
                 "Y": 50
             },
             "Size": {
@@ -10853,8 +10885,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 750,
-                "Y": 1250
+                "X": 700,
+                "Y": 1050
             },
             "Size": {
                 "X": 128,
@@ -10891,7 +10923,7 @@
             },
             "Position": {
                 "X": 350,
-                "Y": 1450
+                "Y": 1550
             },
             "Size": {
                 "X": 128,
@@ -10907,7 +10939,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Revive_Regeneration",
+                    "RowName": "Exploration_Healing_Revive",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -10925,7 +10957,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 550,
+                "X": 650,
                 "Y": 1300
             },
             "Size": {
@@ -11375,12 +11407,6 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseInventorySpoilRate_+%\")": -5
-                    },
-                    "GrantedFlags": []
-                },
-                {
-                    "GrantedStats": {
                         "(Value=\"BaseInventorySpoilRate_+%\")": -15
                     },
                     "GrantedFlags": []
@@ -11415,7 +11441,7 @@
             },
             "Position": {
                 "X": 350,
-                "Y": 50
+                "Y": 450
             },
             "Size": {
                 "X": 128,
@@ -11441,12 +11467,23 @@
                     "GrantedFlags": []
                 }
             ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Food_Decay",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Resources_Food_Hunger",
+                    "DataTableName": "D_Talents"
+                }
+            ],
             "ForbiddenFlags": [
                 {
                     "DataTableName": "D_SessionFlags",
                     "RowName": "Tutorial_TalentsLocked"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Produce_Food_Rotten",
@@ -11458,7 +11495,7 @@
             },
             "Position": {
                 "X": 200,
-                "Y": 850
+                "Y": 1150
             },
             "Size": {
                 "X": 128,
@@ -11493,7 +11530,7 @@
             },
             "Position": {
                 "X": 200,
-                "Y": 1050
+                "Y": 1350
             },
             "Size": {
                 "X": 128,
@@ -11532,8 +11569,8 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 350,
-                "Y": 650
+                "X": 200,
+                "Y": 950
             },
             "Size": {
                 "X": 128,
@@ -11555,11 +11592,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Resources_Food_Hunger",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Resources_Crop_Grow_Speed",
+                    "RowName": "Produce_Food_Buff_Duration",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -11577,8 +11610,8 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 200,
-                "Y": 450
+                "X": 350,
+                "Y": 50
             },
             "Size": {
                 "X": 128,
@@ -11598,16 +11631,6 @@
                     "GrantedFlags": []
                 }
             ],
-            "RequiredTalents": [
-                {
-                    "RowName": "Produce_Food_Buff_Duration",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Produce_Food_Decay",
-                    "DataTableName": "D_Talents"
-                }
-            ],
             "RequiredRank": {
                 "RowName": "Novice"
             },
@@ -11622,8 +11645,8 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 450,
-                "Y": 1050
+                "X": 350,
+                "Y": 1550
             },
             "Size": {
                 "X": 128,
@@ -11639,14 +11662,18 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Resources_Food_Benefit",
+                    "RowName": "Resources_Crop_Decay",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Produce_Food_Buff_Duration",
                     "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Master"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Resources_Crop_Grow_Speed",
@@ -11690,7 +11717,7 @@
             },
             "Position": {
                 "X": 600,
-                "Y": 850
+                "Y": 1250
             },
             "Size": {
                 "X": 128,
@@ -11723,8 +11750,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 750,
-                "Y": 1050
+                "X": 700,
+                "Y": 850
             },
             "Size": {
                 "X": 128,
@@ -11746,7 +11773,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Increased_Exposure_Decay",
+                    "RowName": "Exploration_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -12046,8 +12073,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 550,
-                "Y": 850
+                "X": 500,
+                "Y": 650
             },
             "Size": {
                 "X": 128,
@@ -12069,7 +12096,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Exploration_Increased_Exposure_Decay",
+                    "RowName": "Exploration_Weight_Capacity",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -12093,8 +12120,8 @@
                 "RowName": "Survival_Exploration"
             },
             "Position": {
-                "X": 550,
-                "Y": 1050
+                "X": 500,
+                "Y": 850
             },
             "Size": {
                 "X": 128,
@@ -12457,7 +12484,7 @@
         },
         {
             "Name": "Resources_Inventory_Capacity",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity-DisplayName\", \"Dense Packing\")",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity-DisplayName\", \"Dense Packing I\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity-Description\", \"Increased inventory weight capacity\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_DensePacking.Talent_Resources_DensePacking",
             "TalentTree": {
@@ -12710,7 +12737,7 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 450,
+                "X": 250,
                 "Y": 250
             },
             "Size": {
@@ -12733,7 +12760,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Produce_Food_Buff_Duration",
+                    "RowName": "Resources_Food_Hunger",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -13497,7 +13524,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1200,
+                "X": 1250,
                 "Y": 50
             },
             "Size": {
@@ -13571,7 +13598,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 400,
+                "X": 450,
                 "Y": 550
             },
             "Size": {
@@ -13620,7 +13647,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 750,
+                "X": 850,
                 "Y": 50
             },
             "Size": {
@@ -13696,7 +13723,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1200,
+                "X": 1250,
                 "Y": 300
             },
             "Size": {
@@ -13812,7 +13839,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 100,
+                "X": 50,
                 "Y": 1300
             },
             "Size": {
@@ -13943,7 +13970,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 600,
+                "X": 650,
                 "Y": 300
             },
             "Size": {
@@ -13987,7 +14014,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 750,
+                "X": 850,
                 "Y": 550
             },
             "Size": {
@@ -14004,11 +14031,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Solo_Damage_Reduction",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Solo_Sprain_Reduction",
+                    "RowName": "Solo_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -20110,8 +20133,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 250,
-                "Y": 850
+                "X": 50,
+                "Y": 1100
             },
             "Size": {
                 "X": 128,
@@ -20133,7 +20156,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Repair_Hammer_Durability",
+                    "RowName": "Repair_Storm_Resistant",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -20144,7 +20167,7 @@
         },
         {
             "Name": "Resources_Inventory_Capacity_0",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity_0-DisplayName\", \"Dense Packing\")",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity_0-DisplayName\", \"Dense Packing II\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Resources_Inventory_Capacity_0-Description\", \"Increased inventory weight capacity\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_DensePacking.Talent_Resources_DensePacking",
             "TalentTree": {
@@ -20374,7 +20397,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 100,
+                "X": 50,
                 "Y": 1050
             },
             "Size": {
@@ -23413,6 +23436,52 @@
             ]
         },
         {
+            "Name": "Exploration_Weight_Capacity",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Exploration_Weight_Capacity-DisplayName\", \"Pack Lightly\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Exploration_Weight_Capacity-Description\", \"Increased inventory weight capacity\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Solo/Talent_Solo_PackHorse.Talent_Solo_PackHorse",
+            "TalentTree": {
+                "RowName": "Survival_Exploration"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            }
+        },
+        {
             "Name": "Solo_Sprain_Reduction",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-DisplayName\", \"Steel Ankles\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-Description\", \"Reduced chance of sprain from fall damage\")",
@@ -23421,7 +23490,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 900,
+                "X": 1050,
                 "Y": 300
             },
             "Size": {
@@ -23465,7 +23534,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1500,
+                "X": 1600,
                 "Y": 50
             },
             "Size": {
@@ -23497,7 +23566,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 400,
+                "X": 450,
                 "Y": 1050
             },
             "Size": {
@@ -23620,7 +23689,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1200,
+                "X": 1250,
                 "Y": 1050
             },
             "Size": {
@@ -23660,7 +23729,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1200,
+                "X": 1250,
                 "Y": 1300
             },
             "Size": {
@@ -23695,7 +23764,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1400,
+                "X": 1450,
                 "Y": 550
             },
             "Size": {
@@ -23737,7 +23806,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1400,
+                "X": 1450,
                 "Y": 800
             },
             "Size": {
@@ -23779,7 +23848,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1600,
+                "X": 1750,
                 "Y": 550
             },
             "Size": {
@@ -23821,7 +23890,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1600,
+                "X": 1750,
                 "Y": 800
             },
             "Size": {
@@ -23863,7 +23932,7 @@
                 "RowName": "Solo_Player"
             },
             "Position": {
-                "X": 1500,
+                "X": 1600,
                 "Y": 1050
             },
             "Size": {
@@ -23923,6 +23992,126 @@
                 "RowName": "Apprentice"
             },
             "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Bow_Crafted_Arrow_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Bow_Crafted_Arrow_Damage-DisplayName\", \"Supply and Demand\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Bow_Crafted_Arrow_Damage-Description\", \"Increased damage from crafted arrows\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Bows/Talent_Bow_SupplyDemand.Talent_Bow_SupplyDemand",
+            "TalentTree": {
+                "RowName": "Combat_Bows"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 1450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedArrowProjectileDamage_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedArrowProjectileDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedArrowProjectileDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Bow_Slowing_Shot",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Repair_Stamina_Regen",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Repair_Stamina_Regen-DisplayName\", \"Ready To Work\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Repair_Stamina_Regen-Description\", \"Increased stamina regeneration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Bows/Talent_Bow_EasyDraw.Talent_Bow_EasyDraw",
+            "TalentTree": {
+                "RowName": "Construction_Repairing"
+            },
+            "Position": {
+                "X": 350,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ]
+        },
+        {
+            "Name": "Firearm_Cheap_Pistol_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Pistol_Ammo-DisplayName\", \"Pistol Proficiency\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Firearm_Cheap_Pistol_Ammo-Description\", \"Cheaper bulk pistol ammo crafting\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Firearms/Talent_Firearms_PistolAmmunitions.Talent_Firearms_PistolAmmunitions",
+            "TalentTree": {
+                "RowName": "Combat_Firearms"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePistolAmmoCraftingCost_+%\")": -25
+                    },
+                    "GrantedFlags": [
+                        {
+                            "RowName": "Talent_Pistol_Bulk_Ammo",
+                            "DataTableName": "D_CharacterFlags"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

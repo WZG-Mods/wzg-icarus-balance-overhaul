@@ -20515,7 +20515,7 @@
             "CharacterRequirement": {
                 "RowName": "Talent_Rifle_Bulk_Ammo"
             },
-            "RequiredMillijoules": 1000,
+            "RequiredMillijoules": 10000,
             "RecipeSets": [
                 {
                     "RowName": "Machining_Bench",
@@ -20560,6 +20560,58 @@
             }
         },
         {
+            "Name": "Bulk_Pistol_Round",
+            "Requirement": {
+                "RowName": "Pistol_Round"
+            },
+            "CharacterRequirement": {
+                "RowName": "Talent_Pistol_Bulk_Ammo"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BasePistolAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Gunpowder",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Pistol_Round",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
             "Name": "Bulk_Shotgun_Shell_Buckshot",
             "Requirement": {
                 "RowName": "Shotgun_Shell_Buckshot"
@@ -20567,7 +20619,7 @@
             "CharacterRequirement": {
                 "RowName": "Talent_Shotgun_Bulk_Ammo"
             },
-            "RequiredMillijoules": 1000,
+            "RequiredMillijoules": 10000,
             "RecipeSets": [
                 {
                     "RowName": "Machining_Bench",
