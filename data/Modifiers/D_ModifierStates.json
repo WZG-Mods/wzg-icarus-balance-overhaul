@@ -2931,9 +2931,8 @@
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseStaminaRegen_+%\")": 100,
                 "(Value=\"BaseHealthRegen_+%\")": 100,
-                "(Value=\"BaseWaterConsumption_+%\")": -10,
-                "(Value=\"BaseFoodConsumption_+%\")": -10,
-                "(Value=\"BaseOxygenConsumption_+%\")": -10
+                "(Value=\"BaseMaximumHealth_+\")": 100,
+				"(Value=\"BaseMaximumStamina_+\")": 100
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -2950,8 +2949,45 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Soda-ModifierDescription\", \"Keeps hunger at bay longer.\")",
             "GrantedStats": {
                 "(Value=\"BaseHealthRegen_+%\")": 100,
-                "(Value=\"BaseWaterConsumption_+%\")": -25,
-                "(Value=\"BaseOxygenConsumption_+%\")": -15
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseWaterConsumption_+%\")": -30,
+                "(Value=\"BaseFoodConsumption_+%\")": -30,
+                "(Value=\"BaseOxygenConsumption_+%\")": -30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Oxygen_Gel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenBuff.Icon_OxygenBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Oxygen_Consumption-ModifierName\", \"Oxygen Consumption\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Oxygen_Consumption-ModifierDescription\", \"Decreases oxygen consumption rate\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseOxygenConsumption_+%\")": -50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Stamina_Gel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_StaminaRegenBuff.Icon_StaminaRegenBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Stamina_Regen-ModifierName\", \"Stamina Regen\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Stamina_Regen-ModifierDescription\", \"Increases stamina restoration speed\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseFoodConsumption_+%\")": -50,
+				"(Value=\"BaseMaximumStamina_+\")": 200
             },
             "ModifierLifetimeAffectors": [
                 {
