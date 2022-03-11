@@ -30,7 +30,6 @@
         "RequiredTalents": [],
         "RequiredFlags": [],
         "ForbiddenFlags": [],
-        "RequiredAccountFlags": [],
         "RequiredRank": {
             "RowName": "None",
             "DataTableName": "D_TalentRanks"
@@ -319,7 +318,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2400,
+                "X": 2100,
                 "Y": 100
             },
             "Size": {
@@ -2134,7 +2133,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 4500,
+                "X": 4800,
                 "Y": 850
             },
             "Size": {
@@ -2490,7 +2489,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4000,
+                "X": 3950,
                 "Y": 100
             },
             "Size": {
@@ -2603,14 +2602,14 @@
         {
             "Name": "Small_Crop_Plot",
             "ExtraData": {
-                "RowName": "Item_Farming_CropPlot",
+                "RowName": "Item_Farming_CropPlot_T2",
                 "DataTableName": "D_Itemable"
             },
             "TalentTree": {
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2400,
+                "X": 3300,
                 "Y": 450
             },
             "Size": {
@@ -2619,7 +2618,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Re_route_T2Benches",
+                    "RowName": "Crafting_Bench",
                     "DataTableName": "D_Talents"
                 }
             ]
@@ -2634,7 +2633,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4000,
+                "X": 3950,
                 "Y": 450
             },
             "Size": {
@@ -3063,7 +3062,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 4800,
+                "X": 5100,
                 "Y": 850
             },
             "Size": {
@@ -3827,7 +3826,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 4500,
+                "X": 4800,
                 "Y": 1200
             },
             "Size": {
@@ -8079,6 +8078,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -10556,7 +10558,7 @@
             },
             "Position": {
                 "X": 700,
-                "Y": 1350
+                "Y": 1450
             },
             "Size": {
                 "X": 128,
@@ -10592,7 +10594,7 @@
             },
             "Position": {
                 "X": 600,
-                "Y": 1550
+                "Y": 1650
             },
             "Size": {
                 "X": 128,
@@ -10628,7 +10630,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 1350
+                "Y": 1450
             },
             "Size": {
                 "X": 128,
@@ -10923,7 +10925,7 @@
             },
             "Position": {
                 "X": 350,
-                "Y": 1550
+                "Y": 1650
             },
             "Size": {
                 "X": 128,
@@ -11495,7 +11497,7 @@
             },
             "Position": {
                 "X": 200,
-                "Y": 1150
+                "Y": 1250
             },
             "Size": {
                 "X": 128,
@@ -11530,7 +11532,7 @@
             },
             "Position": {
                 "X": 200,
-                "Y": 1350
+                "Y": 1450
             },
             "Size": {
                 "X": 128,
@@ -11570,7 +11572,7 @@
             },
             "Position": {
                 "X": 200,
-                "Y": 950
+                "Y": 1050
             },
             "Size": {
                 "X": 128,
@@ -11646,7 +11648,7 @@
             },
             "Position": {
                 "X": 350,
-                "Y": 1550
+                "Y": 1650
             },
             "Size": {
                 "X": 128,
@@ -11710,14 +11712,14 @@
         {
             "Name": "Resources_Crop_Decay",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Resources_Crop_Decay-DisplayName\", \"Fresh is Best\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Resources_Crop_Decay-Description\", \"Grown food doesn\\'t decay\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Resources_Crop_Decay-Description\", \"Grown Crops in Crafted Crop Plots do not Wither away after they have finished growing.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_Cooking_FresherCrops.Talent_Cooking_FresherCrops",
             "TalentTree": {
                 "RowName": "Survival_Produce"
             },
             "Position": {
                 "X": 600,
-                "Y": 1250
+                "Y": 1450
             },
             "Size": {
                 "X": 128,
@@ -11726,7 +11728,7 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"CreatedCropPlotPlantedCropSpoilRate_+%\")": -100
+                        "(Value=\"CreatedCropPlotPlantedCropCannotSpoil_?\")": 1
                     },
                     "GrantedFlags": []
                 }
@@ -11738,7 +11740,7 @@
                 }
             ],
             "RequiredRank": {
-                "RowName": "Master"
+                "RowName": "Journeyman"
             }
         },
         {
@@ -11818,6 +11820,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
             "DrawMethodOverride": "XThenY"
         },
         {
@@ -11853,6 +11858,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
             "RequiredLevel": 20
         },
         {
@@ -11885,6 +11893,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -11916,7 +11927,10 @@
                     "RowName": "Stalking_Small_Highlight",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
         },
         {
             "Name": "Stalking_Large_Highlight",
@@ -11947,7 +11961,10 @@
                     "RowName": "Stalking_Medium_Highlight",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            }
         },
         {
             "Name": "Building_Wood_Fire_Resist",
@@ -12235,6 +12252,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -12368,6 +12388,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -12737,7 +12760,7 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 250,
+                "X": 200,
                 "Y": 250
             },
             "Size": {
@@ -12776,8 +12799,8 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2700,
-                "Y": 450
+                "X": 2400,
+                "Y": 100
             },
             "Size": {
                 "X": 184,
@@ -14663,8 +14686,8 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2100,
-                "Y": 300
+                "X": 2400,
+                "Y": 450
             },
             "Size": {
                 "X": 0,
@@ -18170,7 +18193,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4500,
+                "X": 4550,
                 "Y": 450
             },
             "Size": {
@@ -18194,7 +18217,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4500,
+                "X": 4550,
                 "Y": 100
             },
             "Size": {
@@ -18238,7 +18261,7 @@
             ]
         },
         {
-            "Name": "Pump",
+            "Name": "Water_Pump",
             "ExtraData": {
                 "RowName": "Item_Water_Pump",
                 "DataTableName": "D_Itemable"
@@ -18247,7 +18270,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4200,
+                "X": 4250,
                 "Y": 850
             },
             "Size": {
@@ -18259,15 +18282,10 @@
                     "RowName": "Biofuel_Generator",
                     "DataTableName": "D_Talents"
                 }
-            ],
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "ComingSoon"
-                }
-            }
+            ]
         },
         {
-            "Name": "Pipe_Tool",
+            "Name": "SplineTool_Water",
             "ExtraData": {
                 "RowName": "Item_SplineTool_Water",
                 "DataTableName": "D_Itemable"
@@ -18276,7 +18294,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4500,
+                "X": 4550,
                 "Y": 850
             },
             "Size": {
@@ -18285,7 +18303,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Pump",
+                    "RowName": "Water_Pump",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -18340,16 +18358,16 @@
             ]
         },
         {
-            "Name": "Sprinkler",
+            "Name": "Water_Sprinkler",
             "ExtraData": {
-                "RowName": "Item_Sprinkler",
+                "RowName": "Item_Water_Sprinkler",
                 "DataTableName": "D_Itemable"
             },
             "TalentTree": {
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4200,
+                "X": 4250,
                 "Y": 1200
             },
             "Size": {
@@ -18358,7 +18376,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Pump",
+                    "RowName": "Water_Pump",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -18612,10 +18630,10 @@
                 "X": 256,
                 "Y": 256
             },
-            "RequiredAccountFlags": [
+            "RequiredFlags": [
                 {
-                    "RowName": "DLC_Deluxe_Edition_Envirosuit",
-                    "DataTableName": "D_AccountFlags"
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
                 }
             ]
         },
@@ -18638,10 +18656,10 @@
                 "X": 256,
                 "Y": 256
             },
-            "RequiredAccountFlags": [
+            "RequiredFlags": [
                 {
-                    "RowName": "DLC_Deluxe_Edition_Envirosuit",
-                    "DataTableName": "D_AccountFlags"
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
                 }
             ]
         },
@@ -20260,6 +20278,9 @@
                     "RowName": "Tutorial_TalentsLocked"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -20304,6 +20325,9 @@
                     "RowName": "Tutorial_TalentsLocked"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -20336,6 +20360,9 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -20386,6 +20413,9 @@
                     "RowName": "Tutorial_TalentsLocked"
                 }
             ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
             "DrawMethodOverride": "YThenX"
         },
         {
@@ -21995,7 +22025,7 @@
             },
             "Position": {
                 "X": 7850,
-                "Y": 2250
+                "Y": 2450
             },
             "Size": {
                 "X": 256,
@@ -22163,7 +22193,7 @@
             },
             "Position": {
                 "X": 8400,
-                "Y": 2250
+                "Y": 2450
             },
             "Size": {
                 "X": 0,
@@ -22285,8 +22315,8 @@
                 "RowName": "Prospect"
             },
             "Position": {
-                "X": 7450,
-                "Y": 2650
+                "X": 7550,
+                "Y": 2850
             },
             "Size": {
                 "X": 256,
@@ -22377,8 +22407,8 @@
                 "RowName": "Prospect"
             },
             "Position": {
-                "X": 8000,
-                "Y": 2650
+                "X": 8100,
+                "Y": 2850
             },
             "Size": {
                 "X": 0,
@@ -23482,6 +23512,207 @@
             }
         },
         {
+            "Name": "Produce_Crops_Yield",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Crops_Yield-DisplayName\", \"All-Nighter\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Crops_Yield-Description\", \"Crafted crops in crop plots grow faster at night.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_AllNighter.Talent_AllNighter",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropNightGrowthSpeed_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropNightGrowthSpeed_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_Max_Stamina",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Max_Stamina-DisplayName\", \"Get up and go\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Max_Stamina-Description\", \"Increase to base stamina\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_GetUpAndGo.Talent_GetUpAndGo",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_Melee_Damage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Melee_Damage-DisplayName\", \"The Old One-Two\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Melee_Damage-Description\", \"Increased melee damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_TheOldOneTwo.Talent_TheOldOneTwo",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeleeDamage_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeleeDamage_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMeleeDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Food_Buff_Duration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_Foraging_Buff",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Foraging_Buff-DisplayName\", \"Gathering Guru\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Foraging_Buff-Description\", \"Increased yield from harvesting by hand\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_GatheringGuru.Talent_GatheringGuru",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Food_Buff_Duration",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
             "Name": "Solo_Sprain_Reduction",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-DisplayName\", \"Steel Ankles\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Solo_Sprain_Reduction-Description\", \"Reduced chance of sprain from fall damage\")",
@@ -24075,12 +24306,6 @@
                     },
                     "GrantedFlags": []
                 }
-            ],
-            "ForbiddenFlags": [
-                {
-                    "DataTableName": "D_SessionFlags",
-                    "RowName": "Tutorial_TalentsLocked"
-                }
             ]
         },
         {
@@ -24110,6 +24335,411 @@
                             "DataTableName": "D_CharacterFlags"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Name": "Produce_Gunpowder_Recipe",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Gunpowder_Recipe-DisplayName\", \"Shoot the Breeze\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Gunpowder_Recipe-Description\", \"Grants the recipe to make gunpowder from fertilizer on the Mortar and Pestle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_ShootTheBreeze.Talent_ShootTheBreeze",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 750,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {},
+                    "GrantedFlags": [
+                        {
+                            "RowName": "Talent_GunpowderRecipe",
+                            "DataTableName": "D_CharacterFlags"
+                        }
+                    ]
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_CropPlot_Fertilizer_Consumption",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_Shotgun_Recipe",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Shotgun_Recipe-DisplayName\", \"Get off my Lawn\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Shotgun_Recipe-Description\", \"Grants the recipe to make the Rusty Shotgun on the Machining Bench\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_GetOffMyLawn.Talent_GetOffMyLawn",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 750,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {},
+                    "GrantedFlags": [
+                        {
+                            "RowName": "Talent_ShotgunRecipe",
+                            "DataTableName": "D_CharacterFlags"
+                        }
+                    ]
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Gunpowder_Recipe",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_CropPlot_Fertilizer_Consumption",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Fertilizer_Consumption-DisplayName\", \"Neat and Tidy\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Fertilizer_Consumption-Description\", \"Crafted Crop Plots use less fertilizer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_NeatAndTidy.Talent_NeatAndTidy",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 750,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotFertilizerConsumption_+%\")": -50
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_CropPlot_Growth_Speed",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Growth_Speed-DisplayName\", \"Speed-Gro\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Growth_Speed-Description\", \"Crafted Crop Plots grow crops faster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_SpeedGro.Talent_SpeedGro",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 750,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropGrowthSpeed_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropGrowthSpeed_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_CropPlot_Crop_Yield",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Crop_Yield-DisplayName\", \"Bumper Crop\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Crop_Yield-Description\", \"Crafted Crop Plots yield more crops\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_BumperCrop.Talent_BumperCrop",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropYield_+%\")": 50
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropYield_+%\")": 100
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Grow_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_CropPlot_Item_Spoil_Time",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Item_Spoil_Time-DisplayName\", \"Sturdy Stalks\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_CropPlot_Item_Spoil_Time-Description\", \"Crafted Crop Plots crops spoil slower when harvested\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_SturdyStalks.Talent_SturdyStalks",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropHarvestedItemSpoilTime_+%\")": 25
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"CreatedCropPlotPlantedCropHarvestedItemSpoilTime_+%\")": 50
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Crop_Decay",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Prospect_OLY_Farming",
+            "ExtraData": {
+                "RowName": "Tier1_Farming",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect"
+            },
+            "Position": {
+                "X": 7300,
+                "Y": 2150
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_OLY_Riverlands_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Composter",
+            "ExtraData": {
+                "RowName": "Item_Composter_Wood",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 3300,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Small_Crop_Plot",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "lron_Crop_Plot",
+            "ExtraData": {
+                "RowName": "Item_Farming_CropPlot_T3",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4400,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Machine_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Hydro_Crop_Plot",
+            "ExtraData": {
+                "RowName": "Item_Farming_CropPlot_T4",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 4250,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Biofuel_Generator",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Growth_Fertilizer",
+            "ExtraData": {
+                "RowName": "Item_Speed_Fertilizer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 4850,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Yield_Fertilizer",
+            "ExtraData": {
+                "RowName": "Item_Yield_Fertilizer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 5150,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_Talents"
                 }
             ]
         }

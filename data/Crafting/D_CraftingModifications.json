@@ -307,6 +307,14 @@
                         "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
                     },
                     "GrantedStat": {
+                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
+                    }
+                },
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
+                    },
+                    "GrantedStat": {
                         "Value": "BaseInventorySpoilRate_+%"
                     }
                 }
@@ -340,6 +348,86 @@
                     },
                     "GrantedStat": {
                         "Value": "BaseProjectileDamage_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Night_Growth_Speed",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropNightGrowthSpeed_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BasePlantedCropNightGrowthSpeed_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Yield",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropYield_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BasePlantedCropYield_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Fertilizer_Consumption",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotFertilizerConsumption_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BaseFertilizerConsumption_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Harvested_Item_Spoil_Rate",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropHarvestedItemSpoilTime_+%"
+                    },
+                    "GrantedStat": {
+                        "Value": "BasePlantedCropHarvestedItemSpoilTime_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Crop_Plot_Cannot_Spoil",
+            "Query": {
+                "RowName": "Crop_Plot"
+            },
+            "RequiredStat": [
+                {
+                    "RequiredStat": {
+                        "Value": "CreatedCropPlotPlantedCropCannotSpoil_?"
+                    },
+                    "GrantedStat": {
+                        "Value": "BasePlantedCropCannotSpoil_?"
                     }
                 }
             ]
