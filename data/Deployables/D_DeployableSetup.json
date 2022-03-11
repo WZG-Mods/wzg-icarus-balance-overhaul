@@ -249,6 +249,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Pump/BP_WaterPump.BP_WaterPump_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Water_Pump.SM_DEP_Water_Pump",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
             "WorldPlacementType": "WaterPlacement"
         },
         {
@@ -309,10 +310,51 @@
             "bCanAffectNavigation": false
         },
         {
-            "Name": "Farming_CropPlot",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Farming_Plot_Base.BP_Farming_Plot_Base_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_SML.SM_DEP_CropPlot_SML",
+            "Name": "Farming_CropPlot_T2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Farming_Plot_T2.BP_Farming_Plot_T2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_Flat_SML.SM_DEP_CropPlot_Flat_SML",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Farming_Plot_T3.BP_Farming_Plot_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_T3_SML.SM_DEP_CropPlot_T3_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Farming_Plot_T4.BP_Farming_Plot_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_Hydro_SML.SM_DEP_CropPlot_Hydro_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T5",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Farming_Plot_T5.BP_Farming_Plot_T5_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_Hydro_SML.SM_DEP_CropPlot_Hydro_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
             "bCanAffectNavigation": false
         },
         {
@@ -496,7 +538,7 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Med_Wood.SM_DEP_Crate_MED_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_MED_Wood.SM_DEP_Crate_MED_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -764,7 +806,7 @@
         {
             "Name": "Composter_Wood",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Composter/BP_Composter_Wood.BP_Composter_Wood_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_Dep_Composter_Wood.SM_Dep_Composter_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Composter_Fertilizer.SM_DEP_Composter_Fertilizer",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
@@ -2115,7 +2157,7 @@
         {
             "Name": "Water_Sprinkler",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Sprinklers/BP_Water_Sprinkler.BP_Water_Sprinkler_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Sprinkler_SML.SM_DEP_Sprinkler_SML",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Sprinkler_SML_v2.SM_DEP_Sprinkler_SML_v2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "MaxSurfaceSnapAngle": 180,
