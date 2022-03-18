@@ -3307,6 +3307,371 @@
             "Name": "OLY_Farming_Stockpile_Pumpkin",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Stockpile_Deposit_Pumpkin.BPQ_OLY_Farming_Stockpile_Deposit_Pumpkin_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Pumpkin-Description\", \"Grown Pumpkin ({0} / {1})\")"
+        },
+        {
+            "Name": "OLY_Omni_Research",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research.BPQ_Omni_OLY_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research-Description\", \"RESEARCH: Recipe Analysis\")",
+            "LocationQuery": {
+                "RowName": "T5_Research_Analyzer"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Analyzer",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer.BPQ_Omni_OLY_Research_Analyzer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Analyzer-Description\", \"Locate and Activate the Sample Analyzer\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Expedition2bDrillFuelled",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Power",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Power.BPQ_Omni_OLY_Research_Analyzer_Power_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Power-Description\", \"Connect the Analyzer to an active Energy Network\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Expedition4aDeviceNeedsPower",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Water",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Water.BPQ_Omni_OLY_Research_Analyzer_Water_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Water-Description\", \"Connect the Analyzer to an active Water Network\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Samples",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Samples.BPQ_Omni_OLY_Research_Analyzer_Samples_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Samples-Description\", \"Collect Samples from Cave Worms\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation17",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Deposit_Samples",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Sample_Deposit.BPQ_Omni_OLY_Research_Analyzer_Sample_Deposit_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Deposit_Samples-Description\", \"Place Scales into the Analyzer {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Deposit_Samples_Sacks",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Sample_Deposit_Sacks.BPQ_Omni_OLY_Research_Analyzer_Sample_Deposit_Sacks_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Deposit_Samples_Sacks-Description\", \"Place Poison Sacks into the Analyzer {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Defend",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Analyzer_Defend.BPQ_Omni_OLY_Research_Analyzer_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Defend-Description\", \"Defend the Analyzer while it processes the Scales {0}%\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Scanning1AnimalAttack",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "FM3ExterminationBossDead1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Craft_Weapons",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Craft_Weapons.BPQ_Omni_OLY_Research_Craft_Weapons_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Craft_Weapons-Description\", \"Craft the new items on the Crafting Bench\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RecoveryCraftItem4b",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "BW5_RETURNTODROPSHIP",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_Craft_Arrow",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Craft_Arrow.BPQ_Omni_OLY_Research_Craft_Arrow_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Craft_Arrow-Description\", \"Craft the Worm Arrow\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Craft_Spear",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Craft_Spear.BPQ_Omni_OLY_Research_Craft_Spear_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Craft_Spear-Description\", \"Craft the Worm Spear\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Craft_Knife",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Craft_Knife.BPQ_Omni_OLY_Research_Craft_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Craft_Knife-Description\", \"Craft the Worm Knife\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Craft_Bow",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Research_Craft_Bow.BPQ_Omni_OLY_Research_Craft_Bow_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Craft_Bow-Description\", \"Craft the Worm Bow\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_Return_Samples",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research/BPQ_Omni_OLY_Return_Samples.BPQ_Omni_OLY_Return_Samples_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_Return_Samples-Description\", \"Deposit additional Samples in the Drop Ship for further Study\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2.BPQ_OLY_Omni_Research_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2-Description\", \"RESEARCH: Frozen Lifeforms\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Formation"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Graveyard",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_GraveyardGraveyard.BPQ_OLY_Omni_Research_2_GraveyardGraveyard_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Graveyard-Description\", \"Investigate the Mammoth Graveyard\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Graveyard"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "MoveToNextLocation6",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Graveyard_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Graveyard_Travel-Description\", \"Travel to the Reported Location (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "LocationReached5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Graveyard_Collect",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Graveyard_Collect.BPQ_OLY_Omni_Research_2_Graveyard_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Graveyard_Collect-Description\", \"Search the Corpses For Samples {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation.BPQ_OLY_Omni_Research_2_Formation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation-Description\", \"Investigate Ice Structure\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Formation"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Travel",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Travel.BPQ_OLY_Omni_Research_2_Formation_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Travel-Description\", \"Travel to the Reported Location (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "MoveToNextLocation2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment.BPQ_OLY_Omni_Research_2_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment-Description\", \"Locate the Lost Equipment\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Travel",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Travel.BPQ_OLY_Omni_Research_2_Equipment_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Travel-Description\", \"Travel to the Equipment Drop Zone (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NegativeExclamation10",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Laser",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Laser.BPQ_OLY_Omni_Research_2_Equipment_Laser_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Laser-Description\", \"Find the Protype Weapon (Check Up High)\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Laser_1",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup.BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Laser_1-Description\", \"First Prototype Weapon Piece Collected\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Laser_1"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Laser_2",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup.BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Laser_2-Description\", \"Second Prototype Weapon Piece Collected\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Laser_2"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Laser_3",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup.BPQ_OLY_Omni_Research_2_Equipment_Laser_Pickup_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Laser_3-Description\", \"Third Prototype Weapon Piece Collected\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Laser_3"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Laser_Craft",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Laser_Craft.BPQ_OLY_Omni_Research_2_Equipment_Laser_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Laser_Craft-Description\", \"Repair Prototype Weapon at Machining Bench\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Expedition4aCombineItems",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Solar_Opt",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Solar.BPQ_OLY_Omni_Research_2_Equipment_Solar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Solar_Opt-Description\", \"(Optional) Collect the Power Generating Device\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Solar"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Solar_Repair",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Solar_Repair.BPQ_OLY_Omni_Research_2_Solar_Repair_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Solar_Repair-Description\", \"Repair the Broken Solar Panel (Maching Bench)\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Solar"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "NegativeExclamation8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Equipment_Extra_Opt",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Equipment_Extra.BPQ_OLY_Omni_Research_2_Equipment_Extra_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Equipment_Extra_Opt-Description\", \"(Optional) Collect the Survival Gear\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Equipment_Laser_Extra"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation12",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Laser",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Laser.BPQ_OLY_Omni_Research_2_Formation_Laser_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Laser-Description\", \"Use the Equipment to Open the Formation\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Formation"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Laser_Deploy",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Laser_Deploy.BPQ_OLY_Omni_Research_2_Formation_Laser_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Laser_Deploy-Description\", \"Deploy Prototype Weapon\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Laser_Power",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Laser_Power.BPQ_OLY_Omni_Research_2_Formation_Laser_Power_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Laser_Power-Description\", \"Power Prototype Weapon\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Laser_Activate",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Laser_Activate.BPQ_OLY_Omni_Research_2_Formation_Laser_Activate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Laser_Activate-Description\", \"Activate Prototype Weapon\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation12",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Laser_Progress",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Laser_Progress.BPQ_OLY_Omni_Research_2_Formation_Laser_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Laser_Progress-Description\", \"{0}% Complete\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Melt",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Melt.BPQ_OLY_Omni_Research_2_Formation_Melt_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Melt-Description\", \"Melt the Ice around the Frozen Mammoth (Place Heat Sources Near to Melt)\")",
+            "LocationQuery": {
+                "RowName": "T4_Omni_Research_2_Mammoth"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Melt_Deploy",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Melt_Deploy.BPQ_OLY_Omni_Research_2_Formation_Melt_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Melt_Deploy-Description\", \"{0}% Melting Efficency\")"
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Melt_Progress",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Melt_Progress.BPQ_OLY_Omni_Research_2_Formation_Melt_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Melt_Progress-Description\", \"{0}% Melted\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AnimalDead5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Formation_Collect",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Research2/BPQ_OLY_Omni_Research_2_Formation_Collect.BPQ_OLY_Omni_Research_2_Formation_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Formation_Collect-Description\", \"Collect Sample from Frozen Mammoth\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Omni_Research_2_Return",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_InteractWithDropship.BPQ_Common_InteractWithDropship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Research_2_Return-Description\", \"Return To Dropship\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "ReturnItemsToDropship4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         }
     ]
 }

@@ -1281,6 +1281,9 @@
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
             "VocalisationSocket": "RigJaw",
+            "AttackVocalisation": {
+                "RowName": "BuffaloAttack"
+            },
             "FlinchVocalisation": {
                 "RowName": "BuffaloFlinch"
             },
@@ -1323,6 +1326,20 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "BuffaloIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BuffaloAttacking",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -1488,6 +1505,9 @@
             },
             "FootstepMaxDistance": 6000,
             "FoliageCheckMaxDistance": 6000
+        },
+        {
+            "Name": "Kea"
         }
     ]
 }

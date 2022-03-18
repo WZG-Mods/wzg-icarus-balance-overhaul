@@ -180,8 +180,6 @@
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
                 "(Value=\"BaseCharacterMass_+\")": 1000,
-                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 500,
-                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 0,
                 "(Value=\"BaseNPCAttackRadius_+\")": 750,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
@@ -609,10 +607,18 @@
                 "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
-                "(Value=\"BaseCharacterMass_+\")": 175,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseCharacterMass_+\")": 500,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseNPCMinTargetDistanceForCharge_+\")": 300,
+                "(Value=\"BaseNPCMaxTargetDistanceForCharge_+\")": 1500,
+                "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -715,6 +721,21 @@
                 "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1500,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 50
             }
+        },
+        {
+            "Name": "Kea",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 50,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2
+            },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
 }
