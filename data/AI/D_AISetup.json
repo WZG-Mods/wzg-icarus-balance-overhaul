@@ -21,6 +21,8 @@
             "RowName": "None",
             "DataTableName": "D_AIRelationships"
         },
+        "NotifiedNPCTypes": [],
+        "bNotifySelfType": true,
         "AIGrowth": {
             "RowName": "None",
             "DataTableName": "D_AIGrowth"
@@ -36,6 +38,7 @@
             "DataTableName": "D_AIAudioData"
         },
         "CollisionHitEventBones": [],
+        "LatentDeathDuration": 10,
         "Trophy": {
             "RowName": "None",
             "DataTableName": "D_ItemRewards"
@@ -156,6 +159,12 @@
             "Relationships": {
                 "RowName": "DefaultSmallHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Roat"
             },
@@ -253,129 +262,6 @@
             }
         },
         {
-            "Name": "Wulv",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Wulv_Character.BP_NPC_Wulv_Character_C",
-            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
-            "CreatureType": {
-                "RowName": "Wulv"
-            },
-            "Descriptors": [
-                {
-                    "RowName": "Aggressive",
-                    "DataTableName": "D_AIDescriptors"
-                },
-                {
-                    "RowName": "Carnivore",
-                    "DataTableName": "D_AIDescriptors"
-                }
-            ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Wulv"
-            },
-            "GOAPSetup": {
-                "RowName": "Wulv"
-            },
-            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
-            "Relationships": {
-                "RowName": "DefaultMediumCarnivore"
-            },
-            "AIGrowth": {
-                "RowName": "Wulv"
-            },
-            "MovementMapping": {
-                "Stationary": {
-                    "MaxWalkSpeed": 0.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Sneak": {
-                    "MaxWalkSpeed": 0.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Walk": {
-                    "MaxWalkSpeed": 1.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Jog": {
-                    "MaxWalkSpeed": 5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Run": {
-                    "MaxWalkSpeed": 12,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Sprint": {
-                    "MaxWalkSpeed": 16.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 900,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 200,
-                    "MaxSwimSpeed": 1
-                },
-                "Attacking": {
-                    "MaxWalkSpeed": 1.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Undefined": {
-                    "MaxWalkSpeed": 1.5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                }
-            },
-            "HuntingSetup": {
-                "RowName": "Wulv"
-            },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "Jaw_M",
-                    "AffectsChildren": true
-                }
-            ],
-            "Audio": {
-                "RowName": "Wolf"
-            },
-            "Loot": {
-                "RowName": "Wulv_Carcass_Loot"
-            },
-            "Hitable": {
-                "RowName": "AnimalBones"
-            }
-        },
-        {
             "Name": "RedGoat",
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RedGoat_Character.BP_NPC_RedGoat_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
@@ -402,6 +288,12 @@
             "Relationships": {
                 "RowName": "NeutralMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Red_Goat"
             },
@@ -525,6 +417,12 @@
             "Relationships": {
                 "RowName": "NeutralMediumCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Snow_Wolf"
             },
@@ -653,6 +551,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Bear"
             },
@@ -782,6 +686,12 @@
             "Relationships": {
                 "RowName": "DefaultSmallHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Raccoon"
             },
@@ -905,6 +815,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Chamois_M"
             },
@@ -1169,6 +1085,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Polar_Bear"
             },
@@ -1261,6 +1183,7 @@
                 "RigPelvis",
                 "RigNeck3"
             ],
+            "LatentDeathDuration": 120,
             "Trophy": {
                 "RowName": "PolarBear_Head"
             },
@@ -1298,6 +1221,12 @@
             "Relationships": {
                 "RowName": "DefaultSmallHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Baby_Deer"
             },
@@ -1426,6 +1355,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Lion_F"
             },
@@ -1847,6 +1782,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Deer"
             },
@@ -1983,6 +1924,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Deer"
             },
@@ -2119,6 +2066,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Deer"
             },
@@ -2255,6 +2208,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Deer"
             },
@@ -2391,6 +2350,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Alpha_Wolf"
             },
@@ -2522,6 +2487,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Pack_Wolf"
             },
@@ -2650,6 +2621,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Jaguar"
             },
@@ -2779,6 +2756,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Chamois_M"
             },
@@ -2908,6 +2891,12 @@
             "Relationships": {
                 "RowName": "NeutralMediumCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Conifer_Wolf"
             },
@@ -3030,7 +3019,7 @@
                 "RowName": "AnimalCarcass_Mammoth"
             },
             "GOAPSetup": {
-                "RowName": "Mammoth"
+                "RowName": "Mammoth_Boss"
             },
             "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_LargeAI.NavFilter_LargeAI_C'",
             "Relationships": {
@@ -3178,6 +3167,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Snow_Leopard"
             },
@@ -3307,6 +3302,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Jaguar_Black"
             },
@@ -3436,6 +3437,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Polar_Bear"
             },
@@ -3565,6 +3572,12 @@
             "Relationships": {
                 "RowName": "DefaultSmallHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Rabbit"
             },
@@ -3688,6 +3701,12 @@
             "Relationships": {
                 "RowName": "DefaultSmallHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Rabbit"
             },
@@ -3811,6 +3830,12 @@
             "Relationships": {
                 "RowName": "NeutralMediumCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Conifer_Wolf"
             },
@@ -3921,7 +3946,7 @@
             },
             "Descriptors": [
                 {
-                    "RowName": "Passive",
+                    "RowName": "Neutral",
                     "DataTableName": "D_AIDescriptors"
                 },
                 {
@@ -3933,11 +3958,11 @@
                 "RowName": "AnimalCarcass_Buffalo"
             },
             "GOAPSetup": {
-                "RowName": "Deer"
+                "RowName": "Buffalo"
             },
             "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
             "Relationships": {
-                "RowName": "DefaultMediumHerbivore"
+                "RowName": "NeutralMediumHerbivore"
             },
             "AIGrowth": {
                 "RowName": "Buffalo"
@@ -4000,10 +4025,10 @@
                 "Attacking": {
                     "MaxWalkSpeed": 7.690000057220459,
                     "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
                     "MaxSwimSpeed": 1
                 },
                 "Undefined": {
@@ -4074,6 +4099,12 @@
             "Relationships": {
                 "RowName": "DefaultLargeCarnivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Alpha_Wolf_Boss"
             },
@@ -4333,6 +4364,12 @@
             "Relationships": {
                 "RowName": "DefaultMediumHerbivore"
             },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
             "AIGrowth": {
                 "RowName": "Zebra"
             },
@@ -4516,7 +4553,140 @@
                     "BoneName": "control_C0_control_jnt",
                     "AffectsChildren": true
                 }
-            ]
+            ],
+            "Loot": {
+                "RowName": "Caveworm_Loot"
+            }
+        },
+        {
+            "Name": "Kea",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Kea_Character.BP_NPC_Kea_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Kea"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Kea"
+            },
+            "GOAPSetup": {
+                "RowName": "Kea"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "DefaultSmallHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Kea"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 800,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 6,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Kea"
+            },
+            "CollisionHitEventBones": [
+                "RigPelvis",
+                "RigHead"
+            ],
+            "Loot": {
+                "RowName": "Kea_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
         }
     ]
 }

@@ -3140,7 +3140,7 @@
                     "Value": "FoodModifierDuration_+%"
                 }
             ],
-            "MergeType": "LongestDuration",
+            "MergeType": "Replace",
             "bEffectsNPCs": false
         },
         {
@@ -3762,6 +3762,173 @@
             "bEffectsNPCs": false,
             "bEffectsPlayers": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "WaterConnectionSpeedUp_2x",
+            "ModifierName": "",
+            "ModifierDescription": "",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseCraftingSpeed_+%\")": 200
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Dried_Giant_Steak",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Cooked_Prime_MeatDried.ITEM_Cooked_Prime_MeatDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Giant_Steak-ModifierName\", \"Dried Giant Steak\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Giant_Steak-ModifierDescription\", \"Boosts health, reduces exposure damage, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
+                "(Value=\"BaseHealthRegen_+%\")": 25,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_Fatty_Tbone",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_TboneDried.ITEM_Meat_TboneDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Fatty_Tbone-ModifierName\", \"Dried Fatty T-Bone\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Fatty_Tbone-ModifierDescription\", \"Boosts health, meat yield from animals, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMeatHarvestedFromAnimals_+%\")": 25,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_Gamey_Meat",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_GameyDried.ITEM_Meat_GameyDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Gamey_Meat-ModifierName\", \"Dried Game Meat\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Gamey_Meat-ModifierDescription\", \"Boosts health, melee damage, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMeleeDamage_+%\")": 15,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_Stringy_Meat",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_StringyDried.ITEM_Meat_StringyDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Stringy_Meat-ModifierName\", \"Dried Stringy Meat\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Stringy_Meat-ModifierDescription\", \"Boosts stamina, attack speed, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseAttackSpeed_+%\")": 15,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_Soft_Meat",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_SoftDried.ITEM_Meat_SoftDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Soft_Meat-ModifierName\", \"Dried Soft Meat\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Soft_Meat-ModifierDescription\", \"Boosts stamina, stamina regeneration, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_White_Meat",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_WhiteDried.ITEM_Meat_WhiteDried'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_White_Meat-ModifierName\", \"Dried White Meat\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_White_Meat-ModifierDescription\", \"Boosts stamina, reduces exposure damage, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseExposureResistance_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cooked_Bacon",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Bacon_Cooked.ITEM_Bacon_Cooked'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Bacon-ModifierName\", \"Cooked Bacon\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Bacon-ModifierDescription\", \"Increases experience gained, boosts health and stamina\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExperience_+%\")": 15,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 75
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Crispy_Bacon",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Bacon_Crispy.ITEM_Bacon_Crispy'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crispy_Bacon-ModifierName\", \"Crispy Bacon\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crispy_Bacon-ModifierDescription\", \"Increases experience gained, grants a large boost to health and stamina, plus critical damage\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExperience_+%\")": 15,
+                "(Value=\"BaseMaximumHealth_+\")": 90,
+                "(Value=\"BaseMaximumStamina_+\")": 90,
+                "(Value=\"BaseCriticalDamage_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }

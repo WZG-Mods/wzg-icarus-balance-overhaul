@@ -12,7 +12,8 @@
         "RangeCheckBehaviour": "CustomFunction",
         "ActionBP": "None",
         "BehaviourTree": "None",
-        "AudioState": "Idle"
+        "AudioState": "Idle",
+        "ActionStats": {}
     },
     "Rows": [
         {
@@ -241,101 +242,6 @@
             "AudioState": "Fleeing"
         },
         {
-            "Name": "Melee_Attack",
-            "Description": "Melee_Attack",
-            "Preconditions": [
-                {
-                    "Property": {
-                        "RowName": "Scared",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": true
-                },
-                {
-                    "Property": {
-                        "RowName": "Found_Enemy",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": true
-                }
-            ],
-            "Effects": [
-                {
-                    "Property": {
-                        "RowName": "Scared",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": false
-                }
-            ],
-            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
-            "AssociatedMovementState": "Run",
-            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Melee_Attack.BP_IcarusGOAPAction_Melee_Attack_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack.BT_IcarusNPCGOAP_Melee_Attack",
-            "AudioState": "Attacking"
-        },
-        {
-            "Name": "Search_For_Attacker",
-            "Description": "Search_For_Attacker",
-            "Preconditions": [
-                {
-                    "Property": {
-                        "RowName": "Found_Enemy",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": false
-                }
-            ],
-            "Effects": [
-                {
-                    "Property": {
-                        "RowName": "Found_Enemy",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": true
-                }
-            ],
-            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
-            "AssociatedMovementState": "Jog",
-            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_FindEnemy.BP_IcarusGOAPAction_FindEnemy_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Search_For_LastAttacker.BT_IcarusGOAP_Search_For_LastAttacker",
-            "AudioState": "Attacking"
-        },
-        {
-            "Name": "Charge",
-            "Description": "Charge",
-            "Preconditions": [
-                {
-                    "Property": {
-                        "RowName": "Found_Enemy",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": true
-                },
-                {
-                    "Property": {
-                        "RowName": "Scared",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": true
-                }
-            ],
-            "Effects": [
-                {
-                    "Property": {
-                        "RowName": "Scared",
-                        "DataTableName": "D_GOAPProperties"
-                    },
-                    "Value": false
-                }
-            ],
-            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
-            "AssociatedMovementState": "Sprint",
-            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Charge.BP_IcarusGOAPAction_Charge_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Charge.BT_IcarusNPCGOAP_Charge",
-            "AudioState": "Attacking"
-        },
-        {
             "Name": "Be_Cautious",
             "Description": "Be_Cautious",
             "Preconditions": [
@@ -386,6 +292,50 @@
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Rest.BP_IcarusGOAPAction_Rest_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Rest.BT_IcarusGOAP_Rest",
             "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Charge",
+            "Description": "Charge",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 15,
+            "AssociatedMovementState": "Attacking",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Charge.BP_IcarusGOAPAction_Charge_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Charge.BT_IcarusNPCGOAP_Charge",
+            "AudioState": "Attacking",
+            "ActionStats": {
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 1500
+            }
         },
         {
             "Name": "Melee_Attack_Assailant",

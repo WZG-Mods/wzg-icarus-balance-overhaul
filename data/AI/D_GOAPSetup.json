@@ -94,42 +94,6 @@
             }
         },
         {
-            "Name": "Deer_Aggressive",
-            "Motivations": [
-                {
-                    "RowName": "Threat",
-                    "DataTableName": "D_GOAPMotivations"
-                }
-            ],
-            "Actions": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Melee_Attack",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Search_For_Attacker",
-                    "DataTableName": "D_GOAPActions"
-                }
-            ],
-            "Goals": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Eliminate_Threat",
-                    "DataTableName": "D_GOAPGoals"
-                }
-            ],
-            "DefaultGoal": {
-                "RowName": "Wander"
-            }
-        },
-        {
             "Name": "Roat",
             "Motivations": [
                 {
@@ -194,78 +158,6 @@
                 },
                 {
                     "RowName": "Satisfy_Attraction",
-                    "DataTableName": "D_GOAPGoals"
-                }
-            ],
-            "DefaultGoal": {
-                "RowName": "Wander"
-            }
-        },
-        {
-            "Name": "Roat_Aggressive",
-            "Motivations": [
-                {
-                    "RowName": "Threat",
-                    "DataTableName": "D_GOAPMotivations"
-                }
-            ],
-            "Actions": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Melee_Attack",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Search_For_Attacker",
-                    "DataTableName": "D_GOAPActions"
-                }
-            ],
-            "Goals": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Eliminate_Threat",
-                    "DataTableName": "D_GOAPGoals"
-                }
-            ],
-            "DefaultGoal": {
-                "RowName": "Wander"
-            }
-        },
-        {
-            "Name": "Wulv",
-            "Motivations": [
-                {
-                    "RowName": "Threat",
-                    "DataTableName": "D_GOAPMotivations"
-                }
-            ],
-            "Actions": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Melee_Attack",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Search_For_Attacker",
-                    "DataTableName": "D_GOAPActions"
-                }
-            ],
-            "Goals": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Eliminate_Threat",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
@@ -769,10 +661,6 @@
                     "DataTableName": "D_GOAPMotivations"
                 },
                 {
-                    "RowName": "Protective",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
                     "RowName": "Tiredness",
                     "DataTableName": "D_GOAPMotivations"
                 },
@@ -803,10 +691,6 @@
                     "DataTableName": "D_GOAPActions"
                 },
                 {
-                    "RowName": "Warn_Aggressor",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
                     "RowName": "Relax_At_Last_Hostile_Location",
                     "DataTableName": "D_GOAPActions"
                 },
@@ -833,7 +717,83 @@
                     "DataTableName": "D_GOAPGoals"
                 },
                 {
-                    "RowName": "Warn_Aggressor",
+                    "RowName": "Satisfy_Thirst",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            }
+        },
+        {
+            "Name": "Buffalo",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Aggression",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Thirst",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Foliage",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Charge",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Melee_Attack_Assailant",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Investigate_Last_Hostile_Stimulus",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Relax_At_Last_Hostile_Location",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Drink_Water",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Kill_Assailant",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
                     "DataTableName": "D_GOAPGoals"
                 },
                 {
@@ -1055,6 +1015,70 @@
         },
         {
             "Name": "Mammoth",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Aggression",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Foliage",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Melee_Attack_Assailant",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Investigate_Last_Hostile_Stimulus",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Relax_At_Last_Hostile_Location",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Kill_Assailant",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            }
+        },
+        {
+            "Name": "Mammoth_Boss",
             "Motivations": [
                 {
                     "RowName": "Hunger",
@@ -1814,6 +1838,66 @@
                 },
                 {
                     "RowName": "Be_Cautious",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            }
+        },
+        {
+            "Name": "Kea",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Thirst",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Foliage",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Container",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Drink_Water",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Thirst",
                     "DataTableName": "D_GOAPGoals"
                 },
                 {
