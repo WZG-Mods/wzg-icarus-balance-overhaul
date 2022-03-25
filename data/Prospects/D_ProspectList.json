@@ -1901,7 +1901,7 @@
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_0-DropName\", \"SPIRIT LEVEL: Survey\")",
             "DesignNotes": "[DNT] Canyon Survey",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_0-Description\", \"GATHER GEOLOGICAL GLACIER DATA\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_0-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Canyons // BACKGROUND: Operator is researching exotics formation and requires detailed geological survey data from the Canyons region. // MISSION: Establish geo-stations at two survey locations, and a central uplink unit to transmit the data to orbit.  Construction to elevate survey stations to line-of-sight altitude may be required. // TERMS: Operator will provide survey equipment, but the Contractor is responsible for ensuring its safety.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_0-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Canyons // BACKGROUND: Operator is researching exotics formation and requires detailed geological survey data from the Canyons region. // MISSION: Establish geo-stations at two survey locations. Construction to elevate survey stations to line-of-sight altitude may be required. // TERMS: Operator will provide survey equipment, but the Contractor is responsible for ensuring its safety.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition8.SelectedProspect_Expedition8'",
             "Difficulty": "Normal",
             "BriefingDialogue": {
@@ -1955,7 +1955,7 @@
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_Hardcore-DropName\", \"SPIRIT LEVEL: Hardcore Survey\")",
             "DesignNotes": "[DNT] Canyon Survey",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_Hardcore-Description\", \"GATHER GEOLOGICAL GLACIER DATA\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_Hardcore-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Canyons // BACKGROUND: Operator is researching exotics formation and requires detailed geological survey data from the Canyons region. // MISSION: Establish geo-stations at two survey locations, and a central uplink unit to transmit the data to orbit.  Construction to elevate survey stations to line-of-sight altitude may be required. // TERMS: Operator will provide survey equipment, but the Contractor is responsible for ensuring its safety.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_Survey_Hardcore-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Canyons // BACKGROUND: Operator is researching exotics formation and requires detailed geological survey data from the Canyons region. // MISSION: Establish geo-stations at two survey locations . Construction to elevate survey stations to line-of-sight altitude may be required. // TERMS: Operator will provide survey equipment, but the Contractor is responsible for ensuring its safety.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition8.SelectedProspect_Expedition8'",
             "Difficulty": "Extreme",
             "BriefingDialogue": {
@@ -4105,6 +4105,69 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertExploration.GT_T016_Bounds_T4_DesertExploration",
+            "bAbandonOnProspectExpiry": true
+        },
+        {
+            "Name": "Tier4_Desert_Recovery",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery-DropName\", \"CONCEALMENT: Recovery\")",
+            "DesignNotes": "[DNT] Scorpion introduction mission",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery-Description\", \"COLLECT AND DESTROY THE RESULTS OF A FAILED EXPERIMENT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Desert // BACKGROUND: Sinotai has been conducting a closely guarded experiment regarding potential exotic mutation that may be deemed unethical if made public. // MISSION: Locate biological containment units and then destroy the evidence. //TERMS: Flat fee. All safety and survival concerns are the responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition4.SelectedProspect_Expedition4'",
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete10"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Desert_Recovery"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 26,
+            "MetaDepositSpawns": [
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_C13"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_J14_3"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 140,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertRecovery.GT_T016_Bounds_T4_DesertRecovery",
             "bAbandonOnProspectExpiry": true
         },
         {

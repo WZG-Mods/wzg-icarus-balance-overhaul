@@ -2738,10 +2738,6 @@
                 "RowName": "T4_Desert_Expedition_Loc1"
             },
             "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "Expedition4bLocationReached1",
-                    "DataTableName": "D_Dialogue"
-                },
                 "QuestEnd": {
                     "RowName": "Expedition4bFoundFragment1",
                     "DataTableName": "D_Dialogue"
@@ -3669,6 +3665,120 @@
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "ReturnItemsToDropship4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery.BPQ_OLY_Desert_Recovery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery-Description\", \"Concealment: Recovery\")"
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Containment_0",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Containment.BPQ_OLY_Desert_Recovery_Containment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Containment_0-Description\", \"Destroy Arachnid Containment Unit 1\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Recovery_Drop1"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "ExterminationLandingSpare3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Containment_1",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Containment.BPQ_OLY_Desert_Recovery_Containment_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Containment_1-Description\", \"Destroy Arachnid Containment Unit 2\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Recovery_Drop2"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Deposit",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit.BPQ_OLY_Desert_Recovery_Deposit_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit-Description\", \"Deposit the Catalytic ingredients into the Unit\")",
+            "DialoguePoolEvents": {
+                "QuestStart": {
+                    "RowName": "Desert_recovery_container",
+                    "DataTableName": "D_DialoguePool"
+                },
+                "QuestEnd": {
+                    "RowName": "Deposit_All",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Deposit_Gunpowder",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit_Gunpowder.BPQ_OLY_Desert_Recovery_Deposit_Gunpowder_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Gunpowder-Description\", \"{0}/{1} Gunpowder\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool1",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Deposit_Electronics",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit_Electronics.BPQ_OLY_Desert_Recovery_Deposit_Electronics_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Electronics-Description\", \"{0}/{1} Electonics\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool2",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Deposit_Meat",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit_Meat.BPQ_OLY_Desert_Recovery_Deposit_Meat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Meat-Description\", \"{0}/{1} Cooked Fatty T-Bone (Harvested from Bears)\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool3",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Deposit_Paste",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit_Paste.BPQ_OLY_Desert_Recovery_Deposit_Paste_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Paste-Description\", \"{0}/{1} Oxygen Restoration Paste\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool4",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Defend",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Defend.BPQ_OLY_Desert_Recovery_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Defend-Description\", \"Clear the area of Scorpions\")",
+            "DialoguePoolEvents": {
+                "QuestStart": {
+                    "RowName": "Animal_Aggro",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Defend_Waves",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Defend_Waves.BPQ_OLY_Desert_Recovery_Defend_Waves_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Defend_Waves-Description\", \"{0}% of Scorpions defeated\")"
+        },
+        {
+            "Name": "OLY_Desert_Recovery_Return",
+            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_InteractWithDropship.BP_InteractWithDropship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Return-Description\", \"Return to Dropship\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "FM1ResearchFinish",
                     "DataTableName": "D_Dialogue"
                 }
             }

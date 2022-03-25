@@ -361,6 +361,31 @@
                 }
             ],
             "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_EmergeFromRetreat.BP_IcarusGOAPMotivation_EmergeFromRetreat_C"
+        },
+        {
+            "Name": "Dormancy",
+            "Description": "Dormancy",
+            "UpdateTick": 3,
+            "StartingValue": 50,
+            "StartingValueDeviation": 15,
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "WantsDormancy",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Dormancy.BP_IcarusGOAPMotivation_Dormancy_C"
         }
     ]
 }

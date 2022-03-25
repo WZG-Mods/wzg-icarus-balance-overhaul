@@ -722,8 +722,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Test_WaterCool-ModifierDescription\", \"Water cools you.\")",
             "GrantedStats": {
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": 10,
-                "(Value=\"BaseHeatResistance_%\")": 10,
-                "(Value=\"BaseColdResistance_%\")": -4
+                "(Value=\"BaseHeatResistance_%\")": 10
             },
             "MergeType": "Replace",
             "ModifierTags": {
@@ -733,6 +732,17 @@
                     }
                 ]
             },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Thermos_IceWater",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.ITEM_Thermos'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_IceWater-ModifierName\", \"Ice Cool Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_IceWater-ModifierDescription\", \"Refreshing ice cold water keeps you cooler for longer.\")",
+            "GrantedStats": {
+                "(Value=\"BaseHeatResistance_%\")": 10
+            },
+            "MergeType": "Replace",
             "bEffectsNPCs": false
         },
         {
@@ -1088,6 +1098,7 @@
             "GrantedStats": {
                 "(Value=\"BaseColdResistance_%\")": -20
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Wet.BP_Modifier_Wet_C",
             "ShouldTick": true,
             "MergeType": "LongestDuration",
             "ModifierTags": {
@@ -2070,7 +2081,7 @@
                 "(Value=\"BaseHealthRegen_+%\")": 50,
                 "(Value=\"BaseStaminaRegen_+%\")": 50,
                 "(Value=\"BaseExperience_+%\")": 10,
-                "(Value=\"BaseHeatResistance_%\")": 10
+                "(Value=\"BaseColdResistance_%\")": 7
             },
             "MergeType": "Replace",
             "ModifierTags": {
@@ -2177,7 +2188,6 @@
                 "(Value=\"BaseWaterConsumption_+%\")": 10,
                 "(Value=\"Experience_+%\")": -10
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_TemperatureClear.BP_Modifier_TemperatureClear_C",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -3928,6 +3938,176 @@
                 }
             ],
             "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Heatstroke",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Overheat.Icon_Overheat'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Heatstroke-ModifierName\", \"Heatstroke\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Heatstroke-ModifierDescription\", \"At risk of heat exhaustion, counter with cooling bandages.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWeightCapacity_+%\")": -15,
+                "(Value=\"BaseHealthRegen_+%\")": -10,
+                "(Value=\"BaseMeleeDamage_+%\")": -10
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Heatstroke_Esculation"
+            },
+            "EscalationTime": 300,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_TemperatureClearHot.BP_Modifier_TemperatureClearHot_C",
+            "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.CoolingBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.Heat_Exhaustion"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.CoolingBandage, ModifierState.Heat_Exhaustion )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Heat_Exhaustion",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HeatOverloadDebuff.Icon_HeatOverloadDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Heat_Exhaustion-ModifierName\", \"Heat Exhaustion\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Heat_Exhaustion-ModifierDescription\", \"This heat is overwhelming you, counter with cooling bandages.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWeightCapacity_+%\")": -25,
+                "(Value=\"BaseHealthRegen_+%\")": -30,
+                "(Value=\"BaseWaterConsumption_+%\")": 25,
+                "(Value=\"BaseMeleeDamage_+%\")": -25,
+                "(Value=\"BaseExperience_+%\")": -10
+            },
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Heat_Exhaustion"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.CoolingBandage"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.CoolingBandage )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Bandage_Cooling",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Bandage_Basic.ITEM_Bandage_Basic'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Cooling-ModifierName\", \"Cooling Bandage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Cooling-ModifierDescription\", \"Healing Heatstroke\")",
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.CoolingBandage"
+                    }
+                ]
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Poison_Sting",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Sting-ModifierName\", \"Poisoned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Sting-ModifierDescription\", \"Slowly drains health from poisoned targets.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -5
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 10,
+                    "Deviation": 3
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 2,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
+            "Name": "Wet_Expire",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierName\", \"Wet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierDescription\", \"You are wet.\")",
+            "GrantedStats": {
+                "(Value=\"BaseColdResistance_%\")": -20
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Wet"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.Wet )"
+            },
             "bEffectsNPCs": false
         }
     ]

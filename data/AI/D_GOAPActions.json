@@ -544,7 +544,11 @@
             "TimeOut": 45,
             "AssociatedMovementState": "Sprint",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GotoAnchorPoint.BP_IcarusGOAPAction_GotoAnchorPoint_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GotoAnchorPoint.BT_IcarusGOAP_GotoAnchorPoint"
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GotoAnchorPoint.BT_IcarusGOAP_GotoAnchorPoint",
+            "ActionStats": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 10000,
+                "(Value=\"BaseHealthRegenDelay_+\")": -9999
+            }
         },
         {
             "Name": "Approach_Attraction",
@@ -675,6 +679,35 @@
             "AssociatedMovementState": "Attacking",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EmergeFromRetreat.BP_IcarusGOAPAction_EmergeFromRetreat_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_EmergeFromRetreat.BT_IcarusGOAP_EmergeFromRetreat"
+        },
+        {
+            "Name": "Become_Dormant",
+            "Description": "Become_Dormant",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "WantsDormancy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "WantsDormancy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_BecomeDormant.BP_IcarusGOAPAction_BecomeDormant_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_BecomeDormant.BT_IcarusGOAP_BecomeDormant",
+            "ActionStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -100
+            }
         }
     ]
 }
