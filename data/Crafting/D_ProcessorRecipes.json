@@ -16096,47 +16096,6 @@
             }
         },
         {
-            "Name": "Cooked_Prime_Meat",
-            "RequiredMillijoules": 25000,
-            "RecipeSets": [
-                {
-                    "RowName": "Campfire",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Kitchen_Stove",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "PotBellyStove",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Raw_Prime_Meat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Cooked_Prime_Meat",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Campfire"
-            }
-        },
-        {
             "Name": "Repair_Bench",
             "Requirement": {
                 "RowName": "Repair_Bench"
@@ -23094,6 +23053,47 @@
             }
         },
         {
+            "Name": "IceWater_Drink",
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ice",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Thermos",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Thermos_IceWater",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
+            }
+        },
+        {
             "Name": "Basic_Backpack",
             "Requirement": {
                 "RowName": "Basic_Backpack"
@@ -24487,6 +24487,10 @@
                 {
                     "RowName": "Kitchen_Stove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -25073,6 +25077,57 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Bandage_Cooling",
+            "Requirement": {
+                "RowName": "Bandage_Cooling"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Charcoal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Bandage_Cooling",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
             }
         }
     ]
