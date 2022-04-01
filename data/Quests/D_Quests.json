@@ -1602,6 +1602,66 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile_Deposit_Ice-Description\", \"{0} / {1} Ice\")"
         },
         {
+            "Name": "OLY_Canyon_Stockpile2",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2.BPQ_OLY_Canyon_Stockpile2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2-Description\", \"STOCKPILE: Cured Meat Run\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_ShipContainer_CuredMeat",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_ShipContainer.BPQ_OLY_Canyon_Stockpile2_ShipContainer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_ShipContainer_CuredMeat-Description\", \"Refrigerated Cargo Pod\")",
+            "LocationQuery": {
+                "RowName": "T2_Canyon_Stockpile2_Ship"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AllItemsFound4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_List",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_List.BPQ_OLY_Canyon_Stockpile2_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_List-Description\", \"Deposit listed resources in Cargo Pod\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_1",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_FattyTbone.BPQ_OLY_Canyon_Stockpile2_Deposit_FattyTbone_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_1-Description\", \"{0} / {1} Dried Fatty T-Bone (Bears, Polar Bears)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "ItemFoundGeneric6",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_2",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_GameyMeat.BPQ_OLY_Canyon_Stockpile2_Deposit_GameyMeat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_2-Description\", \"{0} / {1} Dried Gamey Meat (Chamois, Deer, Zebra)\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_3",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_GiantSteak.BPQ_OLY_Canyon_Stockpile2_Deposit_GiantSteak_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_3-Description\", \"{0} / {1} Dried Giant Steak (Elephant, Mammoth)\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_4",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_SoftMeat.BPQ_OLY_Canyon_Stockpile2_Deposit_SoftMeat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_4-Description\", \"{0} / {1} Dried Soft Meat (Rabbit, Scorpion, Baby Deer)\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_5",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_StringyMeat.BPQ_OLY_Canyon_Stockpile2_Deposit_StringyMeat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_5-Description\", \"{0} / {1} Dried Stringy Meat (Wolves, Lions, Scorpions)\")"
+        },
+        {
+            "Name": "OLY_Canyon_Stockpile2_Deposit_Meat_6",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_Deposit_WhiteMeat.BPQ_OLY_Canyon_Stockpile2_Deposit_WhiteMeat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_Deposit_Meat_6-Description\", \"{0} / {1} Dried White Meat (Boars)\")"
+        },
+        {
             "Name": "OLY_Riverlands_Expedition",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Expedition/BPQ_Riverlands_OLY_Expedition.BPQ_Riverlands_OLY_Expedition_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition-Description\", \"EXPEDITION: Riverlands\")",
@@ -3726,7 +3786,7 @@
         {
             "Name": "OLY_Desert_Recovery_Deposit_Electronics",
             "Class": "/Game/BP/Quests/Olympus/Desert/Recovery/BPQ_OLY_Desert_Recovery_Deposit_Electronics.BPQ_OLY_Desert_Recovery_Deposit_Electronics_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Electronics-Description\", \"{0}/{1} Electonics\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Deposit_Electronics-Description\", \"{0}/{1} Electronics\")",
             "DialoguePoolEvents": {
                 "QuestEnd": {
                     "RowName": "Deposit_Complete_Pool2",
