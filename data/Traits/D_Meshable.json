@@ -555,6 +555,7 @@
         {
             "Name": "Mesh_Flashlight",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Flashlight_SML.SK_ITM_Flashlight_SML",
+            "ItemActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Flashlight.BP_SkeletalItem_Flashlight_C",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Flashlight_SML.SK_ITM_Flashlight_SML",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Flashlight.BP_SkeletalItem_Flashlight_C"
         },
@@ -1355,9 +1356,22 @@
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_MetaAlpha_Ore_Scanner_05.SK_ITM_MetaAlpha_Ore_Scanner_05"
         },
         {
-            "Name": "Mesh_OreScanner_0",
-            "ItemMesh": "/Game/ASS/ITM/SK_ITM_MetaAlpha_OreScanner_02.SK_ITM_MetaAlpha_OreScanner_02",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_MetaAlpha_OreScanner_02.SK_ITM_MetaAlpha_OreScanner_02"
+            "Name": "Mesh_Scanner_DeepOre",
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Needle_T3.SK_ITM_Scan_Handheld_Needle_T3",
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Needle_T3.SK_ITM_Scan_Handheld_Needle_T3",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Scanner_DeepOre.BP_SkeletalItem_Scanner_DeepOre_C"
+        },
+        {
+            "Name": "Mesh_Meta_Scanner_DeepOre",
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Needle_T4.SK_ITM_Scan_Handheld_Needle_T4",
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Needle_T4.SK_ITM_Scan_Handheld_Needle_T4",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Meta_Scanner_DeepOre.BP_SkeletalItem_Meta_Scanner_DeepOre_C"
+        },
+        {
+            "Name": "Mesh_Scanner_Cave",
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Beeper_T3.SK_ITM_Scan_Handheld_Beeper_T3",
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Scan_Handheld_Beeper_T3.SK_ITM_Scan_Handheld_Beeper_T3",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Scanner_Cave.BP_SkeletalItem_Scanner_Cave_C"
         },
         {
             "Name": "Mesh_Composter_Wood",
@@ -2003,8 +2017,8 @@
         },
         {
             "Name": "Mesh_Steel_Axe",
-            "ItemMesh": "/Game/ASS/WEP/Axes/SK_AXE_Metal.SK_AXE_Metal",
-            "EquipHandMesh": "/Game/ASS/WEP/Axes/SK_AXE_Metal.SK_AXE_Metal"
+            "ItemMesh": "/Game/ASS/WEP/Axes/SK_AXE_Steel_variationA.SK_AXE_Steel_variationA",
+            "EquipHandMesh": "/Game/ASS/WEP/Axes/SK_AXE_Steel_variationA.SK_AXE_Steel_variationA"
         },
         {
             "Name": "Mesh_Steel_Ingot",
@@ -2021,11 +2035,6 @@
         },
         {
             "Name": "Mesh_Steel_Pickaxe",
-            "ItemMesh": "/Game/ASS/WEP/SK_PIC_Steel.SK_PIC_Steel",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_PIC_Steel.SK_PIC_Steel"
-        },
-        {
-            "Name": "Mesh_Steel_Pickaxe_variationA",
             "ItemMesh": "/Game/ASS/WEP/SK_PIC_Steel_variationA.SK_PIC_Steel_variationA",
             "EquipHandMesh": "/Game/ASS/WEP/SK_PIC_Steel_variationA.SK_PIC_Steel_variationA"
         },
@@ -2581,12 +2590,14 @@
         {
             "Name": "Mesh_Meta_Hammer_Shengong",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN.SK_ITM_Hammer_SHEN",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN.SK_ITM_Hammer_SHEN"
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN.SK_ITM_Hammer_SHEN",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_BuildingHammer.BP_SkeletalItem_BuildingHammer_C"
         },
         {
             "Name": "Mesh_Meta_Hammer_Shengong_Beta",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN_v2.SK_ITM_Hammer_SHEN_v2",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN_v2.SK_ITM_Hammer_SHEN_v2"
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_SHEN_v2.SK_ITM_Hammer_SHEN_v2",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_BuildingHammer.BP_SkeletalItem_BuildingHammer_C"
         },
         {
             "Name": "Mesh_Meta_Bow_Shengong_Alpha",
@@ -2983,7 +2994,8 @@
         {
             "Name": "Mesh_Meta_Hammer_Printed",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LEET.SK_ITM_Hammer_LEET",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LEET.SK_ITM_Hammer_LEET"
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LEET.SK_ITM_Hammer_LEET",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_BuildingHammer.BP_SkeletalItem_BuildingHammer_C"
         },
         {
             "Name": "Mesh_Meta_Sickle_Printed",
@@ -3355,7 +3367,8 @@
         {
             "Name": "Mesh_Meta_Hammer_Larkwell",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LARK.SK_ITM_Hammer_LARK",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LARK.SK_ITM_Hammer_LARK"
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Hammer_LARK.SK_ITM_Hammer_LARK",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_BuildingHammer.BP_SkeletalItem_BuildingHammer_C"
         },
         {
             "Name": "Mesh_Meta_Sickle_Larkwell",
@@ -3413,6 +3426,12 @@
         {
             "Name": "Mesh_Meta_Bolt_Larkwell_Whistling",
             "ItemMesh": "/Game/ASS/WEP/SK_BLT_Whistling_LARK.SK_BLT_Whistling_LARK"
+        },
+        {
+            "Name": "Mesh_Meta_Bow_Larkwell",
+            "ItemMesh": "/Game/ASS/WEP/SK_BOW_Compound/SM_BOW_Compound.SM_BOW_Compound",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_BOW_Lark/SK_Bow_LARK.SK_Bow_LARK_SK_Bow_LARK",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Lark_Bow.BP_SkeletalItem_Lark_Bow_C"
         }
     ]
 }

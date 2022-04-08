@@ -6,7 +6,11 @@
             "DataTableName": "D_ItemTemplate"
         },
         "ResearchCost": [],
-        "ReplicationCost": []
+        "ReplicationCost": [],
+        "RequiredMission": {
+            "RowName": "None",
+            "DataTableName": "D_Talents"
+        }
     },
     "Rows": [
         {
@@ -2878,6 +2882,33 @@
                     "Amount": 400
                 }
             ]
+        },
+        {
+            "Name": "Meta_Scanner_DeepOre",
+            "Item": {
+                "RowName": "Meta_Scanner_DeepOre"
+            },
+            "ResearchCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 500
+                }
+            ],
+            "ReplicationCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                }
+            ],
+            "RequiredMission": {
+                "RowName": "Prospect_OLY_Riverlands_Extraction"
+            }
         }
     ]
 }

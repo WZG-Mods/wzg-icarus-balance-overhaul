@@ -7139,7 +7139,7 @@
         {
             "Name": "Knife_Pin_Throw",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Knife_Pin_Throw-DisplayName\", \"Stay Right There\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Knife_Pin_Throw-Description\", \"Knife critical hits immobilize target\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Knife_Pin_Throw-Description\", \"Thrown knife critical hits immobilize target\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Blades/Talent_Blades_StayRightThere.Talent_Blades_StayRightThere",
             "TalentTree": {
                 "RowName": "Combat_Blades"
@@ -7155,7 +7155,7 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseKnifeAttacksCauseImmobilise_%\")": 10
+                        "(Value=\"BaseThrownKnifeCriticalHitCauseImmobilise_%\")": 100
                     },
                     "GrantedFlags": []
                 }
@@ -24772,6 +24772,102 @@
             "RequiredTalents": [
                 {
                     "RowName": "ProspectReroute_5",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Meta_Scanner",
+            "ExtraData": {
+                "RowName": "Meta_Scanner_DeepOre",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 11550,
+                "Y": 3900
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_3",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Cave_Scanner",
+            "ExtraData": {
+                "RowName": "Item_Cave_Scanner",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 1650,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Machine_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Deep_Ore_Scanner",
+            "ExtraData": {
+                "RowName": "Item_DeepOre_Scanner",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 1750,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Prospect_OLY_Riverlands_Extraction",
+            "ExtraData": {
+                "RowName": "Tier3_Riverlands_Extraction",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect"
+            },
+            "Position": {
+                "X": 9400,
+                "Y": 2700
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Reroute_9",
                     "DataTableName": "D_Talents"
                 }
             ]
