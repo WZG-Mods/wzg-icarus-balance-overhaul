@@ -6138,7 +6138,7 @@
             "DesignNotes": "[DNT]",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_LongSurvey_0-Description\", \"MAINTAIN LONG TERM SURVEY STATIONS\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier2_Canyon_LongSurvey_0-FlavourText\", \"//OPERATOR: Uniao // BIOME: Canyons // BACKGROUND: The Operator requires a long term survey conducted at an area of interest. This will provide critical data about the long term weather patterns in this area. // MISSION: Locate, deploy and shelter multiple scanning devices to collect data efficiently. //TERMS: Scanning equipment will be provided. All other risk and resourcing is the responsibility of the contractor. Expect elevated weather threats.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Survey.SelectedProstpect_Survey'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition8.SelectedProspect_Expedition8'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -7265,7 +7265,7 @@
             "DesignNotes": "[DNT] Scorpion introduction mission",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery-Description\", \"COLLECT AND DESTROY THE RESULTS OF A FAILED EXPERIMENT\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Desert // BACKGROUND: Sinotai has been conducting a closely guarded experiment regarding potential exotic mutation that may be deemed unethical if made public. // MISSION: Locate biological containment units and then destroy the evidence. //TERMS: Flat fee. All safety and survival concerns are the responsibility of the Contractor.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition4.SelectedProspect_Expedition4'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition15.SelectedProspect_Expedition15'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -7972,7 +7972,7 @@
             "DesignNotes": "[DNT] Omni Exploration",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier5_Omni_Research-Description\", \"NEWLY DISCOVERED RECIPE ANALYSIS\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier5_Omni_Research-FlavourText\", \"//OPERATOR: UDA // BIOME: Conifer // BACKGROUND: Operator is increasing their planetary research using all available technology // MISSION: Contractors are required to fill and activate a sample analyzer in order to research new recipes derived from native resources. //TERMS: Contractors will be provided with a functioning envirosuit. They will be otherwise unassisted.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Research.SelectedProstpect_Research'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition14.SelectedProspect_Expedition14'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -8488,7 +8488,7 @@
             "DesignNotes": "Farming mission to showcase mechanics",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Farming-Description\", \"SETUP AN EFFICIENT FARM\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Farming-FlavourText\", \"//OPERATOR: ACS // BIOME: Forest // BACKGROUND: General access for all Contractors meeting drop criteria. // MISSION: Contractor to setup an efficient farm utilizing hydroponics, fertilizer and greenhouse to deliver produce to cargo ship //TERMS: Contractors will be provided with a functioning envirosuit and some equipment to get the farm underway. They will be otherwise unassisted.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Delivery.SelectedProspect_Delivery'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition13.SelectedProspect_Expedition13'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -8608,6 +8608,144 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T5_OmniExpedition.GT_T016_Bounds_T5_OmniExpedition"
+        },
+        {
+            "Name": "Tier3_RiverLands_Extraction",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier3_RiverLands_Extraction-DropName\", \"MERIDIAN: Extraction\")",
+            "DesignNotes": "Introduce Handheld Scanners",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier3_RiverLands_Extraction-Description\", \"TEST NEW EQUIPMENT TO FIND AND COLLECT RAW METALS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier3_RiverLands_Extraction-FlavourText\", \"//OPERATOR: Group 15//BIOME: Riverlands //BACKGROUND: After extensive geo-surveys, the Operator\\'s research teams now believe this region is rich in metal deposits. They are one of only a handful of groups with a UDA-vetted export license for raw matter. //MISSION: Using prototype equipment, locate and extract raw materials from this region. These must then be delivered to the Operator\\'s representatives in orbit. //TERMS: All safety concerns are the responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Expedition16.SelectedProspect_Expedition16'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding0"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete9"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Riverlands_Extraction"
+            },
+            "TimeDuration": {
+                "Hours": {
+                    "Min": 24,
+                    "Max": 24
+                }
+            },
+            "StartingTime": 14,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 18,
+            "MetaDepositSpawns": [
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_C4"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 140,
+                    "MaxMetaAmount": 160
+                },
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_N7"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 140,
+                    "MaxMetaAmount": 160
+                },
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_O14"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 140,
+                    "MaxMetaAmount": 160
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T3_RiverlandsStockpile.GT_T016_Bounds_T3_RiverlandsStockpile"
         }
     ]
 }
