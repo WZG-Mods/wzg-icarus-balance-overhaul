@@ -4824,7 +4824,7 @@
         },
         {
             "Name": "Scorpion_Boss_Summon",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Scorpion_Character.BP_NPC_Scorpion_Character_C",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Scorpion_Summon_Character.BP_NPC_Scorpion_Summon_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
             "CreatureType": {
                 "RowName": "Scorpion"
@@ -4839,15 +4839,12 @@
                     "DataTableName": "D_AIDescriptors"
                 }
             ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Scorpion"
-            },
             "GOAPSetup": {
                 "RowName": "Scorpion_Boss_Summon"
             },
             "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
             "Relationships": {
-                "RowName": "NeutralMediumCarnivore"
+                "RowName": "EnemyPlayerOnly"
             },
             "NotifiedNPCTypes": [
                 {
@@ -4917,7 +4914,138 @@
                     "MaxWalkSpeed": 5.28000020980835,
                     "GroundFriction": 8,
                     "BrakingFriction": 64,
+                    "MaxAcceleration": 950,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": false
+                }
+            ],
+            "Audio": {
+                "RowName": "ScorpionSummon"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "Loot": {
+                "RowName": "Scorpion_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
+        },
+        {
+            "Name": "Scorpion_Young",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Scorpion_Summon_Character.BP_NPC_Scorpion_Summon_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Scorpion"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Aggressive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "GOAPSetup": {
+                "RowName": "Scorpion_Boss_Summon"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "EnemyPlayerOnly"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Scorpion_summon"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 800,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 6.670000076293945,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
                     "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 950,
                     "BrakingDeceleration": 50000,
                     "RotationRate": 300,
                     "MaxSwimSpeed": 1
@@ -5012,7 +5140,7 @@
                     "MaxWalkSpeed": 1,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
+                    "MaxAcceleration": 450,
                     "BrakingDeceleration": 800,
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
@@ -5070,7 +5198,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "Scorpion"
+                "RowName": "ScorpionBoss"
             },
             "CollisionHitEventBones": [
                 "RigChest",
