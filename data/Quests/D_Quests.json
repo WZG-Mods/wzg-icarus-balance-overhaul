@@ -3887,6 +3887,196 @@
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Extraction/BPQ_OLY_Riverlands_Extraction_Deliver.BPQ_OLY_Riverlands_Extraction_Deliver_C",
             "Variation": 2,
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Deliver_Gold_Ore-Description\", \"{0}/{1} Gold Ore\")"
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2.BPQ_OLY_Desert_Extermination_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2-Description\", \"EXTERMINATION: Desert\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Extermination_2_Arena"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Unit",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Containment.BPQ_OLY_Desert_Extermination_2_Containment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Unit-Description\", \"Destroy Arachnid Containment Unit\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Extermination_2_Unit"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Deposit",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Deposit.BPQ_OLY_Desert_Extermination_2_Deposit_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Deposit-Description\", \"Deposit the Catalytic ingredients into the Unit\")",
+            "DialoguePoolEvents": {
+                "QuestStart": {
+                    "RowName": "Desert_recovery_container",
+                    "DataTableName": "D_DialoguePool"
+                },
+                "QuestEnd": {
+                    "RowName": "Deposit_All",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Deposit_Gunpowder",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Deposit_Gunpowder.BPQ_OLY_Desert_Extermination_2_Deposit_Gunpowder_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Deposit_Gunpowder-Description\", \"{0}/{1} Gunpowder\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool1",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Deposit_Electronics",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Deposit_Electronics.BPQ_OLY_Desert_Extermination_2_Deposit_Electronics_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Deposit_Electronics-Description\", \"{0}/{1} Epoxy\")"
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Deposit_Meat",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Deposit_Meat.BPQ_OLY_Desert_Extermination_2_Deposit_Meat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Deposit_Meat-Description\", \"{0}/{1} Cooked Meat\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Deposit_Complete_Pool3",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Deposit_Paste",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Deposit_Paste.BPQ_OLY_Desert_Extermination_2_Deposit_Paste_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Deposit_Paste-Description\", \"{0}/{1} Basic Fertilizer\")"
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Kill",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Defend.BPQ_OLY_Desert_Extermination_2_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Kill-Description\", \"Clear the area of Scorpions\")"
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Kill_Waves",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Defend_Waves.BPQ_OLY_Desert_Extermination_2_Defend_Waves_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Kill_Waves-Description\", \"{0}% of Scorpions defeated\")"
+        },
+        {
+            "Name": "OLY_Desert_Extermination_2_Boss",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Boss.BPQ_OLY_Desert_Extermination_2_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Extermination_2_Boss-Description\", \"You missed one...\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "DesertExtermination2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2.BPQ_Desert_OLY_Research_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2-Description\", \"RESEARCH: Recipe Analysis\")",
+            "LocationQuery": {
+                "RowName": "T4_Research_Analyzer"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Analyzer",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Analyzer.BPQ_Desert_OLY_Research_2_Analyzer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Analyzer-Description\", \"Locate and Activate the Sample Analyzer\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Expedition2bDrillFuelled",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Power",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Power.BPQ_Desert_OLY_Research_2_Power_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Power-Description\", \"Connect the Analyzer to an active Energy Network\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Expedition4aDeviceNeedsPower",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Water",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Analyzer_Water.BPQ_Desert_OLY_Research_2_Analyzer_Water_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Water-Description\", \"Connect the Analyzer to an active Water Network\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Samples",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Samples.BPQ_Desert_OLY_Research_2_Samples_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Samples-Description\", \"Collect Samples from Scorpions\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PositiveAffirmation17",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Desposit_Tails",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Sample_Deposit_Tail.BPQ_Desert_OLY_Research_2_Sample_Deposit_Tail_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Desposit_Tails-Description\", \"Place Scorpion Tails into the Analyzer {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Deposit_Pincers",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Sample_Deposit_Pincer.BPQ_Desert_OLY_Research_2_Sample_Deposit_Pincer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Deposit_Pincers-Description\", \"Place Scorpion Pincers into the Analyzer {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Defend",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Defend.BPQ_Desert_OLY_Research_2_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Defend-Description\", \"Defend the Analyzer while it processes the Samples {0}%\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Scanning1AnimalAttack",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "FM3ExterminationBossDead1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Craft_Items",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Craft_Items.BPQ_Desert_OLY_Research_2_Craft_Items_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Craft_Items-Description\", \"Craft the new items on the Crafting Bench\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RecoveryCraftItem4b",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "BW5_RETURNTODROPSHIP",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Craft_Hedgehog",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Craft_Hedgehog.BPQ_Desert_OLY_Research_2_Craft_Hedgehog_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Craft_Hedgehog-Description\", \"Craft the Scorpion Hedgehog\")"
+        },
+        {
+            "Name": "OLY_Desert_Research_2_Craft_Snare",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Craft_Snare.BPQ_Desert_OLY_Research_2_Craft_Snare_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Craft_Snare-Description\", \"Craft the Scorpion Pincer Trap\")"
         }
     ]
 }

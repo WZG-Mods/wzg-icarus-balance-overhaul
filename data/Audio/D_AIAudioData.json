@@ -22,6 +22,7 @@
             "DataTableName": "D_Vocalisations"
         },
         "StateVocalisations": {},
+        "ThreatComponentClass": "None",
         "ThreatLevel": 0,
         "ThreatConfig": {
             "RowName": "None",
@@ -179,6 +180,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -321,6 +323,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -377,6 +380,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -461,6 +465,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -530,6 +535,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -610,6 +616,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -841,6 +848,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Boss"
@@ -897,6 +905,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -952,6 +961,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -1023,6 +1033,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Boss"
@@ -1106,6 +1117,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Boss"
@@ -1164,6 +1176,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Boss"
@@ -1265,6 +1278,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -1348,6 +1362,8 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
             }
@@ -1429,6 +1445,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -1499,6 +1516,7 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
@@ -1570,10 +1588,58 @@
             "DeathVocalisation": {
                 "RowName": "ScorpionDeath"
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
             }
+        },
+        {
+            "Name": "ScorpionSummon",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Scorpion/SFX_FOOTSTEP_SCORPION_FAST.SFX_FOOTSTEP_SCORPION_FAST",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "ScorpionAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "ScorpionFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "ScorpionSummonDeath"
+            }
+        },
+        {
+            "Name": "ScorpionBoss",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Scorpion_Boss/SFX_FOOTSTEP_SCORPION_BOSS.SFX_FOOTSTEP_SCORPION_BOSS",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
+            "VocalisationSocket": "RigHeadAudio",
+            "AttackVocalisation": {
+                "RowName": "ScorpionBossAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "ScorpionBossFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "ScorpionBossDeath"
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "ScorpionBoss"
+            },
+            "CombatMusicConditionOverride": "InCombat_EpicBoss",
+            "MusicConditionOverrideMinThreatLevel": 20
         }
     ]
 }

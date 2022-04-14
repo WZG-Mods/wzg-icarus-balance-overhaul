@@ -4131,6 +4131,58 @@
             }
         },
         {
+            "Name": "Poison_Sting_Stackable",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Sting_Stackable-ModifierName\", \"Poisoned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Sting_Stackable-ModifierDescription\", \"Slowly drains health from poisoned targets.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -3
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 4,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "TickOnApply": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
             "Name": "Wet_Expire",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierName\", \"Wet\")",
