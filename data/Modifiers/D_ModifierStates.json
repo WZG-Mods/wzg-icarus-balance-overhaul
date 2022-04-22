@@ -4267,7 +4267,7 @@
                 "EffectsSelf": false
             },
             "ModifierGrantedByAura": {
-                "RowName": "Weight_Reduction_Aura"
+                "RowName": "Weight_Reduction"
             },
             "MergeType": "Stack"
         },
@@ -4277,7 +4277,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierName\", \"Strength Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
             "GrantedStats": {
-                "(Value=\"BaseWeightCapacity_+%\")": 25
+                "(Value=\"BaseWeightCapacity_+%\")": 50,
+                "(Value=\"BaseStaminaRegen_+%\")": 100
             },
             "MergeType": "Stack"
         },
@@ -4287,10 +4288,11 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Aura: Healing Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "GrantedStats": {
-                "(Value=\"BaseBacterialModifierDuration_+%\")": -30,
-                "(Value=\"BaseParasiticModifierDuration_+%\")": -30,
-                "(Value=\"BasePoisonModifierDuration_+%\")": -30,
-                "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -30
+                "(Value=\"BaseBacterialModifierDuration_+%\")": -75,
+                "(Value=\"BaseParasiticModifierDuration_+%\")": -75,
+                "(Value=\"BasePoisonModifierDuration_+%\")": -75,
+                "(Value=\"BaseHealthRegen_+%\")": 100,
+                "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -75
             },
             "AuraFlags": {
                 "EffectsSelf": false
