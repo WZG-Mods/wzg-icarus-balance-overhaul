@@ -7021,7 +7021,7 @@
             "DesignNotes": "[DNT] Desert Extermination",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Extermination_2-Description\", \"CLEAN UP THE EVIDENCE OF BIO-RESEARCH ON THE SURFACE\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Extermination_2-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Desert // BACKGROUND: Sinotai\\'s previous experiment was not completely erased, traces of bio-research still persist on the surface. // MISSION: Locate the remaining creatures and eliminate them. //TERMS: Flat fee. All safety and survival concerns are the responsibility of the Contractor.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Extermination.SelectedProstpect_Extermination'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Expedition17.SelectedProstpect_Expedition17'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -7372,7 +7372,7 @@
             "DesignNotes": "[DNT] Desert Research",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Research_2-Description\", \"NEWLY DISCOVERED RECIPE ANALYSIS\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Research_2-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Desert // BACKGROUND: Operator is increasing their planetary research using all available technology // MISSION: Contractors are required to fill and activate a sample analyzer in order to research new recipes derived from native resources. //TERMS: Contractors will be provided with a functioning envirosuit. They will be otherwise unassisted.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Research.SelectedProstpect_Research'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Expedition18.SelectedProstpect_Expedition18'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -8978,6 +8978,114 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T3_RiverlandsStockpile.GT_T016_Bounds_T3_RiverlandsStockpile"
+        },
+        {
+            "Name": "Tier1_Forest_Defence",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Defence-DropName\", \"FORSAKEN: Recovery\")",
+            "DesignNotes": "Forest Defense",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Defence-Description\", \"LOCATE AND REPAIR A LOST DROPSHIP\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Defence-FlavourText\", \"//OPERATOR: ACS // BIOME: Conifer // BACKGROUND: The operator has lost a valuable asset on the surface and cannot abandon it for fear it may be discovered by other teams. // MISSION: Locate and repair the damaged dropship and ensure its safe return to orbit. //TERMS: Flat fee. All safety and survival concerns are the responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Defense.SelectedProstpect_Defense'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing3"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding4"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete3"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Forest_Defense"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 1,
+                    "Max": 1
+                }
+            },
+            "StartingTime": 15,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 17,
+            "MetaDepositSpawns": [
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_L10_3"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 80,
+                    "MaxMetaAmount": 120
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_CanyonStockpile.GT_T016_Bounds_T2_CanyonStockpile"
         }
     ]
 }

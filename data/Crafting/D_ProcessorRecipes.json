@@ -19873,6 +19873,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseKnifeCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -19926,6 +19931,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseSpearCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -19977,6 +19987,11 @@
                 {
                     "RowName": "Character",
                     "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseArrowCraftingCost_+%"
                 }
             ],
             "Inputs": [
@@ -24842,6 +24857,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseKnifeCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -24903,6 +24923,11 @@
                 {
                     "RowName": "Crafting_Bench",
                     "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseSpearCraftingCost_+%"
                 }
             ],
             "Inputs": [
@@ -24968,6 +24993,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseArrowCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -25029,6 +25059,11 @@
                 {
                     "RowName": "Crafting_Bench",
                     "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseBowCraftingCost_+%"
                 }
             ],
             "Inputs": [
@@ -25353,6 +25388,55 @@
             "Audio": {
                 "RowName": "MachiningBench"
             }
+        },
+        {
+            "Name": "Mission_Gyroscope",
+            "SessionRequirement": {
+                "DataTableName": "D_SessionFlags",
+                "RowName": "Forest_Defence_Recipes"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Mission_Ship_Gyro_Broken",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Copper",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Mission_Gyro",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ]
         }
     ]
 }

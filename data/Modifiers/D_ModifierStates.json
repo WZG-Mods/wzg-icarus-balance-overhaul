@@ -2130,7 +2130,8 @@
                 "(Value=\"BaseExperience_+%\")": 10,
                 "(Value=\"BaseHeatResistance_%\")": 15
             },
-            "MergeType": "Replace",
+            "MergeType": "Count",
+            "MaxStackNum": 50,
             "ModifierTags": {
                 "GameplayTags": [
                     {
@@ -4208,6 +4209,65 @@
                 "AutoDescription": " NONE( ModifierState.Wet )"
             },
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Weight_Reduction_Aura",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction_Aura.Icon_Weight_Reduction_Aura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierName\", \"Aura: Strength Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more.\")",
+            "bAura": true,
+            "AuraRange": 1000,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "Weight_Reduction_Aura"
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Weight_Reduction",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction.Icon_Weight_Reduction'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierName\", \"Strength Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWeightCapacity_+%\")": 25
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Healing_Modifier_Duration",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Aura: Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
+            "GrantedStats": {
+                "(Value=\"BaseBacterialModifierDuration_+%\")": -30,
+                "(Value=\"BaseParasiticModifierDuration_+%\")": -30,
+                "(Value=\"BasePoisonModifierDuration_+%\")": -30,
+                "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -30
+            },
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "Weight_Reduction_Aura"
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Healing_Modifier_Aura",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
+            "bAura": true,
+            "AuraRange": 1000,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "Healing_Modifier_Duration"
+            },
+            "MergeType": "Stack"
         }
     ]
 }
