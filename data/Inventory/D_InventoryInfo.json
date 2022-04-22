@@ -744,6 +744,36 @@
                 "Value": "General"
             },
             "StartingSlots": 12
+        },
+        {
+            "Name": "Faction_Mission_Ship_Repair_Forest",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 4,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Mission_Thruster",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Gyroscope",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Fuel",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
+                }
+            ]
         }
     ]
 }
