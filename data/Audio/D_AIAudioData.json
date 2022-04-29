@@ -1643,16 +1643,19 @@
         },
         {
             "Name": "Crocodile",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Jaguar/SFX_CRE_JAGUAR_FOOTSTEPS.SFX_CRE_JAGUAR_FOOTSTEPS",
-            "FrontFootSocket": "RigChest",
-            "RearFootSocket": "RigPelvis",
-            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Crocodile/SFX_CRE_FOOTSTEPS_CROCODILE.SFX_CRE_FOOTSTEPS_CROCODILE",
+            "FrontFootSocket": "FootFront",
+            "RearFootSocket": "FootBack",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Crocodile/SFX_CRE_FOLIAGE_CROCODILE.SFX_CRE_FOLIAGE_CROCODILE",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigDewlap",
             "AttackVocalisation": {
                 "RowName": "CrocodileAttack"
+            },
+            "DeathVocalisation": {
+                "RowName": "CrocodileDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -1675,7 +1678,7 @@
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "None",
+                        "RowName": "CrocAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -1691,7 +1694,53 @@
             }
         },
         {
-            "Name": "Komodo"
+            "Name": "Komodo",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Komodo_Dragon/SFX_CRE_FOOTSTEPS_KOMODO.SFX_CRE_FOOTSTEPS_KOMODO",
+            "FrontFootSocket": "FootstepFront",
+            "RearFootSocket": "FootstepBack",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Komodo_Dragon/SFX_CRE_FOLIAGE_KOMODO.SFX_CRE_FOLIAGE_KOMODO",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigSpine2",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_MED.SFX_CRE_DEATHFALL_MED",
+            "VocalisationSocket": "RigJaw1",
+            "AttackVocalisation": {
+                "RowName": "KomodoAttack"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "KomodoIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "KomodoRelax",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 20,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
         }
     ]
 }
