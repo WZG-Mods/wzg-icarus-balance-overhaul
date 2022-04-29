@@ -9086,6 +9086,114 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_CanyonStockpile.GT_T016_Bounds_T2_CanyonStockpile"
+        },
+        {
+            "Name": "Tier1_Forest_Construction",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Construction-DropName\", \"HOMESTEAD: Construction\")",
+            "DesignNotes": "Forest Construction",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Construction-Description\", \"BUILD A BASE FOR ICARUS VIPS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Construction-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Forest // BACKGROUND: Operator is hosting a VIP investment on Icarus, and requires advanced infrastructure for their guests in the region. // MISSION: Construct a fully equipped base to Operator specifications. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Defense.SelectedProstpect_Defense'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "Multi_MedToHeavy_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing3"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding4"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete3"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Forest_Construction"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 1,
+                    "Max": 1
+                }
+            },
+            "StartingTime": 10,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 25,
+            "MetaDepositSpawns": [
+                {
+                    "bUseSpawnName": true,
+                    "SpawnLocation": {
+                        "Value": "OLY_L10_3"
+                    },
+                    "bUseSpawnBiome": false,
+                    "SpawnBiome": {
+                        "RowName": "None",
+                        "DataTableName": "D_Biomes"
+                    },
+                    "MinPlayerSpawnDistance": 0,
+                    "MaxPlayerSpawnDistance": -1,
+                    "MinMetaAmount": 80,
+                    "MaxMetaAmount": 120
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T1_ForestExploration.GT_T016_Bounds_T1_ForestExploration"
         }
     ]
 }
