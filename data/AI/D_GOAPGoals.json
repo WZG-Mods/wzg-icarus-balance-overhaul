@@ -7,6 +7,7 @@
         },
         "Priority": 10,
         "bIsRepeatable": false,
+        "bRepeatOnlyOnSuccess": false,
         "GoalBP": "None"
     },
     "Rows": [
@@ -95,6 +96,24 @@
                 ]
             },
             "Priority": 7,
+            "GoalBP": "/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_SatisfyHunger.BP_IcarusGOAPGoal_SatisfyHunger_C"
+        },
+        {
+            "Name": "Satisfy_Hunger_Komodo",
+            "Description": "Satisfy_Hunger",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Hungry",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 6,
+            "bIsRepeatable": true,
             "GoalBP": "/Game/BP/AI/GOAP/Goals/BP_IcarusGOAPGoal_SatisfyHunger.BP_IcarusGOAPGoal_SatisfyHunger_C"
         },
         {

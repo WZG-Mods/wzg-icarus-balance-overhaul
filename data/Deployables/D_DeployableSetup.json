@@ -538,7 +538,7 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_MED_Wood.SM_DEP_Crate_MED_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Med_Wood.SM_DEP_Crate_MED_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -2489,6 +2489,121 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Faction_Mission_Explosive",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Faction_Mission_Explosive.BP_Faction_Mission_Explosive_C",
+            "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Explosive.SM_ITM_Explosive",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_DRILL_DEPLOY.SFX_DEP_DRILL_DEPLOY",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "FactionMissionBlocker"
+            ],
+            "SnapSocketsOrTags": [
+                "Explosive_Socket_A",
+                "Explosive_Socket_B"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Radar_Biofuel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Radar/BP_Radar_Biofuel.BP_Radar_Biofuel_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Radar_T3_Ground.SM_DEP_Radar_T3_Ground",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR_BIOFUEL.SFX_DEP_DEPLOY_RADAR_BIOFUEL",
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Radar_Electric",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Radar/BP_Radar_Electric.BP_Radar_Electric_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Radar.SM_DEP_Radar",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Radar_Meta",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Radar/BP_Radar_Meta.BP_Radar_Meta_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Radar_03_Ground.SM_DEP_Radar_03_Ground",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR_META.SFX_DEP_DEPLOY_RADAR_META",
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Extractor_Biofuel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Extractor_Biofuel.BP_Extractor_Biofuel_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_STD_Extractor_Folded.SM_DEP_STD_Extractor_Folded",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_KITEXTRACTOR_DEPLOY.SFX_DEP_KITEXTRACTOR_DEPLOY",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_OreDeposit"
+            ],
+            "SnapSocketsOrTags": [
+                "Extractor_Socket1",
+                "Extractor_Socket2",
+                "Extractor_Socket3"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Extractor_Electric",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Extractor_Electric.BP_Extractor_Electric_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Extractor_T4.SM_DEP_Extractor_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_KITEXTRACTOR_DEPLOY.SFX_DEP_KITEXTRACTOR_DEPLOY",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_OreDeposit"
+            ],
+            "SnapSocketsOrTags": [
+                "Extractor_Socket1",
+                "Extractor_Socket2",
+                "Extractor_Socket3"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Extractor_Meta",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Extractor_Meta.BP_Extractor_Meta_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Extractor_META.SM_DEP_Extractor_META",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_DRILL_META_DEPLOY.SFX_DEP_DRILL_META_DEPLOY",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_OreDeposit"
+            ],
+            "SnapSocketsOrTags": [
+                "Extractor_Socket1",
+                "Extractor_Socket2",
+                "Extractor_Socket3"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Mission_Prototype_Laser",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Faction_Mission_Prototype_Laser.BP_Faction_Mission_Prototype_Laser_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Disruption_Heat_Assembled_v2.SM_DEP_Disruption_Heat_Assembled_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "FactionMissionBlocker"
+            ],
+            "SnapSocketsOrTags": [
+                "Laser_Socket_A",
+                "Laser_Socket_B"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "X": -20,
+                "Y": -20,
+                "Z": -20
+            }
         }
     ]
 }
