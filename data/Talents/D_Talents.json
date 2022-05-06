@@ -15184,15 +15184,15 @@
         {
             "Name": "Extractor",
             "ExtraData": {
-                "RowName": "Item_Kit_Extractor",
+                "RowName": "Item_Extractor_Electric",
                 "DataTableName": "D_Itemable"
             },
             "TalentTree": {
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 3150,
-                "Y": 100
+                "X": 3400,
+                "Y": 1200
             },
             "Size": {
                 "X": 184,
@@ -15202,27 +15202,21 @@
                 {
                     "RowName": "Reroute_T4Devices01",
                     "DataTableName": "D_Talents"
-                }
-            ],
-            "RequiredFlags": [
-                {
-                    "DataTableName": "D_CharacterFlags",
-                    "RowName": "Deposit_Meta_Resources_Visible"
                 }
             ]
         },
         {
             "Name": "Radar",
             "ExtraData": {
-                "RowName": "Item_Kit_Radar",
+                "RowName": "Item_Radar_Electric",
                 "DataTableName": "D_Itemable"
             },
             "TalentTree": {
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 2750,
-                "Y": 100
+                "X": 3100,
+                "Y": 1200
             },
             "Size": {
                 "X": 184,
@@ -15232,12 +15226,6 @@
                 {
                     "RowName": "Reroute_T4Devices01",
                     "DataTableName": "D_Talents"
-                }
-            ],
-            "RequiredFlags": [
-                {
-                    "DataTableName": "D_CharacterFlags",
-                    "RowName": "Deposit_Meta_Resources_Visible"
                 }
             ]
         },
@@ -15276,7 +15264,7 @@
             },
             "Position": {
                 "X": 2750,
-                "Y": 450
+                "Y": 400
             },
             "Size": {
                 "X": 184,
@@ -15284,11 +15272,11 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Reroute_T4Devices01",
+                    "RowName": "Fabricator",
                     "DataTableName": "D_Talents"
                 }
             ],
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Resources_Increased_Wood_0",
@@ -15934,7 +15922,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2950,
+                "X": 3050,
                 "Y": 850
             },
             "Size": {
@@ -16307,7 +16295,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2650,
+                "X": 2750,
                 "Y": 850
             },
             "Size": {
@@ -16328,7 +16316,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2050,
+                "X": 2150,
                 "Y": 1050
             },
             "Size": {
@@ -16354,7 +16342,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2950,
+                "X": 3050,
                 "Y": 1200
             },
             "Size": {
@@ -16378,7 +16366,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2650,
+                "X": 2750,
                 "Y": 1200
             },
             "Size": {
@@ -16402,7 +16390,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2350,
+                "X": 2450,
                 "Y": 850
             },
             "Size": {
@@ -16426,7 +16414,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2050,
+                "X": 2150,
                 "Y": 1200
             },
             "Size": {
@@ -16450,7 +16438,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 2350,
+                "X": 2450,
                 "Y": 1200
             },
             "Size": {
@@ -18169,7 +18157,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 3200,
+                "X": 3050,
                 "Y": 700
             },
             "Size": {
@@ -18246,8 +18234,8 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 3200,
-                "Y": 1000
+                "X": 3050,
+                "Y": 400
             },
             "Size": {
                 "X": 184,
@@ -21526,8 +21514,8 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 2950,
-                "Y": 100
+                "X": 3250,
+                "Y": 1000
             },
             "Size": {
                 "X": 0,
@@ -21537,6 +21525,10 @@
             "RequiredTalents": [
                 {
                     "RowName": "Fabricator",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Biofuel_Generator",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -24788,7 +24780,7 @@
                 "RowName": "Workshop"
             },
             "Position": {
-                "X": 10000,
+                "X": 8800,
                 "Y": 2900
             },
             "Size": {
@@ -25387,6 +25379,173 @@
             "RequiredTalents": [
                 {
                     "RowName": "ProspectReroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Biofuel_Radar",
+            "ExtraData": {
+                "RowName": "Item_Radar_Biofuel",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 1850,
+                "Y": 900
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Machine_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Biofuel_Extractor",
+            "ExtraData": {
+                "RowName": "Item_Extractor_Biofuel",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 1850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Biofuel_Radar",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Meta_Radar",
+            "ExtraData": {
+                "RowName": "Meta_Radar",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 9600,
+                "Y": 3650
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Meta_Scanner_1",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Meta_Scanner_1",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 9800,
+                "Y": 3400
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Workshop_Meta_Extractor",
+            "ExtraData": {
+                "RowName": "Meta_Extractor",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 9800,
+                "Y": 4050
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Meta_Power_Source",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Meta_Biofuel",
+            "ExtraData": {
+                "RowName": "Meta_Biofuel_Can",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 9500,
+                "Y": 2900
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_3",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Meta_Power_Source",
+            "ExtraData": {
+                "RowName": "Meta_Power_Source",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 10000,
+                "Y": 3650
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Meta_Scanner_1",
                     "DataTableName": "D_Talents"
                 }
             ]

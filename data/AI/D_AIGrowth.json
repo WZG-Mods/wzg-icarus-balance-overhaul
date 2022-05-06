@@ -476,6 +476,16 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_JaguarHealth.C_JaguarHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_JaguarMeleeDamage.C_JaguarMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_JaguarWoundChance.C_JaguarWoundChance'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -829,7 +839,7 @@
         {
             "Name": "Crocodile",
             "Base": {
-                "(Value=\"BaseSwimSpeed_+\")": 400,
+                "(Value=\"BaseSwimSpeed_+\")": 100,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -845,7 +855,13 @@
                 "(Value=\"BaseNPCAttackRadius_+\")": 350,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseMovementSpeed_+\")": 75
+                "(Value=\"BaseMovementSpeed_+\")": 75,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 150,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 800,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 2750,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 750,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 33,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20
             },
             "Health": "CurveFloat'/Game/Data/AI/C_CrocodileHealth.C_CrocodileHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_CrocodileMeleeDamage.C_CrocodileMeleeDamage'",
@@ -871,8 +887,14 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 50,
-                "(Value=\"BaseGOAPMotivationHungerIncreaseRatePerMinute_+\")": 500
+                "(Value=\"BaseGOAPMotivationHungerIncreaseRatePerMinute_+\")": 500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 250,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 0,
+                "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": 50,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 100,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_KomodoHealth.C_KomodoHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_KomodoMeleeDamage.C_KomodoMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }

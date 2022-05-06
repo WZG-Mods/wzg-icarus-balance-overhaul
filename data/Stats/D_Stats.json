@@ -1046,6 +1046,12 @@
             "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"StaminaRegenDelay_+-PositiveTitleFormat\", \"+{0} seconds\")",
             "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"StaminaRegenDelay_+-NegativeTitleFormat\", \"-{0} seconds\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
             "StatCategory": {
                 "RowName": "Stamina"
             }
@@ -1054,6 +1060,12 @@
             "Name": "BaseStaminaRegenDelay_+",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenDelay_+-PositiveDescription\", \"+{0} seconds to Stamina Regeneration Delay\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenDelay_+-NegativeDescription\", \"-{0} seconds to Stamina Regeneration Delay\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
             "StatCategory": {
                 "RowName": "Stamina"
             }
@@ -1064,6 +1076,12 @@
             "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"StaminaRegenFromEmptyDelay_+-PositiveTitleFormat\", \"+{0} seconds\")",
             "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"StaminaRegenFromEmptyDelay_+-NegativeTitleFormat\", \"-{0} seconds\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
             "StatCategory": {
                 "RowName": "Stamina"
             }
@@ -1072,6 +1090,12 @@
             "Name": "BaseStaminaRegenFromEmptyDelay_+",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenFromEmptyDelay_+-PositiveDescription\", \"+{0} seconds to Stamina Regeneration Delay from Depleted\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenFromEmptyDelay_+-NegativeDescription\", \"-{0} seconds to Stamina Regeneration Delay from Depleted\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
             "StatCategory": {
                 "RowName": "Stamina"
             }
@@ -8166,6 +8190,33 @@
             }
         },
         {
+            "Name": "BaseGOAPActionWanderMinDistance_+",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GOAPActionWanderMinDistance_+",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGOAPActionWanderMaxDistance_+",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GOAPActionWanderMaxDistance_+",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GOAPMotivationProtectiveAffectsProtectedActorOnly_?"
+        },
+        {
             "Name": "BaseGOAPMotivationHungerIncreaseRatePerMinute_+"
         },
         {
@@ -8176,6 +8227,108 @@
         },
         {
             "Name": "GOAPMotivationThirstIncreaseRatePerMinute_+"
+        },
+        {
+            "Name": "StaminaRegenDelay_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseStaminaRegenDelay_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenDelay_+%-PositiveDescription\", \"+{0}% Stamina Regeneration Delay\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenDelay_+%-NegativeDescription\", \"-{0}% Stamina Regeneration Delay\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "StaminaRegenFromEmptyDelay_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseStaminaRegenFromEmptyDelay_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenFromEmptyDelay_+%-PositiveDescription\", \"+{0}% Stamina Regeneration Delay from Depleted\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStaminaRegenFromEmptyDelay_+%-NegativeDescription\", \"-{0}% Stamina Regeneration Delay from Depleted\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "RadarAccuracy_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RadarAccuracy_%-Title\", \"Radar Accuracy\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"+{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "BaseRadarAccuracy_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadarAccuracy_%-PositiveDescription\", \"+{0}% Radar Accuracy\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadarAccuracy_%-NegativeDescription\", \"-{0}% Radar Accuracy\")",
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "RadarPrecision_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RadarPrecision_%-Title\", \"Radar Precision\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "BaseRadarPrecision_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadarPrecision_%-PositiveDescription\", \"+{0}% Radar Precision\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadarPrecision_%-NegativeDescription\", \"-{0}% Radar Precision\")",
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "AnimalAttraction_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AnimalAttraction_+%-Title\", \"Animals Attracted\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseAnimalAttraction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalAttraction_+%-PositiveDescription\", \"+{0}% Animals Attracted\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalAttraction_+%-NegativeDescription\", \"-{0}% Animals Attracted\")",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseExtractorDrillSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExtractorDrillSpeed_+%-PositiveDescription\", \"+{0}% Extractor Drill Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExtractorDrillSpeed_+%-NegativeDescription\", \"-{0}% Extractor Drill Speed\")",
+            "StatCategory": {
+                "RowName": "Mining"
+            }
+        },
+        {
+            "Name": "ExtractorDrillSpeed_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ExtractorDrillSpeed_+%-Title\", \"Extractor Drill Speed\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mining"
+            }
         }
     ]
 }

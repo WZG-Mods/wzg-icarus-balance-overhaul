@@ -3,7 +3,12 @@
     "Defaults": {
         "Difficulty": "Light",
         "Weighting": 1,
-        "AvaliableBiomes": [],
+        "BiomeGroups": [
+            {
+                "RowName": "NoBiome",
+                "DataTableName": "D_WeatherBiomeGroups"
+            }
+        ],
         "WeatherImage": "None",
         "WeatherName": "",
         "WeatherDescription": "",
@@ -16,14 +21,18 @@
         {
             "Name": "Medium_Rain",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumRain.WeatherEvent_MediumRain'",
@@ -95,14 +104,18 @@
         {
             "Name": "Medium_Snow",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSnow.WeatherEvent_MediumSnow'",
@@ -174,14 +187,18 @@
         {
             "Name": "Medium_Sand",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSand.WeatherEvent_MediumSand'",
@@ -253,14 +270,18 @@
         {
             "Name": "Long_Wind",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Extreme.Winds_Extreme'",
@@ -346,12 +367,6 @@
         {
             "Name": "Debug_Rain_Chaos",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -393,12 +408,6 @@
         {
             "Name": "Debug_Rain_Damage",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -440,12 +449,6 @@
         {
             "Name": "Debug_Snow_Chaos",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -487,12 +490,6 @@
         {
             "Name": "Debug_Snow_Damage",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -534,12 +531,6 @@
         {
             "Name": "Debug_Sand_Chaos",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -581,12 +572,6 @@
         {
             "Name": "Debug_Sand_Damage",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
-                {
-                    "RowName": "NoBiome",
-                    "DataTableName": "D_Biomes"
-                }
-            ],
             "WeatherActions": [
                 {
                     "Action": {
@@ -627,14 +612,18 @@
         },
         {
             "Name": "Light_Rain_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightRain.WeatherEvent_LightRain'",
@@ -706,14 +695,18 @@
         {
             "Name": "Heavy_Rain_1",
             "Difficulty": "Heavy",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavyRain.WeatherEvent_HeavyRain'",
@@ -784,14 +777,18 @@
         },
         {
             "Name": "Light_Sand_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
@@ -863,14 +860,18 @@
         {
             "Name": "Heavy_Sand_1",
             "Difficulty": "Heavy",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySand.WeatherEvent_HeavySand'",
@@ -941,14 +942,18 @@
         },
         {
             "Name": "Light_Snow_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
@@ -1020,14 +1025,18 @@
         {
             "Name": "Heavy_Snow_1",
             "Difficulty": "Heavy",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
@@ -1098,14 +1107,18 @@
         },
         {
             "Name": "Cosmetic_Rain_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightRain.WeatherEvent_LightRain'",
@@ -1144,14 +1157,18 @@
         },
         {
             "Name": "Cosmetic_Snow_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
@@ -1190,14 +1207,18 @@
         },
         {
             "Name": "Cosmetic_Sand_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
@@ -1237,14 +1258,18 @@
         {
             "Name": "Tutorial_Rain_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumRain.WeatherEvent_MediumRain'",
@@ -1302,14 +1327,18 @@
         {
             "Name": "Medium_Lightning_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Lightning_Medium.Lightning_Medium'",
@@ -1395,14 +1424,18 @@
         {
             "Name": "Light_Wind_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Light.Winds_Light'",
@@ -1474,14 +1507,18 @@
         {
             "Name": "ThunderStorm_1",
             "Difficulty": "Heavy",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Conifer",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "RiverLands",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Riverlands",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Lightning_Extreme.Lightning_Extreme'",
@@ -1552,14 +1589,18 @@
         },
         {
             "Name": "Arctic_Wind_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
@@ -1624,14 +1665,18 @@
         {
             "Name": "Arctic_SevereWind_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_ExtremeSnowstorm.WeatherEvent_ExtremeSnowstorm'",
@@ -1716,14 +1761,18 @@
         },
         {
             "Name": "Arctic_Snow_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSnow.WeatherEvent_LightSnow'",
@@ -1788,14 +1837,18 @@
         {
             "Name": "Arctic_SnowStorm_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
@@ -1881,14 +1934,18 @@
         {
             "Name": "Arctic_Blizzard_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Arctic",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "SouthernGlacier",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_SouthernGlacier",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
@@ -1973,14 +2030,18 @@
         },
         {
             "Name": "Desert_Wind_1",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_MediumSand.WeatherEvent_MediumSand'",
@@ -2045,14 +2106,18 @@
         {
             "Name": "Desert_SevereWind_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_ExtremeSandstorm.WeatherEvent_ExtremeSandstorm'",
@@ -2138,14 +2203,18 @@
         {
             "Name": "Desert_Heatwave_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
@@ -2217,14 +2286,18 @@
         {
             "Name": "Desert_Shamal_1",
             "Difficulty": "Medium",
-            "AvaliableBiomes": [
+            "BiomeGroups": [
                 {
-                    "RowName": "Desert",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 },
                 {
-                    "RowName": "DesertCanyons",
-                    "DataTableName": "D_Biomes"
+                    "RowName": "Olympus_DesertCanyons",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Styx_Desert",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySand.WeatherEvent_HeavySand'",

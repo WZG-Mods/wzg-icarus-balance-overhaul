@@ -5224,7 +5224,7 @@
             },
             "Descriptors": [
                 {
-                    "RowName": "Aggressive",
+                    "RowName": "Neutral",
                     "DataTableName": "D_AIDescriptors"
                 },
                 {
@@ -5238,9 +5238,9 @@
             "GOAPSetup": {
                 "RowName": "Crocodile"
             },
-            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_WaterOnly.NavFilter_WaterOnly_C'",
             "Relationships": {
-                "RowName": "DefaultMediumCarnivore"
+                "RowName": "NeutralMediumCarnivore"
             },
             "NotifiedNPCTypes": [
                 {
@@ -5265,18 +5265,18 @@
                     "MaxWalkSpeed": 0.666670024394989,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 300,
-                    "RotationRate": 100,
+                    "MaxAcceleration": 50,
+                    "BrakingDeceleration": 25,
+                    "RotationRate": 50,
                     "MaxSwimSpeed": 1
                 },
                 "Walk": {
                     "MaxWalkSpeed": 1,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 100,
+                    "MaxAcceleration": 50,
+                    "BrakingDeceleration": 25,
+                    "RotationRate": 50,
                     "MaxSwimSpeed": 1
                 },
                 "Jog": {
@@ -5286,7 +5286,7 @@
                     "MaxAcceleration": 300,
                     "BrakingDeceleration": 800,
                     "RotationRate": 100,
-                    "MaxSwimSpeed": 1
+                    "MaxSwimSpeed": 2
                 },
                 "Run": {
                     "MaxWalkSpeed": 2.6666998863220215,
@@ -5294,26 +5294,26 @@
                     "BrakingFriction": 2,
                     "MaxAcceleration": 800,
                     "BrakingDeceleration": 900,
-                    "RotationRate": 800,
-                    "MaxSwimSpeed": 1
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 4
                 },
                 "Sprint": {
-                    "MaxWalkSpeed": 4,
+                    "MaxWalkSpeed": 5,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 900,
                     "BrakingDeceleration": 500,
-                    "RotationRate": 300,
-                    "MaxSwimSpeed": 1
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 4
                 },
                 "Attacking": {
-                    "MaxWalkSpeed": 4,
+                    "MaxWalkSpeed": 5,
                     "GroundFriction": 8,
                     "BrakingFriction": 64,
                     "MaxAcceleration": 900,
                     "BrakingDeceleration": 50000,
-                    "RotationRate": 300,
-                    "MaxSwimSpeed": 1
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 4
                 },
                 "Undefined": {
                     "MaxWalkSpeed": 1,
@@ -5357,7 +5357,7 @@
             },
             "Descriptors": [
                 {
-                    "RowName": "Aggressive",
+                    "RowName": "Neutral",
                     "DataTableName": "D_AIDescriptors"
                 },
                 {
@@ -5373,7 +5373,7 @@
             },
             "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
             "Relationships": {
-                "RowName": "DefaultMediumCarnivore"
+                "RowName": "NeutralMediumCarnivore"
             },
             "NotifiedNPCTypes": [
                 {
@@ -5476,6 +5476,140 @@
             ],
             "Loot": {
                 "RowName": "Komodo_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
+        },
+        {
+            "Name": "Scorpion_Arctic",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_ScorpionArctic_Character.BP_NPC_ScorpionArctic_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Scorpion"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Scorpion"
+            },
+            "GOAPSetup": {
+                "RowName": "Scorpion"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumCarnivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Scorpion"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 800,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 6.670000076293945,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 5.28000020980835,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": false
+                }
+            ],
+            "Audio": {
+                "RowName": "Scorpion"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "Loot": {
+                "RowName": "Scorpion_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones"

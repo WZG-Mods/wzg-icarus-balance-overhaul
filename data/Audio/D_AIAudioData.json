@@ -1650,9 +1650,12 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigDewlap",
+            "VocalisationSocket": "RigMouth",
             "AttackVocalisation": {
                 "RowName": "CrocodileAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "CrocodileFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "CrocodileDeath"
@@ -1674,7 +1677,7 @@
                 },
                 "Attacking": {
                     "StateEnteredVocalisation": {
-                        "RowName": "CrocodileSpot",
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
@@ -1706,6 +1709,12 @@
             "AttackVocalisation": {
                 "RowName": "KomodoAttack"
             },
+            "FlinchVocalisation": {
+                "RowName": "KomodoFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "KomodoDeath"
+            },
             "StateVocalisations": {
                 "Idle": {
                     "StateEnteredVocalisation": {
@@ -1728,6 +1737,20 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "KomodoRelax",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "KomodoAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
