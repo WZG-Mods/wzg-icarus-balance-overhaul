@@ -4172,7 +4172,7 @@
         },
         {
             "Name": "STYX_A_Expedition_Beacon_1",
-            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Scout.BPQ_Styx_A_Scout_C",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Scout_Clear_Area.BPQ_Styx_A_Scout_Clear_Area_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_1-Description\", \"Scout Out Potential Landing Zone #1\")",
             "LocationQuery": {
                 "RowName": "STYX_River_LargeLake"
@@ -4205,6 +4205,16 @@
             "Name": "STYX_A_Expedition_Beacon_Clear_Boss",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Boss.BPQ_Styx_A_Expedition_Boss_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Clear_Boss-Description\", \"Kill the Nearby {0}\")"
+        },
+        {
+            "Name": "STYX_A_Expedition_Beacon_Clear_Area",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Clear_Area.BPQ_Styx_A_Expedition_Clear_Area_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Clear_Area-Description\", \"Clear the Area of Nearby Komodo Dragons\")"
+        },
+        {
+            "Name": "STYX_A_Expedition_Beacon_Kill_Komodos",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_STYX_A_Expedition_Kill_Komodos.BPQ_STYX_A_Expedition_Kill_Komodos_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Kill_Komodos-Description\", \"{0} / {1} {2} Remaming\")"
         },
         {
             "Name": "STYX_A_Expedition_Beacon_Deploy_Beacon",
@@ -4310,13 +4320,52 @@
         },
         {
             "Name": "STYX_B_Extermination",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination-Description\", \"EXTERMINATION: Polar Bear\")"
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_Styx_B_Extermination.BPQ_STYX_B_Extermination_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination-Description\", \"EXTERMINATION: Polar Bear\")",
+            "LocationQuery": {
+                "RowName": "STYX_Wall_LowerAccess"
+            }
+        },
+        {
+            "Name": "STYX_B_Extermination_Investigate",
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_STYX_B_Extermination_Investigate.BPQ_STYX_B_Extermination_Investigate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination_Investigate-Description\", \"Investigate the Increased Polar Bear Presence near the Wall (M)\")"
+        },
+        {
+            "Name": "STYX_B_Extermination_Clear_Area",
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_Styx_B_Extermination_Clear_Area.BPQ_Styx_B_Extermination_Clear_Area_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination_Clear_Area-Description\", \"Clear the Area of Polar Bear Cubs\")"
+        },
+        {
+            "Name": "STYX_B_Extermination_Clear_Area_Polar_Bears",
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_STYX_B_Extermination_Kill_Polar_Bears.BPQ_STYX_B_Extermination_Kill_Polar_Bears_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination_Clear_Area_Polar_Bears-Description\", \"{0} / {1} {2} Remaining\")"
+        },
+        {
+            "Name": "STYX_B_Extermination_Den",
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_STYX_B_Extermination_Den.BPQ_STYX_B_Extermination_Den_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination_Den-Description\", \"Investigate the Polar Bear Den (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_Wall_Alcove"
+            }
+        },
+        {
+            "Name": "STYX_B_Extermination_Kill_Boss",
+            "Class": "/Game/BP/Quests/Styx/B/Extermination/BPQ_STYX_B_Extermination_Den_Mother.BPQ_STYX_B_Extermination_Den_Mother_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Extermination_Kill_Boss-Description\", \"Eliminate the Mother Polar Bear\")",
+            "LocationQuery": {
+                "RowName": "STYX_Wall_Alcove"
+            }
         },
         {
             "Name": "STYX_C_Expedition",
             "Class": "/Game/BP/Quests/Styx/BPQ_STYX_Test_Expedition.BPQ_STYX_Test_Expedition_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition-Description\", \"EXPEDITION: Oasis\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_0",
+            "Class": "/Game/BP/Quests/Styx/BPQ_STYX_Test_Expedition.BPQ_STYX_Test_Expedition_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_0-Description\", \"EXPEDITION: Oasis\")"
         },
         {
             "Name": "STYX_C_Exploration",
@@ -4330,13 +4379,154 @@
         },
         {
             "Name": "STYX_C_Extermination",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination.BPQ_STYX_C_Extermination_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination-Description\", \"EXTERMINATION: Desert Wildlife\")"
         },
         {
+            "Name": "STYX_C_Extermination_Collect_From_Dropship",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Collect_Equipment.BPQ_STYX_C_Extermination_Collect_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Collect_From_Dropship-Description\", \"Collect the Hunting Equipment from Dropship Storage\")"
+        },
+        {
+            "Name": "STYX_C_Extermination_Travel",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Travel.BPQ_STYX_C_Extermination_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Travel-Description\", \"Head to the Marked Location and Investigate the Increased Cougar Presence\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Island"
+            }
+        },
+        {
+            "Name": "STYX_C_Extermination_DryingRack",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_DryingRack.BPQ_STYX_C_Extermination_DryingRack_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_DryingRack-Description\", \"Build a Drying Rack to dry the harvested Stringy Meat\")"
+        },
+        {
+            "Name": "STYX_C_Extermination_DryingRack_Deploy",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_DryingRack_Deploy.BPQ_STYX_C_Extermination_DryingRack_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_DryingRack_Deploy-Description\", \"Craft and Deploy the Drying Rack\")"
+        },
+        {
+            "Name": "STYX_C_Extermination_DryingRack_Dry",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_DryingRack_Dry.BPQ_STYX_C_Extermination_DryingRack_Dry_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_DryingRack_Dry-Description\", \"Dry some Stringy Meat\")"
+        },
+        {
+            "Name": "STYX_C_Extermination_Stockpile_Ship",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Stockpile_Ship.BPQ_STYX_C_Extermination_Stockpile_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Stockpile_Ship-Description\", \"Deposit Point\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Falls_Center"
+            }
+        },
+        {
+            "Name": "STYX_C_Extermination_Stockpile_List",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Stockpile_List.BPQ_STYX_C_Extermination_Stockpile_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Stockpile_List-Description\", \"Deposit gathered meat in Cargo Pod\")"
+        },
+        {
+            "Name": "STYX_C_Extermination_Stockpile_Meat",
+            "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Stockpile_Meat.BPQ_STYX_C_Extermination_Stockpile_Meat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Stockpile_Meat-Description\", \"{0} / {1} Stringy Meat\")"
+        },
+        {
             "Name": "STYX_D_Expedition",
-            "Class": "/Game/BP/Quests/Styx/BPQ_STYX_Test_Expedition.BPQ_STYX_Test_Expedition_C",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition.BPQ_STYX_D_Expedition_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition-Description\", \"EXPEDITION: Ring Lake\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Collect_Radar_And_Beacon",
+            "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Collect_Radar.BPQ_STYX_B_Expedition_Collect_Radar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect A Radar and Beacon From Dropship Storage\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Scan_1",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Scan.BPQ_STYX_D_Expedition_Scan_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Scan_1-Description\", \"Scan the Deep Canyon Region\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_Canyon"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Scan_2",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Scan.BPQ_STYX_D_Expedition_Scan_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Scan_2-Description\", \"Scan the Frozen Lake Region\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_Lake"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Investigate_Weak_Wall",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Travel_Wall.BPQ_STYX_D_Travel_Wall_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Investigate_Weak_Wall-Description\", \"Investigate the Weak Wall (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_Blocker_FrozenTraverse_RingLake_A"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Remove_Blocker",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Remove_Blocker.BPQ_STYX_D_Expedition_Remove_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Remove_Blocker-Description\", \"Destroy the Weak Wall\")",
+            "LocationQuery": {
+                "RowName": "STYX_Blocker_FrozenTraverse_RingLake_A"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Collect_Equipment",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Retrieve_Device.BPQ_STYX_D_Expedition_Retrieve_Device_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Equipment-Description\", \"Collect Prototype Device from the Supply Pod\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_SmallRidge"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Setup_Equipment",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Deploy_And_Power_Device.BPQ_STYX_D_Deploy_And_Power_Device_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Setup_Equipment-Description\", \"Deploy and Power the Prototype Device\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Defend_Equipment",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Defend_Device.BPQ_STYX_D_Expedition_Defend_Device_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Equipment-Description\", \"Defend the Device While it Charges\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Defend_Progress",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress.BPQ_Common_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Progress-Description\", \"{0}% Charged\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Activate_Equipment",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Activate_Device.BPQ_STYX_D_Expedition_Activate_Device_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Activate_Equipment-Description\", \"Activate the Device\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Travel_To_Lake",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Travel_Lake.BPQ_STYX_D_Travel_Lake_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Travel_To_Lake-Description\", \"Head to the Unusual Lake Formation (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Clear_Area",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Arrived_At_Lake.BPQ_STYX_D_Expedition_Arrived_At_Lake_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Clear_Area-Description\", \"Clear the Area of Local Wildlife\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
+            }
+        },
+        {
+            "Name": "STYX_D_Expedition_Clear_Area_Croc",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Clear_Area.BPQ_STYX_D_Expedition_Clear_Area_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Clear_Area_Croc-Description\", \"{0} / {1} {2} Remaining\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Place_Beacon",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_Styx_D_Expedition_Deploy_Beacon.BPQ_Styx_D_Expedition_Deploy_Beacon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Place_Beacon-Description\", \"Deploy the Beacon\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
+            }
         },
         {
             "Name": "STYX_D_Exploration",
@@ -4484,6 +4674,11 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Common_Scan_Health-Description\", \"Scanner Durability: {0}/{1}\")"
         },
         {
+            "Name": "STYX_Common_Kill_Creatures",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Clear_Area.BPQ_Common_Clear_Area_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Common_Kill_Creatures-Description\", \"{0} / {1} {2} Remaining\")"
+        },
+        {
             "Name": "OLY_Forest_Construction",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction.BPQ_OLY_Forest_Construction_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction-Description\", \"CONSTRUCTION: Forest\")",
@@ -4556,6 +4751,58 @@
             "Name": "OLY_Forest_Construction_Nightstands",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Nightstands.BPQ_OLY_Forest_Construction_Nightstands_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Nightstands-Description\", \"Rustic Nightstands {0} / {1}\")"
+        },
+        {
+            "Name": "OLY_Desert_Survey",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Survey/BPQ_OLY_Desert_Survey.BPQ_OLY_Desert_Survey_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey-Description\", \"SURVEY: Desert Anomoly\")"
+        },
+        {
+            "Name": "OLY_Desert_Survey_Collect_Beacons",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Collect_Beacons.BPQ_Styx_A_Expedition_Collect_Beacons_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Collect_Beacons-Description\", \"Collect Beacons From Dropship\")"
+        },
+        {
+            "Name": "OLY_Desert_Survey_Beacon_1",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Beacon_1-Description\", \"Deploy Beacon at Location 1 (M)\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Survey_1"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Survey_Beacon_2",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Beacon_2-Description\", \"Deploy Beacon at Location 2 (M)\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Survey_2"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Survey_Beacon_3",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Beacon_3-Description\", \"Deploy Beacon at Location 3 (M)\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Survey_3"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Survey_Boss_Travel",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Survey/BPQ_OLY_Desert_Survey_Travel.BPQ_OLY_Desert_Survey_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Boss_Travel-Description\", \"Head to the Location of the Shifting Sands (M)\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Survey_Boss"
+            }
+        },
+        {
+            "Name": "OLY_Desert_Survey_Boss_Fight",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Survey/BPQ_OLY_Desert_Survey_Boss.BPQ_OLY_Desert_Survey_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Boss_Fight-Description\", \"Defeat the Creature\")",
+            "LocationQuery": {
+                "RowName": "T4_Desert_Survey_Boss"
+            }
         }
     ]
 }

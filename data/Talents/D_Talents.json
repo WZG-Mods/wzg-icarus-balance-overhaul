@@ -8076,12 +8076,16 @@
                 {
                     "RowName": "Gathering_Leather_Yield",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Hunting_See_World_Boss",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Master"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Metal_Crate_Small",
@@ -11856,12 +11860,17 @@
                 {
                     "RowName": "Stalking_Blueprint_Ghillie",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Hunting_See_World_Boss",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Master"
             },
-            "RequiredLevel": 20
+            "RequiredLevel": 20,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Stalking_Small_Highlight",
@@ -25336,6 +25345,48 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Prospect_Styx_A_Expedition",
+            "ExtraData": {
+                "RowName": "STYX_A_Expedition",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2550,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            }
+        },
+        {
+            "Name": "Prospect_Styx_A_Exploration",
+            "ExtraData": {
+                "RowName": "STYX_A_Exploration",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2550,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Rustic_Decoration_Bench",
             "ExtraData": {
                 "RowName": "Item_Rustic_Cosmetics_Bench",
@@ -25549,6 +25600,95 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Prospect_OLY_Desert_Survey",
+            "ExtraData": {
+                "RowName": "Tier4_Desert_Survey",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 12400,
+                "Y": 2300
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Reroute_15",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Module_World_Boss",
+            "ExtraData": {
+                "RowName": "Meta_Module_World_Boss",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 6450,
+                "Y": 3500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Hunting_See_World_Boss",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Hunting_See_World_Boss-DisplayName\", \"Big Game Hunter\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Hunting_See_World_Boss-Description\", \"Allows you to see the location of World Bosses on the map\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_RefinedGhillerArmour.Talent_Hunting_RefinedGhillerArmour",
+            "TalentTree": {
+                "RowName": "Survival_Hunting"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"MapCanSeeWorldBosses_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Stalking_Blueprint_Ghillie",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Gathering_Leather_Yield",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "RequiredLevel": 20,
+            "DrawMethodOverride": "YThenX"
         }
     ]
 }
