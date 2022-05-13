@@ -1,0 +1,59 @@
+{
+    "RowStruct": "/Script/Icarus.WorldBossData",
+    "Defaults": {
+        "AISetup": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "EpicCreature": {
+            "RowName": "None",
+            "DataTableName": "D_EpicCreatures"
+        },
+        "SpawnerClass": "None",
+        "SpawnerTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+        },
+        "BehaviourClass": "None",
+        "bReloadDeadBoss": false,
+        "BossMapMarker": {
+            "RowName": "None",
+            "DataTableName": "D_MapIcons"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "SandWorm",
+            "AISetup": {
+                "RowName": "SandWorm"
+            },
+            "EpicCreature": {
+                "RowName": "Sandworm_WorldBoss"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_SandWorm.BP_WorldBossSpawner_SandWorm_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.SandWorm"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.SandWorm )"
+            },
+            "BehaviourClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossBehaviour_SandWorm.BP_WorldBossBehaviour_SandWorm_C",
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_SandWorm"
+            }
+        }
+    ]
+}

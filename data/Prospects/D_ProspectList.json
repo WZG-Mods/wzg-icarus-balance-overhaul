@@ -24,6 +24,7 @@
         "RequiredCharacterFlags": [],
         "ForbiddenCharacterFlags": [],
         "RequiredFlags": [],
+        "WorldBosses": {},
         "WeatherPercentageCurve": "None",
         "FallbackWeatherPercentage": 0.20000000298023224,
         "WeatherPool": {
@@ -76,509 +77,90 @@
     "GenerateEnum": true,
     "Rows": [
         {
-            "Name": "BW3_Icebreaker",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW3_Icebreaker-DropName\", \"ICEBREAKER: Recovery\")",
-            "DesignNotes": "BW3",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW3_Icebreaker-Description\", \"ARCTIC EXPEDITION: GROUP 15 REQUIRES MAMMOTH BIOSAMPLE\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW3_Icebreaker-FlavourText\", \"// BACKGROUND: First Cohort teams have experienced a concerning spike in fatalities, with  reports of encounters with over-sized, highly aggressive animals. Group 15, the UDA\\'s Icarus research unit, believes exotics may affect the growth and behavior of Earthlife - particularly in mountain regions, where high geological activity increases exposure to these materials. Larger animals are believed to be more strongly affected. // MISSION: Group 15 require a biological sample for study, from the largest Earthlife on Icarus - a mammoth\\'s tusk. // TERMS: The Arctic is under-surveyed, so teams will be dropped into mapped areas, then trek into the region to locate a target. Harvesting samples will require metal tools at a minimum. This contract is rated moderate risk with medium to strong storms, blizzards and very limited support planetside.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Arctic.SelectedProstpect_Arctic'",
-            "BriefingDialogue": {
-                "RowName": "BW3Briefing"
-            },
-            "LandingDialogue": {
-                "RowName": "BW3Objective01"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 25,
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW3.GT_Terrain016_Bounds_BW3",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW4_BrokenArrow",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW4_BrokenArrow-DropName\", \"BROKEN ARROW: Recovery\")",
-            "DesignNotes": "BW4",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW4_BrokenArrow-Description\", \"BIO-CRISIS: RECOVER ENZYME WARHEADS FROM THREE DOWNED TERRAFORMING SATELLITES.\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW4_BrokenArrow-FlavourText\", \"// BACKGROUND: When terraforming failed, the UDA tried to put the political and environmental catastrophe behind them. Mothballing the Inaris-designed atmospheric processing satellites, Icarus was supposed to be forgotten. A decade on, these orbital bio-factories are de-orbiting. The UDA wants no more scandals. // MISSION: Recover the enzyme \\'warheads\\' from three crashed Inaris satellites, before anyone else can. // TERMS: Geo-data in this region is unavailable, so your team will be inserted at a known drop point. At least two of the satellites impacted in the arctic. Expect a demanding journey, heavy weather, sub-zero temperatures, and fierce wildlife.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_BW4.SelectedProstpect_BW4'",
-            "BriefingDialogue": {
-                "RowName": "BW4_001_BRIEFING"
-            },
-            "LandingDialogue": {
-                "RowName": "BW4_002_EXITEDROPHIP"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 25,
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4",
-            "AISpawnConfigOverride": {
-                "RowName": "BetaWeekends"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW5_Blacksand",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW5_Blacksand-DropName\", \"BLACKSAND: Survey\")",
-            "DesignNotes": "BW5",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW5_Blacksand-Description\", \"DESERT RECON: URGENT: UDA REQUIRES SURVEY DATA ON UNCHARTED DESERT REGIONS.\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW5_Blacksand-FlavourText\", \"// BACKGROUND: Icarus\\'s deserts remain largely unexplored. Only a handful of survey teams have returned from the region, leaving large gaps in UDA intelligence data. Low survival rates suggest undocumented threats, possibly correlated to endemic lifeforms. // MISSION: Find a route to the desert region, and scan key terrain for topographic data. Collect any relevant bio-samples. //TERMS: Equip for arid conditions, sandstorms, encounters unknown.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Desert.SelectedProstpect_Desert'",
-            "BriefingDialogue": {
-                "RowName": "BW5_001_BRIEFING"
-            },
-            "LandingDialogue": {
-                "RowName": "BW5_002_EXITDROPSHIP"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "FactionMission": {
-                "RowName": "BW5_Desert"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 6,
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW5.GT_Terrain016_Bounds_BW5",
-            "AISpawnConfigOverride": {
-                "RowName": "Desert_Expedition"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW6_Recon",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recon-DropName\", \"BEACHHEAD: Recon\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recon-Description\", \"UDA MANDATED FIRST DROP FOR NEW PROSPECTORS\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recon-FlavourText\", \"// BIOME: Forest // BACKGROUND: UDA regulations require new Icarus arrivals demonstrate essential survival skills in this region before accepting further contracts. // MISSION: Contractors will be given basic directives. Survival is deemed fulfilment. //TERMS: Contractors will be provided with a functioning envirosuit, simple crafting information, and will be otherwise unassisted. No further tasking will occur until competency is attained.\")",
+            "Name": "Outpost002_Forest",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-DropName\", \"ARCWOOD: Outpost\")",
+            "DesignNotes": "Available on Standard Edition Icarus",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-FlavourText\", \"Open untimed access to a stable, predator-free forest region.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Footfall.SelectedProstpect_Footfall'",
-            "BriefingDialogue": {
-                "RowName": "Recon1Briefing"
-            },
-            "LandingDialogue": {
-                "RowName": "Recon1Landing"
-            },
             "WeatherPool": {
                 "RowName": "CosmeticWeatherPool_1"
             },
             "Terrain": {
-                "RowName": "Terrain_016"
+                "RowName": "Outpost_002"
             },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
+            "bIsPersistent": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "MetaDepositSpawns": [
+            "WorldStatList": [
                 {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
+                    "RowName": "Outpost_Stats",
+                    "DataTableName": "D_ProspectStats"
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW6_Recon.GT_Terrain016_Bounds_BW6_Recon",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW6_Scan",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Scan-DropName\", \"LIVEWIRE: Terrain Scan\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Scan-Description\", \"LAGOS UNIT REQUIRES TERRAIN DATA FOR NEW DROPZONES\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Scan-FlavourText\", \"// BIOME: Forest // BACKGROUND: The Lagos Unit intends to rapidly expand exotics operations, and has put out an urgent tender for survey data, specifically around new drop sites. This exploration and mapping mission is critical to development of this planet. // MISSION: Take radar scans at three essential locations, ensuring accurate data is returned to the Lagos Unit. //TERMS: Contractors will be provided with radar equipment. All other risk and resourcing is the responsibility of the contractor. Expect elevated wildlife and weather threats.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Scan.SelectedProstpect_Scan'",
-            "BriefingDialogue": {
-                "RowName": "Scanning1Briefing"
-            },
-            "LandingDialogue": {
-                "RowName": "Scanning1Landing"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW2.GT_Terrain016_Bounds_BW2",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW6_Research",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Research-DropName\", \"DARK HARVEST: Bio-Research\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Research-Description\", \"LOCATE RARE BIO-SAMPLES FOR SINOTAI\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Research-FlavourText\", \"// BIOME: Forest/Arctic // BACKGROUND: Sinotai satellite data shows unusual bio-growth patterns emerging in several regions of the Terrazone. Bot image analysis indicates previously unknown plant life, and Sinotai\\'s bio-research division requires samples for further study. // MISSION: Locate and retrieve bio-samples from three marked locations, and return them safely to orbit. //TERMS: All physical, mental and existential risks and responsibilities are accepted by the contractor alone.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Research.SelectedProstpect_Research'",
-            "Difficulty": "Normal",
-            "BriefingDialogue": {
-                "RowName": "FM1ResearchBriefing"
-            },
-            "LandingDialogue": {
-                "RowName": "FM1ResearchLanding"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 6,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4",
             "AISpawnConfigOverride": {
-                "RowName": "BW6_Research"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
+                "RowName": "Outpost_Forest"
             }
         },
         {
-            "Name": "BW6_Recovery",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recovery-DropName\", \"FIELD TEST: Recovery\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recovery-Description\", \"URGENT: RECOVER EXPERIMENTAL DEVICE FOR ACS\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Recovery-FlavourText\", \"// BIOME: Desert // BACKGROUND: During a covert ACS field test, a Larkwell drone carrying an experimental device was destroyed by severe weather. ACS urgently require this equipment returned. Preliminary scans suggest much of the drone\\'s remains impacted in remote and hard-to-reach areas. // MISSION: Locate all elements of the lost device, and return them to ACS technicians in orbit. // TERMS: The ACS will provide substantial remuneration to successful contractors, but no on-the-ground support.  Expect access challenges. Equip for hot, dry conditions and sandstorms.\")",
+            "Name": "Outpost003_Arctic",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-DropName\", \"ICEHOLM: Outpost\")",
+            "DesignNotes": "Arctic Outpost - Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-FlavourText\", \"Open, untimed access to a stable, predator-free arctic region.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_BW4.SelectedProstpect_BW4'",
-            "BriefingDialogue": {
-                "RowName": "FM2RecoveryBriefing"
-            },
-            "LandingDialogue": {
-                "RowName": "FM2RecoveryLanding"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 27,
-            "MetaDepositSpawns": [
+            "RequiredFlags": [
                 {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW6_Recovery.GT_Terrain016_Bounds_BW6_Recovery",
+            "WeatherPool": {
+                "RowName": "CosmeticWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Outpost_003"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "WorldStatList": [
+                {
+                    "RowName": "Outpost_Stats",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
             "AISpawnConfigOverride": {
-                "RowName": "Desert_Recovery"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
+                "RowName": "Outpost_Arctic"
             }
         },
         {
-            "Name": "BW6_Extermination",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Extermination-DropName\", \"KILL LIST: Extermination\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Extermination-Description\", \"CRITICAL: ELIMINATE LETHAL PREDATOR\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Extermination-FlavourText\", \"// BIOME: Forest // BACKGROUND: As the African Assembly increases its investment in Icarus, advance teams are reporting encounters with extremely hostile wildlife. Human resources losses have been non-negligible. Behaviour patterns suggest hyper-aggressive animals. // MISSION: Track down and eliminate the creatures with extreme prejudice. // TERMS: This is not a scientific mission. Anything less than termination will be regarded as a forfeiture of contract.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Extermination.SelectedProstpect_Extermination'",
-            "Difficulty": "Normal",
-            "BriefingDialogue": {
-                "RowName": "FM3ExterminationBriefing"
-            },
-            "LandingDialogue": {
-                "RowName": "FM3ExterminationLanding"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 26,
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW6_Ex.GT_Terrain016_Bounds_BW6_Ex",
-            "AISpawnConfigOverride": {
-                "RowName": "BW6_Extermination"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW6_Survey",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Survey-DropName\", \"HEADSTONE: Geo-Survey\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Survey-Description\", \"PERFORM HIGH YIELD GEO-TECTONIC SURVEY FOR UNIAO\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Survey-FlavourText\", \"// BIOME: Forest // BACKGROUND: Uniao requires detailed geological survey data from an uncharted alpine valley. Uniao refuse to divulge the purpose of the survey, but affiliation with off-world mining interests suggests early steps towards large scale exotics extraction. // MISSION: Establish geo-stations at three survey locations, and a central uplink unit to transmit the data to orbit. // TERMS: Unaio will provide survey equipment, but the contractor is responsible for ensuring its safety. Expect aggressive wildlife and possible severe weather.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Survey.SelectedProstpect_Survey'",
-            "BriefingDialogue": {
-                "RowName": "FM4SurveyBriefing"
-            },
-            "LandingDialogue": {
-                "RowName": "FM4SurveyLanding"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 17,
-            "MetaDepositSpawns": [
-                {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
-                }
-            ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW6_Ex.GT_Terrain016_Bounds_BW6_Ex",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
-            }
-        },
-        {
-            "Name": "BW6_Exploration",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Exploration-DropName\", \"ARGOS: Exploration\")",
-            "DesignNotes": "BW6",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Exploration-Description\", \"GENERAL ACCESS TO UDA APPROVED REGION\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"BW6_Exploration-FlavourText\", \"// BIOME: All // BACKGROUND: General access for all Contractors meeting drop criteria. // MISSION: Contractors are not required to pursue specific objectives. //TERMS: Contractors will be provided with a functioning envirosuit and basic crafting information. They will be otherwise unassisted.\")",
+            "Name": "Outpost005_Forest",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-DropName\", \"HOLDFAST: Outpost\")",
+            "DesignNotes": "Forest Outpost 2 - Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-FlavourText\", \"Open untimed access to a stable, predator-free forest region.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Exploration.SelectedProstpect_Exploration'",
-            "BriefingDialogue": {
-                "RowName": "Recon1Landing"
-            },
-            "LandingDialogue": {
-                "RowName": "Recon1Landing"
-            },
-            "WeatherPool": {
-                "RowName": "MediumWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Terrain_016"
-            },
-            "TimeDuration": {
-                "Days": {
-                    "Min": 21,
-                    "Max": 21
-                },
-                "Seconds": {
-                    "Min": 1,
-                    "Max": 59
-                }
-            },
-            "StartingTime": 10,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "MetaDepositSpawns": [
+            "RequiredFlags": [
                 {
-                    "SpawnLocation": {
-                        "Value": "OLY_I7"
-                    },
-                    "MinMetaAmount": 100,
-                    "MaxMetaAmount": 100
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW6_Exploration.GT_Terrain016_Bounds_BW6_Exploration",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "BetaWeekend6"
-                },
-                "bIsDeprecated": true
+            "WeatherPool": {
+                "RowName": "CosmeticWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Outpost_005"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "WorldStatList": [
+                {
+                    "RowName": "Outpost_Stats",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "AISpawnConfigOverride": {
+                "RowName": "Outpost_Forest"
             }
         },
         {
@@ -7363,6 +6945,12 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 1
+                }
+            },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
             },
@@ -7613,6 +7201,12 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                }
+            },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
             },
@@ -7725,6 +7319,12 @@
             },
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 1
+                }
             },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
@@ -7844,6 +7444,12 @@
             "Difficulty": "Normal",
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 2
+                }
             },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
@@ -7967,6 +7573,12 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete11"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 2
+                }
+            },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
             },
@@ -8076,6 +7688,12 @@
             "LandingDialogue": {
                 "RowName": "ExplorationLanding5"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 3
+                }
+            },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
             },
@@ -8093,6 +7711,120 @@
             },
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
             "PlayerSpawnGroupIndex": 17,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_D14"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_K4"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_E6"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertExploration.GT_T016_Bounds_T4_DesertExploration"
+        },
+        {
+            "Name": "Tier4_Desert_Survey",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Survey-DropName\", \"MIGRATING SANDS: Survey\")",
+            "DesignNotes": "[DNT] Desert Exploration",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Survey-Description\", \"INVESTIGATE AN ANOMALY  IN THE DESERT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Survey-FlavourText\", \"//OPERATOR: UDA // BIOME: Desert // BACKGROUND: General access for all Contractors meeting drop criteria. // MISSION: Contractors are not required to pursue specific objectives. //TERMS: Contractors will be provided with a functioning envirosuit. They will be otherwise unassisted.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProspect_Desert_Survey.SelectedProspect_Desert_Survey'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "Multi_MedToHeavy_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "SurveyBriefing2a"
+            },
+            "LandingDialogue": {
+                "RowName": "SurveyLanding4a"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete14"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Desert_Survey"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "StartingTime": 17,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 9,
             "MetaDepositSpawns": [
                 {
                     "SpawnLocation": {
@@ -8296,6 +8028,12 @@
             "LandingDialogue": {
                 "RowName": "ExplorationLanding6"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 4
+                }
+            },
             "WeatherPool": {
                 "RowName": "MediumWeatherPool_1"
             },
@@ -8431,6 +8169,12 @@
             },
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 3
+                }
             },
             "WeatherPool": {
                 "RowName": "Multi_MedToHeavy_1"
@@ -8568,6 +8312,12 @@
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
             },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 3
+                }
+            },
             "WeatherPool": {
                 "RowName": "Multi_MedToHeavy_1"
             },
@@ -8703,6 +8453,12 @@
             },
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete8"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                }
             },
             "WeatherPool": {
                 "RowName": "Multi_MedToHeavy_1"
@@ -8922,93 +8678,6 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_Full.GT_Terrain016_Bounds_Full"
-        },
-        {
-            "Name": "Outpost002_Forest",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-DropName\", \"ARCWOOD: Outpost\")",
-            "DesignNotes": "Available on Standard Edition Icarus",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost002_Forest-FlavourText\", \"Open untimed access to a stable, predator-free forest region.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Footfall.SelectedProstpect_Footfall'",
-            "WeatherPool": {
-                "RowName": "CosmeticWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Outpost_002"
-            },
-            "bIsPersistent": true,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "WorldStatList": [
-                {
-                    "RowName": "Outpost_Stats",
-                    "DataTableName": "D_ProspectStats"
-                }
-            ],
-            "AISpawnConfigOverride": {
-                "RowName": "Outpost_Forest"
-            }
-        },
-        {
-            "Name": "Outpost003_Arctic",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-DropName\", \"ICEHOLM: Outpost\")",
-            "DesignNotes": "Arctic Outpost - Available in DLC",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost003_Arctic-FlavourText\", \"Open, untimed access to a stable, predator-free arctic region.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_BW4.SelectedProstpect_BW4'",
-            "RequiredFlags": [
-                {
-                    "DataTableName": "D_AccountFlags",
-                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
-                }
-            ],
-            "WeatherPool": {
-                "RowName": "CosmeticWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Outpost_003"
-            },
-            "bIsPersistent": true,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "WorldStatList": [
-                {
-                    "RowName": "Outpost_Stats",
-                    "DataTableName": "D_ProspectStats"
-                }
-            ],
-            "AISpawnConfigOverride": {
-                "RowName": "Outpost_Arctic"
-            }
-        },
-        {
-            "Name": "Outpost005_Forest",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-DropName\", \"HOLDFAST: Outpost\")",
-            "DesignNotes": "Forest Outpost 2 - Available in DLC",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost005_Forest-FlavourText\", \"Open untimed access to a stable, predator-free forest region.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Exploration.SelectedProstpect_Exploration'",
-            "RequiredFlags": [
-                {
-                    "DataTableName": "D_AccountFlags",
-                    "RowName": "DLC_Deluxe_Edition_Envirosuit"
-                }
-            ],
-            "WeatherPool": {
-                "RowName": "CosmeticWeatherPool_1"
-            },
-            "Terrain": {
-                "RowName": "Outpost_005"
-            },
-            "bIsPersistent": true,
-            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "WorldStatList": [
-                {
-                    "RowName": "Outpost_Stats",
-                    "DataTableName": "D_ProspectStats"
-                }
-            ],
-            "AISpawnConfigOverride": {
-                "RowName": "Outpost_Forest"
-            }
         },
         {
             "Name": "Tier1_Farming",
@@ -9393,7 +9062,7 @@
             "DesignNotes": "Forest Construction",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Construction-Description\", \"BUILD A BASE FOR ICARUS VIPS\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Construction-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Forest // BACKGROUND: Operator is hosting a VIP investment on Icarus, and requires advanced infrastructure for their guests in the region. // MISSION: Construct a fully equipped base to Operator specifications. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Defense.SelectedProstpect_Defense'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Decorations.SelectedProstpect_Decorations'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -9500,6 +9169,1265 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T1_ForestExploration.GT_T016_Bounds_T1_ForestExploration"
+        },
+        {
+            "Name": "STYX_A_Expedition",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Expedition-DropName\", \"OMPHALOS: Expedition\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Expedition-Description\", \"ENTER AND EXPLORE THE NEW APPROVED ZONE\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Expedition-FlavourText\", \"//OPERATOR: UDA // BIOME: The Great River // BACKGROUND: The UDA has recently opened up a previously barred area for prospecting. // MISSION: Scout out three potential landing zones within the new area. //TERMS: This area is under surveyed, and was previously deemed too dangerous for human traversal. Proceed with caution, the UDA takes no responsibility for contractor safety. \")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Scan.SelectedProstpect_Scan'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Expedition"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_3"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_C02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_P10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "NumMetaSpawnsMax": 3
+        },
+        {
+            "Name": "STYX_A_Exploration",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Exploration-DropName\", \"HEADLONG: Exploration\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Exploration-Description\", \"GENERAL ACCESS TO UDA APPROVED REGION\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Exploration-FlavourText\", \"OPERATOR: UDA // BIOME: The Great River // BACKGROUND: General access for all Contractors meeting drop criteria. // MISSION: Contractors are not required to pursue specific objectives. //TERMS: Contractors will be provided with a functioning envirosuit. They will be otherwise unassisted.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/SelectedProstpect_Scan.SelectedProstpect_Scan'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "BriefingDialogue": {
+                "RowName": "ExplorationBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "ExplorationLanding1"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Exploration"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 21,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_3"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_C02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_P10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "NumMetaSpawnsMax": 3
         }
     ]
 }

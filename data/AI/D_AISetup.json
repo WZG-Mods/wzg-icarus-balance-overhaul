@@ -2723,7 +2723,7 @@
                 "RowName": "Jaguar_Head"
             },
             "Loot": {
-                "RowName": "Lion_Carcass_Loot"
+                "RowName": "Jaguar_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones"
@@ -5610,6 +5610,171 @@
             ],
             "Loot": {
                 "RowName": "Scorpion_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
+        },
+        {
+            "Name": "Teenage_Caveworm",
+            "ActorClass": "/Game/BP/AI/Basic/Caves/BP_CRE_Teenage_Caveworm.BP_CRE_Teenage_Caveworm_C",
+            "ControllerClass": "/Game/BP/AI/Basic/Caves/BP_CRE_CaveWorm_Controller.BP_CRE_CaveWorm_Controller_C",
+            "CreatureType": {
+                "RowName": "CaveWorm"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Aggressive",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "Relationships": {
+                "RowName": "DefaultLargeCarnivore"
+            },
+            "AIGrowth": {
+                "RowName": "Teenage_Caveworm"
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "control_C0_control_jnt",
+                    "AffectsChildren": true
+                }
+            ],
+            "Loot": {
+                "RowName": "Caveworm_Loot"
+            }
+        },
+        {
+            "Name": "Polar_Bear_Cub",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_PolarBearCub_Character.BP_NPC_PolarBearCub_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "PolarBearCub"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Aggressive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_PolarBear"
+            },
+            "GOAPSetup": {
+                "RowName": "PolarBear"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_LargeAI.NavFilter_LargeAI_C'",
+            "Relationships": {
+                "RowName": "DefaultLargeCarnivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Polar_Bear_Cub"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 0,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.20000000298023224,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 0.75,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 4,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 220,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 4,
+                    "MaxAcceleration": 600,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 6.659999847412109,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 4.400000095367432,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 600,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 2.930000066757202,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "PolarBear"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck2",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck3"
+            ],
+            "LatentDeathDuration": 120,
+            "Trophy": {
+                "RowName": "PolarBear_Head"
+            },
+            "Loot": {
+                "RowName": "PolarBear_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones"

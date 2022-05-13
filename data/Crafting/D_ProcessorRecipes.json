@@ -7745,7 +7745,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "Glassbench"
+                "RowName": "MachiningBench"
             }
         },
         {
@@ -10046,7 +10046,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "CarpentryBench"
+                "RowName": "CraftingBench"
             }
         },
         {
@@ -10089,7 +10089,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "CarpentryBench"
+                "RowName": "CraftingBench"
             }
         },
         {
@@ -10140,7 +10140,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "CarpentryBench"
+                "RowName": "CraftingBench"
             }
         },
         {
@@ -19856,9 +19856,8 @@
         },
         {
             "Name": "Sandworm_Knife",
-            "SessionRequirement": {
-                "DataTableName": "D_SessionFlags",
-                "RowName": "BW5_KilledWorm"
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
             },
             "RequiredMillijoules": 7500,
             "RecipeSets": [
@@ -19894,7 +19893,7 @@
                         "RowName": "Sandworm_Scale",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -19914,9 +19913,8 @@
         },
         {
             "Name": "Sandworm_Spear",
-            "SessionRequirement": {
-                "DataTableName": "D_SessionFlags",
-                "RowName": "BW5_KilledWorm"
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
             },
             "RequiredMillijoules": 7500,
             "RecipeSets": [
@@ -19952,7 +19950,7 @@
                         "RowName": "Sandworm_Scale",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 10,
                     "DynamicProperties": []
                 }
             ],
@@ -19973,8 +19971,10 @@
         {
             "Name": "Sandworm_Arrow",
             "SessionRequirement": {
-                "DataTableName": "D_SessionFlags",
-                "RowName": "BW5_KilledWorm"
+                "DataTableName": "D_SessionFlags"
+            },
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
             },
             "RequiredMillijoules": 750,
             "RecipeSets": [
@@ -20010,7 +20010,7 @@
                         "RowName": "Sandworm_Scale",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 2,
                     "DynamicProperties": []
                 }
             ],
@@ -20021,6 +20021,66 @@
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Sandworm_Bow",
+            "SessionRequirement": {
+                "DataTableName": "D_SessionFlags"
+            },
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseBowCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Bow",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
                     "DynamicProperties": []
                 }
             ],
@@ -25048,7 +25108,7 @@
             "CharacterRequirement": {
                 "RowName": "Mission_Cave_Worm_Analyser"
             },
-            "RequiredMillijoules": 750,
+            "RequiredMillijoules": 7500,
             "RecipeSets": [
                 {
                     "RowName": "Crafting_Bench",
@@ -25430,7 +25490,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Rustic_Decoration_Bench",
@@ -25486,7 +25549,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Rustic_Bench",
@@ -26492,6 +26558,321 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Mission_Prototype_Laser",
+            "SessionRequirement": {
+                "DataTableName": "D_SessionFlags",
+                "RowName": "Recipe_PrototypeLaser"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Mission_Broken_Prototype_Laser",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Mission_Prototype_Laser",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
+        },
+        {
+            "Name": "Scale_Head_Armor",
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scale_Head",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Scale_Chest_Armor",
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 60,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scale_Chest",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Scale_Arms_Armor",
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scale_Arms",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Scale_Legs_Armor",
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 60,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 9,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scale_Legs",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Scale_Feet_Armor",
+            "CharacterRequirement": {
+                "RowName": "Mission_Sandworm_Items"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sandworm_Scale",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scale_Feet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
             }
         }
     ]
