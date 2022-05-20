@@ -4163,12 +4163,21 @@
         {
             "Name": "STYX_A_Expedition",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition.BPQ_Styx_A_Expedition_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition-Description\", \"EXPEDITION: STYX\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition-Description\", \"EXPEDITION: STYX\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_LargeLake"
+            }
         },
         {
             "Name": "STYX_A_Expedition_Collect_From_Dropship",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Collect_Beacons.BPQ_Styx_A_Expedition_Collect_Beacons_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Collect_From_Dropship-Description\", \"Collect Beacons\\' From Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Collect_From_Dropship-Description\", \"Collect Beacons From Dropship Storage\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxIntroScoutLandingZones",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_A_Expedition_Beacon_1",
@@ -4176,6 +4185,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_1-Description\", \"Scout Out Potential Landing Zone #1\")",
             "LocationQuery": {
                 "RowName": "STYX_River_LargeLake"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxIntroLocation1Complete",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4185,6 +4200,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_2-Description\", \"Scout Out Potential Landing Zone #2\")",
             "LocationQuery": {
                 "RowName": "STYX_River_LowerLake"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxIntroLocation2Complete",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4194,6 +4215,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_3-Description\", \"Scout Out Potential Landing Zone #3\")",
             "LocationQuery": {
                 "RowName": "STYX_Wall_UpperWall"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxIntroLocation3Complete",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4209,12 +4236,18 @@
         {
             "Name": "STYX_A_Expedition_Beacon_Clear_Area",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Clear_Area.BPQ_Styx_A_Expedition_Clear_Area_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Clear_Area-Description\", \"Clear the Area of Nearby Komodo Dragons\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Clear_Area-Description\", \"Clear the Area of Nearby Komodo Dragons\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxIntroLocation1KillCreature",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_A_Expedition_Beacon_Kill_Komodos",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_STYX_A_Expedition_Kill_Komodos.BPQ_STYX_A_Expedition_Kill_Komodos_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Kill_Komodos-Description\", \"{0} / {1} {2} Remaming\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Kill_Komodos-Description\", \"{0} / {1} {2} Remaning\")"
         },
         {
             "Name": "STYX_A_Expedition_Beacon_Deploy_Beacon",
@@ -4268,12 +4301,24 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Travel_To_Cave-Description\", \"Travel to the Cave Detected by the Station\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_Wall_DryRidge"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxBExpeditionLocatedCave",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "STYX_B_Expedition_RemoveBlocker",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Remove_Blocker.BPQ_STYX_B_Expedition_Remove_Blocker_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker-Description\", \"Gain Access to the Cave\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker-Description\", \"Gain Access to the Cave\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxBExpeditionCaveBlocked",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_B_Expedition_RemoveBlocker_Collect",
@@ -4281,12 +4326,18 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Collect-Description\", \"Collect the Explosive Devices at a Nearby Equipment Resupply Pod\")",
             "LocationQuery": {
                 "RowName": "STYX_Wall_LowerWall"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxBExpeditionCollectExplosives",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "STYX_B_Expedition_RemoveBlocker_Place_A",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Blocker_Deploy_Check.BPQ_STYX_B_Expedition_Blocker_Deploy_Check_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Place_A-Description\", \"Place an Explosive Device on the Cave In\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Place_A-Description\", \"Place an Explosive Device on the Cave-in\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_Wall_DryRidge"
             }
@@ -4294,16 +4345,22 @@
         {
             "Name": "STYX_B_Expedition_RemoveBlocker_Travel_B",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BP_STYX_B_Expedition_Travel_Blocker.BP_STYX_B_Expedition_Travel_Blocker_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Travel_B-Description\", \"Travel to the Other Side of the Cave In\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Travel_B-Description\", \"Travel to the Other Side of the Cave-in (Find A Way Around)\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_DryRidge_Wall"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxBExpeditionLongWay",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "STYX_B_Expedition_RemoveBlocker_Place_B",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Blocker_Deploy_Check.BPQ_STYX_B_Expedition_Blocker_Deploy_Check_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Place_B-Description\", \"Place an Explosive Device on the Cave In\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Place_B-Description\", \"Place an Explosive Device on the Cave-in\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_DryRidge_Wall"
             }
@@ -4311,7 +4368,13 @@
         {
             "Name": "STYX_B_Expedition_RemoveBlocker_Standback",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Stand_Back.BPQ_STYX_B_Expedition_Stand_Back_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Standback-Description\", \"Stand Back\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_RemoveBlocker_Standback-Description\", \"Stand Back\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxBExpeditionStandBack",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_B_Exploration",
@@ -4358,14 +4421,160 @@
             }
         },
         {
-            "Name": "STYX_C_Expedition",
-            "Class": "/Game/BP/Quests/Styx/BPQ_STYX_Test_Expedition.BPQ_STYX_Test_Expedition_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition-Description\", \"EXPEDITION: Oasis\")"
+            "Name": "STYX_C_Expedition_0",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition.BPQ_STYX_C_Expedition_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_0-Description\", \"EXPEDITION: Oasis\")"
         },
         {
-            "Name": "STYX_C_Expedition_0",
-            "Class": "/Game/BP/Quests/Styx/BPQ_STYX_Test_Expedition.BPQ_STYX_Test_Expedition_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_0-Description\", \"EXPEDITION: Oasis\")"
+            "Name": "STYX_C_Expedition_Collect_Radar_And_Beacon",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Collect_Radar.BPQ_STYX_C_Expedition_Collect_Radar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect A Radar from Dropship Storage\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionFindOasis",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "StyxCExpeditionCollectEquipmentB",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Oasis_Parent",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Oasis_Parent.BPQ_STYX_C_Expedition_Oasis_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Oasis_Parent-Description\", \"Investigate reports of an Oasis\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_Travel",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Travel_Blocker.BPQ_STYX_C_Expedition_Travel_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Travel-Description\", \"Travel through the cave (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_C_Expedition_Blocker_Entrance"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionFindCave",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Travel_Exit",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Travel_Blocker_Exit.BPQ_STYX_C_Expedition_Travel_Blocker_Exit_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Travel_Exit-Description\", \"Exit the cave (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_C_Expedition_Blocker_Exit"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionScanOasis",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Blocker",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Blocker.BPQ_STYX_C_Expedition_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Blocker-Description\", \"Clear a path through the cave\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_Collect_Drill",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Collect_Equipment.BPQ_STYX_C_Expedition_Collect_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Collect_Drill-Description\", \"Collect the Drill (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_C_Expedition_Drill"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionCollectDrill",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "StyxCExpeditionFindBlockage",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Drill_Cave_1",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Parent.BPQ_STYX_C_Expedition_Drill_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Drill_Cave_1-Description\", \"Drill through collapsed cave\")",
+            "LocationQuery": {
+                "RowName": "STYX_C_Expedition_Blocker_Entrance"
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Drill_Cave_2",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Parent.BPQ_STYX_C_Expedition_Drill_Parent_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Drill_Cave_2-Description\", \"Drill through the other side of the cave\")",
+            "LocationQuery": {
+                "RowName": "STYX_C_Expedition_Blocker_Middle"
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Deploy_Drill",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Deploy.BPQ_STYX_C_Expedition_Drill_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Deploy_Drill-Description\", \"Place Drill\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_Fuel_Drill",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Power.BPQ_STYX_C_Expedition_Drill_Power_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Fuel_Drill-Description\", \"Fuel and activate drill\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionActivateDrill",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Defend_Drill",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Defend.BPQ_STYX_C_Expedition_Drill_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Defend_Drill-Description\", \"Defend the drill\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_Defend_Drill_Progress",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Progress.BPQ_STYX_C_Expedition_Drill_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Defend_Drill_Progress-Description\", \"{0}% Complete\")"
+        },
+        {
+            "Name": "STYX_C_Expedition_Scan_Oasis_Parent",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Scan_Parent.BPQ_STYX_C_Expedition_Scan_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_Oasis_Parent-Description\", \"Gather scan data from the Oasis\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionMissionComplete",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Scan_1",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Scan.BPQ_STYX_C_Expedition_Scan_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_1-Description\", \"Scan the Lower Falls Region\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Lakeside"
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Scan_2",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Scan_Komodo.BPQ_STYX_C_Expedition_Scan_Komodo_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_2-Description\", \"Scan the Upper Falls Region\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Plateau"
+            }
+        },
+        {
+            "Name": "STYX_C_Expedition_Scan_3",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Scan_Plateau.BPQ_STYX_C_Expedition_Scan_Plateau_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_3-Description\", \"Scan the Plateau Wall Region\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Canyon"
+            }
         },
         {
             "Name": "STYX_C_Exploration",
@@ -4374,8 +4583,66 @@
         },
         {
             "Name": "STYX_C_Construction",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction-Description\", \"CONSTRUCTION: Self Sustainment\")"
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction.BPQ_STYX_C_Construction_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction-Description\", \"CONSTRUCTION: Self Sustainment\")",
+            "LocationQuery": {
+                "RowName": "STYX_Oasis_Island"
+            }
+        },
+        {
+            "Name": "STYX_C_Construction_Travel",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_Travel.BPQ_STYX_C_Construction_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_Travel-Description\", \"Travel to the Build Site (M)\")"
+        },
+        {
+            "Name": "STYX_C_Construction_Build",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_Build.BPQ_STYX_C_Construction_Build_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_Build-Description\", \"Setup a Self Sufficient Outpost\")"
+        },
+        {
+            "Name": "STYX_C_Construction_SolarPanel",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_SolarPanel.BPQ_STYX_C_Construction_SolarPanel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_SolarPanel-Description\", \"Solar Panels  {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_WaterPump",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_WaterPump.BPQ_STYX_C_Construction_WaterPump_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_WaterPump-Description\", \"Water Pump {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_CropPlot",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_CropPlot.BPQ_STYX_C_Construction_CropPlot_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_CropPlot-Description\", \"Crop Plots {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_ChemistryStation",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_ChemStation.BPQ_STYX_C_Construction_ChemStation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_ChemistryStation-Description\", \"Chemistry Station {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_ElectricComposter",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_ElectricComposter.BPQ_STYX_C_Construction_ElectricComposter_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_ElectricComposter-Description\", \"Electric Composter {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_Fridge",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_Fridge.BPQ_STYX_C_Construction_Fridge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_Fridge-Description\", \"Fridge {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_MaterialProcessor",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_MaterialProcessor.BPQ_STYX_C_Construction_MaterialProcessor_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_MaterialProcessor-Description\", \"Material Processor {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_Bench",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_KitchenBench.BPQ_STYX_C_Construction_KitchenBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_Bench-Description\", \"Kitchen Bench {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_C_Construction_Stove",
+            "Class": "/Game/BP/Quests/Styx/C/Construction/BPQ_STYX_C_Construction_BiofuelStove.BPQ_STYX_C_Construction_BiofuelStove_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Construction_Stove-Description\", \"Biofuel Stove {0} / {1}\")"
         },
         {
             "Name": "STYX_C_Extermination",
@@ -4426,17 +4693,20 @@
         {
             "Name": "STYX_C_Extermination_Stockpile_Meat",
             "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Stockpile_Meat.BPQ_STYX_C_Extermination_Stockpile_Meat_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Stockpile_Meat-Description\", \"{0} / {1} Stringy Meat\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Stockpile_Meat-Description\", \"{0} / {1} Dried Stringy Meat\")"
         },
         {
             "Name": "STYX_D_Expedition",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition.BPQ_STYX_D_Expedition_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition-Description\", \"EXPEDITION: Ring Lake\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition-Description\", \"EXPEDITION: Ring Lake\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
+            }
         },
         {
             "Name": "STYX_D_Expedition_Collect_Radar_And_Beacon",
-            "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Collect_Radar.BPQ_STYX_B_Expedition_Collect_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect A Radar and Beacon From Dropship Storage\")"
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Collect_Radar_Beacon.BPQ_STYX_D_Expedition_Collect_Radar_Beacon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect A Radar and A Beacon from Dropship Storage\")"
         },
         {
             "Name": "STYX_D_Expedition_Scan_1",
@@ -4453,6 +4723,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Scan_2-Description\", \"Scan the Frozen Lake Region\")",
             "LocationQuery": {
                 "RowName": "STYX_FrozenTraverse_Lake"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxDExpeditionLocation1ScanComplete",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4461,6 +4737,16 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Investigate_Weak_Wall-Description\", \"Investigate the Weak Wall (M)\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_FrozenTraverse_RingLake_A"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxDExpeditionFindLake",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "StyxDExpeditionFoundWall",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4477,27 +4763,52 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Equipment-Description\", \"Collect Prototype Device from the Supply Pod\")",
             "LocationQuery": {
                 "RowName": "STYX_FrozenTraverse_SmallRidge"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxDExpeditionCollectEquipment",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "STYX_D_Expedition_Setup_Equipment",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Deploy_And_Power_Device.BPQ_STYX_D_Deploy_And_Power_Device_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Setup_Equipment-Description\", \"Deploy and Power the Prototype Device\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Setup_Equipment-Description\", \"Deploy and Power the Prototype Device\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxDExpeditionPlaceEquipment",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_D_Expedition_Defend_Equipment",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Defend_Device.BPQ_STYX_D_Expedition_Defend_Device_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Equipment-Description\", \"Defend the Device While it Charges\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Equipment-Description\", \"Defend the Device while it breaks through the Wall\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxDExpeditionTeenageWorms",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_D_Expedition_Defend_Progress",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress.BPQ_Common_Progress_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Progress-Description\", \"{0}% Charged\")"
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Defend_Progress-Description\", \"{0}% Complete\")"
         },
         {
             "Name": "STYX_D_Expedition_Activate_Equipment",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Activate_Device.BPQ_STYX_D_Expedition_Activate_Device_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Activate_Equipment-Description\", \"Activate the Device\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Activate_Equipment-Description\", \"Activate the Device\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxDExpeditionActivateEquipment",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_D_Expedition_Travel_To_Lake",
@@ -4505,12 +4816,18 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Travel_To_Lake-Description\", \"Head to the Unusual Lake Formation (M)\")",
             "LocationQuery": {
                 "RowName": "STYX_RingLake_Center"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxDExpeditionArriveLake",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "STYX_D_Expedition_Clear_Area",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Arrived_At_Lake.BPQ_STYX_D_Expedition_Arrived_At_Lake_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Clear_Area-Description\", \"Clear the Area of Local Wildlife\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Clear_Area-Description\", \"Clear the Waters of Local Agressive Wildlife\")",
             "LocationQuery": {
                 "RowName": "STYX_RingLake_Center"
             }
@@ -4526,6 +4843,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Place_Beacon-Description\", \"Deploy the Beacon\")",
             "LocationQuery": {
                 "RowName": "STYX_RingLake_Center"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxDExpeditionPlaceBeacon",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4535,13 +4858,168 @@
         },
         {
             "Name": "STYX_D_Delivery",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery-Description\", \"DELIVERY: Volatile Samples\")"
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery.BPQ_STYX_D_Delivery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery-Description\", \"DELIVERY: Volatile Samples\")",
+            "LocationQuery": {
+                "RowName": "STYX_Wall_LowerFlat"
+            }
+        },
+        {
+            "Name": "STYX_D_Delivery_Travel",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_Travel.BPQ_STYX_D_Delivery_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Travel-Description\", \"Head to the Supply Pods Last Known Position\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Boss",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_Boss.BPQ_STYX_D_Delivery_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Boss-Description\", \"Kill the Creature Guarding the Crashed Supply Pod.\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Collect",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_Collect.BPQ_STYX_D_Delivery_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Collect-Description\", \"Collect a Terraforming Sample From the Supply Pod\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Deliver",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_Deliver.BPQ_STYX_D_Delivery_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Deliver-Description\", \"Deliver the Terraforming Sample to your Dropship\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_0",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_0-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_1",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_1-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_2",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_2-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_3",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_3-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_4",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_4-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_5",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 5,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_5-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_6",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 6,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_6-Description\", \"Check\")"
+        },
+        {
+            "Name": "STYX_D_Delivery_Check_Item_7",
+            "Class": "/Game/BP/Quests/Styx/D/Delivery/BPQ_STYX_D_Delivery_CheckItem.BPQ_STYX_D_Delivery_CheckItem_C",
+            "Variation": 7,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Delivery_Check_Item_7-Description\", \"Check\")"
         },
         {
             "Name": "STYX_D_Research",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research.BPQ_STYX_D_Research_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research-Description\", \"RESEARCH: Cave Life\")"
+        },
+        {
+            "Name": "STYX_D_Research_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Travel-Description\", \"Investigate the nearby cave\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_TopLake_Cave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_CollectEgg",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_CollectEgg.BPQ_STYX_D_Research_CollectEgg_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_CollectEgg-Description\", \"Collect an Egg from the Nest\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_TopLake_Cave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_Analyzer",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer.BPQ_STYX_D_Research_Analyzer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer-Description\", \"Analyze the Egg to locate other Nests\")"
+        },
+        {
+            "Name": "STYX_D_Research_Analyzer_Collect",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer_Collect.BPQ_STYX_D_Research_Analyzer_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Collect-Description\", \"Collect the Analyzer from Dropship Storage\")"
+        },
+        {
+            "Name": "STYX_D_Research_Analyzer_Deploy",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer_Deploy.BPQ_STYX_D_Research_Analyzer_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Deploy-Description\", \"Deploy the Analyzer\")"
+        },
+        {
+            "Name": "STYX_D_Research_Analyzer_Activate",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer_Activate.BPQ_STYX_D_Research_Analyzer_Activate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Activate-Description\", \"Power the Analyzer and Place the Egg inside\")"
+        },
+        {
+            "Name": "STYX_D_Research_Analyzer_Progress",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer_Progress.BPQ_STYX_D_Research_Analyzer_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Progress-Description\", \"{0}% Complete\")"
+        },
+        {
+            "Name": "STYX_D_Research_DestroyNest_1",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_1-Description\", \"Destroy the First Nest located on the Map\")",
+            "LocationQuery": {
+                "RowName": "STYX_AlpineValley_SouthCave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_DestroyNest_2",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_2-Description\", \"Destroy the Second Nest located on the Map\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_SouthCave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_DestroyNest_3",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_3-Description\", \"Destroy the Third Nest located on the Map\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_CentralCave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_DestroyNest_4",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_4-Description\", \"Destroy the Forth Nest located on the Map\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_NorthCave"
+            }
+        },
+        {
+            "Name": "STYX_D_Research_DestroyNest_5",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_5-Description\", \"Destroy the last Nest located on the Map\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_WestCave"
+            }
         },
         {
             "Name": "STYX_E_Expedition",
@@ -4598,6 +5076,16 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Collect_Laser-Description\", \"Recover the lost equipment\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_DryRidge_Pillar"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "StyxEExpeditionRecoverEquipment",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "StyxEExpeditionCollectedEquipment",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4608,7 +5096,13 @@
         {
             "Name": "STYX_E_Expedition_Blocker_Repair",
             "Class": "/Game/BP/Quests/Styx/E/Expedition/BPQ_STYX_E_Expedition_Blocker_Repair.BPQ_STYX_E_Expedition_Blocker_Repair_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker_Repair-Description\", \"Repair the Prototype Laser\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker_Repair-Description\", \"Repair the Prototype Laser at a Crafting Bench\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxEExpeditionRepairedEquipment",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "STYX_E_Expedition_Blocker_Laser_A",
@@ -4616,6 +5110,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker_Laser_A-Description\", \"Test the Laser on the nearby mountain side\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_DryRidge_CentralBasin"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxEExpeditionDrillCompleteA",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4625,6 +5125,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker_Laser_B-Description\", \"Test the Laser inside the cave\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_CentralBasin_DryRidge"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxEExpeditionDrillExplodes",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -4654,8 +5160,60 @@
         },
         {
             "Name": "STYX_E_Survey",
-            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Class": "/Game/BP/Quests/Styx/E/Survey/BPQ_STYX_E_Survey.BPQ_STYX_E_Survey_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey-Description\", \"SURVEY: Shifting Sands\")"
+        },
+        {
+            "Name": "STYX_E_Survey_Collect_Beacons",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Collect_Beacons.BPQ_Styx_A_Expedition_Collect_Beacons_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Collect_Beacons-Description\", \"Collect Beacons from the Dropship\")"
+        },
+        {
+            "Name": "STYX_E_Survey_Place_Beacons",
+            "Class": "/Game/BP/Quests/Styx/E/Survey/BPQ_STYX_E_Survey_Place_Beacons.BPQ_STYX_E_Survey_Place_Beacons_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Place_Beacons-Description\", \"Place the Noise Emitting Beacons around to Trap the Creature\")"
+        },
+        {
+            "Name": "STYX_E_Survey_Place_Beacons_1",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Place_Beacons_1-Description\", \"Deploy Beacon at Location 1 (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_DryRidge_RingFormation"
+            }
+        },
+        {
+            "Name": "STYX_E_Survey_Place_Beacons_2",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Place_Beacons_2-Description\", \"Deploy Beacon at Location 2 (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_DryRidge_Plateau_2"
+            }
+        },
+        {
+            "Name": "STYX_E_Survey_Place_Beacons_3",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Deploy_Beacon.BPQ_Common_Deploy_Beacon_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Place_Beacons_3-Description\", \"Deploy Beacon at Location 3 (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_DryRidge_Plateau"
+            }
+        },
+        {
+            "Name": "STYX_E_Survey_Travel_To_Boss",
+            "Class": "/Game/BP/Quests/Styx/E/Survey/BPQ_STYX_E_Survey_Travel_Boss.BPQ_STYX_E_Survey_Travel_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Travel_To_Boss-Description\", \"Head to the Location of the Trapped Creature (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_DryRidge_CentralPlateau"
+            }
+        },
+        {
+            "Name": "STYX_E_Survey_Fight_Boss",
+            "Class": "/Game/BP/Quests/Styx/E/Survey/BPQ_STYX_E_Survey_Boss.BPQ_STYX_E_Survey_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Fight_Boss-Description\", \"Eliminate the Threat in Dry Ridge\")",
+            "LocationQuery": {
+                "RowName": "STYX_DryRidge_CentralPlateau"
+            }
         },
         {
             "Name": "STYX_Common_Scan_Deploy",
@@ -4664,7 +5222,7 @@
         },
         {
             "Name": "STYX_Common_Scan_Progress",
-            "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress.BPQ_Common_Progress_C",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress_Radar_Audio.BPQ_Common_Progress_Radar_Audio_C",
             "Variation": 3,
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Common_Scan_Progress-Description\", \"{0}% Complete\")"
         },
@@ -4803,6 +5361,11 @@
             "LocationQuery": {
                 "RowName": "T4_Desert_Survey_Boss"
             }
+        },
+        {
+            "Name": "Common_Travel_Large",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Large-Description\", \"Travel to the map location (M)\")"
         }
     ]
 }

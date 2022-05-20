@@ -1195,6 +1195,29 @@
         {
             "Name": "Crashed_Ship",
             "Max_Durability": 100000
+        },
+        {
+            "Name": "Mission_Knife_Lion",
+            "Max_Durability": 120000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
         }
     ]
 }

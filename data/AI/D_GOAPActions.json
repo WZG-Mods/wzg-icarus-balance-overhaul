@@ -175,7 +175,6 @@
                 }
             ],
             "TimeOut": 45,
-            "TickRate": 0.5,
             "AssociatedMovementState": "Jog",
             "RangeCheckBehaviour": "ValidMove",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatNearbyCarcasses_BecomeAggressive.BP_IcarusGOAPAction_EatNearbyCarcasses_BecomeAggressive_C",
@@ -769,6 +768,65 @@
             "Description": "Attack_Roar",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_AttackRoar.BP_IcarusGOAPAction_AttackRoar_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait"
+        },
+        {
+            "Name": "Greet_Friendly",
+            "Description": "Greet_Friendly",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "WantsToGreet",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Flying",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "WantsToGreet",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 60,
+            "AssociatedMovementState": "Jog",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GreetFriendly.BP_IcarusGOAPAction_GreetFriendly_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GreetFriendly.BT_IcarusGOAP_GreetFriendly"
+        },
+        {
+            "Name": "Stop_Flying",
+            "Description": "Stop_Flying",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Flying",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Flying",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 15,
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_StopFlying.BP_IcarusGOAPAction_StopFlying_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_StopFlying.BT_IcarusGOAP_StopFlying"
         }
     ]
 }
