@@ -1697,7 +1697,8 @@
                 "FactionMissionBlocker"
             ],
             "SnapSocketsOrTags": [
-                "Drill_Socket"
+                "Drill_SocketA",
+                "Drill_SocketB"
             ],
             "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true,
@@ -2265,7 +2266,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rustic_Candle_A.BP_Rustic_Candle_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Candles_A.ITEM_Rustic_Candles_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_WoodA/SM_DCO_Candle_Holders_WoodA.SM_DCO_Candle_Holders_WoodA",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -2274,7 +2275,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rustic_Candle_B.BP_Rustic_Candle_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Candles_B.ITEM_Rustic_Candles_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_WoodA/SM_DCO_Candle_Holders_WoodB.SM_DCO_Candle_Holders_WoodB",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -2283,7 +2284,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rustic_Candle_C.BP_Rustic_Candle_C_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Candles_C.ITEM_Rustic_Candles_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_WoodA/SM_DCO_Candle_Holders_WoodC.SM_DCO_Candle_Holders_WoodC",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -2292,7 +2293,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rustic_Candle_D.BP_Rustic_Candle_D_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Candles_D.ITEM_Rustic_Candles_D",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_WoodA/SM_DCO_Candle_Holders_WoodD.SM_DCO_Candle_Holders_WoodD",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -2494,7 +2495,7 @@
             "Name": "Faction_Mission_Explosive",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Faction_Mission_Explosive.BP_Faction_Mission_Explosive_C",
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Explosive.SM_ITM_Explosive",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_DRILL_DEPLOY.SFX_DEP_DRILL_DEPLOY",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "MaxSurfaceSnapAngle": 360,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -2597,6 +2598,20 @@
                 "Laser_Socket_A",
                 "Laser_Socket_B"
             ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "X": -20,
+                "Y": -20,
+                "Z": -20
+            }
+        },
+        {
+            "Name": "Mission_Analyzer_Egg",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Mission_Analyzer_Egg.BP_Mission_Analyzer_Egg_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Analyzer.SM_DEP_Analyzer",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
             "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true,
             "DeployCollisionExtentOffset": {

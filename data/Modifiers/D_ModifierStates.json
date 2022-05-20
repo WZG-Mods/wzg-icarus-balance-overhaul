@@ -1184,11 +1184,32 @@
             "MergeType": "LongestDuration"
         },
         {
+            "Name": "Slowed_TazerArrow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_TazerArrow-ModifierName\", \"Tazer Stun\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_TazerArrow-ModifierDescription\", \"You are slowed and taking damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -90
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 8,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 0.10000000149011612,
+            "MergeType": "Stack",
+            "MaxStackNum": 3
+        },
+        {
             "Name": "Pinned",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Pinned.Icon_Pinned'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pinned-ModifierName\", \"Pinned\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pinned-ModifierDescription\", \"Your are immobilized and cannot move.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pinned-ModifierDescription\", \"You are immobilized and cannot move.\")",
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -100
             },

@@ -2809,6 +2809,28 @@
             }
         },
         {
+            "Name": "Any_NPC_Food_Container",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Crafting.Campfire"
+                    },
+                    {
+                        "TagName": "Item.Deployable.Storage"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Crafting.Campfire, Item.Deployable.Storage )"
+            }
+        },
+        {
             "Name": "MetaConversion_Replensh_Fillable",
             "Query": {
                 "TagDictionary": [
@@ -2824,6 +2846,60 @@
                     0
                 ],
                 "AutoDescription": " ALL( MetaItem.Convert.ReplenishFillable )"
+            }
+        },
+        {
+            "Name": "Any_WorldObject",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldObject"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldObject )"
+            }
+        },
+        {
+            "Name": "Mission_Egg",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.Egg"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( FactionMission.Item.Egg )"
+            }
+        },
+        {
+            "Name": "Any_FLOD_Tree",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Foliage.Tree"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Foliage.Tree )"
             }
         }
     ]
