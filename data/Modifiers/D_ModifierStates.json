@@ -3002,6 +3002,166 @@
             }
         },
         {
+            "Name": "Teenage_Worm_Poison_Forest",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Forest-ModifierName\", \"Poisoned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Forest-ModifierDescription\", \"Slows and drains health from poisoned targets and reduces critical damage output.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -6,
+                "(Value=\"BaseCriticalDamage_+%\")": -5
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 5,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
+            "Name": "Teenage_Worm_Poison_Desert",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Desert-ModifierName\", \"Poisoned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Desert-ModifierDescription\", \"Slows and drains health from poisoned targets, increases stamina cost of actions and raises your internal temperature\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -3,
+                "(Value=\"BaseStaminaActionCost_+%\")": 10,
+                "(Value=\"BaseExternalTemperatureModification_+\")": 100
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 3,
+                    "Deviation": 1
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 8,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
+            "Name": "Teenage_Worm_Poison_Arctic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Arctic-ModifierName\", \"Poisoned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Teenage_Worm_Poison_Arctic-ModifierDescription\", \"Slows and drains health from poisoned targets, reduces projectile damage resistance and lowers your internal temperature\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseExternalTemperatureModification_+\")": -200,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 8,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Count",
+            "MaxStackNum": 4,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
             "Name": "Meta_Ration",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_MetaRation_1.ITEM_MetaRation_1'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Ration-ModifierName\", \"Emergency Rations\")",
