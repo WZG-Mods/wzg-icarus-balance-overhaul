@@ -69,6 +69,32 @@
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_DormantWander.BT_IcarusNPCGOAP_DormantWander"
         },
         {
+            "Name": "Wander_FollowerIdle",
+            "Description": "Wander",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "TimeOut": 60,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Wander.BP_IcarusGOAPAction_Wander_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_FollowerIdle.BT_IcarusNPCGOAP_FollowerIdle"
+        },
+        {
             "Name": "Search_For_Food",
             "Description": "Search_For_Food",
             "Preconditions": [
@@ -599,11 +625,7 @@
             "TimeOut": 45,
             "AssociatedMovementState": "Sprint",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GotoAnchorPoint.BP_IcarusGOAPAction_GotoAnchorPoint_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GotoAnchorPoint.BT_IcarusGOAP_GotoAnchorPoint",
-            "ActionStats": {
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 10000,
-                "(Value=\"BaseHealthRegenDelay_+\")": -9999
-            }
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GotoAnchorPoint.BT_IcarusGOAP_GotoAnchorPoint"
         },
         {
             "Name": "Approach_Attraction",

@@ -112,7 +112,7 @@
             "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
             "Policy": "Spatialize_Static",
             "Settings": {
-                "RowName": "Spatialized_HighFrequency_Building"
+                "RowName": "Spatialized_LowFrequency_Building"
             }
         },
         {
@@ -121,7 +121,7 @@
             "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
             "Policy": "Spatialize_Static",
             "Settings": {
-                "RowName": "Spatialized_HighFrequency_Building"
+                "RowName": "Spatialized_LowFrequency_Building"
             }
         },
         {
@@ -359,7 +359,7 @@
             }
         },
         {
-            "Name": "Icarus.SeatBase_0",
+            "Name": "Icarus.Bed",
             "Class": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_BedBase.BP_BedBase_C",
             "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
             "Policy": "RelevantAllConnections",
@@ -536,6 +536,15 @@
             "Policy": "RelevantAllConnections",
             "Settings": {
                 "RowName": "AlwaysRelevant_Default"
+            }
+        },
+        {
+            "Name": "Icarus.Deep_Ore_Mining",
+            "Class": "/Game/BP/Objects/World/Resources/Nodes/BP_Deep_Mining_Ore_Deposit.BP_Deep_Mining_Ore_Deposit_C",
+            "Description": "Spatialized static, level streamed, distance culled (includes BP_MetaDeposit)",
+            "Policy": "Spatialize_Static",
+            "Settings": {
+                "RowName": "Spatialized_LowFrequency_HighCull"
             }
         }
     ]
