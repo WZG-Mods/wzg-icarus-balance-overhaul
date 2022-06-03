@@ -139,11 +139,6 @@
                 }
             },
             "ShouldTick": true,
-            "ModifierLifetimeAffectors": [
-                {
-                    "Value": "WoundModifierDuration_+%"
-                }
-            ],
             "MergeType": "LongestDuration",
             "MaxStackNum": 3,
             "bEffectsPlayers": false
@@ -1184,18 +1179,18 @@
             "MergeType": "LongestDuration"
         },
         {
-            "Name": "Slowed_TazerArrow",
+            "Name": "Slowed_LarkwellTazerArrow",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_TazerArrow-ModifierName\", \"Tazer Stun\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_TazerArrow-ModifierDescription\", \"You are slowed and taking damage.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierName\", \"Tazer Stun\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierDescription\", \"You are slowed and taking damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -90
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 8,
+                    "BaseValue": 4,
                     "Deviation": 2
                 }
             },
@@ -3291,12 +3286,12 @@
         {
             "Name": "Watermelon",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Watermelon.ITEM_Watermelon'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon-ModifierName\", \"Melon\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon-ModifierDescription\", \"Boosts health and stamina for a short time.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon-ModifierName\", \"Watermelon\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon-ModifierDescription\", \"Boosts stamina and improves water consumption for a short time.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 50,
-                "(Value=\"BaseOxygenConsumption_+%\")": -10
+                "(Value=\"BaseWaterConsumption_+%\")": -10
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -4522,6 +4517,28 @@
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Bleed_LarkwellBleedArrow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BleedingDebuff.Icon_BleedingDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bleed_LarkwellBleedArrow-ModifierName\", \"Bleeding\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bleed_LarkwellBleedArrow-ModifierDescription\", \"Slowly drains health.\")",
+            "VisibleToPlayer": false,
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 5,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3,
             "bEffectsPlayers": false
         }
     ]

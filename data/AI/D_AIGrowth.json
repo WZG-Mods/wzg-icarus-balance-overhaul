@@ -29,7 +29,9 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 100,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 33,
+                "(Value=\"BaseImmobiliseResistance_%\")": 33
             },
             "Health": "CurveFloat'/Game/Data/AI/C_BearHealth.C_BearHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BearMeleeDamage.C_BearMeleeDamage'",
@@ -147,7 +149,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 100,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10
             },
             "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
@@ -184,7 +188,9 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 150,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 33,
+                "(Value=\"BaseImmobiliseResistance_%\")": 33
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -228,10 +234,48 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 100,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 50,
+                "(Value=\"BaseImmobiliseResistance_%\")": 50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_PolarBearHealth.C_PolarBearHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_PolarBearMeleeDamage.C_PolarBearMeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_PolarBearMovementSpeed.C_PolarBearMovementSpeed'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseDeepWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_BeerDeepWoundChance.C_BeerDeepWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Polar_Bear_Boss",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 100,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 1000,
+                "(Value=\"BaseNPCAttackRadius_+\")": 600,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 100,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 100,
+                "(Value=\"BaseImmobiliseResistance_%\")": 100
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_PolarBearBossHealth.C_PolarBearBossHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_PolarBearBossMeleeDamage.C_PolarBearBossMeleeDamage'",
             "MovementSpeed": "CurveFloat'/Game/Data/AI/C_PolarBearMovementSpeed.C_PolarBearMovementSpeed'",
             "CustomStats": [
                 {
@@ -263,7 +307,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 200,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 15,
+                "(Value=\"BaseImmobiliseResistance_%\")": 15
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -332,7 +378,9 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 150,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
@@ -360,7 +408,9 @@
                 "(Value=\"BaseMiningRadius_+\")": 50,
                 "(Value=\"BaseGOAPMotivationPreservationRetreatRegen_%\")": 30,
                 "(Value=\"BaseGOAPMotivationPreservationRetreatThreshold_%\")": 50,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 75,
+                "(Value=\"BaseImmobiliseResistance_%\")": 75
             },
             "Health": "CurveFloat'/Game/Data/AI/C_AlphaWolfHealth.C_AlphaWolfHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
@@ -386,7 +436,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 100,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10
             },
             "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
@@ -474,7 +526,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 200,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 15,
+                "(Value=\"BaseImmobiliseResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_JaguarHealth.C_JaguarHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_JaguarMeleeDamage.C_JaguarMeleeDamage'",
@@ -508,7 +562,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 200,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 15,
+                "(Value=\"BaseImmobiliseResistance_%\")": 15
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -530,7 +586,9 @@
                 "(Value=\"BaseCharacterMass_+\")": 400,
                 "(Value=\"BaseNPCAttackRadius_+\")": 500,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 75,
+                "(Value=\"BaseImmobiliseResistance_%\")": 75
             },
             "Health": "CurveFloat'/Game/Data/AI/C_JaguarBlackHealth.C_JaguarBlackHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_JaguarBlackMeleeDamage.C_JaguarBlackMeleeDamage'",
@@ -595,7 +653,9 @@
                 "(Value=\"BaseGOAPMotivationPreservationRetreatRegen_%\")": 20,
                 "(Value=\"BaseGOAPMotivationPreservationRetreatThreshold_%\")": 50,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 750,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 75,
+                "(Value=\"BaseImmobiliseResistance_%\")": 75
             },
             "Health": "CurveFloat'/Game/Data/AI/C_AlphaWolfBossHealth.C_AlphaWolfBossHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfBossMeleeDamage.C_AlphaWolfBossMeleeDamage'",
@@ -773,7 +833,9 @@
                 "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 60,
                 "(Value=\"BaseGOAPMotivationDormancyIncreaseRate_+\")": 10,
                 "(Value=\"BaseGOAPMotivationDormancyIncreaseRateDayTime_+%\")": 2000,
-                "(Value=\"CanScorpionUseStingAttack_?\")": 1
+                "(Value=\"CanScorpionUseStingAttack_?\")": 1,
+                "(Value=\"BaseSlowResistance_%\")": 25,
+                "(Value=\"BaseImmobiliseResistance_%\")": 25
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ScorpionHealth.C_ScorpionHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ScorpionMeleeDamage.C_ScorpionMeleeDamage'",
@@ -800,7 +862,9 @@
                 "(Value=\"BaseMovementSpeed_+\")": 900,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 400,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 10000,
-                "(Value=\"IsKnockbackResisted_?\")": 1
+                "(Value=\"IsKnockbackResisted_?\")": 1,
+                "(Value=\"BaseSlowResistance_%\")": 100,
+                "(Value=\"BaseImmobiliseResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ScorpionBossHealth.C_ScorpionBossHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ScorpionBossMeleeDamage.C_ScorpionBossMeleeDamage'",
@@ -862,7 +926,9 @@
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 2750,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 750,
                 "(Value=\"BaseProjectileDamageResistance_%\")": 33,
-                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40
             },
             "Health": "CurveFloat'/Game/Data/AI/C_CrocodileHealth.C_CrocodileHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_CrocodileMeleeDamage.C_CrocodileMeleeDamage'",
@@ -902,7 +968,9 @@
                 "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": 50,
                 "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 100,
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
-                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 50
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 50,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10
             },
             "Health": "CurveFloat'/Game/Data/AI/C_KomodoHealth.C_KomodoHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_KomodoMeleeDamage.C_KomodoMeleeDamage'",
@@ -946,7 +1014,7 @@
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
                 "(Value=\"BaseCharacterMass_+\")": 500,
-                "(Value=\"BaseNPCAttackRadius_+\")": 600,
+                "(Value=\"BaseNPCAttackRadius_+\")": 300,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 100,
@@ -963,6 +1031,33 @@
                     "Curve": "CurveFloat'/Game/Data/AI/C_BeerDeepWoundChance.C_BeerDeepWoundChance'"
                 }
             ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "BearCub",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 150,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 300,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 70,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 100,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 500
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_BearCubHealth.C_BearCubHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BearCubMeleeDamage.C_BearCubMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
