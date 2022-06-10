@@ -11,6 +11,9 @@
         "Modifier": {
             "RowName": "None",
             "DataTableName": "D_ModifierStates"
+        },
+        "LookupStat": {
+            "Value": "None"
         }
     },
     "Rows": [
@@ -24,6 +27,9 @@
             },
             "Modifier": {
                 "RowName": "Wound"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseWound_%"
             }
         },
         {
@@ -37,6 +43,9 @@
             "DurationInSeconds": 5,
             "Modifier": {
                 "RowName": "Slow"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseSlow_%"
             }
         },
         {
@@ -50,6 +59,9 @@
             "DurationInSeconds": 3,
             "Modifier": {
                 "RowName": "Pinned"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseImmobilise_%"
             }
         },
         {
@@ -62,6 +74,9 @@
             },
             "Modifier": {
                 "RowName": "DeepWound"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseDeepWound_%"
             }
         },
         {
@@ -75,6 +90,9 @@
             "DurationInSeconds": 60,
             "Modifier": {
                 "RowName": "Poison_DOT"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCausePoison_%"
             }
         },
         {
@@ -105,6 +123,38 @@
             "DurationInSeconds": 1800,
             "Modifier": {
                 "RowName": "Komodo_Bite"
+            }
+        },
+        {
+            "Name": "Electroshock",
+            "AfflictionStat": {
+                "Value": "AttacksCauseElectroshock_%"
+            },
+            "ResistanceStat": {
+                "Value": "ElectroshockResistance_%"
+            },
+            "DurationInSeconds": 4,
+            "Modifier": {
+                "RowName": "Slowed_LarkwellTazerArrow"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseElectroshock_%"
+            }
+        },
+        {
+            "Name": "Bleed",
+            "AfflictionStat": {
+                "Value": "AttacksCauseBleed_%"
+            },
+            "ResistanceStat": {
+                "Value": "BleedResistance_%"
+            },
+            "DurationInSeconds": 30,
+            "Modifier": {
+                "RowName": "DamageOverTime_Bleeding"
+            },
+            "LookupStat": {
+                "Value": "BaseAttacksCauseBleed_%"
             }
         }
     ]

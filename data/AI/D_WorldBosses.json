@@ -54,6 +54,35 @@
             "BossMapMarker": {
                 "RowName": "WorldBoss_SandWorm"
             }
+        },
+        {
+            "Name": "Scorpion",
+            "AISetup": {
+                "RowName": "Scorpion_Boss"
+            },
+            "EpicCreature": {
+                "RowName": "Scorpion_Boss"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_Scorpion.BP_WorldBossSpawner_Scorpion_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.Scorpion"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.Scorpion )"
+            },
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_Scorpion"
+            }
         }
     ]
 }

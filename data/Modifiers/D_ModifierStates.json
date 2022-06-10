@@ -1182,7 +1182,7 @@
             "Name": "Slowed_LarkwellTazerArrow",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierName\", \"Tazer Stun\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierName\", \"Electroshock\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierDescription\", \"You are slowed and taking damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -90
@@ -4397,8 +4397,10 @@
                 "EffectsSelf": false
             },
             "ModifierGrantedByAura": {
-                "RowName": "Weight_Reduction_Aura"
+                "RowName": "Weight_Reduction"
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
             "MergeType": "Stack"
         },
         {
@@ -4414,8 +4416,8 @@
         {
             "Name": "Healing_Modifier_Duration",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Aura: Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierDescription\", \"Granted by a helpful nearby prospector\")",
             "GrantedStats": {
                 "(Value=\"BaseBacterialModifierDuration_+%\")": -30,
                 "(Value=\"BaseParasiticModifierDuration_+%\")": -30,
@@ -4433,8 +4435,8 @@
         {
             "Name": "Healing_Modifier_Aura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Aura: Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "bAura": true,
             "AuraRange": 1000,
             "AuraFlags": {
@@ -4443,6 +4445,8 @@
             "ModifierGrantedByAura": {
                 "RowName": "Healing_Modifier_Duration"
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
             "MergeType": "Stack"
         },
         {
@@ -4538,8 +4542,40 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
-            "MaxStackNum": 3,
-            "bEffectsPlayers": false
+            "MaxStackNum": 3
+        },
+        {
+            "Name": "Boss_Reveal_Aura",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierName\", \"Aura: Boss Reveal\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierDescription\", \"Shows Nearby Prospectors Large Dangerous creatures on the map. \")",
+            "bAura": true,
+            "AuraRange": 1500,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "Boss_Reveal_Modifier"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Boss_Reveal_Modifier",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierName\", \"Boss Reveal\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierDescription\", \"Shows Large Dangerous creatures on the map. \")",
+            "GrantedStats": {
+                "(Value=\"MapCanSeeWorldBosses_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         }
     ]
 }

@@ -5500,6 +5500,105 @@
             "Name": "Common_Travel_Large",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Large-Description\", \"Travel to the map location (M)\")"
+        },
+        {
+            "Name": "STYX_A_Extermination",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination.BPQ_STYX_A_Extermination_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination-Description\", \"EXTERMINATION: Husk\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Parent",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Parent.BPQ_STYX_A_Extermination_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Parent-Description\", \"Hunt large Scorpions to discover new armor recipes\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Track_Parent",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Track_Parent.BPQ_STYX_A_Extermination_Track_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Track_Parent-Description\", \"Find a way to track the creatures on the map\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ExterminationDenLocationRevealed1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination_Track_Collect",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Track_Collect.BPQ_STYX_A_Extermination_Track_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the dropship\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AfterCombiningCollectedItems",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination_Track_Deploy",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Track_Deploy.BPQ_STYX_A_Extermination_Track_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Track_Deploy-Description\", \"Deploy the Prototype Tracker\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Expedition3DeployedCorrect2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination_Boss_Parent",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Boss_Parent.BPQ_STYX_A_Extermination_Boss_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Boss_Parent-Description\", \"Hunt Large Scorpions (M)\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Boss_Kill_Count",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Boss_Kill_Count.BPQ_STYX_A_Extermination_Boss_Kill_Count_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Boss_Kill_Count-Description\", \"Large Scorpions Killed {0} / {1}\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "MissionComplete14",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination_Boss_Carapce",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Boss_Carapace_Count.BPQ_STYX_A_Extermination_Boss_Carapace_Count_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Boss_Carapce-Description\", \"Collect Carapace {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Parent",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Parent.BPQ_STYX_A_Extermination_Craft_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Parent-Description\", \"Using the Carapace samples, Craft the Scorpion Armor\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Items",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Items.BPQ_STYX_A_Extermination_Craft_Items_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Items-Description\", \"Craft the Armor on the Amor Bench\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Head",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Head.BPQ_STYX_A_Extermination_Craft_Armor_Head_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Head-Description\", \"Craft Scorpion Head Armor\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Chest",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Chest.BPQ_STYX_A_Extermination_Craft_Armor_Chest_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Chest-Description\", \"Craft Scorpion Chest Armor\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Legs",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Legs.BPQ_STYX_A_Extermination_Craft_Armor_Legs_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Legs-Description\", \"Craft Scorpion Legs Armor\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Arms",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Arms.BPQ_STYX_A_Extermination_Craft_Armor_Arms_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Arms-Description\", \"Craft Scorpion Arms Armor\")"
+        },
+        {
+            "Name": "STYX_A_Extermination_Craft_Feet",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Feet.BPQ_STYX_A_Extermination_Craft_Armor_Feet_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Feet-Description\", \"Craft Scorpion Feet Armor\")"
         }
     ]
 }

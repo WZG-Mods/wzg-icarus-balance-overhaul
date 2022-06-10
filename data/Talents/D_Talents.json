@@ -318,7 +318,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2550,
+                "X": 3000,
                 "Y": 100
             },
             "Size": {
@@ -1453,7 +1453,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 3600,
+                "X": 1500,
                 "Y": 450
             },
             "Size": {
@@ -1525,7 +1525,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 1350,
+                "X": 1200,
                 "Y": 450
             },
             "Size": {
@@ -1574,7 +1574,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 1950,
+                "X": 2350,
                 "Y": 450
             },
             "Size": {
@@ -2685,7 +2685,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 1650,
+                "X": 2050,
                 "Y": 450
             },
             "Size": {
@@ -3114,7 +3114,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 1350,
+                "X": 1200,
                 "Y": 100
             },
             "Size": {
@@ -3124,6 +3124,10 @@
             "RequiredTalents": [
                 {
                     "RowName": "Stone_Furnace",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "PotBellyStove",
                     "DataTableName": "D_Talents"
                 }
             ]
@@ -3951,7 +3955,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 1650,
+                "X": 2050,
                 "Y": 100
             },
             "Size": {
@@ -3976,7 +3980,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 3600,
+                "X": 1500,
                 "Y": 100
             },
             "Size": {
@@ -3987,8 +3991,13 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fireplace",
+                    "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Wood_Floor_TrapDoor",
@@ -6468,12 +6477,16 @@
                 {
                     "RowName": "Spear_Faster_Melee",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Spear_Critical_Multiplier1",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Journeyman"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Spear_Bleed_Hits",
@@ -6745,6 +6758,10 @@
                 {
                     "RowName": "Knife_Smith1",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Knife_Stamina_Usage",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
@@ -6836,13 +6853,18 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Knife_Instant_Skin",
+                    "RowName": "Knife_Felling_Damage",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Knife_Critical_Multiplier",
                     "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Journeyman"
-            }
+            },
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Knife_Increased_Movement",
@@ -6996,6 +7018,12 @@
             "Rewards": [
                 {
                     "GrantedStats": {
+                        "(Value=\"BaseKnifeSkinningItemWear_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
                         "(Value=\"BaseKnifeSkinningItemWear_+%\")": -10
                     },
                     "GrantedFlags": []
@@ -7003,12 +7031,6 @@
                 {
                     "GrantedStats": {
                         "(Value=\"BaseKnifeSkinningItemWear_+%\")": -20
-                    },
-                    "GrantedFlags": []
-                },
-                {
-                    "GrantedStats": {
-                        "(Value=\"BaseKnifeSkinningItemWear_+%\")": -40
                     },
                     "GrantedFlags": []
                 }
@@ -7047,12 +7069,6 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseKnifeItemWear_+%\")": -5
-                    },
-                    "GrantedFlags": []
-                },
-                {
-                    "GrantedStats": {
                         "(Value=\"BaseKnifeItemWear_+%\")": -10
                     },
                     "GrantedFlags": []
@@ -7060,6 +7076,12 @@
                 {
                     "GrantedStats": {
                         "(Value=\"BaseKnifeItemWear_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeItemWear_+%\")": -20
                     },
                     "GrantedFlags": []
                 }
@@ -7082,13 +7104,13 @@
         {
             "Name": "Knife_Instant_Skin",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Knife_Instant_Skin-DisplayName\", \"That Was Quick\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Knife_Instant_Skin-Description\", \"Chance to instantly skin target\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Knife_Instant_Skin-Description\", \"Increased skinning speed\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Blades/Talent_Blades_ThatWasQuick.Talent_Blades_ThatWasQuick",
             "TalentTree": {
                 "RowName": "Combat_Blades"
             },
             "Position": {
-                "X": 700,
+                "X": 500,
                 "Y": 1050
             },
             "Size": {
@@ -7098,26 +7120,26 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseChanceToInstantlySkinCreature_%\")": 5
+                        "(Value=\"BaseSkinningSpeed_+%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseChanceToInstantlySkinCreature_%\")": 10
+                        "(Value=\"BaseSkinningSpeed_+%\")": 10
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseChanceToInstantlySkinCreature_%\")": 20
+                        "(Value=\"BaseSkinningSpeed_+%\")": 20
                     },
                     "GrantedFlags": []
                 }
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Knife_Critical_Multiplier",
+                    "RowName": "Knife_Skin_Durability",
                     "DataTableName": "D_Talents"
                 },
                 {
@@ -7314,7 +7336,7 @@
             },
             "Position": {
                 "X": 150,
-                "Y": 850
+                "Y": 800
             },
             "Size": {
                 "X": 128,
@@ -7349,7 +7371,7 @@
             "RequiredRank": {
                 "RowName": "Apprentice"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Knife_Range_Distance2",
@@ -8401,8 +8423,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 250,
-                "Y": 750
+                "X": 200,
+                "Y": 900
             },
             "Size": {
                 "X": 128,
@@ -8432,7 +8454,7 @@
             "RequiredRank": {
                 "RowName": "Journeyman"
             },
-            "DrawMethodOverride": "YThenX"
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Repair_Hammer_Speed",
@@ -8490,8 +8512,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 250,
-                "Y": 1250
+                "X": 200,
+                "Y": 1100
             },
             "Size": {
                 "X": 128,
@@ -8569,8 +8591,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 500,
-                "Y": 1000
+                "X": 450,
+                "Y": 900
             },
             "Size": {
                 "X": 128,
@@ -8597,7 +8619,7 @@
             "RequiredRank": {
                 "RowName": "Journeyman"
             },
-            "DrawMethodOverride": "XThenY"
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Repair_Flapper_Stamina_Regen",
@@ -8682,8 +8704,8 @@
                 "RowName": "Construction_Repairing"
             },
             "Position": {
-                "X": 500,
-                "Y": 1250
+                "X": 450,
+                "Y": 1200
             },
             "Size": {
                 "X": 128,
@@ -11152,15 +11174,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Resources_Secondary_Voxel",
-                    "DataTableName": "D_Talents"
-                },
-                {
                     "RowName": "Resources_Increased_Stone",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Resources_Stone_Weight",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -11262,6 +11276,12 @@
                         "(Value=\"BaseStoneCarryWeight_+%\")": -25
                     },
                     "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Resources_Increased_Stone",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
@@ -11707,7 +11727,7 @@
             "RequiredRank": {
                 "RowName": "Master"
             },
-            "DrawMethodOverride": "XThenY"
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "Resources_Crop_Grow_Speed",
@@ -11769,11 +11789,16 @@
                 {
                     "RowName": "Resources_Crop_Grow_Speed",
                     "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Produce_Foraging_Buff",
+                    "DataTableName": "D_Talents"
                 }
             ],
             "RequiredRank": {
                 "RowName": "Journeyman"
-            }
+            },
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Exploration_Nocturnal1",
@@ -11826,7 +11851,7 @@
             },
             "Position": {
                 "X": 350,
-                "Y": 650
+                "Y": 750
             },
             "Size": {
                 "X": 128,
@@ -11848,7 +11873,7 @@
             ],
             "RequiredTalents": [
                 {
-                    "RowName": "Stalking_Detection_Range",
+                    "RowName": "Hunting_Knife_Skinning_Durability",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -11910,7 +11935,7 @@
             },
             "Position": {
                 "X": 50,
-                "Y": 650
+                "Y": 700
             },
             "Size": {
                 "X": 128,
@@ -12527,8 +12552,8 @@
                 "RowName": "Survival_Hunting"
             },
             "Position": {
-                "X": 450,
-                "Y": 850
+                "X": 650,
+                "Y": 650
             },
             "Size": {
                 "X": 128,
@@ -12836,7 +12861,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2850,
+                "X": 3300,
                 "Y": 100
             },
             "Size": {
@@ -13560,7 +13585,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2250,
+                "X": 2650,
                 "Y": 450
             },
             "Size": {
@@ -14477,7 +14502,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 3150,
+                "X": 3600,
                 "Y": 100
             },
             "Size": {
@@ -14723,7 +14748,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 2850,
+                "X": 3300,
                 "Y": 450
             },
             "Size": {
@@ -18093,35 +18118,6 @@
             ]
         },
         {
-            "Name": "Prospect_OLY_Omni_Expedition",
-            "ExtraData": {
-                "RowName": "Tier5_Omni_Expedition_0",
-                "DataTableName": "D_ProspectList"
-            },
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 16050,
-                "Y": 1850
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Omni_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "ComingSoon"
-                }
-            }
-        },
-        {
             "Name": "Prospect_OLY_Omni_Exploration",
             "ExtraData": {
                 "RowName": "Tier5_Omni_Exploration_0",
@@ -20247,8 +20243,8 @@
                 "RowName": "Survival_Hunting"
             },
             "Position": {
-                "X": 200,
-                "Y": 850
+                "X": 250,
+                "Y": 950
             },
             "Size": {
                 "X": 128,
@@ -20294,8 +20290,8 @@
                 "RowName": "Survival_Hunting"
             },
             "Position": {
-                "X": 200,
-                "Y": 1250
+                "X": 250,
+                "Y": 1150
             },
             "Size": {
                 "X": 128,
@@ -20341,7 +20337,7 @@
                 "RowName": "Survival_Hunting"
             },
             "Position": {
-                "X": 250,
+                "X": 50,
                 "Y": 450
             },
             "Size": {
@@ -24199,7 +24195,7 @@
                 "RowName": "Survival_Produce"
             },
             "Position": {
-                "X": 600,
+                "X": 750,
                 "Y": 1650
             },
             "Size": {
@@ -26257,6 +26253,81 @@
                 }
             ],
             "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Hunting_Knife_Skinning_Durability",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Hunting_Knife_Skinning_Durability-DisplayName\", \"Trained Hunter\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Hunting_Knife_Skinning_Durability-Description\", \"Knives degrade slower when skinning\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Blades/Talent_Blades_TrainedSkinner.Talent_Blades_TrainedSkinner",
+            "TalentTree": {
+                "RowName": "Survival_Hunting"
+            },
+            "Position": {
+                "X": 350,
+                "Y": 550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeSkinningItemWear_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeSkinningItemWear_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeSkinningItemWear_+%\")": -40
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Talent_Leather_Breakdown",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Stalking_Detection_Range",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Prospect_Styx_A_Extermination",
+            "ExtraData": {
+                "RowName": "STYX_A_Extermination",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_B_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ]
         }
     ]
 }
