@@ -1513,7 +1513,7 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Consumable.Food.Spoiled"
+                        "TagName": "Item.Consumable.Food"
                     }
                 ],
                 "QueryTokenStream": [
@@ -1523,8 +1523,8 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Consumable Food",
-                "AutoDescription": " ANY( Item.Consumable.Food.Spoiled )"
+                "UserDescription": "Any Consumable Food including spoiled food",
+                "AutoDescription": " ANY( Item.Consumable.Food )"
             }
         },
         {
@@ -2900,6 +2900,24 @@
                     0
                 ],
                 "AutoDescription": " ALL( Foliage.Tree )"
+            }
+        },
+        {
+            "Name": "Mission_Central_Scanner",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.CentralScanner"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.CentralScanner )"
             }
         }
     ]
