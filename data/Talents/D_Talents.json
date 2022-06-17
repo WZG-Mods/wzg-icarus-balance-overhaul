@@ -17189,7 +17189,7 @@
         {
             "Name": "Outpost_Conifer",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Outpost_Conifer-DisplayName\", \"Conifer Outpost\")",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/ProspectImages/ProspectMission_Recon.ProspectMission_Recon",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExpeditionSpear01_Small.T_Prospect_Forest_ExpeditionSpear01_Small",
             "ExtraData": {
                 "RowName": "Outpost002_Forest",
                 "DataTableName": "D_ProspectList"
@@ -18635,7 +18635,7 @@
         {
             "Name": "Outpost_Arctic",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Outpost_Arctic-DisplayName\", \"Arctic Outpost\")",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/ProspectImages/ProspectMission_Recovery.ProspectMission_Recovery",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Small.T_Prospect_Arctic_Pickaxe01_Small",
             "ExtraData": {
                 "RowName": "Outpost003_Arctic",
                 "DataTableName": "D_ProspectList"
@@ -18661,7 +18661,7 @@
         {
             "Name": "Outpost_Forest_2",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Outpost_Forest_2-DisplayName\", \"Forest Outpost\")",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/ProspectImages/ProspectMission_Exploration.ProspectMission_Exploration",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Lumberjack01_Small.T_Prospect_Forest_Lumberjack01_Small",
             "ExtraData": {
                 "RowName": "Outpost005_Forest",
                 "DataTableName": "D_ProspectList"
@@ -26258,7 +26258,7 @@
             "Name": "Hunting_Knife_Skinning_Durability",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Hunting_Knife_Skinning_Durability-DisplayName\", \"Trained Hunter\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Hunting_Knife_Skinning_Durability-Description\", \"Knives degrade slower when skinning\")",
-            "Icon": "/Game/Assets/2DArt/UI/Talents/Blades/Talent_Blades_TrainedSkinner.Talent_Blades_TrainedSkinner",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_TrainedHunter.Talent_Hunting_TrainedHunter",
             "TalentTree": {
                 "RowName": "Survival_Hunting"
             },
@@ -26306,6 +26306,34 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Outpost_Olympus",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Outpost_Olympus-DisplayName\", \"Conifer Outpost\")",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/TerrainButtons/T_Olympus_TerrainSelectButton.T_Olympus_TerrainSelectButton",
+            "ExtraData": {
+                "RowName": "Outpost006_Olympus",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 1350,
+                "Y": 750
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "Rewards": [],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_CharacterFlags",
+                    "RowName": "Mission_Olympus_Unlock"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
             "Name": "Prospect_Styx_A_Extermination",
             "ExtraData": {
                 "RowName": "STYX_A_Extermination",
@@ -26325,6 +26353,30 @@
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_B_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Prospect_OLY_Omni_",
+            "ExtraData": {
+                "RowName": "Tier5_Omni_Olympus",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 16250,
+                "Y": 1850
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_OLY_Omni_Exploration",
                     "DataTableName": "D_Talents"
                 }
             ]

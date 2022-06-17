@@ -5573,7 +5573,7 @@
         {
             "Name": "STYX_A_Extermination_Craft_Items",
             "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Items.BPQ_STYX_A_Extermination_Craft_Items_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Items-Description\", \"Craft the Armor on the Amor Bench\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Items-Description\", \"Craft the Armor on the Textiles Bench\")"
         },
         {
             "Name": "STYX_A_Extermination_Craft_Head",
@@ -5599,6 +5599,97 @@
             "Name": "STYX_A_Extermination_Craft_Feet",
             "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Craft_Armor_Feet.BPQ_STYX_A_Extermination_Craft_Armor_Feet_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Craft_Feet-Description\", \"Craft Scorpion Feet Armor\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost.BPQ_OLY_OMNI_Outpost_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost-Description\", \"Omni: Outpost\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Parent",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Parent.BPQ_OLY_OMNI_Outpost_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Parent-Description\", \"Scan the entire Olympus region with the Central Survey Unit\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Device"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Locate_Unit",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Locate_Unit-Description\", \"Locate the Survey Unit (M)\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Repair_Parent",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Repair_Parent.BPQ_OLY_OMNI_Outpost_Repair_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Repair_Parent-Description\", \"Complete a Central Survey Scan\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Device"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Repair_Recovery",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Repair_Recovery.BPQ_OLY_OMNI_Outpost_Repair_Recovery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Repair_Recovery-Description\", \"Recover a prototype battery from the crashed dropship\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Satellite"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Delivery_Parent",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Repair_Delivery.BPQ_OLY_OMNI_Outpost_Repair_Delivery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Delivery_Parent-Description\", \"Retrieve the atmospheric sensitive Geo-Crystal\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Crystal"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Delivery_Deposit_parent",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Activate_Parent.BPQ_OLY_OMNI_Outpost_Activate_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Delivery_Deposit_parent-Description\", \"Deposit the items in the Central Survey Unit\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Delivery_Deposit_Crystal",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Activate_Crystal.BPQ_OLY_OMNI_Outpost_Activate_Crystal_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Delivery_Deposit_Crystal-Description\", \"Geo-Crystal Deposited\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Delivery_Deposit_Battery",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Activate_Battery.BPQ_OLY_OMNI_Outpost_Activate_Battery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Delivery_Deposit_Battery-Description\", \"Battery Deposited\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Delivery_Deposit_Activate",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Activate.BPQ_OLY_OMNI_Outpost_Activate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Delivery_Deposit_Activate-Description\", \"Activate the Scanner\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Boss_Parent",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BPQ_OLY_OMNI_Outpost_Boss_Parent.BPQ_OLY_OMNI_Outpost_Boss_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Boss_Parent-Description\", \"Defeat the Apex Creatures of Olympus (M)\")"
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Boss_Wolf",
+            "Class": "/Game/BP/Quests/Olympus/Omni/Outpost/BP_Omni_Outpost_Kill_Wolf.BP_Omni_Outpost_Kill_Wolf_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Boss_Wolf-Description\", \"Kill the Alpha Wolf\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Wolf"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Boss_Scorpion",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Extermination2/BPQ_OLY_Desert_Extermination_2_Boss.BPQ_OLY_Desert_Extermination_2_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Boss_Scorpion-Description\", \"Kill the Scorpion\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Scorpion"
+            }
+        },
+        {
+            "Name": "OLY_Omni_Outpost_Boss_Worm",
+            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_BW5_Boss.BP_BW5_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Outpost_Boss_Worm-Description\", \"Kill the Sandworm\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Sandworm"
+            }
         }
     ]
 }
