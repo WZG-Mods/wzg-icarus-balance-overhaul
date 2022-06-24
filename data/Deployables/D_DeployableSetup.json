@@ -159,11 +159,12 @@
             "Name": "Cooking_Station",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CookingStation.BP_CookingStation_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Cooking.SM_DEP_Bench_Cooking",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false
         },
         {
             "Name": "Dev_WaterBackpack",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/StaticMeshes/SM_wooden_crate.SM_wooden_crate",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false
@@ -307,6 +308,8 @@
         },
         {
             "Name": "Animal_Carcass",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/StaticMeshes/SM_wooden_crate.SM_wooden_crate",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false
         },
         {
@@ -538,7 +541,7 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Med_Wood.SM_DEP_Crate_MED_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_MED_Wood.SM_DEP_Crate_MED_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -1159,6 +1162,7 @@
         {
             "Name": "Foliage",
             "DeployableBlueprint": "/Script/Icarus.Deployable",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/StaticMeshes/SM_wooden_crate.SM_wooden_crate",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CONIFLOWER_HARVEST.SFX_CONIFLOWER_HARVEST",
             "SupportsCustomRotation": false
         },
@@ -2070,7 +2074,7 @@
             "Name": "Bait",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_Bait.BP_Bait_C",
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Bait_Stack.SM_ITM_Bait_Stack",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BAIT.SFX_DEPLOY_BAIT",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false
         },
@@ -2078,7 +2082,7 @@
             "Name": "Bait_Poisoned",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_Bait_Poisoned.BP_Bait_Poisoned_C",
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Bait_Stack.SM_ITM_Bait_Stack",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BAIT.SFX_DEPLOY_BAIT",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false
         },
@@ -2625,6 +2629,30 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_Prototype_Boss_Tracker.BP_Prototype_Boss_Tracker_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+        },
+        {
+            "Name": "Vapour_Condenser",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_Vapour_Condenser.BP_Vapour_Condenser_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Analyzer_Transmitter.SM_DEP_Analyzer_Transmitter",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Enzyme_Geyser"
+            ],
+            "SnapSocketsOrTags": [
+                "Enzyme_Geyser_Attachment"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Deer_Statue_Decoration_Wood",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Deer_Statue_Wood.BP_Deer_Statue_Wood_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/StatueDeer_Wood/SM_DCO_StatueDeer_Wood.SM_DCO_StatueDeer_Wood",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxRestackingAmount": 1
         }
     ]
 }
