@@ -5,7 +5,8 @@
             "RowName": "None",
             "DataTableName": "D_TagQueries"
         },
-        "RequiredStat": []
+        "RequiredStat": [],
+        "RequiredResource": []
     },
     "Rows": [
         {
@@ -437,6 +438,35 @@
                     "GrantedStat": {
                         "Value": "BaseInventoryCannotSpoil_?"
                     }
+                }
+            ]
+        },
+        {
+            "Name": "Glassworking_Rinforced_Glass",
+            "Query": {
+                "RowName": "Building_Glass"
+            },
+            "RequiredResource": [
+                {
+                    "Resource": "Water",
+                    "GrantedStat": {
+                        "Value": "ReinforcedGlass_?"
+                    },
+                    "GrantedStatValue": 1
+                },
+                {
+                    "Resource": "Water",
+                    "GrantedStat": {
+                        "Value": "BaseMaximumHealth_+%"
+                    },
+                    "GrantedStatValue": 400
+                },
+                {
+                    "Resource": "Water",
+                    "GrantedStat": {
+                        "Value": "BaseWindDamageResistance_%"
+                    },
+                    "GrantedStatValue": 50
                 }
             ]
         }
