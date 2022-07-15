@@ -17331,6 +17331,664 @@
             }
         },
         {
+            "Name": "STYX_D_Research_2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Research_2-DropName\", \"ABYSS: Research\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Research_2-Description\", \"EXTRACT AND RESEARCH UNDERGROUND MATERIALS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Research_2-FlavourText\", \"//OPERATOR: Group 15 // BIOME: Ring Lake // BACKGROUND: Unique ore deposit discovered on Ring Lake. // MISSION: Extract and research unusual ore. Monitor effects on environment. Extract. //TERMS: Initial scans detect unstable material. Proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Large.T_Prospect_Forest_ExtractorExpedition01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Extreme",
+            "BriefingDialogue": {
+                "RowName": "ResearchBriefingGeneric2"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding4"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete13"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                }
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_D_Research2"
+            },
+            "TimeDuration": {
+                "Hours": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "StartingTime": 10,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 15,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_3"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_C02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_P10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "NumMetaSpawnsMin": 2,
+            "NumMetaSpawnsMax": 3,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
+        },
+        {
             "Name": "STYX_E_Expedition",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_E_Expedition-DropName\", \"VERTIGO: Expedition\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_E_Expedition-Description\", \"CLEAR A PATH TO ENTER A NEW REGION\")",
@@ -19292,6 +19950,664 @@
             ],
             "NumMetaSpawnsMin": 2,
             "NumMetaSpawnsMax": 3,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
+        },
+        {
+            "Name": "STYX_E_Research",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_E_Research-DropName\", \"FLATLINE: Research\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_E_Research-Description\", \"RESEARCH AND RECOVERY OF BIOLOGICAL CONTAINMENT UNITS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_E_Research-FlavourText\", \" //OPERATOR: Group 15 // BIOME: Dry Ridge // BACKGROUND: The Operator intends to rapidly expand exotics operations, and has put out an urgent tender for survey data, specifically around new drop sites. This exploration and mapping mission is critical to the development of this region. // MISSION:Operator is tasked to find damaged biological containment units, further information provided on planet. //TERMS: Contractors will be provided with radar equipment. All other risk and resourcing is the responsibility of the Contractor. Expect elevated wildlife threats.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition02_Large.T_Prospect_Desert_Expedition02_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.4000000059604645,
+                    "OverrideWeatherPool": {
+                        "RowName": "Multi_MedToHeavy_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding5"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete4"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 3
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                }
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_E_Research"
+            },
+            "TimeDuration": {
+                "Hours": {
+                    "Min": 24,
+                    "Max": 24
+                }
+            },
+            "StartingTime": 14,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 20,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_3"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_C02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_P10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"

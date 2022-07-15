@@ -4576,6 +4576,44 @@
             "MergeType": "Stack",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "DamageOverTime_Radiation",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Radiation.Icon_Radiation'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"DamageOverTime_Radiation-ModifierName\", \"Radiation: Damage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"DamageOverTime_Radiation-ModifierDescription\", \"Being damaged by nearby uncontained unstable material. Use a Containment System to protect yourself.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_DifficultyScaled.BP_ModifierStateBehaviour_TickDamage_DifficultyScaled_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 8,
+                    "Deviation": 1
+                },
+                "DifficultyScaling": {
+                    "BaseValue": 0.33000001311302185,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3,
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "RadiationWarming",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Warming.Icon_Warming'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationWarming-ModifierName\", \"Radiation: Warming\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationWarming-ModifierDescription\", \"Being warmed by nearby uncontained unstable material. Use a Stabilization Catalyst to prevent this.\")",
+            "GrantedStats": {
+                "(Value=\"BaseExternalTemperatureModification_+\")": 2000
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }

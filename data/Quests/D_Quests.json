@@ -1251,6 +1251,28 @@
             }
         },
         {
+            "Name": "OLY_Canyon_Expedition_RetrieveEquipment",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Expedition/BPQ_OLY_Canyon_Expedition_RetrieveEquipment.BPQ_OLY_Canyon_Expedition_RetrieveEquipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Expedition_RetrieveEquipment-Description\", \"Locate and retrieve drilling equipment\")",
+            "LocationQuery": {
+                "RowName": "T2_Canyon_Expedition_Loc1"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Expedition2bDeviceExplanation",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Canyon_Expedition_RetrieveEquipmentElectronics",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Expedition/BPQ_OLY_Canyon_Expedition_RetrieveEquipmentElectronics.BPQ_OLY_Canyon_Expedition_RetrieveEquipmentElectronics_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Expedition_RetrieveEquipmentElectronics-Description\", \"(Optional) Locate and retrieve power system\")",
+            "LocationQuery": {
+                "RowName": "T2_Canyon_Expedition_Loc2"
+            }
+        },
+        {
             "Name": "OLY_Canyon_Expedition_Tech2",
             "Class": "/Game/BP/Quests/Olympus/Canyon/Expedition/BPQ_OLY_Canyon_Expedition_Tech.BPQ_OLY_Canyon_Expedition_Tech_C",
             "Variation": 1,
@@ -5695,6 +5717,199 @@
             "Name": "Common_Explore_End",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Launch.BPQ_Common_Launch_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-Description\", \"Interact and Launch your Dropship to Complete the Mission\")"
+        },
+        {
+            "Name": "STYX_D_Research2",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2.BPQ_STYX_D_Research2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2-Description\", \"RESEARCH: The Ring\")"
+        },
+        {
+            "Name": "STYX_D_Research2_FindDeposit",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_FindDeposit.BPQ_STYX_D_Research2_FindDeposit_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_FindDeposit-Description\", \"Mine the Abyssal Oxite deep vein at the center of the Ring Lake.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_CollectBombPart",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_Collect_Bomb.BPQ_STYX_D_Research2_Collect_Bomb_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_CollectBombPart-Description\", \"Collect parts from the Arctic and craft monitoring stations at a Machining Bench\")",
+            "LocationQuery": {
+                "RowName": "STYX_D_Research2_FrozenTraverse"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "ConstructionBriefing4b",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Research2_DetonateBombProgress",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_DetonateBomb_Progress.BPQ_STYX_D_Research2_DetonateBomb_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_DetonateBombProgress-Description\", \"Deploy monitoring station in the forest.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_DetonateBombProgress_0",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_DetonateBomb_Progress.BPQ_STYX_D_Research2_DetonateBomb_Progress_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_DetonateBombProgress_0-Description\", \"Deploy monitoring station in the arcitc.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_DetonateBombProgress_1",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_DetonateBomb_Progress.BPQ_STYX_D_Research2_DetonateBomb_Progress_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_DetonateBombProgress_1-Description\", \"Deploy monitoring station in the desert.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_Research",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_Research.BPQ_STYX_D_Research2_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_Research-Description\", \"OPTIONAL: Discover methods for prospectors to handle Abyssal Oxite safely\")",
+            "LocationQuery": {
+                "RowName": "STYX_D_Research2_Canyon"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "RecoveryExoticsFound",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Research2_CollectResearchEquipment",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_Collect_Equipment.BPQ_STYX_D_Research2_Collect_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_CollectResearchEquipment-Description\", \"Collect monitoring equipment from the supply pod crashed in the desert\")",
+            "LocationQuery": {
+                "RowName": "STYX_D_Research2_Canyon"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ExoticsAddOn1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Research2_ResearchProgress",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_TrackResearch.BPQ_STYX_D_Research2_TrackResearch_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_ResearchProgress-Description\", \"Measure the effects of the Abyssal Oxite by carrying it and the monitoring equipment\")"
+        },
+        {
+            "Name": "STYX_D_Research2_ShowProgress",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_ShowProgress.BPQ_STYX_D_Research2_ShowProgress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_ShowProgress-Description\", \"{0}% research progress\")"
+        },
+        {
+            "Name": "STYX_D_Research2_Containment",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_Containment.BPQ_STYX_D_Research2_Containment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_Containment-Description\", \"Research the Containment System.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_Catalyst",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_Catalyst.BPQ_STYX_D_Research2_Catalyst_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_Catalyst-Description\", \"Research the Stabilization Catalyst.\")"
+        },
+        {
+            "Name": "STYX_D_Research2_BonusReward",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_BonusReward.BPQ_STYX_D_Research2_BonusReward_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_BonusReward-Description\", \"Collect the stashed exotics nearby\")",
+            "LocationQuery": {
+                "RowName": "STYX_D_Research2_CaveStash"
+            }
+        },
+        {
+            "Name": "STYX_E_Research",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research.BPQ_STYX_E_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research-Description\", \"RESEARCH: Flatline\")",
+            "LocationQuery": {
+                "RowName": "STYX_SnoweyPlateau_Cliff"
+            }
+        },
+        {
+            "Name": "STYX_E_Research_Travel_Crashed_Pod",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Travel_Crashed_Pod-Description\", \"Travel to the Emergency Beacon Location\")"
+        },
+        {
+            "Name": "STYX_E_Research_Interact_Pod",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Interact.BPQ_STYX_E_Research_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Interact_Pod-Description\", \"Examine the Damaged Biological Containment (F)\")"
+        },
+        {
+            "Name": "STYX_E_Research_Feed_Pod",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Feed.BPQ_STYX_E_Research_Feed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Feed_Pod-Description\", \"Keep the Biological Sample Alive.\")"
+        },
+        {
+            "Name": "STYX_E_Research_Feed_Timer",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Feed_Timer.BPQ_STYX_E_Research_Feed_Timer_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Feed_Timer-Description\", \"{0} Seconds Until Containment Fails \")"
+        },
+        {
+            "Name": "STYX_E_Research_Feed_Enzymes",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Feed_Enzymes.BPQ_STYX_E_Research_Feed_Enzymes_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Feed_Enzymes-Description\", \"Collect Digested Enzymes by Killing and Skinning Creatures and place them in the Biological Containment Pod\")"
+        },
+        {
+            "Name": "STYX_E_Research_Repair",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Repair.BPQ_STYX_E_Research_Repair_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Repair-Description\", \"Repair the Biological Containment Pod\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Drop1.BPQ_STYX_E_Research_Drop1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1-Description\", \"Examine the Downed Pod 1\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Crystal"
+            }
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1_Travel",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Travel-Description\", \"Travel to the Downed Pod 1 (M)\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1_Defeat_Creature",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod1_Defeat.BPQ_STYX_E_Research_Pod1_Defeat_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Defeat_Creature-Description\", \"Defeat the Nearby Creature\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1_Collect",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod1_Collect.BPQ_STYX_E_Research_Pod1_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Collect-Description\", \"Collect the Empty Enzyme Containment Unit\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1_Craft",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod1_Craft.BPQ_STYX_E_Research_Pod1_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Craft-Description\", \"Craft a Full Enzyme Containment Unit (O)\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_1_Stablise",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod1_Stablise.BPQ_STYX_E_Research_Pod1_Stablise_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Stablise-Description\", \"Place in the Biological Contaimnent Pod to Stabilise\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_2",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Drop2.BPQ_STYX_E_Research_Drop2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2-Description\", \"Examine the Downed Pod 2\")",
+            "LocationQuery": {
+                "RowName": "OLY_Omni_Outpost_Wolf"
+            }
+        },
+        {
+            "Name": "STYX_E_Research_Pod_2_Travel",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Travel-Description\", \"Travel to the Downed Pod 2 (M)\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_2_Collect",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod2_Collect.BPQ_STYX_E_Research_Pod2_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Collect-Description\", \"Remove the Power Source - Beware Catalytic Gas will be released upon Removal\")"
+        },
+        {
+            "Name": "STYX_E_Research_Pod_2_Power",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod2_Power.BPQ_STYX_E_Research_Pod2_Power_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Power-Description\", \"Place in the Biological Contaimnent Pod to Power\")"
         }
     ]
 }
