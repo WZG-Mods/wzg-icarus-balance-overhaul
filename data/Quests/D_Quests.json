@@ -2306,7 +2306,7 @@
         {
             "Name": "OLY_Riverlands_Stockpile_Deposit_1b",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Stockpile/BPQ_OLY_Riverlands_Stockpile_Deposit_Concrete.BPQ_OLY_Riverlands_Stockpile_Deposit_Concrete_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Stockpile_Deposit_1b-Description\", \"{0} / {1} Cement Mix\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Stockpile_Deposit_1b-Description\", \"{0} / {1} Concrete Mix\")"
         },
         {
             "Name": "OLY_Riverlands_Stockpile_Deposit_2",
@@ -5820,18 +5820,23 @@
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research.BPQ_STYX_E_Research_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research-Description\", \"RESEARCH: Flatline\")",
             "LocationQuery": {
-                "RowName": "STYX_SnoweyPlateau_Cliff"
+                "RowName": "STYX_DryRidge_CentralRidge"
             }
+        },
+        {
+            "Name": "STYX_E_Research_Assess_Pod",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_AssessPod.BPQ_STYX_E_Research_AssessPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Assess_Pod-Description\", \"Determine the Damage to the Biological Containment Pod\")"
         },
         {
             "Name": "STYX_E_Research_Travel_Crashed_Pod",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Travel_Crashed_Pod-Description\", \"Travel to the Emergency Beacon Location\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Travel_Crashed_Pod-Description\", \"Travel to the Emergency Beacon Location (M)\")"
         },
         {
             "Name": "STYX_E_Research_Interact_Pod",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Interact.BPQ_STYX_E_Research_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Interact_Pod-Description\", \"Examine the Damaged Biological Containment (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Interact_Pod-Description\", \"Examine the Damaged Biological Containment to Determine Time Until Critical Failure (F)\")"
         },
         {
             "Name": "STYX_E_Research_Feed_Pod",
@@ -5851,26 +5856,26 @@
         {
             "Name": "STYX_E_Research_Repair",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Repair.BPQ_STYX_E_Research_Repair_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Repair-Description\", \"Repair the Biological Containment Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Repair-Description\", \"Repair the First Biological Containment Pod\")"
         },
         {
             "Name": "STYX_E_Research_Pod_1",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Drop1.BPQ_STYX_E_Research_Drop1_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1-Description\", \"Examine the Downed Pod 1\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1-Description\", \"Examine the Second Damaged Biological Containment Pod\")",
             "LocationQuery": {
-                "RowName": "OLY_Omni_Outpost_Crystal"
+                "RowName": "STYX_DryRidge_CentralPlateau"
             }
         },
         {
             "Name": "STYX_E_Research_Pod_1_Travel",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Travel-Description\", \"Travel to the Downed Pod 1 (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Travel-Description\", \"Travel to the Marked Location (M)\")"
         },
         {
             "Name": "STYX_E_Research_Pod_1_Defeat_Creature",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod1_Defeat.BPQ_STYX_E_Research_Pod1_Defeat_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Defeat_Creature-Description\", \"Defeat the Nearby Creature\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_1_Defeat_Creature-Description\", \"Defeat the \\'Armored Bloodclaw\\'\")"
         },
         {
             "Name": "STYX_E_Research_Pod_1_Collect",
@@ -5890,26 +5895,26 @@
         {
             "Name": "STYX_E_Research_Pod_2",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Drop2.BPQ_STYX_E_Research_Drop2_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2-Description\", \"Examine the Downed Pod 2\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2-Description\", \"Examine the Third Damaged Biological Containment Pod\")",
             "LocationQuery": {
-                "RowName": "OLY_Omni_Outpost_Wolf"
+                "RowName": "STYX_DryRidge_LowerLakes"
             }
         },
         {
             "Name": "STYX_E_Research_Pod_2_Travel",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Travel.BPQ_STYX_E_Research_Travel_C",
             "Variation": 2,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Travel-Description\", \"Travel to the Downed Pod 2 (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Travel-Description\", \"Travel to the Marked Location (M) - Beware the Detected Deadly Catalytic Gas\")"
         },
         {
             "Name": "STYX_E_Research_Pod_2_Collect",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod2_Collect.BPQ_STYX_E_Research_Pod2_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Collect-Description\", \"Remove the Power Source - Beware Catalytic Gas will be released upon Removal\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Collect-Description\", \"Remove the Power Source From the Damaged Containment Pod\")"
         },
         {
             "Name": "STYX_E_Research_Pod_2_Power",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod2_Power.BPQ_STYX_E_Research_Pod2_Power_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Power-Description\", \"Place in the Biological Contaimnent Pod to Power\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Power-Description\", \"Place the Power Source in the First Biological Contaimnent Pod to Stabilise its Power\")"
         }
     ]
 }
