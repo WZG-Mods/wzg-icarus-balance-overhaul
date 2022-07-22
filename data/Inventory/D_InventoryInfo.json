@@ -831,8 +831,7 @@
             },
             "SlotTemplate": {
                 "RowName": "General_Inventory_Slot"
-            },
-            "StartingSlots": 6
+            }
         },
         {
             "Name": "Mount_Saddle",
@@ -846,10 +845,64 @@
         },
         {
             "Name": "Mission_Biological_Containment",
+            "StartingSlots": 2,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Mission_PowerSource",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Enzymes_Container",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                }
+            ]
+        },
+        {
+            "Name": "Mission_Biological_Containment_Cargo",
             "InventoryID": {
                 "Value": "General"
             },
-            "StartingSlots": 12
+            "SlotTemplate": {
+                "RowName": "Mission_Enzymes"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Mission_Biological_Containment_General",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Food_Trough",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 6
+        },
+        {
+            "Name": "Atleration_Bench",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Tool_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Attachment"
+            },
+            "StartingSlots": 1
         }
     ]
 }

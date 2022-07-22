@@ -5,8 +5,17 @@
             "RowName": "None",
             "DataTableName": "D_TagQueries"
         },
-        "RequiredStat": [],
-        "RequiredResource": []
+        "StatRequirement": {
+            "Value": "None"
+        },
+        "StatGrantedAlteration": [],
+        "ResourceRequirement": {
+            "Resource": "None",
+            "FlowRate": 0
+        },
+        "ResourceGrantedAlteration": {
+            "Value": "None"
+        }
     },
     "Rows": [
         {
@@ -14,14 +23,15 @@
             "Query": {
                 "RowName": "Any_Furnace"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedFurnaceSmeltingSpeedAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedBenchSmeltingSpeed_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseSmeltingSpeed_+%"
-                    }
+                    "Value": "SmeltingSpeed_1"
+                },
+                {
+                    "Value": "SmeltingSpeed_2"
                 }
             ]
         },
@@ -30,14 +40,12 @@
             "Query": {
                 "RowName": "Any_Building"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedBuildingHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedBuildingMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Durability_1"
                 }
             ]
         },
@@ -46,206 +54,165 @@
             "Query": {
                 "RowName": "Building_Wood"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedWoodBuildingMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_3"
                 }
             ]
         },
         {
-            "Name": "Storage",
+            "Name": "Deployable_Storage",
             "Query": {
                 "RowName": "Any_DeployableStorage"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedDeployableStorageAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedDeployableStorageGenericSlots_+"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseGenericSlots_+"
-                    }
+                    "Value": "Storage_1"
+                },
+                {
+                    "Value": "Storage_2"
+                },
+                {
+                    "Value": "Storage_3"
+                },
+                {
+                    "Value": "Storage_4"
                 }
             ]
         },
         {
-            "Name": "Hedgehog",
+            "Name": "Hedgehog_Damage",
             "Query": {
                 "RowName": "Any_Hedgehog"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedHedgehogDamageAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedHedgehogDamage_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseHedgehogDamage_+%"
-                    }
+                    "Value": "HedgehogDamage_1"
                 }
             ]
         },
         {
-            "Name": "Lightning_Rod",
+            "Name": "Lightning_Rod_Health",
             "Query": {
                 "RowName": "Any_LightningRod"
             },
-            "RequiredStat": [
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedLightningRodMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Extractor",
-            "Query": {
-                "RowName": "Any_Extractor"
+            "StatRequirement": {
+                "Value": "CreatedLightningRodHealthAlt_+"
             },
-            "RequiredStat": [
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedExtractorFuelUsage_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseFuelTransmutationResourceCost_+%"
-                    }
+                    "Value": "Durability_6"
                 },
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedExtractorProcessingSpeed_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseExtractorDrillSpeed_+%"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Radar",
-            "Query": {
-                "RowName": "Any_Radar"
-            },
-            "RequiredStat": [
+                    "Value": "Durability_7"
+                },
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedRadarScanningSpeed_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseRadarScanningSpeed_+%"
-                    }
+                    "Value": "Durability_8"
                 }
             ]
         },
         {
-            "Name": "Pickaxe",
+            "Name": "Pickaxe_Health",
             "Query": {
                 "RowName": "Any_Pickaxe"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedPickaxeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedPickaxeMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_3"
                 }
             ]
         },
         {
-            "Name": "Knife",
+            "Name": "Knife_Felling",
             "Query": {
                 "RowName": "Any_Knife"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedKnifeFellingAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedKnifeFellingDamage_+"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseFellingDamage_+"
-                    }
-                },
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedKnifeMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Felling_1"
                 }
             ]
         },
         {
-            "Name": "Axe",
+            "Name": "Knife_Health",
+            "Query": {
+                "RowName": "Any_Knife"
+            },
+            "StatRequirement": {
+                "Value": "CreatedKnifeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_4"
+                }
+            ]
+        },
+        {
+            "Name": "Axe_Health",
             "Query": {
                 "RowName": "Any_Axe"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedAxeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedAxeMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_4"
                 }
             ]
         },
         {
-            "Name": "Bow",
+            "Name": "Bow_Health",
             "Query": {
                 "RowName": "Any_Bow"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedBowHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedBowMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
+                    "Value": "Durability_2"
                 }
             ]
         },
         {
-            "Name": "Spear",
+            "Name": "Spear_Health",
             "Query": {
                 "RowName": "Any_Spear"
             },
-            "RequiredStat": [
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedSpearMaximumHealth_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Campfire",
-            "Query": {
-                "RowName": "Any_Campfire"
+            "StatRequirement": {
+                "Value": "CreatedSpearHealthAlt_+"
             },
-            "RequiredStat": [
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCampfireEnergyTransmutationCost_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseEnergyTransmutationResourceCost_+%"
-                    }
+                    "Value": "Durability_4"
+                },
+                {
+                    "Value": "Durability_5"
                 }
             ]
         },
@@ -254,14 +221,12 @@
             "Query": {
                 "RowName": "Building_Wood"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingBurnChanceAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedWoodBuildingBurnChance_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseBurnChance_%"
-                    }
+                    "Value": "BurnChancePrevention_1"
                 }
             ]
         },
@@ -270,14 +235,12 @@
             "Query": {
                 "RowName": "Building_Wood"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingWindResistanceAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedWoodBuildingWindDamageResistance_%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseWindDamageResistance_%"
-                    }
+                    "Value": "WindResistance_1"
                 }
             ]
         },
@@ -286,70 +249,35 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropGrowthSpeed_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BasePlantedCropGrowthSpeed_+%"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Crop_Plot_Spoilage",
-            "Query": {
-                "RowName": "Crop_Plot"
+            "StatRequirement": {
+                "Value": "CreatedCropPlotCropGrowthSpeedAlt_+"
             },
-            "RequiredStat": [
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
-                    }
+                    "Value": "CropGrowthSpeed_1"
                 },
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropSpoilRate_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseInventorySpoilRate_+%"
-                    }
+                    "Value": "CropGrowthSpeed_2"
                 }
             ]
         },
         {
-            "Name": "Arrow",
+            "Name": "Arrow_Damage",
             "Query": {
                 "RowName": "Projectile_Arrow"
             },
-            "RequiredStat": [
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedArrowProjectileDamage_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseProjectileDamage_+%"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Bolt",
-            "Query": {
-                "RowName": "Projectile_Bolt"
+            "StatRequirement": {
+                "Value": "CreatedArrowProjectileDamageAlt_+"
             },
-            "RequiredStat": [
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedBoltProjectileDamage_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseProjectileDamage_+%"
-                    }
+                    "Value": "ProjectileDamage_1"
+                },
+                {
+                    "Value": "ProjectileDamage_2"
+                },
+                {
+                    "Value": "ProjectileDamage_3"
                 }
             ]
         },
@@ -358,14 +286,15 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedCropPlotNightGrowthSpeedAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropNightGrowthSpeed_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BasePlantedCropNightGrowthSpeed_+%"
-                    }
+                    "Value": "CropNightGrowthSpeed_1"
+                },
+                {
+                    "Value": "CropNightGrowthSpeed_2"
                 }
             ]
         },
@@ -374,14 +303,15 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedCropPlotCropYieldAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropYield_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BasePlantedCropYield_+%"
-                    }
+                    "Value": "CropYeild_1"
+                },
+                {
+                    "Value": "CropYeild_2"
                 }
             ]
         },
@@ -390,14 +320,12 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedCropPlotFertilizerConsumptionAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotFertilizerConsumption_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseFertilizerConsumption_+%"
-                    }
+                    "Value": "CropFertilizerConsumption_1"
                 }
             ]
         },
@@ -406,14 +334,15 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedCropPlotHarvestedItemSpoilTimeAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropHarvestedItemSpoilTime_+%"
-                    },
-                    "GrantedStat": {
-                        "Value": "BasePlantedCropHarvestedItemSpoilTime_+%"
-                    }
+                    "Value": "CropSlowSpoil_1"
+                },
+                {
+                    "Value": "CropSlowSpoil_2"
                 }
             ]
         },
@@ -422,22 +351,12 @@
             "Query": {
                 "RowName": "Crop_Plot"
             },
-            "RequiredStat": [
+            "StatRequirement": {
+                "Value": "CreatedCropPlotPlantedCropCannotSpoil_?"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropCannotSpoil_?"
-                    },
-                    "GrantedStat": {
-                        "Value": "BasePlantedCropCannotSpoil_?"
-                    }
-                },
-                {
-                    "RequiredStat": {
-                        "Value": "CreatedCropPlotPlantedCropCannotSpoil_?"
-                    },
-                    "GrantedStat": {
-                        "Value": "BaseInventoryCannotSpoil_?"
-                    }
+                    "Value": "CropSpoilPrevention_1"
                 }
             ]
         },
@@ -446,27 +365,28 @@
             "Query": {
                 "RowName": "Building_Glass"
             },
-            "RequiredResource": [
+            "ResourceRequirement": {
+                "Resource": "Water",
+                "FlowRate": 250
+            },
+            "ResourceGrantedAlteration": {
+                "Value": "Reinforced_Building"
+            }
+        },
+        {
+            "Name": "Campfire",
+            "Query": {
+                "RowName": "Any_Campfire"
+            },
+            "StatRequirement": {
+                "Value": "CreatedCampfireEnergyCostAlt_+"
+            },
+            "StatGrantedAlteration": [
                 {
-                    "Resource": "Water",
-                    "GrantedStat": {
-                        "Value": "ReinforcedGlass_?"
-                    },
-                    "GrantedStatValue": 1
+                    "Value": "EnergyTransmuationEfficiency_1"
                 },
                 {
-                    "Resource": "Water",
-                    "GrantedStat": {
-                        "Value": "BaseMaximumHealth_+%"
-                    },
-                    "GrantedStatValue": 400
-                },
-                {
-                    "Resource": "Water",
-                    "GrantedStat": {
-                        "Value": "BaseWindDamageResistance_%"
-                    },
-                    "GrantedStatValue": 50
+                    "Value": "EnergyTransmuationEfficiency_2"
                 }
             ]
         }
