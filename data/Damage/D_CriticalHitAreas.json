@@ -1,0 +1,48 @@
+{
+    "RowStruct": "/Script/Icarus.CriticalHitArea",
+    "Defaults": {
+        "EffectiveStat": {
+            "Value": "None"
+        },
+        "EffectiveStatMultiplier": 1,
+        "ModifiersToApply": [],
+        "Priority": 10
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Crit_ExtraWeakPoint",
+            "EffectiveStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "Priority": 5
+        },
+        {
+            "Name": "Crit_WeakPoint",
+            "EffectiveStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "EffectiveStatMultiplier": 0.5,
+            "Priority": 6
+        },
+        {
+            "Name": "Crit_ExtraStrongPoint",
+            "EffectiveStat": {
+                "Value": "CriticalStrongPointDamage_+%"
+            },
+            "Priority": 7
+        },
+        {
+            "Name": "Crit_StrongPoint",
+            "EffectiveStat": {
+                "Value": "CriticalStrongPointDamage_+%"
+            },
+            "EffectiveStatMultiplier": 0.5,
+            "Priority": 8
+        },
+        {
+            "Name": "Crit_NoDamage",
+            "Priority": 0
+        }
+    ]
+}

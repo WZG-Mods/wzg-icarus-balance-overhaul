@@ -5915,6 +5915,90 @@
             "Name": "STYX_E_Research_Pod_2_Power",
             "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Pod2_Power.BPQ_STYX_E_Research_Pod2_Power_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Pod_2_Power-Description\", \"Place the Power Source in the First Biological Contaimnent Pod to Stabilise its Power\")"
+        },
+        {
+            "Name": "STYX_D_Extermination",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination.BPQ_STYX_D_Extermination_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination-Description\", \"EXTERMINATION: Lupine\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Parent",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Parent.BPQ_STYX_D_Extermination_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Parent-Description\", \"Hunt Black Wolves to discover new weapon recipes\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Track_Parent",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Track_Parent.BPQ_STYX_D_Extermination_Track_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Track_Parent-Description\", \"Find a way to track the creatures on the map\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ExterminationDenLocationRevealed1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Extermination_Track_Collect",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Track_Collect.BPQ_STYX_D_Extermination_Track_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the dropship\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AfterCombiningCollectedItems",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Extermination_Track_Deploy",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Track_Deploy.BPQ_STYX_D_Extermination_Track_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Track_Deploy-Description\", \"Deploy the Prototype Tracker\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Expedition3DeployedCorrect2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Extermination_Boss_Parent",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Boss_Parent.BPQ_STYX_D_Extermination_Boss_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Boss_Parent-Description\", \"Hunt Black Wolves (M)\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Boss_Kill_Count",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Boss_Kill_Count.BPQ_STYX_D_Extermination_Boss_Kill_Count_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Boss_Kill_Count-Description\", \"Black Wolves Killed {0} / {1}\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "MissionComplete14",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Extermination_Boss_Teeth",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Boss_Teeth_Count.BPQ_STYX_D_Extermination_Boss_Teeth_Count_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Boss_Teeth-Description\", \"Collect Black Wolf Teeth {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Craft_Parent",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Craft_Parent.BPQ_STYX_D_Extermination_Craft_Parent_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Craft_Parent-Description\", \"(Optional) Using the Black Wolf samples, Craft the Black Wolf Weapons\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Craft_Items",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Craft_Items.BPQ_STYX_D_Extermination_Craft_Items_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Craft_Items-Description\", \"(Optional) Craft the Weapons on the Anvil\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Craft_Knife",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Craft_Knife.BPQ_STYX_D_Extermination_Craft_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Craft_Knife-Description\", \"(Optional) Craft the Black Wolf Knife\")"
+        },
+        {
+            "Name": "STYX_D_Extermination_Craft_Arrow",
+            "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Craft_Arrow.BPQ_STYX_D_Extermination_Craft_Arrow_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Craft_Arrow-Description\", \"(Optional) Craft the Black Wolf Arrow\")"
         }
     ]
 }

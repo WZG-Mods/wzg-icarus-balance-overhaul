@@ -27932,35 +27932,6 @@
             }
         },
         {
-            "Name": "Attachment_Sharpened_Blade",
-            "RecipeSets": [
-                {
-                    "RowName": "Attachment_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Refined_Metal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Attachment_Sharpened_Blade",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ]
-        },
-        {
             "Name": "Raw_Meat_Bacon",
             "RecipeSets": [
                 {
@@ -28182,6 +28153,123 @@
             ],
             "Audio": {
                 "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Black_Wolf_Knife",
+            "SessionRequirement": {
+                "RowName": "Mission_BlackWolf_Items"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseKnifeCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Tooth",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Metal_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Knife",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "AnvilBench"
+            }
+        },
+        {
+            "Name": "Black_Wolf_Arrow",
+            "SessionRequirement": {
+                "RowName": "Mission_BlackWolf_Items"
+            },
+            "RequiredMillijoules": 1000,
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Metal_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Tooth",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Arrow",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "AnvilBench"
             }
         }
     ]
