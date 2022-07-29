@@ -888,11 +888,20 @@
             "StartingSlots": 6
         },
         {
-            "Name": "Atleration_Bench",
+            "Name": "Alteration_Bench",
             "InventoryID": {
-                "Value": "General"
+                "Value": "Alteration"
             },
-            "StartingSlots": 1
+            "StartingSlots": 2,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Any_Attachment",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                }
+            ]
         },
         {
             "Name": "Tool_Attachment",
@@ -902,7 +911,74 @@
             "SlotTemplate": {
                 "RowName": "Any_Attachment"
             },
-            "StartingSlots": 1
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Knife_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Knife_Attachment"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Spear_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Spear_Attachement"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Pickaxe_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Pickaxe_Attachment"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Axe_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Axe_Attachment"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Sickle_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Sickle_Attachement"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
+        },
+        {
+            "Name": "Hammer_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Hammer_Attachment"
+            },
+            "StartingSlots": 1,
+            "RemoveOnly": true
         }
     ]
 }
