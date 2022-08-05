@@ -1631,7 +1631,7 @@
         {
             "Name": "OLY_Canyon_Stockpile2_ShipContainer_CuredMeat",
             "Class": "/Game/BP/Quests/Olympus/Canyon/Stockpile2/BPQ_OLY_Canyon_Stockpile2_ShipContainer.BPQ_OLY_Canyon_Stockpile2_ShipContainer_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_ShipContainer_CuredMeat-Description\", \"Refrigerated Cargo Pod\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Stockpile2_ShipContainer_CuredMeat-Description\", \"Deliver a Cargo Pod of Dried Meats\")",
             "LocationQuery": {
                 "RowName": "T2_Canyon_Stockpile2_Ship"
             },
@@ -5999,6 +5999,98 @@
             "Name": "STYX_D_Extermination_Craft_Arrow",
             "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Craft_Arrow.BPQ_STYX_D_Extermination_Craft_Arrow_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Craft_Arrow-Description\", \"(Optional) Craft the Black Wolf Arrow\")"
+        },
+        {
+            "Name": "STYX_A_Construction",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction.BPQ_STYX_A_Construction_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction-Description\", \"CONSTRUCTION: Observation Platform\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_West_CliffSide"
+            }
+        },
+        {
+            "Name": "STYX_A_Construction_Travel",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Travel.BPQ_STYX_A_Construction_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Travel-Description\", \"Travel to the Build Site (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ConstructionArrive2b",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Construction_Build_Ground",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Build_Ground.BPQ_STYX_A_Construction_Build_Ground_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Build_Ground-Description\", \"Setup the ground floor of the observation tower\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Build_Middle",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Build_Middle.BPQ_STYX_A_Construction_Build_Middle_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Build_Middle-Description\", \"Setup the internals of the observation tower\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Build_Top",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Build_Top.BPQ_STYX_A_Construction_Build_Top_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Build_Top-Description\", \"Setup the top floor of the observation tower\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_West_CliffSide_Arial"
+            }
+        },
+        {
+            "Name": "STYX_A_Construction_Ground_Hedgehogs",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Ground_Hedgehogs.BPQ_STYX_A_Construction_Ground_Hedgehogs_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Ground_Hedgehogs-Description\", \"Wood Hedgehogs  {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Ground_RainReservoir",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Ground_RainReservoir.BPQ_STYX_A_Construction_Ground_RainReservoir_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Ground_RainReservoir-Description\", \"Rain Reservoir  {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Ground_Brazier",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Ground_Brazier.BPQ_STYX_A_Construction_Ground_Brazier_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Ground_Brazier-Description\", \"Braziers {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Middle_Lights",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Middle_Lights.BPQ_STYX_A_Construction_Middle_Lights_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_Lights-Description\", \"Powered Basic Wall Lights {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Middle_KitchenBench",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Middle_KitchenBench.BPQ_STYX_A_Construction_Middle_KitchenBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_KitchenBench-Description\", \"Kitchen Bench {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Middle_BiofuelStove",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Middle_BiofuelStove.BPQ_STYX_A_Construction_Middle_BiofuelStove_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_BiofuelStove-Description\", \"Biofuel Stove {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Middle_TextilesBench",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Middle_TextilesBench.BPQ_STYX_A_Construction_Middle_TextilesBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_TextilesBench-Description\", \"Textiles Bench {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Top_HeightCheck",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Top_HeightCheck.BPQ_STYX_A_Construction_Top_HeightCheck_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Top_HeightCheck-Description\", \"Build a tower at least 6 floors high\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Top_Brazier",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Top_Brazier.BPQ_STYX_A_Construction_Top_Brazier_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Top_Brazier-Description\", \"Braziers {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Top_GlassRoof",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Top_GlassRoof.BPQ_STYX_A_Construction_Top_GlassRoof_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Top_GlassRoof-Description\", \"Flat Glass Roof {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Construction_Top_GlassWall",
+            "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Top_GlassWall.BPQ_STYX_A_Construction_Top_GlassWall_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Top_GlassWall-Description\", \"Solid Glass Wall {0} / {1}\")"
         }
     ]
 }

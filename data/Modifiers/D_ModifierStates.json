@@ -107,17 +107,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.Wet"
+                    },
+                    {
+                        "TagName": "ModifierState.CoolingDrink"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "UserDescription": "Not wet",
-                "AutoDescription": " NONE( ModifierState.Wet )"
+                "AutoDescription": " NONE( ModifierState.Wet, ModifierState.CoolingDrink )"
             },
             "bEffectsObjects": true
         },
@@ -774,7 +777,7 @@
             "ModifierTags": {
                 "GameplayTags": [
                     {
-                        "TagName": "ModifierState.Wet"
+                        "TagName": "ModifierState.CoolingDrink"
                     }
                 ]
             },
@@ -3652,7 +3655,7 @@
             "Name": "Fruit_Pie",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_FruitPie.ITEM_FruitPie'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Pie-ModifierName\", \"Fruit Pie\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Pie-ModifierDescription\", \"Lifts health, boosts stamina.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Pie-ModifierDescription\", \"Lifts health, boosts stamina significantly.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumHealth_+\")": 75,
@@ -3713,7 +3716,7 @@
             "Name": "Bread",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Food_Bread.ITEM_Food_Bread'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bread-ModifierName\", \"Bread\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bread-ModifierDescription\", \"Boosts health and stamina considerably.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bread-ModifierDescription\", \"Boosts stamina considerably.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 125,
@@ -3731,7 +3734,7 @@
             "Name": "Pumpkin_Bread",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_PumpkinBread.ITEM_PumpkinBread'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Bread-ModifierName\", \"Pumpkin Bread\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Bread-ModifierDescription\", \"Health boost, reduces exposure damage.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Bread-ModifierDescription\", \"Stamina boost, reduces exposure damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 150,
@@ -3768,7 +3771,7 @@
             "Name": "Picked_Carrot",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_PickledCarrot.ITEM_PickledCarrot'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierName\", \"Pickled Carrot\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierDescription\", \"Boosts max health and stamina.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierDescription\", \"Boosts max stamina and projectile damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 150,
@@ -3787,7 +3790,7 @@
             "Name": "Jar_Jam",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Jar_Jam.ITEM_Jar_Jam'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Jar_Jam-ModifierName\", \"Jammed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Jar_Jam-ModifierDescription\", \"Boosts max health and stamina hugely.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Jar_Jam-ModifierDescription\", \"Boosts max stamina and reduces water consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 125,
@@ -3904,7 +3907,7 @@
             "Name": "Thermos_GreenTea_Modifier",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.ITEM_Thermos'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_GreenTea_Modifier-ModifierName\", \"Hot Tea\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_GreenTea_Modifier-ModifierDescription\", \"Keeps you warm, boosts health.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_GreenTea_Modifier-ModifierDescription\", \"Keeps you warm, boosts health regeneration.\")",
             "GrantedStats": {
                 "(Value=\"BaseHealthRegen_+%\")": 25,
                 "(Value=\"BaseInternalTemperatureModification_+\")": 1000
@@ -4016,7 +4019,7 @@
             "Name": "Dried_Giant_Steak",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Cooked_Prime_MeatDried.ITEM_Cooked_Prime_MeatDried'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Giant_Steak-ModifierName\", \"Dried Giant Steak\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Giant_Steak-ModifierDescription\", \"Boosts health, reduces exposure damage, and slows hunger\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Giant_Steak-ModifierDescription\", \"Boosts health and health regen, and slows hunger\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumHealth_+\")": 100,
@@ -4651,8 +4654,7 @@
                     0
                 ],
                 "AutoDescription": " NONE( ModifierState.SutureKit )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "MinorHemorrhage",
