@@ -22004,6 +22004,103 @@
                     "RowName": "Styx"
                 }
             }
+        },
+        {
+            "Name": "Tier1_Forest_Range",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Range-DropName\", \"POTSHOT: Training\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Range-Description\", \"COMPLETE THE NEW TRAINING EXERCISE\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Range-FlavourText\", \"//OPERATOR: UDA // BIOME: Forest // BACKGROUND: The Operator has set up a testing area for Contractors to train and hone their skills. // MISSION: Complete the test with a passing score. //TERMS: Flat fee. A selection of weapons will be provided for testing purposes only.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ProspectMission_Forest_RangeLarge.T_ProspectMission_Forest_RangeLarge'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "BriefingDialogue": {
+                "RowName": "SpecialGenericBriefing2"
+            },
+            "LandingDialogue": {
+                "RowName": "SpecialGenericLanding2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete3"
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Forest_Range"
+            },
+            "TimeDuration": {
+                "Hours": {
+                    "Min": 2,
+                    "Max": 2
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "WorldStatList": [
+                {
+                    "RowName": "Player_XP_25%",
+                    "DataTableName": "D_ProspectStats"
+                },
+                {
+                    "RowName": "Inert_Geysers",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds.GT_Terrain016_Bounds",
+            "AISpawnConfigOverride": {
+                "RowName": "BW6_Research"
+            }
         }
     ]
 }
