@@ -6,7 +6,11 @@
         },
         "EffectiveStatMultiplier": 1,
         "ModifiersToApply": [],
-        "Priority": 10
+        "Priority": 10,
+        "AudioData": {
+            "RowName": "None",
+            "DataTableName": "D_CriticalHitAreaAudioData"
+        }
     },
     "GenerateEnum": true,
     "Rows": [
@@ -15,7 +19,10 @@
             "EffectiveStat": {
                 "Value": "CriticalDamage_+%"
             },
-            "Priority": 5
+            "Priority": 5,
+            "AudioData": {
+                "RowName": "CriticalHit"
+            }
         },
         {
             "Name": "Crit_WeakPoint",
@@ -23,14 +30,20 @@
                 "Value": "CriticalDamage_+%"
             },
             "EffectiveStatMultiplier": 0.5,
-            "Priority": 6
+            "Priority": 6,
+            "AudioData": {
+                "RowName": "CriticalHit"
+            }
         },
         {
             "Name": "Crit_ExtraStrongPoint",
             "EffectiveStat": {
                 "Value": "CriticalStrongPointDamage_+%"
             },
-            "Priority": 7
+            "Priority": 7,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
         },
         {
             "Name": "Crit_StrongPoint",
@@ -38,7 +51,10 @@
                 "Value": "CriticalStrongPointDamage_+%"
             },
             "EffectiveStatMultiplier": 0.5,
-            "Priority": 8
+            "Priority": 8,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
         },
         {
             "Name": "Crit_NoDamage",

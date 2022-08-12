@@ -872,10 +872,7 @@
                         "TagName": "Traits.Flammable"
                     },
                     {
-                        "TagName": "ModifierState.OnFire"
-                    },
-                    {
-                        "TagName": "ModifierState.Wet"
+                        "TagName": "ModifierState.ExtingishFire"
                     }
                 ],
                 "QueryTokenStream": [
@@ -887,12 +884,11 @@
                     1,
                     0,
                     3,
-                    2,
                     1,
-                    2
+                    1
                 ],
                 "UserDescription": "Can catch fire (flammable, not wet, not onfire)",
-                "AutoDescription": " ALL(  ALL( Traits.Flammable ),  NONE( ModifierState.OnFire, ModifierState.Wet ) )"
+                "AutoDescription": " ALL(  ALL( Traits.Flammable ),  NONE( ModifierState.ExtingishFire ) )"
             }
         },
         {
