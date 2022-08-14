@@ -1247,7 +1247,7 @@
             "bAura": true,
             "AuraRange": 2000,
             "AuraFlags": {
-                "EffectsSelf": false
+                "EffectsSelf": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "AuraEffect_ReducedOxygenConsumption"
@@ -1289,7 +1289,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ReducedOxygenConsumption-ModifierName\", \"Aura Effect: Reduced Oxygen Consumption\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ReducedOxygenConsumption-ModifierDescription\", \"Reduced oxygen consumption.\")",
             "GrantedStats": {
-                "(Value=\"BaseOxygenConsumption_+%\")": -10
+                "(Value=\"BaseOxygenConsumption_+%\")": -15
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
@@ -4471,7 +4471,7 @@
             "bAura": true,
             "AuraRange": 1000,
             "AuraFlags": {
-                "EffectsSelf": false
+                "EffectsSelf": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "Weight_Reduction"
@@ -4486,7 +4486,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierName\", \"Strength Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
             "GrantedStats": {
-                "(Value=\"BaseWeightCapacity_+%\")": 50,
+                "(Value=\"BaseWeightCapacity_+%\")": 75,
                 "(Value=\"BaseStaminaRegen_+%\")": 100
             },
             "MergeType": "Stack"
@@ -4503,12 +4503,6 @@
                 "(Value=\"BaseHealthRegen_+%\")": 100,
                 "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -75
             },
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
-            "ModifierGrantedByAura": {
-                "RowName": "Weight_Reduction_Aura"
-            },
             "MergeType": "Stack"
         },
         {
@@ -4519,7 +4513,7 @@
             "bAura": true,
             "AuraRange": 1000,
             "AuraFlags": {
-                "EffectsSelf": false
+                "EffectsSelf": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "Healing_Modifier_Duration"
