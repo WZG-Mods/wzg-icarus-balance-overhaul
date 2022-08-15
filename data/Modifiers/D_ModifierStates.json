@@ -1245,7 +1245,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ReducedOxygenConsumption-ModifierName\", \"Aura: Reduced Oxygen Consumption\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ReducedOxygenConsumption-ModifierDescription\", \"Nearby allies\\' oxygen consumption is reduced.\")",
             "bAura": true,
-            "AuraRange": 2000,
+            "AuraRange": 3000,
             "AuraFlags": {
                 "EffectsSelf": true
             },
@@ -2200,7 +2200,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dehumidifier_Aura-ModifierName\", \"Dehumidifier\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dehumidifier_Aura-ModifierDescription\", \"Proximity to a dehumidifier shields you from the dampening and bacterial effects of being underground.\")",
             "bAura": true,
-            "AuraRange": 2000,
+            "AuraRange": 5000,
             "AuraFlags": {
                 "EffectsSelf": false
             },
@@ -4467,9 +4467,9 @@
             "Name": "Weight_Reduction_Aura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction_Aura.Icon_Weight_Reduction_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierName\", \"Aura: Strength Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more. Does not apply to yourself.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more.\")",
             "bAura": true,
-            "AuraRange": 1000,
+            "AuraRange": 3000,
             "AuraFlags": {
                 "EffectsSelf": true
             },
@@ -4487,6 +4487,8 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
             "GrantedStats": {
                 "(Value=\"BaseWeightCapacity_+%\")": 75,
+                "(Value=\"BaseMovementSpeed_+%\")": 25,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
                 "(Value=\"BaseStaminaRegen_+%\")": 100
             },
             "MergeType": "Stack"
@@ -4501,6 +4503,7 @@
                 "(Value=\"BaseParasiticModifierDuration_+%\")": -75,
                 "(Value=\"BasePoisonModifierDuration_+%\")": -75,
                 "(Value=\"BaseHealthRegen_+%\")": 100,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
                 "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -75
             },
             "MergeType": "Stack"
@@ -4509,9 +4512,9 @@
             "Name": "Healing_Modifier_Aura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Aura: Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions. Does not apply to yourself.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "bAura": true,
-            "AuraRange": 1000,
+            "AuraRange": 3000,
             "AuraFlags": {
                 "EffectsSelf": true
             },
