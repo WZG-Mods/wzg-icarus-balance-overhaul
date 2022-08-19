@@ -5391,13 +5391,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseBowCriticalDamage_+%\")": 2
+                        "(Value=\"BaseBowCriticalDamage_+%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseBowCriticalDamage_+%\")": 5
+                        "(Value=\"BaseBowCriticalDamage_+%\")": 15
                     },
                     "GrantedFlags": []
                 }
@@ -5440,13 +5440,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseBowCriticalDamage_+%\")": 5
+                        "(Value=\"BaseBowCriticalDamage_+%\")": 10
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseBowCriticalDamage_+%\")": 10
+                        "(Value=\"BaseBowCriticalDamage_+%\")": 25
                     },
                     "GrantedFlags": []
                 }
@@ -5919,13 +5919,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseSpearCriticalDamage_+%\")": 2
+                        "(Value=\"BaseSpearCriticalDamage_+%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseSpearCriticalDamage_+%\")": 4
+                        "(Value=\"BaseSpearCriticalDamage_+%\")": 20
                     },
                     "GrantedFlags": []
                 }
@@ -5964,13 +5964,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseSpearCriticalDamage_+%\")": 5
+                        "(Value=\"BaseSpearCriticalDamage_+%\")": 15
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseSpearCriticalDamage_+%\")": 10
+                        "(Value=\"BaseSpearCriticalDamage_+%\")": 30
                     },
                     "GrantedFlags": []
                 }
@@ -6644,19 +6644,19 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseKnifeCriticalDamage_+%\")": 2
-                    },
-                    "GrantedFlags": []
-                },
-                {
-                    "GrantedStats": {
-                        "(Value=\"BaseKnifeCriticalDamage_+%\")": 5
-                    },
-                    "GrantedFlags": []
-                },
-                {
-                    "GrantedStats": {
                         "(Value=\"BaseKnifeCriticalDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeCriticalDamage_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseKnifeCriticalDamage_+%\")": 30
                     },
                     "GrantedFlags": []
                 }
@@ -26528,7 +26528,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 5350,
+                "X": 5300,
                 "Y": 1200
             },
             "Size": {
@@ -26552,7 +26552,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 4100,
+                "X": 4150,
                 "Y": 900
             },
             "Size": {
@@ -26575,7 +26575,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 3900,
+                "X": 3850,
                 "Y": 1200
             },
             "Size": {
@@ -26684,6 +26684,52 @@
                 }
             ],
             "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Armor_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Armor_Attachment_Pack-DisplayName\", \"Armor Attachement Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Armor_Attachment_Pack-Description\", \"A small assortment of Basic Armor Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachPoisonResist.ITEM_ArmorAttachPoisonResist",
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 5600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Alteration_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Advanced_Armor_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Advanced_Armor_Attachment_Pack-DisplayName\", \"Advanced Armor Attachement Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Advanced_Armor_Attachment_Pack-Description\", \"A Small Selection of Advanced Armor Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachBossTracker.ITEM_ArmorAttachBossTracker",
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 4150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Alteration_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
         },
         {
             "Name": "Workshop_Larkwell_Bolt_Standard",
