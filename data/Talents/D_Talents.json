@@ -17203,7 +17203,6 @@
                 "X": 256,
                 "Y": 256
             },
-            "Rewards": [],
             "bDefaultUnlocked": true
         },
         {
@@ -18648,7 +18647,6 @@
                 "X": 256,
                 "Y": 256
             },
-            "Rewards": [],
             "RequiredFlags": [
                 {
                     "DataTableName": "D_AccountFlags",
@@ -18673,7 +18671,6 @@
                 "X": 256,
                 "Y": 256
             },
-            "Rewards": [],
             "RequiredFlags": [
                 {
                     "DataTableName": "D_AccountFlags",
@@ -23184,6 +23181,94 @@
             "DrawMethodOverride": "YThenX"
         },
         {
+            "Name": "Produce_Dried_Meat_Buff_Food",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Dried_Meat_Buff_Food-DisplayName\", \"Carnivore\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Dried_Meat_Buff_Food-Description\", \"Buffs from Dried Meat are Increased\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_HealthBars.Talent_Hunting_HealthBars",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 200,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseDriedMeatModifierEffectiveness_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseDriedMeatModifierEffectiveness_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Food_Decay",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Produce_FruitAndVege_Buff_Food",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_FruitAndVege_Buff_Food-DisplayName\", \"Vegetarian\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_FruitAndVege_Buff_Food-Description\", \"Buffs from Vegetable only foods are increased\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_HealthyDiet.Talent_HealthyDiet",
+            "TalentTree": {
+                "RowName": "Survival_Produce"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Produce_Food_Decay",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
             "Name": "Produce_Max_Stamina",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Produce_Max_Stamina-DisplayName\", \"Get up and go\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Produce_Max_Stamina-Description\", \"Increase to base stamina\")",
@@ -26323,7 +26408,6 @@
                 "X": 256,
                 "Y": 256
             },
-            "Rewards": [],
             "bDefaultUnlocked": true
         },
         {
@@ -26494,6 +26578,35 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Prospect_Styx_A_Construction",
+            "ExtraData": {
+                "RowName": "STYX_A_Construction",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 3050,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
         },
         {
             "Name": "Alteration_Bench",
@@ -26754,6 +26867,29 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Prospect_Styx_A_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2300,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
         }
     ]
 }
