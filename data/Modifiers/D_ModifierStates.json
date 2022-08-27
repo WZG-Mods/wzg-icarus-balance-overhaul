@@ -903,12 +903,11 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Well_Rested-ModifierName\", \"Well Rested\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Well_Rested-ModifierDescription\", \"You\\'re well rested, and several physical attributes are improved for a period.\")",
             "GrantedStats": {
-                "(Value=\"BaseMaximumHealth_+%\")": 10,
-                "(Value=\"BaseHealthRegen_+%\")": 10,
-                "(Value=\"BaseMaximumStamina_+%\")": 5,
-                "(Value=\"BaseStaminaRegen_+%\")": 5,
-                "(Value=\"BaseFoodConsumption_+%\")": -5,
-                "(Value=\"BaseWaterConsumption_+%\")": -5
+                "(Value=\"BaseMaximumHealth_+%\")": 20,
+                "(Value=\"BaseHealthRegen_+%\")": 20,
+                "(Value=\"BaseMaximumStamina_+%\")": 20,
+                "(Value=\"BaseStaminaRegen_+%\")": 20,
+                "(Value=\"BaseMovementSpeed_+%\")": 10
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
@@ -3826,6 +3825,11 @@
                 "(Value=\"BaseHealthRegen_+%\")": 15,
                 "(Value=\"BaseExperience_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "DriedMeatModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -3927,6 +3931,7 @@
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseStaminaRegen_+%\")": 150,
                 "(Value=\"BaseProjectileDamage_+%\")": 20,
                 "(Value=\"BaseSharedExperience_+%\")": 20
             },
@@ -3950,9 +3955,10 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Jar_Jam-ModifierDescription\", \"Boosts max stamina and reduces water consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
-                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseStaminaRegen_+%\")": 150,
                 "(Value=\"BaseWaterConsumption_+%\")": -20,
-                "(Value=\"BaseSharedExperience_+%\")": 10
+                "(Value=\"BaseSharedExperience_+%\")": 20
             },
             "ModifierEffectivenessAffectors": [
                 {
