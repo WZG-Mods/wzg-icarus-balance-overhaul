@@ -410,6 +410,28 @@
                 }
             ],
             "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Social.BP_IcarusGOAPMotivation_Social_C"
+        },
+        {
+            "Name": "Unconsciousness",
+            "Description": "Unconsciousness",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 95,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Unconscious",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Unconsciousness.BP_IcarusGOAPMotivation_Unconsciousness_C"
         }
     ]
 }
