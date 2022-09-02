@@ -850,6 +850,33 @@
             "TimeOut": 15,
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_StopFlying.BP_IcarusGOAPAction_StopFlying_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_StopFlying.BT_IcarusGOAP_StopFlying"
+        },
+        {
+            "Name": "Regain_Consciousness",
+            "Description": "Regain_Consciousness",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Unconscious",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Unconscious",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_RegainConsciousness.BP_IcarusGOAPAction_RegainConsciousness_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_RegainConsciousness.BT_IcarusGOAP_RegainConsciousness",
+            "AudioState": "Relaxing"
         }
     ]
 }

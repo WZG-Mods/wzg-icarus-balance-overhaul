@@ -12,15 +12,45 @@
         "TamedAI": {
             "RowName": "None",
             "DataTableName": "D_AISetup"
-        }
+        },
+        "JuvenileCreatureType": {
+            "RowName": "None",
+            "DataTableName": "D_AICreatureType"
+        },
+        "TemporaryTamingCreatureTypes": []
     },
     "Rows": [
         {
             "Name": "Moa",
-            "DesiredShelterPercentage": 21,
+            "DesiredShelterPercentage": 5,
             "TamedAI": {
                 "RowName": "Mount_Moa"
-            }
+            },
+            "JuvenileCreatureType": {
+                "RowName": "BabyMoa"
+            },
+            "TemporaryTamingCreatureTypes": [
+                {
+                    "RowName": "Moa",
+                    "DataTableName": "D_AICreatureType"
+                }
+            ]
+        },
+        {
+            "Name": "Buffalo",
+            "DesiredShelterPercentage": 5,
+            "TamedAI": {
+                "RowName": "Mount_Buffalo"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Buffalo"
+            },
+            "TemporaryTamingCreatureTypes": [
+                {
+                    "RowName": "Buffalo",
+                    "DataTableName": "D_AICreatureType"
+                }
+            ]
         }
     ]
 }

@@ -64,6 +64,7 @@
             "bCanKillCam": true,
             "Weight": 0.15000000596046448,
             "GravityScale": 0.5,
+            "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_SetOnFire.BP_Payload_SetOnFire_C",
             "PayloadDeploymentType": "OnBounceImmediate",
             "TrailParticle": "/Game/Fx/Particles/P_ArrowSmokeTrail.P_ArrowSmokeTrail",
@@ -2416,6 +2417,36 @@
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_KNIFE_FLY.SFX_BALLISTIC_KNIFE_FLY",
                 "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_KNIFE_HIT_GENERIC.SFX_BALLISTIC_KNIFE_HIT_GENERIC"
+            }
+        },
+        {
+            "Name": "Meta_Bolt_Tranquilizer",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 5,
+            "DamageVariationPercentage": 5,
+            "bCanStealthAttack": false,
+            "bCanKillCam": true,
+            "Weight": 0.1599999964237213,
+            "GravityScale": 0.5,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Arrow_Tranquilizer.BP_Payload_Arrow_Tranquilizer_C",
+            "TrailParticle": "/Game/Fx/Particles/P_ArrowTrail.P_ArrowTrail",
+            "BreakChance": 0,
+            "PostDeployLifetime": 60,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0.6000000238418579,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 5,
+                "MinFrictionFraction": 0
+            },
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_BLT_Standard_LARK_BallisticPhysicsAsset.SK_BLT_Standard_LARK_BallisticPhysicsAsset",
+            "SpawnPositionOffset": {
+                "X": 94
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_FLY.SFX_BALLISTIC_ARROW_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT"
             }
         }
     ]

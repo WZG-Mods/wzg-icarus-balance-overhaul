@@ -4879,6 +4879,55 @@
                 ]
             },
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Tranquilizer",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Disoriented.Icon_Disoriented'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tranquilizer-ModifierName\", \"Tranquilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tranquilizer-ModifierDescription\", \"Slowly debilitates target until it becomes temporarily tamed\")",
+            "GrantedStats": {
+                "(Value=\"BaseTranquilizerPercentPerMinute_+\")": 100
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Tamed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_PlayerSymbol_5.Icon_PlayerSymbol_5'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tamed-ModifierName\", \"Tamed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tamed-ModifierDescription\", \"Temporarily tamed. Doesn\\'t last forever!\")",
+            "GrantedStats": {
+                "(Value=\"IsTamed_?\")": 1
+            },
+            "Escalation": {
+                "RowName": "Taming_Sickness"
+            },
+            "EscalationTime": 10,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Tamed.BP_Modifier_Tamed_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Taming_Sickness",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_FoodPoisioning.Icon_FoodPoisioning'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Taming_Sickness-ModifierName\", \"Taming Sickness\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Taming_Sickness-ModifierDescription\", \"Suffering from withdrawal after being chemically tamed\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_AfflicationDamage.BP_ModifierStateBehaviour_AfflicationDamage_C",
+            "ModifierVariables": {
+                "DamagePercentage": {
+                    "BaseValue": 5,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false
         }
     ]
 }
