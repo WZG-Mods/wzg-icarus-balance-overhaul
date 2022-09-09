@@ -9,7 +9,13 @@
         },
         "DesiredShelterPercentage": 75,
         "DesiredNutritionPercentage": 50,
+        "RequiredTamingModifiers": [],
+        "ProhibitedTamingModifiers": [],
         "TamedAI": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "MatureCreatureType": {
             "RowName": "None",
             "DataTableName": "D_AISetup"
         },
@@ -17,40 +23,58 @@
             "RowName": "None",
             "DataTableName": "D_AICreatureType"
         },
-        "TemporaryTamingCreatureTypes": []
+        "bAutomaticallySpawnJuvenileWithParent": false,
+        "PercentChanceToSpawnJuvenile": 33,
+        "MaxNearbyAutoSpawnedJuveniles": 2
     },
     "Rows": [
         {
             "Name": "Moa",
+            "TameDurationInSeconds": 900,
             "DesiredShelterPercentage": 5,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
             "TamedAI": {
                 "RowName": "Mount_Moa"
             },
-            "JuvenileCreatureType": {
-                "RowName": "BabyMoa"
+            "MatureCreatureType": {
+                "RowName": "Moa"
             },
-            "TemporaryTamingCreatureTypes": [
-                {
-                    "RowName": "Moa",
-                    "DataTableName": "D_AICreatureType"
-                }
-            ]
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Moa"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50,
+            "MaxNearbyAutoSpawnedJuveniles": 5
         },
         {
             "Name": "Buffalo",
+            "TameDurationInSeconds": 900,
             "DesiredShelterPercentage": 5,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
             "TamedAI": {
                 "RowName": "Mount_Buffalo"
+            },
+            "MatureCreatureType": {
+                "RowName": "Buffalo"
             },
             "JuvenileCreatureType": {
                 "RowName": "Juvenile_Buffalo"
             },
-            "TemporaryTamingCreatureTypes": [
-                {
-                    "RowName": "Buffalo",
-                    "DataTableName": "D_AICreatureType"
-                }
-            ]
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50,
+            "MaxNearbyAutoSpawnedJuveniles": 5
         }
     ]
 }
