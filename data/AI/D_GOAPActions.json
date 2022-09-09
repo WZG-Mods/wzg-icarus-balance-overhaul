@@ -262,9 +262,8 @@
             "TimeOut": 45,
             "TickRate": 2,
             "AssociatedMovementState": "Jog",
-            "RangeCheckBehaviour": "ValidMove",
-            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatNearbyCarcasses.BP_IcarusGOAPAction_EatNearbyCarcasses_C",
-            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Wait.BT_IcarusGOAP_Wait",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EatFromContainer.BP_IcarusGOAPAction_EatFromContainer_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_EatFromContainer.BT_IcarusGOAP_EatFromContainer",
             "AudioState": "Relaxing"
         },
         {
@@ -368,6 +367,7 @@
                     "Value": false
                 }
             ],
+            "Cost": 2,
             "TimeOut": 90,
             "AssociatedMovementState": "Walk",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Rest.BP_IcarusGOAPAction_Rest_C",
@@ -876,6 +876,35 @@
             "AssociatedMovementState": "Walk",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_RegainConsciousness.BP_IcarusGOAPAction_RegainConsciousness_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_RegainConsciousness.BT_IcarusGOAP_RegainConsciousness",
+            "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Rest_At_Animal_Bed",
+            "Description": "Rest",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Tired",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Tired",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 90,
+            "TickRate": 2,
+            "AssociatedMovementState": "Walk",
+            "RangeCheckBehaviour": "ValidMove",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Rest_AnimalBed.BP_IcarusGOAPAction_Rest_AnimalBed_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Rest.BT_IcarusGOAP_Rest",
             "AudioState": "Relaxing"
         }
     ]
