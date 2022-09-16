@@ -4,6 +4,7 @@
         "FootstepSound": "None",
         "FrontFootSocket": "None",
         "RearFootSocket": "None",
+        "JumpSocket": "None",
         "MovementSound": "None",
         "DeathCollisionSound": "None",
         "DeathCollisionSocket": "None",
@@ -985,6 +986,63 @@
             "bUsesShelter": false
         },
         {
+            "Name": "Rockdog",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Rockdog/SFX_FOOTSTEP_ROCKDOG.SFX_FOOTSTEP_ROCKDOG",
+            "FrontFootSocket": "FootstepFront",
+            "RearFootSocket": "FootstepBack",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigJaw",
+            "AttackVocalisation": {
+                "RowName": "RockdogAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "RockdogFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "RockdogDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "RockdogIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BearAttacking",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            },
+            "FootstepMaxDistance": 6000,
+            "FoliageCheckMaxDistance": 6000
+        },
+        {
             "Name": "PolarBear_Boss",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Bear/SFX_CRE_FOOTSTEPS_BEAR.SFX_CRE_FOOTSTEPS_BEAR",
             "FrontFootSocket": "RigNeck2",
@@ -1873,6 +1931,53 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "BearCubAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            }
+        },
+        {
+            "Name": "SwampQuad",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/SwampQuad/SFX_FOOTSTEP_SWAMPQUAD.SFX_FOOTSTEP_SWAMPQUAD",
+            "FrontFootSocket": "FrontFootstep",
+            "RearFootSocket": "BackFootstep",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_MED.SFX_CRE_DEATHFALL_MED",
+            "VocalisationSocket": "RigHead",
+            "FlinchVocalisation": {
+                "RowName": "SwampQuadFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SwampQuadDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SwampQuadIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "SwampQuadFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
