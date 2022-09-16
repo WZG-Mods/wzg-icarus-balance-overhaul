@@ -3360,7 +3360,7 @@
         },
         {
             "Name": "STYX_A_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Small.T_Prospect_Forest_ExtractorExpedition01_Small",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ProspectMission_Construction1_Small.T_ProspectMission_Construction1_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3442,6 +3442,70 @@
                         "DataTableName": "D_MetaCurrency"
                     },
                     "Amount": 5
+                }
+            ],
+            "AccountExperience": 50,
+            "FactionExperience": 10
+        },
+        {
+            "Name": "STYX_B_Stockpile",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Farming01_Small.T_Prospect_Forest_Farming01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_B_Stockpile_Ship",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_B_Stockpile_List",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 1
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_B_Stockpile_List_0",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 1
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_B_Stockpile_List_1",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 1
+                }
+            ],
+            "Faction": {
+                "RowName": "ACS"
+            },
+            "InitialQuest": {
+                "RowName": "STYX_B_Stockpile"
+            },
+            "TalentsRewarded": [
+                {
+                    "RowName": "Prospect_Styx_B_Stockpile",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "CurrencyRewarded": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 50
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic1",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 100
                 }
             ],
             "AccountExperience": 50,
