@@ -379,7 +379,6 @@
                 "(Value=\"BaseOverencumberedMovementSpeed_+%\")": -70
             },
             "MergeType": "LongestDuration",
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -966,17 +965,21 @@
                     },
                     {
                         "TagName": "Character.Player.Invincible"
+                    },
+                    {
+                        "TagName": "ModifierState.Mount.Immune"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    2,
+                    3,
                     0,
-                    1
+                    1,
+                    2
                 ],
-                "AutoDescription": " NONE( ModifierState.Bandage, Character.Player.Invincible )"
+                "AutoDescription": " NONE( ModifierState.Bandage, Character.Player.Invincible, ModifierState.Mount.Immune )"
             }
         },
         {
@@ -1608,16 +1611,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.SutureKit"
+                    },
+                    {
+                        "TagName": "ModifierState.Mount.Immune"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "AutoDescription": " NONE( ModifierState.SutureKit )"
+                "AutoDescription": " NONE( ModifierState.SutureKit, ModifierState.Mount.Immune )"
             },
             "bEffectsNPCs": false
         },
@@ -4942,6 +4949,97 @@
             "MergeType": "LongestDuration",
             "bEffectsPlayers": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Tame_Hunger_1",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HungryDebuff.Icon_HungryDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_1-ModifierName\", \"Hunger I\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_1-ModifierDescription\", \"Your Tame is Hungry\")",
+            "GrantedStats": {
+                "(Value=\"HealthRegen_+%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": -15
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tame_Hunger_2",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HungryDebuff.Icon_HungryDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_2-ModifierName\", \"Hunger II\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_2-ModifierDescription\", \"Your Tame is Famished\")",
+            "GrantedStats": {
+                "(Value=\"HealthRegen_+%\")": -75,
+                "(Value=\"BaseMovementSpeed_+%\")": -30
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tame_Hunger_3",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HungryDebuff.Icon_HungryDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_3-ModifierName\", \"Hunger III\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_3-ModifierDescription\", \"Your Tame is Starving\")",
+            "GrantedStats": {
+                "(Value=\"HealthRegen_+%\")": -100,
+                "(Value=\"BaseMovementSpeed_+%\")": -60
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 10,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tame_Thirst_1",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ThirstyDebuff.Icon_ThirstyDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_1-ModifierName\", \"Thirst I\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_1-ModifierDescription\", \"Your Tame is Parched\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": -5
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tame_Thirst_2",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ThirstyDebuff.Icon_ThirstyDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_2-ModifierName\", \"Thirst II\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_2-ModifierDescription\", \"Your Tame is Thirsty\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": -50,
+                "(Value=\"BaseMovementSpeed_+%\")": -10,
+                "(Value=\"BaseStaminaRegenDelay_+%\")": 25
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tame_Thirst_3",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ThirstyDebuff.Icon_ThirstyDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_3-ModifierName\", \"Thirst III\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Thirst_3-ModifierDescription\", \"Your Tame is Dehydrated\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": -75,
+                "(Value=\"BaseMovementSpeed_+%\")": -15,
+                "(Value=\"BaseStaminaRegenDelay_+%\")": 50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 10,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Stack"
         }
     ]
 }

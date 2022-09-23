@@ -1800,22 +1800,21 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Traits.Buildable"
+                        "TagName": "Building.InteriorWood"
                     },
                     {
-                        "TagName": "Building.InteriorWood"
+                        "TagName": "Traits.Buildable"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    1,
+                    2,
                     2,
                     0,
                     1
                 ],
-                "UserDescription": "Any Wood Building",
-                "AutoDescription": " ANY( Traits.Buildable, Building.InteriorWood )"
+                "AutoDescription": " ALL( Building.InteriorWood, Traits.Buildable )"
             }
         },
         {
@@ -1845,22 +1844,21 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Traits.Buildable"
+                        "TagName": "Building.Iron"
                     },
                     {
-                        "TagName": "Building.Iron"
+                        "TagName": "Traits.Buildable"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    1,
+                    2,
                     2,
                     0,
                     1
                 ],
-                "UserDescription": "Any Iron Building",
-                "AutoDescription": " ANY( Traits.Buildable, Building.Iron )"
+                "AutoDescription": " ALL( Building.Iron, Traits.Buildable )"
             }
         },
         {
@@ -1868,22 +1866,21 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Traits.Buildable"
+                        "TagName": "Building.Aluminium"
                     },
                     {
-                        "TagName": "Building.Aluminium"
+                        "TagName": "Traits.Buildable"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    1,
+                    2,
                     2,
                     0,
                     1
                 ],
-                "UserDescription": "Any Aluminium Building",
-                "AutoDescription": " ANY( Traits.Buildable, Building.Aluminium )"
+                "AutoDescription": " ALL( Building.Aluminium, Traits.Buildable )"
             }
         },
         {
@@ -3502,6 +3499,86 @@
                     0
                 ],
                 "AutoDescription": " ANY( Item.Utility.Shield )"
+            }
+        },
+        {
+            "Name": "Building_Clay_Brick",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Building.ClayBrick"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Building.ClayBrick, Traits.Buildable )"
+            }
+        },
+        {
+            "Name": "Any_Tame_Food_Container",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.Tame.Food"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.Tame.Food )"
+            }
+        },
+        {
+            "Name": "Any_Tame_Water_Container",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.Tame.Water"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.Tame.Water )"
+            }
+        },
+        {
+            "Name": "Any_Tamed_Herbivore_Food",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Item.Seed, Item.Consumable.Food )"
             }
         }
     ]

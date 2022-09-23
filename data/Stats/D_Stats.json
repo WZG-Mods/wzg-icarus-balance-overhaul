@@ -551,6 +551,7 @@
         {
             "Name": "SprintSpeed_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"SprintSpeed_+-Title\", \"Sprint Speed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Agility.Icon_Agility",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "bIsReplicated": true,
@@ -8597,15 +8598,18 @@
         },
         {
             "Name": "BaseSaddleSlots_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSaddleSlots_+-PositiveDescription\", \"+{0} Generic Inventory Slots\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSaddleSlots_+-NegativeDescription\", \"-{0} Generic Inventory Slots\")"
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSaddleSlots_+-PositiveDescription\", \"+{0} Saddle Inventory Slots\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSaddleSlots_+-NegativeDescription\", \"-{0} Saddle Inventory Slots\")"
         },
         {
             "Name": "SaddleSlots_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"SaddleSlots_+-Title\", \"Saddle Slots\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
-            "bIsReplicated": true
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
         },
         {
             "Name": "CreatedBowHealthAlt_+",
@@ -9027,6 +9031,75 @@
         {
             "Name": "IsBlocking_?",
             "bIsReplicated": true
+        },
+        {
+            "Name": "BaseShatteringRewards_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShatteringRewards_%-PositiveDescription\", \"+{0}% Yield from Shattering\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShatteringRewards_%-NegativeDescription\", \"-{0}% Yield from Shattering\")",
+            "StatCategory": {
+                "RowName": "Shattering"
+            }
+        },
+        {
+            "Name": "ShatteringRewards_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ShatteringRewards_%-Title\", \"Shattering Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Shattering"
+            }
+        },
+        {
+            "Name": "BaseShatteringDamage_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShatteringDamage_+-PositiveDescription\", \"+{0} Shattering Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShatteringDamage_+-NegativeDescription\", \"-{0} Shattering Damage\")",
+            "StatCategory": {
+                "RowName": "Shattering"
+            }
+        },
+        {
+            "Name": "ShatteringDamage_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ShatteringDamage_+-Title\", \"Shattering Damage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Shattering"
+            }
+        },
+        {
+            "Name": "IsSaddleEquipped_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "BaseMountCargoSlots_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMountCargoSlots_+-PositiveDescription\", \"+{0} Mount Cargo Inventory Slots\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMountCargoSlots_+-NegativeDescription\", \"-{0} Mount Cargo Inventory Slots\")",
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "MountCargoSlots_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MountCargoSlots_+-Title\", \"Mount Cargo Slots\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "IsSaddleCargoUseOnly_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsSaddleCargoUseOnly_?-PositiveDescription\", \"Unrideable\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
         }
     ]
 }

@@ -592,7 +592,7 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_MED_Wood.SM_DEP_Crate_MED_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Med_Wood.SM_DEP_Crate_MED_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -1639,7 +1639,8 @@
             "SnapSocketsOrTags": [
                 "door_center"
             ],
-            "UseSnapSocketRotation": true
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Kitchen_Bench",
@@ -2741,8 +2742,9 @@
         {
             "Name": "Food_Trough",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough.BP_Food_Trough_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Wood.SM_DEP_Trough_Wood",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Wood_v2.SM_DEP_Trough_Wood_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Alteration_Bench",
@@ -2789,9 +2791,13 @@
         {
             "Name": "Animal_Bed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Animal_Bed.BP_Animal_Bed_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Rug_Deer.SM_DEP_Rug_Deer",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Animal_Bedding.SM_DEP_Animal_Bedding",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "bCanAffectNavigation": false
+            "bCanAffectNavigation": false,
+            "DeployCollisionExtentOffset": {
+                "X": -60,
+                "Y": -60
+            }
         },
         {
             "Name": "Spotlight_Tripod",
@@ -2811,6 +2817,31 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": -1
+        },
+        {
+            "Name": "Mission_Communicator_T2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T2.BP_Mission_Communication_T2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+        },
+        {
+            "Name": "Mission_Communicator_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T3.BP_Mission_Communication_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+        },
+        {
+            "Name": "Mission_Communicator_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T4.BP_Mission_Communication_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+        },
+        {
+            "Name": "Water_Trough",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough.BP_Water_Trough_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Wood_v2.SM_DEP_Trough_Wood_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "bCanAffectNavigation": false
         }
     ]
 }
