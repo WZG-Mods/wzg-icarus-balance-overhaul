@@ -795,6 +795,16 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon-Description\", \"RECON: Forest Zone\")"
         },
         {
+            "Name": "OLY_Forest_Craft_Axe",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Recon_Axe.BPQ_OLY_Recon_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Craft_Axe-Description\", \"Gather Sticks, Stones off the ground and Fiber from bushes then open the Crafting Menu (O) and Craft a Stone Axe for Protection\")"
+        },
+        {
+            "Name": "OLY_Forest_Craft_Torch",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Recon_Torch.BPQ_OLY_Recon_Torch_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Craft_Torch-Description\", \"Unlock a Wood Rag Torch (P) and Craft it with (O) to provide yourself light during the night\")"
+        },
+        {
             "Name": "OLY_Forest_Recon_Survive",
             "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Survive.BPQ_OLY_Survive_C"
         },
@@ -827,33 +837,30 @@
         {
             "Name": "OLY_Forest_Scan_Retrieve_Equipment",
             "Class": "/Game/BP/Quests/Common/BPQ_Retrieve_Radar.BPQ_Retrieve_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Retrieve_Equipment-Description\", \"Collect radar from supply pod\")",
-            "LocationQuery": {
-                "RowName": "T1_Forest_Scan_Equipment"
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Retrieve_Equipment-Description\", \"Collect a Radar from your Dropship\")"
         },
         {
             "Name": "OLY_Forest_Scan_Location_1",
-            "Class": "/Game/BP/Quests/Common/BPQ_Scan.BPQ_Scan_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_1-Description\", \"Scan Location 1\")",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_1-Description\", \"Scan Location 1 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Scan1"
             }
         },
         {
             "Name": "OLY_Forest_Scan_Location_2",
-            "Class": "/Game/BP/Quests/Common/BPQ_Scan.BPQ_Scan_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_2-Description\", \"Scan Location 2\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_2-Description\", \"Scan Location 2 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Scan2"
             }
         },
         {
             "Name": "OLY_Forest_Scan_Location_3",
-            "Class": "/Game/BP/Quests/Common/BPQ_Scan.BPQ_Scan_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
             "Variation": 2,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_3-Description\", \"Scan Location 3\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_3-Description\", \"Scan Location 3 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Scan3"
             }
@@ -6231,6 +6238,92 @@
             "Name": "STYX_B_Stockpile_Deposit_Cocoa",
             "Class": "/Game/BP/Quests/Styx/B/Stockpile/BPQ_STYX_B_Stockpile_Deposit_Cocoa.BPQ_STYX_B_Stockpile_Deposit_Cocoa_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Stockpile_Deposit_Cocoa-Description\", \"{0} / {1} Cocoa Seeds\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile.BPQ_OLY_Forest_WS_Stockpile_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile-Description\", \"STOCKPILE: Assisted Ore Recovery\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_WS_Stockpile_Ship"
+            }
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_List",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_List.BPQ_OLY_Forest_WS_Stockpile_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_List-Description\", \"Collect ores from the surface\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_List_0",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_List.BPQ_OLY_Forest_WS_Stockpile_List_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_List_0-Description\", \"Collect ores from inside nearby caves\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Ship",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Ship.BPQ_OLY_Forest_WS_Stockpile_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Ship-Description\", \"Stock ship as requested by Workshop Team\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Support",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Support.BPQ_OLY_Forest_WS_Stockpile_Support_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Support-Description\", \"OPTIONAL: Collect the tools provided by the Workshop Team\")",
+            "LocationQuery": {
+                "RowName": "BW6_Survey_Location2"
+            }
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Iron",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_IronOre.BPQ_OLY_Forest_WS_Stockpile_Deposit_IronOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Iron-Description\", \"{0} / {1} Iron Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Copper",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_CopperOre.BPQ_OLY_Forest_WS_Stockpile_Deposit_CopperOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Copper-Description\", \"{0} / {1} Copper Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Titanium",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_TitaniumOre.BPQ_OLY_Forest_WS_Stockpile_Deposit_TitaniumOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Titanium-Description\", \"{0} / {1} Titanium Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Gold",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_GoldOre.BPQ_OLY_Forest_WS_Stockpile_Deposit_GoldOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Gold-Description\", \"{0} / {1} Gold Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Platinum",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_PlatinumOre.BPQ_OLY_Forest_WS_Stockpile_Deposit_PlatinumOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Platinum-Description\", \"{0} / {1} Platinum Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Silica",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Silica.BPQ_OLY_Forest_WS_Stockpile_Deposit_Silica_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Silica-Description\", \"{0} / {1} Silica Ore\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Sulfur",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Sulfur.BPQ_OLY_Forest_WS_Stockpile_Deposit_Sulfur_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Sulfur-Description\", \"{0} / {1} Sulfur\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Stone",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Stone.BPQ_OLY_Forest_WS_Stockpile_Deposit_Stone_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Stone-Description\", \"{0} / {1} Stone\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Cave",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the enrance of the nearby cave.\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_WS_Stockpile_Cave"
+            }
+        },
+        {
+            "Name": "OLY_Common_Scan_Progress",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress_Radar_Audio.BPQ_Common_Progress_Radar_Audio_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Common_Scan_Progress-Description\", \"{0}% Complete\")"
         }
     ]
 }
