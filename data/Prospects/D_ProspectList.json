@@ -41,6 +41,7 @@
             "DataTableName": "D_FactionMissions"
         },
         "bIsPersistent": false,
+        "bIsOpenWorld": false,
         "TimeDuration": {
             "Days": {
                 "Min": 0,
@@ -429,24 +430,15 @@
         },
         {
             "Name": "Outpost006_Olympus",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Olympus-DropName\", \"DAYLIGHT: Olympus\")",
-            "DesignNotes": "Olympus Outpost",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Olympus-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Olympus-FlavourText\", \"Open untimed access to a stable forest region.\")",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Olympus-DropName\", \"Olympus\")",
+            "DesignNotes": "Olympus Open World",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Olympus-FlavourText\", \"The original region opened for prospecting. Olympus feels familiar with it\\'s lush forests, scorched deserts, and frozen tundras, but time spent exploring will reveal just how different it really is. Establish your claim where the entire story began.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Large.T_Prospect_Forest_ExtractorExpedition01_Large'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
                         {
-                            "RowName": "Player_XP_25%",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "NoCaveCreatures",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "Outpost_Olympus_Easy_Creatures",
+                            "RowName": "Easy_Creatures",
                             "DataTableName": "D_ProspectStats"
                         }
                     ],
@@ -454,21 +446,12 @@
                     "OverrideWeatherPercentageCurve": "None",
                     "OverrideFallbackWeatherPercentage": 0.20000000298023224,
                     "OverrideWeatherPool": {
-                        "RowName": "CosmeticWeatherPool_1",
+                        "RowName": "LightWeatherPool_1",
                         "DataTableName": "D_WeatherPools"
                     }
                 },
                 "Medium": {
-                    "DifficultyStats": [
-                        {
-                            "RowName": "Player_XP_25%",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "Outpost_Olympus_Medium_Creatures",
-                            "DataTableName": "D_ProspectStats"
-                        }
-                    ],
+                    "DifficultyStats": [],
                     "bOverrideWeather": true,
                     "OverrideWeatherPercentageCurve": "None",
                     "OverrideFallbackWeatherPercentage": 0.20000000298023224,
@@ -480,15 +463,15 @@
                 "Hard": {
                     "DifficultyStats": [
                         {
-                            "RowName": "Player_XP_25%",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
                             "RowName": "NPC_Increase_Hard",
                             "DataTableName": "D_ProspectStats"
                         },
                         {
-                            "RowName": "Outpost_Olympus_Hard_Creatures",
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
                             "DataTableName": "D_ProspectStats"
                         }
                     ],
@@ -499,43 +482,33 @@
                         "RowName": "HeavyWeatherPool_2",
                         "DataTableName": "D_WeatherPools"
                     }
+                }
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
                 },
-                "Extreme": {
-                    "DifficultyStats": [
-                        {
-                            "RowName": "Player_XP_25%",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "NPC_Increase_Hard",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "Outpost_Olympus_Hard_Creatures",
-                            "DataTableName": "D_ProspectStats"
-                        },
-                        {
-                            "RowName": "MapNerf",
-                            "DataTableName": "D_ProspectStats"
-                        }
-                    ],
-                    "bOverrideWeather": true,
-                    "OverrideWeatherPercentageCurve": "None",
-                    "OverrideFallbackWeatherPercentage": 0.5,
-                    "OverrideWeatherPool": {
-                        "RowName": "Multi_MedToHeavy_1",
-                        "DataTableName": "D_WeatherPools"
-                    }
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
                 }
             },
             "WeatherPool": {
-                "RowName": "CosmeticWeatherPool_1"
+                "RowName": "MediumWeatherPool_1"
             },
             "Terrain": {
                 "RowName": "Terrain_016"
             },
             "bIsPersistent": true,
+            "bIsOpenWorld": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "WorldStatList": [
+                {
+                    "RowName": "OpenWorld",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
             "AISpawnConfigOverride": {
                 "RowName": "Olympus"
             }
@@ -23221,6 +23194,95 @@
             "NumMetaSpawnsMin": 2,
             "NumMetaSpawnsMax": 2,
             "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T1_ForestExploration.GT_T016_Bounds_T1_ForestExploration"
+        },
+        {
+            "Name": "OpenWorld_Styx",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OpenWorld_Styx-DropName\", \"Styx\")",
+            "DesignNotes": "Styx Open World",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OpenWorld_Styx-FlavourText\", \"Centered around a braided river, Styx is a previously off-limits area of Icarus, with reports of unnatural growth rates and mutations in the planet\\'s wildlife. Balance risk with reward across arid, freezing, and deceivingly pleasant climates. Be one of the first to overcome the dangers.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Large.T_Prospect_Forest_ExtractorExpedition01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "LightWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.20000000298023224,
+                    "OverrideWeatherPool": {
+                        "RowName": "MediumWeatherPool_1",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "bOverrideWeather": true,
+                    "OverrideWeatherPercentageCurve": "None",
+                    "OverrideFallbackWeatherPercentage": 0.30000001192092896,
+                    "OverrideWeatherPool": {
+                        "RowName": "HeavyWeatherPool_2",
+                        "DataTableName": "D_WeatherPools"
+                    }
+                }
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                },
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                }
+            },
+            "WeatherPool": {
+                "RowName": "MediumWeatherPool_1"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "bIsPersistent": true,
+            "bIsOpenWorld": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "WorldStatList": [
+                {
+                    "RowName": "OpenWorld",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "AISpawnConfigOverride": {
+                "RowName": "Styx"
+            }
         }
     ]
 }

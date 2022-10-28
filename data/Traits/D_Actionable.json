@@ -1043,23 +1043,6 @@
             "bUseClientPrediction": true
         },
         {
-            "Name": "DEV_Meta_Reveal",
-            "ActionMapping": {
-                "(RowName=\"DEV_Meta_Reveal\",DataTableName=\"D_Actions\")": {
-                    "InputTypes": {
-                        "Primary": {
-                            "RowName": "None",
-                            "DataTableName": "D_StaminaActionCosts"
-                        }
-                    },
-                    "ModifierState": {
-                        "RowName": "None",
-                        "DataTableName": "D_ModifierStates"
-                    }
-                }
-            }
-        },
-        {
             "Name": "Building_UpgradeTool",
             "ActionMapping": {
                 "(RowName=\"Building_UpgradeTool\",DataTableName=\"D_Actions\")": {
@@ -1869,6 +1852,50 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "Throwing_Knife",
+            "ActionMapping": {
+                "(RowName=\"Throw_1H_Generic\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "Knife_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Primary": {
+                            "RowName": "Knife_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Throwing_Spear",
+            "ActionMapping": {
+                "(RowName=\"Throw_1H_Spear\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "Spear_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Primary": {
+                            "RowName": "Spear_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
         }
     ]
 }
