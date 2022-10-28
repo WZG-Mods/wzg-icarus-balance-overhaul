@@ -28,6 +28,34 @@
     ],
     "Rows": [
         {
+            "Name": "NoBiome",
+            "BiomeName": "Default (No Biome)",
+            "Color": {
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Conifer"
+            }
+        },
+        {
+            "Name": "Cave",
+            "BiomeName": "Cave",
+            "Color": {
+                "B": 255,
+                "G": 255,
+                "R": 255,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/CaveTemperatureCurve.CaveTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Cave"
+            },
+            "Audio": {
+                "RowName": "Cave"
+            }
+        },
+        {
             "Name": "Conifer",
             "BiomeName": "Forest",
             "Color": {
@@ -59,23 +87,6 @@
             }
         },
         {
-            "Name": "Lava",
-            "BiomeName": "Lava",
-            "Color": {
-                "G": 57,
-                "R": 255,
-                "A": 255
-            },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/LavaTemperatureCurve.LavaTemperatureCurve'",
-            "WeatherFrequency": 2,
-            "AtmosphereType": {
-                "RowName": "Lava"
-            },
-            "Audio": {
-                "RowName": "Lava"
-            }
-        },
-        {
             "Name": "Desert",
             "BiomeName": "Desert",
             "Color": {
@@ -90,64 +101,6 @@
             },
             "Audio": {
                 "RowName": "Desert"
-            }
-        },
-        {
-            "Name": "Wetlands",
-            "BiomeName": "Wetlands",
-            "Color": {
-                "B": 255,
-                "G": 46,
-                "A": 255
-            },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/WetlandsTemperatureCurve.WetlandsTemperatureCurve'",
-            "AtmosphereType": {
-                "RowName": "Conifer"
-            },
-            "Audio": {
-                "RowName": "Wetlands"
-            }
-        },
-        {
-            "Name": "Jungle",
-            "BiomeName": "Jungle",
-            "Color": {
-                "B": 55,
-                "G": 140,
-                "A": 255
-            },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/JungleTemperatureCurve.JungleTemperatureCurve'",
-            "WeatherFrequency": 2,
-            "AtmosphereType": {
-                "RowName": "Conifer"
-            }
-        },
-        {
-            "Name": "Cave",
-            "BiomeName": "Cave",
-            "Color": {
-                "B": 255,
-                "G": 255,
-                "R": 255,
-                "A": 255
-            },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/CaveTemperatureCurve.CaveTemperatureCurve'",
-            "AtmosphereType": {
-                "RowName": "Cave"
-            },
-            "Audio": {
-                "RowName": "Cave"
-            }
-        },
-        {
-            "Name": "NoBiome",
-            "BiomeName": "Default (No Biome)",
-            "Color": {
-                "A": 255
-            },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
-            "AtmosphereType": {
-                "RowName": "Conifer"
             }
         },
         {
@@ -414,8 +367,22 @@
             }
         },
         {
-            "Name": "DLC1_Tundra",
-            "BiomeName": "Tundra",
+            "Name": "Pro_Tundra",
+            "BiomeName": "Rolling Tundra",
+            "Color": {
+                "G": 128,
+                "R": 128,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "Audio": {
+                "RowName": "Arctic"
+            }
+        },
+        {
+            "Name": "Pro_FrigidLowlands",
+            "BiomeName": "Frigid Lowlands",
             "Color": {
                 "G": 128,
                 "R": 187,
@@ -425,6 +392,172 @@
             "WeatherFrequency": 2,
             "Audio": {
                 "RowName": "Arctic"
+            }
+        },
+        {
+            "Name": "Pro_GlacialCascade",
+            "BiomeName": "Glacial Cascade",
+            "Color": {
+                "B": 187,
+                "G": 187,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "Audio": {
+                "RowName": "Arctic"
+            }
+        },
+        {
+            "Name": "Pro_AlpineSteppe",
+            "BiomeName": "Alpine Steppe",
+            "Color": {
+                "B": 255,
+                "G": 32,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "Audio": {
+                "RowName": "Arctic"
+            }
+        },
+        {
+            "Name": "Pro_BasaltExpansion",
+            "BiomeName": "Basalt Expansion",
+            "Color": {
+                "G": 64,
+                "R": 255,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "AtmosphereType": {
+                "RowName": "Volcanic"
+            },
+            "Audio": {
+                "RowName": "Lava"
+            }
+        },
+        {
+            "Name": "Pro_LavaFlows",
+            "BiomeName": "Lava Flows",
+            "Color": {
+                "G": 187,
+                "R": 255,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "AtmosphereType": {
+                "RowName": "Volcanic"
+            },
+            "Audio": {
+                "RowName": "Lava"
+            }
+        },
+        {
+            "Name": "Pro_StillWater",
+            "BiomeName": "Still Water",
+            "Color": {
+                "B": 64,
+                "G": 255,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "Wetlands"
+            }
+        },
+        {
+            "Name": "Pro_ThePillars",
+            "BiomeName": "The Pillars",
+            "Color": {
+                "B": 255,
+                "R": 200,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "Wetlands"
+            }
+        },
+        {
+            "Name": "Pro_Wetlands",
+            "BiomeName": "Wetlands",
+            "Color": {
+                "B": 150,
+                "G": 255,
+                "R": 225,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "Wetlands"
+            }
+        },
+        {
+            "Name": "Pro_Marshlands",
+            "BiomeName": "Marshlands",
+            "Color": {
+                "B": 187,
+                "G": 128,
+                "R": 64,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "Wetlands"
+            }
+        },
+        {
+            "Name": "Pro_ShallowMire",
+            "BiomeName": "Shallow Mire",
+            "Color": {
+                "G": 255,
+                "R": 64,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "Wetlands"
+            }
+        },
+        {
+            "Name": "Pro_GrassyPlains",
+            "BiomeName": "Grassy Plains",
+            "Color": {
+                "G": 64,
+                "R": 16,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "AtmosphereType": {
+                "RowName": "Conifer"
+            },
+            "Audio": {
+                "RowName": "Conifer"
             }
         }
     ]

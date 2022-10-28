@@ -1856,6 +1856,61 @@
             }
         },
         {
+            "Name": "Needler",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Crocodile/SFX_CRE_FOOTSTEPS_CROCODILE.SFX_CRE_FOOTSTEPS_CROCODILE",
+            "FrontFootSocket": "FootFront",
+            "RearFootSocket": "FootBack",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Crocodile/SFX_CRE_FOLIAGE_CROCODILE.SFX_CRE_FOLIAGE_CROCODILE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigMouth",
+            "AttackVocalisation": {
+                "RowName": "NeedlerAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "NeedlerFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "NeedlerDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "NeedlerIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "NeedlerAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
             "Name": "Komodo",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Komodo_Dragon/SFX_CRE_FOOTSTEPS_KOMODO.SFX_CRE_FOOTSTEPS_KOMODO",
             "FrontFootSocket": "FootstepFront",
@@ -2093,6 +2148,59 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "SwampbirdAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Striker",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Moa/SFX_CRE_FOOTSTEPS_MOA.SFX_CRE_FOOTSTEPS_MOA",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigSpine",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "StrikerAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "StrikerFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "StrikerDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "StrikerIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "StrikerAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {

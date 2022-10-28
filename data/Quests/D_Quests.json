@@ -6365,7 +6365,7 @@
         {
             "Name": "OLY_Forest_WS_Stockpile_Cave",
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the entrance of the nearby cave.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the blocked entrance of the cave on the right of this gully.\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_WS_Stockpile_Cave"
             }
@@ -6517,59 +6517,208 @@
         },
         {
             "Name": "PRO_Story_3",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3.BPQ_PRO_Story3_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")"
         },
         {
             "Name": "PRO_Story3_Equipment",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Collect_Equipment.BPQ_PRO_Story3_Collect_Equipment_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")"
         },
         {
             "Name": "PRO_Story3_Triangulate",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Triangulate.BPQ_PRO_Story3_Triangulate_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate-Description\", \"Triangulate the Hidden Base\")"
         },
         {
             "Name": "PRO_Story3_Triangulate_1",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Triangulate_Scan.BPQ_PRO_Story3_Triangulate_Scan_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_3_Scan_1"
+            }
         },
         {
             "Name": "PRO_Story3_Triangulate_2",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_2-Description\", \"Scan Location Beta (M)\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Triangulate_Scan.BPQ_PRO_Story3_Triangulate_Scan_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_2-Description\", \"Scan Location Beta (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_3_Scan_2"
+            }
         },
         {
             "Name": "PRO_Story3_Triangulate_3",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Triangulate_Scan.BPQ_PRO_Story3_Triangulate_Scan_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_3_Scan_3"
+            }
         },
         {
             "Name": "PRO_Story3_Hidden_Base",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Base-Description\", \"Investigate the Hidden Base\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Hidden.BPQ_PRO_Story3_Hidden_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Base-Description\", \"Investigate the Hidden Base\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout2"
+            }
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Travel-Description\", \"Travel to the Hidden Base\")"
         },
         {
             "Name": "PRO_Story3_Hidden_Search",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Hidden_Search.BPQ_PRO_Story3_Hidden_Search_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
         },
         {
             "Name": "PRO_Story3_Hidden_Beacon",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Hidden_Beacon.BPQ_PRO_Story3_Hidden_Beacon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Beacon-Description\", \"Place the Beacon within the Base\")"
         },
         {
             "Name": "PRO_Story3_Recipe",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe.BPQ_PRO_Story3_Recipe_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
         },
         {
             "Name": "PRO_Story3_Recipe_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
         },
         {
             "Name": "PRO_Story3_Recipe_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe_Collect.BPQ_PRO_Story3_Recipe_Collect_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
         },
         {
             "Name": "PRO_Story3_Communicator",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Communicator.BPQ_PRO_Story3_Communicator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Craft and Place the new Communicator (Fabricator)\")"
         },
         {
             "Name": "PRO_Story_4",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: Prospectors MIA\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4.BPQ_PRO_Story4_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: MIA\")"
+        },
+        {
+            "Name": "PRO_Story4_Body1",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body1.BPQ_PRO_Story4_Body1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1-Description\", \"Find the Missing Group 15 Agents\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_1"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body1_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Travel-Description\", \"Head to the Last Broadcast Location (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_1_Search"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body1_Search",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Search-Description\", \"Search the Nearby Area for the Missing Agents\")"
+        },
+        {
+            "Name": "PRO_Story4_Body1_Interact",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body1_Interact.BPQ_PRO_Story4_Body1_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Interact-Description\", \"Examing the Agent Body For Information (F)\")"
+        },
+        {
+            "Name": "PRO_Story4_Body2",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body2.BPQ_PRO_Story4_Body2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2-Description\", \"Track Down the Remaining Agents\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_2"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body2_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Travel-Description\", \"Follow the Broadcast Signal to the Next Location (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_2_Search"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body2_Search",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Search-Description\", \"Search the Nearby Area for the Missing Agents\")"
+        },
+        {
+            "Name": "PRO_Story4_Body2_Interact",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body2_Interact.BPQ_PRO_Story4_Body2_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Interact-Description\", \"Examing the Agent Body For Information (F)\")"
+        },
+        {
+            "Name": "PRO_Story4_Body3",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3.BPQ_PRO_Story4_Body3_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3-Description\", \"Find the Last Agent\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_3"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body3_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Travel-Description\", \"Follow the Broadcast Signal to the Next Location (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Body_3_Search"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Body3_Search",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Search-Description\", \"Search the Nearby Area for the Last Agent\")"
+        },
+        {
+            "Name": "PRO_Story4_Body3_Creature",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Creature.BPQ_PRO_Story4_Body3_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Creature-Description\", \"Eliminate the Creature Guarding the Agents Body\")"
+        },
+        {
+            "Name": "PRO_Story4_Body3_Interact",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Interact.BPQ_PRO_Story4_Body3_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Interact-Description\", \"Check the Agents Body for Information (F)\")"
+        },
+        {
+            "Name": "PRO_Story4_Body3_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Collect.BPQ_PRO_Story4_Body3_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Collect-Description\", \"Take the Audio Recording From the Agents Body\")"
+        },
+        {
+            "Name": "PRO_Story4_Deliver_Sol",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Sol.BPQ_PRO_Story4_Sol_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Sol-Description\", \"Deliver the data to Sol\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Sol_Cache"
+            }
+        },
+        {
+            "Name": "PRO_Story4_Deliver_Sol_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Sol_Travel-Description\", \"Reach an Old Cache of Sol\\'s (M)\")"
+        },
+        {
+            "Name": "PRO_Story4_Deliver_Sol_Upload",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Sol_Upload.BPQ_PRO_Story4_Sol_Upload_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Sol_Upload-Description\", \"Interact with the Device to Upload the Audio Log (F)\")"
+        },
+        {
+            "Name": "PRO_Story4_Deliver_Group15",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Group15.BPQ_PRO_Story4_Group15_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Group15-Description\", \"Deliver the data to Group 15\")"
+        },
+        {
+            "Name": "PRO_Story4_Deliver_Group15_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Group15_Deliver.BPQ_PRO_Story4_Group15_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Group15_Deliver-Description\", \"Deliver the Audio Log to the Sinotai Retrieval Pod (M)\")"
         },
         {
             "Name": "PRO_Story_5",
@@ -6578,14 +6727,6 @@
         {
             "Name": "PRO_Story_6",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Mo\")"
-        },
-        {
-            "Name": "OLY_Forest_WS_Stockpile_Cave2",
-            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave2-Description\", \"Find the entrance of the cave deeper in the valley.\")",
-            "LocationQuery": {
-                "RowName": "T1_Forest_WS_Stockpile_Cave2"
-            }
         },
         {
             "Name": "OLY_Forest_WS_Stockpile_Bauxite",
