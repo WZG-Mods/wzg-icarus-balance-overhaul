@@ -2180,7 +2180,6 @@
                     }
                 ]
             },
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -4957,7 +4956,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_1-ModifierName\", \"Hunger I\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_1-ModifierDescription\", \"Your Tame is Hungry\")",
             "GrantedStats": {
-                "(Value=\"HealthRegen_+%\")": -25,
+                "(Value=\"BaseHealthRegen_+%\")": -25,
                 "(Value=\"BaseMovementSpeed_+%\")": -15
             },
             "MergeType": "Stack"
@@ -4969,7 +4968,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_2-ModifierName\", \"Hunger II\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_2-ModifierDescription\", \"Your Tame is Famished\")",
             "GrantedStats": {
-                "(Value=\"HealthRegen_+%\")": -75,
+                "(Value=\"BaseHealthRegen_+%\")": -75,
                 "(Value=\"BaseMovementSpeed_+%\")": -30
             },
             "MergeType": "Stack"
@@ -4981,7 +4980,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_3-ModifierName\", \"Hunger III\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Hunger_3-ModifierDescription\", \"Your Tame is Starving\")",
             "GrantedStats": {
-                "(Value=\"HealthRegen_+%\")": -100,
+                "(Value=\"BaseHealthRegen_+%\")": -100,
                 "(Value=\"BaseMovementSpeed_+%\")": -60
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
@@ -5040,6 +5039,55 @@
             },
             "ShouldTick": true,
             "MergeType": "Stack"
+        },
+        {
+            "Name": "GrantedAura_TamingSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_People.Icon_People'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_TamingSpeed-ModifierName\", \"Aura: Taming Speed Increase\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_TamingSpeed-ModifierDescription\", \"Nearby Juveniles Creatures are Tamed Faster \")",
+            "VisibleToPlayer": false,
+            "bAura": true,
+            "AuraRange": 3500,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsPlayers": false,
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_TamingSpeed"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_TamingSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Speed.Icon_Speed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_TamingSpeed-ModifierName\", \"Aura Effect: Taming Speed Increase\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_TamingSpeed-ModifierDescription\", \"Being Tamed Faster\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseTamingSpeed_%\")": 25
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Tame_Fed_Health_Regen",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegenBuff.Icon_HealthRegenBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Fed_Health_Regen-ModifierName\", \"Well Fed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tame_Fed_Health_Regen-ModifierDescription\", \"Increases health restoration speed\")",
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 1000
+            },
+            "ShouldTick": true,
+            "MergeType": "Stack",
+            "MaxStackNum": 10,
+            "bEffectsPlayers": false
         }
     ]
 }
