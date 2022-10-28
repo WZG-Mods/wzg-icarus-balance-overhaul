@@ -1352,7 +1352,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigJaw1",
             "AttackVocalisation": {
                 "RowName": "BuffaloAttack"
             },
@@ -2055,6 +2055,59 @@
             }
         },
         {
+            "Name": "Swampbird",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Moa/SFX_CRE_FOOTSTEPS_MOA.SFX_CRE_FOOTSTEPS_MOA",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigSpine",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "SwampbirdAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "SwampBirdFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SwampbirdDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SwampbirdIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SwampbirdAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
             "Name": "MoaTeenager",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Moa/SFX_CRE_FOOTSTEPS_MOA_TEENAGER.SFX_CRE_FOOTSTEPS_MOA_TEENAGER",
             "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
@@ -2139,7 +2192,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigJaw1",
             "AttackVocalisation": {
                 "RowName": "BuffaloAttack"
             },
@@ -2212,6 +2265,41 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "PredatorBird",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Kea/SFX_FOOTSTEP_KEA.SFX_FOOTSTEP_KEA",
+            "FrontFootSocket": "RigPelvis",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigNeck",
+            "AttackVocalisation": {
+                "RowName": "PredatorBirdAttack"
+            },
+            "DeathVocalisation": {
+                "RowName": "PredatorBirdDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "PredatorBirdIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 2000,
+            "FoliageCheckMaxDistance": 2000
         }
     ]
 }

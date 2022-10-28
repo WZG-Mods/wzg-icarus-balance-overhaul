@@ -205,7 +205,7 @@
         {
             "Name": "BW6_Extermination_Clue",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Extermination/BP_BW6_Extermination_Clue1.BP_BW6_Extermination_Clue1_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue-Description\", \"Track the Predator\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue-Description\", \"Track the Predator (M)\")",
             "LocationQuery": {
                 "RowName": "BW6_Extermination_Location1"
             }
@@ -214,7 +214,7 @@
             "Name": "BW6_Extermination_Clue_2",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Extermination/BP_BW6_Extermination_Clue2.BP_BW6_Extermination_Clue2_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue_2-Description\", \"Follow the Predator\\'s Trail\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue_2-Description\", \"Follow the Predator\\'s Trail (M)\")",
             "LocationQuery": {
                 "RowName": "BW6_Extermination_Location2"
             }
@@ -223,7 +223,7 @@
             "Name": "BW6_Extermination_Clue_3",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Extermination/BP_BW6_Extermination_Clue3.BP_BW6_Extermination_Clue3_C",
             "Variation": 2,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue_3-Description\", \"Locate the Predator\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Clue_3-Description\", \"Locate the Predator (M)\")",
             "LocationQuery": {
                 "RowName": "BW6_Extermination_Location3"
             }
@@ -549,8 +549,8 @@
         },
         {
             "Name": "BW6_Survey_Location",
-            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_BW5_Travel.BP_BW5_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_Location-Description\", \"Locate Supply Drop Crate\")"
+            "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BPQ_BW6_Survey_Travel.BPQ_BW6_Survey_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_Location-Description\", \"Travel to the Survey Deployment Location\")"
         },
         {
             "Name": "BW6_Survey_CollectRadar",
@@ -560,7 +560,7 @@
         {
             "Name": "BW6_Survey_DeployRadar1",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BP_BW6_Survey_DeployRadar1.BP_BW6_Survey_DeployRadar1_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar1-Description\", \"Deploy Geo-Station Near Crate\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar1-Description\", \"Deploy Geo-Station\")",
             "LocationQuery": {
                 "RowName": "BW6_Survey_Location1_Snap"
             }
@@ -568,7 +568,7 @@
         {
             "Name": "BW6_Survey_DeployRadar2",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BP_BW6_Survey_DeployRadar2.BP_BW6_Survey_DeployRadar2_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar2-Description\", \"Deploy Geo-Station Near Crate\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar2-Description\", \"Deploy Geo-Station\")",
             "LocationQuery": {
                 "RowName": "BW6_Survey_Location2_Snap"
             }
@@ -576,7 +576,7 @@
         {
             "Name": "BW6_Survey_DeployRadar3",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BP_BW6_Survey_DeployRadar3.BP_BW6_Survey_DeployRadar3_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar3-Description\", \"Deploy Geo-Station Near Crate\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployRadar3-Description\", \"Deploy Geo-Station\")",
             "LocationQuery": {
                 "RowName": "BW6_Survey_Location3_Snap"
             }
@@ -604,7 +604,7 @@
         {
             "Name": "BW6_Survey_DeployTransmitter",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BP_BW6_Survey_DeployTransmitter.BP_BW6_Survey_DeployTransmitter_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployTransmitter-Description\", \"Deploy Uplink Transmitter Near Crate\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DeployTransmitter-Description\", \"Deploy Uplink Transmitter Near the Supply Pod\")",
             "LocationQuery": {
                 "RowName": "BW6_Survey_Location4_Snap"
             }
@@ -617,7 +617,10 @@
         {
             "Name": "BW6_Survey_DefendTransmitter",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BP_BW6_Survey_DefendTransmitter.BP_BW6_Survey_DefendTransmitter_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DefendTransmitter-Description\", \"Defend Uplink Transmitter\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Survey_DefendTransmitter-Description\", \"Defend Uplink Transmitter from the Local Wildlife\")",
+            "LocationQuery": {
+                "RowName": "BW6_Survey_Location4_Snap"
+            },
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "FM4SurveyUplinkComplete",
@@ -638,7 +641,7 @@
         {
             "Name": "BW6_Extermination_Nightfall",
             "Class": "/Game/BP/Quests/Implementations/Bw6_Extermination/BP_BW6_Extermination_Nightfall.BP_BW6_Extermination_Nightfall_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Nightfall-Description\", \"Locate Den on Map at Nightfall\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Extermination_Nightfall-Description\", \"Locate Den on Map at Nightfall (M)\")",
             "LocationQuery": {
                 "RowName": "BW6_Extermination_Boss"
             }
@@ -967,56 +970,104 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_0-Description\", \"BIO-RESEARCH: Forest Biome\")"
         },
         {
+            "Name": "OLY_Forest_Research_Equipment",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Equipment.BPQ_OLY_Forest_Research_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-Description\", \"Collect the UDA Supplies from your Dropship\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Flora",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Flora.BPQ_OLY_Forest_Research_Flora_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Flora-Description\", \"Investigate Toxins at Location Alpha\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Research_Search1"
+            }
+        },
+        {
             "Name": "OLY_Forest_Research_Search_1",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Search_Area.BPQ_OLY_Forest_Research_Search_Area_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_1-Description\", \"Locate unusual biomatter in zone alpha\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_1-Description\", \"Travel To Location (M)\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Gas",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Locate.BPQ_OLY_Forest_Research_Locate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Gas-Description\", \"Find the Source of the Poison Gas Cloud \")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Research_Item1"
+            }
+        },
+        {
+            "Name": "OLY_Forest_Research_Collect_Flora_Sample",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Flora.BPQ_OLY_Forest_Research_Collect_Flora_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Flora_Sample-Description\", \"Collect a Sample from the Plant\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Creature",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Creature.BPQ_OLY_Forest_Research_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Creature-Description\", \"Investigate Toxins at Location Beta\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Research_Search2"
             }
         },
         {
             "Name": "OLY_Forest_Research_Search_2",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Search_Area.BPQ_OLY_Forest_Research_Search_Area_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_2-Description\", \"Locate unusual biomatter in zone beta\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_2-Description\", \"Travel To Location (M)\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Kill_Creature",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Kill_Creature.BPQ_OLY_Forest_Research_Kill_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Kill_Creature-Description\", \"Locate and Kill the Contaminated Creature\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Collect_Creature_Sample",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Digested.BPQ_OLY_Forest_Research_Collect_Digested_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Creature_Sample-Description\", \"Skin the Contaminated Creature Carcass and Collect a Sample\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Ship",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Ship.BPQ_OLY_Forest_Research_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Ship-Description\", \"Investigate The Toxins Apparent Origin\")",
             "LocationQuery": {
-                "RowName": "T1_Forest_Research_Item2"
+                "RowName": "T1_Forest_Research_Search3"
             }
         },
         {
             "Name": "OLY_Forest_Research_Search_3",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Search_Area.BPQ_OLY_Forest_Research_Search_Area_C",
             "Variation": 2,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_3-Description\", \"Locate unusual biomatter in zone gamma\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Search_3-Description\", \"Find the Downed UDA Research Vessel\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Collect_Bioweapon",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Bioweapon.BPQ_OLY_Forest_Research_Collect_Bioweapon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Bioweapon-Description\", \"Collect the Chemical Weapon Remains\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Research_Item3"
             }
         },
         {
-            "Name": "OLY_Forest_Research_Collect_Item_1",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Item.BPQ_OLY_Forest_Research_Collect_Item_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Item_1-Description\", \"Interact with flower to gather sample\")",
+            "Name": "OLY_Forest_Research_Deliver",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Deliver.BPQ_OLY_Forest_Research_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver-Description\", \"Deliver the Samples the Supply Pod (M)\")",
             "LocationQuery": {
-                "RowName": "T1_Forest_Research_Item1"
+                "RowName": "T1_Forest_Research_Deliver"
             }
         },
         {
-            "Name": "OLY_Forest_Research_Collect_Item_2",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Item.BPQ_OLY_Forest_Research_Collect_Item_C",
-            "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Item_2-Description\", \"Interact with flower to gather sample\")",
-            "LocationQuery": {
-                "RowName": "T1_Forest_Research_Item2"
-            }
+            "Name": "OLY_Forest_Research_Deliver_Flora",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Deliver_Flora.BPQ_OLY_Forest_Research_Deliver_Flora_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver_Flora-Description\", \"{0}/{1} Flora Biomatter\")"
         },
         {
-            "Name": "OLY_Forest_Research_Collect_Item_3",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Item.BPQ_OLY_Forest_Research_Collect_Item_C",
-            "Variation": 2,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Item_3-Description\", \"Interact with flower to gather sample\")",
-            "LocationQuery": {
-                "RowName": "T1_Forest_Research_Item3"
-            }
+            "Name": "OLY_Forest_Research_Deliver_Digested_Biomatter",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Deliver_Digested_Biomatter.BPQ_OLY_Forest_Research_Deliver_Digested_Biomatter_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver_Digested_Biomatter-Description\", \"{0}/{1} Digested Biomatter\")"
+        },
+        {
+            "Name": "OLY_Forest_Research_Deliver_Bioweapon",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Deliver_Bioweapon.BPQ_OLY_Forest_Research_Deliver_Bioweapon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver_Bioweapon-Description\", \"{0}/{1} Damaged Bioweapon\")"
         },
         {
             "Name": "OLY_Forest_Extermination_0",
@@ -3265,7 +3316,7 @@
         {
             "Name": "OLY_Omni_Recovery_Launch",
             "Class": "/Game/BP/Quests/Olympus/Omni/Recovery/BPQ_OLY_Omni_Recovery_Launch.BPQ_OLY_Omni_Recovery_Launch_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Recovery_Launch-Description\", \"Trigger the Ship to Lanch (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Recovery_Launch-Description\", \"Trigger the Ship to Launch (F)\")"
         },
         {
             "Name": "Common_Travel",
@@ -5459,7 +5510,7 @@
         {
             "Name": "OLY_Forest_Construction_Statue",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Statue.BPQ_OLY_Forest_Construction_Statue_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Statue-Description\", \"Rustic Statues {0} / {1}\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Statue-Description\", \"Rustic Icarus Statues {0} / {1}\")"
         },
         {
             "Name": "OLY_Forest_Construction_Fireplace",
@@ -6268,7 +6319,7 @@
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Support.BPQ_OLY_Forest_WS_Stockpile_Support_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Support-Description\", \"OPTIONAL: Collect the tools provided by the Workshop Team\")",
             "LocationQuery": {
-                "RowName": "BW6_Survey_Location2"
+                "RowName": "BW6_Extermination_Location3"
             }
         },
         {
@@ -6314,7 +6365,7 @@
         {
             "Name": "OLY_Forest_WS_Stockpile_Cave",
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the enrance of the nearby cave.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the entrance of the nearby cave.\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_WS_Stockpile_Cave"
             }
@@ -6324,6 +6375,222 @@
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress_Radar_Audio.BPQ_Common_Progress_Radar_Audio_C",
             "Variation": 1,
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Common_Scan_Progress-Description\", \"{0}% Complete\")"
+        },
+        {
+            "Name": "OLY_Forest_Survey_Progress",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Progress_Radar_Audio.BPQ_Common_Progress_Radar_Audio_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Progress-Description\", \"{0}% Complete\")"
+        },
+        {
+            "Name": "OLY_Forest_Survey_Retrieve_Equipment",
+            "Class": "/Game/BP/Quests/Implementations/Bw6_Survey/BPQ_BW6_Retrieve_Equipment.BPQ_BW6_Retrieve_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Retrieve_Equipment-Description\", \"Collect the Survey Equipment from your Dropship\")"
+        },
+        {
+            "Name": "OLY_Forest_Survey_Transmitter_Health",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Object_Health.BPQ_Common_Object_Health_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Transmitter_Health-Description\", \"Tansmitter Health: {0}/{1}\")"
+        },
+        {
+            "Name": "PRO_Story_1",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1.BPQ_PRO_Story1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")"
+        },
+        {
+            "Name": "PRO_Story1_Base",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Base.BPQ_PRO_Story1_Base_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Base-Description\", \"Build yourself a small base of operations\")"
+        },
+        {
+            "Name": "PRO_Story1_Bed",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Bed.BPQ_PRO_Story1_Bed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Bed-Description\", \"{0} / {1} Bed\")"
+        },
+        {
+            "Name": "PRO_Story1_Oxite_Dissolver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Dissolver.BPQ_PRO_Story1_Dissolver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Oxite_Dissolver-Description\", \"{0} / {1} Oxidizer\")"
+        },
+        {
+            "Name": "PRO_Story1_Crafting_Bench",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Crafting.BPQ_PRO_Story1_Crafting_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Crafting_Bench-Description\", \"{0} / {1} Crafting Bench\")"
+        },
+        {
+            "Name": "PRO_Story1_Campfire",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Campfire.BPQ_PRO_Story1_Campfire_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Campfire-Description\", \"{0} / {1} Campfire\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Location",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Location-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Creature",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Creature.BPQ_PRO_Story1_Recipe_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Kill the Guarding Creature\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Collect.BPQ_PRO_Story1_Recipe_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story1_Communicator",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Communicator.BPQ_PRO_Story1_Communicator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Build & Place the New Communicator (Crafting Bench)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest.BPQ_PRO_Story1_Mini_Quest_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Tomatoes",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Tomatoes.BPQ_PRO_Story1_Mini_Quest_Tomatoes_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Tomatoes-Description\", \"Cultivate and Harvest One Tomato (Farming Plot)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Deliver.BPQ_PRO_Story1_Mini_Quest_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Deliver-Description\", \"Deliver the Harvest to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Collect_Reward",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Reward.BPQ_PRO_Story1_Mini_Quest_Reward_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Reward-Description\", \"Collect the Reward from the Sinotai Reward Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story_2",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2.BPQ_PRO_Story2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_2-Description\", \"RECOVERY: Stolen Items\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout1"
+            }
+        },
+        {
+            "Name": "PRO_Story2_Investigate",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate.BPQ_PRO_Story2_Investigate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Search",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Search.BPQ_PRO_Story2_Investigate_Search_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Deliver.BPQ_PRO_Story2_Investigate_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Deliver-Description\", \"Deliver the Stolen Materials to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe.BPQ_PRO_Story2_Recipe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe_Collect.BPQ_PRO_Story2_Recipe_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story2_Communicator",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Communicator.BPQ_PRO_Story2_Communicator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+        },
+        {
+            "Name": "PRO_Story_3",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")"
+        },
+        {
+            "Name": "PRO_Story3_Equipment",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate-Description\", \"Triangulate the Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_1",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_2",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_2-Description\", \"Scan Location Beta (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_3",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Base",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Base-Description\", \"Investigate the Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Search",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Beacon",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Beacon-Description\", \"Place the Beacon within the Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe_Travel",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe_Collect",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story3_Communicator",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+        },
+        {
+            "Name": "PRO_Story_4",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: Prospectors MIA\")"
+        },
+        {
+            "Name": "PRO_Story_5",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5-Description\", \"DEFENCE: Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story_6",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Mo\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Cave2",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave2-Description\", \"Find the entrance of the cave deeper in the valley.\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_WS_Stockpile_Cave2"
+            }
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Bauxite",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite.BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Bauxite-Description\", \"{0} / {1} Aluminium Ore\")"
         }
     ]
 }

@@ -169,10 +169,8 @@
         {
             "Name": "Elephant",
             "Base": {
-                "(Value=\"BaseMeleeDamage_+\")": 50,
                 "(Value=\"BaseMovementSpeed_+\")": 175,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseMaximumHealth_+\")": 1250,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -192,6 +190,8 @@
                 "(Value=\"BaseSlowResistance_%\")": 33,
                 "(Value=\"BaseImmobiliseResistance_%\")": 33
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_ElephantHealth.C_ElephantHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ElephantDamage.C_ElephantDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -365,10 +365,8 @@
         {
             "Name": "Mammoth",
             "Base": {
-                "(Value=\"BaseMeleeDamage_+\")": 50,
                 "(Value=\"BaseMovementSpeed_+\")": 175,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseMaximumHealth_+\")": 1250,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -390,6 +388,8 @@
                 "(Value=\"BaseSlowResistance_%\")": 40,
                 "(Value=\"BaseImmobiliseResistance_%\")": 40
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_MammothHealth.C_MammothHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MammothDamage.C_MammothDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
@@ -1273,6 +1273,119 @@
                 "(Value=\"BaseWaterConsumptionPerMinute_+\")": 0
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "RockDog",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 50,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
+                "(Value=\"BaseCharacterMass_+\")": 600,
+                "(Value=\"BaseNPCAttackRadius_+\")": 400,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 100,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 33,
+                "(Value=\"BaseImmobiliseResistance_%\")": 33
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_RockDog_Health.C_RockDog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_RockDog_MeleeDamage.C_RockDog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_RockDogMovementSpeed.C_RockDogMovementSpeed'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseDeepWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_BeerDeepWoundChance.C_BeerDeepWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "BatDog_Growth",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_BatDog_Health.C_BatDog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BatDog_MeleeDamage.C_BatDog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_BatDog_MovementSpeed.C_BatDog_MovementSpeed'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_BatDog_WoundChance.C_BatDog_WoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Needler",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 100,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseCharacterMass_+\")": 400,
+                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 75,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 150,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 800,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 2750,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 750,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 33,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_NeedlerHealth.C_NeedlerHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_NeedlerMeleeDamage.C_NeedlerMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseDeepWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_CrocodileDeepWoundChance.C_CrocodileDeepWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }

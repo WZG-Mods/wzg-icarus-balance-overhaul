@@ -27120,6 +27120,30 @@
             ]
         },
         {
+            "Name": "Prospect_OLY_Forest_WS_Stockpile",
+            "ExtraData": {
+                "RowName": "Tier1_Forest_WS_Stockpile",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 3500,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "ProspectReroute_2",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Saddle_Standard",
             "ExtraData": {
                 "RowName": "Item_Saddle_Standard",
@@ -27142,6 +27166,750 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Husbandry_TameSpeedAura",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameSpeedAura-DisplayName\", \"Nurturing Presence\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameSpeedAura-Description\", \"Nearby juvenile creatures tame faster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_GatheringGuru.Talent_GatheringGuru",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"GrantedAuraTamingSpeed_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameTempTolerance",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
+        },
+        {
+            "Name": "Husbandry_MountSpeed",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_MountSpeed-DisplayName\", \"Like the wind\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_MountSpeed-Description\", \"Tamed creatures move faster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_SwiftStalker.Talent_Hunting_SwiftStalker",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMovementSpeed_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameCarryingCapacity",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            }
+        },
+        {
+            "Name": "Husbandry_TameUpkeep",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameUpkeep-DisplayName\", \"Efficient Feeding\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameUpkeep-Description\", \"Tamed creatures need less food and water\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_Cooking_FreshIsBest.Talent_Cooking_FreshIsBest",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureWaterConsumption_+%\")": -15,
+                        "(Value=\"BaseTamedCreatureFoodConsumption_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureWaterConsumption_+%\")": -30,
+                        "(Value=\"BaseTamedCreatureFoodConsumption_+%\")": -30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TamingCosts",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_ForagingYield",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_StaminaRecharge",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_StaminaRecharge-DisplayName\", \"Energetic Encouragement\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_StaminaRecharge-Description\", \"Tamed creatures have faster stamina regeneration and require less sleep when taming\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Solo/Talent_Solo_LightningRecovery.Talent_Solo_LightningRecovery",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureStaminaRegen_+%\")": 5,
+                        "(Value=\"BaseJuvenileCreatureSleepRequirement_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureStaminaRegen_+%\")": 10,
+                        "(Value=\"BaseJuvenileCreatureSleepRequirement_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_SaddleCost",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_Stamina",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_Stamina-DisplayName\", \"Beasts Endurance\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_Stamina-Description\", \"Increase tamed creature stamina\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_ChaseEmDown.Talent_Hunting_ChaseEmDown",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 550,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameCarryingCapacity",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
+        },
+        {
+            "Name": "Husbandry_TameCarryingCapacity",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameCarryingCapacity-DisplayName\", \"Long Haul\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameCarryingCapacity-Description\", \"Increase tamed creature carrying capacity\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_DensePacking.Talent_Resources_DensePacking",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureWeightCapacity_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureWeightCapacity_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureWeightCapacity_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_RidingEfficiency",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_TameHealth",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_SaddleCost",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_SaddleCost-DisplayName\", \"Back in the Saddle\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_SaddleCost-Description\", \"Reduced crafting cost of Saddles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_CarefulSkinner.Talent_Hunting_CarefulSkinner",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 550,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSaddleCraftingCost_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSaddleCraftingCost_+%\")": -40
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_JuvenileThreat",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_JuvenileThreat-DisplayName\", \"(Still) One With Nature\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_JuvenileThreat-Description\", \"Juvenile creatures are not attacked by hostile wildlife\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_ColdHearted.Talent_Hunting_ColdHearted",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 400,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"JuvenileCreatureFriendlyToPredators_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameSpeedAura",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_TameTempTolerance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameTempTolerance-DisplayName\", \"Adaptive Training\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameTempTolerance-Description\", \"Greater temperature range for taming\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_ForestMaster.Talent_Exploration_ForestMaster",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 400
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -5,
+                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -10,
+                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameUpkeep",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            }
+        },
+        {
+            "Name": "Husbandry_RidingEfficiency",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_RidingEfficiency-DisplayName\", \"Relaxed Rider\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_RidingEfficiency-Description\", \"Decreased oxygen, food and water costs while riding\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Solo/Talent_Solo_LowMaintanence.Talent_Solo_LowMaintanence",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedOxygenConsumption_+%\")": -15,
+                        "(Value=\"BaseMountedFoodConsumption_+%\")": -15,
+                        "(Value=\"BaseMountedWaterConsumption_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedOxygenConsumption_+%\")": -30,
+                        "(Value=\"BaseMountedFoodConsumption_+%\")": -30,
+                        "(Value=\"BaseMountedWaterConsumption_+%\")": -30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_StaminaRecharge",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            }
+        },
+        {
+            "Name": "Husbandry_RidingExposureResist",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_RidingExposureResist-DisplayName\", \"In Your Element\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_RidingExposureResist-Description\", \"Increased Exposure Resistance while riding\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_StormChaser.Talent_Exploration_StormChaser",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedExposureResistance_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedExposureResistance_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameHeatTolerance",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_TameColdTolerance",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            }
+        },
+        {
+            "Name": "Husbandry_TameHealth",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHealth-DisplayName\", \"Hardy Diet\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHealth-Description\", \"Increase tamed creature health and health regeneration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_HealthBars.Talent_Hunting_HealthBars",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 600
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMaximumHealth_+%\")": 10,
+                        "(Value=\"BaseTamedCreatureHealthRegen_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMaximumHealth_+%\")": 20,
+                        "(Value=\"BaseTamedCreatureHealthRegen_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamedCreatureMaximumHealth_+%\")": 30,
+                        "(Value=\"BaseTamedCreatureHealthRegen_+%\")": 45
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_Reroute",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_RidingEfficiency",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            }
+        },
+        {
+            "Name": "Husbandry_TameColdTolerance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-DisplayName\", \"Arctic Training\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-Description\", \"Faster taming in colder environments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_ArcticMaster.Talent_Exploration_ArcticMaster",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameSpeedAura",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
+        },
+        {
+            "Name": "Husbandry_TameHeatTolerance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-DisplayName\", \"Desert Training\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-Description\", \"Faster taming in hotter environments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_DesertMaster.Talent_Exploration_DesertMaster",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameSpeedAura",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
+        },
+        {
+            "Name": "Husbandry_TamingCosts",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TamingCosts-DisplayName\", \"Well Cared For\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TamingCosts-Description\", \"Reduced crafting cost of taming equipment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_EfficientLogsman.Talent_Resources_EfficientLogsman",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamingEquipmentCraftingCost_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTamingEquipmentCraftingCost_+%\")": -40
+                    },
+                    "GrantedFlags": []
+                }
+            ]
+        },
+        {
+            "Name": "Husbandry_ParentDamage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_ParentDamage-DisplayName\", \"Rapid Adoption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_ParentDamage-Description\", \"Increased damage from stealth\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_TrainedHunter.Talent_Hunting_TrainedHunter",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStealthDamage_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_ForagingYield",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_SaddleCost",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Husbandry_Threat",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_Threat-DisplayName\", \"Act Natural\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_Threat-Description\", \"Reduced tamed creature threat and threat while riding\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_RefinedGhillerArmour.Talent_Hunting_RefinedGhillerArmour",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 600
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedAnimalThreatModifier_+%\")": -10,
+                        "(Value=\"BaseTamedCreatureThreatModifier_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedAnimalThreatModifier_+%\")": -20,
+                        "(Value=\"BaseTamedCreatureThreatModifier_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountedAnimalThreatModifier_+%\")": -30,
+                        "(Value=\"BaseTamedCreatureThreatModifier_+%\")": -30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_TameHealth",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            }
+        },
+        {
+            "Name": "Husbandry_ForagingYield",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_ForagingYield-DisplayName\", \"Grazing for the herd\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_ForagingYield-Description\", \"Increases foraging yield\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_Cooking_AllFoodGroups.Talent_Cooking_AllFoodGroups",
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 350,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ]
+        },
+        {
+            "Name": "Husbandry_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Construction_Husbandry"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 450
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Husbandry_ParentDamage",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_TameUpkeep",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
         }
     ]
 }
