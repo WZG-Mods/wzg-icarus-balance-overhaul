@@ -974,22 +974,6 @@
                         "RowName": "None",
                         "DataTableName": "D_ModifierStates"
                     }
-                },
-                "(RowName=\"Throw_1H_Generic\",DataTableName=\"D_Actions\")": {
-                    "InputTypes": {
-                        "Secondary": {
-                            "RowName": "Knife_Throw",
-                            "DataTableName": "D_StaminaActionCosts"
-                        },
-                        "Reload": {
-                            "RowName": "None",
-                            "DataTableName": "D_StaminaActionCosts"
-                        }
-                    },
-                    "ModifierState": {
-                        "RowName": "None",
-                        "DataTableName": "D_ModifierStates"
-                    }
                 }
             },
             "bUseClientPrediction": true
@@ -1858,10 +1842,6 @@
             "ActionMapping": {
                 "(RowName=\"Throw_1H_Generic\",DataTableName=\"D_Actions\")": {
                     "InputTypes": {
-                        "Secondary": {
-                            "RowName": "Knife_Throw",
-                            "DataTableName": "D_StaminaActionCosts"
-                        },
                         "Primary": {
                             "RowName": "Knife_Throw",
                             "DataTableName": "D_StaminaActionCosts"
@@ -1880,12 +1860,68 @@
             "ActionMapping": {
                 "(RowName=\"Throw_1H_Spear\",DataTableName=\"D_Actions\")": {
                     "InputTypes": {
-                        "Secondary": {
-                            "RowName": "Spear_Throw",
-                            "DataTableName": "D_StaminaActionCosts"
-                        },
                         "Primary": {
                             "RowName": "Spear_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Melee_2HSpear",
+            "ActionMapping": {
+                "(RowName=\"Melee_2H_Spear\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Spear_Melee",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Crossbow_Titanium",
+            "ActionMapping": {
+                "(RowName=\"Weapon_Semi_Auto\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_Generic_Aim\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_RoundFeed\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Reload": {
+                            "RowName": "None",
                             "DataTableName": "D_StaminaActionCosts"
                         }
                     },

@@ -3634,6 +3634,128 @@
                 ],
                 "AutoDescription": " ALL( Item.Meta.Consumable )"
             }
+        },
+        {
+            "Name": "Any_Throwing_Knife",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Knife"
+                    },
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    2,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Tool.Knife ),  ALL( Item.Tool.Thrown ) )"
+            }
+        },
+        {
+            "Name": "Any_Melee_Knife",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Knife"
+                    },
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    3,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Tool.Knife ),  NONE( Item.Tool.Thrown ) )"
+            }
+        },
+        {
+            "Name": "Any_Throwing_Spear",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Spear"
+                    },
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    2,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Weapon.Spear ),  ALL( Item.Tool.Thrown ) )"
+            }
+        },
+        {
+            "Name": "Any_Melee_Spear",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Spear"
+                    },
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    3,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Weapon.Spear ),  NONE( Item.Tool.Thrown ) )"
+            }
+        },
+        {
+            "Name": "Any_Throwing_Weapon",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Tool.Thrown )"
+            }
         }
     ]
 }

@@ -8113,7 +8113,7 @@
                 }
             },
             "Audio": {
-                "RowName": "Moa"
+                "RowName": "Swampbird"
             },
             "CollisionHitEventBones": [
                 "RigChest",
@@ -8221,7 +8221,7 @@
                 }
             },
             "Audio": {
-                "RowName": "MoaMount"
+                "RowName": "Swampbird"
             },
             "CollisionHitEventBones": [
                 "RigChest",
@@ -8233,6 +8233,387 @@
             ],
             "Loot": {
                 "RowName": "Moa_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            },
+            "bUseSurvivalCharacterState": true,
+            "bStartWithSurvivalTickDisabled": false
+        },
+        {
+            "Name": "Chamois_Var",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Chamois_Var_Character.BP_NPC_Chamois_Var_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Chamois_Variant"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Chamois_Var"
+            },
+            "GOAPSetup": {
+                "RowName": "Chamois_M"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "DefaultMediumHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Chamois_M"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 3,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 5.449999809265137,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "HuntingSetup": {
+                "RowName": "Deer"
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Chamois"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigSpine3",
+                "RigSpine1",
+                "RigPelvis"
+            ],
+            "Loot": {
+                "RowName": "Chamois_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
+        },
+        {
+            "Name": "BlueBack",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_BlueBack_Character.BP_NPC_BlueBack_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "BlueBack"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_BlueBack"
+            },
+            "GOAPSetup": {
+                "RowName": "BlueBack"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumHerbivore"
+            },
+            "AIGrowth": {
+                "RowName": "BlueBack"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6499999761581421,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 10.770000457763672,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Buffalo"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck1",
+                "RigNeck2",
+                "RigChest",
+                "RigSpine2",
+                "RigSpine1",
+                "RigPelvis",
+                "RigHead"
+            ],
+            "Trophy": {
+                "RowName": "Buffalo_Head"
+            },
+            "Loot": {
+                "RowName": "Buffalo_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            }
+        },
+        {
+            "Name": "Mount_BlueBack",
+            "ActorClass": "/Game/BP/Mounts/BP_Mount_Blueback.BP_Mount_Blueback_C",
+            "ControllerClass": "/Game/BP/AI/Basic/Mounts/BP_MountAIController.BP_MountAIController_C",
+            "CreatureType": {
+                "RowName": "BlueBack"
+            },
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Blueback_Mount"
+            },
+            "Relationships": {
+                "RowName": "Player"
+            },
+            "AIGrowth": {
+                "RowName": "Mount_Buffalo"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6499999761581421,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 90,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 90,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 80,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 10.770000457763672,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "BuffaloMount"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck1",
+                "RigNeck2",
+                "RigChest",
+                "RigSpine2",
+                "RigSpine1",
+                "RigPelvis",
+                "RigHead"
+            ],
+            "Trophy": {
+                "RowName": "Buffalo_Head"
+            },
+            "Loot": {
+                "RowName": "Buffalo_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones"
