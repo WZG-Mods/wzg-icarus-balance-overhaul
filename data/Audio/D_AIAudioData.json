@@ -474,6 +474,76 @@
             "FoliageCheckMaxDistance": 6000
         },
         {
+            "Name": "Batdog",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_WOLF_FOOTSTEPS.SFX_CRE_WOLF_FOOTSTEPS",
+            "FrontFootSocket": "RigLFLeg1",
+            "RearFootSocket": "RigLBLeg1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigJaw",
+            "AttackVocalisation": {
+                "RowName": "BatdogAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "BatdogFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "BatdogDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BatdogIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BatdogAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BatdogIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            },
+            "FoliageCheckMaxDistance": 6000
+        },
+        {
             "Name": "Cougar",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Jaguar/SFX_CRE_JAGUAR_FOOTSTEPS.SFX_CRE_JAGUAR_FOOTSTEPS",
             "FrontFootSocket": "RigLFLeg1",
