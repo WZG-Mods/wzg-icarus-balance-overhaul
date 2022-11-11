@@ -499,7 +499,7 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_MED_Wood.SM_DEP_Crate_MED_Wood",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Med_Wood.SM_DEP_Crate_MED_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -2108,6 +2108,36 @@
             "MaxRestackingAmount": 1
         },
         {
+            "Name": "ConiferWolf_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_ConiferWolf_Trophy.BP_ConiferWolf_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ConiferWolf_Trophy.SM_DEP_ConiferWolf_Trophy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "SnowWolf_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_SnowWolf_Trophy.BP_SnowWolf_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_SnowWolf_Trophy.SM_DEP_SnowWolf_Trophy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "DesertWolf_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_DesertWolf_Trophy.BP_DesertWolf_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_DesertWolf_Trophy.SM_DEP_DesertWolf_Trophy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
             "Name": "Water_Sprinkler",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Sprinklers/BP_Water_Sprinkler.BP_Water_Sprinkler_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Sprinkler_SML_v2.SM_DEP_Sprinkler_SML_v2",
@@ -2647,6 +2677,13 @@
             "AudioOcclusionAmount": 0.5
         },
         {
+            "Name": "Target_DPSDummy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Targets/BP_DPSTestDummy.BP_DPSTestDummy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Target_Dummy.SM_DEP_Target_Dummy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5
+        },
+        {
             "Name": "Bullseye_Target",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Targets/BP_DeployableBullseye.BP_DeployableBullseye_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Target_Dummy_Bullseye.SM_DEP_Target_Dummy_Bullseye",
@@ -2750,6 +2787,7 @@
             "Name": "Fortification_Wood_Wall",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Wall.BP_Fortification_Wood_Wall_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Wall_0.ITEM_Wood_Wall_0",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Fortification_Wood_Wall-DeployableName\", \"Wall\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Wall.SM_DEP_Fortification_Wood_Wall",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
@@ -2777,6 +2815,7 @@
             "Name": "Fortification_Wood_Spikes",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Spikes.BP_Fortification_Wood_Spikes_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Scorpion_Hedgehog_Medium.ITEM_Scorpion_Hedgehog_Medium",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Fortification_Wood_Spikes-DeployableName\", \"Wall Spikes\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Spikes.SM_DEP_Fortification_Wood_Spikes",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
@@ -2800,28 +2839,8 @@
             "Name": "Fortification_Wood_Stairs",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Stairs.BP_Fortification_Wood_Stairs_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Ramp_1.ITEM_Wood_Ramp_1",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Stairs.SM_DEP_Fortification_Wood_Stairs",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "SnapToSurfaceNormal": false,
-            "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
-            "SnapActorTags": [
-                "Kitchen"
-            ],
-            "SnapSocketsOrTags": [
-                "Stairs"
-            ],
-            "UseSnapSocketRotation": true,
-            "MaxRestackingAmount": 10,
-            "DeployCollisionExtentOffset": {
-                "Z": -200
-            }
-        },
-        {
-            "Name": "Fortification_Wood_Walkway",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Wall_Walkway.BP_Fortification_Wood_Wall_Walkway_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Ramp_1.ITEM_Wood_Ramp_1",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Walkway.SM_DEP_Fortification_Wood_Walkway",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Fortification_Wood_Stairs-DeployableName\", \"Front Ramp\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_FRamp.SM_DEP_Fortification_Wood_FRamp",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
@@ -2835,8 +2854,54 @@
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10,
             "DeployCollisionExtentOffset": {
-                "Y": -200,
                 "Z": -200
+            }
+        },
+        {
+            "Name": "Fortification_Wood_Walkway_SideRamp",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_SideRamp.BP_Fortification_Wood_SideRamp_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Ramp_1.ITEM_Wood_Ramp_1",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Fortification_Wood_Walkway_SideRamp-DeployableName\", \"Walkway Side Ramp\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_FRamp.SM_DEP_Fortification_Wood_FRamp",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Side_Ramp",
+                "Side_Ramp_1"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10,
+            "DeployCollisionExtentOffset": {
+                "Y": -50,
+                "Z": -200
+            }
+        },
+        {
+            "Name": "Fortification_Wood_Walkway",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Wall_Walkway.BP_Fortification_Wood_Wall_Walkway_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Ramp_1.ITEM_Wood_Ramp_1",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Fortification_Wood_Walkway-DeployableName\", \"Walkway\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Walkway.SM_DEP_Fortification_Wood_Walkway",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Walkway"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10,
+            "DeployCollisionExtentOffset": {
+                "Y": -20,
+                "Z": -20
             }
         },
         {
@@ -2844,6 +2909,33 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Exotic_Delivery_Interface.BP_Exotic_Delivery_Interface_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ExoticDeliveryRadio_T2.SM_DEP_ExoticDeliveryRadio_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD"
+        },
+        {
+            "Name": "Fortification_Wood_Gate",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fortification/BP_Fortification_Wood_Gate.BP_Fortification_Wood_Gate_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Railing_Gate.ITEM_Wood_Railing_Gate",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_Fortification_Wood_Gate.SM_Fortification_Wood_Gate",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_1",
+                "Unit_2",
+                "Unit_3",
+                "Unit_4",
+                "Unit_5",
+                "Unit_6",
+                "Unit_7",
+                "Unit_8"
+            ],
+            "UseSnapSocketScale": true,
+            "MaxRestackingAmount": 10,
+            "DeployCollisionExtentOffset": {
+                "Z": -150
+            }
         }
     ]
 }

@@ -6729,11 +6729,6 @@
             }
         },
         {
-            "Name": "PRO_Story_5_Equipment",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Equipment.BPQ_PRO_Story5_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")"
-        },
-        {
             "Name": "PRO_Story_5_Investigate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Investigate.BPQ_PRO_Story5_Investigate_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate-Description\", \"Investigate the Possible Outpost Location\")"
@@ -6746,7 +6741,7 @@
         {
             "Name": "PRO_Story_5_Investigate_Enter",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Enter-Description\", \"Enter the Outpost (WARNING: Explosive Mines Detected)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Enter-Description\", \"Enter the Outpost <Warning>(WARNING: Explosive Mines Detected)</>\")"
         },
         {
             "Name": "PRO_Story_5_Outpost",
@@ -6755,7 +6750,7 @@
         },
         {
             "Name": "PRO_Story_5_Outpost_Power",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Transmit.BPQ_PRO_Story5_Outpost_Transmit_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Power.BPQ_PRO_Story5_Outpost_Power_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Power-Description\", \"Provite Electric Power to the Device (10000W)\")"
         },
         {
@@ -6766,7 +6761,7 @@
         {
             "Name": "PRO_Story_5_Outpost_Warning",
             "Class": "/Script/Icarus.Quest",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Warning-Description\", \"WANRING: Device will Attract Hordes of Cretures\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Warning-Description\", \"<Warning>WARNING: Device will Attract Hordes of Creatures</>\")"
         },
         {
             "Name": "PRO_Story_5_Outpost_Progress",
@@ -6776,7 +6771,17 @@
         {
             "Name": "PRO_Story_5_Beacon",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Beacon.BPQ_PRO_Story5_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon-Description\", \"Place Down a Beacon within the Outpost\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon-Description\", \"Notify Group 15 of the Outposts Location\")"
+        },
+        {
+            "Name": "PRO_Story_5_Beacon_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Beacon_Craft.BPQ_PRO_Story5_Beacon_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Craft-Description\", \"Craft A Beacon (Fabricator)\")"
+        },
+        {
+            "Name": "PRO_Story_5_Beacon_Place",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Beacon_Place.BPQ_PRO_Story5_Beacon_Place_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Place-Description\", \"Place Down a Beacon within the Outpost\")"
         },
         {
             "Name": "PRO_Story_5_Run",
@@ -6786,21 +6791,165 @@
         {
             "Name": "PRO_Story_5_Run_Loot",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Run_Loot.BPQ_PRO_Story5_Run_Loot_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Run_Loot-Description\", \"{0} Seconds\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Run_Loot-Description\", \"(Optional) Loot the Base\")"
         },
         {
             "Name": "PRO_Story_5_Run_Timer",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Run_Timer.BPQ_PRO_Story5_Run_Timer_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Run_Timer-Description\", \"(Optional) Loot the Base\")"
-        },
-        {
-            "Name": "PRO_Story_6",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Mo\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Run_Timer-Description\", \"{0} Seconds\")"
         },
         {
             "Name": "OLY_Forest_WS_Stockpile_Bauxite",
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite.BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Bauxite-Description\", \"{0} / {1} Aluminium Ore\")"
+        },
+        {
+            "Name": "PRO_Story_6",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6.BPQ_PRO_Story6_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Traitor\")"
+        },
+        {
+            "Name": "PRO_Story6_Equipment",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment-Description\", \"Collect the Specialist Equipment Provided by Group 15\")"
+        },
+        {
+            "Name": "PRO_Story6_Equipment_Delivery",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Delivery-Description\", \"Collect the Equipment from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor-Description\", \"Track down the Traitor\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Trail",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Investigation",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Investigation-Description\", \"Investigate the Area for Signs of the Traitor\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Agent",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Agent-Description\", \"Examine the Dead Group 15 Agent (F)\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Trait2",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trait2-Description\", \"Head to the Agents Last Tracked Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_AgentCamp",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_AgentCamp-Description\", \"Examine the Agents Camp\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Defend",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Defend-Description\", \"Hack into the Data Storage Device\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Defend_Progress",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Defend_Progress-Description\", \"{0}% Complete\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Defend_Defend",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Defend_Defend-Description\", \"Defend the Device {0}/{0}\")"
+        },
+        {
+            "Name": "PRO_Story6_MoCamp",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp-Description\", \"Find the Camp Found in the Hacked Data\")"
+        },
+        {
+            "Name": "PRO_Story6_MoCamp_Travel",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Travel-Description\", \"Head to the Camp (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_MoCamp_Investigate",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Investigate-Description\", \"Investigate the Camp For the Traitors Location\")"
+        },
+        {
+            "Name": "PRO_Story6_MoCamp_Creature",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Creature-Description\", \"Defeat The Creature Defending the Camp\")"
+        },
+        {
+            "Name": "PRO_Story6_MoCamp_Collect",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Collect-Description\", \"Search the Container\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence-Description\", \"Find the Evidence\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Travel",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Travel-Description\", \"Travel to the Location of the Evidence (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Creature",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Creature-Description\", \"Defeat the Giant Lava Creature\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect-Description\", \"Enter the Cave and Find the Evidence\")"
+        },
+        {
+            "Name": "DYN_Reward",
+            "Class": "/Game/BP/Quests/Dynamic/BPQ_Dynamic_Reward.BPQ_Dynamic_Reward_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Reward-Description\", \"Collect Payment from the Sinotai Reward Pod (M)\")"
+        },
+        {
+            "Name": "DYN_Kill",
+            "Class": "/Game/BP/Quests/Dynamic/Kill/BPQ_DYN_Kill.BPQ_DYN_Kill_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Kill-Description\", \"SMPL: Crazed Creature\")"
+        },
+        {
+            "Name": "DYN_Kill_Boss",
+            "Class": "/Game/BP/Quests/Dynamic/Kill/BPQ_DYN_Kill_Boss.BPQ_DYN_Kill_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Kill_Boss-Description\", \"Kill Nearby Epic Creature (M)\")"
+        },
+        {
+            "Name": "DYN_Grow",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Grow-Description\", \"SMPL: Farming\")"
+        },
+        {
+            "Name": "DYN_Grow_Deliver",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Grow_Deliver-Description\", \"Grow and deliver {0} to the Sinotai Retrieval Pod {1}/{2}\")"
+        },
+        {
+            "Name": "DYN_Resources",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Resources-Description\", \"SMPL: Resources\")"
+        },
+        {
+            "Name": "DYN_Resource_Deliver",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Resource_Deliver-Description\", \"Collect and deliver {0} to the Sinotai Retrieval Pod {1}/{2}\")"
+        },
+        {
+            "Name": "DYN_DogTags",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_DogTags-Description\", \"SMPL: Dogtags\")"
+        },
+        {
+            "Name": "DYN_DogTags_Collect",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_DogTags_Collect-Description\", \"Search the Area and Collect DogTags from Fallen Prospectors {0}/{1}\")"
+        },
+        {
+            "Name": "DYN_Scan",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan-Description\", \"SMPL: Scan\")"
+        },
+        {
+            "Name": "DYN_Scan_Location",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Location-Description\", \"Scan the Marked Location (M)\")"
+        },
+        {
+            "Name": "DYN_Cache",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Cache-Description\", \"SMPL: Hidden Cache\")"
+        },
+        {
+            "Name": "DYN_Cache_Find",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Cache_Find-Description\", \"Search the Area for a Hidden Cache (M)\")"
+        },
+        {
+            "Name": "DYN_Exterminate",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Exterminate-Description\", \"SMPL: Extermination\")"
+        },
+        {
+            "Name": "DYN_Exterminate_Creatures",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Exterminate_Creatures-Description\", \"{0}/{1} {2} Exterminated\")"
         }
     ]
 }

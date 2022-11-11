@@ -1649,57 +1649,6 @@
             }
         },
         {
-            "Name": "Building_UpgradeTool",
-            "Requirement": {
-                "RowName": "Building_UpgradeTool"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Fiber",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 10,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Stick",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 4,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Stone",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 6,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Building_UpgradeTool",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
             "Name": "Wood_Frame",
             "bForceDisableRecipe": true,
             "RecipeSets": [
@@ -16477,11 +16426,11 @@
         {
             "Name": "WaterBomb",
             "Requirement": {
-                "RowName": "Water_Bomb"
+                "RowName": "WaterBomb"
             },
             "RecipeSets": [
                 {
-                    "RowName": "Character",
+                    "RowName": "Crafting_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -23993,6 +23942,150 @@
                 {
                     "Element": {
                         "RowName": "AlphaWolf_Trophy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "ConiferWolf_Trophy",
+            "RecipeSets": [
+                {
+                    "RowName": "Trophy_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "ConiferWolf_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "ConiferWolf_Trophy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "SnowWolf_Trophy",
+            "RecipeSets": [
+                {
+                    "RowName": "Trophy_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "SnowWolf_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "SnowWolf_Trophy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "DesertWolf_Trophy",
+            "RecipeSets": [
+                {
+                    "RowName": "Trophy_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "DesertWolf_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "DesertWolf_Trophy",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -34616,6 +34709,11 @@
                     "DataTableName": "D_RecipeSets"
                 }
             ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseBowCraftingCost_+%"
+                }
+            ],
             "Inputs": [
                 {
                     "Element": {
@@ -34682,6 +34780,11 @@
                 {
                     "RowName": "Fabricator",
                     "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseBowCraftingCost_+%"
                 }
             ],
             "Inputs": [
