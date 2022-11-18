@@ -3488,7 +3488,7 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Utility.Shield"
+                        "TagName": "Item.Shield"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3498,7 +3498,8 @@
                     1,
                     0
                 ],
-                "AutoDescription": " ANY( Item.Utility.Shield )"
+                "UserDescription": "Any Shields",
+                "AutoDescription": " ANY( Item.Shield )"
             }
         },
         {
@@ -3755,6 +3756,107 @@
                     0
                 ],
                 "AutoDescription": " ALL( Item.Tool.Thrown )"
+            }
+        },
+        {
+            "Name": "Harvest_Sledgehammer",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Harvest.Sledgehammer )"
+            }
+        },
+        {
+            "Name": "Any_Equipable_With_Left_Hand",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Axe"
+                    },
+                    {
+                        "TagName": "Item.Tool.Firewhacker"
+                    },
+                    {
+                        "TagName": "Item.Tool.Knife"
+                    },
+                    {
+                        "TagName": "Item.Tool.Pickaxe"
+                    },
+                    {
+                        "TagName": "Item.Tool.Shovel"
+                    },
+                    {
+                        "TagName": "Item.Tool.Sickle"
+                    },
+                    {
+                        "TagName": "Item.Weapon"
+                    },
+                    {
+                        "TagName": "Item.Torch"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    8,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "AutoDescription": " ANY( Item.Tool.Axe, Item.Tool.Firewhacker, Item.Tool.Knife, Item.Tool.Pickaxe, Item.Tool.Shovel, Item.Tool.Sickle, Item.Weapon, Item.Torch )"
+            }
+        },
+        {
+            "Name": "Any_Off_Hand",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Shield"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "UserDescription": "Items that can be dual wielded in left hand",
+                "AutoDescription": " ANY( Item.Shield )"
+            }
+        },
+        {
+            "Name": "WaterTrough",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.Tame.Water"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.Tame.Water )"
             }
         }
     ]
