@@ -906,6 +906,90 @@
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Rest_AnimalBed.BP_IcarusGOAPAction_Rest_AnimalBed_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_Rest.BT_IcarusGOAP_Rest",
             "AudioState": "Relaxing"
+        },
+        {
+            "Name": "Enraged_Attack",
+            "Description": "Enraged_Attack",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Enraged",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Enraged",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                },
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Attacking",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_EnragedAttack.BP_IcarusGOAPAction_EnragedAttack_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_EnragedAttack.BT_IcarusNPCGOAP_EnragedAttack",
+            "AudioState": "Attacking"
+        },
+        {
+            "Name": "Hunt_Target",
+            "Description": "Hunt_Target",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sneak",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_HuntTarget.BP_IcarusGOAPAction_HuntTarget_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_HuntTarget.BT_IcarusNPCGOAP_HuntTarget",
+            "AudioState": "Attacking"
         }
     ]
 }

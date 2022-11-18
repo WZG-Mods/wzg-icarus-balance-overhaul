@@ -3430,7 +3430,7 @@
         {
             "Name": "Cooked_Corn",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_CharredCorn.ITEM_CharredCorn'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Corn-ModifierName\", \"Cooked Corn\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Corn-ModifierName\", \"Charred Corn\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Corn-ModifierDescription\", \"Enhances stamina and improves endurance. \")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
@@ -3452,7 +3452,7 @@
         {
             "Name": "Cooked_Pumpkin",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_GrilledPumpkin.ITEM_GrilledPumpkin'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Pumpkin-ModifierName\", \"Cooked Pumpkin\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Pumpkin-ModifierName\", \"Grilled Pumpkin\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Pumpkin-ModifierDescription\", \"Boosts stamina and exposure resistance.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
@@ -3496,7 +3496,7 @@
         {
             "Name": "Cooked_Carrot",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_BarbequeCarrot.ITEM_BarbequeCarrot'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Carrot-ModifierName\", \"Cooked Carrot\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Carrot-ModifierName\", \"Barbeque Carrot\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Carrot-ModifierDescription\", \"Lifts stamina a little.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
@@ -3518,7 +3518,7 @@
         {
             "Name": "Cooked_Mushroom",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_SearedMushroom.ITEM_SearedMushroom'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Mushroom-ModifierName\", \"Cooked Mushroom\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Mushroom-ModifierName\", \"Seared Mushroom\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Mushroom-ModifierDescription\", \"Boosts health and stamina regeneration.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
@@ -3544,7 +3544,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Corn_Soup-ModifierDescription\", \"Boosts stamina and improve endurance noticeably.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
-                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
                 "(Value=\"BaseStaminaActionCost_+%\")": -20
             },
             "ModifierEffectivenessAffectors": [
@@ -3566,7 +3566,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Mushroom_Soup-ModifierDescription\", \"Boosts health and stamina regeneration.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
-                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
                 "(Value=\"BaseStaminaRegen_+%\")": 10
             },
             "ModifierEffectivenessAffectors": [
@@ -5088,6 +5088,225 @@
             "MergeType": "Stack",
             "MaxStackNum": 10,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Enraged",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Enraged-ModifierName\", \"Enraged\")",
+            "ModifierDescription": "",
+            "VisibleToPlayer": false,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Enraged.BP_Modifier_Enraged_C",
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Cooked_Potato",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Potato-ModifierName\", \"Crispy Potato\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Potato-ModifierDescription\", \"Lifts stamina, reduces food need.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Cooked_Tomato",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Tomato-ModifierName\", \"Fried Tomato\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Tomato-ModifierDescription\", \"Lifts stamina, increases health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Hearty_Salad",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Hearty_Salad-ModifierName\", \"Hearty Salad\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Hearty_Salad-ModifierDescription\", \"Lifts health, stamina and health regen.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 20
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tomato_Soup",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tomato_Soup-ModifierName\", \"Tomato Soup\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tomato_Soup-ModifierDescription\", \"Boosts stamina and improve health regeneration noticeably.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseHealthRegen_+%\")": 20
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Picked_Tomato",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Tomato-ModifierName\", \"Pickled Tomato\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Tomato-ModifierDescription\", \"Boosts max stamina and health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseHealthRegen_+%\")": 20,
+                "(Value=\"BaseSharedExperience_+%\")": 20
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Potato_Carrot_Fries",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Potato_Carrot_Fries-ModifierName\", \"Potato and Carrot Fries\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Potato_Carrot_Fries-ModifierDescription\", \"Boosts health and stamina. Increase health regeneration and projectile damage, reduce food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseProjectileDamage_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Potato_Bread",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Potato_Bread-ModifierName\", \"Potato Bread\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Potato_Bread-ModifierDescription\", \"Stamina boost, reduces food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseFoodConsumption_+%\")": -20,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Shepherds_Pie",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Shepherds_Pie-ModifierName\", \"Shepherd\\'s Pie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Shepherds_Pie-ModifierDescription\", \"Big health boost, lifts stamina, boosts health regeneration and reduces food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 225,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 40,
+                "(Value=\"BaseFoodConsumption_+%\")": -20,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Cooked_Soy_Bean",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Soy_Bean-ModifierName\", \"Crunchy Soy Bean\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Soy_Bean-ModifierDescription\", \"Enhances health and health regen.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
         }
     ]
 }

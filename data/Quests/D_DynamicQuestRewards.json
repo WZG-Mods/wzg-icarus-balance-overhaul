@@ -1,0 +1,1726 @@
+{
+    "RowStruct": "/Script/Icarus.DynamicQuestReward",
+    "Defaults": {
+        "DisplayName": "",
+        "Description": "",
+        "PotentialRewards": [],
+        "Weighting": 100
+    },
+    "Rows": [
+        {
+            "Name": "Weapon_Crossbow",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Crossbow-DisplayName\", \"Hunting Equipment: Crossbows\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Crossbow-Description\", \"A collection of hunting equipment provided by Sinotai.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T2_Bolts",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_Crossbow",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Weapon_Bow",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Bow-DisplayName\", \"Hunting Equipment: Bows\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Bow-Description\", \"A collection of hunting equipment provided by The Assembly.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T2_Arrows",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_Bow",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Weapon_Bow_Special",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Bow_Special-DisplayName\", \"Hunting Equipment: Bows\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Bow_Special-Description\", \"A collection of hunting equipment provided by The Assembly.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T2_Arrows",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_Bow",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Ammo_T1_Arrows_Special",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 20
+        },
+        {
+            "Name": "Weapon_Pistol",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Pistol-DisplayName\", \"Hunting Equipment: Pistol\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Pistol-Description\", \"A collection of hunting equipment provided by Uniao.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T3_PistolRound",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T3_Pistol",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 40
+        },
+        {
+            "Name": "Weapon_Shotgun",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Shotgun-DisplayName\", \"Hunting Equipment: Shotgun\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Shotgun-Description\", \"A collection of hunting equipment provided by Sinotai.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T3_ShotgunShell",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T3_Shotgun",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 25
+        },
+        {
+            "Name": "Weapon_Rifle",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Rifle-DisplayName\", \"Hunting Equipment: Rifle\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Rifle-Description\", \"A collection of hunting equipment provided by ACS.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Ammo_T3_RifleRound",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T3_Rifles",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 5
+        },
+        {
+            "Name": "Weapon_Knife",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Knife-DisplayName\", \"Hunting Equipment: Knives\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Knife-Description\", \"A collection of hunting equipment provided by UDA.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Knife",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_ThrowingKnife",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Weapon_Spear",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Spear-DisplayName\", \"Hunting Equipment: Spears\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Spear-Description\", \"A collection of hunting equipment provided by Uniao.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_Spear",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_ThrowingSpear",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Weapon_Thrown",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Thrown-DisplayName\", \"Hunting Equipment: Thrown Weapons\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Weapon_Thrown-Description\", \"A collection of hunting equipment provided by The Assembly.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_ThrowingKnife",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Weapon_T2_ThrowingSpear",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Alterations_Bench",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Bench-DisplayName\", \"Modification Tech\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Bench-Description\", \"An introduction to item modification, sponsored by UDA.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Melee",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Bench_Alteration",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Alterations_Knife",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Knife-DisplayName\", \"Technology Advancement: Knife\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Knife-Description\", \"Modifications available for knives and other equipment.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Melee",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Attachment_Knife",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 65
+        },
+        {
+            "Name": "Alterations_Pickaxe",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Pickaxe-DisplayName\", \"Technology Advancement: Pickaxe\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Pickaxe-Description\", \"Modifications available for pickaxes and other tools.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Melee",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Attachment_Pickaxe",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 65
+        },
+        {
+            "Name": "Alterations_Bow",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Bow-DisplayName\", \"Technology Advancement: Bow\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Bow-Description\", \"Modification available for bows.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Bow",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Alterations_Crossbow",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Crossbow-DisplayName\", \"Technology Advancement: Crossbow\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Crossbow-Description\", \"Modification available for crossbows.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Crossbow",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Alterations_Pistol",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Pistol-DisplayName\", \"Technology Advancement: Pistol\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Pistol-Description\", \"Modification available for pistols.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Pistol",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 30
+        },
+        {
+            "Name": "Alterations_Shotgun",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Shotgun-DisplayName\", \"Technology Advancement: Shotgun\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Shotgun-Description\", \"Modification available for shotguns.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Shotgun",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 20
+        },
+        {
+            "Name": "Alterations_Rifle",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Rifle-DisplayName\", \"Technology Advancement: Rifle\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Rifle-Description\", \"Modification available for rifles.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Rifle",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 5
+        },
+        {
+            "Name": "Alterations_Armor",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Armor-DisplayName\", \"Technology Advancement: Armor\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_Armor-Description\", \"Modification available for armor.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_Armor",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Alterations_T4_Melee",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Melee-DisplayName\", \"Advanced Modifications: Melee\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Melee-Description\", \"Designated special reward - advanced modification tech.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_T4_Melee",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 10
+        },
+        {
+            "Name": "Alterations_T4_Armor",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Armor-DisplayName\", \"Advanced Modifications: Armor\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Armor-Description\", \"Designated special reward - advanced modification tech.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_T4_Armor",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 10
+        },
+        {
+            "Name": "Alterations_T4_Ranged",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Ranged-DisplayName\", \"Advanced Modifications: Ranged\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Alterations_T4_Ranged-Description\", \"Designated special reward - advanced modification tech.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Attachment_T4_Ranged",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 10
+        },
+        {
+            "Name": "Resources_RawFood",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawFood-DisplayName\", \"Cooking Subsidy\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawFood-Description\", \"Raw resources gathered by prospectors completing UDA contracts, requires preparation for improved sustenence.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 125
+        },
+        {
+            "Name": "Resources_RawMeat",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawMeat-DisplayName\", \"Cooking Subsidy: Carnivore\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawMeat-Description\", \"Raw resources gathered by Assembly recon team, requires preparation for improved sustenence.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Resources_RawVeg",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawVeg-DisplayName\", \"Cooking Subsidy: Herbivore\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_RawVeg-Description\", \"Raw resources gathered by ACS colonization researchers, requires preparation for improved sustenence.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 125
+        },
+        {
+            "Name": "Resources_OreVariety",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_OreVariety-DisplayName\", \"Ore Surplus: Variety\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_OreVariety-Description\", \"A variety of ores collected by fledgeling prospectors, redistributed for futher prospector advancement.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_T0_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T3_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 110
+        },
+        {
+            "Name": "Resources_T2_Ore",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T2_Ore-DisplayName\", \"Ore Surplus: Metals\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T2_Ore-Description\", \"Ore subsidy for the SMPL program provided by Sinotai.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T0_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 150
+        },
+        {
+            "Name": "Resources_T3_Ore",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T3_Ore-DisplayName\", \"Ore Surplus: Advanced Metals\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T3_Ore-Description\", \"Uniao provided selection of ores, including rarer metals.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T3_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Resources_T2_OreIngot",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T2_OreIngot-DisplayName\", \"Smithing Surplus\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_T2_OreIngot-Description\", \"A selection of surplus materials provided by ACS.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ingot",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ingot",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Resources_Electronics",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Electronics-DisplayName\", \"Electronic Research\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Electronics-Description\", \"Recent developments on Icarus have highlighted higher electronic requirements for prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Electronic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Electronic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Electronic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 10
+        },
+        {
+            "Name": "Resources_Plants",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Plants-DisplayName\", \"Herbalism Research\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Plants-Description\", \"Researched from Lagos Unit redistribute materials to prospectors once research is complete.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Plants",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Consumable_Tonic_Pill",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Plants",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Resources_Variety_0",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Variety_0-DisplayName\", \"Recovered Goods\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Variety_0-Description\", \"Recovered from a prospector rescue, unfortunately arriving too late for the prospector themselves.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_CookedVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Resources_Wood",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Wood-DisplayName\", \"Lumberjack\\'s Haul\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Wood-Description\", \"Woodcutters from Assembly have retreived these on a recent drop.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_WoodSpecial",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 125
+        },
+        {
+            "Name": "Resources_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Basic-DisplayName\", \"Basic Support Package\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Basic-Description\", \"UDA provided assortment of basic living materials.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T0_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Resources_MeatBones",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_MeatBones-DisplayName\", \"Hunter\\'s Haul\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_MeatBones-Description\", \"A squad of hunters collected these before returning to station.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Animal",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Resources_MeatTrophy",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_MeatTrophy-DisplayName\", \"Hunter\\'s Haul: Trophy\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_MeatTrophy-Description\", \"Lagos Unit hunters recently took out a bear, quarantine restrictions means they had to leave this on the surface.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Animal",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Trophy_Bear",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Resources_Leather",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Leather-DisplayName\", \"Hunter\\'s Haul: Tanners\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resources_Leather-Description\", \"Prospectors from Sinotai had excess leather to donate.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Deco_TableChairs",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_TableChairs-DisplayName\", \"Beautification Project\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_TableChairs-Description\", \"An anonymous benefactor has provided crafted furniture to liven up prospectors homes.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Deco_Chairs",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Tables",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Chairs",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Deco_Bedroom",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Bedroom-DisplayName\", \"Accomodation Improvement\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Bedroom-Description\", \"UDA working guidelines suggest a better nights sleep for higher prospector efficiency.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Deco_Bed",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Rustic_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Deco_StorageLights",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_StorageLights-DisplayName\", \"Homestead Improvement\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_StorageLights-Description\", \"A functional enhancement package, allowing better use of prospector settlement.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Deco_Lights",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Lights",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Rustic_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Deco_StatueStorage",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_StatueStorage-DisplayName\", \"Beautification Project\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_StatueStorage-Description\", \"The Assembly commisioned crafting of these statues for redistribution through the SMPL program.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Deco_Statue",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Deco_Rustic_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Deco_Storage_T2",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T2-DisplayName\", \"Storage Improvement\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T2-Description\", \"The Assembly provides basic storage options.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_T2_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Deco_Storage_T3",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T3-DisplayName\", \"Storage Improvement\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T3-Description\", \"Advanced storage systems left behind by prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_T3_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Deco_Enzymes",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Enzymes-DisplayName\", \"Enzyme Extraction Remanants\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Enzymes-Description\", \"A Lagos Unit Enzyme Extraction team returned after many casualties with these.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Deco_Enzymes",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Ammo_Variety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Ammo_Variety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Bench_Construction",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Construction-DisplayName\", \"Construction: Expansion Subsidy\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Construction-Description\", \"A workbench and miscelanious materials provided to encourage construction.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_Buildings",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 30
+        },
+        {
+            "Name": "Bench_Construction_Hedgehog",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Construction_Hedgehog-DisplayName\", \"Construction: Reinforcement Subsidy\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Construction_Hedgehog-Description\", \"A workbench and defensive measures to aid in base reinforcement.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_Buildings",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Misc_Hedgehog",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 30
+        },
+        {
+            "Name": "Bench_Hedgehog",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Hedgehog-DisplayName\", \"Construction: Defensive Subsidy\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Hedgehog-Description\", \"Defensive measures to aid in base defense.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Misc_Hedgehog",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Bench_Armor",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Armor-DisplayName\", \"Armorer\\'s Workshop\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Armor-Description\", \"UDA supplied materials and workbench for the creation of personal protective equipment.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_Armor",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorVariety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorVariety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 40
+        },
+        {
+            "Name": "Food_Fish",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Fish-DisplayName\", \"Fisherman\\'s Haul\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Fish-Description\", \"Proprietary fishing tech allows The Assembly to provide these for the reward program. \")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_All_Fish",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_Fish",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_Fish",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Food_T1",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T1-DisplayName\", \"Dietry Requirements\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T1-Description\", \"A basic assortment of cooked food.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_CookedVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_CookedMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T2_SoupSalad",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 75
+        },
+        {
+            "Name": "Food_T2",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T2-DisplayName\", \"Culinary Delights\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T2-Description\", \"A assortment of well prepared food.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T3_Pie",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T2_SoupSalad",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T2_SoupSalad",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Food_Dried",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Dried-DisplayName\", \"Rations Supplement\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Dried-Description\", \"A basic assortment of dried meats.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Food_T1_DriedMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_DriedMeat",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ]
+        },
+        {
+            "Name": "Misc_Spoiled",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Misc_Spoiled-DisplayName\", \"Long-term quarantine redistribution\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Misc_Spoiled-Description\", \"Redistribution of foodstuffs after longterm quarantine.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Misc_Spoiled",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Misc_Spoiled",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 10
+        },
+        {
+            "Name": "Tools_Pickaxe",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Pickaxe-DisplayName\", \"Settlement Assistance: Pickaxe\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Pickaxe-Description\", \"UDA provided assistance to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Pickaxe",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T0_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Tools_Axe",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Axe-DisplayName\", \"Settlement Assistance: Axe\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Axe-Description\", \"UDA provided assistance to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Axe",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_WoodSpecial",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Tools_Sickle",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Sickle-DisplayName\", \"Settlement Assistance: Sickle\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Sickle-Description\", \"UDA provided assistance to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Sickle",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Plants",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Tools_Hammer",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Hammer-DisplayName\", \"Settlement Assistance: Hammer\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Hammer-Description\", \"UDA provided assistance to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Hammer",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Wood",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Tools_Farming",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Farming-DisplayName\", \"Settlement Assistance: Farming\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Farming-Description\", \"ACS redistribution of prospector equipment.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Misc_Farming",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Misc_Farming",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Misc_Farming",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 150
+        },
+        {
+            "Name": "Tools_Taming",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Taming-DisplayName\", \"Settlement Assistance: Taming\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Taming-Description\", \"Husbandry equipment provided by Lagos Unit, with additional raw vegetables from ACS.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Misc_Taming",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Tools_Firefighting",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Firefighting-DisplayName\", \"Fire prevention\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Firefighting-Description\", \"UDA supplies equipment. Only you can prevent forest fires.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Misc_Firefighting",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 60
+        },
+        {
+            "Name": "Tools_Water",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Water-DisplayName\", \"Survival Supplies\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Water-Description\", \"UDA provides these for increase prospector survival rate and efficiency.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_WaterOxySkin",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Tools_Thermos",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Thermos-DisplayName\", \"Survival Supplies: Arctic Survival\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Thermos-Description\", \"UDA provides these for increase prospector survival rate and efficiency.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T3_HotDrink_Thermos",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Basics",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 5
+        },
+        {
+            "Name": "Armor_Arctic",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Arctic-DisplayName\", \"Armor Support: Arctic\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Arctic-Description\", \"After losing many prospectors to arctic wildlife, Uniao has provided armor to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorArctic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Armor_Arctic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorArctic",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 90
+        },
+        {
+            "Name": "Armor_Desert",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Desert-DisplayName\", \"Armor Support: Desert\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Desert-Description\", \"Protective gear provided by ACS to prevent overheating.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorDesert",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Armor_Desert",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorDesert",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 40
+        },
+        {
+            "Name": "Armor_Leather",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Leather-DisplayName\", \"Armor Support: Combat\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Leather-Description\", \"For prospectors that want to go toe-to-toe.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Armor_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Leather",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 125
+        },
+        {
+            "Name": "Armor_Stealth",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Stealth-DisplayName\", \"Armor Support: Stealth\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Stealth-Description\", \"UDA designated armor for statistically reduced mortality rate.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorVariety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Armor_Stealth",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorVariety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 90
+        },
+        {
+            "Name": "Boss_Scorpion",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Scorpion-DisplayName\", \"Exotic Gear: Scorpion\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Scorpion-Description\", \"ACS extermination teams have retreived these for prospector use.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Boss_Scorpion",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Scorpion",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Scorpion",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 20
+        },
+        {
+            "Name": "Boss_Black_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Black_Wolf-DisplayName\", \"Exotic Gear: Wolf\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Black_Wolf-Description\", \"UDA extermination teams have retreived these for prospector use.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Boss_Black_Wolf_Knife",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Black_Wolf_Stacks",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Black_Wolf_Stacks",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 20
+        },
+        {
+            "Name": "Boss_Sandworm",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Sandworm-DisplayName\", \"Exotic Gear: Sandworm\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Sandworm-Description\", \"Sinotai survey teams have retreived these for prospector use.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Boss_SandwormArmor",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_SandwormStacks",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_SandwormWeapons",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 20
+        },
+        {
+            "Name": "Boss_Caveworm",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Caveworm-DisplayName\", \"Exotic Gear: Caveworm\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Boss_Caveworm-Description\", \"ACS research teams have retreived these for prospector use.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Boss_Caveworm",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Caveworm",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Boss_Caveworm",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                }
+            ],
+            "Weighting": 20
+        }
+    ]
+}

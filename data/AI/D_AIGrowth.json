@@ -1522,6 +1522,42 @@
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Spider",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_WolfMovementSpeed.C_WolfMovementSpeed'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }

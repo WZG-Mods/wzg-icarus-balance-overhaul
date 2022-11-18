@@ -6890,7 +6890,7 @@
         },
         {
             "Name": "DYN_Reward",
-            "Class": "/Game/BP/Quests/Dynamic/BPQ_Dynamic_Reward.BPQ_Dynamic_Reward_C",
+            "Class": "/Game/BP/Quests/Dynamic/BPQ_DYN_Reward.BPQ_DYN_Reward_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Reward-Description\", \"Collect Payment from the Sinotai Reward Pod (M)\")"
         },
         {
@@ -6905,51 +6905,100 @@
         },
         {
             "Name": "DYN_Grow",
+            "Class": "/Game/BP/Quests/Dynamic/Grow/BPQ_DYN_Grow.BPQ_DYN_Grow_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Grow-Description\", \"SMPL: Farming\")"
         },
         {
             "Name": "DYN_Grow_Deliver",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Grow_Deliver-Description\", \"Grow and deliver {0} to the Sinotai Retrieval Pod {1}/{2}\")"
+            "Class": "/Game/BP/Quests/Dynamic/Grow/BPQ_DYN_Grow_Deliver.BPQ_DYN_Grow_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Grow_Deliver-Description\", \"Farming {0} - Grow & Deliver to the Sinotai Retrieval Pod {1}/{2}\")"
         },
         {
-            "Name": "DYN_Resources",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Resources-Description\", \"SMPL: Resources\")"
+            "Name": "DYN_Mine",
+            "Class": "/Game/BP/Quests/Dynamic/Mine/BPQ_DYN_Mine.BPQ_DYN_Mine_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Mine-Description\", \"SMPL: Mining\")"
         },
         {
-            "Name": "DYN_Resource_Deliver",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Resource_Deliver-Description\", \"Collect and deliver {0} to the Sinotai Retrieval Pod {1}/{2}\")"
+            "Name": "DYN_Mine_Deliver",
+            "Class": "/Game/BP/Quests/Dynamic/Mine/BPQ_DYN_Mine_Deliver.BPQ_DYN_Mine_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Mine_Deliver-Description\", \"Mining {0} - Collect & Deliver to the Sinotai Retrieval Pod {1}/{2}\")"
         },
         {
-            "Name": "DYN_DogTags",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_DogTags-Description\", \"SMPL: Dogtags\")"
+            "Name": "DYN_Collect",
+            "Class": "/Game/BP/Quests/Dynamic/Collect/BPQ_DYN_Collect.BPQ_DYN_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Collect-Description\", \"SMPL: Collection\")"
         },
         {
-            "Name": "DYN_DogTags_Collect",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_DogTags_Collect-Description\", \"Search the Area and Collect DogTags from Fallen Prospectors {0}/{1}\")"
+            "Name": "DYN_Collect_Deliver",
+            "Class": "/Game/BP/Quests/Dynamic/Collect/BPQ_DYN_Collect_Deliver.BPQ_DYN_Collect_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Collect_Deliver-Description\", \"Search the Area and Collect ProspectorID\\'s from Fallen Prospectors {0}/{1}. Deliver to the Sinotai Retrieval Pod.\")"
         },
         {
             "Name": "DYN_Scan",
+            "Class": "/Game/BP/Quests/Dynamic/Scan/BPQ_DYN_Scan.BPQ_DYN_Scan_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan-Description\", \"SMPL: Scan\")"
         },
         {
-            "Name": "DYN_Scan_Location",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Location-Description\", \"Scan the Marked Location (M)\")"
+            "Name": "DYN_Scan_Equipment",
+            "Class": "/Game/BP/Quests/Dynamic/Scan/BPQ_DYN_Scan_Equipment.BPQ_DYN_Scan_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Equipment-Description\", \"Collect the Radar From the Sinotai Delivery Pod (M)\")"
+        },
+        {
+            "Name": "DYN_Scan_Scan",
+            "Class": "/Game/BP/Quests/Dynamic/Scan/BPQ_DYN_Scan_Scan.BPQ_DYN_Scan_Scan_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Scan-Description\", \"Scan the Marked Location (M)\")"
+        },
+        {
+            "Name": "DYN_Scan_Return",
+            "Class": "/Game/BP/Quests/Dynamic/Scan/BPQ_DYN_Scan_Return.BPQ_DYN_Scan_Return_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Return-Description\", \"Return the Radar to the Sinotai Retrievel Pod (M)\")"
         },
         {
             "Name": "DYN_Cache",
+            "Class": "/Game/BP/Quests/Dynamic/Cache/BPQ_DYN_Cache.BPQ_DYN_Cache_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Cache-Description\", \"SMPL: Hidden Cache\")"
         },
         {
             "Name": "DYN_Cache_Find",
+            "Class": "/Game/BP/Quests/Dynamic/Cache/BPQ_DYN_Cache_Find.BPQ_DYN_Cache_Find_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Cache_Find-Description\", \"Search the Area for a Hidden Cache (M)\")"
         },
         {
-            "Name": "DYN_Exterminate",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Exterminate-Description\", \"SMPL: Extermination\")"
+            "Name": "DYN_Hunt",
+            "Class": "/Game/BP/Quests/Dynamic/Hunt/BPQ_DYN_Hunt.BPQ_DYN_Hunt_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Hunt-Description\", \"SMPL: Hunt\")"
         },
         {
-            "Name": "DYN_Exterminate_Creatures",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Exterminate_Creatures-Description\", \"{0}/{1} {2} Exterminated\")"
+            "Name": "DYN_Hunt_Creatures",
+            "Class": "/Game/BP/Quests/Dynamic/Hunt/BPQ_DYN_Hunt_Creatures.BPQ_DYN_Hunt_Creatures_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Hunt_Creatures-Description\", \"Hunt {2} - {0}/{1}\")"
+        },
+        {
+            "Name": "DYN_Tools",
+            "Class": "/Game/BP/Quests/Dynamic/Tools/BPQ_DYN_Tools.BPQ_DYN_Tools_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Tools-Description\", \"SMPL: Crafting Tools\")"
+        },
+        {
+            "Name": "DYN_Tools_Deliver",
+            "Class": "/Game/BP/Quests/Dynamic/Tools/BPQ_DYN_Tools_Deliver.BPQ_DYN_Tools_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Tools_Deliver-Description\", \"Craft and Deliver the listed Tools to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "DYN_Tools_Deliver_Item",
+            "Class": "/Game/BP/Quests/Dynamic/Tools/BPQ_DYN_Tools_Deliver_Item.BPQ_DYN_Tools_Deliver_Item_C",
+            "Description": "INVTEXT(\"{0} - {1} / {2}\")"
+        },
+        {
+            "Name": "DYN_Tools_Deliver_Item_1",
+            "Class": "/Game/BP/Quests/Dynamic/Tools/BPQ_DYN_Tools_Deliver_Item.BPQ_DYN_Tools_Deliver_Item_C",
+            "Variation": 1,
+            "Description": "INVTEXT(\"{0} - {1} / {2}\")"
+        },
+        {
+            "Name": "DYN_Tools_Deliver_Item_2",
+            "Class": "/Game/BP/Quests/Dynamic/Tools/BPQ_DYN_Tools_Deliver_Item.BPQ_DYN_Tools_Deliver_Item_C",
+            "Variation": 2,
+            "Description": "INVTEXT(\"{0} - {1} / {2}\")"
         }
     ]
 }

@@ -432,6 +432,50 @@
                 }
             ],
             "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Unconsciousness.BP_IcarusGOAPMotivation_Unconsciousness_C"
+        },
+        {
+            "Name": "Enraged",
+            "Description": "Enraged",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Enraged",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Enraged.BP_IcarusGOAPMotivation_Enraged_C"
+        },
+        {
+            "Name": "Hunting",
+            "Description": "Hunting",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 75,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Hunting",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_GOAPMotivation_Hunting.BP_GOAPMotivation_Hunting_C"
         }
     ]
 }
