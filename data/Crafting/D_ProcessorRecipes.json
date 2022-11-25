@@ -4009,7 +4009,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Cooking_Station",
+                        "RowName": "Cooking_Station_V2",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -6796,7 +6796,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Concrete_Furnace",
+                        "RowName": "Concrete_Furnace_V2",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -6864,7 +6864,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Electric_Furnace",
+                        "RowName": "Electric_Furnace_Large",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -11174,6 +11174,10 @@
                 {
                     "RowName": "Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -11666,7 +11670,7 @@
                     "DataTableName": "D_RecipeSets"
                 },
                 {
-                    "RowName": "Chemistry_Bench",
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -11721,7 +11725,7 @@
                     "DataTableName": "D_RecipeSets"
                 },
                 {
-                    "RowName": "Chemistry_Bench",
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -11884,6 +11888,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -12168,6 +12176,10 @@
                 },
                 {
                     "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -13471,6 +13483,10 @@
                 {
                     "RowName": "PotBellyStove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -14689,630 +14705,6 @@
             }
         },
         {
-            "Name": "Paste_Health_Regen",
-            "Requirement": {
-                "RowName": "Paste_Health_Regen"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Lily",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Health_Regen",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Health_Buff",
-            "Requirement": {
-                "RowName": "Paste_Health_Buff"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Lily",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Wheat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Health_Buff",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Health_Restore",
-            "Requirement": {
-                "RowName": "Paste_Health_Restore"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Lily",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Wheat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 10,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Health_Restore",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Stamina_Regen",
-            "Requirement": {
-                "RowName": "Paste_Stamina_Regen"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Reed_Flower",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Stamina_Regen",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Stamina_Buff",
-            "Requirement": {
-                "RowName": "Paste_Stamina_Buff"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Reed_Flower",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Wheat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Stamina_Buff",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Stamina_Restore",
-            "Requirement": {
-                "RowName": "Paste_Stamina_Restore"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Reed_Flower",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Wheat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 10,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Stamina_Restore",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Stamina_Consumption",
-            "Requirement": {
-                "RowName": "Paste_Stamina_Consumption"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Reed_Flower",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Tree_Sap",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Stamina_Consumption",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Oxygen_Buff",
-            "Requirement": {
-                "RowName": "Paste_Oxygen_Buff"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Sponge",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 4,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Charcoal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Oxygen_Buff",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Oxygen_Restore",
-            "Requirement": {
-                "RowName": "Paste_Oxygen_Restore"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Sponge",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Charcoal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Oxite",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Oxygen_Restore",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Oxygen_Consumption",
-            "Requirement": {
-                "RowName": "Paste_Oxygen_Consumption"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Sponge",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Charcoal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Oxygen_Consumption",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Food_Consumption",
-            "Requirement": {
-                "RowName": "Paste_Food_Consumption"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Sponge",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Charcoal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Lily",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 4,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Food_Consumption",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
-            "Name": "Paste_Water_Consumption",
-            "Requirement": {
-                "RowName": "Paste_Water_Consumption"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Herbalism_Bench",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Chemistry_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Sponge",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Charcoal",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 2,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Reed_Flower",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 4,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Paste_Water_Consumption",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "HerbalismBench"
-            }
-        },
-        {
             "Name": "Refrigerator",
             "Requirement": {
                 "RowName": "Refrigerator"
@@ -16177,7 +15569,7 @@
             "RequiredMillijoules": 10000,
             "RecipeSets": [
                 {
-                    "RowName": "Crafting_Bench",
+                    "RowName": "Machining_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -17645,7 +17037,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Glassworking_Bench",
+                        "RowName": "Glassworking_Bench_V2",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -18160,6 +17552,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21414,6 +20810,14 @@
                 {
                     "RowName": "PotBellyStove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21452,6 +20856,14 @@
                 {
                     "RowName": "PotBellyStove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21489,6 +20901,14 @@
             "RecipeSets": [
                 {
                     "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21544,6 +20964,14 @@
                 {
                     "RowName": "PotBellyStove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21591,6 +21019,14 @@
             "RecipeSets": [
                 {
                     "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21640,6 +21076,14 @@
                 {
                     "RowName": "PotBellyStove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21688,6 +21132,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21728,6 +21176,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21767,6 +21219,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21814,6 +21270,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -21845,6 +21305,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21891,6 +21355,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21939,6 +21407,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -21996,6 +21468,10 @@
                 {
                     "RowName": "Kitchen_Stove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -22052,6 +21528,10 @@
                 {
                     "RowName": "Kitchen_Stove",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -22091,6 +21571,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -22139,6 +21623,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -22538,7 +22026,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Electric_Dehumidifier",
+                        "RowName": "Electric_Dehumidifier_V2",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -23404,6 +22892,10 @@
                 {
                     "RowName": "Campfire",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -23444,6 +22936,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -23486,6 +22982,10 @@
                 {
                     "RowName": "Campfire",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -23526,6 +23026,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -23672,6 +23176,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -23715,6 +23223,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -25155,6 +24667,10 @@
                 },
                 {
                     "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -28203,6 +27719,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -28234,6 +27754,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -28267,6 +27791,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -28298,6 +27826,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -28331,6 +27863,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -28363,6 +27899,10 @@
                 {
                     "RowName": "Cooking_Station",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -28394,6 +27934,10 @@
             "RecipeSets": [
                 {
                     "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -34885,6 +34429,625 @@
                 {
                     "Element": {
                         "RowName": "Titanium_Crossbow",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Electric_Stove",
+            "Requirement": {
+                "RowName": "Electric_Stove"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Copper",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Electric_Stove",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Advanced_Kitchen_Bench",
+            "Requirement": {
+                "RowName": "Advanced_Kitchen_Bench"
+            },
+            "RequiredMillijoules": 15000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Concrete_Mix",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 100,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Kitchen_Bench",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Advanced_Kitchen_Storage",
+            "Requirement": {
+                "RowName": "Advanced_Kitchen_Storage"
+            },
+            "RequiredMillijoules": 15000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Concrete_Mix",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 100,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Kitchen_Storage",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Advanced_Kitchen_Sink",
+            "Requirement": {
+                "RowName": "Advanced_Kitchen_Sink"
+            },
+            "RequiredMillijoules": 15000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Concrete_Mix",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 16,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Kitchen_Sink",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Health_Enhancement_Tonic",
+            "Requirement": {
+                "RowName": "Health_Enhancement_Tonic"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Lily",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Flour",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Yeast",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Health_Enhancement_Tonic",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Stamina_Enhancement_Tonic",
+            "Requirement": {
+                "RowName": "Stamina_Enhancement_Tonic"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Reed_Flower",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Yeast",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Stamina_Enhancement_Tonic",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Sustenence_Enhancement_Tonic",
+            "Requirement": {
+                "RowName": "Sustenence_Enhancement_Tonic"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Sponge",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Reed_Flower",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Lily",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Sustenence_Enhancement_Tonic",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Strength_Enhancement_Tonic",
+            "Requirement": {
+                "RowName": "Strength_Enhancement_Tonic"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wheat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Lily",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Crushed_Bone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Strength_Enhancement_Tonic",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Waterwheel",
+            "Requirement": {
+                "RowName": "WaterGenerator"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 100,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Waterwheel_Generator",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
