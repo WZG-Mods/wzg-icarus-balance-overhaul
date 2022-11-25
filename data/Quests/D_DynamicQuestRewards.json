@@ -468,7 +468,8 @@
                     },
                     "bScales": true
                 }
-            ]
+            ],
+            "Weighting": 80
         },
         {
             "Name": "Resources_RawVeg",
@@ -679,14 +680,14 @@
             "PotentialRewards": [
                 {
                     "Item": {
-                        "RowName": "Food_T1_CookedVeg",
+                        "RowName": "Food_T1_RawVeg",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
                 },
                 {
                     "Item": {
-                        "RowName": "Food_T1_RawMeat",
+                        "RowName": "Food_T1_CookedMeat",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
@@ -786,7 +787,7 @@
                     "bScales": true
                 }
             ],
-            "Weighting": 60
+            "Weighting": 50
         },
         {
             "Name": "Resources_MeatTrophy",
@@ -815,7 +816,7 @@
                     "bScales": false
                 }
             ],
-            "Weighting": 60
+            "Weighting": 50
         },
         {
             "Name": "Resources_Leather",
@@ -959,6 +960,20 @@
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Bench_T2_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Bench_T2_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
                 }
             ],
             "Weighting": 75
@@ -968,6 +983,20 @@
             "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T3-DisplayName\", \"Storage Improvement\")",
             "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Deco_Storage_T3-Description\", \"Advanced storage systems left behind by prospectors.\")",
             "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_T3_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Bench_T3_Storage",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
                 {
                     "Item": {
                         "RowName": "Bench_T3_Storage",
@@ -1102,6 +1131,35 @@
             "Weighting": 40
         },
         {
+            "Name": "Bench_Smelting",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Smelting-DisplayName\", \"Smelter\\'s Forge\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Smelting-Description\", \"A forge and some basic ores, supplied by Sinotai.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_Furnace",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_T2_Ore",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
             "Name": "Food_Fish",
             "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Fish-DisplayName\", \"Fisherman\\'s Haul\")",
             "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_Fish-Description\", \"Proprietary fishing tech allows The Assembly to provide these for the reward program. \")",
@@ -1131,7 +1189,7 @@
         },
         {
             "Name": "Food_T1",
-            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T1-DisplayName\", \"Dietry Requirements\")",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T1-DisplayName\", \"Dietary Requirements\")",
             "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Food_T1-Description\", \"A basic assortment of cooked food.\")",
             "PotentialRewards": [
                 {
@@ -1156,7 +1214,7 @@
                     "bScales": true
                 }
             ],
-            "Weighting": 75
+            "Weighting": 60
         },
         {
             "Name": "Food_T2",
@@ -1721,6 +1779,64 @@
                 }
             ],
             "Weighting": 20
+        },
+        {
+            "Name": "Tools_Tonics",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Tonics-DisplayName\", \"Herbalist\\'s Supplies\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Tonics-Description\", \"UDA techniques have developed these short term boosts to aid your survival.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Consumable_Tonic_Pill",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Consumable_Tonic_Pill",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Plants",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 50
+        },
+        {
+            "Name": "Bench_Icebox",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Icebox-DisplayName\", \"Food Preservation\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Bench_Icebox-Description\", \"Sinotai prospectors returning from an arctic expedition ensured nothing went to waste.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Bench_Icebox",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Ice",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Food_T1_RawVeg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 110
         }
     ]
 }
