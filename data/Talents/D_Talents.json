@@ -25310,7 +25310,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 8500,
+                "X": 7700,
                 "Y": 450
             },
             "Size": {
@@ -27639,6 +27639,103 @@
             ]
         },
         {
+            "Name": "Fortification_Wood_Wall",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Wood_Wall",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Wood_Gate",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Fortification_Wood_Gate",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Wood_Gate",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8350,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Fortification_Wood_Walkway",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Wood_Walkway",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Wood_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Fortification_Wood_Spikes",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Wood_Spikes",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8650,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Wood_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
             "Name": "WaterBomb",
             "ExtraData": {
                 "RowName": "Item_WaterBomb",
@@ -27658,6 +27755,30 @@
             "RequiredTalents": [
                 {
                     "RowName": "Crafting_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Prospect_Styx_C_Extermination2",
+            "ExtraData": {
+                "RowName": "STYX_C_Extermination2",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 2950
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_C_Exploration",
                     "DataTableName": "D_Talents"
                 }
             ]
