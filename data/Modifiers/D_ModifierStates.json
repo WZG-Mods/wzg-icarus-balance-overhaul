@@ -4292,7 +4292,7 @@
         },
         {
             "Name": "Cooked_Bacon",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Bacon_Cooked.ITEM_Bacon_Cooked'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Cooked_Bacon.ITEM_Cooked_Bacon'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Bacon-ModifierName\", \"Cooked Bacon\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Bacon-ModifierDescription\", \"Increases experience gained, boosts health and stamina.\")",
             "GrantedStats": {
@@ -5335,7 +5335,7 @@
         {
             "Name": "Sustenence_Enhancement_Tonic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Sustenence_Enhancement_Tonic.ITEM_Sustenence_Enhancement_Tonic'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierName\", \"Sustenence Enhancement Tonic\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierName\", \"Sustenance Enhancement Tonic\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierDescription\", \"Greatly reduced food, water and oxygen consumption, for a short time.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodConsumption_+%\")": -30,
@@ -5389,6 +5389,41 @@
                 "(Value=\"BaseFoodConsumption_+%\")": -10
             },
             "MergeType": "Replace"
+        },
+        {
+            "Name": "GrantedAura_Watchtower",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Tools.Icon_Tools'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Watchtower-ModifierName\", \"Watchtower Aura\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Watchtower-ModifierDescription\", \"Description\")",
+            "bAura": true,
+            "AuraRange": 7500,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Watchtower"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_Watchtower",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Tools.Icon_Tools'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Watchtower-ModifierName\", \"Watchtower\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Watchtower-ModifierDescription\", \"Under the protection of a Nearby Watchtower\")",
+            "GrantedStats": {
+                "(Value=\"BaseSleepQuality_%\")": 15,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "AuraRange": 2000,
+            "MergeType": "Stack",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         }
     ]
 }

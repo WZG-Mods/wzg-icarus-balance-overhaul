@@ -458,7 +458,7 @@
             "Name": "Item_Bone_Arrow",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bone_Arrow-DisplayName\", \"Bone Arrow\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Bone_Arrow.ITEM_Bone_Arrow",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bone_Arrow-Description\", \"A primitive arrow, dealing greater damage than flint or stone.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bone_Arrow-Description\", \"A primitive arrow, dealing greater damage than stone.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Bone_Arrow-FlavorText\", \"In the mid-22nd century, the fletchers art is being rediscovered on Icarus.\")",
             "Weight": 10,
             "MaxStack": 100
@@ -728,8 +728,8 @@
             "Name": "Item_Flint_Arrow",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Flint_Arrow-DisplayName\", \"Flint Arrow\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Flint_Arrow.ITEM_Flint_Arrow",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flint_Arrow-Description\", \"Flies further, hits harder than stone.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flint_Arrow-FlavorText\", \"Knappable flint provides a sharper arrowhead and greater penetration than stone.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flint_Arrow-Description\", \"Flies further, hits harder than stone or bone.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flint_Arrow-FlavorText\", \"Knappable flint provides a sharper arrowhead and greater penetration than stone or bone.\")",
             "Weight": 10,
             "MaxStack": 100
         },
@@ -2034,7 +2034,7 @@
         {
             "Name": "Item_Pistol_Round",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round-DisplayName\", \"Pistol Round\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Rifle_Round.ITEM_Rifle_Round",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round.ITEM_Ammo_Pistol_Round",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round-Description\", \"Reliable 9mm ammunition.\")",
             "Weight": 10,
             "MaxStack": 100
@@ -8310,21 +8310,36 @@
         {
             "Name": "Item_Fortification_Wood_Wall",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Wall-DisplayName\", \"Wood Wall Fortification\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Wall-Description\", \"A large, strong wood wall fortification\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fortification_Wood_Wall.ITEM_Fortification_Wood_Wall",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Wall-Description\", \"A large, strong wood wall fortification.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Wall-FlavorText\", \"Claim your territory through the wonders of construction.\")",
             "Weight": 2000,
             "MaxStack": 20
         },
         {
             "Name": "Item_Fortification_Wood_Spikes",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Spikes-DisplayName\", \"Wood Spikes Fortification\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Spikes-Description\", \"A large, strong wood wall fortification\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fortification_Wood_Spikes.ITEM_Fortification_Wood_Spikes",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Spikes-Description\", \"A large collection of spiked defenses which can be mounted to fortification walls.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Spikes-FlavorText\", \"An extra layer of defense, prevents wildlife from working their way through your walls. \")",
             "Weight": 2000,
             "MaxStack": 20
         },
         {
-            "Name": "Item_Fortification_Wood_Stairs",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Stairs-DisplayName\", \"Wood Walkway Fortification\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Stairs-Description\", \"A walkway and ramp set for the wooden fortification walls\")",
+            "Name": "Item_Fortification_Wood_Gate",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Gate-DisplayName\", \"Wood Gate Fortification\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fortification_Wood_Gate.ITEM_Fortification_Wood_Gate",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Gate-Description\", \"A large, strong wood gate fortification which can be opened and closed.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Gate-FlavorText\", \"From safety to wilderness, an entryway to the danger of Icarus.\")",
+            "Weight": 2000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Fortification_Wood_Walkway",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Walkway-DisplayName\", \"Wood Walkway Fortification\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fortification_Wood_Walkway.ITEM_Fortification_Wood_Walkway",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Walkway-Description\", \"A walkway and ramp set for the wood fortification walls.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Walkway-FlavorText\", \"A protected vantage point to survey the nearby area.\")",
             "Weight": 2000,
             "MaxStack": 20
         },
@@ -8623,20 +8638,6 @@
             "Weight": 1250
         },
         {
-            "Name": "Item_Fortification_Wood_Gate",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Gate-DisplayName\", \"Wood Gate Fortification\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Gate-Description\", \"A large, strong wood Gate fortification\")",
-            "Weight": 2000,
-            "MaxStack": 20
-        },
-        {
-            "Name": "Item_Fortification_Wood_Walkway",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Walkway-DisplayName\", \"Wood Walkway Fortification\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Wood_Walkway-Description\", \"A walkway and ramp set for the wooden fortification walls\")",
-            "Weight": 2000,
-            "MaxStack": 20
-        },
-        {
             "Name": "Item_Cooked_Soy_Bean",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cooked_Soy_Bean-DisplayName\", \"Crunchy Soy Bean\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
@@ -8673,7 +8674,7 @@
         },
         {
             "Name": "Item_Sustenence_Enhancement_Tonic",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sustenence_Enhancement_Tonic-DisplayName\", \"Sustenence Enhancement Tonic\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sustenence_Enhancement_Tonic-DisplayName\", \"Sustenance Enhancement Tonic\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Sustenence_Enhancement_Tonic.ITEM_Sustenence_Enhancement_Tonic",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sustenence_Enhancement_Tonic-Description\", \"Providing a large amount of food, water and oxygen, and reducing their consumption for a short time.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sustenence_Enhancement_Tonic-FlavorText\", \"Perfect for the prospector on the go.\")",
@@ -8688,6 +8689,22 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Strength_Enhancement_Tonic-FlavorText\", \"For when you want to get up close and personal.\")",
             "Weight": 250,
             "MaxStack": 10
+        },
+        {
+            "Name": "Item_Carcass_Snow_Striker",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Snow_Striker-DisplayName\", \"Snow Striker Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Snow_Wolf.ITEM_AnimalCarcass_Snow_Wolf",
+            "Description": "INVTEXT(\"[DNT] Snow Striker Carcass\")",
+            "FlavorText": "INVTEXT(\"[DNT] Snow Striker Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Dynamic_Mission_Beacon",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dynamic_Mission_Beacon-DisplayName\", \"Prototype Portable Beacon\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Portable_Beacon.ITEM_Portable_Beacon",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dynamic_Mission_Beacon-Description\", \"Displays a map marker when deployed.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dynamic_Mission_Beacon-FlavorText\", \"Lightly mapped and largely unexplored, human markers on the surface of Icarus are few and far between. The beacon offers a BYO solution.\")",
+            "Weight": 10000
         }
     ]
 }
