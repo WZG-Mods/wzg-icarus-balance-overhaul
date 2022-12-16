@@ -661,6 +661,36 @@
             "Name": "Tonic_Consumable",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Tonic_Consumable.BP_Actionable_Tonic_Consumable_C'",
             "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Melee_2H_Sledge",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Spear_Melee.BP_ActionableBehaviour_Spear_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPRAttack_Montage.3RD_CHA_SPRAttack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Sledge_Hit_Montage.1ST_CHA_Sledge_Hit_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "FP_ActionMissMontageVariations": [
+                "Action_0_Fail"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 1,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
         }
     ]
 }

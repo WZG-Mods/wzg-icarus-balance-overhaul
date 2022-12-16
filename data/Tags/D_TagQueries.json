@@ -3858,6 +3858,50 @@
                 ],
                 "AutoDescription": " ANY( Item.Deployable.Tame.Water )"
             }
+        },
+        {
+            "Name": "Any_Workshop_Item",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "Item.Meta.Resource"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    3,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Meta ),  NONE( Item.Meta.Resource ) )"
+            }
+        },
+        {
+            "Name": "No_Exotics",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta.Resource"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Item.Meta.Resource )"
+            }
         }
     ]
 }

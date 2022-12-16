@@ -1260,14 +1260,12 @@
             }
         },
         {
-            "Name": "OLY_Glacier_Extraction_Extract",
-            "Class": "/Game/BP/Quests/Olympus/Glacier/Extraction/BPQ_OLY_Glacier_Extraction_Extract.BPQ_OLY_Glacier_Extraction_Extract_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Glacier_Extraction_Extract-Description\", \"Deliver Exotics to dropship storage\")"
-        },
-        {
             "Name": "OLY_Glacier_Extraction_Leave",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_InteractWithDropship.BPQ_Common_InteractWithDropship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Glacier_Extraction_Leave-Description\", \"Launch dropship\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Glacier_Extraction_Leave-Description\", \"Launch dropship\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
         },
         {
             "Name": "OLY_Glacier_Exploration_0",
@@ -2592,9 +2590,17 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Extraction_MineMeta-Description\", \"Fully mine an Exotics deposit\")"
         },
         {
+            "Name": "OLY_Arctic_Extraction_Drop_Pod",
+            "Class": "/Game/BP/Quests/Olympus/Arctic/Extraction/BPQ_OLY_Arctic_Extraction_MineMeta.BPQ_OLY_Arctic_Extraction_MineMeta_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Extraction_Drop_Pod-Description\", \"Fully mine an Exotics deposit\")"
+        },
+        {
             "Name": "OLY_Arctic_Extraction_Leave",
             "Class": "/Game/BP/Quests/Implementations/Bw5/BP_InteractWithDropship.BP_InteractWithDropship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Extraction_Leave-Description\", \"Return to orbit with Exotics\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Extraction_Leave-Description\", \"Return to orbit with Exotics\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
         },
         {
             "Name": "OLY_Arctic_Extermination_0",
@@ -7148,6 +7154,31 @@
             "Name": "DYN_Drone_Protect_Health",
             "Class": "/Game/BP/Quests/Dynamic/Drone/BPQ_DYN_Drone_Protect_Health.BPQ_DYN_Drone_Protect_Health_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Drone_Protect_Health-Description\", \"{0} / {1} Health Remaning\")"
+        },
+        {
+            "Name": "Common_Exotic_Delivery",
+            "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_Delivery.BPQ_Common_Exotic_Delivery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery-Description\", \"Send Exotics to orbit\")"
+        },
+        {
+            "Name": "Common_Exotic_Delivery_Interface",
+            "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_MakeOrbitalInterface.BPQ_Common_Exotic_MakeOrbitalInterface_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery_Interface-Description\", \"Deploy an Orbital Exchange Interface\")"
+        },
+        {
+            "Name": "Common_Exotic_Delivery_CallPod",
+            "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_CallPod.BPQ_Common_Exotic_CallPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery_CallPod-Description\", \"Request an Exotic Delivery Pod\")"
+        },
+        {
+            "Name": "Common_Exotic_Delivery_FillPod",
+            "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_FillPod.BPQ_Common_Exotic_FillPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery_FillPod-Description\", \"Place Exotics in Delivery Pod\")"
+        },
+        {
+            "Name": "Common_Exotic_Delivery_SendPod",
+            "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_SendPod.BPQ_Common_Exotic_SendPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery_SendPod-Description\", \"Deliver Drop Pod to Station\")"
         }
     ]
 }

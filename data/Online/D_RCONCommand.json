@@ -1,0 +1,64 @@
+{
+    "RowStruct": "/Script/Icarus.RCONCommandData",
+    "Defaults": {
+        "ConsoleCommand": "",
+        "Parameters": "",
+        "Description": "",
+        "bAdminOnly": true,
+        "Context": "Any",
+        "PlatformContext": "Any"
+    },
+    "Rows": [
+        {
+            "Name": "AdminLogin",
+            "ConsoleCommand": "AdminLogin",
+            "Parameters": "NSLOCTEXT(\"D_RCONCommand\", \"AdminLogin-Parameters\", \"[Password]\")",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"AdminLogin-Description\", \"Login as Admin\")",
+            "bAdminOnly": false
+        },
+        {
+            "Name": "Help",
+            "ConsoleCommand": "Help",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"Help-Description\", \"Display a list of available commands\")",
+            "bAdminOnly": false
+        },
+        {
+            "Name": "AdminSay",
+            "ConsoleCommand": "AdminSay",
+            "Parameters": "NSLOCTEXT(\"D_RCONCommand\", \"AdminSay-Parameters\", \"[Message]\")",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"AdminSay-Description\", \"Display a message to all players\")"
+        },
+        {
+            "Name": "KickPlayer",
+            "ConsoleCommand": "KickPlayer",
+            "Parameters": "NSLOCTEXT(\"D_RCONCommand\", \"KickPlayer-Parameters\", \"[Steam Id or Player Name] [Reason (optional)]\")",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"KickPlayer-Description\", \"Kick a player from the server with an optional reason\")"
+        },
+        {
+            "Name": "BanPlayer",
+            "ConsoleCommand": "BanPlayer",
+            "Parameters": "NSLOCTEXT(\"D_RCONCommand\", \"BanPlayer-Parameters\", \"[Steam Id or Player Name] [Reason (optional)]\")",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"BanPlayer-Description\", \"Kick and ban a player from the server with an optional reason\")"
+        },
+        {
+            "Name": "UnbanPlayer",
+            "ConsoleCommand": "UnbanPlayer",
+            "Parameters": "NSLOCTEXT(\"D_RCONCommand\", \"UnbanPlayer-Parameters\", \"[Steam Id or Player Name]\")",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"UnbanPlayer-Description\", \"Unban a player from the server\")"
+        },
+        {
+            "Name": "ReturnToLobby",
+            "ConsoleCommand": "ReturnToLobby",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"ReturnToLobby-Description\", \"Immediately returns the dedicated server to the lobby\")",
+            "Context": "Survival",
+            "PlatformContext": "DedicatedServer"
+        },
+        {
+            "Name": "ReturnToLobbyWhenEmpty",
+            "ConsoleCommand": "ReturnToLobbyWhenEmpty",
+            "Description": "NSLOCTEXT(\"D_RCONCommand\", \"ReturnToLobbyWhenEmpty-Description\", \"Returns the dedicated server to the lobby as soon as the server is empty\")",
+            "Context": "Survival",
+            "PlatformContext": "DedicatedServer"
+        }
+    ]
+}
