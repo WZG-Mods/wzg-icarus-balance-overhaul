@@ -4654,13 +4654,7 @@
         {
             "Name": "STYX_C_Expedition_Scan_Oasis_Parent",
             "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Scan_Parent.BPQ_STYX_C_Expedition_Scan_Parent_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_Oasis_Parent-Description\", \"Gather scan data from the Oasis\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "StyxCExpeditionMissionComplete",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Scan_Oasis_Parent-Description\", \"Gather scan data from the Oasis\")"
         },
         {
             "Name": "STYX_C_Expedition_Scan_1",
@@ -7179,6 +7173,68 @@
             "Name": "Common_Exotic_Delivery_SendPod",
             "Class": "/Game/BP/Quests/Common/ExoticDelivery/BPQ_Common_Exotic_SendPod.BPQ_Common_Exotic_SendPod_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Exotic_Delivery_SendPod-Description\", \"Deliver Drop Pod to Station\")"
+        },
+        {
+            "Name": "STYX_E_Extraction",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction.STYX_E_Extraction_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction-Description\", \"EXTRACTION: Pinpoint remaining exotics\")"
+        },
+        {
+            "Name": "STYX_E_Extraction_GetRadar",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_GetRadar.STYX_E_Extraction_GetRadar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_GetRadar-Description\", \"Acquire a Tier 3, Tier 4 or Workshop Radar\")"
+        },
+        {
+            "Name": "STYX_E_Extraction_CompleteScan_0",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_CompleteScan.STYX_E_Extraction_CompleteScan_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_CompleteScan_0-Description\", \"Complete radar scan near the center of J5\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_J5"
+            }
+        },
+        {
+            "Name": "STYX_E_Extraction_CompleteScan_1",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_CompleteScan.STYX_E_Extraction_CompleteScan_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_CompleteScan_1-Description\", \"Complete radar scan near the center of H4\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_H4"
+            }
+        },
+        {
+            "Name": "STYX_E_Extraction_CompleteScan_2",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_CompleteScan.STYX_E_Extraction_CompleteScan_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_CompleteScan_2-Description\", \"Complete radar scan near the center of G7\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_G7"
+            }
+        },
+        {
+            "Name": "STYX_E_Extraction_CompleteScan_3",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_CompleteScan.STYX_E_Extraction_CompleteScan_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_CompleteScan_3-Description\", \"Complete radar scan near the center of H10\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_H10"
+            }
+        },
+        {
+            "Name": "STYX_E_Extraction_CompleteScan_4",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_CompleteScan.STYX_E_Extraction_CompleteScan_C",
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_CompleteScan_4-Description\", \"Complete radar scan near the center of K9\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_K9"
+            }
+        },
+        {
+            "Name": "STYX_E_Extraction_MineMeta",
+            "Class": "/Game/BP/Quests/Styx/E/Extraction/STYX_E_Extraction_MineMeta.STYX_E_Extraction_MineMeta_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Extraction_MineMeta-Description\", \"Fully mine an Exotics deposit - the nearest one is marked on your map (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_GridCenter_I7"
+            }
         }
     ]
 }
