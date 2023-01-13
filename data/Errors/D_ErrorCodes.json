@@ -2,7 +2,8 @@
     "RowStruct": "/Script/Icarus.ErrorCode",
     "Defaults": {
         "Code": "",
-        "Description": ""
+        "Description": "",
+        "bReportToSentry": true
     },
     "GenerateEnum": true,
     "Rows": [
@@ -54,7 +55,8 @@
         {
             "Name": "Error_Session_MismatchSessionGameVersion",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGameVersion-Code\", \"Game version mismatch - 010\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGameVersion-Description\", \"GameVersion of Unreal session and local differs (game created on different version)\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_MismatchSessionGameVersion-Description\", \"GameVersion of Unreal session and local differs (game created on different version)\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_HostLobby_InvalidProspectState",
@@ -189,7 +191,8 @@
         {
             "Name": "Error_Session_KickedDuringFriendsCheck",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_KickedDuringFriendsCheck-Code\", \"Failed Friend Check - 037\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_KickedDuringFriendsCheck-Description\", \"You are not a valid friend of anyone currently in the prospect\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Session_KickedDuringFriendsCheck-Description\", \"You are not a valid friend of anyone currently in the prospect\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_Runtime_FailedToInitialisePlayer_GetPlayerCharacterProfileResultFailed",
@@ -229,7 +232,8 @@
         {
             "Name": "Error_Login_VersionMisMatch",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_VersionMisMatch-Code\", \"Failed To Login - 045\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_VersionMisMatch-Description\", \"You are running an older version of the game! If you want to play online please update Icarus\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_VersionMisMatch-Description\", \"You are running an older version of the game! If you want to play online please update Icarus\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_UpdateSession_GetProspectFailed",
@@ -259,7 +263,8 @@
         {
             "Name": "Error_Runtime_KickedByHostingPlayer",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_KickedByHostingPlayer-Code\", \"Kicked from prospect - 051\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_KickedByHostingPlayer-Description\", \"You were kicked from the prospect session by the hosting player\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_KickedByHostingPlayer-Description\", \"You were kicked from the prospect session by the hosting player\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_Claim_FailedToFindOutpostSave",
@@ -269,7 +274,8 @@
         {
             "Name": "Error_Login_FailedToThirdParty",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedToThirdParty-Code\", \"Failed To Login - 053\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedToThirdParty-Description\", \"Steam is offline. Ensure you have launched the game through steam and you are connected to the internet. If this still fails ensure you are not running the game in \\'Run As Administrator\\' compatibility mode.\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Login_FailedToThirdParty-Description\", \"Steam is offline. Ensure you have launched the game through steam and you are connected to the internet. If this still fails ensure you are not running the game in \\'Run As Administrator\\' compatibility mode.\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_Session_FailedToSetActiveProspect",
@@ -284,7 +290,8 @@
         {
             "Name": "Error_Runtime_InvalidPassword",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_InvalidPassword-Code\", \"Invalid Password, rejected connection from host - 056\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_InvalidPassword-Description\", \"Invalid Password while trying to join locked server\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_Runtime_InvalidPassword-Description\", \"Invalid Password while trying to join locked server\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_DedicatedServer_MapChangeWithNoLoadout",
@@ -319,12 +326,14 @@
         {
             "Name": "Error_NetworkFailure_OutdatedClient",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedClient-Code\", \"Client out of date - 63\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedClient-Description\", \"Attempted to join a host running a newer version of the game. Please update to join\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedClient-Description\", \"Attempted to join a host running a newer version of the game. Please update to join\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_NetworkFailure_OutdatedServer",
             "Code": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedServer-Code\", \"Server out of date - 64\")",
-            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedServer-Description\", \"Host is running an older version of the game\")"
+            "Description": "NSLOCTEXT(\"D_ErrorCodes\", \"Error_NetworkFailure_OutdatedServer-Description\", \"Host is running an older version of the game\")",
+            "bReportToSentry": false
         },
         {
             "Name": "Error_NetworkFailure_PendingConnectionFailure",
