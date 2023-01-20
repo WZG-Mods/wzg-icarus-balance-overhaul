@@ -446,7 +446,7 @@
         },
         {
             "Name": "Fishing_Trap",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Fishing_Trap.BP_Fishing_Trap_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Basic_Fishing_Trap.BP_Basic_Fishing_Trap_C",
             "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/Fishing/SM_Fishing_Trap.SM_Fishing_Trap",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
@@ -2793,13 +2793,13 @@
         {
             "Name": "Mission_Communicator_T3",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T3.BP_Mission_Communication_T3_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_T3_Communication_Device.SM_DEP_T3_Communication_Device",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
         },
         {
             "Name": "Mission_Communicator_T4",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T4.BP_Mission_Communication_T4_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Beacon.SM_DEP_Beacon",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_T4_Communication_Device.SM_DEP_T4_Communication_Device",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
         },
         {
@@ -3116,6 +3116,65 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Exotic_Harvester",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Exotic_Harvester.BP_Exotic_Harvester_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ExoticTreeDevice.SM_DEP_ExoticTreeDevice",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_KITEXTRACTOR_DEPLOY.SFX_DEP_KITEXTRACTOR_DEPLOY",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_OreDeposit"
+            ],
+            "SnapSocketsOrTags": [
+                "HarvesterSnap"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Basic_Fishing_Trap",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Basic_Fishing_Trap.BP_Basic_Fishing_Trap_C",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/Fishing/SM_Fishing_Trap.SM_Fishing_Trap",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "WorldPlacementType": "WaterPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Advanced_Fishing_Trap",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Advanced_Fishing_Trap.BP_Advanced_Fishing_Trap_C",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/Fishing/SM_Fishing_Trap.SM_Fishing_Trap",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "WorldPlacementType": "WaterPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Fishing_Bench",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Fishing_Bench.BP_Fishing_Bench_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Alteration_T3_V2.SM_DEP_Bench_Alteration_T3_V2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Fish_Wall_Mount",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Fish_Wall_Mount.BP_Fish_Wall_Mount_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Wall_Sign.ITEM_Wood_Wall_Sign",
+            "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Wood_Wall_Sign.SM_ITM_Wood_Wall_Sign",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": -1
+        },
+        {
+            "Name": "Aquarium",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Aquarium.BP_Aquarium_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crafting_Bench.SM_DEP_Crafting_Bench",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false
         }
     ]
 }

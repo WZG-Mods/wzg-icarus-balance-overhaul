@@ -1,0 +1,293 @@
+{
+    "RowStruct": "/Script/Icarus.DamageTypeInfo",
+    "Defaults": {
+        "DamageType": "Undefined",
+        "Color": {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0
+        },
+        "RequiredDefenderQuery": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "DamageStat": {
+            "Value": "None"
+        },
+        "DamageVariationStat": {
+            "Value": "None"
+        },
+        "ResistanceStat": {
+            "Value": "None"
+        },
+        "ResistanceOverride": [],
+        "DefenderMultipliers": [],
+        "bAddStealthMultiplier": false
+    },
+    "Rows": [
+        {
+            "Name": "Pure",
+            "DamageType": "Pure",
+            "Color": {
+                "B": 174,
+                "G": 229,
+                "R": 211,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "BasePureDamage_+"
+            }
+        },
+        {
+            "Name": "Melee",
+            "DamageType": "Melee",
+            "Color": {
+                "B": 174,
+                "G": 229,
+                "R": 211,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "MeleeDamage_+"
+            },
+            "DamageVariationStat": {
+                "Value": "MeleeDamageVariation_%"
+            },
+            "ResistanceStat": {
+                "Value": "MeleeDamageResistance_%"
+            },
+            "DefenderMultipliers": [
+                {
+                    "Tag": {
+                        "RowName": "Any_Building",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Stat": {
+                        "Value": "BaseMeleeDamageAgainstBuildings_+%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Projectile",
+            "DamageType": "Projectile",
+            "Color": {
+                "B": 174,
+                "G": 229,
+                "R": 211,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "ProjectileDamage_+"
+            },
+            "DamageVariationStat": {
+                "Value": "BaseProjectileDamageVariation_%"
+            },
+            "ResistanceStat": {
+                "Value": "ProjectileDamageResistance_%"
+            },
+            "DefenderMultipliers": [
+                {
+                    "Tag": {
+                        "RowName": "Any_Building",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Stat": {
+                        "Value": "BaseProjectileDamageAgainstBuildings_+%"
+                    }
+                }
+            ],
+            "bAddStealthMultiplier": true
+        },
+        {
+            "Name": "Fall",
+            "DamageType": "FallDamage",
+            "Color": {
+                "B": 214,
+                "G": 226,
+                "R": 157,
+                "A": 255
+            },
+            "ResistanceStat": {
+                "Value": "FallDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Collision",
+            "DamageType": "Collision",
+            "Color": {
+                "B": 93,
+                "G": 95,
+                "R": 94,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "CollisionDamage_%"
+            },
+            "ResistanceStat": {
+                "Value": "CollisionDamageResistance_%"
+            },
+            "ResistanceOverride": [
+                {
+                    "Tag": {
+                        "RowName": "Any_Tree",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Stat": {
+                        "Value": "TreeCollisionDamageResistance_%"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Felling",
+            "DamageType": "Felling",
+            "Color": {
+                "B": 80,
+                "G": 255,
+                "A": 255
+            },
+            "RequiredDefenderQuery": {
+                "RowName": "Any_Tree"
+            },
+            "DamageStat": {
+                "Value": "FellingDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "BaseFellingDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Shatter",
+            "DamageType": "Shatter",
+            "Color": {
+                "B": 154,
+                "G": 157,
+                "R": 159,
+                "A": 255
+            },
+            "RequiredDefenderQuery": {
+                "RowName": "Rock"
+            },
+            "DamageStat": {
+                "Value": "ShatteringDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "ShatteringDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Poison",
+            "DamageType": "Poison",
+            "Color": {
+                "B": 197,
+                "G": 84,
+                "R": 183,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "PoisonDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "PoisonDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Fire",
+            "DamageType": "Fire",
+            "Color": {
+                "B": 92,
+                "G": 176,
+                "R": 244,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "FireDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "FireDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Frost",
+            "DamageType": "Frost",
+            "Color": {
+                "B": 226,
+                "G": 220,
+                "R": 99,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "FrostDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "FrostDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Electric",
+            "DamageType": "Electric",
+            "Color": {
+                "B": 242,
+                "G": 92,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "ElectricDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "ElectricDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Explosive",
+            "DamageType": "Explosive",
+            "Color": {
+                "G": 70,
+                "R": 217,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "ExplosiveDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "ExplosiveDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Wind",
+            "DamageType": "Wind",
+            "Color": {
+                "B": 252,
+                "G": 225,
+                "R": 175,
+                "A": 255
+            },
+            "DamageStat": {
+                "Value": "WindDamage_+"
+            },
+            "ResistanceStat": {
+                "Value": "WindDamageResistance_%"
+            }
+        },
+        {
+            "Name": "Shield",
+            "DamageType": "Shield",
+            "Color": {
+                "B": 68,
+                "G": 126,
+                "R": 142,
+                "A": 255
+            }
+        },
+        {
+            "Name": "Returned",
+            "DamageType": "Returned",
+            "Color": {
+                "R": 255,
+                "A": 255
+            }
+        }
+    ]
+}
