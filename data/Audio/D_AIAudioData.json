@@ -2561,6 +2561,47 @@
             "ThreatConfig": {
                 "RowName": "Default"
             }
+        },
+        {
+            "Name": "Spider",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Spider/SFX_FOOTSTEP_SPIDER_FAST.SFX_FOOTSTEP_SPIDER_FAST",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "SpiderAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "SpiderFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SpiderDeath"
+            },
+            "StateVocalisations": {
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "SpiderRoar",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
         }
     ]
 }
