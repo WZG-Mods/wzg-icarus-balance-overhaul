@@ -5155,7 +5155,7 @@
             "Name": "STYX_D_Research_DestroyNest_4",
             "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_DestroyNest.BPQ_STYX_D_Research_DestroyNest_C",
             "Variation": 3,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_4-Description\", \"Destroy the Forth Nest located on the Map\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_DestroyNest_4-Description\", \"Destroy the Fourth Nest located on the Map\")",
             "LocationQuery": {
                 "RowName": "STYX_FrozenTraverse_NorthCave"
             },
@@ -6395,12 +6395,24 @@
         {
             "Name": "PRO_Story_1",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1.BPQ_PRO_Story1_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Base",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Base.BPQ_PRO_Story1_Base_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Base-Description\", \"Build yourself a small base of operations\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Base-Description\", \"Build yourself a small base of operations\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Bed",
@@ -6425,7 +6437,13 @@
         {
             "Name": "PRO_Story1_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Collect the Short Range Radio Upgrade\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Recipe_Location",
@@ -6435,22 +6453,46 @@
         {
             "Name": "PRO_Story1_Recipe_Creature",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Creature.BPQ_PRO_Story1_Recipe_Creature_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Kill the Guarding Creature\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Kill the Guarding Creature\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Recipe_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Collect.BPQ_PRO_Story1_Recipe_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Collect-Description\", \"Collect the Upgrade from the Sinotai Supply Pod\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromNomadEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Communicator",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Communicator.BPQ_PRO_Story1_Communicator_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Build & Place the New Communicator (Crafting Bench)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Unlock, Build & Place a Short Range Radio (Crafting Bench)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromNomadEvent7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Mini_Quest",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest.BPQ_PRO_Story1_Mini_Quest_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadEvent8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Tomatoes",
@@ -6465,7 +6507,13 @@
         {
             "Name": "PRO_Story1_Mini_Quest_Collect_Reward",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Reward.BPQ_PRO_Story1_Mini_Quest_Reward_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Reward-Description\", \"Collect the Reward from the Sinotai Reward Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Reward-Description\", \"Collect the Reward from the Sinotai Reward Pod (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromNomadEvent9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_2",
@@ -6473,27 +6521,61 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_2-Description\", \"RECOVERY: Stolen Items\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_Mo_Hideout1"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromOffenderEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story2_Investigate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate.BPQ_PRO_Story2_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromOffenderEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story2_Investigate_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromOffenderEvent3",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromOffenderEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story2_Investigate_Search",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Search.BPQ_PRO_Story2_Investigate_Search_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Search-Description\", \"Search the Base for Stolen Tech and Documents\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromOffenderAudiolog1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story2_Investigate_Deliver",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Deliver.BPQ_PRO_Story2_Investigate_Deliver_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Deliver-Description\", \"Deliver the Stolen Materials to the Sinotai Retrieval Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Deliver-Description\", \"Deliver the Stolen Materials to the Sinotai Retrieval Pod (M)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromOffenderEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story2_Recipe",
@@ -6508,12 +6590,24 @@
         {
             "Name": "PRO_Story2_Recipe_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe_Collect.BPQ_PRO_Story2_Recipe_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Collect-Description\", \"Collect the Infrasonic Relay Device Upgrade from the Sinotai Supply Pod\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromOffenderEvent7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story2_Communicator",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Communicator.BPQ_PRO_Story2_Communicator_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Unlock, Craft and Place the Infrasonic Relay Device (Machining Bench)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromOffenderEvent8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_3",
@@ -6523,12 +6617,28 @@
         {
             "Name": "PRO_Story3_Equipment",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Collect_Equipment.BPQ_PRO_Story3_Collect_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedEvent1",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Triangulate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Triangulate.BPQ_PRO_Story3_Triangulate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate-Description\", \"Triangulate the Hidden Base\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate-Description\", \"Triangulate the Hidden Base\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Triangulate_1",
@@ -6536,6 +6646,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_3_Scan_1"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -6545,6 +6661,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_2-Description\", \"Scan Location Beta (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_3_Scan_2"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -6554,6 +6676,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_3_Scan_3"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -6562,42 +6690,84 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Base-Description\", \"Investigate the Hidden Base\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_Mo_Hideout2"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedEvent7",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story3_Hidden_Travel",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Travel-Description\", \"Travel to the Hidden Base\")"
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Travel-Description\", \"Travel to the Hidden Base\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Hidden_Search",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Hidden_Search.BPQ_PRO_Story3_Hidden_Search_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Search-Description\", \"Search the Base for Stolen Tech and Documents\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Hidden_Beacon",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Hidden_Beacon.BPQ_PRO_Story3_Hidden_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Beacon-Description\", \"Place the Beacon within the Base\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Beacon-Description\", \"Place the Beacon within the Base\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedEvent10",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe.BPQ_PRO_Story3_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Upgrade\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedEvent11",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Recipe_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent12",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Recipe_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe_Collect.BPQ_PRO_Story3_Recipe_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Collect-Description\", \"Collect the Encrypted Satellite Communicator from the Sinotai Supply Pod\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromShadowedEvent13",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Communicator",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Communicator.BPQ_PRO_Story3_Communicator_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Craft and Place the new Communicator (Fabricator)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Unlock, Craft and Place the Encrypted Satellite Communicator (Fabricator)\")"
         },
         {
             "Name": "PRO_Story_4",
@@ -6610,6 +6780,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1-Description\", \"Find the Missing Group 15 Agents\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_4_Body_1"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -6628,7 +6804,13 @@
         {
             "Name": "PRO_Story4_Body1_Interact",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body1_Interact.BPQ_PRO_Story4_Body1_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Interact-Description\", \"Examing the Agent Body For Information (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Interact-Description\", \"Examing the Agent Body For Information (F)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body2",
@@ -6649,12 +6831,24 @@
         {
             "Name": "PRO_Story4_Body2_Search",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Search-Description\", \"Search the Nearby Area for the Missing Agents\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Search-Description\", \"Search the Nearby Area for the Missing Agents\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body2_Interact",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body2_Interact.BPQ_PRO_Story4_Body2_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Interact-Description\", \"Examing the Agent Body For Information (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Interact-Description\", \"Examing the Agent Body For Information (F)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body3",
@@ -6675,22 +6869,46 @@
         {
             "Name": "PRO_Story4_Body3_Search",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Search-Description\", \"Search the Nearby Area for the Last Agent\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Search-Description\", \"Search the Nearby Area for the Last Agent\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body3_Creature",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Creature.BPQ_PRO_Story4_Body3_Creature_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Creature-Description\", \"Eliminate the Creature Guarding the Agents Body\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Creature-Description\", \"Eliminate the Creature Guarding the Agents Body\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body3_Interact",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Interact.BPQ_PRO_Story4_Body3_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Interact-Description\", \"Check the Agents Body for Information (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Interact-Description\", \"Check the Agents Body for Information (F)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestEvent7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body3_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body3_Collect.BPQ_PRO_Story4_Body3_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Collect-Description\", \"Take the Audio Recording From the Agents Body\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body3_Collect-Description\", \"Take the Audio Recording From the Agents Body\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromTempestEvent8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Deliver_Sol",
@@ -6698,6 +6916,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Sol-Description\", \"Deliver the data to Sol\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_4_Sol_Cache"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromTempestEvent9",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -6731,17 +6955,35 @@
         {
             "Name": "PRO_Story_5_Investigate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Investigate.BPQ_PRO_Story5_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate-Description\", \"Investigate the Possible Outpost Location\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate-Description\", \"Investigate the Possible Outpost Location\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Investigate_Locate",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Locate-Description\", \"Find the Outpost (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Locate-Description\", \"Find the Outpost (M)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Investigate_Enter",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Enter-Description\", \"Enter the Outpost <Warning>(WARNING: Explosive Mines Detected)</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Investigate_Enter-Description\", \"Enter the Outpost <Warning>(WARNING: Explosive Mines Detected)</>\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Outpost",
@@ -6751,12 +6993,24 @@
         {
             "Name": "PRO_Story_5_Outpost_Power",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Power.BPQ_PRO_Story5_Outpost_Power_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Power-Description\", \"Provite Electric Power to the Device (10000W)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Power-Description\", \"Provide Electric Power to the Device (10000W)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Outpost_Trasmit",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Transmit.BPQ_PRO_Story5_Outpost_Transmit_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Trasmit-Description\", \"Interact with the Device to Start the Data Transmission\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Trasmit-Description\", \"Interact with the Device to Start the Data Transmission\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromDispatchEvent7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Outpost_Warning",
@@ -6766,7 +7020,13 @@
         {
             "Name": "PRO_Story_5_Outpost_Progress",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Progress.BPQ_PRO_Story5_Outpost_Progress_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Progress-Description\", \"Transmission {0}% Complete\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Progress-Description\", \"Transmission {0}% Complete\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromDispatchEvent8",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Beacon",
@@ -6781,7 +7041,13 @@
         {
             "Name": "PRO_Story_5_Beacon_Place",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Beacon_Place.BPQ_PRO_Story5_Beacon_Place_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Place-Description\", \"Place Down a Beacon within the Outpost\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Place-Description\", \"Place Down a Beacon within the Outpost\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromDispatchEvent9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_Run",
