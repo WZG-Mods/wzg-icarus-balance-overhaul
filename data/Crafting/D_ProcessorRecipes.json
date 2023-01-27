@@ -6015,6 +6015,10 @@
             "RequiredMillijoules": 12500,
             "RecipeSets": [
                 {
+                    "RowName": "Stone_Furnace",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
                     "RowName": "Concrete_Furnace",
                     "DataTableName": "D_RecipeSets"
                 },
@@ -8241,6 +8245,39 @@
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MortarPestle"
+            }
+        },
+        {
+            "Name": "Tree_Sap_Wood",
+            "RequiredMillijoules": 50,
+            "RecipeSets": [
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 20,
                     "DynamicProperties": []
                 }
             ],
