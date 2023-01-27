@@ -81,7 +81,10 @@
                     "RowName": "ProspectInfoFetched",
                     "DataTableName": "D_OrchestrationStateFlags"
                 }
-            ]
+            ],
+            "StateFlagToSetOnExecute": {
+                "RowName": "PostProspectInfoFetched"
+            }
         },
         {
             "Name": "WorldStatsReady",
@@ -131,6 +134,15 @@
             "RequiredFlags": [
                 {
                     "RowName": "MapSubsystemInitialized",
+                    "DataTableName": "D_OrchestrationStateFlags"
+                }
+            ]
+        },
+        {
+            "Name": "PostProspectInfoFetched",
+            "RequiredFlags": [
+                {
+                    "RowName": "PostProspectInfoFetched",
                     "DataTableName": "D_OrchestrationStateFlags"
                 }
             ]
