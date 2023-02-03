@@ -6196,6 +6196,35 @@
             }
         },
         {
+            "Name": "LandShark",
+            "ActorClass": "/Game/BP/AI/Basic/Caves/BP_CRE_LandShark.BP_CRE_LandShark_C",
+            "ControllerClass": "/Game/BP/AI/Basic/Caves/BP_CRE_LandShark_Controller.BP_CRE_LandShark_Controller_C",
+            "CreatureType": {
+                "RowName": "SandWorm"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Aggressive",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "Relationships": {
+                "RowName": "DefaultLargeCarnivore"
+            },
+            "AIGrowth": {
+                "RowName": "LandShark"
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "control_C0_control_jnt",
+                    "AffectsChildren": true
+                }
+            ],
+            "Loot": {
+                "RowName": "Caveworm_Loot"
+            }
+        },
+        {
             "Name": "Polar_Bear_Cub",
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_PolarBearCub_Character.BP_NPC_PolarBearCub_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
@@ -7998,7 +8027,10 @@
                 "RigChest",
                 "RigSpine2",
                 "RigPelvis",
-                "RigNeck2"
+                "RigNeck2",
+                "RigHead",
+                "RigJaw",
+                "RigNeck"
             ],
             "Loot": {
                 "RowName": "Moa_Carcass_Loot"

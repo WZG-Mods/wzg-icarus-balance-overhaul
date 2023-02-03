@@ -656,8 +656,8 @@
         },
         {
             "Name": "BW6_Research_Return",
-            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_BW6_TravelResearchStartingArea.BP_BW6_TravelResearchStartingArea_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Research_Return-Description\", \"Return Samples to Orbit\")",
+            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_InteractWithDropship.BP_InteractWithDropship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"BW6_Research_Return-Description\", \"Return Samples to your Dropship\")",
             "LocationQuery": {
                 "RowName": "BW6_Research_Start"
             },
@@ -2510,7 +2510,7 @@
         },
         {
             "Name": "OLY_Arctic_Expedition_Travel_Through_Pass",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Class": "/Game/BP/Quests/Olympus/Arctic/Expedition/BPQ_OLY_Arctic_Expedition_Travel.BPQ_OLY_Arctic_Expedition_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Expedition_Travel_Through_Pass-Description\", \"Proceed through the pass\")",
             "LocationQuery": {
                 "RowName": "T4_Arctic_Expedition_Blocker_Exit"
@@ -6417,22 +6417,22 @@
         {
             "Name": "PRO_Story1_Bed",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Bed.BPQ_PRO_Story1_Bed_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Bed-Description\", \"{0} / {1} Bed\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Bed-Description\", \"Bedroll {0} / {1}\")"
         },
         {
             "Name": "PRO_Story1_Oxite_Dissolver",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Dissolver.BPQ_PRO_Story1_Dissolver_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Oxite_Dissolver-Description\", \"{0} / {1} Oxidizer\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Oxite_Dissolver-Description\", \"Oxidizer {0} / {1} \")"
         },
         {
             "Name": "PRO_Story1_Crafting_Bench",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Crafting.BPQ_PRO_Story1_Crafting_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Crafting_Bench-Description\", \"{0} / {1} Crafting Bench\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Crafting_Bench-Description\", \"Crafting Bench {0} / {1} \")"
         },
         {
             "Name": "PRO_Story1_Campfire",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Campfire.BPQ_PRO_Story1_Campfire_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Campfire-Description\", \"{0} / {1} Campfire\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Campfire-Description\", \"Campfire {0} / {1} \")"
         },
         {
             "Name": "PRO_Story1_Recipe",
@@ -6453,7 +6453,7 @@
         {
             "Name": "PRO_Story1_Recipe_Creature",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Creature.BPQ_PRO_Story1_Recipe_Creature_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Kill the Guarding Creature\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Optional: Kill the Guarding Creature\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromNomadEvent5",
@@ -6484,15 +6484,20 @@
             }
         },
         {
-            "Name": "PRO_Story1_Mini_Quest",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest.BPQ_PRO_Story1_Mini_Quest_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")",
+            "Name": "PRO_Story1_Interact",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Interact.BPQ_PRO_Story1_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Interact-Description\", \"Interact with the Short Range Radio (F)\")",
             "DialogueEvents": {
-                "QuestStart": {
+                "QuestEnd": {
                     "RowName": "PromNomadEvent8",
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest.BPQ_PRO_Story1_Mini_Quest_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")"
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Tomatoes",
@@ -6545,15 +6550,16 @@
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")",
             "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromOffenderEvent3",
-                    "DataTableName": "D_Dialogue"
-                },
                 "QuestEnd": {
-                    "RowName": "PromOffenderEvent4",
+                    "RowName": "PromOffenderEvent3",
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Clear",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Clear.BPQ_PRO_Story2_Investigate_Clear_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Clear-Description\", \"Clear The Cave of Threats\")"
         },
         {
             "Name": "PRO_Story2_Investigate_Search",
@@ -6562,6 +6568,10 @@
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "PromOffenderAudiolog1",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "PromOffenderEvent4",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6601,7 +6611,12 @@
         {
             "Name": "PRO_Story2_Communicator",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Communicator.BPQ_PRO_Story2_Communicator_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Unlock, Craft and Place the Infrasonic Relay Device (Machining Bench)\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Unlock, Craft and Place the Infrasonic Relay Device (Machining Bench)\")"
+        },
+        {
+            "Name": "PRO_Story2_Interact",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Interact.BPQ_PRO_Story1_Interact_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Interact-Description\", \"Interact with the Infrasonic Relay Device (F)\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "PromOffenderEvent8",
