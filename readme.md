@@ -1,5 +1,3 @@
-**This Release is compatible with "Icarus Week Sixty One Update | Fixes for Week 60’s Weather Systems"**
-
 This is a mod we made to play with friends. Main changes: removed as much grind as possible for T3 and T4, and made workshop items much more rewarding to get. Feel free to try it out and give your feedback.
 
 DISCLAIMER: This mod is for the casual players with limited time, and definitely not for the hardcore survival players. If there will be significant interest to this mode in the community, we consider making a “hardcore” version of it as well. 
