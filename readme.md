@@ -39,7 +39,7 @@ Following are the highlights of the changes that we introduced. For the full lis
 - Spears deal much more damage.
 - Workshop furnace is equal to concrete furnace tier.
 - Can create charcoal in campfire from wood.
-- Workshop Bolts and Crossbows have increased stats.
+- Workshop Bolts and Crossbows have better stats.
 - All Extractors can be placed in main inventory. Radars still require Utility slot [G].
 - Sleep buff duration increased up to 2400 seconds for interior wood bed.
 - Workshop Repair Kit include T4 starting items.
