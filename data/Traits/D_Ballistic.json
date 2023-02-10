@@ -2533,6 +2533,60 @@
                 "FlySound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_WEP_GRN_DROPSHIP_FLARE.SFX_WEP_GRN_DROPSHIP_FLARE"
             },
             "OnHitAINoiseEventRange": 0
+        },
+        {
+            "Name": "Landshark_Spit",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 25,
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.5,
+            "GravityScale": 0.15000000596046448,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Landshark_Spit.BP_Payload_Landshark_Spit_C",
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "PayloadDeploymentTimerDelay": 1,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_SMALL.SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_SMALL",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_MED.SFX_CRE_SANDWORM_BALLISTIC_MED"
+            }
+        },
+        {
+            "Name": "Landshark_Spit_Large",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 50,
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.5,
+            "GravityScale": 0.15000000596046448,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_SandwormSpit_Large.BP_Payload_SandwormSpit_Large_C",
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "PayloadDeploymentTimerDelay": 1,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_LARGE.SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_LARGE",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_LARGE.SFX_CRE_SANDWORM_BALLISTIC_LARGE"
+            }
         }
     ]
 }

@@ -5421,6 +5421,102 @@
             "MergeType": "Stack",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Landshark_Spit",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Landshark_Spit-ModifierName\", \"Landshark Bacteria\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Landshark_Spit-ModifierDescription\", \"Lowers your resistances to damage, as well as increases the stamina cost of actions. Heal with antibiotics.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -4,
+                "(Value=\"BaseMeleeDamageResistance_%\")": -5,
+                "(Value=\"BaseProjectileDamageResistance_%\")": -5,
+                "(Value=\"BaseStaminaActionCost_+%\")": 15
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_AfflicationDamage.BP_ModifierStateBehaviour_AfflicationDamage_C",
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "BacterialModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Bacterial"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antibiotic.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antibiotic.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antibiotic.T2, ModifierState.Medicine.Antibiotic.T3 )"
+            }
+        },
+        {
+            "Name": "Landshark_Melee",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Sandworm.Icon_Sandworm'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Landshark_Melee-ModifierName\", \"Landshark Bite\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Landshark_Melee-ModifierDescription\", \"A nasty hit, taking damage, worse while moving. Heal with blood thinner.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_MinorHemorrhage.BP_ModifierStateBehaviour_MinorHemorrhage_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PhysicalTraumaModifierDuration_+%"
+                }
+            ],
+            "RemovedOnDeath": false,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.PhysicalTrauma"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Bloodthinner.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Bloodthinner.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Bloodthinner.T2, ModifierState.Medicine.Bloodthinner.T3 )"
+            }
         }
     ]
 }
