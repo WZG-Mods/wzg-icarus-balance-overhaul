@@ -2619,10 +2619,26 @@
                 "RowName": "LavaHunterAttack"
             },
             "FlinchVocalisation": {
-                "RowName": "ScorpionBossFlinch"
+                "RowName": "LavaHunterFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "ScorpionBossDeath"
+                "RowName": "LavaHunterDeath"
+            },
+            "StateVocalisations": {
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "LavaHunterAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
             },
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
             "ThreatLevel": 100,
