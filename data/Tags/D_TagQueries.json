@@ -4183,6 +4183,46 @@
                 ],
                 "AutoDescription": " ANY( Item.Attachment.FishingRod )"
             }
+        },
+        {
+            "Name": "Any_Salt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Salt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Resource.Salt )"
+            }
+        },
+        {
+            "Name": "Any_Food_Or_Ice",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "Item.Resource.Ice"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice )"
+            }
         }
     ]
 }

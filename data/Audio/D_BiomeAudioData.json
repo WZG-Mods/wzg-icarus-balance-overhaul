@@ -2,7 +2,10 @@
     "RowStruct": "/Script/Icarus.BiomeAudioData",
     "Defaults": {
         "BiomeFMODParam": "None",
-        "LocationMusicCondition": "None",
+        "MusicLocationCondition": {
+            "RowName": "None",
+            "DataTableName": "D_MusicLocationConditions"
+        },
         "AudioAmbienceBase": "None",
         "AudioAmbienceTransitional": "None"
     },
@@ -10,56 +13,72 @@
         {
             "Name": "Conifer",
             "BiomeFMODParam": "Conifer",
-            "LocationMusicCondition": "ConiferForest",
+            "MusicLocationCondition": {
+                "RowName": "Conifer"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
             "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Desert",
             "BiomeFMODParam": "Desert",
-            "LocationMusicCondition": "Desert",
+            "MusicLocationCondition": {
+                "RowName": "Desert"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
             "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "Arctic",
             "BiomeFMODParam": "Arctic",
-            "LocationMusicCondition": "Arctic",
+            "MusicLocationCondition": {
+                "RowName": "Arctic"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
             "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Cave",
-            "LocationMusicCondition": "Cave",
+            "MusicLocationCondition": {
+                "RowName": "Cave"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CA_BASE.AMB_CA_BASE"
         },
         {
             "Name": "Wetlands",
             "BiomeFMODParam": "Wetlands",
-            "LocationMusicCondition": "Wetlands",
+            "MusicLocationCondition": {
+                "RowName": "Wetlands"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_WL_BASE.AMB_WL_BASE",
-            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_SWAMP_CAVE_ENTRANCE.ENV_SWAMP_CAVE_ENTRANCE"
         },
         {
             "Name": "Lava",
             "BiomeFMODParam": "Lava",
-            "LocationMusicCondition": "Lava",
+            "MusicLocationCondition": {
+                "RowName": "Lava"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_LC_BASE.AMB_LC_BASE",
-            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_LAVA_CAVE_ENTRANCE.ENV_LAVA_CAVE_ENTRANCE"
         },
         {
             "Name": "ArcticTundra",
             "BiomeFMODParam": "Arctic",
-            "LocationMusicCondition": "Arctic",
+            "MusicLocationCondition": {
+                "RowName": "Arctic"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_TUNDRA_BASE.AMB_TUNDRA_BASE",
-            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_TUNDRA_CAVE_ENTRANCE.ENV_TUNDRA_CAVE_ENTRANCE"
         },
         {
             "Name": "Grasslands",
             "BiomeFMODParam": "Grasslands",
-            "LocationMusicCondition": "ConiferForest",
+            "MusicLocationCondition": {
+                "RowName": "Conifer"
+            },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_GRASSLANDS_BASE.AMB_GRASSLANDS_BASE",
-            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_GRASSLANDS_CAVE_ENTRANCE.ENV_GRASSLANDS_CAVE_ENTRANCE"
         }
     ]
 }
