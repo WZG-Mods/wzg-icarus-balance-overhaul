@@ -3178,7 +3178,7 @@
         {
             "Name": "Basic_Fishing_Trap",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Basic_Fishing_Trap.BP_Basic_Fishing_Trap_C",
-            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/Fishing/SM_Fishing_Trap.SM_Fishing_Trap",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fishing_Trap_T2.SM_DEP_Fishing_Trap_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "WorldPlacementType": "WaterPlacement",
@@ -3187,7 +3187,7 @@
         {
             "Name": "Advanced_Fishing_Trap",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Advanced_Fishing_Trap.BP_Advanced_Fishing_Trap_C",
-            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/Fishing/SM_Fishing_Trap.SM_Fishing_Trap",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fishing_Trap_T3.SM_DEP_Fishing_Trap_T3",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "WorldPlacementType": "WaterPlacement",
@@ -3196,7 +3196,7 @@
         {
             "Name": "Fishing_Bench",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Fishing_Bench.BP_Fishing_Bench_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Alteration_T3_V2.SM_DEP_Bench_Alteration_T3_V2",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Fishing_T2.SM_DEP_Bench_Fishing_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false
         },
@@ -3214,7 +3214,14 @@
         {
             "Name": "Aquarium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Aquarium.BP_Aquarium_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crafting_Bench.SM_DEP_Crafting_Bench",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Aquarium_T3.SM_DEP_Aquarium_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Advanced_Aquarium",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Advanced_Aquarium.BP_Advanced_Aquarium_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Aquarium_T4.SM_DEP_Aquarium_T4",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false
         },
@@ -3245,6 +3252,20 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_TMP_Freezer.SM_TMP_Freezer",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Layered_Plating",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Layered_Plating.BP_Layered_Plating_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Plating.SM_DEP_Plating",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Mission_DeployableSnapActor"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
         }
     ]
 }

@@ -23,7 +23,10 @@
             "X": 100,
             "Y": 100
         },
-        "UpdateOnTick": true
+        "UpdateOnTick": true,
+        "bDisplayOnCompass": true,
+        "MaxCompassDisplayDistance": -1,
+        "CompassWidgetClass": "WidgetBlueprintGeneratedClass'/Game/UI/Compass/UMG_IcarusCompassIcon.UMG_IcarusCompassIcon_C'"
     },
     "Rows": [
         {
@@ -41,7 +44,8 @@
             },
             "ZOrder": -1,
             "ScaleFactor": 0.30000001192092896,
-            "GetsRotation": true
+            "GetsRotation": true,
+            "bDisplayOnCompass": false
         },
         {
             "Name": "Player",
@@ -54,7 +58,8 @@
                 "Value": "MapIsBroadcastingForMap_?"
             },
             "ZOrder": 100,
-            "GetsRotation": true
+            "GetsRotation": true,
+            "CompassWidgetClass": "WidgetBlueprintGeneratedClass'/Game/UI/Compass/UMG_IcarusCompassIcon_Player.UMG_IcarusCompassIcon_Player_C'"
         },
         {
             "Name": "Metaresource",
@@ -99,7 +104,8 @@
             "BrushSize": {
                 "X": 30,
                 "Y": 30
-            }
+            },
+            "CompassWidgetClass": "WidgetBlueprintGeneratedClass'/Game/UI/Compass/UMG_IcarusCompassIcon_PlayerWaypoint.UMG_IcarusCompassIcon_PlayerWaypoint_C'"
         },
         {
             "Name": "EquipmentPod",
@@ -133,7 +139,8 @@
             },
             "ZOrder": -1,
             "ScaleFactor": 0.30000001192092896,
-            "GetsRotation": true
+            "GetsRotation": true,
+            "bDisplayOnCompass": false
         },
         {
             "Name": "Portable_Beacon",
@@ -171,7 +178,8 @@
             "Color": {
                 "R": 255,
                 "A": 255
-            }
+            },
+            "bDisplayOnCompass": false
         },
         {
             "Name": "Scanning_Location",
@@ -246,7 +254,8 @@
             "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Sandworm.Icon_Sandworm'",
             "RequiredPlayerStatToShow": {
                 "Value": "MapCanSeeWorldBosses_?"
-            }
+            },
+            "bDisplayOnCompass": false
         },
         {
             "Name": "WorldBoss_Scorpion",
@@ -254,7 +263,8 @@
             "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Scorpion.Icon_Scorpion'",
             "RequiredPlayerStatToShow": {
                 "Value": "MapCanSeeWorldBosses_?"
-            }
+            },
+            "bDisplayOnCompass": false
         },
         {
             "Name": "WorldBoss_AlphaWolf",
@@ -262,7 +272,8 @@
             "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf'",
             "RequiredPlayerStatToShow": {
                 "Value": "MapCanSeeWorldBosses_?"
-            }
+            },
+            "bDisplayOnCompass": false
         },
         {
             "Name": "Downed_Sattelite",
