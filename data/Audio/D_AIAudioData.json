@@ -2647,6 +2647,44 @@
             },
             "CombatMusicConditionOverride": "InCombat_EpicBoss",
             "MusicConditionOverrideMinThreatLevel": 20
+        },
+        {
+            "Name": "LavaBroodling",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Spider/SFX_FOOTSTEP_SPIDER_FAST.SFX_FOOTSTEP_SPIDER_FAST",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "LavaBroodlingAttack"
+            },
+            "DeathVocalisation": {
+                "RowName": "LavaBroodlingDeath"
+            },
+            "StateVocalisations": {
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
         }
     ]
 }

@@ -1112,7 +1112,7 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Consumable Food Items",
+                "UserDescription": "Any Spoiled Food Items",
                 "AutoDescription": " ANY( Item.Consumable.Food.Spoiled )"
             }
         },
@@ -4222,6 +4222,51 @@
                     1
                 ],
                 "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice )"
+            }
+        },
+        {
+            "Name": "Any_Food_ExceptSpoiled",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Spoiled"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    1,
+                    1,
+                    0,
+                    3,
+                    1,
+                    1
+                ],
+                "UserDescription": "Any Consumable Food Items",
+                "AutoDescription": " ALL(  ANY( Item.Consumable.Food ),  NONE( Item.Consumable.Food.Spoiled ) )"
+            }
+        },
+        {
+            "Name": "Any_Fish",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.Fish"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( NPC.Fish )"
             }
         }
     ]

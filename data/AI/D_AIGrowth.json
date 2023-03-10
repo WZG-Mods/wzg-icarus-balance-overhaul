@@ -1015,8 +1015,8 @@
         {
             "Name": "Polar_Bear_Cub",
             "Base": {
-                "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 100,
+                "(Value=\"BaseSwimSpeed_+\")": 175,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 50,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
@@ -1026,24 +1026,14 @@
                 "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
-                "(Value=\"BaseCharacterMass_+\")": 500,
+                "(Value=\"BaseCharacterMass_+\")": 150,
                 "(Value=\"BaseNPCAttackRadius_+\")": 300,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"CanNPCDamageVoxels_?\")": 1,
-                "(Value=\"BaseMiningRadius_+\")": 100,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2
             },
             "Health": "CurveFloat'/Game/Data/AI/C_PolarBearCubHealth.C_PolarBearCubHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_PolarBearCubMeleeDamage.C_PolarBearCubMeleeDamage'",
             "MovementSpeed": "CurveFloat'/Game/Data/AI/C_PolarBearCubMovementSpeed.C_PolarBearCubMovementSpeed'",
-            "CustomStats": [
-                {
-                    "Stat": {
-                        "Value": "BaseAttacksCauseDeepWound_%"
-                    },
-                    "Curve": "CurveFloat'/Game/Data/AI/C_BeerDeepWoundChance.C_BeerDeepWoundChance'"
-                }
-            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
@@ -1573,22 +1563,23 @@
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
                 "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
                 "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
-                "(Value=\"BaseAIPerceptionSightRadius_+\")": 6000,
-                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 6750,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 9000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 10500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
-                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 4500,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 4500,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 500,
                 "(Value=\"BaseCharacterMass_+\")": 100,
-                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"BaseNPCAttackRadius_+\")": 250,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 10,
                 "(Value=\"BaseImmobiliseResistance_%\")": 10,
-                "(Value=\"BaseMovementSpeed_+\")": 110
+                "(Value=\"BaseMovementSpeed_+\")": 110,
+                "(Value=\"NPCRunningAttackRequiresSimilarDirection_?\")": 1
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_StrikerHealth.C_StrikerHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_StrikerMeleeDamage.C_StrikerMeleeDamage'",
             "CustomStats": [
                 {
                     "Stat": {
@@ -1681,7 +1672,8 @@
                 "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
-                "(Value=\"BasePhysicalDamageResistance_%\")": 30
+                "(Value=\"BasePhysicalDamageResistance_%\")": 30,
+                "(Value=\"NPCRunningAttackRequiresSimilarDirection_?\")": 1
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
