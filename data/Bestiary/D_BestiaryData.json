@@ -3,13 +3,32 @@
     "Defaults": {
         "CreatureName": "",
         "Image": "None",
-        "Biomes": []
+        "Biomes": [],
+        "Maps": [],
+        "Total_Required_To_Kill": 1000,
+        "Unlocks": {}
     },
     "GenerateEnum": true,
     "Rows": [
         {
             "Name": "Forest_Wolf",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-CreatureName\", \"Wolf\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-CreatureName\", \"Wolf\")",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Snow_Wolf",
@@ -25,7 +44,7 @@
         },
         {
             "Name": "Chamios",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamios\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamois\")"
         },
         {
             "Name": "Elephant",
@@ -81,7 +100,7 @@
         },
         {
             "Name": "Desert_Wolf",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hynea\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hyena\")"
         },
         {
             "Name": "Buffalo",
@@ -109,11 +128,11 @@
         },
         {
             "Name": "Desert_Scorpian",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpian-CreatureName\", \"Desert Scorpian\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpian-CreatureName\", \"Desert Scorpion\")"
         },
         {
             "Name": "Arctic_Scorpian",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpian-CreatureName\", \"Arctic Scorpian\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpian-CreatureName\", \"Arctic Scorpion\")"
         },
         {
             "Name": "Caveworm",
@@ -137,7 +156,7 @@
         },
         {
             "Name": "Scorpian_Boss",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpian_Boss-CreatureName\", \"Giant Scorpian\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpian_Boss-CreatureName\", \"Giant Scorpion\")"
         },
         {
             "Name": "Sandworm",
