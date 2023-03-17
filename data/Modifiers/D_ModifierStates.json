@@ -4980,14 +4980,6 @@
                 "(Value=\"BaseHealthRegen_+%\")": -100,
                 "(Value=\"BaseMovementSpeed_+%\")": -60
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
-            "ModifierVariables": {
-                "Damage": {
-                    "BaseValue": 10,
-                    "Deviation": 0
-                }
-            },
-            "ShouldTick": true,
             "ModifierTickRate": 2,
             "MergeType": "Stack"
         },
@@ -5027,14 +5019,6 @@
                 "(Value=\"BaseMovementSpeed_+%\")": -15,
                 "(Value=\"BaseStaminaRegenDelay_+%\")": 50
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
-            "ModifierVariables": {
-                "Damage": {
-                    "BaseValue": 10,
-                    "Deviation": 0
-                }
-            },
-            "ShouldTick": true,
             "MergeType": "Stack"
         },
         {
@@ -5529,6 +5513,46 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "GrantedAura_MountWellRested",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_People.Icon_People'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MountWellRested-ModifierName\", \"Aura: Well Rested\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MountWellRested-ModifierDescription\", \"Nearby Tamed Creatures will recieve the Well Rested Modifier\")",
+            "VisibleToPlayer": false,
+            "bAura": true,
+            "AuraRange": 3500,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsPlayers": false,
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "Well_Rested_Mount"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Well_Rested_Mount",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Rested.Icon_Rested'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Well_Rested_Mount-ModifierName\", \"Mount Well Rested\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Well_Rested_Mount-ModifierDescription\", \"You\\'re well rested, and several physical attributes are improved for a period.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 10,
+                "(Value=\"BaseMaximumStamina_+%\")": 5,
+                "(Value=\"BaseStaminaRegen_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -5,
+                "(Value=\"BaseWaterConsumption_+%\")": -5
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         }
     ]
 }
