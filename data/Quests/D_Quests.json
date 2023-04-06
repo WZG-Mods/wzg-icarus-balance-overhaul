@@ -6402,7 +6402,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromNomadEvent1",
+                    "RowName": "PromNomadIntro",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6413,7 +6413,11 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Base-Description\", \"Build yourself a small base of operations\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromNomadEvent3",
+                    "RowName": "PromNomadEvent1",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromNomadEvent2",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6530,12 +6534,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_2-Description\", \"RECOVERY: Stolen Items\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_Mo_Hideout1"
-            },
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromOffenderEvent1",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -6544,7 +6542,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromOffenderEvent2",
+                    "RowName": "PromOffenderIntro1",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6552,13 +6550,7 @@
         {
             "Name": "PRO_Story2_Investigate_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromOffenderEvent3",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
         },
         {
             "Name": "PRO_Story2_Investigate_Clear",
@@ -6634,7 +6626,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromShadowedEvent1",
+                    "RowName": "PromShadowedIntro1",
                     "DataTableName": "D_Dialogue"
                 },
                 "QuestEnd": {
@@ -6996,18 +6988,12 @@
         {
             "Name": "PRO_Story_5_Outpost",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost.BPQ_PRO_Story5_Outpost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost-Description\", \"Transmit Data to Group 15\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromDispatchEvent6",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost-Description\", \"Transmit Data to Group 15\")"
         },
         {
             "Name": "PRO_Story_5_Outpost_Power",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost_Power.BPQ_PRO_Story5_Outpost_Power_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Power-Description\", \"Provide Electric Power to the Device (20000W)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_Power-Description\", \"Provide Electric Power to the Device (10000W)\")"
         },
         {
             "Name": "PRO_Story_5_Outpost_Trasmit",
@@ -7560,6 +7546,36 @@
             "Name": "STYX_B_Research_Craft",
             "Class": "/Game/BP/Quests/Styx/B/Research/BPQ_STYX_B_Research_Craft.BPQ_STYX_B_Research_Craft_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Research_Craft-Description\", \"Layered Plating can be crafted at the Fabricator\")"
+        },
+        {
+            "Name": "PRO_Story_5_Outpost_FindScanner",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_FindScanner.BPQ_PRO_Story5_FindScanner_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_FindScanner-Description\", \"Reach the Data Storage Communicator\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromDispatchEvent6",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story0",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0-Description\", \"Welcome to Prometheus\")"
+        },
+        {
+            "Name": "PRO_Story0_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a Short Range Radio (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")"
+        },
+        {
+            "Name": "PRO_Story_5_TransmitterHealth",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_TransmitterHealth.BPQ_PRO_Story5_TransmitterHealth_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_TransmitterHealth-Description\", \"Transmitter Durability: {0} / {1}\")"
         }
     ]
 }

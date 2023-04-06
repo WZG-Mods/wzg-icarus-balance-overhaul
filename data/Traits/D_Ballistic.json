@@ -2587,6 +2587,36 @@
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_LARGE.SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_LARGE",
                 "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_LARGE.SFX_CRE_SANDWORM_BALLISTIC_LARGE"
             }
+        },
+        {
+            "Name": "Needler_Spike",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 17,
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.05000000074505806,
+            "GravityScale": 0.5,
+            "AllowPickupAfterSettle": false,
+            "TrailParticle": "/Game/Fx/Particles/P_ArrowTrail.P_ArrowTrail",
+            "BreakChance": 0,
+            "PostDeployLifetime": 10,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0.6000000238418579,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 5,
+                "MinFrictionFraction": 0
+            },
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ITM_Needler_Spike_BallisticPhysicsAsset.SK_ITM_Needler_Spike_BallisticPhysicsAsset",
+            "SpawnPositionOffset": {
+                "X": 28
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_NEEDLER_SPIKE.SFX_BALLISTIC_NEEDLER_SPIKE",
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_IMPACT_NEEDLER_PROJECTILE_SPIKE.SFX_IMPACT_NEEDLER_PROJECTILE_SPIKE"
+            },
+            "bUseActorPooling": true
         }
     ]
 }

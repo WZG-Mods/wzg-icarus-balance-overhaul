@@ -5,14 +5,92 @@
         "Image": "None",
         "Biomes": [],
         "Maps": [],
-        "Total_Required_To_Kill": 1000,
-        "Unlocks": {}
+        "TotalPointsRequired": 1000,
+        "Lore1": "",
+        "Lore2": "",
+        "Lore3": "",
+        "Weaknesses": [],
+        "StatsUnlock1": {},
+        "StatsUnlock2": {}
     },
     "GenerateEnum": true,
     "Rows": [
         {
             "Name": "Forest_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-CreatureName\", \"Wolf\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PackWolf.Bestiary_PackWolf",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "Lore1": "INVTEXT(\"[DNT] Revived ancient earth species. A well preserved sample was found deep in the Le Brea tar pits, the first few mammoths were carried by elephants as surrogate mothers. Due to significant debate on the ethics of the mammoths revival, the experiment had to be conducted on Icarus. \")",
+            "Lore2": "INVTEXT(\"[DNT] Extremist group TPS was responsible for the organisation of global protests against the revival of this species. While this study was not the most advanced genetics experiment, it became a pivotal reference in arguments against genetic augmentation. A slippery slope to experimentation on humans.\")",
+            "Lore3": "INVTEXT(\"[DNT] \\\"While we appreciate new technology that allows us to maintain a healthy ecosystem, the potential of this technology being used unethically... more than likely it already is used unethicallymore than likely it already is used unethically. We deserve better, you deserve better.\\\" - TPS Spokesperson \")",
+            "Weaknesses": [
+                "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-Weaknesses-0\", \"Head\")"
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseMeleeDamage_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMeleeDamage_+%\")": 5,
+                "(Value=\"BaseFrostDamage_+\")": 12
+            }
+        },
+        {
+            "Name": "Snow_Wolf",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowWolf.Bestiary_SnowWolf",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
+        },
+        {
+            "Name": "Bear_Cub",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear_Cub-CreatureName\", \"Bear Cub\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
+        },
+        {
+            "Name": "Bear",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-CreatureName\", \"Bear\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Bear.Bestiary_Bear",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -31,136 +109,605 @@
             ]
         },
         {
-            "Name": "Snow_Wolf",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")"
-        },
-        {
-            "Name": "Bear_Cub",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear_Cub-CreatureName\", \"Bear Cub\")"
-        },
-        {
-            "Name": "Bear",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-CreatureName\", \"Bear\")"
-        },
-        {
             "Name": "Chamios",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamois\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamois\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Chamois.Bestiary_Chamois",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Elephant",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-CreatureName\", \"Elephant\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-CreatureName\", \"Elephant\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Elephant.Bestiary_Elephant",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Polar_Bear_Cub",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear_Cub-CreatureName\", \"Polar Bear Cub\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear_Cub-CreatureName\", \"Polar Bear Cub\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Polar_Bear",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-CreatureName\", \"Polar Bear\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-CreatureName\", \"Polar Bear\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PolarBear.Bestiary_PolarBear",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Baby_Deer",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-CreatureName\", \"Baby Deer\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-CreatureName\", \"Baby Deer\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BabyDeer.Bestiary_BabyDeer",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Forest_Deer",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-CreatureName\", \"Forest Deer\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-CreatureName\", \"Forest Deer\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Deer.Bestiary_Deer",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Desert_Deer",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-CreatureName\", \"Desert Deer\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-CreatureName\", \"Desert Deer\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertDeer.Bestiary_DesertDeer",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Lion",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Lion-CreatureName\", \"Lion\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Lion-CreatureName\", \"Lion\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_F_Lion.Bestiary_F_Lion",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Cougar",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-CreatureName\", \"Cougar\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-CreatureName\", \"Cougar\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_AlphaCougar.Bestiary_AlphaCougar",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Mammoth",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-CreatureName\", \"Mammoth\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-CreatureName\", \"Mammoth\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Mammoth.Bestiary_Mammoth",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Jaguar",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-CreatureName\", \"Jaguar\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-CreatureName\", \"Jaguar\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Jaguar.Bestiary_Jaguar",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Pronghorn",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-CreatureName\", \"Pronghorn\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-CreatureName\", \"Pronghorn\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Pronghorn.Bestiary_Pronghorn",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Snow_Leopard",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-CreatureName\", \"Snow Leopard\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-CreatureName\", \"Snow Leopard\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowLeopard.Bestiary_SnowLeopard",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Rabbit",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-CreatureName\", \"Rabbit\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-CreatureName\", \"Rabbit\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Rabbit.Bestiary_Rabbit",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Desert_Wolf",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hyena\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hyena\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertWolf.Bestiary_DesertWolf",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Buffalo",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-CreatureName\", \"Buffalo\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-CreatureName\", \"Buffalo\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Buffalo.Bestiary_Buffalo",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Wild_Boar",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-CreatureName\", \"Wild Boar\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-CreatureName\", \"Wild Boar\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_WildBoar.Bestiary_WildBoar",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Zebra",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-CreatureName\", \"Zebra\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-CreatureName\", \"Zebra\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Zebra.Bestiary_Zebra",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Kea",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-CreatureName\", \"Kea\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-CreatureName\", \"Kea\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Kea.Bestiary_Kea",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Crocodile",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-CreatureName\", \"Crocodile\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-CreatureName\", \"Crocodile\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Crocodile.Bestiary_Crocodile",
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Komodo",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-CreatureName\", \"Komodo\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-CreatureName\", \"Komodo\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Komodo.Bestiary_Komodo",
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Desert_Scorpian",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpian-CreatureName\", \"Desert Scorpion\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpian-CreatureName\", \"Desert Scorpion\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Scorpion.Bestiary_Scorpion",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Arctic_Scorpian",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpian-CreatureName\", \"Arctic Scorpion\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpian-CreatureName\", \"Arctic Scorpion\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_ArcticScorpion.Bestiary_ArcticScorpion",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Caveworm",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-CreatureName\", \"Cave Worm\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-CreatureName\", \"Cave Worm\")",
+            "Biomes": [
+                {
+                    "RowName": "Cave",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Teenage_Caveworm",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-CreatureName\", \"Teenage Caveworm\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-CreatureName\", \"Teenage Caveworm\")",
+            "Biomes": [
+                {
+                    "RowName": "Cave",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Moa",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-CreatureName\", \"Moa\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-CreatureName\", \"Moa\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Moa.Bestiary_Moa",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Alpha_Wolf_Boss",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-CreatureName\", \"Alpha Wolf\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-CreatureName\", \"Alpha Wolf\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_AlphaWolf.Bestiary_AlphaWolf",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Landshark_Boss",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-CreatureName\", \"Landshark\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-CreatureName\", \"Landshark\")",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Cave",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Scorpian_Boss",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpian_Boss-CreatureName\", \"Giant Scorpion\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpian_Boss-CreatureName\", \"Giant Scorpion\")",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         },
         {
             "Name": "Sandworm",
-            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-CreatureName\", \"Sandworm\")"
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-CreatureName\", \"Sandworm\")",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ]
         }
     ]
 }
