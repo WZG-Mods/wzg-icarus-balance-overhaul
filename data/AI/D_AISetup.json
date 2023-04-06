@@ -8057,9 +8057,6 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
-            },
-            "BestiaryGroup": {
-                "RowName": "Bear"
             }
         },
         {
@@ -8191,6 +8188,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Swamp_Bird"
             }
         },
         {
@@ -8301,7 +8301,10 @@
                 "RowName": "AnimalBones"
             },
             "bUseSurvivalCharacterState": true,
-            "bStartWithSurvivalTickDisabled": false
+            "bStartWithSurvivalTickDisabled": false,
+            "BestiaryGroup": {
+                "RowName": "Swamp_Bird"
+            }
         },
         {
             "Name": "Chamois_Var",
@@ -8436,6 +8439,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Chamios_Varient"
             }
         },
         {
@@ -8568,6 +8574,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Blueback"
             }
         },
         {
@@ -8682,7 +8691,10 @@
                 "RowName": "AnimalBones"
             },
             "bUseSurvivalCharacterState": true,
-            "bStartWithSurvivalTickDisabled": false
+            "bStartWithSurvivalTickDisabled": false,
+            "BestiaryGroup": {
+                "RowName": "Blueback"
+            }
         },
         {
             "Name": "Roat_Swamp",
@@ -8811,6 +8823,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Roat"
             }
         },
         {
@@ -8943,6 +8958,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Lava_Blueback"
             }
         },
         {
@@ -9057,7 +9075,144 @@
                 "RowName": "AnimalBones"
             },
             "bUseSurvivalCharacterState": true,
-            "bStartWithSurvivalTickDisabled": false
+            "bStartWithSurvivalTickDisabled": false,
+            "BestiaryGroup": {
+                "RowName": "Lava_Blueback"
+            }
+        },
+        {
+            "Name": "Swamp_Bird_Dummy",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_SwampBird_Character.BP_NPC_SwampBird_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Swamp_Bird"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_SwampBird"
+            },
+            "GOAPSetup": {
+                "RowName": "SwampBird"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "Player"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "SwampBird"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.9100000858306885,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 3.9100000858306885,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 6.929999828338623,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 6.929999828338623,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "Swampbird"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2",
+                "RigHead",
+                "RigJaw",
+                "RigNeck"
+            ],
+            "Loot": {
+                "RowName": "Moa_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones"
+            },
+            "BestiaryGroup": {
+                "RowName": "Swamp_Bird"
+            }
         }
     ]
 }

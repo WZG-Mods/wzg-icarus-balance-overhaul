@@ -5,7 +5,9 @@
         "Fish": [],
         "FishDensity": 1,
         "Sound": "None",
-        "IsInCave": false
+        "IsInCave": false,
+        "IsDrinkable": true,
+        "WetModifiers": []
     },
     "Rows": [
         {
@@ -25,7 +27,13 @@
                     "DataTableName": "D_FishSetup"
                 }
             ],
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "Swamp",
@@ -44,21 +52,39 @@
                     "DataTableName": "D_FishSetup"
                 }
             ],
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_SWAMP_LAKE.ENV_SWAMP_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_SWAMP_LAKE.ENV_SWAMP_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "Cave_Calm",
             "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_CalmCave.MI_Profile_CalmCave",
             "FishDensity": 0.25,
             "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
-            "IsInCave": true
+            "IsInCave": true,
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "Cave_Glow",
             "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_GlowyCave.MI_Profile_GlowyCave",
             "FishDensity": 0.25,
             "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
-            "IsInCave": true
+            "IsInCave": true,
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "TutorialLake",
@@ -73,19 +99,39 @@
                     "DataTableName": "D_FishSetup"
                 }
             ],
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "Lava",
             "Material": "/Game/ASS/ENV/WAT/MI_LavaRVT.MI_LavaRVT",
             "FishDensity": 0,
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "IsDrinkable": false,
+            "WetModifiers": [
+                {
+                    "RowName": "Lava",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "Lava_Lake",
             "Material": "/Game/ASS/ENV/WAT/MI_LavaLakeB.MI_LavaLakeB",
             "FishDensity": 0,
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAVA_LAKE.ENV_LAVA_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAVA_LAKE.ENV_LAVA_LAKE",
+            "IsDrinkable": false,
+            "WetModifiers": [
+                {
+                    "RowName": "Lava",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         },
         {
             "Name": "FrozenTransparent",
@@ -100,7 +146,13 @@
         {
             "Name": "Geothermal",
             "Material": "/Game/ASS/ENV/WAT/MI_Water_SulfurPool.MI_Water_SulfurPool",
-            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_GEOTHERMAL_LAKE.ENV_GEOTHERMAL_LAKE"
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_GEOTHERMAL_LAKE.ENV_GEOTHERMAL_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ]
         }
     ]
 }

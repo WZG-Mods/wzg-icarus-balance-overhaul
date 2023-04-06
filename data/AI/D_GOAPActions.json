@@ -461,6 +461,48 @@
             "AudioState": "Attacking"
         },
         {
+            "Name": "Ranged_Attack_Assailant",
+            "Description": "Ranged_Attack_Assailant",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Angry",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                },
+                {
+                    "Property": {
+                        "RowName": "Found_Enemy",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 30,
+            "TickRate": 0.10000000149011612,
+            "AssociatedMovementState": "Attacking",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Melee_Attack.BP_IcarusGOAPAction_Melee_Attack_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack.BT_IcarusNPCGOAP_Melee_Attack",
+            "AudioState": "Attacking"
+        },
+        {
             "Name": "Investigate_Last_Hostile_Stimulus",
             "Description": "Investigate_Last_Hostile_Stimulus",
             "Preconditions": [

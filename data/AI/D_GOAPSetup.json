@@ -2774,6 +2774,10 @@
                 {
                     "RowName": "Hunting",
                     "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Anchored",
+                    "DataTableName": "D_GOAPMotivations"
                 }
             ],
             "Actions": [
@@ -2812,6 +2816,10 @@
                 {
                     "RowName": "Hunt_Target",
                     "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Goto_Anchor",
+                    "DataTableName": "D_GOAPActions"
                 }
             ],
             "Goals": [
@@ -2837,6 +2845,10 @@
                 },
                 {
                     "RowName": "Hunt_Target",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Return_to_Anchor",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
@@ -2925,6 +2937,9 @@
             ],
             "DefaultGoal": {
                 "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.GOAP.Melee_Attack\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack_Needler.BT_IcarusNPCGOAP_Melee_Attack_Needler'"
             }
         },
         {
