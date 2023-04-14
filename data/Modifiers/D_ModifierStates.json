@@ -935,6 +935,11 @@
                 "(Value=\"BaseFoodConsumption_+%\")": -5,
                 "(Value=\"BaseWaterConsumption_+%\")": -5
             },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "SleepModifierDuration_+%"
+                }
+            ],
             "MergeType": "Replace",
             "bEffectsNPCs": false
         },
@@ -5978,6 +5983,169 @@
                     }
                 ]
             }
+        },
+        {
+            "Name": "Fried_Fish_Chunks",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fried_Fish_Chunks-ModifierName\", \"Fried Fish Chunks\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fried_Fish_Chunks-ModifierDescription\", \"Boosts your health and health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Fish_Chunk_Stew",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fish_Chunk_Stew-ModifierName\", \"Fish Chunk Stew\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fish_Chunk_Stew-ModifierDescription\", \"Boosts your health and stamina, stamina regeneration and melee damage, and reduces stamina consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 10,
+                "(Value=\"BaseStaminaConsumed_+%\")": -10,
+                "(Value=\"BaseMeleeDamage_+%\")": 5
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Dried_Freshwater_Fillet",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Freshwater_Fillet-ModifierName\", \"Dried Freshwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Freshwater_Fillet-ModifierDescription\", \"Boosts health, stamina regeneration and health regeneration, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseHealthRegen_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Dried_Saltwater_Fillet",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Saltwater_Fillet-ModifierName\", \"Dried Saltwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Saltwater_Fillet-ModifierDescription\", \"Boosts health, stamina regeneration and exposure resistance, and slows hunger\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseExposureResistance_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Freshwater_Fillet_Curry",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Freshwater_Fillet_Curry-ModifierName\", \"Freshwater Fillet Curry\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Freshwater_Fillet_Curry-ModifierDescription\", \"Greatly boosts health, health regeneration and stamina regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 225,
+                "(Value=\"BaseHealthRegen_+%\")": 15,
+                "(Value=\"BaseStaminaRegen_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Saltwater_Fillet_Sashimi",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Saltwater_Fillet_Sashimi-ModifierName\", \"Saltwater Fillet Sashimi\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Saltwater_Fillet_Sashimi-ModifierDescription\", \"Boosts health, stamina, stamina regeneration, exposure resistance and projectile damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseExposureResistance_+%\")": 5,
+                "(Value=\"BaseProjectileDamage_+%\")": 5
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Pickled_Freshwater_Fillet",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pickled_Freshwater_Fillet-ModifierName\", \"Pickled Freshwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pickled_Freshwater_Fillet-ModifierDescription\", \"Boosts health, health regeneraiton and stamina regeneration, and shared experience gain.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseStaminaRegen_+%\")": 30,
+                "(Value=\"BaseHealthRegen_+%\")": 10,
+                "(Value=\"BaseSharedExperience_+%\")": 20
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Crumbed_Saltwater_Fillet",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crumbed_Saltwater_Fillet-ModifierName\", \"Crumbed Saltwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crumbed_Saltwater_Fillet-ModifierDescription\", \"Boosts health and stamina, stamina regeneration, exposure resistance, and experience gain.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseExposureResistance_+%\")": 5,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Fish_Fillet_Pie",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fish_Fillet_Pie-ModifierName\", \"Fish Fillet Pie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fish_Fillet_Pie-ModifierDescription\", \"Greatly boosts health, stamina regeneration, exposure resistance, and experience gain.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 225,
+                "(Value=\"BaseHealthRegen_+%\")": 5,
+                "(Value=\"BaseStaminaRegen_+%\")": 30,
+                "(Value=\"BaseExposureResistance_+%\")": 5,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
         }
     ]
 }
