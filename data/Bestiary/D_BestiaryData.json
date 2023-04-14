@@ -3,6 +3,7 @@
     "Defaults": {
         "CreatureName": "",
         "Image": "None",
+        "CreatureSound": "None",
         "Biomes": [],
         "Maps": [],
         "TotalPointsRequired": 1000,
@@ -19,6 +20,7 @@
             "Name": "Forest_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-CreatureName\", \"Wolf\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PackWolf.Bestiary_PackWolf",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOLF.UI_BESTIARY_CRE_WOLF",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -42,17 +44,17 @@
                 "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-Weaknesses-0\", \"Head\")"
             ],
             "StatsUnlock1": {
-                "(Value=\"BaseMeleeDamage_+%\")": 5
+                "(Value=\"BaseWolfThreatModifier_+%\")": -15
             },
             "StatsUnlock2": {
-                "(Value=\"BaseMeleeDamage_+%\")": 5,
-                "(Value=\"BaseFrostDamage_+\")": 12
+                "(Value=\"WolvesDropExtraMeat_?\")": 1
             }
         },
         {
             "Name": "Snow_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowWolf.Bestiary_SnowWolf",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOLF.UI_BESTIARY_CRE_WOLF",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -68,12 +70,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseArcticHealthRegen_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseArcticColdResistance_+%\")": 5
+            }
         },
         {
             "Name": "Bear_Cub",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear_Cub-CreatureName\", \"Bear Cub\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEAR_CUB.UI_BESTIARY_CRE_BEAR_CUB",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -85,12 +94,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseBoneHarvestedFromAnimals_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseOxygenConsumption_+%\")": 15
+            }
         },
         {
             "Name": "Bear",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-CreatureName\", \"Bear\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Bear.Bestiary_Bear",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEAR.UI_BESTIARY_CRE_BEAR",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -106,12 +122,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseDeepWoundResistance_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMaximumHealth_+%\")": 15
+            }
         },
         {
             "Name": "Chamios",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamois\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Chamois.Bestiary_Chamois",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CHAMOIS.UI_BESTIARY_CRE_CHAMOIS",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -127,12 +150,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseHarvestingRewards_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFellingRewards_%\")": 15
+            }
         },
         {
             "Name": "Elephant",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-CreatureName\", \"Elephant\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Elephant.Bestiary_Elephant",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_ELEPHANT.UI_BESTIARY_CRE_DEER_ELEPHANT",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -148,12 +178,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseWaterConsumption_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BasePrimeMeatDropChance_%\")": 15
+            }
         },
         {
             "Name": "Polar_Bear_Cub",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear_Cub-CreatureName\", \"Polar Bear Cub\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_POLAR_BEAR_CUB.UI_BESTIARY_CRE_POLAR_BEAR_CUB",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -165,12 +202,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseSkinningRewards_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseArcticExposureResistance_+%\")": 15
+            }
         },
         {
             "Name": "Polar_Bear",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-CreatureName\", \"Polar Bear\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PolarBear.Bestiary_PolarBear",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_POLAR_BEAR.UI_BESTIARY_CRE_POLAR_BEAR",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -186,12 +230,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseExposureResistance_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMeleeDamage_+%\")": 10
+            }
         },
         {
             "Name": "Baby_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-CreatureName\", \"Baby Deer\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BabyDeer.Bestiary_BabyDeer",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BABY_DEER.UI_BESTIARY_CRE_BABY_DEER",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -207,12 +258,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseFurHarvestedFromAnimals_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 15
+            }
         },
         {
             "Name": "Forest_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-CreatureName\", \"Forest Deer\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Deer.Bestiary_Deer",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER.UI_BESTIARY_CRE_DEER",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -228,12 +286,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseAnimalCarryingMovementSpeed_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseDysentryChance_%\")": -25
+            }
         },
         {
             "Name": "Desert_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-CreatureName\", \"Desert Deer\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertDeer.Bestiary_DesertDeer",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_DESERT.UI_BESTIARY_CRE_DEER_DESERT",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -249,12 +314,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseHyperthermiaResistance_%\")": 25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 25
+            }
         },
         {
             "Name": "Lion",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Lion-CreatureName\", \"Lion\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_F_Lion.Bestiary_F_Lion",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_COUGAR.UI_BESTIARY_CRE_COUGAR",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -270,12 +342,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseWoundResistance_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMeleeDamage_+%\")": 10
+            }
         },
         {
             "Name": "Cougar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-CreatureName\", \"Cougar\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_AlphaCougar.Bestiary_AlphaCougar",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_COUGAR.UI_BESTIARY_CRE_COUGAR",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -291,12 +370,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseBleedResistance_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseSleepModifierDuration_+%\")": 15
+            }
         },
         {
             "Name": "Mammoth",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-CreatureName\", \"Mammoth\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Mammoth.Bestiary_Mammoth",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MAMMOTH.UI_BESTIARY_CRE_MAMMOTH",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -308,12 +394,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BasePrimeMeatDropChance_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMammothTuskRewards_+%\")": 100
+            }
         },
         {
             "Name": "Jaguar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-CreatureName\", \"Jaguar\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Jaguar.Bestiary_Jaguar",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_JAGUAR.UI_BESTIARY_CRE_JAGUAR",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -329,12 +422,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseSleepQuality_%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseStaminaRegen_+%\")": 15
+            }
         },
         {
             "Name": "Pronghorn",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-CreatureName\", \"Pronghorn\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Pronghorn.Bestiary_Pronghorn",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_DESERT.UI_BESTIARY_CRE_DEER_DESERT",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -350,12 +450,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseCollisionDamageResistance_%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseHarvestingRewards_+%\")": 10
+            }
         },
         {
             "Name": "Snow_Leopard",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-CreatureName\", \"Snow Leopard\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowLeopard.Bestiary_SnowLeopard",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SNOW_LEOPARD.UI_BESTIARY_CRE_SNOW_LEOPARD",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -371,12 +478,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseMeleeDamageResistance_%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseHypothermiaResistance_%\")": 15
+            }
         },
         {
             "Name": "Rabbit",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-CreatureName\", \"Rabbit\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Rabbit.Bestiary_Rabbit",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_RABBIT.UI_BESTIARY_CRE_RABBIT",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -392,12 +506,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseHealthRegen_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"\")": 0
+            }
         },
         {
             "Name": "Desert_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hyena\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertWolf.Bestiary_DesertWolf",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_HYENA.UI_BESTIARY_CRE_HYENA",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -413,12 +534,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseAnimalThreatModifier_+%\")": -10
+            }
         },
         {
             "Name": "Buffalo",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-CreatureName\", \"Buffalo\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Buffalo.Bestiary_Buffalo",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BUFFALO.UI_BESTIARY_CRE_BUFFALO",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -434,12 +562,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseMiningRewards_+%\")": 25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseTamingSpeed_%\")": 10
+            }
         },
         {
             "Name": "Wild_Boar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-CreatureName\", \"Wild Boar\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_WildBoar.Bestiary_WildBoar",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BOAR.UI_BESTIARY_CRE_BOAR",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -455,12 +590,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseBaconHarvestedFromAnimals_+%\")": 25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFoodModifierDuration_+%\")": 15
+            }
         },
         {
             "Name": "Zebra",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-CreatureName\", \"Zebra\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Zebra.Bestiary_Zebra",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ZEBRA.UI_BESTIARY_CRE_ZEBRA",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -476,12 +618,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseSkinningRewards_%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseDesertExposureResistance_+%\")": 10
+            }
         },
         {
             "Name": "Kea",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-CreatureName\", \"Kea\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Kea.Bestiary_Kea",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KEA.UI_BESTIARY_CRE_KEA",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -493,34 +642,55 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseKeaWhiteMeatDropChance_%\")": 25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseProjectileAccuracy_+%\")": 10
+            }
         },
         {
             "Name": "Crocodile",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-CreatureName\", \"Crocodile\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Crocodile.Bestiary_Crocodile",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CROC.UI_BESTIARY_CRE_CROC",
             "Maps": [
                 {
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseHardenedPointDamage_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseSwimSpeed_+%\")": 15
+            }
         },
         {
             "Name": "Komodo",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-CreatureName\", \"Komodo\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Komodo.Bestiary_Komodo",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KOMODO.UI_BESTIARY_CRE_KOMODO",
             "Maps": [
                 {
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseBacterialModifierDuration_+%\")": -25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseSkinningSpeed_+%\")": 10
+            }
         },
         {
             "Name": "Desert_Scorpian",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpian-CreatureName\", \"Desert Scorpion\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Scorpion.Bestiary_Scorpion",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SCORPION.UI_BESTIARY_CRE_SCORPION",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -536,12 +706,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BasePoisonDamageResistance_%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -10
+            }
         },
         {
             "Name": "Arctic_Scorpian",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpian-CreatureName\", \"Arctic Scorpion\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_ArcticScorpion.Bestiary_ArcticScorpion",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SCORPION.UI_BESTIARY_CRE_SCORPION",
             "Biomes": [
                 {
                     "RowName": "Arctic",
@@ -553,11 +730,18 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseHardenedPointDamage_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFrostbiteResistance_%\")": 15
+            }
         },
         {
             "Name": "Caveworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-CreatureName\", \"Cave Worm\")",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAVEWORM.UI_BESTIARY_CRE_CAVEWORM",
             "Biomes": [
                 {
                     "RowName": "Cave",
@@ -573,11 +757,18 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseCaveHealthRegen_+%\")": 20
+            },
+            "StatsUnlock2": {
+                "(Value=\"BasePoisonResistance_%\")": 10
+            }
         },
         {
             "Name": "Teenage_Caveworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-CreatureName\", \"Teenage Caveworm\")",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAVEWORM.UI_BESTIARY_CRE_CAVEWORM",
             "Biomes": [
                 {
                     "RowName": "Cave",
@@ -593,12 +784,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseOxygenConsumption_+%\")": -10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BasePneumoniaResistance_%\")": 10
+            }
         },
         {
             "Name": "Moa",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-CreatureName\", \"Moa\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Moa.Bestiary_Moa",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MOA.UI_BESTIARY_CRE_MOA",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -614,12 +812,19 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseTamingSpeed_%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseReapingRewards_%\")": 10
+            }
         },
         {
             "Name": "Alpha_Wolf_Boss",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-CreatureName\", \"Alpha Wolf\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_AlphaWolf.Bestiary_AlphaWolf",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ALPHA_WOLF.UI_BESTIARY_CRE_ALPHA_WOLF",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -635,11 +840,18 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseBlackWolfTeethRewards_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseHemorrhageChanceWithBlackWolfWeapons_%\")": 10
+            }
         },
         {
             "Name": "Landshark_Boss",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-CreatureName\", \"Landshark\")",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SANDWORM.UI_BESTIARY_CRE_SANDWORM",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -667,11 +879,18 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseMiningCopperRewards_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMiningRewards_+%\")": 10
+            }
         },
         {
             "Name": "Scorpian_Boss",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpian_Boss-CreatureName\", \"Giant Scorpion\")",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SCORPION_BOSS.UI_BESTIARY_CRE_SCORPION_BOSS",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -687,11 +906,18 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseScorpionCarapaceRewards_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseChanceToReturnDamageWithScorpionArmor_%\")": 10
+            }
         },
         {
             "Name": "Sandworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-CreatureName\", \"Sandworm\")",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SANDWORM.UI_BESTIARY_CRE_SANDWORM",
             "Biomes": [
                 {
                     "RowName": "Desert",
@@ -707,7 +933,13 @@
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
-            ]
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseSandwormScaleRewards_+%\")": 15
+            },
+            "StatsUnlock2": {
+                "(Value=\"BasePoisonChanceWithSandwormWeapons_%\")": 15
+            }
         }
     ]
 }

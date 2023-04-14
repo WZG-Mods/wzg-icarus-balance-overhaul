@@ -83,6 +83,33 @@
             "bAutomaticallySpawnJuvenileWithParent": true,
             "PercentChanceToSpawnJuvenile": 75,
             "MaxNearbyAutoSpawnedJuveniles": 5
+        },
+        {
+            "Name": "DYN_Bear_Cub",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Bear"
+            },
+            "MatureCreatureType": {
+                "RowName": "Bear"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Bear_Cub"
+            },
+            "PercentChanceToSpawnJuvenile": 75,
+            "MaxNearbyAutoSpawnedJuveniles": 5
         }
     ]
 }

@@ -6741,6 +6741,9 @@
             "Name": "PRO_Story3_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe.BPQ_PRO_Story3_Recipe_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Upgrade\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout2"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromShadowedEvent11",
@@ -6778,7 +6781,13 @@
         {
             "Name": "PRO_Story_4",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4.BPQ_PRO_Story4_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: MIA\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: MIA\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromTempestIntro1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story4_Body1",
@@ -6943,7 +6952,10 @@
         {
             "Name": "PRO_Story4_Deliver_Group15",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Group15.BPQ_PRO_Story4_Group15_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Group15-Description\", \"Deliver the data to Group 15\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Group15-Description\", \"Deliver the data to Group 15\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_4_Sol_Cache"
+            }
         },
         {
             "Name": "PRO_Story4_Deliver_Group15_Deliver",
@@ -7576,6 +7588,11 @@
             "Name": "PRO_Story_5_TransmitterHealth",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_TransmitterHealth.BPQ_PRO_Story5_TransmitterHealth_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_TransmitterHealth-Description\", \"Transmitter Durability: {0} / {1}\")"
+        },
+        {
+            "Name": "DYN_Tame",
+            "Class": "/Game/BP/Quests/Dynamic/Drone/BPQ_DYN_Drone.BPQ_DYN_Drone_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Tame-Description\", \"SMPL3: Domestication\")"
         }
     ]
 }
