@@ -2182,6 +2182,9 @@
                     },
                     {
                         "TagName": "Item.Carcass.Empty"
+                    },
+                    {
+                        "TagName": "Harvest.Sickle.Only"
                     }
                 ],
                 "QueryTokenStream": [
@@ -2193,10 +2196,11 @@
                     1,
                     0,
                     3,
+                    2,
                     1,
-                    1
+                    2
                 ],
-                "AutoDescription": " ALL(  ALL( Harvest ),  NONE( Item.Carcass.Empty ) )"
+                "AutoDescription": " ALL(  ALL( Harvest ),  NONE( Item.Carcass.Empty, Harvest.Sickle.Only ) )"
             }
         },
         {
@@ -4267,6 +4271,32 @@
                     0
                 ],
                 "AutoDescription": " ALL( NPC.Fish )"
+            }
+        },
+        {
+            "Name": "Harvest_Sickle_Only",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Sickle.Only"
+                    },
+                    {
+                        "TagName": "Item.Carcass.Empty"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    3,
+                    1,
+                    1
+                ],
+                "AutoDescription": " ALL(  ALL( Harvest.Sickle.Only ),  NONE( Item.Carcass.Empty ) )"
             }
         }
     ]

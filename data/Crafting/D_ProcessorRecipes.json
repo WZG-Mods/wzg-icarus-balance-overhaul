@@ -10180,7 +10180,15 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 10,
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
                     "DynamicProperties": []
                 }
             ],
@@ -10340,7 +10348,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Copper",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -10348,10 +10356,10 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Epoxy",
+                        "RowName": "Copper_Nail",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -10361,12 +10369,69 @@
                     },
                     "Count": 6,
                     "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
                 }
             ],
             "Outputs": [
                 {
                     "Element": {
                         "RowName": "Ammo_Shell_Buckshot",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Shotgun_Shell_Explosive",
+            "Requirement": {
+                "RowName": "Explosive_Ammo"
+            },
+            "RequiredMillijoules": 1000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseShotgunAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Buckshot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Explosive",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -10758,7 +10823,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Metal",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -10769,7 +10834,7 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 2,
                     "DynamicProperties": []
                 }
             ],
@@ -18129,9 +18194,9 @@
         {
             "Name": "Rifle_Round_Incendiary",
             "Requirement": {
-                "RowName": "Rifle_Round_Incendiary"
+                "RowName": "Incendiary_Ammo"
             },
-            "RequiredMillijoules": 500,
+            "RequiredMillijoules": 1000,
             "RecipeSets": [
                 {
                     "RowName": "Machining_Bench",
@@ -18146,7 +18211,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Metal",
+                        "RowName": "Ammo_Rifle_Round",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -18157,7 +18222,7 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 10,
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -18165,6 +18230,55 @@
                 {
                     "Element": {
                         "RowName": "Ammo_Rifle_Round_Incendiary",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Rifle_Round_Explosive",
+            "Requirement": {
+                "RowName": "Explosive_Ammo"
+            },
+            "RequiredMillijoules": 1000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseRifleAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Rifle_Round",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Rifle_Round_Explosive",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -19806,7 +19920,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Metal",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -19825,6 +19939,104 @@
                 {
                     "Element": {
                         "RowName": "Ammo_Pistol_Round",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Pistol_Explosive_Round",
+            "Requirement": {
+                "RowName": "Explosive_Ammo"
+            },
+            "RequiredMillijoules": 1000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BasePistolAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Pistol_Round",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Pistol_Round_Explosive",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Pistol_Incendiary_Round",
+            "Requirement": {
+                "RowName": "Incendiary_Ammo"
+            },
+            "RequiredMillijoules": 1000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BasePistolAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Pistol_Round",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Gunpowder",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Pistol_Round_Incendiary",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -20405,7 +20617,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Metal",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -20416,7 +20628,7 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 10,
                     "DynamicProperties": []
                 }
             ],
@@ -20457,7 +20669,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Metal",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -20509,7 +20721,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Copper",
+                        "RowName": "Ammo_Casing",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -20517,10 +20729,10 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Epoxy",
+                        "RowName": "Copper_Nail",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 25,
                     "DynamicProperties": []
                 },
                 {
@@ -20529,6 +20741,14 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -37084,6 +37304,94 @@
             "Audio": {
                 "RowName": "CarpentryBench"
             }
+        },
+        {
+            "Name": "Ammo_Casing",
+            "Requirement": {
+                "RowName": "Ammo_Casing"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Casing",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ]
+        },
+        {
+            "Name": "Volatile_Substance",
+            "Requirement": {
+                "RowName": "Volatile_Substance"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gunpowder",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Spoiled_Plants",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ]
         }
     ]
 }

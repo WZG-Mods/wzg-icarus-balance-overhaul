@@ -653,7 +653,7 @@
         {
             "Name": "Item_Rifle_Round",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round-DisplayName\", \"Rifle Round\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Rifle_Round.ITEM_Rifle_Round",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round.ITEM_Ammo_Rifle_Round",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round-Description\", \"Standard NATO 7.62mm cartridges.\")",
             "Weight": 10,
             "MaxStack": 100
@@ -1003,14 +1003,16 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Genade_Frag.ITEM_Genade_Frag",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade-Description\", \"A basic fragmentation grenade design.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade-FlavorText\", \"Homemade explosives are the best kind.\")",
-            "Weight": 500
+            "Weight": 500,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Smoke_Grenade",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoke_Grenade-DisplayName\", \"Smoke Grenade\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Genade_Smoke.ITEM_Genade_Smoke",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoke_Grenade-Description\", \"A canister grenade, used for drawing attention or concealing.\")",
-            "Weight": 500
+            "Weight": 500,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Carbon_Arrow",
@@ -1186,8 +1188,24 @@
         {
             "Name": "Item_Shell_Buckshot",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Buckshot-DisplayName\", \"00 Buckshot Shell\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Shell_Buckshot.ITEM_Shell_Buckshot",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Buckshot.ITEM_Ammo_Shell_Buckshot",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Buckshot-Description\", \"Standard 12 gauge \\\"00\\\" buckshot.\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Shell_Explosive",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Explosive-DisplayName\", \"Explosive Shotgun Shell\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Explosive.ITEM_Ammo_Shell_Explosive",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Explosive-Description\", \"Explosive 12 gauge shotgun round.\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Shell_Slug",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Slug-DisplayName\", \"Shotgun Slug\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Slug.ITEM_Ammo_Shell_Slug",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Slug-Description\", \"Standard 12 gauge slug round.\")",
             "Weight": 10,
             "MaxStack": 100
         },
@@ -1495,7 +1513,7 @@
         },
         {
             "Name": "Item_Carcass_RockDog",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockDog-DisplayName\", \"Kharon Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockDog-DisplayName\", \"Stonejaw Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockDog-Description\", \"A large predator with a rock-like outer coating that protects it from most damage.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockDog-FlavorText\", \"Known amongst new prospectors simply as the Rockdog, this creature is quickly gaining a reputation for causing nightmares for contractors in the area.\")",
@@ -2040,6 +2058,22 @@
             "MaxStack": 100
         },
         {
+            "Name": "Item_Pistol_Round_Explosive",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round_Explosive-DisplayName\", \"Explosive Pistol Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round_Explosive.ITEM_Ammo_Pistol_Round_Explosive",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round_Explosive-Description\", \"Explosive 9mm ammunition.\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Pistol_Round_Incendiary",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round_Incendiary-DisplayName\", \"Incendiary Pistol Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round_Incendiary.ITEM_Ammo_Pistol_Round_Incendiary",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Round_Incendiary-Description\", \"Explosive 9mm ammunition which can ignite flammable targets.\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
             "Name": "Item_Carcass_PolarBear",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PolarBear-DisplayName\", \"Polar Bear Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_PolarBear.ITEM_AnimalCarcass_PolarBear",
@@ -2101,10 +2135,18 @@
             "Weight": 6000
         },
         {
+            "Name": "Item_Rifle_Round_Explosive",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round_Explosive-DisplayName\", \"Explosive Rifle Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round_Explosive.ITEM_Ammo_Rifle_Round_Explosive",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round_Explosive-Description\", \"Explosive 7.62mm ammunition which can ignite flammable targets..\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
             "Name": "Item_Rifle_Round_Incendiary",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round_Incendiary-DisplayName\", \"Incendiary Rifle Round\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Rifle_Round_Incendiary.ITEM_Rifle_Round_Incendiary",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round_Incendiary-Description\", \"Explosive 7.62mm ammunition.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round_Incendiary.ITEM_Ammo_Rifle_Round_Incendiary",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Round_Incendiary-Description\", \"Explosive 7.62mm ammunition which can ignite flammable targets..\")",
             "Weight": 10,
             "MaxStack": 100
         },
@@ -8684,7 +8726,7 @@
         },
         {
             "Name": "Item_Carcass_PredatorBird",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PredatorBird-DisplayName\", \"Swooper Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PredatorBird-DisplayName\", \"Dreadwing Carcass\")",
             "Description": "INVTEXT(\"[DNT] Predator Bird Carcass\")",
             "FlavorText": "INVTEXT(\"[DNT] Predator Bird Carcass\")",
             "Weight": 1250
@@ -8873,6 +8915,14 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-Description\", \"A very fancy fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-FlavorText\", \"I repeat, do NOT tap on the glass.\")",
             "Weight": 2500
+        },
+        {
+            "Name": "Item_Large_Advanced_Aquarium",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-DisplayName\", \"Large Advanced Aquarium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Large_Advanced_Aquarium.ITEM_Large_Advanced_Aquarium",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-FlavorText\", \"The lastest technology for sotring your fish friends.\")",
+            "Weight": 5000
         },
         {
             "Name": "Item_Saltwater_Fish_Fillet",
@@ -9946,6 +9996,33 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Fillet_Pie-FlavorText\", \"Can be cooked at a Biofuel Stove.\")",
             "Weight": 500,
             "MaxStack": 10
+        },
+        {
+            "Name": "Item_Ammo_Casing",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Casing-DisplayName\", \"Ammo Casing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Bullet_Casing.ITEM_Bullet_Casing",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Casing-Description\", \"A rough iron ammo casing that can be used to create all types of ammo.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Casing-FlavorText\", \"Basic building blocks for firearm ammunition.\")",
+            "Weight": 100,
+            "MaxStack": 200
+        },
+        {
+            "Name": "Item_Volatile_Substance",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance-DisplayName\", \"Volatile Substance\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Volatile_Substance.ITEM_Volatile_Substance",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance-Description\", \"A highly explosive substance made from locally found materials native to Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance-FlavorText\", \"This feels like it could explode at any point.\")",
+            "Weight": 250,
+            "MaxStack": 25
+        },
+        {
+            "Name": "Item_Volatile_Substance_Inert",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance_Inert-DisplayName\", \"Inert Volatile Substance\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Volatile_Substance_Inert.ITEM_Volatile_Substance_Inert",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance_Inert-Description\", \"Formally highly explosive substance made from locally found materials native to Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Volatile_Substance_Inert-FlavorText\", \"This is rather useless\")",
+            "Weight": 250,
+            "MaxStack": 25
         }
     ]
 }
