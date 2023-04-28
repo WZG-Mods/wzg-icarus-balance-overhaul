@@ -2475,35 +2475,40 @@
             ]
         },
         {
-            "Name": "Ash",
-            "Difficulty": "Medium",
-            "Tier": 2,
-            "DurationSeconds": 30,
-            "DurationMinutes": 1,
-            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySand.WeatherEvent_HeavySand'",
-            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Ash-WeatherName\", \"Ash\")",
-            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Ash-WeatherDescription\", \"Ash Test\")",
+            "Name": "Volcanic_Heavy_Ash",
+            "Difficulty": "Heavy",
+            "Tier": 5,
+            "DurationSeconds": 540,
+            "DurationMinutes": 9,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Volcanic",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Volcanic_Heavy_Ash-WeatherName\", \"Heavy Ash\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Ash storm will clog some devices, stoping them from working and reduce visibility.\")",
             "WeatherActions": [
                 {
                     "Action": {
                         "RowName": "Ash_Start",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 10
+                    "TimeInSeconds": 120
                 },
                 {
                     "Action": {
                         "RowName": "Ash_Middle",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 10
+                    "TimeInSeconds": 300
                 },
                 {
                     "Action": {
                         "RowName": "Ash_Stop",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 10
+                    "TimeInSeconds": 120
                 }
             ]
         }

@@ -1628,7 +1628,7 @@
                 "RowName": "AnimalBones"
             },
             "BestiaryGroup": {
-                "RowName": "Alpha_Cougar"
+                "RowName": "Cougar"
             }
         },
         {
@@ -5755,7 +5755,7 @@
             "ActorClass": "/Game/BP/AI/Bosses/BP_NPC_ScorpionBoss_Character.BP_NPC_ScorpionBoss_Character_C",
             "ControllerClass": "/Game/BP/AI/Bosses/BP_ScorpionBoss_Controller.BP_ScorpionBoss_Controller_C",
             "CreatureType": {
-                "RowName": "Scorpion"
+                "RowName": "Scorpion_Boss"
             },
             "Descriptors": [
                 {
@@ -6161,7 +6161,7 @@
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_ScorpionArctic_Character.BP_NPC_ScorpionArctic_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
             "CreatureType": {
-                "RowName": "Scorpion"
+                "RowName": "Arctic_Scorpian"
             },
             "Descriptors": [
                 {
@@ -9607,6 +9607,131 @@
             "BestiaryGroup": {
                 "RowName": "Komodo"
             }
+        },
+        {
+            "Name": "LavaHunter",
+            "ActorClass": "/Game/BP/AI/Bosses/BP_NPC_LavaHunter_Character.BP_NPC_LavaHunter_Character_C",
+            "ControllerClass": "/Game/BP/AI/Bosses/BP_LavaHunter_Controller.BP_LavaHunter_Controller_C",
+            "CreatureType": {
+                "RowName": "LavaHunter"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Aggressive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "GOAPSetup": {
+                "RowName": "LavaHunter"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "Relationships": {
+                "RowName": "EnemyAll"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "LavaHunter"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2.950000047683716,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 12,
+                    "MaxAcceleration": 1000,
+                    "BrakingDeceleration": 1500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 2.950000047683716,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 4,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 1500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 4.710000038146973,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 4,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 1500,
+                    "RotationRate": 175,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 4.710000038146973,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 1500,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 175,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": false
+                }
+            ],
+            "Audio": {
+                "RowName": "LavaHunterBoss"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ]
         }
     ]
 }
