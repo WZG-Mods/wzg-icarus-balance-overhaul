@@ -1,0 +1,27 @@
+{
+    "RowStruct": "/Script/Icarus.AIEventData",
+    "Defaults": {
+        "AIEventBehaviourClass": "None",
+        "MaxSimultaneousEvents": -1,
+        "CooldownDuration": -1,
+        "CooldownRandomDeviation": 0,
+        "bStartOnCooldown": false
+    },
+    "Rows": [
+        {
+            "Name": "TestEvent",
+            "AIEventBehaviourClass": "/Game/BP/AI/Events/BP_AIEvent_Test.BP_AIEvent_Test_C",
+            "MaxSimultaneousEvents": 1,
+            "CooldownDuration": 15,
+            "CooldownRandomDeviation": 5
+        },
+        {
+            "Name": "SpawnBatDogsAroundCurrentTarget",
+            "AIEventBehaviourClass": "/Game/BP/AI/Events/BP_AIEvent_SpawnBatDogs.BP_AIEvent_SpawnBatDogs_C",
+            "MaxSimultaneousEvents": 1,
+            "CooldownDuration": 1800,
+            "CooldownRandomDeviation": 300,
+            "bStartOnCooldown": true
+        }
+    ]
+}

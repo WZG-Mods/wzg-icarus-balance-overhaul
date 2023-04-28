@@ -1053,7 +1053,7 @@
         {
             "Name": "OLY_Forest_Research_Deliver",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Deliver.BPQ_OLY_Forest_Research_Deliver_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver-Description\", \"Deliver the Samples the Supply Pod (M)\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Deliver-Description\", \"Deliver the Samples to the Supply Pod (M)\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Research_Deliver"
             }
@@ -4195,7 +4195,7 @@
         {
             "Name": "OLY_Forest_Defense_Collect_Thruster_Collect",
             "Class": "/Game/BP/Quests/Olympus/Forest/Defense/BPQ_OLY_Forest_Defence_Thruster_Collect.BPQ_OLY_Forest_Defence_Thruster_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Defense_Collect_Thruster_Collect-Description\", \"Find a new Thruster in the nearby Wrekage (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Defense_Collect_Thruster_Collect-Description\", \"Find a new thruster in the nearby wreckage (M)\")"
         },
         {
             "Name": "OLY_Forest_Defense_Collect_Thruster_Place",
@@ -4335,7 +4335,7 @@
         {
             "Name": "STYX_A_Expedition_Beacon_Kill_Komodos",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_STYX_A_Expedition_Kill_Komodos.BPQ_STYX_A_Expedition_Kill_Komodos_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Kill_Komodos-Description\", \"{0} / {1} {2} Remaning\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Beacon_Kill_Komodos-Description\", \"{0} / {1} {2} Remaining\")"
         },
         {
             "Name": "STYX_A_Expedition_Beacon_Deploy_Beacon",
@@ -6394,7 +6394,7 @@
         {
             "Name": "OLY_Forest_Survey_Transmitter_Health",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Object_Health.BPQ_Common_Object_Health_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Transmitter_Health-Description\", \"Tansmitter Health: {0}/{1}\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Transmitter_Health-Description\", \"Transmitter Health: {0}/{1}\")"
         },
         {
             "Name": "PRO_Story_1",
@@ -6576,6 +6576,9 @@
             "Name": "PRO_Story2_Investigate_Deliver",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Deliver.BPQ_PRO_Story2_Investigate_Deliver_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Deliver-Description\", \"Deliver the Stolen Materials to the Sinotai Retrieval Pod (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_2_DynamicDrop"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromOffenderEvent5",
@@ -6586,7 +6589,10 @@
         {
             "Name": "PRO_Story2_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe.BPQ_PRO_Story2_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe-Description\", \"Collect the New Communicator Blueprint\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_2_DynamicDrop"
+            }
         },
         {
             "Name": "PRO_Story2_Recipe_Travel",
@@ -6742,7 +6748,7 @@
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Recipe.BPQ_PRO_Story3_Recipe_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Upgrade\")",
             "LocationQuery": {
-                "RowName": "PRO_Story_Mo_Hideout2"
+                "RowName": "PRO_Story_3_DynamicDrop"
             },
             "DialogueEvents": {
                 "QuestStart": {
@@ -6819,7 +6825,7 @@
         {
             "Name": "PRO_Story4_Body1_Interact",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body1_Interact.BPQ_PRO_Story4_Body1_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Interact-Description\", \"Examing the Agent Body For Information (F)\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body1_Interact-Description\", \"Examine the Agent Body For Information (F)\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromTempestEvent2",
@@ -6857,7 +6863,7 @@
         {
             "Name": "PRO_Story4_Body2_Interact",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Body2_Interact.BPQ_PRO_Story4_Body2_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Interact-Description\", \"Examing the Agent Body For Information (F)\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Body2_Interact-Description\", \"Examine the Agent Body For Information (F)\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromTempestEvent4",
@@ -7096,7 +7102,7 @@
         },
         {
             "Name": "PRO_Story6_Traitor_Trail",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Trail.BPQ_PRO_Story6_Traitor_Trail_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")"
         },
         {
@@ -7228,7 +7234,7 @@
         {
             "Name": "DYN_Scan_Return",
             "Class": "/Game/BP/Quests/Dynamic/Scan/BPQ_DYN_Scan_Return.BPQ_DYN_Scan_Return_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Return-Description\", \"Return the Radar to the Sinotai Retrievel Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Scan_Return-Description\", \"Return the Radar to the Sinotai Retrieval Pod (M)\")"
         },
         {
             "Name": "DYN_Cache",
@@ -7424,7 +7430,7 @@
         {
             "Name": "DYN_Drone_Protect_Health",
             "Class": "/Game/BP/Quests/Dynamic/Drone/BPQ_DYN_Drone_Protect_Health.BPQ_DYN_Drone_Protect_Health_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Drone_Protect_Health-Description\", \"{0} / {1} Health Remaning\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Drone_Protect_Health-Description\", \"{0} / {1} Health Remaining\")"
         },
         {
             "Name": "Common_Exotic_Delivery",
@@ -7611,33 +7617,43 @@
         },
         {
             "Name": "DYN_Lost_Travel",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_SearchArea.BPQ_Travel_SearchArea_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Travel-Description\", \"Find the Abandoned Prospector Base (M)\")"
         },
         {
-            "Name": "DYN_Lost_Clear_Creatures",
-            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Clear_Creatures-Description\", \"Clear the Area of Hostile Creatures\")"
+            "Name": "DYN_Lost_Repair",
+            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Repair.BPQ_DYN_Lost_Repair_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Repair-Description\", \"Defend & Repair the Base\")"
         },
         {
-            "Name": "DYN_Lost_Clear_Plants",
-            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Clear_Plants-Description\", \"Clear the Area of the Poisonous Plants\")"
+            "Name": "DYN_Lost_Repair_Repair",
+            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Repair_Repaired.BPQ_DYN_Lost_Repair_Repaired_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Repair_Repair-Description\", \"{0}% Repaired (Use a Hammer)\")"
+        },
+        {
+            "Name": "DYN_Lost_Repair_Pieces",
+            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Repair_Pieces.BPQ_DYN_Lost_Repair_Pieces_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Repair_Pieces-Description\", \"Base has {0} Pieces Remaning (0 Results in a mission failure)\")"
+        },
+        {
+            "Name": "DYN_Lost_Loot",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Loot-Description\", \"(Optional) Salvage any resources within the base\")"
+        },
+        {
+            "Name": "DYN_Lost_Mark",
+            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Mark.BPQ_DYN_Lost_Mark_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Mark-Description\", \"Place a Beacon and mark the base location UDA Inspection\")"
+        },
+        {
+            "Name": "DYN_Lost_Clear_Creatures",
+            "Class": "/Game/BP/Quests/Dynamic/Hunt/BPQ_DYN_Hunt_Creatures.BPQ_DYN_Hunt_Creatures_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Clear_Creatures-Description\", \"Clear the Area of Hostile Creatures\")"
         },
         {
             "Name": "DYN_Lost_Clear_Boss",
             "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Clear_Boss-Description\", \"Defeat the {0}\")"
-        },
-        {
-            "Name": "DYN_Lost_Salvage",
-            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Salvage-Description\", \"(Optional) Salvage any resources within the base\")"
-        },
-        {
-            "Name": "DYN_Lost_Mark",
-            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Mark-Description\", \"Place a Beacon and mark the base location for Prospector Body Retrevial\")"
         }
     ]
 }
