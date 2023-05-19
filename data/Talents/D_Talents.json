@@ -24296,7 +24296,7 @@
                 "RowName": "Workshop"
             },
             "Position": {
-                "X": 8800,
+                "X": 8750,
                 "Y": 2900
             },
             "Size": {
@@ -25486,7 +25486,7 @@
                 "RowName": "Workshop"
             },
             "Position": {
-                "X": 9500,
+                "X": 9650,
                 "Y": 2900
             },
             "Size": {
@@ -28069,6 +28069,28 @@
             ]
         },
         {
+            "Name": "Carved_Wood_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Carved_Wood_Set-DisplayName\", \"Carved Wood Furniture\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_A.ITEM_Carved_Bed_A",
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 11100,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Explosive_Ammo",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Explosive_Ammo-DisplayName\", \"Explosive Ammo\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Explosive_Ammo-Description\", \"Explosive Ammo for Munitions\")",
@@ -28240,6 +28262,58 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Prospect_Styx_A_Extermination2",
+            "ExtraData": {
+                "RowName": "STYX_A_Extermination2",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 3050,
+                "Y": 1450
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Styx_A_Reroute_0",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2700,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
         }
     ]
 }
