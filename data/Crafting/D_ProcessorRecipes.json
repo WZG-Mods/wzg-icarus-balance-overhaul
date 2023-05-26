@@ -8069,6 +8069,43 @@
             }
         },
         {
+            "Name": "Biofuel6",
+            "RecipeSets": [
+                {
+                    "RowName": "Composter",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Spoiled_Meat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [],
+            "ResourceOutputs": [
+                {
+                    "Type": "Fuel",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Audio": {
+                "RowName": "Composter"
+            }
+        },
+        {
             "Name": "Concrete_Mix",
             "RequiredMillijoules": 10000,
             "RecipeSets": [
@@ -29710,7 +29747,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Bullseye_Target",
@@ -29766,7 +29806,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Attachment_Cave_Resistance_1",
@@ -33169,7 +33212,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Mission_Communicator_T2",
@@ -33425,7 +33471,10 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
         },
         {
             "Name": "Stone_Throwing_Knife",
@@ -37645,7 +37694,10 @@
                     "Count": 5,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
         },
         {
             "Name": "Volatile_Substance",
@@ -37701,7 +37753,111 @@
                     "Count": 1,
                     "DynamicProperties": []
                 }
-            ]
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Carcass_Pronghorn",
+            "RecipeSets": [
+                {
+                    "RowName": "Skinning_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "AnimalCarcass_Pronghorn",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Raw_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Gamey_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "Tree_Sap_Wood",
+            "RequiredMillijoules": 250,
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MortarPestle"
+            }
         }
     ]
 }

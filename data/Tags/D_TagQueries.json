@@ -17,17 +17,21 @@
                 "TagDictionary": [
                     {
                         "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
                 "UserDescription": "Any Consumable Food Items",
-                "AutoDescription": " ANY( Item.Consumable.Food )"
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish )"
             }
         },
         {
@@ -224,7 +228,6 @@
                     1,
                     1
                 ],
-                "UserDescription": "Any Fuel",
                 "AutoDescription": " ALL(  NONE( Item.Fuel.Charcoal ),  ANY( Item.Fuel ) )"
             }
         },
@@ -1510,17 +1513,21 @@
                 "TagDictionary": [
                     {
                         "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
                 "UserDescription": "Any Consumable Food including spoiled food",
-                "AutoDescription": " ANY( Item.Consumable.Food )"
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish )"
             }
         },
         {
@@ -4215,17 +4222,21 @@
                     },
                     {
                         "TagName": "Item.Resource.Ice"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    2,
+                    3,
                     0,
-                    1
+                    1,
+                    2
                 ],
-                "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice )"
+                "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice, NPC.Fish )"
             }
         },
         {
@@ -4315,6 +4326,42 @@
                     0
                 ],
                 "AutoDescription": " ANY( Item.Attachment.FishingRod )"
+            }
+        },
+        {
+            "Name": "Any_Fishing_Rod",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.FishingRod"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Tool.FishingRod )"
+            }
+        },
+        {
+            "Name": "Fuel_AnimalFat",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fuel.AnimalFat"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Fuel.AnimalFat )"
             }
         }
     ]

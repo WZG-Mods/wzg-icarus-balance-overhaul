@@ -10,7 +10,8 @@
         },
         "StartingSlots": 0,
         "SlotOverrides": [],
-        "RemoveOnly": false
+        "RemoveOnly": false,
+        "Stats": {}
     },
     "Rows": [
         {
@@ -1290,6 +1291,16 @@
             "StartingSlots": 2
         },
         {
+            "Name": "Large_Advanced_Aquarium",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Fish"
+            },
+            "StartingSlots": 3
+        },
+        {
             "Name": "Aquarium_Decoration_1",
             "StartingSlots": 1
         },
@@ -1316,6 +1327,61 @@
                 "RowName": "Any_Ammo"
             },
             "StartingSlots": 1
+        },
+        {
+            "Name": "Tackle_Box",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Fishing_Lure"
+            },
+            "StartingSlots": 5,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Any_Fish",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 3
+                },
+                {
+                    "Query": {
+                        "RowName": "Any_Fish",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 4
+                }
+            ],
+            "Stats": {
+                "(Value=\"BaseInventoryCannotSpoil_?\")": 1
+            }
+        },
+        {
+            "Name": "Fuel_AnimalFat",
+            "InventoryID": {
+                "Value": "Fuel"
+            },
+            "SlotTemplate": {
+                "RowName": "Fuel_AnimalFat"
+            },
+            "StartingSlots": 1,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Fuel_AnimalFat",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                }
+            ]
+        },
+        {
+            "Name": "General20",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 20
         }
     ]
 }

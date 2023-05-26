@@ -3409,6 +3409,11 @@
                 "(Value=\"BaseMaximumHealth_+\")": 75,
                 "(Value=\"BaseStaminaRegen_+%\")": 20
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -3732,6 +3737,11 @@
                 "(Value=\"BaseHealthRegen_+%\")": 10,
                 "(Value=\"BaseStaminaRegen_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -3929,6 +3939,11 @@
                 "(Value=\"BaseStaminaRegen_+%\")": 15,
                 "(Value=\"BaseExperience_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -5994,6 +6009,11 @@
                 "(Value=\"BaseMaximumHealth_+\")": 75,
                 "(Value=\"BaseStaminaRegen_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6014,6 +6034,11 @@
                 "(Value=\"BaseStaminaConsumed_+%\")": -10,
                 "(Value=\"BaseMeleeDamage_+%\")": 5
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6033,6 +6058,11 @@
                 "(Value=\"BaseHealthRegen_+%\")": 5,
                 "(Value=\"BaseFoodConsumption_+%\")": -25
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6052,6 +6082,11 @@
                 "(Value=\"BaseExposureResistance_+%\")": 5,
                 "(Value=\"BaseFoodConsumption_+%\")": -25
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6070,6 +6105,11 @@
                 "(Value=\"BaseHealthRegen_+%\")": 15,
                 "(Value=\"BaseStaminaRegen_+%\")": 15
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6090,6 +6130,11 @@
                 "(Value=\"BaseExposureResistance_+%\")": 5,
                 "(Value=\"BaseProjectileDamage_+%\")": 5
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6129,6 +6174,11 @@
                 "(Value=\"BaseExposureResistance_+%\")": 5,
                 "(Value=\"BaseExperience_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6149,6 +6199,11 @@
                 "(Value=\"BaseExposureResistance_+%\")": 5,
                 "(Value=\"BaseExperience_+%\")": 10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -6181,6 +6236,134 @@
             "ShouldTick": true,
             "MergeType": "LongestDuration",
             "MaxStackNum": 3
+        },
+        {
+            "Name": "SwampWater",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SwampWater-ModifierName\", \"Swamp Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SwampWater-ModifierDescription\", \"Being slowed by the swamp water.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "SwampParasites"
+            },
+            "EscalationTime": 60,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3
+        },
+        {
+            "Name": "SwampWater_Parasite",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_DysenteryDebuff.Icon_DysenteryDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SwampWater_Parasite-ModifierName\", \"Swamp Parasites\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SwampWater_Parasite-ModifierDescription\", \"Parasites from the swampy water are making you sluggish. Counter with anti-parasitics, or wait it out.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseAttackSpeed_+%\")": -15
+            },
+            "Escalation": {
+                "RowName": "SwampParasites"
+            },
+            "EscalationTime": 60,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "ParasiticModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Parasitic"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antiparasitic.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antiparasitic.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antiparasitic.T2, ModifierState.Medicine.Antiparasitic.T3 )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Grilled_Freshwater_Fillet",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Grilled_Freshwater_Fish.ITEM_Grilled_Freshwater_Fish'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Grilled_Freshwater_Fillet-ModifierName\", \"Grilled Freshwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Grilled_Freshwater_Fillet-ModifierDescription\", \"Boosts your health and health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseHealthRegen_+%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Grilled_Saltwater_Fillet",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Grilled_Saltwater_Fish.ITEM_Grilled_Saltwater_Fish'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Grilled_Saltwater_Fillet-ModifierName\", \"Grilled Saltwater Fillet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Grilled_Saltwater_Fillet-ModifierDescription\", \"Boosts your health and health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseStaminaRegen_+%\")": 15,
+                "(Value=\"BaseExposureResistance_+%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FishFoodModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "Tearing_Fish",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Fish_Chunks.ITEM_Fish_Chunks'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tearing_Fish-ModifierName\", \"Tearing Fish\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tearing_Fish-ModifierDescription\", \"You are tearing a fish apart with your bare hands.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -80
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }
