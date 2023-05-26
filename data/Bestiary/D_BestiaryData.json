@@ -3,6 +3,7 @@
     "Defaults": {
         "CreatureName": "",
         "Image": "None",
+        "BiomeImageType": "Medium",
         "CreatureSound": "None",
         "Biomes": [],
         "Maps": [],
@@ -21,7 +22,7 @@
         {
             "Name": "Forest_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-CreatureName\", \"Wolf\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PackWolf.Bestiary_PackWolf",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_PackWolf.Bestiary_PackWolf",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOLF.UI_BESTIARY_CRE_WOLF",
             "Biomes": [
                 {
@@ -39,6 +40,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 3000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-Lore1\", \"Genetically engineered Eurasian wolf, designed for various climates. Most common predator within terraformed environments.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-Lore2\", \"Wolves are skilled pack hunters that are capable of taking down prey many times their size. The subspecies introduced to Icarus are far more aggressive than those on Earth, and become easily fixated on humans who wander into their territory.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Wolf-Lore3\", \"\\\"Chills. Down. Your. Spine. You try getting to sleep while a ghastly choir of howling surrounds ya makeshift camp. Its downright unsettling.\\\"\")",
@@ -74,7 +76,7 @@
         {
             "Name": "Snow_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowWolf.Bestiary_SnowWolf",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_SnowWolf.Bestiary_SnowWolf",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOLF.UI_BESTIARY_CRE_WOLF",
             "Biomes": [
                 {
@@ -92,6 +94,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 3000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-Lore1\", \"Genetically engineered Eurasian wolf, designed for a harsh and cold climate. The most common predator within terraformed environments.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-Lore2\", \"Wolves are skilled pack hunters that are capable of taking down prey many times their size. The subspecies introduced to Icarus are far more aggressive than those on Earth, and become easily fixated on humans who wander into their territory.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-Lore3\", \"\\\"Chills. Down. Your. Spine. You try getting to sleep while a ghastly choir of howling surrounds ya makeshift camp. Its downright unsettling.\\\"\")",
@@ -102,6 +105,10 @@
                 },
                 {
                     "RowName": "PackAnimal_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Wound_DamageType",
                     "DataTableName": "D_BestiaryTraits"
                 }
             ],
@@ -123,7 +130,7 @@
         {
             "Name": "Bear_Cub",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear_Cub-CreatureName\", \"Bear Cub\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_BearCub.Bestiary_BearCub",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEAR_CUB.UI_BESTIARY_CRE_BEAR_CUB",
             "Biomes": [
                 {
@@ -164,7 +171,7 @@
         {
             "Name": "Bear",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-CreatureName\", \"Bear\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Bear.Bestiary_Bear",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Bear.Bestiary_Bear",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEAR.UI_BESTIARY_CRE_BEAR",
             "Biomes": [
                 {
@@ -182,6 +189,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 800,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-Lore1\", \"Unlike Bears on earth, Icarus Ursus horribilis have no need to hibernate. They also produce offspring at a much higher rate. \")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-Lore2\", \"Introduced to maintain reasonable levels of herbivore fauna.  While originally engineered to be more passive unless food motivated, the Bear consistently displays levels of increased aggression towards prospectors. The UDA is not liable for missing appendages, limbs or crewmates. \")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-Lore3\", \"\\\"Not your first thought. One of the biggest initial dangers being bears.... You start to take it seriously after a crewmate is taken or mauled. You know they ******* start eating from the lower half of your damn body? I\\'ll.... I\\'ll never get the screams out of my head\\\"\")",
@@ -221,7 +229,7 @@
         {
             "Name": "Chamios",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-CreatureName\", \"Chamois\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Chamois.Bestiary_Chamois",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Chamois.Bestiary_Chamois",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CHAMOIS.UI_BESTIARY_CRE_CHAMOIS",
             "Biomes": [
                 {
@@ -239,6 +247,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1300,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-Lore1\", \"Chamois have a mix of deer and antelope qualities, and will flee at the first sign of a predator.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-Lore2\", \"Championed by a French sect of the UDA, the Chamois was introduced to Icarus to encourage diversity, and provide easy game for ill-prepared prospectors.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios-Lore3\", \"\\\"AH the ol\\' shammy. Stupid little goat thing. Bear fodder. Feeder of wolves. Meat on legs.\\\"\")",
@@ -249,6 +258,10 @@
                 },
                 {
                     "RowName": "Passive_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Skittish_Behaviour",
                     "DataTableName": "D_BestiaryTraits"
                 }
             ],
@@ -270,7 +283,8 @@
         {
             "Name": "Elephant",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-CreatureName\", \"Elephant\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Elephant.Bestiary_Elephant",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_Elephant.Bestiary_Elephant",
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_ELEPHANT.UI_BESTIARY_CRE_DEER_ELEPHANT",
             "Biomes": [
                 {
@@ -288,6 +302,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 800,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-Lore1\", \"This species was hunted to near-extinction on earth. and was introduced to Icarus as a means of regenerating their population. \")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-Lore2\", \"Found In Arid environments, the African Elephant was genetically modified to make them less desirable to poachers. Alterations were made to the structure of their tusks causing them to degrade over time, when separated from the elephant. Effectively halting the ivory trade. \")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Elephant-Lore3\", \"\\\"Something was... lost in the genetic reconstruction of this species. African Elephants on earth are intelligent, self-aware creatures. In multiple instances they\\'ve passed the MSR test. Icarus Loxodonta do not react as expected when presented with the mirror test. We did... I... something isn\\'t right.\\\"\")",
@@ -315,7 +330,7 @@
         {
             "Name": "Polar_Bear_Cub",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear_Cub-CreatureName\", \"Polar Bear Cub\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BearCub.Bestiary_BearCub",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_PolarBear_cub.Bestiary_PolarBear_cub",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_POLAR_BEAR_CUB.UI_BESTIARY_CRE_POLAR_BEAR_CUB",
             "Biomes": [
                 {
@@ -356,7 +371,7 @@
         {
             "Name": "Polar_Bear",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-CreatureName\", \"Polar Bear\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_PolarBear.Bestiary_PolarBear",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_PolarBear.Bestiary_PolarBear",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_POLAR_BEAR.UI_BESTIARY_CRE_POLAR_BEAR",
             "Biomes": [
                 {
@@ -374,6 +389,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 800,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-Lore1\", \"Polar bears can be found in colder areas of the Terrazone. Originally seeded to promote biodiversity in the Icarus food chain. Due to their increased aggression and predatory instincts they quickly wiped out the seal population.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-Lore2\", \"Valued by prospectors for their meat but especially for their fur which can be used to craft armor to protect against the harsh climates of Icarus. Generally avoided by novice prospectors.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Polar_Bear-Lore3\", \"\\\"Valued by prospectors for their meat but especially for their fur which can be used to craft armor to protect against the harsh climates of Icarus. Generally avoided by novice prospectors.\\\"\")",
@@ -417,7 +433,7 @@
         {
             "Name": "Baby_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-CreatureName\", \"Baby Deer\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_BabyDeer.Bestiary_BabyDeer",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_BabyDeer.Bestiary_BabyDeer",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BABY_DEER.UI_BESTIARY_CRE_BABY_DEER",
             "Biomes": [
                 {
@@ -435,6 +451,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1100,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-Lore1\", \"Infant deer, commonly seen following their parent through the Icarus wilderness. Has been known to follow other creatures if it\\'s parent dies.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-Lore2\", \"Widely considered by prospectors to be one of the most convenient sources of food on Icarus. Killing Baby Deer contributes to the Heartless Accolade.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Baby_Deer-Lore3\", \"\\\"Bro. Every ol\\' mate and his dog have had to kill these little critters. It\\'s survival. If you\\'re hurt... tired or slow... They\\'re easier to hunt... But the sound they make when they die... A heavy meal in more ways than one.\\\"\")",
@@ -466,7 +483,7 @@
         {
             "Name": "Forest_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-CreatureName\", \"Deer\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Deer.Bestiary_Deer",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Deer.Bestiary_Deer",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER.UI_BESTIARY_CRE_DEER",
             "Biomes": [
                 {
@@ -484,6 +501,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-Lore1\", \"On Icarus, deer make up the most abundant population of herbivores. Typically, they can be found in family groups of three or more. As they are sizable and fleet-footed creatures, they are prone to getting spooked easily and are adept at camouflaging themselves in the forest.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-Lore2\", \"A black market for Icarus venison has been long suspected. While prospectors aren\\'t supposed to remove any biological matter from the surface, rumors of Icarus meat and produce appearing on earth have been circulating. UDA INTSEC are currently investigating.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Forest_Deer-Lore3\", \"\\\"It just tastes better. Earth feed is crap in comparison... Sure we have chem residue and exotics, but not decades of pollution and microplastics... Hah... I might grow a third leg, and I\\'m okay with that, so long as I don\\'t have to eat that printed earth-side ****.\\\"\")",
@@ -515,7 +533,7 @@
         {
             "Name": "Desert_Deer",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-CreatureName\", \"Antelope\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertDeer.Bestiary_DesertDeer",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_DCDeer.Bestiary_DCDeer",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_DESERT.UI_BESTIARY_CRE_DEER_DESERT",
             "Biomes": [
                 {
@@ -533,6 +551,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore1\", \"On Icarus, deer make up the most abundant population of herbivores. Typically, they can be found in family groups of three or more. As they are sizable and fleet-footed creatures, they are prone to getting spooked easily and are adept at camouflaging themselves in the forest.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore2\", \"A black market for Icarus venison has been long suspected. While prospectors aren\\'t supposed to remove any biological matter from the surface, rumors of Icarus meat and produce appearing on earth have been circulating. UDA INTSEC currently investigating.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore3\", \"\\\"It just tastes better. Earth feed is crap in comparison... Sure we have chem residue and exotics, but not decades of pollution and microplastics... I might grow a third leg, and I\\'m okay with that, so long as I don\\'t have to eat that printed earth-side ****.\\\"\")",
@@ -564,7 +583,7 @@
         {
             "Name": "Cougar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-CreatureName\", \"Cougar\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_F_Lion.Bestiary_F_Lion",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_Lion.Bestiary_Lion",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_COUGAR.UI_BESTIARY_CRE_COUGAR",
             "Biomes": [
                 {
@@ -582,6 +601,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-Lore1\", \"The cougar subspecies was brought in to control the population of smaller mammals and adapted quickly to the arid regions of Icarus.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-Lore2\", \"Much like deer antlers on Earth, experienced prospectors like to show off mounted Cougar heads as a sign of their hunting and survival abilities.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Cougar-Lore3\", \"\\\"I had to treat a Prospectors severe lacerations on MULTIPLE occasions. They continually attempted to feed and pet large feline species.... Claimed to have discovered a new \\'kitty cat\\' species in the fringe zone.... I\\'ve not heard from them in a while.\\\"\")",
@@ -613,7 +633,7 @@
         {
             "Name": "Mammoth",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-CreatureName\", \"Mammoth\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Mammoth.Bestiary_Mammoth",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_Mammoth.Bestiary_Mammoth",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MAMMOTH.UI_BESTIARY_CRE_MAMMOTH",
             "Biomes": [
                 {
@@ -625,8 +645,13 @@
                 {
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 800,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-Lore1\", \"Revived ancient earth species. A well preserved sample was found deep in the Le Brea tar pits, the first few mammoths were carried by elephants as surrogate mothers. Due to significant debate on the ethics of the mammoths revival, the experiment had to be conducted on Icarus. \")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-Lore2\", \"Extremist group TPS was responsible for the organisation of global protests against the revival of this species. While this study was not the most advanced genetics experiment, it became a pivotal reference in arguments against genetic augmentation. A slippery slope to experimentation on humans.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Mammoth-Lore3\", \"\\\"While we appreciate new technology that allows us to maintain a healthy ecosystem, the potential of this technology being used unethically... more than likely it already is used unethically. We deserve better, you deserve better.\\\" - TPS Spokesperson\")",
@@ -654,7 +679,7 @@
         {
             "Name": "Jaguar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-CreatureName\", \"Jaguar\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Jaguar.Bestiary_Jaguar",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Jaguar.Bestiary_Jaguar",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_JAGUAR.UI_BESTIARY_CRE_JAGUAR",
             "Biomes": [
                 {
@@ -664,14 +689,11 @@
             ],
             "Maps": [
                 {
-                    "RowName": "Terrain_016",
-                    "DataTableName": "D_Terrains"
-                },
-                {
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-Lore1\", \"The jaguar was introduced to regulate the population of smaller mammals and quickly adapted to forest and wooded areas in the terraformed zones of Icarus.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-Lore2\", \"Jaguars are solitary and territorial animals that are primarily active at dawn and dusk. They are skilled hunters and prey on a variety of animals, including chamois, deer, and nosy prospectors.. no matter how much of a \\'cat person\\' they may be.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Jaguar-Lore3\", \"\\\"Tried to make a BIG ball of fiber hoping this little cutie would play with it. Didn\\'t work out as well as I had hoped... But hey. You only need one kidney.\\\"\")",
@@ -703,7 +725,6 @@
         {
             "Name": "Pronghorn",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-CreatureName\", \"Pronghorn\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Pronghorn.Bestiary_Pronghorn",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_DESERT.UI_BESTIARY_CRE_DEER_DESERT",
             "Biomes": [
                 {
@@ -715,12 +736,9 @@
                 {
                     "RowName": "Terrain_016",
                     "DataTableName": "D_Terrains"
-                },
-                {
-                    "RowName": "Terrain_017",
-                    "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1300,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-Lore1\", \"Pronghorns were originally introduced to Icarus to add variety to the population and give prospectors a good challenge at target practice.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-Lore2\", \"Pronghorns are incredibly fast runners, which makes them difficult prey for predators. They also have excellent eyesight and can detect movement miles away. However, they are not as agile as other animals, which can make them vulnerable to predators in certain situations.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-Lore3\", \"\\\"I swear. It\\'s like they have magnets in their horns. You spend ages stalk\\'n them, get up as close as you can...  line up your shot... THUNK! Arrow falls to the ground.  Looks like I\\'m going hungry tonight.\\\"\")",
@@ -752,7 +770,7 @@
         {
             "Name": "Snow_Leopard",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-CreatureName\", \"Snow Leopard\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_SnowLeopard.Bestiary_SnowLeopard",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_SnowLeopard.Bestiary_SnowLeopard",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SNOW_LEOPARD.UI_BESTIARY_CRE_SNOW_LEOPARD",
             "Biomes": [
                 {
@@ -770,6 +788,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-Lore1\", \"Snow leopards are large, muscular cats with thick, white fur that helps them blend into their snowy mountain habitat. They have distinctive black spots and rosettes on their fur, and their long, bushy tail provides balance and warmth in cold temperatures.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-Lore2\", \"Snow leopards are solitary animals. They are highly adapted to their mountain habitat and are able to climb steep, rocky terrain with ease. They are also skilled hunters and prey on a variety of animals, but are often killed for their valuable fur.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-Lore3\", \"\\\"Aren\\'t they just the fuzziest? I\\'ve had these two following me for the last few days, some would say they\\'re just exhibiting standard hunting behaviour but me? I know better. I swear they are this close to accepting me into their furry little family, I can just feel it... I wonder if an orbital laser would work for playtime...\\\"\")",
@@ -801,7 +820,7 @@
         {
             "Name": "Rabbit",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-CreatureName\", \"Rabbit\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Rabbit.Bestiary_Rabbit",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Rabbit.Bestiary_Rabbit",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_RABBIT.UI_BESTIARY_CRE_RABBIT",
             "Biomes": [
                 {
@@ -819,6 +838,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-Lore1\", \"They have large, furry feet that provide traction on icy surfaces, and long, floppy ears that help regulate their body temperature. They are very vunerable to predators, and easily startled.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-Lore2\", \"These are social animals that live in groups called herds,  spending much of their time foraging for food in the snow. They are herbivores and feed on a variety of plants.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit-Lore3\", \"\\\"Quick little critters keep gettin\\' into my food stores. If they keep mucking me around I\\'ll see if they have better manners as a pair of socks.\\\"\")",
@@ -854,7 +874,7 @@
         {
             "Name": "Desert_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-CreatureName\", \"Hyena\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_DesertWolf.Bestiary_DesertWolf",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_DC_Wolf.Bestiary_DC_Wolf",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_HYENA.UI_BESTIARY_CRE_HYENA",
             "Biomes": [
                 {
@@ -872,6 +892,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 3000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-Lore1\", \"These medium-sized carnivores have distinctive spotted fur and powerful jaws. They are often thought of as scavengers but they are also skilled hunters.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-Lore2\", \"Considered the pranksters of Icarus, these creatures are known to attack prospectors for no discernible reason and then laugh at their victims.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Wolf-Lore3\", \"\\\"You think the wolves are bad? I had two of them Hyena things circling my base the other day. Howling is easy to ignore but the laughing? That just drives me MAD.\\\"\")",
@@ -907,7 +928,6 @@
         {
             "Name": "Buffalo",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-CreatureName\", \"Buffalo\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Buffalo.Bestiary_Buffalo",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BUFFALO.UI_BESTIARY_CRE_BUFFALO",
             "Biomes": [
                 {
@@ -925,6 +945,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-Lore1\", \"Buffalo are large, muscular mammals with shaggy brown fur and a distinctive hump on their shoulders. They have short, curved horns and a broad, flat face with a large, black nose.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-Lore2\", \"Buffalo are social animals that can be tamed young by prospectors with a bit of patience. They spend much of their day grazing on grasses and other vegetation. They are also excellent swimmers and can cross rivers and other bodies of water.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Buffalo-Lore3\", \"\\\"Great big ol\\' lumbering things. At first I thought they were only good for eatin\\', then I realized you could tame em! And heck if didn\\'t that make things ten times easier on this dang rock.\\\"\")",
@@ -956,11 +977,15 @@
         {
             "Name": "Wild_Boar",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-CreatureName\", \"Boar\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_WildBoar.Bestiary_WildBoar",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_WildBoar.Bestiary_WildBoar",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BOAR.UI_BESTIARY_CRE_BOAR",
             "Biomes": [
                 {
                     "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Desert",
                     "DataTableName": "D_Atmospheres"
                 }
             ],
@@ -974,6 +999,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-Lore1\", \"Wild boar are medium-sized mammals with a stocky build, short legs, and bristly hair. They are typically brown or black in color and have curved tusks that protrude from their mouths.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-Lore2\", \"Wild boar are strong and aggressive animals that can defend themselves against predators such as wolves and bears. They are also excellent runners and swimmers. However, they can be a nuisance to prospectors.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Wild_Boar-Lore3\", \"\\\"Space bacon. My favourite part of this cursed rock.\\\"\")",
@@ -1005,7 +1031,7 @@
         {
             "Name": "Zebra",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-CreatureName\", \"Zebra\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Zebra.Bestiary_Zebra",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_Zebra.Bestiary_Zebra",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ZEBRA.UI_BESTIARY_CRE_ZEBRA",
             "Biomes": [
                 {
@@ -1023,6 +1049,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-Lore1\", \"Zebras are social animals that live in herds. They are herbivores and use their stripes as a form of camouflage to confuse predators.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-Lore2\", \"This particular breed of Zebra are the direct result of the UDA engineering labs. Sample tissue has shown evidence of significant genetic divergence. It\\'s theorized that continued exposure to exotic matter and/or terraforming enzymes may result in severe mutation.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Zebra-Lore3\", \"\\\"The real question is: are they white with black stripes? Or are they black with white stripes? Steve bet against me and he still owes me from last time...\\\"\")",
@@ -1054,7 +1081,7 @@
         {
             "Name": "Kea",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-CreatureName\", \"Kea\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Kea.Bestiary_Kea",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Kea.Bestiary_Kea",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KEA.UI_BESTIARY_CRE_KEA",
             "Biomes": [
                 {
@@ -1068,6 +1095,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-Lore1\", \"A large, intelligent parrot, originally native to New Zealand. On Earth, the Kea population continues to steadily decline. Seeding on Icarus was seen as a way to keep the species alive. Genetically modified to handle harsher conditions.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-Lore2\", \"Dr Amelia Tohu personally oversaw this project, having spent time raising Kea in conservation sectors as a young girl. Tohu was uncompromising in her commitment to propagating the species.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Kea-Lore3\", \"\\\"Careful of the cheeky buggers. They\\'re not dangerous or anything, but they\\'ll steal food right out from under ya nose. Hell, they\\'ll rip the seals right off your dropship windows.\\\"\")",
@@ -1099,11 +1127,15 @@
         {
             "Name": "Crocodile",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-CreatureName\", \"Crocodile\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Crocodile.Bestiary_Crocodile",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Crocodile.Bestiary_Crocodile",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CROC.UI_BESTIARY_CRE_CROC",
             "Biomes": [
                 {
                     "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Desert",
                     "DataTableName": "D_Atmospheres"
                 }
             ],
@@ -1113,6 +1145,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-Lore1\", \"Crocodiles are large, carnivorous reptiles with a long, powerful tail and a broad, armored body. They have sharp teeth and a distinctive, elongated snout.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-Lore2\", \"Crocodiles are solitary animals that spend much of their time basking in the sun or submerged in water. They are ambush predators that lie in wait for prey, which includes fish, birds, and mammals.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Crocodile-Lore3\", \"\\\"Crocodiles are... easy. They try to kill and eat you. Now the UDA... That\\'s a reptile to be afraid of.\\\"\")",
@@ -1160,7 +1193,7 @@
         {
             "Name": "Komodo",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-CreatureName\", \"Komodo\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Komodo.Bestiary_Komodo",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Komodo.Bestiary_Komodo",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KOMODO.UI_BESTIARY_CRE_KOMODO",
             "Biomes": [
                 {
@@ -1174,6 +1207,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-Lore1\", \"Komodo dragons are large, carnivorous reptiles with a long, powerful tail and a rough, scaly skin. They have sharp, curved teeth and a forked tongue.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-Lore2\", \"Komodo dragons are solitary animals that are active during the day. They are ambush predators that hunt prey such as deer, boar, and buffalo. They are also known to scavenge carrion.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Komodo-Lore3\", \"\\\"Damn things have a cesspool in their mouths. Some... Fifty different bacterial strains. Handful of which are exceedingly septic. AND a venom gland in their lower jaw. WHY.\\\"\")",
@@ -1205,7 +1239,7 @@
         {
             "Name": "Desert_Scorpion",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpion-CreatureName\", \"Scorpion\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Scorpion.Bestiary_Scorpion",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_Scorpion.Bestiary_Scorpion",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SCORPION.UI_BESTIARY_CRE_SCORPION",
             "Biomes": [
                 {
@@ -1223,6 +1257,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpion-Lore1\", \"Experiment run by Dr Lee. The assumption \\'Scorpions are just land lobster\\' was subject of much discussion. Dr Lee wanted to prove this fast reproducing, meaty arachnid, could be a source of food for prospectors in arid environments.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpion-Lore2\", \"Due to Prospectors having an extreme aversion to dealing with these enlarged scorpions, this line of research had it\\'s funding cut. Somewhat suspiciously, despite the project being canceled, a biological containment unit was discovered planet-side. Seeding the large scorpions on Icarus. Dr Lee is currently under investigation.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Scorpion-Lore3\", \"\\\"This doesn\\'t taste like lobster. **** are they thinking.\\\"\")",
@@ -1258,7 +1293,7 @@
         {
             "Name": "Arctic_Scorpion",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpion-CreatureName\", \"Arctic Scorpion\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_ArcticScorpion.Bestiary_ArcticScorpion",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_ArcticScorpion.Bestiary_ArcticScorpion",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SCORPION.UI_BESTIARY_CRE_SCORPION",
             "Biomes": [
                 {
@@ -1268,10 +1303,15 @@
             ],
             "Maps": [
                 {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
                     "RowName": "Terrain_017",
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpion-Lore1\", \"Experiment run by Dr Lee. The assumption \\'Scorpions are just land lobster\\' was subject of much discussion. Dr Lee wanted to prove this fast reproducing, meaty arachnid, could be a source of food for prospectors in colder environments.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpion-Lore2\", \"Due to Prospectors having an extreme aversion to dealing with these enlarged scorpions, this line of research had it\\'s funding cut. Somewhat suspiciously, despite the project being canceled, a biological containment unit was discovered planet-side. Seeding the large scorpions on Icarus. Dr Lee is currently under investigation.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Scorpion-Lore3\", \"\\\"This doesn\\'t taste like lobster. **** are they thinking?!\\\"\")",
@@ -1307,6 +1347,8 @@
         {
             "Name": "Caveworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-CreatureName\", \"Cave Worm\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Cave/Caveworm_Small.Caveworm_Small",
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAVEWORM.UI_BESTIARY_CRE_CAVEWORM",
             "Biomes": [
                 {
@@ -1324,6 +1366,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 5000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-Lore1\", \"Commonly found in cave systems all across Icarus. This Infant Sandworm is believed to be the second stage of the Worm life cycle.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-Lore2\", \"Freshly hatched, these larva like worms use Icarus cave systems as a relatively safe environment to grow. Scientists believe the mineral rich habitat contributes to this growth. \")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Caveworm-Lore3\", \"\\\"Cave clearing. We all have to do it some time... Though... They\\'re like roaches, always come back eventually.\\\"\")",
@@ -1359,6 +1402,7 @@
         {
             "Name": "Teenage_Caveworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-CreatureName\", \"Teenage Caveworm\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Cave/Caveworm__Med.Caveworm__Med",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAVEWORM.UI_BESTIARY_CRE_CAVEWORM",
             "Biomes": [
                 {
@@ -1376,6 +1420,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1500,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-Lore1\", \"Adolescent Sandworms that have outgrown the nest. Found all over Icarus, they spend most of their time deep underground.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-Lore2\", \"It\\'s theorized - due to the relative prevalence of adolescents and the significantly smaller numbers of fully grown worms, that many do not live past this stage.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Teenage_Caveworm-Lore3\", \"\\\"We think they only surface to hunt... It\\'s terrifying to think how many could be under our feet as we speak. Since they spend so much time underground, we just don\\'t know much about them\\\"\")",
@@ -1411,11 +1456,15 @@
         {
             "Name": "Moa",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-CreatureName\", \"Moa\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_Moa.Bestiary_Moa",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Moa.Bestiary_Moa",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MOA.UI_BESTIARY_CRE_MOA",
             "Biomes": [
                 {
                     "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Desert",
                     "DataTableName": "D_Atmospheres"
                 }
             ],
@@ -1429,6 +1478,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 2000,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-Lore1\", \"Found in moderate terrazone environments. This previously extinct creature had many variants. Specifically found on Icarus is the Dinornis novaezealandiae, the second largest moa species in recorded history.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-Lore2\", \"This large flightless bird is the result of genetic experimentation, preserved Moa DNA was found in amber near Tekapo, New Zealand. This was used to revive the extinct species.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Moa-Lore3\", \"\\\"Life will find a way... Directly into a prospectors stomach.\\\"\")",
@@ -1464,7 +1514,7 @@
         {
             "Name": "Alpha_Wolf_Boss",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-CreatureName\", \"Alpha Wolf\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/CreatureIcons/Bestiary_AlphaWolf.Bestiary_AlphaWolf",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_AlphaWolf.Bestiary_AlphaWolf",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ALPHA_WOLF.UI_BESTIARY_CRE_ALPHA_WOLF",
             "Biomes": [
                 {
@@ -1482,6 +1532,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 400,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-Lore1\", \"Genetically engineered Eurasian wolf, the strongest of its species. Larger and more aggressive than the average wolf found on Icarus.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-Lore2\", \"Highly territorial, this species will not give up a hunt easily. Exhibits denning behavior, will often be found surrounded by it\\'s pack.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Alpha_Wolf_Boss-Lore3\", \"\\\"I don\\'t know which one of those crackpot UDA gene jocks hates us prospectors... but whoever made this thing is sadistic.\\\"\")",
@@ -1551,6 +1602,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 1400,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-Lore1\", \"A larger sandworm that\\'s been sighted occasionally in various environments. Displays a handful of unique physical and behavioral traits beyond what prospectors have experienced during other sandworm encounters.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-Lore2\", \"There have been multiple reports of this creature appearing during induced seismic events associated with terraforming. This creature may be another stage in the worm life cycle, it\\'s rarity has made it difficulty to study.  The UDA is currently forming various kill and capture strike teams.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Landshark_Boss-Lore3\", \"\\\"This is exactly the kind of aberration I\\'ve talked about before. It displays such unique biology... Everything is comparatively simple on earth... I\\'m sure its genome contains a breakthrough genetic key... We just need more sample material\\\" - Dr Amelia Tohu\")",
@@ -1596,6 +1648,10 @@
                 {
                     "RowName": "Desert",
                     "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
                 }
             ],
             "Maps": [
@@ -1608,6 +1664,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 400,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpion_Boss-Lore1\", \"The result of engineered scorpions being accidentally released on Icarus. It\\'s likely exposure to environmental conditions in addition to exotic material that caused extreme genetic mutation.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpion_Boss-Lore2\", \"Unlike most scorpions, this giant arachnid is territorial. It prefers a large plateau to nest, it\\'s theorised that it may flatten it\\'s surroundings to create an ideal hunting ground.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Scorpion_Boss-Lore3\", \"\\\"She is perfect. I\\'ve been a practicing geneticist over a long 25 year career. I can only hope, one day, to create something so beautiful.\\\" - Dr Lee\")",
@@ -1648,6 +1705,8 @@
         {
             "Name": "Sandworm",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-CreatureName\", \"Sandworm\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/Bestiary_SandWorm.Bestiary_SandWorm",
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SANDWORM.UI_BESTIARY_CRE_SANDWORM",
             "Biomes": [
                 {
@@ -1665,6 +1724,7 @@
                     "DataTableName": "D_Terrains"
                 }
             ],
+            "TotalPointsRequired": 400,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-Lore1\", \"Giant worm-like creature native to Icarus. Partly to blame for the ubiquity of cave systems on the planet. Most common in arid areas - though it\\'s theorized this creatures life cycle takes place over a variety of environments.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-Lore2\", \"The Sandworm has been a focus of a plethora of studies. The UDA see these worms as a source of non-terrestrial biological technology. Chief Geneticist Dr Amelia Tohu has been tasked with gathering more information on the species.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Sandworm-Lore3\", \"\\\"We\\'ve seen radical mutation in species we\\'ve introduced into the terrazone. And over a relatively short period of time the change has been remarkable. Well, the Worms. This species is old. It\\'s been exposed to exotic material for hundreds, maybe thousands of years. It\\'s evolution is inseparable to this exposure. We must focus on learning more\\\" - Dr Amelia Tohu\")",

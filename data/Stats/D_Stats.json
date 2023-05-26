@@ -9915,14 +9915,26 @@
         {
             "Name": "FishWeight_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"FishWeight_+-Title\", \"Weight\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FishWeight_+-PositiveTitleFormat\", \"{0}g\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FishWeight_+-NegativeTitleFormat\", \"-{0}g\")",
-            "bIsReplicated": true
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FishWeight_+-PositiveTitleFormat\", \"{0} kg\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FishWeight_+-NegativeTitleFormat\", \"-{0} kg\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ]
         },
         {
             "Name": "BaseFishWeight_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishWeight_+-PositiveDescription\", \"{0} g\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishWeight_+-NegativeDescription\", \"-{0} g\")"
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishWeight_+-PositiveDescription\", \"{0} kg\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishWeight_+-NegativeDescription\", \"-{0} kg\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ]
         },
         {
             "Name": "CaughtFishQuality_+%",
@@ -10151,28 +10163,28 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish16_+%-NegativeDescription\", \"-{0}% chance to catch Wraith while Fishing\")"
         },
         {
-            "Name": "ChanceToCatchFreshwaterFish_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchFreshwaterFish_+%-Title\", \"Chance to Catch Freshwater Fish\")",
+            "Name": "CaughtFreshwaterFishQuality_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CaughtFreshwaterFishQuality_+%-Title\", \"Caught Freshwater Fish Quality\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true
         },
         {
-            "Name": "BaseChanceToCatchFreshwaterFish_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFreshwaterFish_+%-PositiveDescription\", \"+{0}% chance to catch Freshwater Fish\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFreshwaterFish_+%-NegativeDescription\", \"-{0}% chance to catch Freshwater Fish\")"
+            "Name": "BaseCaughtFreshwaterFishQuality_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtFreshwaterFishQuality_+%-PositiveDescription\", \"+{0}% caught Freshwater Fish Quality\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtFreshwaterFishQuality_+%-NegativeDescription\", \"-{0}% caught Freshwater Fish Quality\")"
         },
         {
-            "Name": "ChanceToCatchSaltwaterFish_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchSaltwaterFish_+%-Title\", \"Chance to Catch Saltwater Fish\")",
+            "Name": "CaughtSaltwaterFishQuality_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CaughtSaltwaterFishQuality_+%-Title\", \"Caught Saltwater Fish Quality\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true
         },
         {
-            "Name": "BaseChanceToCatchSaltwaterFish_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchSaltwaterFish_+%-PositiveDescription\", \"+{0}% chance to catch Saltwater Fish\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchSaltwaterFish_+%-NegativeDescription\", \"-{0}% chance to catch Saltwater Fish\")"
+            "Name": "BaseCaughtSaltwaterFishQuality_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtSaltwaterFishQuality_+%-PositiveDescription\", \"+{0}% caught Saltwater Fish Quality\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtSaltwaterFishQuality_+%-NegativeDescription\", \"+{0}% caught Saltwater Fish Quality\")"
         },
         {
             "Name": "ChanceToCatchCommonFish_+%",
@@ -10288,7 +10300,7 @@
         {
             "Name": "BaseWolfThreatModifier_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWolfThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat from Wolves\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWolfThreatModifier_+%-NegativeDescription\", \"+{0}% Perceived Threat from Wolves\")"
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWolfThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat from Wolves\")"
         },
         {
             "Name": "WolfThreatModifier_+%",
@@ -11786,6 +11798,134 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePolarBearCubExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Polar Bear Cubs\")",
             "StatCategory": {
                 "RowName": "AI"
+            }
+        },
+        {
+            "Name": "FishingCaptureZoneSize_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FishingCaptureZoneSize_+%-Title\", \"Fishing Capture Zone Size\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseFishingCaptureZoneSize_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingCaptureZoneSize_+%-PositiveDescription\", \"+{0}% Fishing Capture Zone Size\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingCaptureZoneSize_+%-NegativeDescription\", \"-{0}% Fishing Capture Zone Size\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "CreatedFishingRodHealthAlt_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CreatedFishingRodHealthAlt_+-PositiveDescription\", \"Alters Crafted Fishing Rods to Provide a Bonus to Health\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "FishingGameFishSpeed_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FishingGameFishSpeed_+%-Title\", \"Speed of Fish while Fishing\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseFishingGameFishSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingGameFishSpeed_+%-PositiveDescription\", \"+{0}% Speed of Fish while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingGameFishSpeed_+%-NegativeDescription\", \"-{0}% Speed of Fish while Fishing\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BasePhysicalDamageResistanceWhileFishing_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamageResistanceWhileFishing_%-PositiveDescription\", \"+{0} Physical Resistance while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamageResistanceWhileFishing_%-NegativeDescription\", \"-{0} Physical Resistance while Fishing\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseLureItemWear_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLureItemWear_+%-PositiveDescription\", \"+{0}% Wear Rate of Lures while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLureItemWear_+%-NegativeDescription\", \"-{0}% Wear Rate of Lures while Fishing\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "LureItemWear_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LureItemWear_+%-Title\", \"Wear Rate of Lures while Fishing\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BasFishCarryWeight_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasFishCarryWeight_+%-PositiveDescription\", \"+{0}% Carry Weight of Fish\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasFishCarryWeight_+%-NegativeDescription\", \"-{0}% Carry Weight of Fish\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseFishFoodModifierEffectiveness_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishFoodModifierEffectiveness_+%-PositiveDescription\", \"+{0}% Fish Food Modifier Effectiveness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishFoodModifierEffectiveness_+%-NegativeDescription\", \"-{0}% Fish Food Modifier Effectiveness\")",
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "FishFoodModifierEffectiveness_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FishFoodModifierEffectiveness_+%-Title\", \"Fish Food Modifier Effectiveness\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseFishingRodCraftingCost_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingRodCraftingCost_+%-PositiveDescription\", \"+{0}% Crafted Fishing Rod Resource Cost\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFishingRodCraftingCost_+%-NegativeDescription\", \"-{0}% Crafted Fishing Rod Resource Cost\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Fishing"
+            }
+        },
+        {
+            "Name": "BaseCaughtFishQualityInStorm_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtFishQualityInStorm_+%-PositiveDescription\", \"+{0}% Quality of Caught Fish while in a Storm\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaughtFishQualityInStorm_+%-NegativeDescription\", \"-{0}% Quality of Caught Fish while in a Storm\")"
+        },
+        {
+            "Name": "BaseWeight_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWeight_+-PositiveDescription\", \"+{0}g Item Weight\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWeight_+-NegativeDescription\", \"-{0}g Item Weight\")",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "Weight_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"Weight_+-Title\", \"Item Weight\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
             }
         }
     ]
