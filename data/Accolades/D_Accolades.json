@@ -1326,7 +1326,7 @@
         {
             "Name": "BabyCreaturesKilled100",
             "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled100-DisplayName\", \"Heartless I\")",
-            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled100-Description\", \"Kill 100 Baby Deer or Juvenlie Creatures\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled100-Description\", \"Kill 100 Baby Deer or Juvenile Creatures\")",
             "Icon": "/Game/Assets/2DArt/UI/Accolades/Ribbons/ribbon-heartless1.ribbon-heartless1",
             "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
             "Category": {
@@ -1340,7 +1340,7 @@
         {
             "Name": "BabyCreaturesKilled500",
             "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled500-DisplayName\", \"Heartless II\")",
-            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled500-Description\", \"Kill 500 Baby Deer or Juvenlie Creatures\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled500-Description\", \"Kill 500 Baby Deer or Juvenile Creatures\")",
             "Icon": "/Game/Assets/2DArt/UI/Accolades/Ribbons/ribbon-heartless2.ribbon-heartless2",
             "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
             "Category": {
@@ -1354,7 +1354,7 @@
         {
             "Name": "BabyCreaturesKilled1000",
             "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled1000-DisplayName\", \"Heartless III\")",
-            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled1000-Description\", \"Kill 1000 Baby Deer or Juvenlie Creatures\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BabyCreaturesKilled1000-Description\", \"Kill 1000 Baby Deer or Juvenile Creatures\")",
             "Icon": "/Game/Assets/2DArt/UI/Accolades/Ribbons/ribbon-heartless3.ribbon-heartless3",
             "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
             "Category": {
@@ -3898,6 +3898,1590 @@
                 "RowName": "FiresExtinguished"
             },
             "GoalCount": 500
+        },
+        {
+            "Name": "PlayersKilled1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"PlayersKilled1-DisplayName\", \"Friendly Fire\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"PlayersKilled1-Description\", \"Kill another prospector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_FriendlyFire.ACH_FriendlyFire",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "PlayerKills"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_FRIENDLY_FIRE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "StruckByLightning1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"StruckByLightning1-DisplayName\", \"At least it never hits the same place twice...\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"StruckByLightning1-Description\", \"Get struck by lightning\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Lightning1.ACH_Lightning1",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "StruckByLightningCount"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_STRUCK_BY_LIGHTNING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "StruckByLightning2",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"StruckByLightning2-DisplayName\", \"Sometimes it does...\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"StruckByLightning2-Description\", \"Get struck by lightning... again\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Lightning2.ACH_Lightning2",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "StruckByLightningCount"
+            },
+            "GoalCount": 2,
+            "SteamAchievementId": "ACH_STRUCK_BY_LIGHTNING_AGAIN",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "MineAllOres",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"MineAllOres-DisplayName\", \"Rock \\'n\\' Roll\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"MineAllOres-Description\", \"Mine every type of ore\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_RockNRoll.ACH_RockNRoll",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "OreTypesMinedList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Copper_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Gold_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Bauxite",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Titanium_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Platinum_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "SteamAchievementId": "ACH_COLLECT_ORE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CollectAllPlants",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CollectAllPlants-DisplayName\", \"Herb Your Enthusiasm\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CollectAllPlants-Description\", \"Harvest one of every plant\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_HerbYourEnthusiasm.ACH_HerbYourEnthusiasm",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "PlantTypesCollectedList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Yeast",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fiber",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Cocoa",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Coffee",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "WildTea",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "GreenTea",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lily",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Reed_Flower",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Bean",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Carrot",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pumpkin",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Mushroom",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Squash",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Watermelon",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Berry",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Corn",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wheat",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "SteamAchievementId": "ACH_COLLECT_PLANTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "VisitAllBiomes",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"VisitAllBiomes-DisplayName\", \"Biome is Where The Heart Is\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"VisitAllBiomes-Description\", \"Explore every biome\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_BiomeisWheretheHeartIs.ACH_BiomeisWheretheHeartIs",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "VisitBiomesList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "DesertCanyons",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "RiverLands",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "SouthernGlacier",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_AlpineValley",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_DryRidge",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_DustyBarrens",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_EnclosedWood",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_FrozenTraverse",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_Grove",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_IceFlats",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_Oasis",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_RingLake",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_SnowyPlateau",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_TheGreatRiver",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_TheWall",
+                    "DataTableName": "D_Biomes"
+                },
+                {
+                    "RowName": "Styx_VerdantTerraces",
+                    "DataTableName": "D_Biomes"
+                }
+            ],
+            "SteamAchievementId": "ACH_EXPLORE_BIOMES",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CraftAllFoods",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CraftAllFoods-DisplayName\", \"Yes Chef!\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CraftAllFoods-Description\", \"Cook every item of Food\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_YesChef.ACH_YesChef",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "FoodsCraftedList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Glass_Jar_Jam",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Fruit_Salad",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Wild_Salad",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Creamed_Corn",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Pickled_Carrot",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Hearty_Salad",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pickled_Avocado",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Strawberry_Jam",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Saltwater_Fillet_Sashimi",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pickled_Freshwater_Fillet",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Bread",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Corn_Soup",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Mushroom_Soup",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Meat_Stew",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Fried_Soy_Beans",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Roasted_Vegetables",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Fruit_Pie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Meat_Pie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Vegetable_Pie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Food_Pumpkin_Bread",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Crispy_Bacon",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Rhubarb_Stew",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fried_Chunky_Vegetables",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Savory_Roll",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Vegetable_Roll",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fruit_Muffin",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fish_Chunk_Stew",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Freshwater_Fillet_Curry",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Crumbed_Saltwater_Fillet",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fish_Fillet_Pie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stuffed_Avocado",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Mixed_Berries",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "SteamAchievementId": "ACH_COOK_FOOD",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillDeerWithGrenade",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillDeerWithGrenade-DisplayName\", \"Buck and Cover\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillDeerWithGrenade-Description\", \"Kill a Deer with a Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_BuckandCover.ACH_BuckandCover",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_GRENADE_DEER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillFishWithBow",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillFishWithBow-DisplayName\", \"Pain in the Bass\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillFishWithBow-Description\", \"Catch a fish with the bow and arrow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_PainInTheBass.ACH_PainInTheBass",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_SHOOT_FISH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "DestroyCrateWithGrenade",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"DestroyCrateWithGrenade-DisplayName\", \"Ex-Box\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"DestroyCrateWithGrenade-Description\", \"Break a Crate with a Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Ex-Box.ACH_Ex-Box",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Wood_Crate_Small",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Crate_Medium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Crate_Small",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Crate_Medium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Crate_Printed",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Interior_Wood_Crate_Small",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Interior_Wood_Crate_Medium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "SteamAchievementId": "ACH_GRENADE_CRATE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "IgniteABuilding",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"IgniteABuilding-DisplayName\", \"Fired Up\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"IgniteABuilding-Description\", \"Burn down a shelter\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_FiredUp.ACH_FiredUp",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_BURN_SHELTER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "EquipFullArmour",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"EquipFullArmour-DisplayName\", \"Armored and Dangerous\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"EquipFullArmour-Description\", \"Equip a full set of armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_ArmouredAndDangerous.ACH_ArmouredAndDangerous",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_WEAR_ARMOR",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KilledByABear",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KilledByABear-DisplayName\", \"Welcome to Icarus\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KilledByABear-Description\", \"First time killed by a bear\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_WelcomeToIcarus.ACH_WelcomeToIcarus",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_KILLED_BY_BEAR",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillSandwormBossOnHardest",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillSandwormBossOnHardest-DisplayName\", \"The Bigger They Are...\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillSandwormBossOnHardest-Description\", \"Kill the Sandworm Boss on the Hardest Difficulty\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_TheBiggerTheyAre.ACH_TheBiggerTheyAre",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_KILL_SANDWORM_BOSS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillLandsharkBossOnHardest",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillLandsharkBossOnHardest-DisplayName\", \"... The Harder They Fall\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillLandsharkBossOnHardest-Description\", \"Kill the Landshark Boss on the Hardest Difficulty\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_TheHarderTheyFall.ACH_TheHarderTheyFall",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_KILL_LANDSHARK_BOSS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillScorpionBossOnHardest",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillScorpionBossOnHardest-DisplayName\", \"Sting Operation\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillScorpionBossOnHardest-Description\", \"Kill the Scorpion Boss on the Hardest Difficulty\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_StingOperation.ACH_StingOperation",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_KILL_SCORPION_BOSS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillAlphaWolfBossOnHardest",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillAlphaWolfBossOnHardest-DisplayName\", \"Leader Of The Pack\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillAlphaWolfBossOnHardest-Description\", \"Kill the Alpha Wolf Boss on the Hardest Difficulty\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_LeaderOfThePack.ACH_LeaderOfThePack",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_KILL_WOLF_BOSS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "PickupBasicResource",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"PickupBasicResource-DisplayName\", \"Survival 101\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"PickupBasicResource-Description\", \"Pick up a Stick, Stone, or Oxite\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Survival101.ACH_Survival101",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_SURVIVE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "DownedCount1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"DownedCount1-DisplayName\", \"Whoops!\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"DownedCount1-Description\", \"First time your prospector dies\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Whoops.ACH_Whoops",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "DownedCount"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_FIRST_DEATH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ReviveCount1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ReviveCount1-DisplayName\", \"Medic!\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ReviveCount1-Description\", \"Revive a downed prospector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Medic.ACH_Medic",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "OtherPlayersRevivedCount"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_MEDIC",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ItemsAltered1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ItemsAltered1-DisplayName\", \"Makeshift Engineering\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ItemsAltered1-Description\", \"Alter an Item\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_MakeshiftEngineering.ACH_MakeshiftEngineering",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "ItemsAltered"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_ALTER_ITEM",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ThumperActivations1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ThumperActivations1-DisplayName\", \"Mined Over Matter\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ThumperActivations1-Description\", \"Activate the Thumper\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_MinedOverMatter.ACH_MinedOverMatter",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "ThumperActivations"
+            },
+            "GoalCount": 1,
+            "SteamAchievementId": "ACH_THUMPER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "TutorialCompleted",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TutorialCompleted-DisplayName\", \"Baby Steps\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TutorialCompleted-Description\", \"Complete the tutorial\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_BabySteps.ACH_BabySteps",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_TUTORIAL",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CompleteAllStyxMissions",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CompleteAllStyxMissions-DisplayName\", \"Styx And Stones\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CompleteAllStyxMissions-Description\", \"Complete every Styx Mission\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_StyxAndStones.ACH_StyxAndStones",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "StyxMissionCompletionList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Prospect_Styx",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_COMPLETE_STYX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CompleteAllOlympusMissions",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CompleteAllOlympusMissions-DisplayName\", \"Zero To Hero\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CompleteAllOlympusMissions-Description\", \"Complete every Olympus Mission\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_ZeroToHero.ACH_ZeroToHero",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "OlympusMissionCompletionList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Prospect_Olympus",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_COMPLETE_OLYMPUS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CreditsEarned10000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CreditsEarned10000-DisplayName\", \"Money Money Money\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CreditsEarned10000-Description\", \"Collect 10000 Ren\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_MoneyMoneyMoney.ACH_MoneyMoneyMoney",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "CreditsEarned"
+            },
+            "GoalCount": 10000,
+            "SteamAchievementId": "ACH_CREDITS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ExoticsEarned10000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ExoticsEarned10000-DisplayName\", \"Ore-mageddon\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ExoticsEarned10000-Description\", \"Collect 10000 Exotics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_Oremageddon.ACH_Oremageddon",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "ExoticsEarned"
+            },
+            "GoalCount": 10000,
+            "SteamAchievementId": "ACH_EXOTICS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "AllBlueprintsUnlockedTier1",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier1-DisplayName\", \"Bear Necessities\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier1-Description\", \"Unlock all blueprints in Tier 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_BearNecessities.ACH_BearNecessities",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BlueprintsUnlockedT1List"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Blueprint_T1_Player",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_T1_BLUEPRINTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "AllBlueprintsUnlockedTier2",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier2-DisplayName\", \"Unlocked And Loaded\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier2-Description\", \"Unlock all blueprints in Tier 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_UnlockedandLoaded.ACH_UnlockedandLoaded",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BlueprintsUnlockedT2List"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Blueprint_T2_Crafting",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_T2_BLUEPRINTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "AllBlueprintsUnlockedTier3",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier3-DisplayName\", \"Unlocking Intensifies\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier3-Description\", \"Unlock all blueprints in Tier 3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_UnlockingIntensifies.ACH_UnlockingIntensifies",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BlueprintsUnlockedT3List"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Blueprint_T3_Machine",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_T3_BLUEPRINTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "AllBlueprintsUnlockedTier4",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier4-DisplayName\", \"Bench Enthusiast\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AllBlueprintsUnlockedTier4-Description\", \"Unlock all blueprints in Tier 4\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_BenchEnthusiast.ACH_BenchEnthusiast",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BlueprintsUnlockedT4List"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Blueprint_T4_Fabricator",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_T4_BLUEPRINTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CatchAllFishTypes",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CatchAllFishTypes-DisplayName\", \"Master Angler\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CatchAllFishTypes-Description\", \"Catch one of every fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_MasterAngler.ACH_MasterAngler",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "FishTypesCaughtList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_01_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_01_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_01_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_02_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_02_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_02_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_03",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_03_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_03_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_03_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_04",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_04_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_04_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_04_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_05",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_05_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_05_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_06",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_06_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_06_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_06_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_07",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_07_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_08",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_08_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_09",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_09_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_09_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_09_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_10",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_10_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_10_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_10_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_11",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_11_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_11_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_11_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_12",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_12_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_12_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_12_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_13",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_13_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_13_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_13_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_14",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_14_Var2",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_14_Var3",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_14_Var4",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_15",
+                    "DataTableName": "D_FishData"
+                },
+                {
+                    "RowName": "Fish_16",
+                    "DataTableName": "D_FishData"
+                }
+            ],
+            "SteamAchievementId": "ACH_CATCH_ALL_FISH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "CompleteBestiary",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CompleteBestiary-DisplayName\", \"Gotta Catch Them All\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CompleteBestiary-Description\", \"Unlock all the creatures in the Bestiary (Max Rank)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_GottaCatchEmAll.ACH_GottaCatchEmAll",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BestiaryEntriesCompletedList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Alpha_Wolf_Boss",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Arctic_Scorpion",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Baby_Deer",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Bear",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Bear_Cub",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Buffalo",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Caveworm",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Chamios",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Cougar",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Crocodile",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Desert_Scorpion",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Desert_Deer",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Desert_Wolf",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Elephant",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Forest_Deer",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Forest_Wolf",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Jaguar",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Kea",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Komodo",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Landshark_Boss",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Mammoth",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Moa",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Polar_Bear",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Polar_Bear_Cub",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Pronghorn",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Rabbit",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Sandworm",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Scorpion_Boss",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Snow_Leopard",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Snow_Wolf",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Wild_Boar",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Zebra",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Teenage_Caveworm",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Forest_Wolf",
+                    "DataTableName": "D_BestiaryData"
+                }
+            ],
+            "SteamAchievementId": "ACH_COMPLETE_BESTIARY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillZebrasX",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillZebrasX-DisplayName\", \"Pony Slaystation\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillZebrasX-Description\", \"Kill 250 Zebras\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_PonySlaystation.ACH_PonySlaystation",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "ZebraKills"
+            },
+            "GoalCount": 250,
+            "SteamAchievementId": "ACH_KILL_ZEBRA",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ReachBottomOfTalentTree",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ReachBottomOfTalentTree-DisplayName\", \"Highly Skilled\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ReachBottomOfTalentTree-Description\", \"Reach the bottom of a talent tree\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_HighlySkilled.ACH_HighlySkilled",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Knife_Instant_Kill",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Knife_Pin_Throw",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Bow_Crafted_Arrow_Damage",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Bow_Bleed_Arrows_0",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Bow_Homing_Arrow",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Bow_Pinning_Shot",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Firearm_No_Consume",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Firearm_Second_Wind",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Spear_Bleed_Hits",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Spear_Range_Distance2",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Building_Lightning_Rod_Health",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Building_Storage_Increase_0",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Building_Hedgehog_Damage",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_RidingExposureResist",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_JuvenileThreat",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Husbandry_MountSpeed",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Repair_Hammer_Speed_0",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Repair_Throw_Flapper",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Tools_Pickaxe_Free_Durability",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Tools_Pickaxe_Stamina_Usage_0",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Exploration_Party_Xp",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Exploration_Desert_Hero",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Stalking_Large_Highlight",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Hunting_Cold_Hearted",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Gathering_Polarbear_Recipe",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Resources_Food_Buff_Slot",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Produce_CropPlot_Item_Spoil_Time",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Resources_Instant_Tree",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Resources_Voxel_Instant",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fishing_Rare_Unique_Chance",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fishing_Uncommon_Chance",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "SteamAchievementId": "ACH_TALENT_TREE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "ReachMaxLevel",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ReachMaxLevel-DisplayName\", \"Veteran Prospector\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ReachMaxLevel-Description\", \"Reach the Level Cap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_VeteraNProspector.ACH_VeteraNProspector",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "LevelReached"
+            },
+            "GoalCount": 60,
+            "SteamAchievementId": "ACH_LEVEL_CAP",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "MeleeKills10000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"MeleeKills10000-DisplayName\", \"Whack-A-Mole\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"MeleeKills10000-Description\", \"Get 10,000 Melee Kills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_WhackAMole.ACH_WhackAMole",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "MeleeKills"
+            },
+            "GoalCount": 10000,
+            "SteamAchievementId": "ACH_MELEE_KILLS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "BowKills10000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BowKills10000-DisplayName\", \"Quiver Me Timbers\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BowKills10000-Description\", \"Get 10,000 Bow & Arrow Kills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_QuiverMeTimbers.ACH_QuiverMeTimbers",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BowKills"
+            },
+            "GoalCount": 10000,
+            "SteamAchievementId": "ACH_BOW_KILLS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "BulletKills10000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BulletKills10000-DisplayName\", \"Lock, Stock, and Lots of Bears\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BulletKills10000-Description\", \"Get 10,000 Gun Kills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_LockStockBears.ACH_LockStockBears",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "FirearmKills"
+            },
+            "GoalCount": 10000,
+            "SteamAchievementId": "ACH_GUN_KILLS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "KillCams1000",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillCams1000-DisplayName\", \"One Shot, One Kill\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillCams1000-Description\", \"Get 1,000 Stealth Critical Hit Kills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/ACH_OneShotOneKill.ACH_OneShotOneKill",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "StealthCriticalKills"
+            },
+            "GoalCount": 1000,
+            "SteamAchievementId": "ACH_CRITICAL_KILLS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
         }
     ]
 }

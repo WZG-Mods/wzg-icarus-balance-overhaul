@@ -118,11 +118,11 @@
                 },
                 "Fleeing": {
                     "StateEnteredVocalisation": {
-                        "RowName": "None",
+                        "RowName": "ChamoisFlee",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "ChamoisFlee",
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -2675,24 +2675,11 @@
             "AttackVocalisation": {
                 "RowName": "LavaBroodlingAttack"
             },
+            "FlinchVocalisation": {
+                "RowName": "BroodlingFlinch"
+            },
             "DeathVocalisation": {
                 "RowName": "LavaBroodlingDeath"
-            },
-            "StateVocalisations": {
-                "Attacking": {
-                    "StateEnteredVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StatePersistentVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StateExitedVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    }
-                }
             },
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
@@ -2823,7 +2810,7 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
             "VocalisationSocket": "RigJaw",
             "FlinchVocalisation": {
-                "RowName": "ChamoisFlinch"
+                "RowName": "ChamoisVariantFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "ChamoisVariantDeath"
@@ -2857,6 +2844,18 @@
                         "DataTableName": "D_Vocalisations"
                     }
                 }
+            }
+        },
+        {
+            "Name": "LavaFlyer",
+            "AttackVocalisation": {
+                "RowName": "LavaFlyerDeath"
+            },
+            "FlinchVocalisation": {
+                "RowName": "LavaFlyerDeath"
+            },
+            "DeathVocalisation": {
+                "RowName": "LavaFlyerDeath"
             }
         }
     ]

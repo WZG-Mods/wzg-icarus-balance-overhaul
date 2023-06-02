@@ -6364,6 +6364,21 @@
             "ShouldTick": true,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Arctic_Scorpion_MovementSpeed_Bonus",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Speed.Icon_Speed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Arctic_Scorpion_MovementSpeed_Bonus-ModifierName\", \"Movement Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Arctic_Scorpion_MovementSpeed_Bonus-ModifierDescription\", \"Increases movespeed and attack speed when damaged\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+\")": 20,
+                "(Value=\"BaseAttackSpeed_+%\")": 50
+            },
+            "ShouldTick": true,
+            "MergeType": "Stack",
+            "MaxStackNum": 3,
+            "bEffectsPlayers": false
         }
     ]
 }

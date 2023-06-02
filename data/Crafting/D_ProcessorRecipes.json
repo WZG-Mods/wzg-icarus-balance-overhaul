@@ -5855,43 +5855,6 @@
             }
         },
         {
-            "Name": "Cooked_Fish",
-            "RequiredMillijoules": 5000,
-            "RecipeSets": [
-                {
-                    "RowName": "Campfire",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Firepit",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Raw_Fish",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Cooked_Fish",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Campfire"
-            }
-        },
-        {
             "Name": "Refined_Metal",
             "RequiredMillijoules": 12500,
             "RecipeSets": [
@@ -21194,62 +21157,6 @@
             }
         },
         {
-            "Name": "Food_Fish_Dish",
-            "RecipeSets": [
-                {
-                    "RowName": "PotBellyStove",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Kitchen_Stove",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Electric_Stove",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Animal_Fat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Bean",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Raw_Fish",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fish_Dish",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Campfire"
-            }
-        },
-        {
             "Name": "Food_Roasted_Vegetables",
             "RecipeSets": [
                 {
@@ -21735,58 +21642,6 @@
                 {
                     "Element": {
                         "RowName": "Pumpkin_Bread",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            }
-        },
-        {
-            "Name": "Crumbed_Fish_Fillet",
-            "RecipeSets": [
-                {
-                    "RowName": "Kitchen_Stove",
-                    "DataTableName": "D_RecipeSets"
-                },
-                {
-                    "RowName": "Electric_Stove",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Raw_Fish",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Animal_Fat",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Dough_Bread",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Crumbed_Fish",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -35699,6 +35554,626 @@
             }
         },
         {
+            "Name": "Basic_Fishing_Rod",
+            "Requirement": {
+                "RowName": "Basic_Fishing_Rod"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseFishingRodCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Basic_Fishing_Rod",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Bench",
+            "Requirement": {
+                "RowName": "Fishing_Bench"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fishing_Bench",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Wooden_Fishing_Rod",
+            "Requirement": {
+                "RowName": "Wooden_Fishing_Rod"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseFishingRodCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Wooden_Fishing_Rod",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Refined_Wood_Fishing_Rod",
+            "Requirement": {
+                "RowName": "Refined_Wood_Rod"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseFishingRodCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Wood_Fishing_Rod",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Basic_Fishing_Trap",
+            "Requirement": {
+                "RowName": "Basic_Fishing_Trap"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Basic_Fishing_Trap",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Advanced_Fishing_Trap",
+            "Requirement": {
+                "RowName": "Advanced_Fishing_Trap"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Fishing_Trap",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_Wall_Mount",
+            "Requirement": {
+                "RowName": "Fish_Wall_Mount"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Copper",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_Wall_Mount",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Aquarium",
+            "Requirement": {
+                "RowName": "Aquarium"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Gold",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Aquarium",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Advanced_Aquarium",
+            "Requirement": {
+                "RowName": "Advanced_Aquarium"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Gold",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Carbon_Paste",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Aquarium",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Large_Advanced_Aquarium",
+            "Requirement": {
+                "RowName": "Large_Advanced_Aquarium"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Gold",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Carbon_Paste",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Large_Advanced_Aquarium",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
             "Name": "Thumper",
             "Requirement": {
                 "RowName": "Thumper"
@@ -35968,6 +36443,1238 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Tackle_Box",
+            "Requirement": {
+                "RowName": "Basic_Tackle_Box"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Tackle_Box",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Wood_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Bone_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Bone_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Wolf_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Wolf_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Bark_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Bark_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Gorse_Flower_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "WildTea",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Gorse_Flower_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Iron_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Blue_Reed_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Reed_Flower",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Blue_Reed_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Yeast_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Yeast",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Yeast_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fiber_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Rotten_Meat_Lure",
+            "Requirement": {
+                "RowName": "Basic_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Spoiled_Meat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Rotten_Meat_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Refined_Wood_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Wood_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Advanced_Iron_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Iron_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Reed_Flower_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Reed_Flower",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Reed_Flower_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Cured_Leather_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Cured_Leather_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Dogtags_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Dogtags_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Rubber_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Rubber_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Poison_Sack_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Poison_Sack",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Poison_Sack_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "White_Jelly_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Animal_Fat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "White_Jelly_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Black_Wolf_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Tooth",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Black_Wolf_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Scorpian_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Scorpion_Tail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Scorpian_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Gold_Ore_Lure",
+            "Requirement": {
+                "RowName": "Advanced_Lure_Pack"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Rods",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore_Lure",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
             }
         },
         {
@@ -37665,6 +39372,1215 @@
             }
         },
         {
+            "Name": "Geode_Lamp_Cut_Copper",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Copper_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Cut_Copper",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Cut_Gold",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Cut_Gold",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Cut_Oxite",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Cut_Oxite",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Burst_Copper",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Copper_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 35,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Burst_Copper",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Burst_Gold",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 35,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Burst_Gold",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Burst_Oxite",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 35,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Burst_Oxite",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Monolith_Copper",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Copper_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Monolith_Copper",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Monolith_Gold",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Monolith_Gold",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Monolith_Oxite",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Monolith_Oxite",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Rock_Copper",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Copper_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Rock_Copper",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Rock_Gold",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Ore",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Rock_Gold",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Geode_Lamp_Rock_Oxite",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Geodes"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Geode_Lamp_Rock_Oxite",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Fried_Fish_Chunks",
+            "RecipeSets": [
+                {
+                    "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Firepit",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_Chunks",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fried_Fish_Chunks",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Fish_Chunk_Stew",
+            "RecipeSets": [
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Corn",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Squash",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fish_Chunks",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_Chunk_Stew",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Dried_Freshwater_Fillet",
+            "RequiredMillijoules": 17500,
+            "RecipeSets": [
+                {
+                    "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Dried_Freshwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "DryingRack"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Dried_Saltwater_Fillet",
+            "RequiredMillijoules": 17500,
+            "RecipeSets": [
+                {
+                    "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Dried_Saltwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "DryingRack"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Freshwater_Fillet_Curry",
+            "RecipeSets": [
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Animal_Fat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Bean",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fillet_Curry",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Saltwater_Fillet_Sashimi",
+            "RecipeSets": [
+                {
+                    "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Carrot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fillet_Sashimi",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Pickled_Freshwater_Fillet",
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass_Jar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Pickled_Freshwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Crumbed_Saltwater_Fillet",
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Dough_Bread",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Animal_Fat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Crumbed_Saltwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Fish_Fillet_Pie",
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Pastry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Mushroom",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_Fillet_Pie",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
             "Name": "Ammo_Casing",
             "Requirement": {
                 "RowName": "Ammo_Casing"
@@ -37756,6 +40672,2152 @@
             ],
             "Audio": {
                 "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Fish_01",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_01",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_01_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_01_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_01_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_01_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_01_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_01_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_02",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_02",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_02_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_02_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_02_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_02_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_02_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_02_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_07",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_07",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_07_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_07_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_07_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_07_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_07_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_07_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_08",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_08",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_08_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_08_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_08_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_08_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_08_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_08_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_09",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_09",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_09_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_09_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_09_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_09_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_09_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_09_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_10",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_10",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_10_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_10_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_10_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_10_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_10_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_10_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_14",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_14",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_14_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_14_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_14_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_14_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_14_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_14_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_15",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_15",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_03",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_03",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_03_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_03_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_03_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_03_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_03_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_03_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_04",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_04",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_04_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_04_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_04_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_04_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_04_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_04_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_05",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_05",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_05_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_05_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_05_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_05_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_05_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_05_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_06",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_06",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_06_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_06_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_06_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_06_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_06_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_06_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_11",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_11",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_11_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_11_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_11_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_11_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_11_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_11_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_12",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_12",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_12_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_12_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_12_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_12_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_12_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_12_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_13",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_13",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_13_Var2",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_13_Var2",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_13_Var3",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_13_Var3",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_13_Var4",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_13_Var4",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_16",
+            "RecipeSets": [
+                {
+                    "RowName": "Fishing_Bench_Recipes",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fish_16",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "FishingBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
             }
         },
         {
@@ -37857,6 +42919,823 @@
             ],
             "Audio": {
                 "RowName": "MortarPestle"
+            }
+        },
+        {
+            "Name": "Food_Grilled_Saltwater_Fillet",
+            "RecipeSets": [
+                {
+                    "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Firepit",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Grilled_Saltwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Food_Grilled_Feshwater_Fillet",
+            "RecipeSets": [
+                {
+                    "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Firepit",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Freshwater_Fish_Fillet",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Grilled_Freshwater_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Wood",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Wood",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Dark",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Charcoal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Dark",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Gold",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Gold",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Gold",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Gold_Wood",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Gold",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Gold_Wood",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Metal",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Metal",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Painting_Scroll",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Painting_Scroll",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Paints_1",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "GreenTea",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Charcoal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Paints_2",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "WildTea",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Berry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Paints_3",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Coffee",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Paints_4",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Cocoa",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Lily",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Paints_5",
+            "Requirement": {
+                "RowName": "Decorations_DLC_1_Paintings"
+            },
+            "SessionRequirement": {
+                "DataTableName": "D_DLCPackageData",
+                "RowName": "Decorations_Pack_1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "None"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Crushed_Bone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sulfur",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Paints",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
             }
         }
     ]

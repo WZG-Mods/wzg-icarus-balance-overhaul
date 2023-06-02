@@ -27881,6 +27881,246 @@
             ]
         },
         {
+            "Name": "Basic_Fishing_Rod",
+            "ExtraData": {
+                "RowName": "Item_Basic_Fishing_Rod",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 2100,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Player_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_RepairToolLocked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Bench",
+            "ExtraData": {
+                "RowName": "Item_Fishing_Bench",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4350,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Basic_Fishing_Trap",
+            "ExtraData": {
+                "RowName": "Item_Basic_Fishing_Trap",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4650,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Wooden_Fishing_Rod",
+            "ExtraData": {
+                "RowName": "Item_Wooden_Fishing_Rod",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Basic_Lure_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Basic_Lure_Pack-DisplayName\", \"Basic Lure Pack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_Bark_Lure.ITEM_Bark_Lure",
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4650,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Wooden_Fishing_Rod",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Advanced_Fishing_Trap",
+            "ExtraData": {
+                "RowName": "Item_Advanced_Fishing_Trap",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4950,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Basic_Fishing_Trap",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_Wall_Mount",
+            "ExtraData": {
+                "RowName": "Item_Fish_Wall_Mount",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 11100,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Advanced_Aquarium",
+            "ExtraData": {
+                "RowName": "Item_Advanced_Aquarium",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6650,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
             "Name": "Thumper",
             "ExtraData": {
                 "RowName": "Item_Thumper",
@@ -27983,6 +28223,97 @@
             }
         },
         {
+            "Name": "Advanced_Lure_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Advanced_Lure_Pack-DisplayName\", \"Advanced Lure Pack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_White_Jelly_Lure.ITEM_White_Jelly_Lure",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4950,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Basic_Lure_Pack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Refined_Wood_Rod",
+            "ExtraData": {
+                "RowName": "Item_Refined_Wood_Fishing_Rod",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Wooden_Fishing_Rod",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Aquarium",
+            "ExtraData": {
+                "RowName": "Item_Aquarium",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 3850,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 30,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
             "Name": "Stone_Statue_Set",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Statue_Set-DisplayName\", \"Stone Statue Set\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Buffalo_Statue_Stone.ITEM_Buffalo_Statue_Stone",
@@ -28025,6 +28356,73 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Decorations_DLC_1_Geodes",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Decorations_DLC_1_Geodes-DisplayName\", \"Geode Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Geode_Lamp_Burst_Oxite.ITEM_Geode_Lamp_Burst_Oxite",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 11050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Stone_Statue_Set",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Decorations_Pack_1"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Large_Advanced_Aquarium",
+            "ExtraData": {
+                "RowName": "Item_Large_Advanced_Aquarium",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6650,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Aquarium",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
         },
         {
             "Name": "Explosive_Ammo",
@@ -28250,6 +28648,989 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Workshop_Meta_Fishfinder",
+            "ExtraData": {
+                "RowName": "Meta_Fishfinder",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop"
+            },
+            "Position": {
+                "X": 9150,
+                "Y": 2900
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Meta_Scanner",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Rod_Crafting_Cost",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Rod_Crafting_Cost-DisplayName\", \"Angler\\'s Technique\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Rod_Crafting_Cost-Description\", \"Cheaper fishing rod crafting\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_AnglersTechnique.Talent_AnglersTechnique",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingRodCraftingCost_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingRodCraftingCost_+%\")": -40
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Minigame_Speed",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Minigame_Speed-DisplayName\", \"Calmer Waters\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Minigame_Speed-Description\", \"Reduced fish speed while fishing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_CallersWater.Talent_CallersWater",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 200
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingGameFishSpeed_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingGameFishSpeed_+%\")": -30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Rod_Crafting_Cost",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Damage_Reduction",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Damage_Reduction-DisplayName\", \"Fish Fu\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Damage_Reduction-Description\", \"Increases damage reduction while fishing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_FishFlu.Talent_FishFlu",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 400
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistanceWhileFishing_%\")": 25
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Minigame_Speed",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Exposure_Resistance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Exposure_Resistance-DisplayName\", \"Nice day for fishing ain\\'t it?\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Exposure_Resistance-Description\", \"Increases resistance to exposure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_NiceDayForFishinAintIt.Talent_NiceDayForFishinAintIt",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 600
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseExposureResistance_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseExposureResistance_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Damage_Reduction",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Lure_wear_Rate",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Lure_wear_Rate-DisplayName\", \"Efficient Fisher\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Lure_wear_Rate-Description\", \"Reduced durability loss on lures\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_EfficientFisher.Talent_EfficientFisher",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseLureItemWear_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseLureItemWear_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseLureItemWear_+%\")": -30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Golden_Zone_Size",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fishing_Rod_Crafting_Cost",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Fish_Weight",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Weight-DisplayName\", \"Hefty catch\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Weight-Description\", \"Increased caught fish weight\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_HeftCatch.Talent_HeftCatch",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCaughtFishWeight_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Lure_wear_Rate",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Fish_Length",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Length-DisplayName\", \"That\\'s a big one\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Length-Description\", \"Increased caught fish length\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_ThatsABigOne.Talent_ThatsABigOne",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 650
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCaughtFishLength_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Lure_wear_Rate",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Fish_Carry_Weight",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Carry_Weight-DisplayName\", \"Fisher\\'s Haul\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Carry_Weight-Description\", \"Decreases fish weight in your inventory\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_FishersHaul.Talent_FishersHaul",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasFishCarryWeight_+%\")": -25
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Fish_Weight",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fishing_Fish_Length",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Oxygen_Consumption",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Oxygen_Consumption-DisplayName\", \"Steady Breathing\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Oxygen_Consumption-Description\", \"Reduced oxygen consumption rate\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_SteadyBreathing.Talent_SteadyBreathing",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseOxygenConsumption_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseOxygenConsumption_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Fish_Carry_Weight",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Water_Comsumption",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Water_Comsumption-DisplayName\", \"One with the water\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Water_Comsumption-Description\", \"Reduced water consumption rate\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_OneWithTheWater.Talent_OneWithTheWater",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 850
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Fish_Carry_Weight",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Saltwater_Quaility",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Saltwater_Quaility-DisplayName\", \"Saltiest Catch\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Saltwater_Quaility-Description\", \"Increased quality of caught saltwater fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_SaltiestCatch.Talent_SaltiestCatch",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCaughtSaltwaterFishQuality_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Oxygen_Consumption",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Freshwater_Quality",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Freshwater_Quality-DisplayName\", \"Freshest Catch\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Freshwater_Quality-Description\", \"Increased quality of caught freshwater fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_FreshestCatch.Talent_FreshestCatch",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 750,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCaughtFreshwaterFishQuality_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Water_Comsumption",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Fish_Food_Buff",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Food_Buff-DisplayName\", \"Pescatarian\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Fish_Food_Buff-Description\", \"Buffs from food containing fish are increased\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_Pescatarian.Talent_Pescatarian",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishFoodModifierEffectiveness_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishFoodModifierEffectiveness_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Fish_Carry_Weight",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Apprentice"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Quaility_In_Storm",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Quaility_In_Storm-DisplayName\", \"Deadliest Catch\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Quaility_In_Storm-Description\", \"Increased quality of fish caught during storms\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_DeadliestCatch.Talent_DeadliestCatch",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 350,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCaughtFishQualityInStorm_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Fish_Carry_Weight",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Golden_Zone_Size_2",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Golden_Zone_Size_2-DisplayName\", \"The Golden Zone\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Golden_Zone_Size_2-Description\", \"Increased size of capture area when fishing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_GoldenZone.Talent_GoldenZone",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 1400
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingCaptureZoneSize_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingCaptureZoneSize_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingCaptureZoneSize_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Quaility_In_Storm",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Fishing_Fish_Food_Buff",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Journeyman"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Uncommon_Chance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Uncommon_Chance-DisplayName\", \"Medium Game Fisher\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Uncommon_Chance-Description\", \"Increases the likelyhood of finding uncommon fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_MediumGameFisher.Talent_MediumGameFisher",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToCatchUncommonFish_+%\")": 10,
+                        "(Value=\"BaseChanceToCatchCommonFish_+%\")": -2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToCatchUncommonFish_+%\")": 25,
+                        "(Value=\"BaseChanceToCatchCommonFish_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Golden_Zone_Size_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Rare_Unique_Chance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Rare_Unique_Chance-DisplayName\", \"Big Game Fisher\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Rare_Unique_Chance-Description\", \"Increases the likelyhood of finding rare and unique fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_BigGameFisher.Talent_BigGameFisher",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToCatchRareFish_+%\")": 10,
+                        "(Value=\"BaseChanceToCatchUniqueFish_+%\")": 10,
+                        "(Value=\"BaseChanceToCatchCommonFish_+%\")": -2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseChanceToCatchRareFish_+%\")": 20,
+                        "(Value=\"BaseChanceToCatchUniqueFish_+%\")": 20,
+                        "(Value=\"BaseChanceToCatchCommonFish_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Golden_Zone_Size_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "RequiredRank": {
+                "RowName": "Master"
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fishing_Golden_Zone_Size",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Fishing_Golden_Zone_Size-DisplayName\", \"Natural Angler\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Fishing_Golden_Zone_Size-Description\", \"Increased size of capture area when fishing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Fishing/Talent_NaturalAngler.Talent_NaturalAngler",
+            "TalentTree": {
+                "RowName": "Adventure_Fishing"
+            },
+            "Position": {
+                "X": 600
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingCaptureZoneSize_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFishingCaptureZoneSize_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_TalentsLocked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Basic_Tackle_Box",
+            "ExtraData": {
+                "RowName": "Item_Tackle_Box",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fishing_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Decorations_DLC_1_Paintings",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Decorations_DLC_1_Paintings-DisplayName\", \"Painting Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Painting_Gold_Wood.ITEM_Painting_Gold_Wood",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 10800,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Decorations_Pack_1"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
         }
     ]
 }

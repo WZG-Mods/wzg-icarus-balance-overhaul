@@ -589,7 +589,7 @@
             "Rewards": [
                 {
                     "Item": {
-                        "RowName": "Raw_Fish",
+                        "RowName": "Fish_Chunks",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "DropChance": 100,
@@ -8325,10 +8325,62 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Raw_Fish",
+                        "RowName": "Freshwater_Fish_Fillet",
                         "DataTableName": "D_ItemTemplate"
                     },
-                    "DropChance": 35,
+                    "DropChance": 15,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 3,
+                    "MaxRandomStackCount": 15,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Saltwater_Fish_Fillet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 15,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 3,
+                    "MaxRandomStackCount": 15,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Fish_Chunks",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 40,
                     "DropChanceAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -11098,6 +11150,203 @@
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
                     "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Galileo_Fish",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Fish_Chunks",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 50,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Arctic_Carcass_Loot",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 8,
+                    "MaxRandomStackCount": 16,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "BoneHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Soft_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "PrimeMeatDropChance_%",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 2,
+                    "MaxRandomStackCount": 6,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "MeatHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Stringy_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 30,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "PrimeMeatDropChance_%",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 3,
+                    "MaxRandomStackCount": 5,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "MeatHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Scorpion_Tail",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Scorpion_Pincer",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"

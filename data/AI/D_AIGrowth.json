@@ -843,7 +843,7 @@
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 4500,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 500,
                 "(Value=\"BaseCharacterMass_+\")": 100,
-                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"BaseNPCAttackRadius_+\")": 250,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 90,
@@ -906,7 +906,7 @@
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 4500,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 500,
                 "(Value=\"BaseCharacterMass_+\")": 100,
-                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"BaseNPCAttackRadius_+\")": 250,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 90,
@@ -1854,6 +1854,40 @@
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Scorpion_Arctic",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 6000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 6750,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 4500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 500,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 75,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 80,
+                "(Value=\"BaseGOAPMotivationDormancyIncreaseRate_+\")": 10,
+                "(Value=\"BaseGOAPMotivationDormancyIncreaseRateDayTime_+%\")": 2000,
+                "(Value=\"CanScorpionUseStingAttack_?\")": 1,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -100,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 60
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_ArcticScorpionHealth.C_ArcticScorpionHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ArcticScorpionMeleeDamage.C_ArcticScorpionMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }
