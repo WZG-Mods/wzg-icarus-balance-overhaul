@@ -6379,6 +6379,57 @@
             "MergeType": "Stack",
             "MaxStackNum": 3,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Burn",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierName\", \"Burning\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire and is searing the skin closed.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 100
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 30,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FireModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.OnFire"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.ExtingishFire"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.ExtingishFire )"
+            },
+            "bEffectsObjects": true
         }
     ]
 }
