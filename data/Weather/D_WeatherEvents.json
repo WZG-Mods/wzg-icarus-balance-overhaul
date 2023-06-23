@@ -296,6 +296,10 @@
                 {
                     "RowName": "Styx_Forest",
                     "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Extreme.Winds_Extreme'",
@@ -379,269 +383,6 @@
             ]
         },
         {
-            "Name": "Debug_Rain_Chaos",
-            "Difficulty": "Medium",
-            "DurationSeconds": 50,
-            "DurationMinutes": 1,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 5
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 5
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 30
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 5
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 5
-                }
-            ]
-        },
-        {
-            "Name": "Debug_Rain_Damage",
-            "Difficulty": "Medium",
-            "Tier": 3,
-            "DurationSeconds": 230,
-            "DurationMinutes": 4,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 30
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumRain_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                }
-            ]
-        },
-        {
-            "Name": "Debug_Snow_Chaos",
-            "Difficulty": "Medium",
-            "Tier": 1,
-            "DurationSeconds": 100,
-            "DurationMinutes": 2,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 60
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                }
-            ]
-        },
-        {
-            "Name": "Debug_Snow_Damage",
-            "Difficulty": "Medium",
-            "Tier": 4,
-            "DurationSeconds": 260,
-            "DurationMinutes": 5,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 60
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSnow_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                }
-            ]
-        },
-        {
-            "Name": "Debug_Sand_Chaos",
-            "Difficulty": "Medium",
-            "Tier": 1,
-            "DurationSeconds": 70,
-            "DurationMinutes": 2,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 30
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                }
-            ]
-        },
-        {
-            "Name": "Debug_Sand_Damage",
-            "Difficulty": "Medium",
-            "Tier": 3,
-            "DurationSeconds": 230,
-            "DurationMinutes": 4,
-            "WeatherActions": [
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Start",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Chaos",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 30
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Damage",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 90
-                },
-                {
-                    "Action": {
-                        "RowName": "MediumSand_Stop",
-                        "DataTableName": "D_WeatherActions"
-                    },
-                    "TimeInSeconds": 10
-                }
-            ]
-        },
-        {
             "Name": "Light_Rain_1",
             "Tier": 1,
             "DurationSeconds": 460,
@@ -657,6 +398,10 @@
                 },
                 {
                     "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Swamp",
                     "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
@@ -743,6 +488,10 @@
                 },
                 {
                     "RowName": "Styx_Forest",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Swamp",
                     "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
@@ -1170,6 +919,10 @@
                 {
                     "RowName": "Styx_Forest",
                     "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Swamp",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightRain.WeatherEvent_LightRain'",
@@ -1500,6 +1253,10 @@
                 {
                     "RowName": "Styx_Forest",
                     "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/Winds_Light.Winds_Light'",
@@ -1670,6 +1427,10 @@
                 },
                 {
                     "RowName": "Styx_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Arctic",
                     "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
@@ -2306,6 +2067,10 @@
                 {
                     "RowName": "Styx_Desert",
                     "DataTableName": "D_WeatherBiomeGroups"
+                },
+                {
+                    "RowName": "Pro_Volcanic",
+                    "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
             "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_LightSand.WeatherEvent_LightSand'",
@@ -2477,38 +2242,269 @@
         {
             "Name": "Volcanic_Heavy_Ash",
             "Difficulty": "Heavy",
-            "Tier": 5,
-            "DurationSeconds": 540,
-            "DurationMinutes": 9,
+            "Tier": 4,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
             "BiomeGroups": [
                 {
                     "RowName": "Pro_Volcanic",
                     "DataTableName": "D_WeatherBiomeGroups"
                 }
             ],
-            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Volcanic_Heavy_Ash-WeatherName\", \"Heavy Ash\")",
-            "WeatherDescription": "INVTEXT(\"[DNT] Ash storm will clog some devices, stoping them from working and reduce visibility.\")",
+            "WeatherName": "INVTEXT(\"[DNT] Heavy Ash\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Ash storm will clog some devices, stoping them from working and heavy exposure\")",
             "WeatherActions": [
                 {
                     "Action": {
-                        "RowName": "Ash_Start",
+                        "RowName": "HeavyAsh_Start",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 120
+                    "TimeInSeconds": 20
                 },
                 {
                     "Action": {
-                        "RowName": "Ash_Middle",
+                        "RowName": "HeavyAsh_Body",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 300
+                    "TimeInSeconds": 20
                 },
                 {
                     "Action": {
-                        "RowName": "Ash_Stop",
+                        "RowName": "HeavyAsh_Stop",
                         "DataTableName": "D_WeatherActions"
                     },
-                    "TimeInSeconds": 120
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Volcanic_Heavy_Embers",
+            "Difficulty": "Heavy",
+            "Tier": 5,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Volcanic",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "INVTEXT(\"[DNT] Burning Embers\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Ember storm will sporadically cause flammable objects to catch on fire\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "Embers_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "Embers_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "Embers_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Swamp_Heavy_AcidRain",
+            "Difficulty": "Heavy",
+            "Tier": 5,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Swamp",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "INVTEXT(\"[DNT] Acid Rain\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Acid Rain will cause durability damage to equipped items and cause general damage\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "AcidRain_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "AcidRain_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "AcidRain_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Tundra_Heavy_Hail",
+            "Difficulty": "Heavy",
+            "Tier": 4,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Arctic",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "INVTEXT(\"[DNT] Heavy Hail\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Temperature drop and periodic damage\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "HeavyHail_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyHail_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "HeavyHail_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Grasslands_Hail",
+            "Difficulty": "Medium",
+            "Tier": 3,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Conifer",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "INVTEXT(\"[DNT] Grasslands Hail\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] Temperature drop and periodic damage\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "Hail_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "Hail_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "Hail_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ]
+        },
+        {
+            "Name": "Swamp_Winds",
+            "Tier": 2,
+            "DurationSeconds": 70,
+            "DurationMinutes": 2,
+            "BiomeGroups": [
+                {
+                    "RowName": "Pro_Swamp",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherName": "INVTEXT(\"[DNT] Clear Breeze\")",
+            "WeatherDescription": "INVTEXT(\"[DNT] A windy storm that clears the fog from the swamp biome for a brief period of time\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "SwampWinds_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "SwampWinds_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "SwampWinds_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 20
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
                 }
             ]
         }

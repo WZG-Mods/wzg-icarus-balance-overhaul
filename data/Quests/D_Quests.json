@@ -6400,6 +6400,9 @@
             "Name": "PRO_Story_1",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1.BPQ_PRO_Story1_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_1_Daisy_Base"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromNomadIntro",
@@ -6445,7 +6448,7 @@
         {
             "Name": "PRO_Story1_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Collect the Short Range Radio Upgrade\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromNomadEvent4",
@@ -6527,6 +6530,37 @@
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Story1_Escort",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort.BPQ_Story1_Escort_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort-Description\", \"Complete the Rescue Mission From SMPL3\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_1_Daisy"
+            }
+        },
+        {
+            "Name": "PRO_Story1_Escort_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Travel-Description\", \"Travel to the \\'Daisys\\'\\' last known location (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Escort_Daisy",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Daisy.BPQ_Story1_Escort_Daisy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Daisy-Description\", \"Lead & Protect \\'Daisy\\' on the way back to her owners base (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_1_Daisy_Base"
+            }
+        },
+        {
+            "Name": "PRO_Story1_Escort_Health",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Health.BPQ_Story1_Escort_Health_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Health-Description\", \"\\'Daisy\\' Health {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_Story1_Escort_Loot",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Loot.BPQ_Story1_Escort_Loot_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Loot-Description\", \"Loot the base for your reward\")"
         },
         {
             "Name": "PRO_Story_2",
