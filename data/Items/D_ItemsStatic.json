@@ -4610,9 +4610,12 @@
                 "RowName": "Generic"
             },
             "Actionable": {
-                "RowName": "Light_NoMelee"
+                "RowName": "Light_NoMeleeLantern"
             },
-            "Fillable": {
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
                 "RowName": "Lantern"
             },
             "Floatable": {
@@ -4661,7 +4664,10 @@
                         "TagName": "Traits.Actionable"
                     },
                     {
-                        "TagName": "Traits.Fillable"
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     },
                     {
                         "TagName": "Traits.Floatable"
@@ -11037,6 +11043,9 @@
             "Deployable": {
                 "RowName": "Water_Pump"
             },
+            "Durable": {
+                "RowName": "Deployable_2000"
+            },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
@@ -11074,6 +11083,9 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     },
                     {
                         "TagName": "Traits.Energy"
@@ -23923,6 +23935,9 @@
             "Deployable": {
                 "RowName": "Solar_Panel"
             },
+            "Durable": {
+                "RowName": "Deployable_2500"
+            },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
@@ -23954,6 +23969,9 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     },
                     {
                         "TagName": "Traits.Energy"
@@ -25735,6 +25753,9 @@
             "FLODData": {
                 "RowName": "FT_ConiferFlower_01"
             },
+            "AdditionalStats": {
+                "(Value=\"IsInvulnerable_?\")": 1
+            },
             "CraftingExperience": 10,
             "Generated_Tags": {
                 "GameplayTags": [
@@ -25986,12 +26007,12 @@
             }
         },
         {
-            "Name": "Rug_Deer",
+            "Name": "Rug_AlphaWolf",
             "Meshable": {
-                "RowName": "Mesh_Rug_Deer"
+                "RowName": "Mesh_Rug_AlphaWolf"
             },
             "Itemable": {
-                "RowName": "Item_Rug_Deer"
+                "RowName": "Item_Rug_AlphaWolf"
             },
             "Interactable": {
                 "RowName": "Deployable_NoInteract"
@@ -26006,7 +26027,7 @@
                 "RowName": "Place"
             },
             "Deployable": {
-                "RowName": "Rug_Deer"
+                "RowName": "Rug_AlphaWolf"
             },
             "Durable": {
                 "RowName": "Deployable_250"
@@ -26048,12 +26069,12 @@
             }
         },
         {
-            "Name": "Rug_AlphaWolf",
+            "Name": "Rug_Bear",
             "Meshable": {
-                "RowName": "Mesh_Rug_AlphaWolf"
+                "RowName": "Mesh_Rug_Bear"
             },
             "Itemable": {
-                "RowName": "Item_Rug_AlphaWolf"
+                "RowName": "Item_Rug_Bear"
             },
             "Interactable": {
                 "RowName": "Deployable_NoInteract"
@@ -26068,7 +26089,69 @@
                 "RowName": "Place"
             },
             "Deployable": {
-                "RowName": "Rug_AlphaWolf"
+                "RowName": "Rug_Bear"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Buffalo",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Buffalo"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Buffalo"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Buffalo"
             },
             "Durable": {
                 "RowName": "Deployable_250"
@@ -26172,12 +26255,12 @@
             }
         },
         {
-            "Name": "Rug_Weave_Thin",
+            "Name": "Rug_Cougar",
             "Meshable": {
-                "RowName": "Mesh_Rug_Weave_Thin"
+                "RowName": "Mesh_Rug_Cougar"
             },
             "Itemable": {
-                "RowName": "Item_Rug_Weave_Thin"
+                "RowName": "Item_Rug_Cougar"
             },
             "Interactable": {
                 "RowName": "Deployable_NoInteract"
@@ -26192,7 +26275,379 @@
                 "RowName": "Place"
             },
             "Deployable": {
-                "RowName": "Rug_Weave_Thin"
+                "RowName": "Rug_Cougar"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Deer",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Deer"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Deer"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Deer"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Desert_Wolf",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Desert_Wolf"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Desert_Wolf"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Desert_Wolf"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Jaguar",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Jaguar"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Jaguar"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Jaguar"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_PolarBear",
+            "Meshable": {
+                "RowName": "Mesh_Rug_PolarBear"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_PolarBear"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_PolarBear"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Snow_Wolf",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Snow_Wolf"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Snow_Wolf"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Snow_Wolf"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_SnowLeopard",
+            "Meshable": {
+                "RowName": "Mesh_Rug_SnowLeopard"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_SnowLeopard"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_SnowLeopard"
             },
             "Durable": {
                 "RowName": "Deployable_250"
@@ -26255,6 +26710,68 @@
             },
             "Deployable": {
                 "RowName": "Rug_Weave_Thick"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rug_Weave_Thin",
+            "Meshable": {
+                "RowName": "Mesh_Rug_Weave_Thin"
+            },
+            "Itemable": {
+                "RowName": "Item_Rug_Weave_Thin"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rug_Weave_Thin"
             },
             "Durable": {
                 "RowName": "Deployable_250"
@@ -33907,6 +34424,9 @@
             "Deployable": {
                 "RowName": "Portable_Beacon"
             },
+            "Durable": {
+                "RowName": "Deployable_5000"
+            },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
@@ -33938,6 +34458,9 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     }
                 ],
                 "ParentTags": []
@@ -37041,7 +37564,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -39047,6 +39571,10 @@
             "Audio": {
                 "RowName": "MetalDeployable"
             },
+            "AdditionalStats": {
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
+            },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
@@ -39107,7 +39635,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -39169,7 +39698,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -48405,7 +48935,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -49517,7 +50048,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -60075,7 +60607,7 @@
                 "RowName": "Generic"
             },
             "Durable": {
-                "RowName": "Carcass_Medium"
+                "RowName": "Carcass_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -64233,7 +64765,8 @@
                 "RowName": "MetalDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
+                "(Value=\"IsInvolvedInQuest_?\")": 1,
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -64602,6 +65135,9 @@
             },
             "Audio": {
                 "RowName": "MetalDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -65449,6 +65985,9 @@
             "Deployable": {
                 "RowName": "Prototype_Boss_Tracker"
             },
+            "Durable": {
+                "RowName": "Deployable_5000"
+            },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
@@ -65480,6 +66019,9 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     }
                 ],
                 "ParentTags": []
@@ -69362,7 +69904,7 @@
                 "RowName": "Generic"
             },
             "Durable": {
-                "RowName": "Carcass_Medium"
+                "RowName": "Carcass_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -78945,6 +79487,9 @@
             },
             "Audio": {
                 "RowName": "MetalDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"IsInvulnerable_?\")": 1
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -94777,6 +95322,9 @@
             "Deployable": {
                 "RowName": "Wind_Turbine"
             },
+            "Durable": {
+                "RowName": "Deployable_2500"
+            },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
@@ -94808,6 +95356,9 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     },
                     {
                         "TagName": "Traits.Energy"
@@ -95950,7 +96501,7 @@
                 "RowName": "Obsidian_Axe"
             },
             "Audio": {
-                "RowName": "Metal_Axe"
+                "RowName": "Axe_Obsidian"
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 20,
@@ -96035,7 +96586,7 @@
                 "RowName": "Obsidian_Pickaxe"
             },
             "Audio": {
-                "RowName": "Metal_Pickaxe"
+                "RowName": "Pickaxe_Obsidian"
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 23,
@@ -96117,11 +96668,12 @@
                 "RowName": "Obsidian_Knife"
             },
             "Audio": {
-                "RowName": "Metal_Knife"
+                "RowName": "Obsidian_Knife"
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 30,
-                "(Value=\"BaseAttacksCauseBurn_%\")": 15
+                "(Value=\"BaseAttacksCauseBurn_%\")": 15,
+                "(Value=\"BaseSkinningCookChance_%\")": 10
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -96286,7 +96838,8 @@
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 25,
-                "(Value=\"BaseAttacksCauseBurn_%\")": 15
+                "(Value=\"BaseAttacksCauseBurn_%\")": 15,
+                "(Value=\"BaseHarvestCookChance_%\")": 25
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -96633,7 +97186,7 @@
                 "RowName": "Default"
             },
             "AdditionalStats": {
-                "(Value=\"BaseFireDamage_+\")": 20,
+                "(Value=\"BaseFireDamage_+\")": 50,
                 "(Value=\"BaseAttacksCauseBurn_%\")": 15
             },
             "Manual_Tags": {
@@ -97412,7 +97965,8 @@
             },
             "AdditionalStats": {
                 "(Value=\"BaseFrostDamage_+\")": 30,
-                "(Value=\"BaseAttacksCauseFreeze_%\")": 15
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
+                "(Value=\"IsColdSteelItem_?\")": 1
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -97560,7 +98114,7 @@
                 "RowName": "Default"
             },
             "AdditionalStats": {
-                "(Value=\"BaseFrostDamage_+\")": 20,
+                "(Value=\"BaseFrostDamage_+\")": 55,
                 "(Value=\"BaseAttacksCauseFreeze_%\")": 15
             },
             "Manual_Tags": {
@@ -97949,7 +98503,9 @@
             },
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 23,
-                "(Value=\"BaseAttacksCauseMiasma_%\")": 15
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+                "(Value=\"BaseFellingRewards_%\")": -50,
+                "(Value=\"BaseInfectedBarkPerWoodChopped_%\")": 100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -98034,7 +98590,9 @@
             },
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 23,
-                "(Value=\"BaseAttacksCauseMiasma_%\")": 15
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+                "(Value=\"BaseMiningRewards_+%\")": -50,
+                "(Value=\"BasePyriticCrustPerMinedResource_%\")": 100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -98122,7 +98680,9 @@
             },
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 40,
-                "(Value=\"BaseAttacksCauseMiasma_%\")": 15
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+                "(Value=\"BaseSkinningRewards_%\")": -50,
+                "(Value=\"BaseAcidicGlandsPerSkinnedResource_%\")": 10
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -98440,7 +99000,9 @@
             },
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 35,
-                "(Value=\"BaseAttacksCauseMiasma_%\")": 15
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+                "(Value=\"BasePlantThornsPerHarvestedResource_%\")": 100,
+                "(Value=\"BaseHarvestingRewards_+%\")": -50
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -98519,7 +99081,9 @@
             },
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 80,
-                "(Value=\"BaseAttacksCauseMiasma_%\")": 15
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
+                "(Value=\"BaseShatteringRewards_%\")": -50,
+                "(Value=\"BasePyriticCrustPerMinedResource_%\")": 100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -98653,7 +99217,7 @@
                 "RowName": "Default"
             },
             "AdditionalStats": {
-                "(Value=\"BasePoisonDamage_+\")": 50,
+                "(Value=\"BasePoisonDamage_+\")": 60,
                 "(Value=\"BaseAttacksCauseMiasma_%\")": 15
             },
             "Manual_Tags": {
@@ -98819,6 +99383,1111 @@
                     },
                     {
                         "TagName": "Traits.Ballistic"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Frozen_Ore",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Item_Frozen_Ore"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Infected_Bark",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Item_Infected_Bard"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Acidic_Glands",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Item_Acidic_Glands"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Iron",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Iron"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Gold",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Gold"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Copper",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Copper"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Silicon",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Silicon"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Coal",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Coal"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Sulfur",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Sulfur"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Bauxite",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Bauxite"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Oxite",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Oxite"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Titanium",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Titanium"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Platinum",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Platinum"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Obsidian",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Obsidian"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Scoria",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Scoria"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Clay",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Clay"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Purple_Exotic",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Purple_Exotic"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Red_Exotic",
+            "Meshable": {
+                "RowName": "Mesh_Fiber"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Red_Exotic"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_PolarBearCub",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_PolarBear"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_PolarBearCub"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T2"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T2"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     }
                 ],
                 "ParentTags": []

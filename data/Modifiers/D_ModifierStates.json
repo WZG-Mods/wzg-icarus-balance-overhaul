@@ -6385,7 +6385,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierName\", \"Burning\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire and is searing the skin closed.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire and is searing the skin.\")",
             "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
             "AudioData": {
                 "RowName": "Generic_Negative"
@@ -6430,6 +6430,51 @@
                 "AutoDescription": " NONE( ModifierState.ExtingishFire )"
             },
             "bEffectsObjects": true
+        },
+        {
+            "Name": "Freeze",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierName\", \"Freeze\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierDescription\", \"A wound that has frozen the skin closed. Movement Speed is Decreased.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Frost.BP_ModifierStateBehaviour_TickDamage_Frost_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 30,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Miasma",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Miasma-ModifierName\", \"Miasma\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Miasma-ModifierDescription\", \"A poisoned wound, lowers melee damage.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": -25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 30,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration"
         }
     ]
 }

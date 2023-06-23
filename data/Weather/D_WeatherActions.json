@@ -5010,9 +5010,9 @@
             "Severity_SandEnd": 0.10000000149011612
         },
         {
-            "Name": "Ash_Start",
+            "Name": "HeavyAsh_Start",
             "bIsRampingUp": true,
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-rain1.icon-weather-rain1",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
                     "R": 0.6509799957275391,
@@ -5021,7 +5021,117 @@
                     "A": 0.20000000298023224
                 }
             },
-            "Rainfall_Millilitre_End": 8,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.8999999761581421,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 500,
+            "Perception_Percentage": -10,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableVisuals_Ash": true,
+            "Severity_AshEnd": 1,
+            "Curve_Ash": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Ash.C_Weather_Ash",
+            "bEnableVisuals_Smoke": true,
+            "Severity_SmokeEnd": 0.5,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 1
+        },
+        {
+            "Name": "HeavyAsh_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 3,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_HeavyExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                }
+            },
+            "StormTier": 2,
+            "StormWindDamagePeriod": 6,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "HeavyAsh_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.8999999761581421,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 500,
+            "Perception_Percentage": -10,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableVisuals_Ash": true,
+            "Severity_AshEnd": 1,
+            "Curve_Ash": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Ash.C_Weather_Ash",
+            "bEnableVisuals_Smoke": true,
+            "Severity_SmokeEnd": 0.5,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 1
+        },
+        {
+            "Name": "AcidRain_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
             "bEnableVisuals_Clouds": true,
             "Severity_CloudsEnd": 1,
             "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
@@ -5036,15 +5146,16 @@
             "Severity_WindEnd": 0.800000011920929,
             "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
             "bEnableFireExtinguish": true,
-            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_RollChanceMulti": 0.20000000298023224,
             "FireExtinguish_MinInterval": 2,
             "FireExtinguish_MaxInterval": 4,
-            "bEnableVisuals_Ash": true,
-            "Severity_AshEnd": 1
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 1,
+            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
         },
         {
-            "Name": "Ash_Middle",
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-rain1.icon-weather-rain1",
+            "Name": "AcidRain_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
                     "R": 0.992156982421875,
@@ -5053,27 +5164,38 @@
                     "A": 0.20000000298023224
                 }
             },
-            "Rainfall_Millilitre_Start": 8,
-            "Rainfall_Millilitre_End": 8,
-            "bEnableAction_Temperature": true,
-            "Temperature_End": -500,
-            "Perception_Percentage": -25,
-            "StormTier": 2,
-            "StormWindDamagePeriod": 6,
-            "Damage_Deployables_MinInterval": 4,
-            "Damage_Deployables_MaxInterval": 6,
-            "Damage_Deployables_Intensity": 0.5,
-            "bEnableFireExtinguish": true,
-            "FireExtinguish_RollChanceMulti": 1,
-            "FireExtinguish_MinInterval": 2,
-            "FireExtinguish_MaxInterval": 4,
-            "bEnableVisuals_Ash": true,
-            "Severity_AshStart": 1,
-            "Severity_AshEnd": 1
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_HeavyExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                }
+            },
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1,
+            "Damage_Players_MaxInterval": 4,
+            "Damage_Players_Intensity": 1
         },
         {
-            "Name": "Ash_Stop",
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
+            "Name": "AcidRain_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
                     "R": 0.6509799957275391,
@@ -5082,24 +5204,413 @@
                     "A": 0.20000000298023224
                 }
             },
-            "Severity_RainEnd": 0.800000011920929,
-            "Rainfall_Millilitre_End": 0.800000011920929,
             "bEnableVisuals_Clouds": true,
-            "Severity_CloudsEnd": 0.800000011920929,
+            "Severity_CloudsEnd": 1,
             "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
             "bEnableVisuals_Debris": true,
-            "Severity_DebrisEnd": 0.6000000238418579,
+            "Severity_DebrisEnd": 1,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
             "bEnableAction_Temperature": true,
-            "Temperature_End": -500,
+            "Temperature_End": 500,
             "Perception_Percentage": -25,
             "bEnableVisuals_Wind": true,
             "bEnableAction_Wind": true,
             "Severity_WindEnd": 0.800000011920929,
             "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
-            "bEnableEndAllWindDamageTrigger": true,
-            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.20000000298023224,
             "FireExtinguish_MinInterval": 2,
-            "Severity_AshStart": 1
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 1,
+            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
+        },
+        {
+            "Name": "Embers_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.5,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 2500,
+            "Perception_Percentage": -10,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_Ash": true,
+            "Severity_AshEnd": 1,
+            "Curve_Ash": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Ash.C_Weather_Ash",
+            "bEnableVisuals_Embers": true,
+            "Severity_EmbersEnd": 0.800000011920929,
+            "Curve_Embers": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Embers.C_Weather_Embers",
+            "bEnableVisuals_Smoke": true,
+            "Severity_SmokeEnd": 0.10000000149011612,
+            "bEnableVisuals_FogDensity": true,
+            "Severity_FogDensityEnd": 0.5,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.25
+        },
+        {
+            "Name": "Embers_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 3,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_HeavyExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                }
+            },
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1,
+            "Damage_Players_MaxInterval": 4,
+            "Damage_Players_Intensity": 0.5
+        },
+        {
+            "Name": "Embers_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.5,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 2500,
+            "Perception_Percentage": -10,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_Ash": true,
+            "Severity_AshEnd": 1,
+            "Curve_Ash": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Ash.C_Weather_Ash",
+            "bEnableVisuals_Embers": true,
+            "Severity_EmbersEnd": 0.800000011920929,
+            "Curve_Embers": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Embers.C_Weather_Embers",
+            "bEnableVisuals_Smoke": true,
+            "Severity_SmokeEnd": 0.10000000149011612,
+            "bEnableVisuals_FogDensity": true,
+            "Severity_FogDensityEnd": 0.5,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.25
+        },
+        {
+            "Name": "HeavyHail_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.5,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -1000,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Hail": true,
+            "Severity_HailEnd": 1
+        },
+        {
+            "Name": "HeavyHail_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_HeavyExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                }
+            },
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896,
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1.5,
+            "Damage_Players_MaxInterval": 3,
+            "Damage_Players_Intensity": 0.10000000149011612
+        },
+        {
+            "Name": "HeavyHail_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.5,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -1000,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Hail": true,
+            "Severity_HailEnd": 1
+        },
+        {
+            "Name": "Hail_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.20000000298023224,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 4,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Hail": true,
+            "Severity_HailEnd": 0.800000011920929
+        },
+        {
+            "Name": "Hail_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_HeavyExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0
+                }
+            },
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896,
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1.5,
+            "Damage_Players_MaxInterval": 3,
+            "Damage_Players_Intensity": 0.10000000149011612
+        },
+        {
+            "Name": "Hail_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.20000000298023224,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 4,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Hail": true,
+            "Severity_HailEnd": 0.800000011920929
+        },
+        {
+            "Name": "SwampWinds_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "SwampWinds_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2"
+        },
+        {
+            "Name": "SwampWinds_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
         }
     ]
 }
