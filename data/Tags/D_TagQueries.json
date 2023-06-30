@@ -210,25 +210,17 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Fuel.Charcoal"
-                    },
-                    {
                         "TagName": "Item.Fuel"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    5,
-                    2,
-                    3,
-                    1,
-                    0,
                     1,
                     1,
-                    1
+                    0
                 ],
-                "AutoDescription": " ALL(  NONE( Item.Fuel.Charcoal ),  ANY( Item.Fuel ) )"
+                "AutoDescription": " ANY( Item.Fuel )"
             }
         },
         {
@@ -1328,6 +1320,28 @@
             }
         },
         {
+            "Name": "Building_Scoria",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.Scoria"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.Scoria )"
+            }
+        },
+        {
             "Name": "Building_Wood",
             "Query": {
                 "TagDictionary": [
@@ -2281,25 +2295,17 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Fuel.Charcoal"
-                    },
-                    {
                         "TagName": "Item.Fuel.Biofuel"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    5,
-                    2,
-                    3,
-                    1,
-                    0,
                     1,
                     1,
-                    1
+                    0
                 ],
-                "AutoDescription": " ALL(  NONE( Item.Fuel.Charcoal ),  ANY( Item.Fuel.Biofuel ) )"
+                "AutoDescription": " ANY( Item.Fuel.Biofuel )"
             }
         },
         {
@@ -3536,6 +3542,28 @@
             }
         },
         {
+            "Name": "Building_Scoria_Brick",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.ScoriaBrick"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.ScoriaBrick )"
+            }
+        },
+        {
             "Name": "Any_Tame_Food_Container",
             "Query": {
                 "TagDictionary": [
@@ -4362,6 +4390,24 @@
                     0
                 ],
                 "AutoDescription": " ANY( Item.Fuel.AnimalFat )"
+            }
+        },
+        {
+            "Name": "Fuel_Combustible",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fuel.Combustible"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Fuel.Combustible )"
             }
         }
     ]

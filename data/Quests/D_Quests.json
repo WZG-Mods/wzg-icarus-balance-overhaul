@@ -7125,6 +7125,9 @@
             "Name": "PRO_Story_6",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6.BPQ_PRO_Story6_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Traitor\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Outside"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromFractureIntro",
@@ -7916,6 +7919,80 @@
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_C_Stockpile",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile.BPQ_PRO_C_Stockpile_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile-Description\", \"STOCKPILE: Culinary Delights\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Ship1",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_Ship.BPQ_PRO_C_Stockpile_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Ship1-Description\", \"Tundra Delicacies\")",
+            "LocationQuery": {
+                "RowName": "PRO_Tundra_Middle"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AllItemsFound5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_C_Stockpile_Ship2",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_Ship.BPQ_PRO_C_Stockpile_Ship_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Ship2-Description\", \"Swamp Delicacies\")",
+            "LocationQuery": {
+                "RowName": "PRO_Swamp_Middle"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AllItemsFound3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_C_Stockpile_List",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_List.BPQ_PRO_C_Stockpile_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_List-Description\", \"Deposit listed resources in Refrigerated Cargo Pod\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food4",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood4.BPQ_PRO_C_Stockpile_DepositFood4_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food4-Description\", \"{0} / {1} Shepherds Roll\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food7",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood7.BPQ_PRO_C_Stockpile_DepositFood7_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food7-Description\", \"{0} / {1} Potato Carrot Fries\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food1",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood1.BPQ_PRO_C_Stockpile_DepositFood1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food1-Description\", \"{0} / {1} Vegetable Pies\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food2",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood2.BPQ_PRO_C_Stockpile_DepositFood2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food2-Description\", \"{0} / {1} Meat Pies\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food3",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood3.BPQ_PRO_C_Stockpile_DepositFood3_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food3-Description\", \"{0} / {1} Fried Soy Beans\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food5",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood5.BPQ_PRO_C_Stockpile_DepositFood5_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food5-Description\", \"{0} / {1} Rhubarb Stew\")"
+        },
+        {
+            "Name": "PRO_C_Stockpile_Food6",
+            "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_C_Stockpile_DepositFood6.BPQ_PRO_C_Stockpile_DepositFood6_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Stockpile_Food6-Description\", \"{0} / {1} Savory Roll\")"
         }
     ]
 }

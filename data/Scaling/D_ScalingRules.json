@@ -1,0 +1,52 @@
+{
+    "RowStruct": "/Script/Icarus.ScalingRuleData",
+    "Defaults": {
+        "bScaleByNearbyPlayerCount": false,
+        "NearbyPlayersScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomNearbyPlayersCurve": "None",
+        "bScaleByTargetLevel": false,
+        "TargetLevelScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomTargetLevelCurve": "None",
+        "bScaleByProspectDifficulty": false,
+        "ProspectDifficultyScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomProspectDifficultyCurve": "None",
+        "bScaleByAverageNearbyPlayerLevel": false,
+        "AverageNearbyPlayerLevelScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomAverageNearbyPlayerLevelCurve": "None"
+    },
+    "Rows": [
+        {
+            "Name": "50%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "OutMaxPercentScale": 50,
+                "bClampOutput": false
+            }
+        }
+    ]
+}
