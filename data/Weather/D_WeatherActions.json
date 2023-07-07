@@ -108,7 +108,18 @@
         "bEnableVisuals_FogExtinction": false,
         "Severity_FogExtinctionStart": 0,
         "Severity_FogExtinctionEnd": 0,
-        "Curve_FogExtinction": "None"
+        "Curve_FogExtinction": "None",
+        "bEnableDamageTag": false,
+        "Curve_DamageTag": "None",
+        "DamageTag_Intensity": 0,
+        "DamageTag_DutyCycle": 10,
+        "DamageTag_Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "DamageTag_DamageType": "Undefined",
+        "bEnableProcessorClog": false,
+        "Curve_ProcessorClog": "None"
     },
     "Rows": [
         {
@@ -895,7 +906,6 @@
             "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
             "bEnableAction_Temperature": true,
             "Temperature_End": -1800,
-            "Perception_Percentage": -50,
             "bEnableVisuals_Wind": true,
             "bEnableAction_Wind": true,
             "Severity_WindEnd": 0.800000011920929,
@@ -5041,7 +5051,9 @@
             "Severity_SmokeEnd": 0.5,
             "bEnableVisuals_FogExtinction": true,
             "Severity_FogExtinctionStart": 0.5,
-            "Severity_FogExtinctionEnd": 1
+            "Severity_FogExtinctionEnd": 1,
+            "bEnableProcessorClog": true,
+            "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
         },
         {
             "Name": "HeavyAsh_Body",
@@ -5085,7 +5097,9 @@
             "Damage_Deployables_Intensity": 0.5,
             "FireExtinguish_RollChanceMulti": 1,
             "FireExtinguish_MinInterval": 2,
-            "FireExtinguish_MaxInterval": 4
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableProcessorClog": true,
+            "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top"
         },
         {
             "Name": "HeavyAsh_Stop",
@@ -5118,7 +5132,9 @@
             "Severity_SmokeEnd": 0.5,
             "bEnableVisuals_FogExtinction": true,
             "Severity_FogExtinctionStart": 0.5,
-            "Severity_FogExtinctionEnd": 1
+            "Severity_FogExtinctionEnd": 1,
+            "bEnableProcessorClog": true,
+            "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
         },
         {
             "Name": "AcidRain_Start",
@@ -5151,7 +5167,15 @@
             "FireExtinguish_MaxInterval": 4,
             "bEnableVisuals_AcidRain": true,
             "Severity_AcidRainEnd": 1,
-            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
+            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "DamageTag_Intensity": 5,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Iron"
+            },
+            "DamageTag_DamageType": "Poison"
         },
         {
             "Name": "AcidRain_Body",
@@ -5191,7 +5215,15 @@
             "bEnableDamage_Players": true,
             "Damage_Players_MinInterval": 1,
             "Damage_Players_MaxInterval": 4,
-            "Damage_Players_Intensity": 1
+            "Damage_Players_Intensity": 1,
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top",
+            "DamageTag_Intensity": 7,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Iron"
+            },
+            "DamageTag_DamageType": "Poison"
         },
         {
             "Name": "AcidRain_Stop",
@@ -5223,7 +5255,15 @@
             "FireExtinguish_MaxInterval": 4,
             "bEnableVisuals_AcidRain": true,
             "Severity_AcidRainEnd": 1,
-            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
+            "Curve_AcidRain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "DamageTag_Intensity": 5,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Iron"
+            },
+            "DamageTag_DamageType": "Poison"
         },
         {
             "Name": "Embers_Start",
@@ -5259,7 +5299,15 @@
             "Severity_FogDensityEnd": 0.5,
             "bEnableVisuals_FogExtinction": true,
             "Severity_FogExtinctionStart": 0.5,
-            "Severity_FogExtinctionEnd": 0.25
+            "Severity_FogExtinctionEnd": 0.25,
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "DamageTag_Intensity": 5,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Emberable"
+            },
+            "DamageTag_DamageType": "Fire"
         },
         {
             "Name": "Embers_Body",
@@ -5299,7 +5347,15 @@
             "bEnableDamage_Players": true,
             "Damage_Players_MinInterval": 1,
             "Damage_Players_MaxInterval": 4,
-            "Damage_Players_Intensity": 0.5
+            "Damage_Players_Intensity": 0.5,
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top",
+            "DamageTag_Intensity": 7,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Emberable"
+            },
+            "DamageTag_DamageType": "Fire"
         },
         {
             "Name": "Embers_Stop",
@@ -5335,7 +5391,14 @@
             "Severity_FogDensityEnd": 0.5,
             "bEnableVisuals_FogExtinction": true,
             "Severity_FogExtinctionStart": 0.5,
-            "Severity_FogExtinctionEnd": 0.25
+            "Severity_FogExtinctionEnd": 0.25,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "DamageTag_Intensity": 5,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Emberable"
+            },
+            "DamageTag_DamageType": "Fire"
         },
         {
             "Name": "HeavyHail_Start",

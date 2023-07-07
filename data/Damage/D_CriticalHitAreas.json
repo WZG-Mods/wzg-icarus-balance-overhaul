@@ -1,10 +1,17 @@
 {
     "RowStruct": "/Script/Icarus.CriticalHitArea",
     "Defaults": {
-        "EffectiveStat": {
+        "DamageReductionStat": {
             "Value": "None"
         },
-        "EffectiveStatMultiplier": 1,
+        "DamageReductionMitigatingStat": {
+            "Value": "None"
+        },
+        "DamageMultiplierStat": {
+            "Value": "None"
+        },
+        "ReductionStatMultiplier": 1,
+        "MultiplierStatMultiplier": 1,
         "ModifiersToApply": [],
         "Priority": 10,
         "AudioData": {
@@ -15,8 +22,12 @@
     "GenerateEnum": true,
     "Rows": [
         {
+            "Name": "Crit_None",
+            "Priority": 99
+        },
+        {
             "Name": "Crit_ExtraWeakPoint",
-            "EffectiveStat": {
+            "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
             },
             "Priority": 4,
@@ -26,10 +37,10 @@
         },
         {
             "Name": "Crit_WeakPoint",
-            "EffectiveStat": {
+            "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
             },
-            "EffectiveStatMultiplier": 0.5,
+            "MultiplierStatMultiplier": 0.5,
             "Priority": 5,
             "AudioData": {
                 "RowName": "CriticalHit"
@@ -37,9 +48,16 @@
         },
         {
             "Name": "Crit_ExtraStrongPoint",
-            "EffectiveStat": {
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "HardenedPointPenetration_%"
+            },
+            "DamageMultiplierStat": {
                 "Value": "HardenedPointDamage_+%"
             },
+            "MultiplierStatMultiplier": 0.5,
             "Priority": 7,
             "AudioData": {
                 "RowName": "LowDamageHit"
@@ -47,10 +65,16 @@
         },
         {
             "Name": "Crit_StrongPoint",
-            "EffectiveStat": {
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "HardenedPointPenetration_%"
+            },
+            "DamageMultiplierStat": {
                 "Value": "HardenedPointDamage_+%"
             },
-            "EffectiveStatMultiplier": 0.5,
+            "ReductionStatMultiplier": 0.5,
             "Priority": 8,
             "AudioData": {
                 "RowName": "LowDamageHit"
@@ -58,6 +82,8 @@
         },
         {
             "Name": "Crit_NoDamage",
+            "ReductionStatMultiplier": 0,
+            "MultiplierStatMultiplier": 0,
             "Priority": 0,
             "AudioData": {
                 "RowName": "LowDamageHit"

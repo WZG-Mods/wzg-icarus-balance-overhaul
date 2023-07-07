@@ -6476,6 +6476,96 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Drink_Heated",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Warming.Icon_Warming'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Drink_Heated-ModifierName\", \"Warming\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Drink_Heated-ModifierDescription\", \"Heated Water Warms you.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWarmupDegreePerMinute_+\")": 10,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 500
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Drink.BP_Modifier_Drink_C",
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.CoolingDrink"
+                    }
+                ]
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Fresh_Air",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fresh_Air-ModifierName\", \"Fresh Air\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fresh_Air-ModifierDescription\", \"Fresh air that has been cleaned of toxins that invigorates you.\")",
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 10,
+                "(Value=\"BaseMovementSpeed_+%\")": 10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Drink.BP_Modifier_Drink_C",
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.CoolingDrink"
+                    }
+                ]
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Scanned_Creature",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_AggressiveCreature.Icon_AggressiveCreature'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Scanned_Creature-ModifierName\", \"Scanned\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Scanned_Creature-ModifierDescription\", \"Creature has Been Scanned\")",
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamageResistance_%\")": -20,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": -20
+            },
+            "MergeType": "Count",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Scanned"
+                    }
+                ]
+            },
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "LavaHunter_FlameOn",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Fire.Icon_BestTrait_Fire'",
+            "ModifierName": "INVTEXT(\"[DNT] Flame On\")",
+            "ModifierDescription": "",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseDamageReturned_%\")": 25,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 50,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 100
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_LavaHunter_FlameOn.BP_Modifier_LavaHunter_FlameOn_C",
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Clogged_Ash",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_StormHigh.Icon_StormHigh'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierName\", \"Clogged\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierDescription\", \"Clogged With Ash\")",
+            "GrantedStats": {
+                "(Value=\"BaseProcessorResourceClog_%\")": 100
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         }
     ]
 }

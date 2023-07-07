@@ -4409,6 +4409,32 @@
                 ],
                 "AutoDescription": " ANY( Item.Fuel.Combustible )"
             }
+        },
+        {
+            "Name": "Building_Emberable",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Building.Thatch"
+                    },
+                    {
+                        "TagName": "Building.Wood"
+                    },
+                    {
+                        "TagName": "Building.InteriorWood"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Building.Thatch, Building.Wood, Building.InteriorWood )"
+            }
         }
     ]
 }
