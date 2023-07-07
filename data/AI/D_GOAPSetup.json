@@ -3604,6 +3604,49 @@
             "DynamicSubtreeOverrides": {
                 "(TagName=\"BT.GOAP.Melee_Attack\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack_LavaBroodling.BT_IcarusNPCGOAP_Melee_Attack_LavaBroodling'"
             }
+        },
+        {
+            "Name": "LavaBomber",
+            "Motivations": [
+                {
+                    "RowName": "Aggression",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Melee_Attack_Assailant",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Investigate_Last_Hostile_Stimulus",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Relax_At_Last_Hostile_Location",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Kill_Assailant",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.GOAP.Melee_Attack\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack_LavaBomber.BT_IcarusNPCGOAP_Melee_Attack_LavaBomber'"
+            }
         }
     ]
 }
