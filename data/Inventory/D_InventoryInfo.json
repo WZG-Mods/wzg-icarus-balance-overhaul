@@ -11,6 +11,7 @@
         "StartingSlots": 0,
         "SlotOverrides": [],
         "RemoveOnly": false,
+        "bIsClientSideOnly": false,
         "Stats": {}
     },
     "Rows": [
@@ -172,6 +173,9 @@
             "Name": "Space_Player_Loadout",
             "InventoryID": {
                 "Value": "Loadout"
+            },
+            "SlotTemplate": {
+                "RowName": "No_Envirosuits"
             },
             "StartingSlots": 15
         },
@@ -586,9 +590,6 @@
             "Name": "Farming_CropPlot_Seed",
             "InventoryID": {
                 "Value": "Seed"
-            },
-            "SlotTemplate": {
-                "RowName": "Any_Seed"
             },
             "StartingSlots": 1
         },
@@ -1204,7 +1205,7 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Exotic"
+                "RowName": "Any_Meta"
             },
             "StartingSlots": 30
         },
@@ -1407,6 +1408,42 @@
             },
             "SlotTemplate": {
                 "RowName": "Fuel_Combustible"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Storage_Prototype_Printed_Crate",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 30
+        },
+        {
+            "Name": "On_Prospect_Meta_Inventory",
+            "InventoryID": {
+                "Value": "On_Prospect_Habitat"
+            },
+            "StartingSlots": 200,
+            "bIsClientSideOnly": true
+        },
+        {
+            "Name": "On_Prospect_Loadout_Request",
+            "InventoryID": {
+                "Value": "On_Prospect_Loadout"
+            },
+            "SlotTemplate": {
+                "RowName": "No_Envirosuits"
+            },
+            "StartingSlots": 15,
+            "bIsClientSideOnly": true
+        },
+        {
+            "Name": "Anvil_T3_Fuel",
+            "InventoryID": {
+                "Value": "Fuel"
+            },
+            "SlotTemplate": {
+                "RowName": "Charcoal_Or_Coal"
             },
             "StartingSlots": 1
         }

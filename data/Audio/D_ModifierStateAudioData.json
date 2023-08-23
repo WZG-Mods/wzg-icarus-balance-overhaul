@@ -7,7 +7,9 @@
         "PlayerModifierLoopSound": "None",
         "bApplyStackCountParameterToLoop": false,
         "PlayerModifierRemovedSound": "None",
-        "bApplyExposedVocalisation": false
+        "bApplyExposedVocalisation": false,
+        "ExposedVocalisationMinEffectiveness": 0,
+        "bApplyEffectivenessParameter": false
     },
     "Rows": [
         {
@@ -51,6 +53,13 @@
             "Name": "Consume_Tonic",
             "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_WATER.SFX_CONSUME_WATER",
             "bReplayOnStack": true
+        },
+        {
+            "Name": "Exposure_Dynamic",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_EXPOSURE_DYNAMIC.SFX_MODIF_EXPOSURE_DYNAMIC",
+            "bApplyExposedVocalisation": true,
+            "ExposedVocalisationMinEffectiveness": 50,
+            "bApplyEffectivenessParameter": true
         }
     ]
 }

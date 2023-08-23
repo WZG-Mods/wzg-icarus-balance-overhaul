@@ -188,6 +188,7 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel.SM_DEP_Barrel",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -789,7 +790,8 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Brazier.BP_Brazier_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Brazier_02.SM_DEP_Brazier_02",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Rain_Reservoir",
@@ -809,7 +811,7 @@
         {
             "Name": "Metal_Oxite_Dissolver",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/OxiteDissolver/BP_Metal_Oxite_Dissolver.BP_Metal_Oxite_Dissolver_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver_Metal.SM_DEP_Oxite_Dissolver_Metal",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver_Metal_V2.SM_DEP_Oxite_Dissolver_Metal_V2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
         },
         {
@@ -1519,7 +1521,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Dehumidifer_TMP.SM_DEP_Dehumidifer_TMP",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1677,8 +1678,7 @@
                 "Drill_SocketB"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true,
-            "bCanAffectNavigation": false
+            "UseSnapSocketRotation": true
         },
         {
             "Name": "Faction_Mission_WallDrill",
@@ -1695,8 +1695,7 @@
                 "WallDrill_Socket"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true,
-            "bCanAffectNavigation": false
+            "UseSnapSocketRotation": true
         },
         {
             "Name": "Leather_Curtain_Window",
@@ -1958,7 +1957,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ElectricDehumidifier.SM_DEP_ElectricDehumidifier",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1967,7 +1965,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Electric_Dehumidifier_V2.SM_DEP_Electric_Dehumidifier_V2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1993,7 +1990,8 @@
             "Name": "Meta_Cot_Printed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Meta_Cot_Printed.BP_Meta_Cot_Printed_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bed_Cot_LEET.SM_DEP_Bed_Cot_LEET",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Basic_Wall_Light",
@@ -2002,7 +2000,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Basic_Ceiling_Light",
@@ -2012,7 +2011,8 @@
             "SnapToSurfaceNormal": false,
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "CeilingPlacement"
+            "WorldPlacementType": "CeilingPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Chemistry_Bench",
@@ -2132,7 +2132,6 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2245,7 +2244,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_DryingRack.SM_DEP_DryingRack",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2491,7 +2489,6 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Decorative_Statue_V2.SM_ITM_Decorative_Statue_V2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2522,7 +2519,8 @@
                 "Explosive_Socket_B"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Radar_Biofuel",
@@ -2660,6 +2658,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Deer_Statue_Wood.BP_Deer_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Deer/SM_DCO_StatueDeer_Wood.SM_DCO_StatueDeer_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2667,6 +2666,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Scorpion_Statue_Bronze.BP_Scorpion_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Scorpion/SM_DCO_StatueScorpion_Bronze.SM_DCO_StatueScorpion_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2674,6 +2674,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_PolarBear_Statue_Bronze.BP_PolarBear_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_PolarBear/SM_DCO_StatuePolarBear_Bronze.SM_DCO_StatuePolarBear_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2681,6 +2682,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Bear_Statue_Bronze.BP_Bear_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Bear/SM_DCO_StatueGrizzly_Bronze.SM_DCO_StatueGrizzly_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2688,6 +2690,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Hyena_Statue_Bronze.BP_Hyena_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Hyena/SM_DCO_StatueHyena_Bronze.SM_DCO_StatueHyena_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2695,6 +2698,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Cougar_Statue_Bronze.BP_Cougar_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Cougar/SM_DCO_StatueCougar_Bronze.SM_DCO_StatueCougar_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2702,6 +2706,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Jaguar_Statue_Bronze.BP_Jaguar_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Jaguar/SM_DCO_StatueJaguar_Bronze.SM_DCO_StatueJaguar_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2709,6 +2714,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_SnowLeopard_Statue_Bronze.BP_SnowLeopard_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_SnowLeopard/SM_DCO_StatueSnowLeopard_Bronze.SM_DCO_StatueSnowLeopard_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2828,6 +2834,25 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Clay_Brick_Door",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_Door_ClayBrick.BP_Door_ClayBrick_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Door_Brick.SM_BLD_Door_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "door_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "door",
+                "door_b"
+            ],
+            "UseSnapSocketRotation": true,
+            "UseSnapSocketScale": true
         },
         {
             "Name": "Mission_Communicator_T2",
@@ -3307,6 +3332,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Piranha_Statue_Wood.BP_Piranha_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Piranha/SM_DCO_StatuePiranha_Wood.SM_DCO_StatuePiranha_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3314,6 +3340,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rabbit_Statue_Wood.BP_Rabbit_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Rabbit/SM_DCO_Statue_Rabbit_Wood.SM_DCO_Statue_Rabbit_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3321,6 +3348,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Buffalo_Statue_Wood.BP_Buffalo_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Buffalo/SM_DCO_StatueBuffalo_Wood.SM_DCO_StatueBuffalo_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3376,84 +3404,73 @@
             "Name": "Carved_Table_Round",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableRound.BP_Carved_TableRound_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_Round_Wood_Carved/SM_DCO_DiningTable_Round_Wood_Carved.SM_DCO_DiningTable_Round_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_6Seater_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining_A.BP_Carved_TableDining_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_6Seater_A.ITEM_Carved_Table_6Seater_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_6Seat_Wood_Carved/SM_DCO_DiningTable_6Seat_Wood_Carved_A.SM_DCO_DiningTable_6Seat_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_6Seater_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining_B.BP_Carved_TableDining_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_6Seater_B.ITEM_Carved_Table_6Seater_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_6Seat_Wood_Carved/SM_DCO_DiningTable_6Seat_Wood_Carved_B.SM_DCO_DiningTable_6Seat_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_10Seater_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining10_A.BP_Carved_TableDining10_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_10Seater_A.ITEM_Carved_Table_10Seater_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_10Seat_Wood_Carved/SM_DCO_DiningTable_10Seat_Wood_Carved_A.SM_DCO_DiningTable_10Seat_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_10Seater_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining10_B.BP_Carved_TableDining10_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_10Seater_B.ITEM_Carved_Table_10Seater_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_10Seat_Wood_Carved/SM_DCO_DiningTable_10Seat_Wood_Carved_B.SM_DCO_DiningTable_10Seat_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Dining_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairDining_A.BP_Carved_ChairDining_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Chair_Dining_A.ITEM_Carved_Chair_Dining_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningChair_Wood_Carved/SM_DCO_DiningChair_Wood_Carved_A.SM_DCO_DiningChair_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Dining_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairDining_B.BP_Carved_ChairDining_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Chair_Dining_B.ITEM_Carved_Chair_Dining_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningChair_Wood_Carved/SM_DCO_DiningChair_Wood_Carved_B.SM_DCO_DiningChair_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving.BP_Carved_ChairLiving_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingChair_Wood_Carved/SM_DCO_LivingChair_Wood_Carved.SM_DCO_LivingChair_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living_2Seater",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving_2Seater.BP_Carved_ChairLiving_2Seater_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingCouch_2Seat_Wood_Carved/SM_DCO_LivingCouch_2Seat_Wood_Carved.SM_DCO_LivingCouch_2Seat_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living_3Seater",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving_3Seater.BP_Carved_ChairLiving_3Seater_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingCouch_3Seat_Wood_Carved/SM_DCO_LivingCouch_3Seat_Wood_Carved.SM_DCO_LivingCouch_3Seat_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Sitting_Bench",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_SittingBench.BP_Carved_SittingBench_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/SittingBench_Wood_Carved/SM_DCO_SittingBench_Wood_Carved.SM_DCO_SittingBench_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wall_Shelf_A",
@@ -3463,7 +3480,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Carved_Wall_Shelf_B",
@@ -3479,40 +3497,35 @@
             "Name": "Carved_DisplayCabinet",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_DisplayCabinet.BP_Carved_DisplayCabinet_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/DisplayCabinet_Wood_Carved/SM_DCO_DisplayCabinet_Wood_Carved.SM_DCO_DisplayCabinet_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wardrobe_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Wardrobe_A.BP_Carved_Wardrobe_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Wardrobe_A.ITEM_Carved_Wardrobe_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Wood_Carved_A.SM_DCO_Wardrobe_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wardrobe_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Wardrobe_B.BP_Carved_Wardrobe_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Wardrobe_B.ITEM_Carved_Wardrobe_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Wood_Carved_B.SM_DCO_Wardrobe_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Narrow_Wardrobe_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_WardrobeNarrow_A.BP_Carved_WardrobeNarrow_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Narrow_Wardrobe_A.ITEM_Carved_Narrow_Wardrobe_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Narrow_Wood_Carved_A.SM_DCO_Wardrobe_Narrow_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Narrow_Wardrobe_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_WardrobeNarrow_B.BP_Carved_WardrobeNarrow_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Narrow_Wardrobe_B.ITEM_Carved_Narrow_Wardrobe_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Narrow_Wood_Carved_B.SM_DCO_Wardrobe_Narrow_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Candle_A",
@@ -3520,6 +3533,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Candle_A.ITEM_Carved_Candle_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_Wood_Carved/SM_DCO_Candle_Holder_Wood_Carved_A.SM_DCO_Candle_Holder_Wood_Carved_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3542,86 +3556,75 @@
             "Name": "Carved_Dresser",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Dresser.BP_Carved_Dresser_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Dresser_Wood_Carved/SM_DCO_Dresser_Wood_Carved.SM_DCO_Dresser_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Stool",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Stool.BP_Carved_Stool_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Stool_Counter_Wood_Carved/SM_DCO_Stool_Counter_Wood_Carved.SM_DCO_Stool_Counter_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_A.BP_Carved_Nightstand_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_A.ITEM_Carved_Nightstand_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_NightstandWood_Carved_A.SM_DCO_NightstandWood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_B.BP_Carved_Nightstand_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_B.ITEM_Carved_Nightstand_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_B.SM_DCO_Nightstand_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_C",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_C.BP_Carved_Nightstand_C_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_C.ITEM_Carved_Nightstand_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_C.SM_DCO_Nightstand_Wood_Carved_C",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_D",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_D.BP_Carved_Nightstand_D_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_D.ITEM_Carved_Nightstand_D",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_D.SM_DCO_Nightstand_Wood_Carved_D",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_E",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_E.BP_Carved_Nightstand_E_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_E.ITEM_Carved_Nightstand_E",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_E.SM_DCO_Nightstand_Wood_Carved_E",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Bed_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_A.BP_Bed_Carved_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_A.ITEM_Carved_Bed_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_A.SM_DCO_BedSingle_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bed_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_B.BP_Bed_Carved_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_B.ITEM_Carved_Bed_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_B.SM_DCO_BedSingle_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bed_C",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_C.BP_Bed_Carved_C_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_C.ITEM_Carved_Bed_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_C.SM_DCO_BedSingle_Wood_Carved_C",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bookshelf",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Bookshelf.BP_Carved_Bookshelf_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Bookshelf_Wood_Carved/SM_DCO_Bookshelf_Wood_Carved.SM_DCO_Bookshelf_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Desk_Lamp",
@@ -3636,15 +3639,14 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Coffee_Table_A.ITEM_Carved_Coffee_Table_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_Wood_Carved/SM_DCO_CoffeeTable_Wood_Carved_A.SM_DCO_CoffeeTable_Wood_Carved_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Carved_Coffee_Table_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_CoffeeTable_B.BP_Carved_CoffeeTable_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Coffee_Table_B.ITEM_Carved_Coffee_Table_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_Wood_Carved/SM_DCO_CoffeeTable_Wood_Carved_B.SM_DCO_CoffeeTable_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Spawn_Blocker",
@@ -3682,7 +3684,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Rustic_Wall_Shelf_B",
@@ -3700,7 +3703,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_A.ITEM_Clay_Vase_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_A.SM_DCO_Vase_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_B",
@@ -3708,7 +3712,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_B.ITEM_Clay_Vase_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_B.SM_DCO_Vase_B",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_C",
@@ -3716,7 +3721,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_C.ITEM_Clay_Vase_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_C.SM_DCO_Vase_C",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_D",
@@ -3724,7 +3730,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_D.ITEM_Clay_Vase_D",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_D.SM_DCO_Vase_D",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_E",
@@ -3732,7 +3739,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_E.ITEM_Clay_Vase_E",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_E.SM_DCO_Vase_E",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_F",
@@ -3740,7 +3748,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_F.ITEM_Clay_Vase_F",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_F.SM_DCO_Vase_F",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_G",
@@ -3748,7 +3757,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_G.ITEM_Clay_Vase_G",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_G.SM_DCO_Vase_G",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_H",
@@ -3756,7 +3766,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_H.ITEM_Clay_Vase_H",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_H.SM_DCO_Vase_H",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_I",
@@ -3764,7 +3775,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_I.ITEM_Clay_Vase_I",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_I.SM_DCO_Vase_I",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Geode_Cut_Copper_A",
@@ -3773,6 +3785,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Copper.SM_ITM_GeodeLamp_01_Var01_Copper",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3800,6 +3813,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Gold.SM_ITM_GeodeLamp_01_Var01_Gold",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3827,6 +3841,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Oxite.SM_ITM_GeodeLamp_01_Var01_Oxite",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3854,6 +3869,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3863,6 +3879,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3872,6 +3889,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3883,6 +3901,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3894,6 +3913,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3905,6 +3925,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3916,6 +3937,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3927,6 +3949,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3938,6 +3961,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3948,6 +3972,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3968,6 +3993,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3988,6 +4014,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -4079,7 +4106,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Wood_Carved/SM_DCO_Frame_SML_Wood_Carved.SM_DCO_Frame_SML_Wood_Carved",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Dark_Small",
@@ -4088,7 +4116,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Dark_Basic/SM_DCO_Frame_SML_Dark_Basic.SM_DCO_Frame_SML_Dark_Basic",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Metal_Small",
@@ -4097,7 +4126,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Metal_Basic/SM_DCO_Frame_SML_Metal_Basic.SM_DCO_Frame_SML_Metal_Basic",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Gold_Small",
@@ -4106,7 +4136,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Gold/SM_DCO_Frame_SML_Gold.SM_DCO_Frame_SML_Gold",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Gold_Wood_Small",
@@ -4115,7 +4146,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Gold_Wood/SM_DCO_Frame_SML_Gold_Wood.SM_DCO_Frame_SML_Gold_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Scroll_Small",
@@ -4124,7 +4156,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Scroll_T3/SM_DCO_Frame_SML_Scroll_T3.SM_DCO_Frame_SML_Scroll_T3",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "AI_Target_Dummy",
@@ -4133,39 +4166,43 @@
             "DeployableName": "INVTEXT(\"[DNT] AI Target Dummy\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_SpawnBlocker_T2.SM_DEP_SpawnBlocker_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false
+            "SupportsCustomRotation": false
         },
         {
             "Name": "AlienFossil_Pottery01",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery01.BP_AlienFossil_Pottery01_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_1.T_ITEM_AlienFossil_Pottery_1",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_01.SM_AlienFossil_Pottery_01",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery02",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery02.BP_AlienFossil_Pottery02_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_2.T_ITEM_AlienFossil_Pottery_2",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_02.SM_AlienFossil_Pottery_02",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery03",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery03.BP_AlienFossil_Pottery03_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_3.T_ITEM_AlienFossil_Pottery_3",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_03.SM_AlienFossil_Pottery_03",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery04",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery04.BP_AlienFossil_Pottery04_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_4.T_ITEM_AlienFossil_Pottery_4",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_04.SM_AlienFossil_Pottery_04",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Conch",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch.BP_AlienFossil_Conch_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch.T_ITEM_AlienFossil_Conch",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch-DeployableName\", \"Large Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A.SM_DCO_ALN_Conch_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
             "WorldPlacementType": "GroundOrWallPlacement",
             "DeployCollisionExtentOffset": {
                 "Z": -5
@@ -4177,9 +4214,10 @@
         {
             "Name": "AlienFossil_Conch_Small",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch_Small.BP_AlienFossil_Conch_Small_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch_Small.T_ITEM_AlienFossil_Conch_Small",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch_Small-DeployableName\", \"Small Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A_Small.SM_DCO_ALN_Conch_A_Small",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
             "WorldPlacementType": "GroundOrWallPlacement",
             "DeployCollisionExtentOffset": {
                 "Z": -3
@@ -4187,6 +4225,750 @@
             "DeployCollisionLocationOffset": {
                 "Z": 3
             }
+        },
+        {
+            "Name": "Meta_Crate_Printed_Prototype",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Meta_Crate_Printed_Medium_Prototype.BP_Meta_Crate_Printed_Medium_Prototype_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_LEET.SM_DEP_Crate_LEET",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+        },
+        {
+            "Name": "Clay_Brick_Trapdoor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_TrapDoor_ClayBrick.BP_TrapDoor_ClayBrick_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_TrapDoorHatch_Brick.SM_BLD_TrapDoorHatch_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "TrapDoorSocket1",
+                "TrapDoorSocket2"
+            ],
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T2_v2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_T2_v2.BP_Crop_Plot_T2_v2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_Flat_SML.SM_DEP_CropPlot_Flat_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_CROP_PLOT.SFX_DEPLOY_CROP_PLOT",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSocket1",
+                "CropSocket2",
+                "CropSocket3",
+                "CropSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T3_v2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_T3_v2.BP_Crop_Plot_T3_v2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_T3_SML.SM_DEP_CropPlot_T3_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_CROP_PLOT.SFX_DEPLOY_CROP_PLOT",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSocket1",
+                "CropSocket2",
+                "CropSocket3",
+                "CropSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_T4_v2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_T4_v2.BP_Crop_Plot_T4_v2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_Hydro_SML.SM_DEP_CropPlot_Hydro_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_CROP_PLOT.SFX_DEPLOY_CROP_PLOT",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSocket1",
+                "CropSocket2",
+                "CropSocket3",
+                "CropSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_Workshop",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Workshop.BP_Crop_Plot_Workshop_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_CropPlot_T4_SML.SM_DEP_CropPlot_T4_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_CROP_PLOT.SFX_DEPLOY_CROP_PLOT",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSocket1",
+                "CropSocket2",
+                "CropSocket3",
+                "CropSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Farming_CropPlot_Mound",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Test",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Corn",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage5_Var1.SM_HRB_Crop_Corn_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Wheat",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage5_Var2.SM_HRB_Crop_Wheat_01_Stage5_Var2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Reed",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage5_Var1.SM_HRB_Crop_ReedFlower_01_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Yeast",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage5_Var1.SM_HRB_Yeast_01_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Lily",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage5_Var1.SM_HRB_Crop_AlpineLily_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Berry",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage5_Var1.SM_HRB_Crop_BerryBush_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Pumpkin",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage5_Var1.SM_HRB_Crop_Pumpkin_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Beans",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Beans/SM_HRB_Crop_Beans_Stage5_Var1.SM_HRB_Crop_Beans_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Squash",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Squash/SM_ITM_Crop_Squash_Stage5_Var1.SM_ITM_Crop_Squash_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Watermelon",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage5_Var1.SM_HRB_Crop_Watermelon_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Cocoa",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage5_Var1_01.SM_HRB_Crop_Cocoa_Stage5_Var1_01",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Coffee",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage5_Var1.SM_HRB_Crop_Coffee_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_GreenTea",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage5_Var1_01.SM_HRB_Crop_Tea_Green_Stage5_Var1_01",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_WildTea",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage5_Var1.SM_HRB_Crop_Tea_Wild_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Carrot",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage5_Var1.SM_ITM_Crop_Carrots_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Mushroom",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage5_Var1.SM_ITM_Crop_Musroom_A_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Rhubarb",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage5_Var1.SM_HRB_Rhubarb_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Kumara",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage5_Var1.SM_HRB_Kumara_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Avocado",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Strawberry",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage5_Var1.SM_HRB_Strawberry_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Fiber",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage5_Var1_01.SM_HRB_Crop_Firber_Stage5_Var1_01",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Tomato",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/HRB_Crop_Tomatoes_Stage5_Var1.HRB_Crop_Tomatoes_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Potato",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage5.SM_HRB_Crop_Potato_Stage5",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Exotic_Seed",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage5_Var1.SM_HRB_Exotic_PlantA_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Anvil_Bench_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Anvil_Bench_T3.BP_Anvil_Bench_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Anvil_T3/SM_DEP_Bench_Anvil_T3.SM_DEP_Bench_Anvil_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Anvil_Bench_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Anvil_Bench_T4.BP_Anvil_Bench_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Anvil_T4/SM_DEP_Bench_Anvil_T4.SM_DEP_Bench_Anvil_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Masonry_Bench_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Masonry_Bench_T3.BP_Masonry_Bench_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Masonry_T3/SM_DEP_Bench_Masonry_T3.SM_DEP_Bench_Masonry_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "SnapToSurfaceNormal": false
         }
     ]
 }

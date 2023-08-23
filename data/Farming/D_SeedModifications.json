@@ -1,0 +1,109 @@
+{
+    "RowStruct": "/Script/Icarus.SeedModification",
+    "Defaults": {
+        "Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "StatRequirement": {
+            "Value": "None"
+        },
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "EffectivenessIncrease": 0
+    },
+    "Rows": [
+        {
+            "Name": "Growth_Speed",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedGrowthSpeedTalentAlt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_GrowthSpeed"
+            },
+            "EffectivenessIncrease": 50
+        },
+        {
+            "Name": "Growth_Speed_2",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedGrowthSpeedTalent2Alt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_GrowthSpeed2"
+            },
+            "EffectivenessIncrease": 50
+        },
+        {
+            "Name": "Growth_Speed_Night",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedNightGrowthSpeedAlt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_NightGrowthSpeed"
+            },
+            "EffectivenessIncrease": 50
+        },
+        {
+            "Name": "Yield",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedCropYieldAlt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_Yield"
+            },
+            "EffectivenessIncrease": 100
+        },
+        {
+            "Name": "Fertilizer_Consumption",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedFertilizerConsumptionAlt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_Fertalized"
+            },
+            "EffectivenessIncrease": 50
+        },
+        {
+            "Name": "Harvested_Item_Spoil_Rate",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedHarvestedItemSpoilTimeAlt_+"
+            },
+            "Modifier": {
+                "RowName": "Seed_SlowSpoil"
+            },
+            "EffectivenessIncrease": 100
+        },
+        {
+            "Name": "Cannot_Spoil",
+            "Query": {
+                "RowName": "Any_Seed"
+            },
+            "StatRequirement": {
+                "Value": "PlantedSeedPlantCannotSpoil_?"
+            },
+            "Modifier": {
+                "RowName": "Seed_SpoilPrevention"
+            }
+        }
+    ]
+}

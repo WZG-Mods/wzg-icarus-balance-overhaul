@@ -248,9 +248,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Roat"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "bn_Head_1",
@@ -376,9 +373,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "RedGoat"
             },
             "CriticalHitBones": [
                 {
@@ -784,9 +778,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Roat"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "RigHead",
@@ -912,9 +903,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "CriticalHitBones": [
                 {
@@ -1327,9 +1315,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "CriticalHitBones": [
                 {
@@ -2039,9 +2024,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Deer"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "RigHead",
@@ -2184,9 +2166,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Deer"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "RigHead",
@@ -2210,7 +2189,7 @@
                 "RowName": "Deer_Head"
             },
             "Loot": {
-                "RowName": "Deer_Carcass_Loot"
+                "RowName": "DeerLarge_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
@@ -2328,9 +2307,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "CriticalHitBones": [
                 {
@@ -2474,9 +2450,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Deer"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "RigHead",
@@ -2500,7 +2473,7 @@
                 "RowName": "Deer_Head"
             },
             "Loot": {
-                "RowName": "Deer_Carcass_Loot"
+                "RowName": "DeerLarge_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
@@ -2787,6 +2760,146 @@
             },
             "BestiaryGroup": {
                 "RowName": "Alpha_Wolf_Boss"
+            }
+        },
+        {
+            "Name": "Desert_Wolf",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_WolfDesert_Character.BP_NPC_WolfDesert_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Hyena"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Desert_Wolf"
+            },
+            "GOAPSetup": {
+                "RowName": "Wolf"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumCarnivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Aggressive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Conifer_Wolf"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 800,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 6,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Hyena"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "Trophy": {
+                "RowName": "DesertWolf_Head"
+            },
+            "Loot": {
+                "RowName": "Wolf_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Medium"
+            },
+            "BestiaryGroup": {
+                "RowName": "Desert_Wolf"
             }
         },
         {
@@ -3310,9 +3423,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "CriticalHitBones": [
                 {
@@ -4286,9 +4396,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Roat"
-            },
             "CriticalHitBones": [
                 {
                     "BoneName": "RigHead",
@@ -4435,146 +4542,6 @@
             },
             "BestiaryGroup": {
                 "RowName": "Rabbit"
-            }
-        },
-        {
-            "Name": "Desert_Wolf",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_WolfDesert_Character.BP_NPC_WolfDesert_Character_C",
-            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
-            "CreatureType": {
-                "RowName": "Hyena"
-            },
-            "Descriptors": [
-                {
-                    "RowName": "Neutral",
-                    "DataTableName": "D_AIDescriptors"
-                },
-                {
-                    "RowName": "Carnivore",
-                    "DataTableName": "D_AIDescriptors"
-                }
-            ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Desert_Wolf"
-            },
-            "GOAPSetup": {
-                "RowName": "Wolf"
-            },
-            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
-            "Relationships": {
-                "RowName": "NeutralMediumCarnivore"
-            },
-            "NotifiedNPCTypes": [
-                {
-                    "RowName": "NPC_Aggressive",
-                    "DataTableName": "D_TagQueries"
-                }
-            ],
-            "AIGrowth": {
-                "RowName": "Conifer_Wolf"
-            },
-            "MovementMapping": {
-                "Stationary": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Sneak": {
-                    "MaxWalkSpeed": 0.13300000131130219,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 300,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Walk": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Jog": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Run": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 800,
-                    "BrakingDeceleration": 900,
-                    "RotationRate": 800,
-                    "MaxSwimSpeed": 1
-                },
-                "Sprint": {
-                    "MaxWalkSpeed": 5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 900,
-                    "BrakingDeceleration": 500,
-                    "RotationRate": 300,
-                    "MaxSwimSpeed": 1
-                },
-                "Attacking": {
-                    "MaxWalkSpeed": 6,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 64,
-                    "MaxAcceleration": 900,
-                    "BrakingDeceleration": 50000,
-                    "RotationRate": 300,
-                    "MaxSwimSpeed": 1
-                },
-                "Undefined": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 800,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                }
-            },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
-            "Audio": {
-                "RowName": "Hyena"
-            },
-            "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
-            ],
-            "Trophy": {
-                "RowName": "DesertWolf_Head"
-            },
-            "Loot": {
-                "RowName": "Wolf_Carcass_Loot"
-            },
-            "Hitable": {
-                "RowName": "AnimalBones_Medium"
-            },
-            "BestiaryGroup": {
-                "RowName": "Desert_Wolf"
             }
         },
         {
@@ -5092,9 +5059,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "CriticalHitBones": [
                 {
@@ -6899,7 +6863,7 @@
                 }
             ],
             "DeadItem": {
-                "RowName": "AnimalCarcass_Scorpion_Arctic"
+                "RowName": "AnimalCarcass_Scorpion_Armored"
             },
             "GOAPSetup": {
                 "RowName": "Scorpion"
@@ -7369,9 +7333,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "HuntingSetup": {
-                "RowName": "Deer"
-            },
             "Audio": {
                 "RowName": "MoaTeenager"
             },
@@ -7500,9 +7461,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "Audio": {
                 "RowName": "BuffaloTeenage"
@@ -8180,9 +8138,6 @@
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 }
-            },
-            "HuntingSetup": {
-                "RowName": "Deer"
             },
             "Audio": {
                 "RowName": "BearCub"

@@ -21,6 +21,7 @@
             "DataTableName": "D_Dialogue"
         },
         "RequiredLevel": 0,
+        "RequiredTech": "None",
         "RequiredCharacterFlags": [],
         "ForbiddenCharacterFlags": [],
         "RequiredFlags": [],
@@ -75,7 +76,9 @@
             "RowName": "None",
             "DataTableName": "D_AISpawnConfig"
         },
-        "bAbandonOnProspectExpiry": true
+        "bAbandonOnProspectExpiry": true,
+        "bRequiresT4Communicator": false,
+        "bAvailableInOpenWorld": false
     },
     "GenerateEnum": true,
     "Rows": [
@@ -272,7 +275,7 @@
             "RequiredFlags": [
                 {
                     "DataTableName": "D_DLCPackageData",
-                    "RowName": "Deluxe_Edition_Envirosuit"
+                    "RowName": "Outpost_003_Arctic"
                 }
             ],
             "Forecast": {
@@ -285,6 +288,113 @@
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
             "AISpawnConfigOverride": {
                 "RowName": "Outpost_Arctic"
+            }
+        },
+        {
+            "Name": "Outpost004_Deset",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost004_Deset-DropName\", \"TECTON: Outpost\")",
+            "DesignNotes": "Desert Outpost - Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost004_Deset-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost004_Deset-FlavourText\", \"Open, untimed access to a stable desert region.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Large.T_Prospect_Desert_Lurker01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NoCaveCreatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Medium_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Extreme": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "MapNerf",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_004_Desert"
+                }
+            ],
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Outpost_004"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "AISpawnConfigOverride": {
+                "RowName": "Outpost_Desert"
             }
         },
         {
@@ -379,7 +489,7 @@
             "RequiredFlags": [
                 {
                     "DataTableName": "D_DLCPackageData",
-                    "RowName": "Deluxe_Edition_Envirosuit"
+                    "RowName": "Outpost_005_Forest"
                 }
             ],
             "Forecast": {
@@ -392,6 +502,327 @@
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
             "AISpawnConfigOverride": {
                 "RowName": "Outpost_Forest"
+            }
+        },
+        {
+            "Name": "Outpost006_Forest",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Forest-DropName\", \"EVERBARK: Outpost\")",
+            "DesignNotes": "Forest Outpost 3 - Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Forest-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost006_Forest-FlavourText\", \"Open, untimed access to a stable forest region.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Large.T_Prospect_Forest_Delivery01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NoCaveCreatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Medium_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Extreme": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "MapNerf",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_006_Forest"
+                }
+            ],
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Outpost_006"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "AISpawnConfigOverride": {
+                "RowName": "Outpost_Forest"
+            }
+        },
+        {
+            "Name": "Outpost007_Desert",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost007_Desert-DropName\", \"CACTUS: Outpost\")",
+            "DesignNotes": "Desert Outpost 2- Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost007_Desert-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost007_Desert-FlavourText\", \"Open, untimed access to a stable desert region.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSummon01_Large.T_Prospect_Desert_ScorpionSummon01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NoCaveCreatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Medium_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Extreme": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "MapNerf",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_007_Desert"
+                }
+            ],
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Outpost_007"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "AISpawnConfigOverride": {
+                "RowName": "Outpost_Desert"
+            }
+        },
+        {
+            "Name": "Outpost008_Arctic",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost008_Arctic-DropName\", \"ARCTICUS: Outpost\")",
+            "DesignNotes": "Arctic Outpost - Available in DLC",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost008_Arctic-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost008_Arctic-FlavourText\", \"Open, untimed access to a stable arctic region.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Large.T_Prospect_Arctic_HeavyFog01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NoCaveCreatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Medium_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Extreme": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "MapNerf",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_008_Arctic"
+                }
+            ],
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Outpost_008"
+            },
+            "bIsPersistent": true,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "AISpawnConfigOverride": {
+                "RowName": "Outpost_Arctic"
             }
         },
         {
@@ -528,6 +959,7 @@
             "LandingDialogue": {
                 "RowName": "Recon1Landing"
             },
+            "RequiredTech": "Tier1",
             "Terrain": {
                 "RowName": "Terrain_016"
             },
@@ -636,6 +1068,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete1"
             },
+            "RequiredTech": "Tier1",
             "Terrain": {
                 "RowName": "Terrain_016"
             },
@@ -746,6 +1179,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete2"
             },
+            "RequiredTech": "Tier1",
             "Terrain": {
                 "RowName": "Terrain_016"
             },
@@ -788,7 +1222,7 @@
         },
         {
             "Name": "Tier1_Forest_Stockpile",
-            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Stockpile-DropName\", \"AGRICULTURE: Supply Stockpile\")",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Stockpile-DropName\", \"ACCUMULATION: Supply Stockpile\")",
             "DesignNotes": "Forest Stockpile",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Stockpile-Description\", \"RESUPPLY WITH VARIOUS FARMING AND HUNTING PRODUCTS\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier1_Forest_Stockpile-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Forest // BACKGROUND: The Operator is extending an orbital station in preparation for new personnel. Requires raw materials urgently. // MISSION: Reach loading zones, establish processing systems, and supply pods with requested resources. //TERMS: Cargo pods will be dispatched to two locations.\")",
@@ -852,6 +1286,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete2"
             },
+            "RequiredTech": "Tier1",
             "Terrain": {
                 "RowName": "Terrain_016"
             },
@@ -967,6 +1402,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -1085,6 +1521,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete4"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -1347,6 +1784,7 @@
                 }
             },
             "Difficulty": "Normal",
+            "RequiredTech": "Tier3",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -1480,6 +1918,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -1589,6 +2028,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -1695,6 +2135,7 @@
             "LandingDialogue": {
                 "RowName": "Expedition2aLanding"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "IceStorm"
             },
@@ -1803,6 +2244,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete5"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Surprise_Mild"
             },
@@ -1910,6 +2352,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete6"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -2016,6 +2459,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete7"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -2230,6 +2674,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -2340,6 +2785,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -2607,6 +3053,7 @@
             "LandingDialogue": {
                 "RowName": "Expedition2bLanding"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -2716,6 +3163,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete11"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Surprise_Mild"
             },
@@ -2821,6 +3269,7 @@
             "LandingDialogue": {
                 "RowName": "FM2RecoveryLanding"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -3045,6 +3494,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete13"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -3176,6 +3626,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete14"
             },
+            "RequiredTech": "Tier2",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -3447,6 +3898,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete5"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -3587,6 +4039,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete5"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -3727,6 +4180,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "IThoughtItWasOver"
             },
@@ -3840,6 +4294,7 @@
             "LandingDialogue": {
                 "RowName": "Expedition3Landing"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -3947,6 +4402,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete15"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -4055,6 +4511,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete8"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -4163,6 +4620,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete5"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -4273,6 +4731,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete7"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Surprise_Mild"
             },
@@ -4542,6 +5001,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete15"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -4673,6 +5133,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete15"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -4804,6 +5265,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete11"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -4912,6 +5374,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete12"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "TokenGesture"
             },
@@ -5020,6 +5483,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -5149,6 +5613,7 @@
             "LandingDialogue": {
                 "RowName": "Expedition4aLanding"
             },
+            "RequiredTech": "Tier4",
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -5257,6 +5722,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete4"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -5365,6 +5831,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete5"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -5467,6 +5934,7 @@
             "BriefingDialogue": {
                 "RowName": "BW3Briefing"
             },
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -5575,6 +6043,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete6"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -5683,6 +6152,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete7"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -5791,6 +6261,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete7"
             },
+            "RequiredTech": "Tier3",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -6080,6 +6551,7 @@
             "LandingDialogue": {
                 "RowName": "Expedition4bLanding"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -6184,6 +6656,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete8"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -6292,6 +6765,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -6400,6 +6874,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier2",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -6517,6 +6992,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -6631,6 +7107,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -6751,6 +7228,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete10"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -6874,6 +7352,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete11"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -7151,6 +7630,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete14"
             },
+            "RequiredTech": "Tier1",
             "InitialForecast": {
                 "RowName": "Initial_RoughLanding"
             },
@@ -7396,6 +7876,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -7533,6 +8014,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -7670,6 +8152,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete8"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -7809,6 +8292,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete8"
             },
+            "RequiredTech": "Tier4",
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -7939,6 +8423,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxIntroMissionComplete"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -9236,6 +9721,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxIntroMissionComplete"
             },
+            "RequiredTech": "Tier2",
             "WorldBosses": {
                 "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
                     "X": 3,
@@ -9883,6 +10369,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxBExpeditionComplete"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -11186,6 +11673,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete6"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -11838,6 +12326,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxCExpeditionMissionComplete"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 2,
@@ -13137,6 +13626,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete12"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 2,
@@ -13790,6 +14280,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier2",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -14445,6 +14936,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxDExpeditionMissionComplete"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -15745,6 +16237,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete9"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
                     "X": 3,
@@ -16389,6 +16882,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete2"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -17042,6 +17536,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete11"
             },
+            "RequiredTech": "Tier4",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -17694,6 +18189,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete13"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -18350,6 +18846,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "StyxEExpeditionMissionComplete"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -19650,6 +20147,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete13"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -20303,6 +20801,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete4"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -20959,6 +21458,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete15"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 2,
@@ -21602,6 +22102,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
+            "RequiredTech": "Tier1",
             "Terrain": {
                 "RowName": "Terrain_016"
             },
@@ -21696,6 +22197,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete15"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -22349,6 +22851,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
             },
+            "RequiredTech": "Tier1",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -22547,6 +23050,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete13"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -23203,6 +23707,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "ExtractionComplete4b"
             },
+            "RequiredTech": "Tier3",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 1,
@@ -23855,6 +24360,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete2"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -24507,6 +25013,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete2"
             },
+            "RequiredTech": "Tier1",
             "WorldBosses": {
                 "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
                     "X": 0,
@@ -25088,6 +25595,637 @@
             ],
             "NumMetaSpawnsMin": 3,
             "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
+        },
+        {
+            "Name": "STYX_C_Fishing",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_C_Fishing-DropName\", \"OASIS: Angler\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_C_Fishing-Description\", \"SINOTAI VIP\\'S ARE REQUESTING SOME FISHING GOODS TO BE DELIVERED\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_C_Fishing-FlavourText\", \"//OPERATOR: Sinotai // BIOME: The Oasis // BACKGROUND: A VIP Is requesting to have a taste of what Styx has to offer. // MISSION: Setup a fishing hut and use the provided equipment to catch and prepare fish for delivery. //TERMS: Deployment locations will be provided as suitable launch locations arise.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Large.T_Prospect_Desert_Angler01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "SinotaiBriefingDonut2"
+            },
+            "LandingDialogue": {
+                "RowName": "SinotaiLandingDonut3"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "SinotaiMissionEnd3"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "Pulse"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_C_Fishing"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B05_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B07_3"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_B13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_C02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D07_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_D08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_E04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_F14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_G11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_H15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_I11_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J12"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_J13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K04"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_K14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L02"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L03"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_L13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M06"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M09_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_M14"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N05"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N11"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N13_2"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_N15"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O07"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_O08"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "STYX_P10"
+                    },
+                    "MinMetaAmount": 100,
+                    "MaxMetaAmount": 300
+                }
+            ],
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"

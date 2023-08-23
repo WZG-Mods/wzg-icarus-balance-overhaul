@@ -2874,6 +2874,67 @@
         },
         {
             "Name": "LavaBomber"
+        },
+        {
+            "Name": "Slug",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Slug/SFX_FOOTSTEP__SLUG.SFX_FOOTSTEP__SLUG",
+            "FrontFootSocket": "RigChestM",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChestM",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigJawM",
+            "AttackVocalisation": {
+                "RowName": "SlugAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "SlugFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SlugDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SlugIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "GasFlyer",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Movement/GasFlyer/SFX_CRE_GASFLYER_FLY_MOVEMENT_FAST.SFX_CRE_GASFLYER_FLY_MOVEMENT_FAST",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_MED.SFX_CRE_DEATHFALL_MED",
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GasflyIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            }
         }
     ]
 }
