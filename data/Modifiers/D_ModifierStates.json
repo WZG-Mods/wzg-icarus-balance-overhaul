@@ -74,8 +74,7 @@
                 }
             },
             "ShouldTick": true,
-            "MergeType": "Stack",
-            "MaxStackNum": 4
+            "MergeType": "Count"
         },
         {
             "Name": "DamageOverTime_Burning",
@@ -1250,17 +1249,19 @@
         },
         {
             "Name": "Slowed_LarkwellTazerArrow",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sololightning1.icon-weather-sololightning1'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierName\", \"Electroshock\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierDescription\", \"You are slowed and taking damage.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slowed_LarkwellTazerArrow-ModifierDescription\", \"An electrified wound, that stops you in your tracks, reduces movement speed, projectile and melee damage while taking a small amount of electric damage.\")",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -90
+                "(Value=\"BaseMovementSpeed_+%\")": -90,
+                "(Value=\"BaseProjectileDamage_+%\")": -25,
+                "(Value=\"BaseMeleeDamage_+%\")": -25
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Electric.BP_ModifierStateBehaviour_TickDamage_Electric_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 4,
+                    "BaseValue": 40,
                     "Deviation": 2
                 }
             },
@@ -2247,7 +2248,8 @@
                         "TagName": "ModifierState.Dehumidified"
                     }
                 ]
-            }
+            },
+            "bEffectsObjects": true
         },
         {
             "Name": "Dehumidifier_Aura",
@@ -4224,9 +4226,9 @@
         },
         {
             "Name": "Plant_Watered",
-            "ModifierName": "",
-            "ModifierDescription": "",
-            "VisibleToPlayer": false,
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Watered-ModifierName\", \"Plant Watered\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Watered-ModifierDescription\", \"Growth Speed is increased by being watered.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
             },
@@ -6268,6 +6270,7 @@
         {
             "Name": "SpikedBrambles",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Sprain.Icon_Sprain'",
+            "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SpikedBrambles-ModifierName\", \"Spiked Brambles\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SpikedBrambles-ModifierDescription\", \"Being slowed and damaged from Spiked Brambles\")",
             "GrantedStats": {
@@ -6439,18 +6442,19 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierName\", \"Burning\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire and is searing the skin.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire reducing stamina regen, maximum health while taking periodic fire damage.\")",
             "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
             "GrantedStats": {
-                "(Value=\"BaseWaterConsumption_+%\")": 100
+                "(Value=\"BaseHealthRegen_+%\")": -50,
+                "(Value=\"BaseMaximumHealth_+%\")": -25
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 30,
+                    "BaseValue": 40,
                     "Deviation": 5
                 }
             },
@@ -6472,6 +6476,49 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.ExtingishFire"
+                    },
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.ExtingishFire, Harvest.Node )"
+            },
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Freeze",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierName\", \"Freeze\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierDescription\", \"A wound that has frozen the skin closed. Movement speed and melee damage is reduced while taking periodic frost damage.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -25,
+                "(Value=\"BaseMeleeDamage_+%\")": -25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Frost.BP_ModifierStateBehaviour_TickDamage_Frost_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
                     }
                 ],
                 "QueryTokenStream": [
@@ -6481,31 +6528,8 @@
                     1,
                     0
                 ],
-                "AutoDescription": " NONE( ModifierState.ExtingishFire )"
+                "AutoDescription": " NONE( Harvest.Node )"
             },
-            "bEffectsObjects": true
-        },
-        {
-            "Name": "Freeze",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold'",
-            "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierName\", \"Freeze\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Freeze-ModifierDescription\", \"A wound that has frozen the skin closed. Movement Speed is Decreased.\")",
-            "AudioData": {
-                "RowName": "Generic_Negative"
-            },
-            "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -50
-            },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Frost.BP_ModifierStateBehaviour_TickDamage_Frost_C",
-            "ModifierVariables": {
-                "Damage": {
-                    "BaseValue": 30,
-                    "Deviation": 5
-                }
-            },
-            "ShouldTick": true,
-            "MergeType": "LongestDuration",
             "bEffectsObjects": true
         },
         {
@@ -6513,22 +6537,37 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Miasma-ModifierName\", \"Miasma\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Miasma-ModifierDescription\", \"A poisoned wound, lowers melee damage.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Miasma-ModifierDescription\", \"A poisoned wound, lowers physical damage resistant while taiking periodic poison damage.\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
             "GrantedStats": {
-                "(Value=\"BaseMeleeDamage_+%\")": -25
+                "(Value=\"BasePhysicalDamageResistance_%\")": -25
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 30,
+                    "BaseValue": 40,
                     "Deviation": 5
                 }
             },
             "ShouldTick": true,
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Harvest.Node )"
+            }
         },
         {
             "Name": "Drink_Heated",
@@ -6556,8 +6595,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fresh_Air-ModifierName\", \"Fresh Air\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fresh_Air-ModifierDescription\", \"Fresh air that has been cleaned of toxins that invigorates you.\")",
             "GrantedStats": {
-                "(Value=\"BaseHealthRegen_+%\")": 10,
-                "(Value=\"BaseMovementSpeed_+%\")": 10
+                "(Value=\"BaseHealthRegen_+%\")": 20,
+                "(Value=\"BaseExposureResistance_+%\")": 5
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Drink.BP_Modifier_Drink_C",
             "MergeType": "Replace",
@@ -6609,16 +6648,1015 @@
             "Name": "Clogged_Ash",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_StormHigh.Icon_StormHigh'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierName\", \"Clogged\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierDescription\", \"Clogged With Ash\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierName\", \"Ash-Clogged\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierDescription\", \"Crafting Speed is dramatically reduced. Can be reduced through shelter and countered with a dehumidier to clean the air.\")",
             "GrantedStats": {
-                "(Value=\"BaseProcessorResourceClog_%\")": 100
+                "(Value=\"BaseProcessorResourceClog_%\")": 90
             },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Dehumidified"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.Dehumidified )"
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Carrying_Miasmic_Items",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_MiasmaticItem.T_Icon_MiasmaticItem'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierName\", \"Carrying Miasmic Items\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierDescription\", \"While carrying slowly drains health until cleaned.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 1,
+                    "Deviation": 1
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 10,
+            "MergeType": "Count"
+        },
+        {
+            "Name": "Shallow_Water",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierName\", \"Shallow Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierDescription\", \"Should have brought your waders\")",
+            "VisibleToPlayer": false,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "GrantedAura_SulfurPool",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierName\", \"Aura: Sulfur Pool\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierDescription\", \"Damage From Nearby Sulfur Pools\")",
+            "VisibleToPlayer": false,
+            "bAura": true,
+            "AuraRange": 10000,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "SulfurPool"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_SulfurPools.BP_Modifier_Aura_SulfurPools_C",
             "ShouldTick": true,
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "SulfurPool",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Volcanic-SulphurReaction-chaos3.T_extremedebuff-weather-Volcanic-SulphurReaction-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierName\", \"Sulfuric Burn\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierDescription\", \"Being damaged and heated by a nearby Sulfur pool reacting to a violent storm.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -10,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 500
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 5,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Exposure_Volcanic_Ash",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3.T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierName\", \"Ash Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierDescription\", \"The ash storm is increasing your water and oxygen consumption, and reducing your processing speed. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseOxygenConsumption_+%\")": 40,
+                "(Value=\"BaseProcessorResourceClog_%\")": 80
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_AcidRain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Swamp-AcidRains-chaos3.T_extremedebuff-weather-Swamp-AcidRains-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_SulfurReaction",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Swamp-AcidRains-chaos3.T_extremedebuff-weather-Swamp-AcidRains-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_SulfurReaction-ModifierName\", \"Acid Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_SulfurReaction-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_Embers",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Volcanic-EmberFlakes-chaos3.T_extremedebuff-weather-Volcanic-EmberFlakes-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierName\", \"Embers Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierDescription\", \"The ember storm is increasing your water consumption and warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_Heatwave",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-volcanic-Heatwave-chaos-3.T_extremedebuff-weather-volcanic-Heatwave-chaos-3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierName\", \"Heatwave Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierDescription\", \"The heatwave is increasing your water consumption and significantly warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1200
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Swamp_AcidRain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Swamp-AcidRains-chaos3.T_extremedebuff-weather-Swamp-AcidRains-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Swamp_AcidFog",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Swamp-AcidFogs-chaos3.T_extremedebuff-weather-Swamp-AcidFogs-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierName\", \"Acid Fog Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierDescription\", \"The acid fog storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you and your equipment.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Swamp_Rain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/mediumdebuff-rain3.mediumdebuff-rain3'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false,
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Exposure_Swamp_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-wind3.extremedebuff-wind3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierName\", \"Wind Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Swamp_ToxicGas",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Swamp-PutridGasses-chaos3.T_extremedebuff-weather-Swamp-PutridGasses-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierName\", \"Putrid Gas Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierDescription\", \"The putrid gas storm is increasing your oxygen consumption and increasing spoilage rate. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseInventorySpoilRate_+%\")": 80
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Hail",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Tundra-Hail-chaos3.T_extremedebuff-weather-Tundra-Hail-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierName\", \"Hail Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierDescription\", \"The hail storm is increasing your food consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-wind3.extremedebuff-wind3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierName\", \"Winds Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierDescription\", \"The wind storm is increasing your food consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Snow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-solosnow3.extremedebuff-solosnow3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierName\", \"Snow Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierDescription\", \"The snow storm is increasing your food consumption and significantly cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1200
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Hail",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Grassland-Hail-chaos3.T_extremedebuff-weather-Grassland-Hail-chaos3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierName\", \"Hail Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierDescription\", \"The hail storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-wind3.extremedebuff-wind3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierName\", \"Wind Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Rain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/mediumdebuff-rain3.mediumdebuff-rain3'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Fog",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Fog-startstop-3.T_extremedebuff-weather-Fog-startstop-3'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Fog Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a fog storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false,
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "SwampSlug_Slime",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SwampSlug_Slime-ModifierName\", \"Toxic Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SwampSlug_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -75
+            },
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Plant_Outside",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sun.icon-weather-sun'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierName\", \"Sunlight\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierDescription\", \"Plant is growing at its normal speed thanks to having access to sunlight.\")",
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_No_Sun",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Outdoor.Icon_Outdoor'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierName\", \"Lacking Sunlight\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierDescription\", \"Growth Speed decreased due to the lack of sunlight.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_InGreenhouse",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse.Icon_GreenHouse'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierName\", \"Greenhouse\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierDescription\", \"Growth Speed is increased by being in or near glass buildings..\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_Powered",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse_Electric.Icon_GreenHouse_Electric'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierName\", \"Perfect Lighting\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierDescription\", \"Growth Speed is increased by hydroponic lights\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_WillNotDecay",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_PlantNoDecay.T_ICON_PlantNoDecay'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_WillNotDecay-ModifierName\", \"Ever Green\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_WillNotDecay-ModifierDescription\", \"Plant will not decay when mature.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Basic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeBasic.T_ICON_FertilizeBasic'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierName\", \"Basic Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierDescription\", \"Provides a small bonus to growth speed and crop yield\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 15,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Yeild",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeYield.T_ICON_FertilizeYield'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierName\", \"High-Quality Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierDescription\", \"Increases the yield of your crops\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 50,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Speed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeSpeed.T_ICON_FertilizeSpeed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierName\", \"Growth Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierDescription\", \"Helps your crops to grow faster\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": -25,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_NoCropPlot",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ContextPlant.Icon_ContextPlant'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_NoCropPlot-ModifierName\", \"Infertile Ground\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_NoCropPlot-ModifierDescription\", \"Crop Growth is Reduced as it is not planted in fertile soil.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": -25,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -50
+            },
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_GrowthSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_GrowthSpeed.T_ICON_GrowthSpeed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed-ModifierName\", \"Green Thumb\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed-ModifierDescription\", \"Increases Crop Growth Speed\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_GrowthSpeed2",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_GrowthSpeed2.T_ICON_GrowthSpeed2'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed2-ModifierName\", \"Speed-Gro\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed2-ModifierDescription\", \"Increases Crop Growth Speed\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_SpoilPrevention",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_SeedSpoilPrevention.T_ICON_SeedSpoilPrevention'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierName\", \"Evergreen\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierDescription\", \"Crop will not wilt\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_NightGrowthSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_NightOwl.T_ICON_NightOwl'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_NightGrowthSpeed-ModifierName\", \"Night Bloom\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_NightGrowthSpeed-ModifierDescription\", \"Crop will grow faster at night.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropNightGrowthSpeed_+%\")": 15
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_Yield",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_SeedYield.T_ICON_SeedYield'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Yield-ModifierName\", \"Bountiful\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Yield-ModifierDescription\", \"Crop Yield is increased\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 15
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_SlowSpoil",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_SeedSpoilPrevention.T_ICON_SeedSpoilPrevention'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SlowSpoil-ModifierName\", \"Hardy\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SlowSpoil-ModifierDescription\", \"Crop resources will take longer to spoil\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropHarvestedItemSpoilTime_+%\")": 20
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_Fertalized",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_SeedFertilized.T_ICON_SeedFertilized'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fertalized-ModifierName\", \"Fertilized\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fertalized-ModifierDescription\", \"Fertilizers will last longer\")",
+            "GrantedStats": {
+                "(Value=\"BaseFertilizerConsumption_+%\")": 50
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.T_ITEM_Seed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed-ModifierName\", \"Seeds\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed-ModifierDescription\", \"Boosts stamina and reduces stamina cost\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseMaximumStamina_+\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Seed_Bread",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Bread.T_ITEM_Seed_Bread'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Bread-ModifierName\", \"Seed Bread\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Bread-ModifierDescription\", \"Boosts stamina considerably, reduces stamina cost of tool actions.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -20,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Berry_Bar",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Bar.T_ITEM_Seed_Bar'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Berry_Bar-ModifierName\", \"Berry & Seed Bar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Berry_Bar-ModifierDescription\", \"Boosts stamina, reduces stamina cost of tool actions and water consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseWaterConsumption_+%\")": -10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Seed_Crackers",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Crackers.T_ITEM_Seed_Crackers'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Crackers-ModifierName\", \"Seed Cracker\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Crackers-ModifierDescription\", \"Boosts stamina, reduces stamina cost of tool actions.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Animal_Feed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed.T_ITEM_Animal_Feed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierName\", \"Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Buffs Animals Stamina and Recovery\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseStaminaRegen_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "GasFlyer_Poison",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierName\", \"Drifter Poison\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierDescription\", \"Description\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -60,
+                "(Value=\"BaseStaminaActionCost_+%\")": 250,
+                "(Value=\"BaseStaminaRegen_+%\")": -95,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -25
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "BasePoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "GrantedAura_LavaSpot",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureHot.ICON_TemperatureHot'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_LavaSpot-ModifierName\", \"Lava Spot Heat\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Lava Spot Heat\")",
+            "VisibleToPlayer": false,
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "bAura": true,
+            "AuraRange": 1000,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_LavaSpot"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "TickOnApply": true,
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "AuraEffect_LavaSpot",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureHot.ICON_TemperatureHot'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_LavaSpot-ModifierName\", \"Lava Spot Heat\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Lava Spot Heat\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -30
+            },
+            "AuraRange": 1000,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "MergeType": "Stack"
         }
     ]
 }

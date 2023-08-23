@@ -43,12 +43,6 @@
             "WeatherFlags": 1,
             "DropStateFlags": 2,
             "DisasterFlags": 1,
-            "Quests": [
-                {
-                    "RowName": "None",
-                    "DataTableName": "D_MusicQuestConditions"
-                }
-            ],
             "Tempo": 126,
             "Key": "Dm",
             "TimeSignature": "4/4"
@@ -71,12 +65,6 @@
             "WeatherFlags": 1,
             "DropStateFlags": 2,
             "DisasterFlags": 1,
-            "Quests": [
-                {
-                    "RowName": "None",
-                    "DataTableName": "D_MusicQuestConditions"
-                }
-            ],
             "Tempo": 118,
             "Key": "Fmi",
             "TimeSignature": "6/8"
@@ -99,12 +87,6 @@
             "WeatherFlags": 1,
             "DropStateFlags": 2,
             "DisasterFlags": 1,
-            "Quests": [
-                {
-                    "RowName": "None",
-                    "DataTableName": "D_MusicQuestConditions"
-                }
-            ],
             "Tempo": 74,
             "Key": "Cmi",
             "TimeSignature": "3/4"
@@ -457,7 +439,13 @@
             "TimeOfDayFlags": 7,
             "WeatherFlags": 1,
             "DropStateFlags": 2,
-            "DisasterFlags": 1
+            "DisasterFlags": 1,
+            "Quests": [
+                {
+                    "RowName": "NoQuest",
+                    "DataTableName": "D_MusicQuestConditions"
+                }
+            ]
         },
         {
             "Name": "Lava_Idle_2",
@@ -476,7 +464,13 @@
             "TimeOfDayFlags": 7,
             "WeatherFlags": 1,
             "DropStateFlags": 2,
-            "DisasterFlags": 1
+            "DisasterFlags": 1,
+            "Quests": [
+                {
+                    "RowName": "NoQuest",
+                    "DataTableName": "D_MusicQuestConditions"
+                }
+            ]
         },
         {
             "Name": "Wetlands_Idle_1",
@@ -534,6 +528,41 @@
             "WeatherFlags": 1,
             "DropStateFlags": 2,
             "DisasterFlags": 1
+        },
+        {
+            "Name": "Grasslands_Idle_2",
+            "Event": "/Game/FMOD/Events/Music/Icarus_25.Icarus_25",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn.MusicCurve_DefaultFadeIn'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Grasslands",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "Quest_Pro_Story6_Evidence",
+            "Event": "/Game/FMOD/Events/Music/Icarus_PRO_Story_6_Evidence.Icarus_PRO_Story_6_Evidence",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn.MusicCurve_DefaultFadeIn'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "DropStateFlags": 2,
+            "Quests": [
+                {
+                    "RowName": "PRO_Story6_Evidence",
+                    "DataTableName": "D_MusicQuestConditions"
+                }
+            ],
+            "StateGroup": {
+                "RowName": "PRO_Story6_Evidence"
+            }
         }
     ]
 }

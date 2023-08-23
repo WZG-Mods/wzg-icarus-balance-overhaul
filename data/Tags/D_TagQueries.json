@@ -30,7 +30,6 @@
                     0,
                     1
                 ],
-                "UserDescription": "Any Consumable Food Items",
                 "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish )"
             }
         },
@@ -49,7 +48,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Consumable Oxygen Item",
                 "AutoDescription": " ANY( Item.Consumable.Oxygen )"
             }
         },
@@ -68,7 +66,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Consumable Water Item",
                 "AutoDescription": " ANY( Item.Consumable.Water )"
             }
         },
@@ -87,7 +84,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Equippable Helmet",
                 "AutoDescription": " ANY( Item.Armor.Helmet )"
             }
         },
@@ -106,7 +102,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Equippable Chest",
                 "AutoDescription": " ANY( Item.Armor.Chest )"
             }
         },
@@ -125,7 +120,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Equippable Gloves",
                 "AutoDescription": " ANY( Item.Armor.Gloves )"
             }
         },
@@ -144,7 +138,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Equippable Pants",
                 "AutoDescription": " ANY( Item.Armor.Pants )"
             }
         },
@@ -163,7 +156,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Equippable Boots",
                 "AutoDescription": " ANY( Item.Armor.Boots )"
             }
         },
@@ -182,7 +174,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Envirosuit",
                 "AutoDescription": " ANY( Item.Envirosuit )"
             }
         },
@@ -192,17 +183,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "UserDescription": "Any Item that needs to be carried on the players back",
-                "AutoDescription": " ANY( Item.Utility )"
+                "AutoDescription": " ANY( Item.Utility, Item.CosmeticShield )"
             }
         },
         {
@@ -312,7 +306,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Is herbivorous food source",
                 "AutoDescription": " ANY( GOAP.Food.Herbivore )"
             }
         },
@@ -643,7 +636,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Item with FocusLock tag",
                 "AutoDescription": " ANY( Traits.Equippable.FocusLock )"
             }
         },
@@ -772,7 +764,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "General Inventory Slot",
                 "AutoDescription": " ALL(  NONE( Item.Utility ) )"
             }
         },
@@ -791,7 +782,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Head",
                 "AutoDescription": " ANY( Item.Skin.Head )"
             }
         },
@@ -836,7 +826,6 @@
                     1,
                     2
                 ],
-                "UserDescription": "Any Head",
                 "AutoDescription": " ANY( Item.Envirosuit, Item.Skin, Item.Fists )"
             }
         },
@@ -855,7 +844,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any ammunition items",
                 "AutoDescription": " ANY( Item.Ammo )"
             }
         },
@@ -882,7 +870,6 @@
                     1,
                     1
                 ],
-                "UserDescription": "Can catch fire (flammable, not wet, not onfire)",
                 "AutoDescription": " ALL(  ALL( Traits.Flammable ),  NONE( ModifierState.ExtingishFire ) )"
             }
         },
@@ -901,7 +888,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Placed Radar Objective",
                 "AutoDescription": " ALL( Objective.FlatArea.Small )"
             }
         },
@@ -920,7 +906,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Player Fists",
                 "AutoDescription": " ANY( Item.Fists )"
             }
         },
@@ -939,7 +924,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Building Repair Tool",
                 "AutoDescription": " ALL( Item.Tool.Building.Repair )"
             }
         },
@@ -1088,7 +1072,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Consumable Food Items",
                 "AutoDescription": " ANY( Item.Consumable.Food.Cooked )"
             }
         },
@@ -1107,7 +1090,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Spoiled Food Items",
                 "AutoDescription": " ANY( Item.Consumable.Food.Spoiled )"
             }
         },
@@ -1198,7 +1180,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any HairStyle",
                 "AutoDescription": " ANY( Item.Skin.HairStyle )"
             }
         },
@@ -1217,7 +1198,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Ore",
                 "AutoDescription": " ANY( Item.Resource.Ore )"
             }
         },
@@ -1236,7 +1216,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Stone",
                 "AutoDescription": " ANY( Item.Resource.Stone )"
             }
         },
@@ -1255,7 +1234,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Fiber",
                 "AutoDescription": " ANY( Item.Resource.Fiber )"
             }
         },
@@ -1274,7 +1252,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Sticks",
                 "AutoDescription": " ANY( Item.Resource.Fiber )"
             }
         },
@@ -1293,7 +1270,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Wood",
                 "AutoDescription": " ANY( Item.Resource.Wood )"
             }
         },
@@ -1452,7 +1428,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any frag grenade",
                 "AutoDescription": " ALL( Item.Weapon.Grenade.Frag )"
             }
         },
@@ -1475,7 +1450,6 @@
                     0,
                     1
                 ],
-                "UserDescription": "Any bullet",
                 "AutoDescription": " ALL( Traits.Ballistic, Item.Ammo.Bullet )"
             }
         },
@@ -1498,7 +1472,6 @@
                     0,
                     1
                 ],
-                "UserDescription": "Any bolt",
                 "AutoDescription": " ALL( Traits.Ballistic, Item.Ammo.Bolt )"
             }
         },
@@ -1517,7 +1490,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Ice",
                 "AutoDescription": " ANY( Item.Resource.Ice )"
             }
         },
@@ -1540,7 +1512,6 @@
                     0,
                     1
                 ],
-                "UserDescription": "Any Consumable Food including spoiled food",
                 "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish )"
             }
         },
@@ -1559,7 +1530,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Misc items which should equip to the quickbar/hotbar",
                 "AutoDescription": " ALL( Item.Equip.Quickbar )"
             }
         },
@@ -1686,7 +1656,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "If the actor is wet",
                 "AutoDescription": " ANY( ModifierState.Wet )"
             }
         },
@@ -1919,7 +1888,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Has a fillable component",
                 "AutoDescription": " ALL( Traits.Fillable )"
             }
         },
@@ -1974,7 +1942,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Checks if Actor can Record",
                 "AutoDescription": " ALL( GameStateRecorder.DontRecord )"
             }
         },
@@ -2047,7 +2014,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any T1 Carcass",
                 "AutoDescription": " ALL( Harvest.Knife.T1 )"
             }
         },
@@ -2066,7 +2032,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any T2 Carcass",
                 "AutoDescription": " ALL( Harvest.Knife.T2 )"
             }
         },
@@ -2085,7 +2050,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any T1 Knife",
                 "AutoDescription": " ALL( Item.Tool.Knife.T1 )"
             }
         },
@@ -2104,7 +2068,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any T2 Knife",
                 "AutoDescription": " ALL( Item.Tool.Knife.T2 )"
             }
         },
@@ -2777,7 +2740,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any ammunition items",
                 "AutoDescription": " ANY( Item.Ammo.Bullet )"
             }
         },
@@ -2962,7 +2924,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Should cloth physics occulsion block when deploying",
                 "AutoDescription": " ANY( Item.Deployable.Door.ClothPhysics )"
             }
         },
@@ -3515,7 +3476,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Shields",
                 "AutoDescription": " ANY( Item.Shield )"
             }
         },
@@ -3604,21 +3564,33 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food"
                     },
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Plant"
+                    },
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Herbivore"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
+                    4,
+                    2,
                     2,
                     2,
                     0,
-                    1
+                    1,
+                    1,
+                    2,
+                    2,
+                    3
                 ],
-                "AutoDescription": " ALL( Item.Seed, Item.Consumable.Food )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore ) )"
             }
         },
         {
@@ -3876,7 +3848,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Items that can be dual wielded in left hand",
                 "AutoDescription": " ANY( Item.Shield )"
             }
         },
@@ -3957,7 +3928,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Hammer",
                 "AutoDescription": " ALL( Item.Tool.Building )"
             }
         },
@@ -3976,7 +3946,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Bench",
                 "AutoDescription": " ALL( Item.Bench )"
             }
         },
@@ -3995,7 +3964,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any grenade",
                 "AutoDescription": " ALL( Item.Weapon.Grenade )"
             }
         },
@@ -4014,7 +3982,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any bandage / T1",
                 "AutoDescription": " ALL( Item.Medicine.Bandage )"
             }
         },
@@ -4033,7 +4000,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any paste (T1 anti-status)",
                 "AutoDescription": " ALL( Item.Medicine.Paste )"
             }
         },
@@ -4052,7 +4018,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any tonic (T2 anti-status / buff)",
                 "AutoDescription": " ALL( Item.Medicine.Tonic )"
             }
         },
@@ -4071,7 +4036,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any enhancement tonic (T2 buff)",
                 "AutoDescription": " ALL( Item.Medicine.Tonic.Enhancement )"
             }
         },
@@ -4090,7 +4054,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any T2 status tonic (T2 anti-status)",
                 "AutoDescription": " ALL( Item.Medicine.Tonic.Status )"
             }
         },
@@ -4109,7 +4072,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any pill (T3 anti-status)",
                 "AutoDescription": " ALL( Item.Medicine.Pill )"
             }
         },
@@ -4128,7 +4090,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any medicine",
                 "AutoDescription": " ALL( Item.Medicine )"
             }
         },
@@ -4165,7 +4126,6 @@
                     1,
                     0
                 ],
-                "UserDescription": "Any Ingot - includes Composites and Carbonfiber",
                 "AutoDescription": " ANY( Item.Resource.Ingot )"
             }
         },
@@ -4290,7 +4250,6 @@
                     1,
                     1
                 ],
-                "UserDescription": "Any Consumable Food Items",
                 "AutoDescription": " ALL(  ANY( Item.Consumable.Food ),  NONE( Item.Consumable.Food.Spoiled ) )"
             }
         },
@@ -4434,6 +4393,161 @@
                     2
                 ],
                 "AutoDescription": " ANY( Building.Thatch, Building.Wood, Building.InteriorWood )"
+            }
+        },
+        {
+            "Name": "NPC_Autonomous",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.AutonomousSpawn"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( NPC.AutonomousSpawn )"
+            }
+        },
+        {
+            "Name": "Returnable_Meta_Item",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "Item.Meta.Resource"
+                    },
+                    {
+                        "TagName": "MetaItem.DoNotReturn"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    2,
+                    1,
+                    0,
+                    3,
+                    2,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ALL(  ALL( Item.Meta ),  NONE( Item.Meta.Resource, MetaItem.DoNotReturn ) )"
+            }
+        },
+        {
+            "Name": "No_Envirosuits",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Envirosuit"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Item.Envirosuit )"
+            }
+        },
+        {
+            "Name": "Any_Item_That_Can_Grow",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plant"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Plant )"
+            }
+        },
+        {
+            "Name": "Animal_Feed",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.AnimalFood )"
+            }
+        },
+        {
+            "Name": "Charcoal_Or_Coal",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Ore.Coal"
+                    },
+                    {
+                        "TagName": "Item.Fuel.Charcoal"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Resource.Ore.Coal, Item.Fuel.Charcoal )"
+            }
+        },
+        {
+            "Name": "Projectile_Arrow_or_Bolt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Ballistic"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Arrow"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Bolt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    4,
+                    2,
+                    2,
+                    2,
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    2
+                ],
+                "AutoDescription": " ANY(  ALL( Traits.Ballistic, Item.Ammo.Arrow ),  ALL( Traits.Ballistic, Item.Ammo.Bolt ) )"
             }
         }
     ]

@@ -334,9 +334,9 @@
                     }
                 ]
             },
-            "MinLevel": 60,
-            "MedianLevel": 70,
-            "MaxLevel": 80
+            "MinLevel": 30,
+            "MedianLevel": 50,
+            "MaxLevel": 70
         },
         {
             "Name": "PRO_Grasslands_Mounts",
@@ -659,13 +659,18 @@
             "Name": "PRO_Volcanic_Easy",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Rock_Dog\")": 5,
+                    "(Value=\"Rock_Dog\")": 2,
                     "(Value=\"BlueBack_Lava\")": 6,
-                    "(Value=\"Deer_Desert_Medium\")": 6
+                    "(Value=\"Deer_Desert_Medium\")": 6,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 4
                 },
                 "RelevantAutonomousSpawners": [
                     {
                         "RowName": "Predator_Bird_Few",
+                        "DataTableName": "D_AutonomousSpawns"
+                    },
+                    {
+                        "RowName": "Gas_Flyer",
                         "DataTableName": "D_AutonomousSpawns"
                     }
                 ]
@@ -680,11 +685,16 @@
                 "SpawnList": {
                     "(Value=\"Desert_Wolf\")": 5,
                     "(Value=\"Chamois_Var\")": 5,
-                    "(Value=\"Lava_Komodo\")": 5
+                    "(Value=\"Lava_Komodo\")": 5,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 5
                 },
                 "RelevantAutonomousSpawners": [
                     {
                         "RowName": "Predator_Bird_Few",
+                        "DataTableName": "D_AutonomousSpawns"
+                    },
+                    {
+                        "RowName": "Gas_Flyer",
                         "DataTableName": "D_AutonomousSpawns"
                     }
                 ]
@@ -697,9 +707,16 @@
             "Name": "PRO_Volcanic_LavaRiver",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Desert_Striker\")": 5
+                    "(Value=\"Desert_Striker\")": 5,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 2
                 },
-                "BiomeSpawnDensity": 4
+                "BiomeSpawnDensity": 4,
+                "RelevantAutonomousSpawners": [
+                    {
+                        "RowName": "Gas_Flyer",
+                        "DataTableName": "D_AutonomousSpawns"
+                    }
+                ]
             },
             "MinLevel": 50,
             "MedianLevel": 60,
@@ -718,7 +735,7 @@
             },
             "MinLevel": 80,
             "MedianLevel": 90,
-            "MaxLevel": 100
+            "MaxLevel": 110
         },
         {
             "Name": "Outpost_Forest_Full",
@@ -752,21 +769,41 @@
             "MaxLevel": 30
         },
         {
+            "Name": "Outpost_Desert_Full",
+            "Creatures": {
+                "SpawnList": {
+                    "(Value=\"Chamois_M\")": 5,
+                    "(Value=\"Deer_Desert_Large\")": 5,
+                    "(Value=\"Desert_Wolf\")": 3,
+                    "(Value=\"Mammoth_Desert\")": 2,
+                    "(Value=\"Lion_F\")": 3
+                }
+            },
+            "MedianLevel": 15,
+            "MaxLevel": 30
+        },
+        {
             "Name": "PRO_Lava_Main",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Rock_Dog\")": 10,
-                    "(Value=\"Deer_Desert_Large\")": 10
+                    "(Value=\"Rock_Dog\")": 5,
+                    "(Value=\"Deer_Desert_Large\")": 10,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 10
                 },
                 "RelevantAutonomousSpawners": [
                     {
                         "RowName": "Predator_Bird_Many",
                         "DataTableName": "D_AutonomousSpawns"
+                    },
+                    {
+                        "RowName": "Gas_Flyer",
+                        "DataTableName": "D_AutonomousSpawns"
                     }
                 ]
             },
-            "MedianLevel": 15,
-            "MaxLevel": 30
+            "MinLevel": 70,
+            "MedianLevel": 80,
+            "MaxLevel": 120
         },
         {
             "Name": "PRO_Lava_Strikers",
@@ -780,11 +817,16 @@
                     {
                         "RowName": "Predator_Bird_Few",
                         "DataTableName": "D_AutonomousSpawns"
+                    },
+                    {
+                        "RowName": "Gas_Flyer",
+                        "DataTableName": "D_AutonomousSpawns"
                     }
                 ]
             },
-            "MedianLevel": 15,
-            "MaxLevel": 30
+            "MinLevel": 70,
+            "MedianLevel": 80,
+            "MaxLevel": 90
         },
         {
             "Name": "PRO_Lava_Komodo",
@@ -798,11 +840,16 @@
                     {
                         "RowName": "Predator_Bird_Few",
                         "DataTableName": "D_AutonomousSpawns"
+                    },
+                    {
+                        "RowName": "Gas_Flyer",
+                        "DataTableName": "D_AutonomousSpawns"
                     }
                 ]
             },
-            "MedianLevel": 15,
-            "MaxLevel": 30
+            "MinLevel": 80,
+            "MedianLevel": 100,
+            "MaxLevel": 120
         },
         {
             "Name": "PRO_Swamp_Easy",
@@ -811,7 +858,8 @@
                     "(Value=\"Swamp_Bird\")": 10,
                     "(Value=\"Swamp_Quadruped\")": 10,
                     "(Value=\"Rabbit_Variant\")": 5,
-                    "(Value=\"Crocodile\")": 8
+                    "(Value=\"Crocodile\")": 8,
+                    "(Value=\"Swamp_Slug\")": 5
                 }
             },
             "MinLevel": 20,
@@ -825,7 +873,8 @@
                     "(Value=\"Swamp_Bird\")": 10,
                     "(Value=\"Swamp_Quadruped\")": 10,
                     "(Value=\"Rabbit_Variant\")": 5,
-                    "(Value=\"Needler\")": 9
+                    "(Value=\"Needler\")": 9,
+                    "(Value=\"Swamp_Slug\")": 4
                 }
             },
             "MinLevel": 30,
@@ -840,7 +889,8 @@
                     "(Value=\"Swamp_Quadruped\")": 10,
                     "(Value=\"Rabbit_Variant\")": 5,
                     "(Value=\"Needler\")": 8,
-                    "(Value=\"Crocodile\")": 8
+                    "(Value=\"Crocodile\")": 8,
+                    "(Value=\"Swamp_Slug\")": 4
                 }
             },
             "MinLevel": 50,

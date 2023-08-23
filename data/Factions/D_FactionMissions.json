@@ -12,6 +12,7 @@
             "RowName": "None",
             "DataTableName": "D_Quests"
         },
+        "bUseOpenWorldRetryTimeout": true,
         "AdditionalRulesets": [],
         "ItemsRewarded": [],
         "CharacterFlagsRewarded": [],
@@ -3629,7 +3630,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Kill"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Grow",
@@ -3638,7 +3640,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Grow"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Mine",
@@ -3647,7 +3650,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Mine"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Collect",
@@ -3656,7 +3660,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Collect"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Scan",
@@ -3665,7 +3670,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Scan"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Cache",
@@ -3674,7 +3680,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Cache"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Hunt",
@@ -3683,7 +3690,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Hunt"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Tools",
@@ -3692,7 +3700,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Tools"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Reward",
@@ -3701,7 +3710,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_TestReward"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Build",
@@ -3710,7 +3720,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Build"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Drone",
@@ -3719,7 +3730,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Drone"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Tame",
@@ -3728,7 +3740,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Tame"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "DYN_Lost",
@@ -3737,7 +3750,8 @@
             },
             "InitialQuest": {
                 "RowName": "DYN_Lost"
-            }
+            },
+            "bUseOpenWorldRetryTimeout": false
         },
         {
             "Name": "STYX_C_Extermination2",
@@ -4018,6 +4032,63 @@
                         "DataTableName": "D_MetaCurrency"
                     },
                     "Amount": 100
+                }
+            ],
+            "AccountExperience": 50,
+            "FactionExperience": 10
+        },
+        {
+            "Name": "STYX_C_Fishing",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Small.T_Prospect_Desert_Angler01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_C_Fishing_Hut",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_C_Fishing_Fish",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "STYX_C_Fishing_Delivery",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                }
+            ],
+            "Faction": {
+                "RowName": "UDA"
+            },
+            "InitialQuest": {
+                "RowName": "STYX_C_Fishing"
+            },
+            "TalentsRewarded": [
+                {
+                    "RowName": "Prospect_Styx_C_Fishing",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "CurrencyRewarded": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic1",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 200
                 }
             ],
             "AccountExperience": 50,

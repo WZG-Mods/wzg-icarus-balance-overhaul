@@ -53,6 +53,7 @@
             "bPlayImpactSoundOnPayload": false
         },
         "bUseActorPooling": false,
+        "bDisableRecorderComponent": false,
         "OnHitAINoiseEventRange": 300
     },
     "Rows": [
@@ -727,7 +728,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_BLT_Steel_BallisticPhysicsAsset.SK_BLT_Steel_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_BLT_IronWood_BallisticPhysics.SK_BLT_IronWood_BallisticPhysics",
             "SpawnPositionOffset": {
                 "X": 28
             },
@@ -943,7 +944,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_BLT_Platinum_BallisticPhysicsAsset.SK_BLT_Platinum_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/BLT_ColdSteel/SK_BLT_ColdSteel_BallisticPhysicsAsset.SK_BLT_ColdSteel_BallisticPhysicsAsset",
             "SpawnPositionOffset": {
                 "X": 28
             },
@@ -1278,7 +1279,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_SPR_Titanium_BallisticPhysicsAsset.SK_SPR_Titanium_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SPR_ColdSteel/SK_SPR_ColdSteel_Ballistic_PhysicsAsset.SK_SPR_ColdSteel_Ballistic_PhysicsAsset",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },
@@ -1390,7 +1391,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_SPR_Titanium_BallisticPhysicsAsset.SK_SPR_Titanium_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SPR_IronWood/SK_SPR_IronWood_BallisticPhysics.SK_SPR_IronWood_BallisticPhysics",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },
@@ -1551,9 +1552,8 @@
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
-            "Weight": 1,
+            "Weight": 0.800000011920929,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Smoke_Grenade.BP_Payload_Smoke_Grenade_C",
-            "PayloadDeploymentType": "OnTimerElapsed",
             "BreakChance": 0,
             "PostDeployLifetime": 0.10000000149011612,
             "AttachOnHit": false,
@@ -1866,7 +1866,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_KNI_Titanium_BallisticPhysicsAsset.SK_KNI_Titanium_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/KNI_IronWood/SK_KNI_IronWood_BallisticPhysics.SK_KNI_IronWood_BallisticPhysics",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },
@@ -1922,7 +1922,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_KNI_Platinum_BallisticPhysicsAsset.SK_KNI_Platinum_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/KNI_ColdSteel/SK_KNI_ColdSteel_BallisticPhysicsAsset.SK_KNI_ColdSteel_BallisticPhysicsAsset",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },
@@ -2119,14 +2119,13 @@
             "bUnbreakableDuringKillCam": false,
             "Weight": 0.0035000001080334187,
             "AllowPickupAfterSettle": false,
-            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IncendiaryRound.BP_Payload_IncendiaryRound_C",
             "BreakChance": 1,
             "PostDeployLifetime": 0,
             "CullDistanceSquared": 400000000,
             "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
             "RotationFollowsVelocity": false,
             "AudioData": {
-                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE.SFX_IMPACT_RIFLE"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE_EXPLOSIVE.SFX_IMPACT_RIFLE_EXPLOSIVE"
             },
             "bUseActorPooling": true
         },
@@ -2139,14 +2138,14 @@
             "bUnbreakableDuringKillCam": false,
             "Weight": 0.0035000001080334187,
             "AllowPickupAfterSettle": false,
-            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IncendiaryRound.BP_Payload_IncendiaryRound_C",
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Poison.BP_Payload_Poison_C",
             "BreakChance": 1,
             "PostDeployLifetime": 0,
             "CullDistanceSquared": 400000000,
             "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
             "RotationFollowsVelocity": false,
             "AudioData": {
-                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE.SFX_IMPACT_RIFLE"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE_EXPLOSIVE.SFX_IMPACT_RIFLE_EXPLOSIVE"
             },
             "bUseActorPooling": true
         },
@@ -2868,14 +2867,13 @@
             "bUnbreakableDuringKillCam": false,
             "Weight": 0.0035000001080334187,
             "AllowPickupAfterSettle": false,
-            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IncendiaryRound.BP_Payload_IncendiaryRound_C",
             "BreakChance": 1,
             "PostDeployLifetime": 0,
             "CullDistanceSquared": 400000000,
             "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
             "RotationFollowsVelocity": false,
             "AudioData": {
-                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL.SFX_IMPACT_SMALL"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL_EXPLOSIVE_PISTOL.SFX_IMPACT_SMALL_EXPLOSIVE_PISTOL"
             },
             "bUseActorPooling": true
         },
@@ -2888,14 +2886,14 @@
             "bUnbreakableDuringKillCam": false,
             "Weight": 0.0035000001080334187,
             "AllowPickupAfterSettle": false,
-            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IncendiaryRound.BP_Payload_IncendiaryRound_C",
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Poison.BP_Payload_Poison_C",
             "BreakChance": 1,
             "PostDeployLifetime": 0,
             "CullDistanceSquared": 400000000,
             "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
             "RotationFollowsVelocity": false,
             "AudioData": {
-                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL.SFX_IMPACT_SMALL"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL_EXPLOSIVE_PISTOL.SFX_IMPACT_SMALL_EXPLOSIVE_PISTOL"
             },
             "bUseActorPooling": true
         },
@@ -3011,7 +3009,7 @@
             "BreakChance": 0.8999999761581421,
             "DurabilityDamage": 100,
             "PostDeployLifetime": 60,
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_Obsidian_Ballistic_PhysicsAsset.SK_ARR_Obsidian_Ballistic_PhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/ARR_ColdSteel/SK_ARR_ColdSteel_BallisticPhysicsAsset.SK_ARR_ColdSteel_BallisticPhysicsAsset",
             "SpawnPositionOffset": {
                 "X": 95
             },
@@ -3221,12 +3219,12 @@
         {
             "Name": "LavaHunter_Spit",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
-            "Damage": 10,
-            "DamageVariationPercentage": 10,
+            "Damage": 35,
+            "DamageVariationPercentage": 20,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
             "Weight": 0.5,
-            "GravityScale": 0.15000000596046448,
+            "GravityScale": 0.3499999940395355,
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_LavaHunter_Spit.BP_Payload_LavaHunter_Spit_C",
             "PayloadDeploymentType": "OnBounceImmediate",
@@ -3264,13 +3262,65 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_Titanium_BallisticPhysicsAsset.SK_ARR_Titanium_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_IronWood_BallisticPhysics.SK_ARR_IronWood_BallisticPhysics",
             "SpawnPositionOffset": {
                 "X": 94
             },
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_FLY.SFX_BALLISTIC_ARROW_FLY",
                 "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT"
+            }
+        },
+        {
+            "Name": "GasFlyer_Projectile",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.5,
+            "GravityScale": 1.600000023841858,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_GasFlyer_Projectile.BP_Payload_GasFlyer_Projectile_C",
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "PayloadDeploymentTimerDelay": 1,
+            "TrailParticle": "/Game/ASS/VFX/CRE/GasFlyer/NS_GasFlyer_ProjectileTrail.NS_GasFlyer_ProjectileTrail",
+            "BreakChance": 0,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_GASFLY_BALLISTIC_TRAVEL.SFX_CRE_GASFLY_BALLISTIC_TRAVEL",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_GASFLYER_BALLISTIC_IMPACT.SFX_CRE_GASFLYER_BALLISTIC_IMPACT"
+            }
+        },
+        {
+            "Name": "RockDog_Spit",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 25,
+            "DamageVariationPercentage": 5,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 5,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Rockdog_Spit.BP_Payload_Rockdog_Spit_C",
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "PayloadDeploymentTimerDelay": 1,
+            "BreakChance": 100,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_CAVEWORM_BALLISTIC_TRAVEL_SMALL.SFX_CRE_CAVEWORM_BALLISTIC_TRAVEL_SMALL",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_CAVEWORM_BALLISTIC_SMALL.SFX_CRE_CAVEWORM_BALLISTIC_SMALL"
             }
         }
     ]

@@ -14,6 +14,7 @@
             "RowName": "None",
             "DataTableName": "D_MusicQuestConditions"
         },
+        "bPlayAudioCueOnCompletion": true,
         "Modifiers": []
     },
     "GenerateEnum": true,
@@ -6404,8 +6405,12 @@
                 "RowName": "PRO_Story_1_Daisy_Base"
             },
             "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "V2PromNomadEvent12",
+                    "DataTableName": "D_Dialogue"
+                },
                 "QuestStart": {
-                    "RowName": "PromNomadIntro",
+                    "RowName": "V2PromNomadIntro",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6448,17 +6453,11 @@
         {
             "Name": "PRO_Story1_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromNomadEvent4",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")"
         },
         {
             "Name": "PRO_Story1_Recipe_Location",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Location-Description\", \"Reach the Supply Pod Location (M)\")"
         },
         {
@@ -6467,7 +6466,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Optional: Kill the Guarding Creature\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromNomadEvent5",
+                    "RowName": "V2PromNomadEvent2",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6478,7 +6477,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Collect-Description\", \"Collect the Upgrade from the Sinotai Supply Pod\")",
             "DialogueEvents": {
                 "QuestEnd": {
-                    "RowName": "PromNomadEvent6",
+                    "RowName": "V2PromNomadEvent3",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6486,13 +6485,7 @@
         {
             "Name": "PRO_Story1_Communicator",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Communicator.BPQ_PRO_Story1_Communicator_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Unlock, Build & Place a Short Range Radio (Crafting Bench)\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromNomadEvent7",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Unlock, Build & Place a Short Range Radio (Crafting Bench)\")"
         },
         {
             "Name": "PRO_Story1_Interact",
@@ -6500,7 +6493,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Interact-Description\", \"Interact with the Short Range Radio (F)\")",
             "DialogueEvents": {
                 "QuestEnd": {
-                    "RowName": "PromNomadEvent8",
+                    "RowName": "V2PromNomadEvent4",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6511,22 +6504,55 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL3\")"
         },
         {
-            "Name": "PRO_Story1_Mini_Quest_Tomatoes",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Tomatoes.BPQ_PRO_Story1_Mini_Quest_Tomatoes_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Tomatoes-Description\", \"Cultivate and Harvest One Tomato (Farming Plot)\")"
+            "Name": "PRO_Story1_Mini_Quest_Collect_Seed",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Collect_Seed.BPQ_PRO_Story1_Mini_Quest_Collect_Seed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Seed-Description\", \"Collected a Tomato and Farming Plot Sinotai Delivery Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Plant",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Plant_Seed.BPQ_PRO_Story1_Mini_Quest_Plant_Seed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Plant-Description\", \"Place the Farming Plot and Plant a Tomato\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "V2PromNomadEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Grow",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Grow.BPQ_PRO_Story1_Mini_Quest_Grow_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Grow-Description\", \"Wait for the Tomato to Grow\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Collect_Tomato",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Collect_Tomato.BPQ_PRO_Story1_Mini_Quest_Collect_Tomato_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Tomato-Description\", \"Collect the Grown Tomato From the Farming Plot\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "V2PromNomadEvent8.7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Deliver",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Deliver.BPQ_PRO_Story1_Mini_Quest_Deliver_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Deliver-Description\", \"Deliver the Harvest to the Sinotai Retrieval Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Deliver-Description\", \"Deliver the Harvest to the Sinotai Supply Pod (M)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "V2PromNomadEvent9",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Collect_Reward",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Reward.BPQ_PRO_Story1_Mini_Quest_Reward_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Reward-Description\", \"Collect the Reward from the Sinotai Reward Pod (M)\")",
             "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromNomadEvent9",
+                "QuestStart": {
+                    "RowName": "V2PromNomadEvent11",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -6537,12 +6563,18 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort-Description\", \"Complete the Rescue Mission From SMPL3\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_1_Daisy"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "V2PromNomadEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story1_Escort_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Travel-Description\", \"Travel to the \\'Daisys\\'\\' last known location (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Travel-Description\", \"Travel to  \\'Daisy\\'s\\' last known location (M)\")"
         },
         {
             "Name": "PRO_Story1_Escort_Daisy",
@@ -6555,12 +6587,20 @@
         {
             "Name": "PRO_Story1_Escort_Health",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Health.BPQ_Story1_Escort_Health_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Health-Description\", \"\\'Daisy\\' Health {0} / {1}\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Health-Description\", \"\\'Daisy\\'s\\' Health {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_Story1_Escort_Base",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Base.BPQ_Story1_Escort_Base_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Base-Description\", \"Head to \\'Daisy\\'s\\' Owners Base (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_1_Daisy_Base"
+            }
         },
         {
             "Name": "PRO_Story1_Escort_Loot",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Loot.BPQ_Story1_Escort_Loot_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Loot-Description\", \"Loot the base for your reward\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Loot-Description\", \"Loot the base of \\'Daisys\\' Owner\")"
         },
         {
             "Name": "PRO_Story_2",
@@ -6568,12 +6608,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_2-Description\", \"RECOVERY: Stolen Items\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_Mo_Hideout1"
-            }
-        },
-        {
-            "Name": "PRO_Story2_Investigate",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate.BPQ_PRO_Story2_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")",
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromOffenderIntro1",
@@ -6582,14 +6617,25 @@
             }
         },
         {
+            "Name": "PRO_Story2_Investigate",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate.BPQ_PRO_Story2_Investigate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")"
+        },
+        {
             "Name": "PRO_Story2_Investigate_Travel",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Travel.BPQ_PRO_Story2_Investigate_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout1"
+            }
         },
         {
             "Name": "PRO_Story2_Investigate_Clear",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Clear.BPQ_PRO_Story2_Investigate_Clear_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Clear-Description\", \"Clear The Cave of Threats\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Clear-Description\", \"Clear The Cave of Threats\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout1"
+            }
         },
         {
             "Name": "PRO_Story2_Investigate_Search",
@@ -6658,17 +6704,19 @@
         {
             "Name": "PRO_Story_3",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3.BPQ_PRO_Story3_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedIntro1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story3_Equipment",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Collect_Equipment.BPQ_PRO_Story3_Collect_Equipment_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")",
             "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromShadowedIntro1",
-                    "DataTableName": "D_Dialogue"
-                },
                 "QuestEnd": {
                     "RowName": "PromShadowedEvent2",
                     "DataTableName": "D_Dialogue"
@@ -6692,12 +6740,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_3_Scan_1"
-            },
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromShadowedEvent4",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -6722,12 +6764,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_3_Scan_3"
-            },
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromShadowedEvent6",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -6981,7 +7017,7 @@
         },
         {
             "Name": "PRO_Story4_Deliver_Sol_Travel",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story4/BPQ_PRO_Story4_Sol_Travel.BPQ_PRO_Story4_Sol_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story4_Deliver_Sol_Travel-Description\", \"Reach an Old Cache of Sol\\'s (M)\")"
         },
         {
@@ -7088,7 +7124,7 @@
         {
             "Name": "PRO_Story_5_Beacon_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Beacon_Craft.BPQ_PRO_Story5_Beacon_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Craft-Description\", \"Craft A Beacon (Fabricator)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Beacon_Craft-Description\", \"Craft A Beacon (Machining Bench)\")"
         },
         {
             "Name": "PRO_Story_5_Beacon_Place",
@@ -7132,17 +7168,27 @@
                 "QuestStart": {
                     "RowName": "PromFractureIntro",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent21End",
+                    "DataTableName": "D_Dialogue"
                 }
             }
         },
         {
             "Name": "PRO_Story6_Equipment",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Equipment.BPQ_PRO_Story6_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment-Description\", \"Collect the Specialist Equipment Provided by Group 15\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment-Description\", \"Retrieve the Group 15 Supplies\")"
         },
         {
-            "Name": "PRO_Story6_Equipment_Delivery",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Delivery-Description\", \"Collect the Equipment from the Sinotai Supply Pod (M)\")"
+            "Name": "PRO_Story6_Equipment_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Travel-Description\", \"Travel towards the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Equipment_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Equipment_Collect.BPQ_PRO_Story6_Equipment_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Collect-Description\", \"Collect the Specialist Equipment\")"
         },
         {
             "Name": "PRO_Story6_Traitor",
@@ -7150,15 +7196,18 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor-Description\", \"Track down the Traitor\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_TraitorLocation"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromFractureEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story6_Traitor_Trail",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Trail.BPQ_PRO_Story6_Traitor_Trail_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")",
-            "LocationQuery": {
-                "RowName": "PRO_Story_6_TraitorLocation"
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")"
         },
         {
             "Name": "PRO_Story6_Traitor_Investigation",
@@ -7168,20 +7217,42 @@
         {
             "Name": "PRO_Story6_Traitor_Agent",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Agent.BPQ_PRO_Story6_Traitor_Agent_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Agent-Description\", \"Examine the Dead Group 15 Agent (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Agent-Description\", \"Examine the Dead Group 15 Agent (F)\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
-            "Name": "PRO_Story6_Traitor_Trait2",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_FollowTrail.BPQ_PRO_Story6_FollowTrail_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trait2-Description\", \"Head to the Agents Last Tracked Location (M)\")",
+            "Name": "PRO_Story6_Traitor_Trail1",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_FollowTrail.BPQ_PRO_Story6_Traitor_FollowTrail_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail1-Description\", \"Follow the Trail to the Cave (M)\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_TraitorTrail1"
             }
         },
         {
+            "Name": "PRO_Story6_Traitor_Trail2",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_FollowTrail.BPQ_PRO_Story6_Traitor_FollowTrail_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail2-Description\", \"Follow the Trail through the Cave (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_TraitorTrail4"
+            }
+        },
+        {
+            "Name": "PRO_Story6_Traitor_TravelCamp",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Travel_Camp.BPQ_PRO_Story6_Traitor_Travel_Camp_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_TravelCamp-Description\", \"Head to the Nearby Camp (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_Group15_Camp"
+            }
+        },
+        {
             "Name": "PRO_Story6_Traitor_AgentCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_AgentCamp.BPQ_PRO_Story6_Traitor_AgentCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_AgentCamp-Description\", \"Examine the Agents Camp\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_AgentCamp-Description\", \"Examine the Agent\\'s Camp\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             }
@@ -7189,18 +7260,39 @@
         {
             "Name": "PRO_Story6_Traitor_ClearCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_ClearCamp.BPQ_PRO_Story6_Traitor_ClearCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp {0}%\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromFractureEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story6_Traitor_SearchCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_SearchCamp.BPQ_PRO_Story6_Traitor_SearchCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information: {0}%\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             }
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Kill",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Kill-Description\", \"(Optional) Forcibly extract Information from the criminal.\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Terminate",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Terminate-Description\", \"Terminate thief.\")"
+        },
+        {
+            "Name": "PRO_Story6_Traitor_Retrieval",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Retrieval-Description\", \"Facial recognition required, Deposit head in OES\")"
         },
         {
             "Name": "PRO_Story6_Traitor_WaitForOrders",
@@ -7235,7 +7327,7 @@
         {
             "Name": "PRO_Story6_Base_Investigate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Investigate.BPQ_PRO_Story6_Base_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Investigate-Description\", \"Investigate the Base for Further Recordings\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Investigate-Description\", \"Search the Base for Further Recordings\")"
         },
         {
             "Name": "PRO_Story6_Base_Defend",
@@ -7245,8 +7337,17 @@
                 "QuestStart": {
                     "RowName": "PromFractureEvent9",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent12",
+                    "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Story6_Base_Defend_Defend",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Defend_Defend.BPQ_PRO_Story6_Base_Defend_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Defend-Description\", \"Hacking Active\")"
         },
         {
             "Name": "PRO_Story6_Base_Defend_Progress",
@@ -7254,36 +7355,40 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Progress-Description\", \"{0}% Complete\")"
         },
         {
-            "Name": "PRO_Story6_Base_Defend_Defend",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Defend_Defend.BPQ_PRO_Story6_Base_Defend_Defend_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Defend-Description\", \"Defend the Device: {0}/{0}\")"
-        },
-        {
-            "Name": "PRO_Story6_Evidence",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence.BPQ_PRO_Story6_Evidence_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence-Description\", \"Find the Evidence\")",
-            "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_OutsideLava"
-            },
+            "Name": "PRO_Story6_Base_Run",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Run.BPQ_PRO_Story6_Base_Run_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Run-Description\", \"Leave the Area\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromFractureEvent12",
+                    "RowName": "PromFractureEvent13",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent14",
                     "DataTableName": "D_Dialogue"
                 }
             }
         },
         {
-            "Name": "PRO_Story6_Evidence_Travel",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Travel.BPQ_PRO_Story6_Evidence_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Travel-Description\", \"Travel to the Location of the Evidence (M)\")",
+            "Name": "PRO_Story6_Evidence",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence.BPQ_PRO_Story6_Evidence_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence-Description\", \"Find the Evidence Mo Mentioned\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_OutsideLava"
             }
         },
         {
+            "Name": "PRO_Story6_Evidence_Travel",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Travel.BPQ_PRO_Story6_Evidence_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Travel-Description\", \"Travel to the Location of the Evidence (M)\")"
+        },
+        {
             "Name": "PRO_Story6_Evidence_Creature",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Creature.BPQ_PRO_Story6_Evidence_Creature_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Creature-Description\", \"Defeat the Giant Lava Creature\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_CreatureSpawn"
+            },
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "PromFractureEvent16",
@@ -7294,37 +7399,39 @@
         {
             "Name": "PRO_Story6_Evidence_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect.BPQ_PRO_Story6_Evidence_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect-Description\", \"Enter the Cave and Find the Evidence\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect-Description\", \"Find the Entrance to the Cave\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_Entry"
             },
             "DialogueEvents": {
                 "QuestEnd": {
-                    "RowName": "PromFractureEvent17",
+                    "RowName": "PROM_FRACTURE_EVENT17a",
                     "DataTableName": "D_Dialogue"
                 }
+            },
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
             }
         },
         {
             "Name": "PRO_Story6_Evidence_Collect_Continue",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue.BPQ_PRO_Story6_Evidence_Collect_Continue_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue-Description\", \"Venture Further into the Cave\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue-Description\", \"Enter the Cave and Find the Evidence\")",
             "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_Inner"
-            }
+                "RowName": "PRO_Story_6_LavaCave_End"
+            },
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
+            },
+            "bPlayAudioCueOnCompletion": false
         },
         {
             "Name": "PRO_Story6_Evidence_Discuss",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Discuss.BPQ_PRO_Story6_Evidence_Discuss_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Discuss-Description\", \"Discuss the Evidence with Sol\")"
-        },
-        {
-            "Name": "PRO_Story6_MoCamp_Collect",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Collect-Description\", \"Search the Container\")"
-        },
-        {
-            "Name": "PRO_Story6_MoCamp_Creature",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Creature-Description\", \"Defeat The Creature Defending the Camp\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Discuss-Description\", \"Discuss the Evidence with Sol\")",
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
+            }
         },
         {
             "Name": "DYN_Reward",
@@ -7743,12 +7850,28 @@
         {
             "Name": "PRO_Story0",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0-Description\", \"Welcome to Prometheus\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0-Description\", \"Welcome to Prometheus\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadIntro",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a Short Range Radio (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a Short Range Radio (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroSRR",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "OpenWorldEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_TransmitterHealth",
@@ -8008,6 +8131,491 @@
             "Name": "PRO_A_Stockpile_Food10",
             "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_A_Stockpile_DepositFood10.BPQ_PRO_A_Stockpile_DepositFood10_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Stockpile_Food10-Description\", \"{0} / {1} Saltwater Fillet Sashimi\")"
+        },
+        {
+            "Name": "STYX_C_Fishing",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing.BPQ_STYX_C_Fishing_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing-Description\", \"ANGLER: Saltwater\")",
+            "LocationQuery": {
+                "RowName": "STYX_FishingSpot"
+            }
+        },
+        {
+            "Name": "STYX_C_Fishing_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Travel-Description\", \"Head to the designated Fishing Location (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut.BPQ_STYX_C_Fishing_Hut_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut-Description\", \"Setup a Fishing Hut\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_Bench",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_FishingBench.BPQ_STYX_C_Fishing_Hut_FishingBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_Bench-Description\", \"{0}/{1} Fishing Bench\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_PotbellyStove",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_Stove.BPQ_STYX_C_Fishing_Hut_Stove_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_PotbellyStove-Description\", \"{0}/{1} Potbelly Stove\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_CookingStation",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_CookingStation.BPQ_STYX_C_Fishing_Hut_CookingStation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_CookingStation-Description\", \"{0}/{1} Cooking Station\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_DryingRack",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_DryingRack.BPQ_STYX_C_Fishing_Hut_DryingRack_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_DryingRack-Description\", \"{0}/{1} Drying Rack\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment.BPQ_STYX_C_Fishing_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment-Description\", \"Collect the Fishing Supplies\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Travel-Description\", \"Collect the Fishing Supplies from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Boss",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment_Creature.BPQ_STYX_C_Fishing_Equipment_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Boss-Description\", \"(Optional) Kill the \\'Insatiable Bloodclaw\\'\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Collect",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment_Collect.BPQ_STYX_C_Fishing_Equipment_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Collect-Description\", \"Collect the Supplies from the Supply Pod\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish.BPQ_STYX_C_Fishing_Fish_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish-Description\", \"Catch Some Fish\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_A",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_1.BPQ_STYX_C_Fishing_Fish_1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_A-Description\", \"{0} / {1} Oceanic Piranha\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_B",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_2.BPQ_STYX_C_Fishing_Fish_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_B-Description\", \"{0} / {1} Titan Triggerfish\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_C",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_3.BPQ_STYX_C_Fishing_Fish_3_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_C-Description\", \"{0} / {1} Sea Darter\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_D",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_4.BPQ_STYX_C_Fishing_Fish_4_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_D-Description\", \"{0} / {1} Emerald Dorado\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery.BPQ_STYX_C_Fishing_Delivery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery-Description\", \"Deliver Prepared Fish to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Stew",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Stew.BPQ_STYX_C_Fishing_Delivery_Stew_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Stew-Description\", \"{0} / {1} Fish Chunk Stew\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Dried",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Dried.BPQ_STYX_C_Fishing_Delivery_Dried_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Dried-Description\", \"{0} / {1} Dried Saltwater Fish Fillet\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Grilled",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Grilled.BPQ_STYX_C_Fishing_Delivery_Grilled_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Grilled-Description\", \"{0} / {1} Grilled Saltwater Fish Fillet\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Sashimi",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Sashimi.BPQ_STYX_C_Fishing_Delivery_Sashimi_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Sashimi-Description\", \"{0} / {1} Saltwater Fillet Sashimi\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_A",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_A.BPQ_PRO_Story6_Evidence_Collect_Continue_A_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_A-Description\", \"Venture Into the Cave\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Tunnel"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PROM_FRACTURE_EVENT17b",
+                    "DataTableName": "D_Dialogue"
+                }
+            },
+            "bPlayAudioCueOnCompletion": false
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_B",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_B.BPQ_PRO_Story6_Evidence_Collect_Continue_B_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_B-Description\", \"Venture Further Into the Cave\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Cavern"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PROM_FRACTURE_EVENT17c",
+                    "DataTableName": "D_Dialogue"
+                }
+            },
+            "bPlayAudioCueOnCompletion": false
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_C.BPQ_PRO_Story6_Evidence_Collect_Continue_C_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_C-Description\", \"Keep Going\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_LastTunnel"
+            },
+            "bPlayAudioCueOnCompletion": false
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_End",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_End.BPQ_PRO_Story6_Evidence_Collect_End_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_End-Description\", \"Explore the Settlement\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_End"
+            },
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
+            }
+        },
+        {
+            "Name": "PRO_A_Exploration",
+            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Exploration-Description\", \"EXPLORATION: Grasslands\")"
+        },
+        {
+            "Name": "PRO_B_Exploration",
+            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Exploration-Description\", \"EXPLORATION: Volcanic\")"
+        },
+        {
+            "Name": "PRO_C_Exploration",
+            "Class": "/Game/BP/Quests/Common/BPQ_Exploration.BPQ_Exploration_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Exploration-Description\", \"EXPLORATION: Swamp\")"
+        },
+        {
+            "Name": "PRO_C_Construction",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction.BPQ_PRO_C_Construction_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction-Description\", \"CONSTRUCTION: Treehouse\")",
+            "LocationQuery": {
+                "RowName": "PRO_Treehouse"
+            }
+        },
+        {
+            "Name": "PRO_C_Construction_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Travel-Description\", \"Travel towards the marked location (M)\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build.BPQ_PRO_C_Construction_Build_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build-Description\", \"Construct a Treehouse\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Beds",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Bed.BPQ_PRO_C_Construction_Build_Bed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Beds-Description\", \"Beds {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Anvil",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Anvil.BPQ_PRO_C_Construction_Build_Anvil_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Anvil-Description\", \"Anvil Bench {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Armor",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Armor.BPQ_PRO_C_Construction_Build_Armor_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Armor-Description\", \"Textiles Bench {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Skinning",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Construction/BPQ_OLY_Canyon_Construction_Skinning_Bench.BPQ_OLY_Canyon_Construction_Skinning_Bench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Skinning-Description\", \"Skinning Bench {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Oxite",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Oxite.BPQ_PRO_C_Construction_Build_Oxite_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Oxite-Description\", \"Oxidizer {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Potbelly",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Potbelly.BPQ_PRO_C_Construction_Build_Potbelly_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Potbelly-Description\", \"Potbelly Stove {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Construction_Build_Furnace",
+            "Class": "/Game/BP/Quests/Prometheus/C/Construction/BPQ_PRO_C_Construction_Build_Furnace.BPQ_PRO_C_Construction_Build_Furnace_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Construction_Build_Furnace-Description\", \"Stone Furnace {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research.BPQ_PRO_C_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research-Description\", \"RESEARCH: MIASMIC RESOURCES\")",
+            "LocationQuery": {
+                "RowName": "PRO_MiasmicResearchStation"
+            }
+        },
+        {
+            "Name": "PRO_C_Research_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Huge.BPQ_Travel_Huge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Travel-Description\", \"Travel towards the marked location (M)\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build.BPQ_PRO_C_Research_Build_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build-Description\", \"Construct a Miasmic Research Station\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Cleaning",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Cleaner.BPQ_PRO_C_Research_Build_Cleaner_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Cleaning-Description\", \"Organic Residue Cleanser {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Solar",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Solar.BPQ_PRO_C_Research_Build_Solar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Solar-Description\", \"Solar Panel {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Foundry",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Foundry.BPQ_PRO_C_Research_Build_Foundry_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Foundry-Description\", \"Foundry {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Furnace",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Furnace.BPQ_PRO_C_Research_Build_Furnace_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Furnace-Description\", \"Electric Furnace {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Alteration_Bench",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Alteration.BPQ_PRO_C_Research_Build_Alteration_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Alteration_Bench-Description\", \"Advanced Alteration Bench {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Build_Chemisry_Bench",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Build_Chemistry.BPQ_PRO_C_Research_Build_Chemistry_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Build_Chemisry_Bench-Description\", \"Chemistry Bench {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_CollectMiasma.BPQ_PRO_C_Research_CollectMiasma_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Collect-Description\", \"Collect Crysallised Miasma by hunting and skinning creatures in the swamp\")"
+        },
+        {
+            "Name": "PRO_C_Research_Refine",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Refine_Ironwood.BPQ_PRO_C_Research_Refine_Ironwood_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Refine-Description\", \"Refine Crystallised Miasma into Distilled Miasmic Coating Via the Chemistry Bench {0} / {1} \")"
+        },
+        {
+            "Name": "PRO_C_Research_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Craft.BPQ_PRO_C_Research_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Craft-Description\", \"Craft Miasmic Tools\")"
+        },
+        {
+            "Name": "PRO_C_Research_Craft_Knife",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Craft_Knife.BPQ_PRO_C_Research_Craft_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Craft_Knife-Description\", \"{0} / {1} Miasmic Sickle\")"
+        },
+        {
+            "Name": "PRO_C_Research_Craft_Sickle",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Craft_Sickle.BPQ_PRO_C_Research_Craft_Sickle_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Craft_Sickle-Description\", \"{0} / {1} Miasmic Knife\")"
+        },
+        {
+            "Name": "PRO_C_Research_Craft_Axe",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Craft_Axe.BPQ_PRO_C_Research_Craft_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Craft_Axe-Description\", \"{0} / {1} Miasmic Axe\")"
+        },
+        {
+            "Name": "PRO_C_Research_Craft_Pickaxe",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Craft_Pick.BPQ_PRO_C_Research_Craft_Pick_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Craft_Pickaxe-Description\", \"{0} / {1} Miasmic Pickaxe\")"
+        },
+        {
+            "Name": "PRO_C_Research_Test",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Test.BPQ_PRO_C_Research_Test_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Test-Description\", \"Test the Tools and Deliver the Materials to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_C_Research_Test_Knife",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Test_Knife.BPQ_PRO_C_Research_Test_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Test_Knife-Description\", \"Deliver Acidic Glands {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Test_Sickle",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Test_Knife.BPQ_PRO_C_Research_Test_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Test_Sickle-Description\", \"Deliver Thorned Plants (Any) {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Test_Axe",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Test_Axe.BPQ_PRO_C_Research_Test_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Test_Axe-Description\", \"Deliver Infected Bark {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_C_Research_Test_Pickaxe",
+            "Class": "/Game/BP/Quests/Prometheus/C/Research/BPQ_PRO_C_Research_Test_Axe.BPQ_PRO_C_Research_Test_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_C_Research_Test_Pickaxe-Description\", \"Deliver Noxious Crust (Any) {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_A_Extraction",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction.BPQ_PRO_A_Extraction_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction-Description\", \"EXTRACTION: Ice\")",
+            "LocationQuery": {
+                "RowName": "PRO_ArcticExtraction"
+            }
+        },
+        {
+            "Name": "PRO_A_Extraction_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Collect.BPQ_PRO_A_Extraction_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Collect-Description\", \"Collect the Drilling Equipment from the Sinotai Delivery Pod (M)\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Travel-Description\", \"Travel to the location marked on your map (M)\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Extract",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Extract.BPQ_PRO_A_Extraction_Extract_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Extract-Description\", \"Set up a Ice Borer at a nearby Ice Vein and Extract Super Cooled Ice {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Build",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Build.BPQ_PRO_A_Extraction_Build_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Build-Description\", \"Setup a small Encampment\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Build_Cement",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Build_Cement.BPQ_PRO_A_Extraction_Build_Cement_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Build_Cement-Description\", \"{0} / {1} Cement Mixer\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Build_Concrete",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Build_Concrete.BPQ_PRO_A_Extraction_Build_Concrete_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Build_Concrete-Description\", \"{0} / {1} Concrete Furnace\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Build_Forge",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Build_Forge.BPQ_PRO_A_Extraction_Build_Forge_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Build_Forge-Description\", \"{0} / {1} Forge\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Craft.BPQ_PRO_A_Extraction_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Craft-Description\", \"(Optional) Craft Items\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Craft_Pick",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Craft_Pickaxe.BPQ_PRO_A_Extraction_Craft_Pickaxe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Craft_Pick-Description\", \"(Optional) Craft a Cold Steel Pickaxe to Collect Frozen Ore\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Craft_Shovel",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Craft_Shovel.BPQ_PRO_A_Extraction_Craft_Shovel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Craft_Shovel-Description\", \"(Optional) Craft a Shovel to Collect Ice\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Craft_Coco",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Craft_Coco.BPQ_PRO_A_Extraction_Craft_Coco_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Craft_Coco-Description\", \"(Optional) Craft some Cocoa to Stay Warm\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Deliver.BPQ_PRO_A_Extraction_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Deliver-Description\", \"Deliver the supplies to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Deliver_Ice",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Deliver_Ice.BPQ_PRO_A_Extraction_Deliver_Ice_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Deliver_Ice-Description\", \"{0} / {1} Ice\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Deliver_SCIce",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Deliver_SCIce.BPQ_PRO_A_Extraction_Deliver_SCIce_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Deliver_SCIce-Description\", \"{0} / {1} Super Cooled Ice\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Deliver_FrozenOre",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Deliver_FrozenOre.BPQ_PRO_A_Extraction_Deliver_FrozenOre_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Deliver_FrozenOre-Description\", \"{0} / {1} Frozen Ore\")"
+        },
+        {
+            "Name": "PRO_A_Extraction_Deliver_ColdSteel",
+            "Class": "/Game/BP/Quests/Prometheus/A/Extraction/BPQ_PRO_A_Extraction_Deliver_ColdSteel.BPQ_PRO_A_Extraction_Deliver_ColdSteel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Extraction_Deliver_ColdSteel-Description\", \"{0} / {1} Cold Steel Ingots\")"
+        },
+        {
+            "Name": "PRO_B_Extermination",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Base.BPQ_PRO_B_Extermination_Base_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination-Description\", \"EXTERMINATION: Volcanic\")",
+            "LocationQuery": {
+                "RowName": "BW4_Boss3"
+            }
+        },
+        {
+            "Name": "PRO_B_Extermination_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Collect.BPQ_PRO_B_Extermination_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Collect-Description\", \"Collected the provided equipment from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Hunt",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt.BPQ_PRO_B_Extermination_Hunt_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Hunt-Description\", \"Eliminate Creatures in Volcanic Areas\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Lava",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt_Lava.BPQ_PRO_B_Extermination_Hunt_Lava_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Lava-Description\", \"{0} / {1} Lava Broodling\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_GasFlyer",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt_GasFlier.BPQ_PRO_B_Extermination_Hunt_GasFlier_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_GasFlyer-Description\", \"{0} / {1} Lava Flyer\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Drake",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt_Drake.BPQ_PRO_B_Extermination_Hunt_Drake_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Drake-Description\", \"{0} / {1} Ashen Drake\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Stonejaw",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt_Stonejaw.BPQ_PRO_B_Extermination_Hunt_Stonejaw_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Stonejaw-Description\", \"{0} / {1} Stonejaw\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Fish",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish.BPQ_PRO_B_Extermination_Fish_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish-Description\", \"Catch Fish in the Marked Zone (M)\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Fish_1",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish_1.BPQ_PRO_B_Extermination_Fish_1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish_1-Description\", \"{0} / {1} Sunset Ripjaw\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Fish_2",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish_2.BPQ_PRO_B_Extermination_Fish_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish_2-Description\", \"{0} / {1} Void Triggerfish\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Fish_3",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish_3.BPQ_PRO_B_Extermination_Fish_3_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish_3-Description\", \"{0} / {1} Coral Darter\")"
+        },
+        {
+            "Name": "PRO_B_Extermination_Fish_4",
+            "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish_4.BPQ_PRO_B_Extermination_Fish_4_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish_4-Description\", \"{0} / {1} Neon Dory\")"
         }
     ]
 }

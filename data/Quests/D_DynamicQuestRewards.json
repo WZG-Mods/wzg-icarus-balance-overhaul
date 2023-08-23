@@ -1352,14 +1352,14 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Resource_Plants",
+                        "RowName": "Resource_Seeds_Plants",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
                 },
                 {
                     "Item": {
-                        "RowName": "Food_T1_RawVeg",
+                        "RowName": "Resource_Seeds_Veg",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
@@ -1417,7 +1417,7 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Misc_Farming",
+                        "RowName": "Resource_Seeds_Veg",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": false
@@ -1852,7 +1852,7 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Food_T1_RawVeg",
+                        "RowName": "Resource_Seeds_Veg",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
@@ -1881,13 +1881,71 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Food_T1_RawVeg",
+                        "RowName": "Resource_Seeds_Veg",
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
                 }
             ],
             "Weighting": 300
+        },
+        {
+            "Name": "Tools_Shovel",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Shovel-DisplayName\", \"Settlement Assistance: Shovel\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Shovel-Description\", \"UDA provided assistance to new prospectors.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Shovel",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Seeds_Plants",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Seeds_Veg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 40
+        },
+        {
+            "Name": "Armor_Shield",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Shield-DisplayName\", \"Armor Support: Shields\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Armor_Shield-Description\", \"UDA advises additional care be taken to avoid direct hits from wildlife.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Consumable_Tonic_Pill",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Tool_T2_Shield",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": false
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_ArmorVariety",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 90
         }
     ]
 }

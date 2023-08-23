@@ -1,12 +1,11 @@
 {
     "RowStruct": "/Script/Icarus.FarmingSeedData",
     "Defaults": {
-        "Seed": {
-            "RowName": "None",
-            "DataTableName": "D_ItemsStatic"
-        },
-        "GrowthStates": [],
         "CropRewards": {
+            "RowName": "None",
+            "DataTableName": "D_ItemRewards"
+        },
+        "DecayedRewards": {
             "RowName": "None",
             "DataTableName": "D_ItemRewards"
         },
@@ -15,851 +14,882 @@
             "HarvestedSound": "None",
             "ClearedSound": "None"
         },
-        "DecayTime": 0,
-        "DeadState": {
+        "Stage1": {
             "RowName": "None",
             "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Stage2": {
+            "RowName": "None",
+            "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Stage3": {
+            "RowName": "None",
+            "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Stage4": {
+            "RowName": "None",
+            "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Mature": {
+            "RowName": "None",
+            "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Decayed": {
+            "RowName": "None",
+            "DataTableName": "D_FarmingGrowthStates"
+        },
+        "Itemable": {
+            "RowName": "None",
+            "DataTableName": "D_Itemable"
+        },
+        "Deployable": {
+            "RowName": "None",
+            "DataTableName": "D_Deployable"
         }
     },
     "Rows": [
         {
+            "Name": "Invalid",
+            "Audio": {
+                "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+                "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CORN_HARVEST.SFX_CORN_HARVEST",
+                "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
+            }
+        },
+        {
             "Name": "Corn",
-            "Seed": {
-                "RowName": "Corn"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Corn_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Corn_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Corn_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Corn_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Corn_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Corn_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CORN_HARVEST.SFX_CORN_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Corn_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Corn_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Corn_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Corn_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Corn_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Corn_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Corn_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Corn"
             }
         },
         {
             "Name": "Wheat",
-            "Seed": {
-                "RowName": "Wheat"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Wheat_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Wheat_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Wheat_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Wheat_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Wheat_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Wheat_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_WHEAT_HARVEST.SFX_WHEAT_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 3600,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Wheat_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Wheat_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Wheat_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Wheat_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Wheat_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Wheat_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Wheat_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Wheat"
             }
         },
         {
             "Name": "ReedFlower",
-            "Seed": {
-                "RowName": "Reed_Flower"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "ReedFlower_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "ReedFlower_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "ReedFlower_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "ReedFlower_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "ReedFlower_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Reed_Flower_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_REED_HARVEST.SFX_REED_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "ReedFlower_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "ReedFlower_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "ReedFlower_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "ReedFlower_Growth_04"
+            },
+            "Mature": {
+                "RowName": "ReedFlower_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "ReedFlower_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Reed_Flower_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Reed"
             }
         },
         {
             "Name": "Yeast",
-            "Seed": {
-                "RowName": "Yeast"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Yeast_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Yeast_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Yeast_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Yeast_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Yeast_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Yeast_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_LILY_HARVEST.SFX_LILY_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Yeast_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Yeast_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Yeast_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Yeast_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Yeast_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Yeast_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Yeast_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Yeast"
             }
         },
         {
             "Name": "Lily",
-            "Seed": {
-                "RowName": "Lily"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Lily_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Lily_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Lily_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Lily_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Lily_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Lily_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_LILY_HARVEST.SFX_LILY_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Lily_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Lily_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Lily_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Lily_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Lily_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Lily_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Lily_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Lily"
             }
         },
         {
             "Name": "BerryBush",
-            "Seed": {
-                "RowName": "Berry"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "BerryBush_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "BerryBush_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "BerryBush_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "BerryBush_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "BerryBush_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "BerryBush_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_BERRYBUSH_HARVEST.SFX_BERRYBUSH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 3600,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "BerryBush_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "BerryBush_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "BerryBush_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "BerryBush_Growth_04"
+            },
+            "Mature": {
+                "RowName": "BerryBush_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "BerryBush_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Berry_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Berry"
             }
         },
         {
             "Name": "Pumpkin",
-            "Seed": {
-                "RowName": "Pumpkin"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Pumpkin_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Pumpkin_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Pumpkin_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Pumpkin_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Pumpkin_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Pumpkin_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_GOURD_HARVEST.SFX_GOURD_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Pumpkin_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Pumpkin_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Pumpkin_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Pumpkin_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Pumpkin_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Pumpkin_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Pumpkin_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Pumpkin"
             }
         },
         {
             "Name": "Beans",
-            "Seed": {
-                "RowName": "Bean"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Beans_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Beans_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Beans_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Beans_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Beans_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Beans_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_FIBER_HARVEST.SFX_FIBER_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 3600,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Beans_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Beans_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Beans_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Beans_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Beans_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Beans_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Bean_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Beans"
             }
         },
         {
             "Name": "Squash",
-            "Seed": {
-                "RowName": "Squash"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Squash_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Squash_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Squash_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Squash_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Squash_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Squash_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_SQUASH_HARVEST.SFX_SQUASH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Squash_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Squash_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Squash_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Squash_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Squash_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Squash_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Squash_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Squash"
             }
         },
         {
             "Name": "Watermelon",
-            "Seed": {
-                "RowName": "Watermelon"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Watermelon_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Watermelon_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Watermelon_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Watermelon_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Watermelon_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Watermelon_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_GOURD_HARVEST.SFX_GOURD_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Watermelon_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Watermelon_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Watermelon_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Watermelon_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Watermelon_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Watermelon_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Watermelon_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Watermelon"
             }
         },
         {
             "Name": "Cocoa",
-            "Seed": {
-                "RowName": "Cocoa"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Cocoa_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Cocoa_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Cocoa_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Cocoa_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Cocoa_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Cocoa_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_COFFEE_HARVEST.SFX_COFFEE_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Cocoa_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Cocoa_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Cocoa_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Cocoa_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Cocoa_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Cocoa_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Cocoa_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Cocoa"
             }
         },
         {
             "Name": "Coffee",
-            "Seed": {
-                "RowName": "Coffee"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Coffee_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Coffee_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Coffee_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Coffee_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Coffee_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Coffee_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_COFFEE_HARVEST.SFX_COFFEE_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Coffee_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Coffee_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Coffee_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Coffee_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Coffee_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Coffee_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Coffee_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Coffee"
             }
         },
         {
             "Name": "GreenTea",
-            "Seed": {
-                "RowName": "GreenTea"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "GreenTea_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "GreenTea_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "GreenTea_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "GreenTea_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "GreenTea_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "GreenTea_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_FIBER_HARVEST.SFX_FIBER_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "GreenTea_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "GreenTea_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "GreenTea_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "GreenTea_Growth_04"
+            },
+            "Mature": {
+                "RowName": "GreenTea_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "GreenTea_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_GreenTea_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_GreenTea"
             }
         },
         {
             "Name": "WildTea",
-            "Seed": {
-                "RowName": "WildTea"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "WildTea_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "WildTea_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "WildTea_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "WildTea_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "WildTea_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "WildTea_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_FIBER_HARVEST.SFX_FIBER_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "WildTea_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "WildTea_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "WildTea_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "WildTea_Growth_04"
+            },
+            "Mature": {
+                "RowName": "WildTea_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "WildTea_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_WildTea_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_WildTea"
             }
         },
         {
             "Name": "Carrot",
-            "Seed": {
-                "RowName": "Carrot"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Carrot_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Carrot_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Carrot_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Carrot_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Carrot_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Carrot_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CARROT_HARVEST.SFX_CARROT_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Carrot_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Carrot_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Carrot_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Carrot_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Carrot_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Carrot_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Carrot_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Carrot"
             }
         },
         {
             "Name": "Mushroom",
-            "Seed": {
-                "RowName": "Mushroom"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Mushroom_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Mushroom_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Mushroom_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Mushroom_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Mushroom_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Mushroom_Crops"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CARROT_HARVEST.SFX_CARROT_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 4800,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Mushroom_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Mushroom_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Mushroom_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Mushroom_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Mushroom_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Mushroom_Growth_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Mushroom_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Mushroom"
             }
         },
         {
             "Name": "Rhubarb",
-            "Seed": {
-                "RowName": "Rhubarb"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Rhubarb_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Rhubarb_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Rhubarb_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Rhubarb_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Rhubarb_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Rhubarb_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CONIFLOWER_HARVEST.SFX_CONIFLOWER_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Rhubarb_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Rhubarb_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Rhubarb_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Rhubarb_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Rhubarb_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Rhubarb_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Rhubarb_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Rhubarb"
             }
         },
         {
             "Name": "Kumara",
-            "Seed": {
-                "RowName": "Kumara"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Kumara_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Kumara_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Kumara_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Kumara_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Kumara_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Kumara_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_SQUASH_HARVEST.SFX_SQUASH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Kumara_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Kumara_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Kumara_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Kumara_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Kumara_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Kumara_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Kumara_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Kumara"
             }
         },
         {
             "Name": "Avocado",
-            "Seed": {
-                "RowName": "Avocado"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Avocado_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Avocado_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Avocado_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Avocado_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Avocado_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Avocado_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_SQUASH_HARVEST.SFX_SQUASH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Avocado_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Avocado_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Avocado_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Avocado_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Avocado_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Avocado_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Avocado_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Avocado"
             }
         },
         {
             "Name": "Strawberry",
-            "Seed": {
-                "RowName": "Strawberry"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Stawberry_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Stawberry_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Stawberry_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Stawberry_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Stawberry_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Strawberry_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_BERRYBUSH_HARVEST.SFX_BERRYBUSH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Stawberry_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Stawberry_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Stawberry_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Stawberry_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Stawberry_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Stawberry_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Strawberry_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Strawberry"
             }
         },
         {
             "Name": "Fiber",
-            "Seed": {
-                "RowName": "Fiber"
-            },
-            "GrowthStates": [
-                {
-                    "RowName": "Fiber_Growth_01",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Fiber_Growth_02",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Fiber_Growth_03",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Fiber_Growth_04",
-                    "DataTableName": "D_FarmingGrowthStates"
-                },
-                {
-                    "RowName": "Fiber_Growth_05",
-                    "DataTableName": "D_FarmingGrowthStates"
-                }
-            ],
             "CropRewards": {
                 "RowName": "Fiber_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
             },
             "Audio": {
                 "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
                 "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_BERRYBUSH_HARVEST.SFX_BERRYBUSH_HARVEST",
                 "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
             },
-            "DecayTime": 7200,
-            "DeadState": {
+            "Stage1": {
+                "RowName": "Fiber_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Fiber_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Fiber_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Fiber_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Fiber_Growth_05"
+            },
+            "Decayed": {
                 "RowName": "Fiber_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Fiber_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Fiber"
+            }
+        },
+        {
+            "Name": "Test_Seed",
+            "CropRewards": {
+                "RowName": "Avocado_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
+            },
+            "Audio": {
+                "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+                "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_BERRYBUSH_HARVEST.SFX_BERRYBUSH_HARVEST",
+                "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
+            },
+            "Stage1": {
+                "RowName": "Test_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Test_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Test_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Test_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Test_Growth_05"
+            },
+            "Decayed": {
+                "RowName": "Test_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Test_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Test_Seed"
             }
         }
     ]
