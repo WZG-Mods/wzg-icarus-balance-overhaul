@@ -2828,12 +2828,123 @@
             "MaxRestackingAmount": -1
         },
         {
+            "Name": "Ice_Borer",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Drill/BP_Deep_Mining_Ice_Borer.BP_Deep_Mining_Ice_Borer_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_IceBorer_T3.SM_DEP_IceBorer_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_Ice_Deposit"
+            ],
+            "SnapSocketsOrTags": [
+                "Ice_Socket"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Exotic_Processor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/ExoticProcessor/BP_Exotic_Processor.BP_Exotic_Processor_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Exotic_Cleaner.SM_DEP_Exotic_Cleaner",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "CollectionShipBeacon",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CollectionShip/BP_CollectionShipBeacon.BP_CollectionShipBeacon_C",
             "PreviewStaticMesh": "/Game/ThirdPartyAssets/StarterContent/Shapes/Shape_Cube.Shape_Cube",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_RADAR.SFX_DEP_DEPLOY_RADAR",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Clay_Brick_Window",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Windows/BP_Window_ClayBrick.BP_Window_ClayBrick_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Window_Brick.SM_BLD_Window_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "window_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "window"
+            ],
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "X": -20,
+                "Y": -30,
+                "Z": -30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Railing",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Railings/BP_Railing_Clay_Brick.BP_Railing_Clay_Brick_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Clay_Brick_Railing.T_ITEM_Clay_Brick_Railing",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Clay_Brick_Railing-DeployableName\", \"Floor\")",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Railing_Brick.SM_BLD_Railing_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "RailingSocket1",
+                "RailingSocket2",
+                "RailingSocket3",
+                "RailingSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Railing_Stairs",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Railings/BP_Railing_Clay_Brick_Stairs.BP_Railing_Clay_Brick_Stairs_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Clay_Brick_Railing_Stairs.T_ITEM_Clay_Brick_Railing_Stairs",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Clay_Brick_Railing_Stairs-DeployableName\", \"Stairs\")",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Railing_Stairs_Brick.SM_BLD_Railing_Stairs_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Stairs"
+            ],
+            "SnapSocketsOrTags": [
+                "RailingSocket1",
+                "RailingSocket2",
+                "RailingSocket3",
+                "RailingSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Clay_Brick_Door",

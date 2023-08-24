@@ -6967,7 +6967,7 @@
         {
             "Name": "Repair_Flapper_Stamina_Regen",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Repair_Flapper_Stamina_Regen-DisplayName\", \"Whacker Endurance\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Repair_Flapper_Stamina_Regen-Description\", \"Incresed stamina regen with fire whacker equipped\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Repair_Flapper_Stamina_Regen-Description\", \"Increased stamina regen with fire whacker equipped\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Repairing/Talent_Repairing_FlapperEndurance.Talent_Repairing_FlapperEndurance",
             "TalentTree": {
                 "RowName": "Construction_Repairing"
@@ -23869,6 +23869,354 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Prospect_Pro_Story_1",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_1_Small.T_Prospect_PROSTORY_1_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_1",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_Story_2",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_2_Small.T_Prospect_PROSTORY_2_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_2",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 2200,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_B_Exploration",
+            "ExtraData": {
+                "RowName": "PRO_B_Exploration",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 4800,
+                "Y": 2200
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_C_Exploration",
+            "ExtraData": {
+                "RowName": "PRO_C_Exploration",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 3500,
+                "Y": 800
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_A_Exploration",
+            "ExtraData": {
+                "RowName": "PRO_A_Exploration",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 2200,
+                "Y": 2250
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_Story_3",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_3_Small.T_Prospect_PROSTORY_3_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_3",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 3500,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_Story_4",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_4_Small.T_Prospect_PROSTORY_4_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_4",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 4800,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_Story_6",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_6_Small.T_Prospect_PROSTORY_6_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_6",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 7450,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_5",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_Story_5",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_5_Small.T_Prospect_PROSTORY_5_Small",
+            "ExtraData": {
+                "RowName": "PRO_Story_5",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 6100,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_C_Construction",
+            "ExtraData": {
+                "RowName": "PRO_C_Construction",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 3050,
+                "Y": 350
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_C_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_B_Extermination",
+            "ExtraData": {
+                "RowName": "PRO_B_Extermination",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 4250,
+                "Y": 2750
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_B_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Pro_A_Extraction",
+            "ExtraData": {
+                "RowName": "PRO_A_Extraction",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 1700,
+                "Y": 2750
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_A_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Prospect_Styx_B_Stockpile",
             "ExtraData": {
                 "RowName": "STYX_B_Stockpile",
@@ -23898,6 +24246,93 @@
             }
         },
         {
+            "Name": "Deep_Mining_Ice_Borer",
+            "ExtraData": {
+                "RowName": "Item_Ice_Borer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Deep_Mining_Drill_Biofuel",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Exotic_Processor",
+            "ExtraData": {
+                "RowName": "Item_Exotic_Processor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 3800,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Electirc_Utility_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Metal_Sledgehammer",
+            "ExtraData": {
+                "RowName": "Item_Metal_Sledgehammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 2300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Mission_Communicator_T2",
             "ExtraData": {
                 "RowName": "Item_Mission_Communicator_T2",
@@ -23920,6 +24355,64 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Mission_Communicator_T3",
+            "ExtraData": {
+                "RowName": "Item_Mission_Communicator_T3",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 7550,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Mission_Communicator_T4",
+            "ExtraData": {
+                "RowName": "Item_Mission_Communicator_T4",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 3400,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Electirc_Utility_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Animal_Bed",
@@ -25101,6 +25594,35 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Landmine",
+            "ExtraData": {
+                "RowName": "Item_Landmine",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 1100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T4_NonPowered_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Wood_Cart",
             "ExtraData": {
                 "RowName": "Item_Saddle_Cart_Wood",
@@ -25149,6 +25671,35 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Exotic_Harvester",
+            "ExtraData": {
+                "RowName": "Item_Exotic_Harvester",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 5600,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Reroute_T4Devices01",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Basic_Fishing_Rod",
@@ -27228,6 +27779,157 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Obsidian_Knife",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Spear",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Spear",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Axe",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Axe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Pickaxe",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Pickaxe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5600,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Sledgehammer",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Sledgehammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5900,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Crossbow_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -27249,6 +27951,67 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Obsidian_Bolt",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Bolt",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 3500,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crossbow_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 6750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Bone_Tools_Reroute",
@@ -27280,6 +28043,181 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Bone_Chest_Armor",
+            "ExtraData": {
+                "RowName": "Item_Bone_Chest",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 13950,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Bone_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Bone_Armor_Chest"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Bone_Leg_Armor",
+            "ExtraData": {
+                "RowName": "Item_Bone_Legs",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 14250,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Bone_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Bone_Armor_Legs"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Bone_Feet_Armor",
+            "ExtraData": {
+                "RowName": "Item_Bone_Feet",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 14400,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Bone_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Bone_Armor_Feet"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Bone_Head_Armor",
+            "ExtraData": {
+                "RowName": "Item_Bone_Head",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 13800,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Bone_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Bone_Armor_Head"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Bone_Arm_Armor",
+            "ExtraData": {
+                "RowName": "Item_Bone_Arms",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 14100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Bone_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Bone_Armor_Arms"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Bone_Armor_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -27301,6 +28239,105 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Cold_Steel_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Cold_Steel_Ammo-DisplayName\", \"Cold Steel Ammo\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Cold_Steel_Ammo-Description\", \"Cold Steel Ammo for Munitions\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Cold_Steel.T_ITEM_Ammo_Pistol_Round_Cold_Steel",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 6750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Ammo_Casing",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 30,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Iron_Wood_Ammo-DisplayName\", \"Iron Wood Ammo\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Iron_Wood_Ammo-Description\", \"Iron Wood Ammo for Munitions\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Ironwood.T_ITEM_Ammo_Pistol_Round_Ironwood",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 6750,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Ammo_Casing",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 30,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Obsidian_Ammo-DisplayName\", \"Obsidian Ammo\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Obsidian_Ammo-Description\", \"Obsidian Ammo for Munitions\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Obsidian.T_ITEM_Ammo_Pistol_Round_Obsidian",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 7050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Ammo_Casing",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 30,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "T2_Survival_Reroute",
@@ -27326,6 +28363,186 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Cold_Steel_Axe",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Axe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4450,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Pickaxe",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Pickaxe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4750,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Sledgehammer",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Sledgehammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 5050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Sickle",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Sickle",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 5200,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Knife",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Spear",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Spear",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 4900,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "T3_Survival",
             "bIsReroute": true,
             "TalentTree": {
@@ -27348,6 +28565,355 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Cold_Steel_Bolt",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Bolt",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 3550,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Sickle",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Sickle",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 5750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Tools_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Cold_Steel_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Cold_Steel_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 6150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Axe",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Axe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6600,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Pickaxe",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Pickaxe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6600,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Knife",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Spear",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Spear",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Sledgehammer",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Sledgehammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 6900,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Sickle",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Sickle",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 7050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Iron_Wood_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Bolt",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Bolt",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 5450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Iron_Wood_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Iron_Wood_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 7850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Power_Reroute",
@@ -27537,6 +29103,161 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Heavy_Obsidian_Head",
+            "ExtraData": {
+                "RowName": "Item_Heavy_Obsidian_Head",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 12750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Heavy_Obsidian_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Heavy_Obsidian_Chest",
+            "ExtraData": {
+                "RowName": "Item_Heavy_Obsidian_Chest",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 12900,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Heavy_Obsidian_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Heavy_Obsidian_Legs",
+            "ExtraData": {
+                "RowName": "Item_Heavy_Obsidian_Legs",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 13200,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Heavy_Obsidian_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Heavy_Obsidian_Arms",
+            "ExtraData": {
+                "RowName": "Item_Heavy_Obsidian_Arms",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 13050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Heavy_Obsidian_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "DrawMethodOverride": "ShortestDistance",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Heavy_Obsidian_Feet",
+            "ExtraData": {
+                "RowName": "Item_Heavy_Obsidian_Feet",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 13350,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Heavy_Obsidian_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Heavy_Obsidian_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -27557,15 +29278,159 @@
                     "DataTableName": "D_Talents"
                 }
             ],
-            "RequiredFlags": [
-                {
-                    "DataTableName": "D_CharacterFlags",
-                    "RowName": "Talent_Polarbear_Armor"
-                }
-            ],
             "RequiredLevel": 25,
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Obsidian_Head",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Head",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 9550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Chest",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Chest",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 9700,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Arms",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Arms",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 9850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Legs",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Legs",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 10000,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Obsidian_Feet",
+            "ExtraData": {
+                "RowName": "Item_Obsidian_Feet",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 10150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Obsidian_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Obsidian_Armor_Reroute",
@@ -27613,6 +29478,35 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Prospect_Pro_A_Stockpile",
+            "ExtraData": {
+                "RowName": "PRO_A_Stockpile",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 2700,
+                "Y": 2750
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_A_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Workshop_Consumable_Reroute",
@@ -27722,6 +29616,513 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Workshop_Knife_Shengong_Echo",
+            "ExtraData": {
+                "RowName": "Meta_Knife_Shengong_Echo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Knives"
+            },
+            "Position": {
+                "X": 4350,
+                "Y": 750
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Knife_Inaris_Delta_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Shengong_Echo",
+            "ExtraData": {
+                "RowName": "Meta_Axe_Shengong_Echo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Axes"
+            },
+            "Position": {
+                "X": 4250,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Axe_Shengong_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Shengong_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Workshop_Axes"
+            },
+            "Position": {
+                "X": 2800,
+                "Y": 800
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Axe_Larkwell",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Workshop_Axe_Inaris_Alpha",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Inaris_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Axe_Inaris_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Axes"
+            },
+            "Position": {
+                "X": 3450,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Axe_Shengong_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Inaris_Delta",
+            "ExtraData": {
+                "RowName": "Meta_Axe_Inaris_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Axes"
+            },
+            "Position": {
+                "X": 3150,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Axe_Shengong_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Inaris_Charlie",
+            "ExtraData": {
+                "RowName": "Meta_Axe_Inaris_Charlie",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Axes"
+            },
+            "Position": {
+                "X": 3800,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Axe_Shengong_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bow_Shengong_Delta",
+            "ExtraData": {
+                "RowName": "Meta_Bow_Shengong_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Bows"
+            },
+            "Position": {
+                "X": 4600,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bow_Larkwell",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bow_Shengong_Echo",
+            "ExtraData": {
+                "RowName": "Meta_Bow_Shengong_Echo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Bows"
+            },
+            "Position": {
+                "X": 5650,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bow_Shengong_Delta",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Arrow_Inaris_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Arrow_Inaris_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Bows"
+            },
+            "Position": {
+                "X": 4600,
+                "Y": 1400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Arrow_Shengong",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Arrow_Inaris_Delta",
+            "ExtraData": {
+                "RowName": "Meta_Arrow_Inaris_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Bows"
+            },
+            "Position": {
+                "X": 5650,
+                "Y": 1400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Arrow_Shengong",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Arrow_Inaris_Charlie",
+            "ExtraData": {
+                "RowName": "Meta_Arrow_Inaris_Charlie",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Bows"
+            },
+            "Position": {
+                "X": 5150,
+                "Y": 1400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Arrow_Shengong",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Crossbow_Inaris_C",
+            "ExtraData": {
+                "RowName": "Meta_Crossbow_Inaris_C",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Crossbows"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Crossbow_Inaris_B",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Crossbow_Inaris_D",
+            "ExtraData": {
+                "RowName": "Meta_Crossbow_Inaris_D",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Crossbows"
+            },
+            "Position": {
+                "X": 2900,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Crossbow_Inaris_C",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Envirosuit_Larkwell_Alpha",
+            "ExtraData": {
+                "RowName": "Meta_Envirosuit_Larkell_Alpha",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Envirosuits"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 550
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Axe_Knife_Inaris_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Knife_Inaris_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Knives"
+            },
+            "Position": {
+                "X": 3400,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Knife_Inaris_Delta_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Knife_Inaris_Delta",
+            "ExtraData": {
+                "RowName": "Meta_Knife_Inaris_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Knives"
+            },
+            "Position": {
+                "X": 3650,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Knife_Inaris_Delta_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Knife_Inaris_Charlie",
+            "ExtraData": {
+                "RowName": "Meta_Knife_Inaris_Charlie",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Knives"
+            },
+            "Position": {
+                "X": 3900,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Knife_Inaris_Delta_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Knife_Inaris_Delta_0",
             "bIsReroute": true,
             "TalentTree": {
@@ -27747,6 +30148,126 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Workshop_Pickaxe_Inaris_Charlie",
+            "ExtraData": {
+                "RowName": "Meta_Pickaxe_Inaris_Charlie",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Pickaxes"
+            },
+            "Position": {
+                "X": 3450,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Pickaxe_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Pickaxe_Inaris_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Pickaxe_Inaris_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Pickaxes"
+            },
+            "Position": {
+                "X": 3200,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Pickaxe_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Pickaxe_Inaris_Delta",
+            "ExtraData": {
+                "RowName": "Meta_Pickaxe_Inaris_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Pickaxes"
+            },
+            "Position": {
+                "X": 3700,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Pickaxe_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Pickaxe_Shengong_Echo",
+            "ExtraData": {
+                "RowName": "Meta_Pickaxe_Shengong_Echo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Pickaxes"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Pickaxe_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Workshop_Pickaxe_Reroute_3",
@@ -27777,6 +30298,126 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Workshop_Spear_Inaris_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Spear_Inaris_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Spears"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Spear_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Spear_Inaris_Charlie",
+            "ExtraData": {
+                "RowName": "Meta_Spear_Inaris_Charlie",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Spears"
+            },
+            "Position": {
+                "X": 3850,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Spear_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Pickaxe_Inaris_Delta_0",
+            "ExtraData": {
+                "RowName": "Meta_Spear_Inaris_Delta",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Spears"
+            },
+            "Position": {
+                "X": 4100,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Spear_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Spear_Shengong_Echo",
+            "ExtraData": {
+                "RowName": "Meta_Spear_Shengong_Echo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Spears"
+            },
+            "Position": {
+                "X": 4550,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Spear_Reroute_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Spear_Reroute_3",
             "bIsReroute": true,
             "TalentTree": {
@@ -27803,6 +30444,36 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Workshop_Envirosuit_Larkwell_Bravo",
+            "ExtraData": {
+                "RowName": "Meta_Envirosuit_Larkell_Bravo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Envirosuits"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Workshop_Envirosuit_Reroute",
@@ -27837,6 +30508,275 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Workshop_Larkwell_Bolt_Piercing",
+            "ExtraData": {
+                "RowName": "Meta_Bolt_Set_Larkwell_Piercing",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Crossbows"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Larkwell_Bolt_Standard",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Larkwell_Bolt_Electroshock",
+            "ExtraData": {
+                "RowName": "Meta_Bolt_Set_Larkwell_Electroshock",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Crossbows"
+            },
+            "Position": {
+                "X": 2850,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Larkwell_Bolt_Piercing",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Larkwell_Bolt_Explosive",
+            "ExtraData": {
+                "RowName": "Meta_Bolt_Set_Larkwell_Explosive",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Crossbows"
+            },
+            "Position": {
+                "X": 3700,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Larkwell_Bolt_Electroshock",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Temp",
+            "ExtraData": {
+                "RowName": "Meta_Module_Temperature",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 3750,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Wounds",
+            "ExtraData": {
+                "RowName": "Meta_Module_Wounds",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4850,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Fishing",
+            "ExtraData": {
+                "RowName": "Meta_Module_Fishing",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4200,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Extremes",
+            "ExtraData": {
+                "RowName": "Meta_Module_Extremes",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 3950,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Caving",
+            "ExtraData": {
+                "RowName": "Meta_Module_Caving",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4650,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Taming",
+            "ExtraData": {
+                "RowName": "Meta_Module_Taming",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4400,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Module_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -27859,6 +30799,93 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Workshop_Heated_Canteen_Larkwell",
+            "ExtraData": {
+                "RowName": "Meta_Heated_Canteen_Larkwell",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Gadgets"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 550
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Canteen_Shengong",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Oxygen_Tank_Larkwell",
+            "ExtraData": {
+                "RowName": "Meta_Oxygen_Tank_Larkwell",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Gadgets"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 950
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Oxygen_Tank_Shengong",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Meta_CreatureScanner",
+            "ExtraData": {
+                "RowName": "Meta_Scanner_Creatures",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Gadgets"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 200
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Meta_Fishfinder",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Prospect_Styx_C_Fishing",
@@ -27886,6 +30913,123 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
+                }
+            }
+        },
+        {
+            "Name": "Outpost006",
+            "ExtraData": {
+                "RowName": "Outpost_006_Forest2",
+                "DataTableName": "D_Outposts"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 2150,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_006_Forest"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Outpost004",
+            "ExtraData": {
+                "RowName": "Outpost_004_Desert",
+                "DataTableName": "D_Outposts"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 550,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_004_Desert"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Outpost007",
+            "ExtraData": {
+                "RowName": "Outpost_007_Desert2",
+                "DataTableName": "D_Outposts"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 1300
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_007_Desert"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Outpost008",
+            "ExtraData": {
+                "RowName": "Outpost_008_Arctic2",
+                "DataTableName": "D_Outposts"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 1850,
+                "Y": 1300
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_008_Arctic"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
                 }
             }
         },
@@ -28096,6 +31240,29 @@
             }
         },
         {
+            "Name": "Workshop_Seed_Tomato",
+            "ExtraData": {
+                "RowName": "Meta_Tomato_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3650,
+                "Y": 600
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Seed_Reed",
             "ExtraData": {
                 "RowName": "Meta_Reed_Seed",
@@ -28111,6 +31278,29 @@
             "Size": {
                 "X": 250,
                 "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Seed_Potato",
+            "ExtraData": {
+                "RowName": "Meta_Potato_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3650,
+                "Y": 1000
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
             }
         },
         {
@@ -28541,6 +31731,66 @@
             "DrawMethodOverride": "YThenX"
         },
         {
+            "Name": "Scoria_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Basic-DisplayName\", \"Scoria Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Scoria_Wall_0.ITEM_Scoria_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 16350,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Scoria_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Advanced-DisplayName\", \"Scoria Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Scoria_Half_Pitch_2.ITEM_Scoria_Half_Pitch_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 16650,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scoria_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Glass_Basic",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Glass_Basic-DisplayName\", \"Glass Building Base Set\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Glass_Wall_0.ITEM_Glass_Wall_0",
@@ -28766,6 +32016,156 @@
             ]
         },
         {
+            "Name": "Scoria_Brick_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Brick_Basic-DisplayName\", \"Scoria Brick Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Brick_Wall_0.T_ITEM_Scoria_Brick_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 14850,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Scoria_Brick_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Brick_Advanced-DisplayName\", \"Scoria Brick Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Brick_Roof_Half_Pitch_4.T_ITEM_Scoria_Brick_Roof_Half_Pitch_4",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15150,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scoria_Brick_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Clay_Brick_Basic-DisplayName\", \"Clay Brick Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Clay_Brick_Wall_0.ITEM_Clay_Brick_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 14850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Clay_Brick_Advanced-DisplayName\", \"Clay Brick Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Clay_Brick_Roof_Half_Pitch_4.ITEM_Clay_Brick_Roof_Half_Pitch_4",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Clay_Brick_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Trim",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Clay_Brick_Trim-DisplayName\", \"Steel Barred Building Trim Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Clay_Brick_Railing.T_ITEM_Clay_Brick_Railing",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 14250,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Building_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
             "Name": "Building_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -28810,6 +32210,35 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Prospect_Pro_C_Research",
+            "ExtraData": {
+                "RowName": "PRO_C_Research",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 3950,
+                "Y": 350
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_C_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Carpentry_Building_Reroute",
