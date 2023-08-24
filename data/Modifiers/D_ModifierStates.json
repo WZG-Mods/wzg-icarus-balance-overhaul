@@ -1260,12 +1260,12 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Electric.BP_ModifierStateBehaviour_TickDamage_Electric_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 40,
+                    "BaseValue": 8,
                     "Deviation": 2
                 }
             },
             "ShouldTick": true,
-            "ModifierTickRate": 0.10000000149011612,
+            "ModifierTickRate": 0.20000000298023224,
             "MergeType": "Stack",
             "MaxStackNum": 3
         },
@@ -4091,6 +4091,7 @@
         },
         {
             "Name": "Rotting_Carcass",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Rotting_Carcass.T_ICON_Rotting_Carcass'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Rotting Carcass\")",
             "ModifierDescription": "INVTEXT(\"[DNT] This carcass has been left out in the sun a little too long\")",
@@ -4150,6 +4151,7 @@
         },
         {
             "Name": "BroadcastingForMap",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_BroadcastForMap.T_ICON_BroadcastForMap'",
             "ModifierName": "INVTEXT(\"[DNT] GenericBroadcastingForMap\")",
             "ModifierDescription": "INVTEXT(\"[DNT] adds isbroadcastingformap flag\")",
             "VisibleToPlayer": false,
@@ -4758,6 +4760,7 @@
         },
         {
             "Name": "Meta_Deposit_Visible",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MetaDepositVisible.T_ICON_MetaDepositVisible'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Deposit_Visible-ModifierName\", \"Meta Deposit Visible on Map\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Deposit_Visible-ModifierDescription\", \"Scanned by Radar\")",
             "VisibleToPlayer": false,
@@ -5158,6 +5161,7 @@
         },
         {
             "Name": "Enraged",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Enrage.T_ICON_Enrage'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Enraged-ModifierName\", \"Enraged\")",
             "ModifierDescription": "",
             "VisibleToPlayer": false,
@@ -5990,7 +5994,8 @@
             },
             "GrantedStats": {
                 "(Value=\"IsFireModifierPersistent_?\")": 1,
-                "(Value=\"IsInLava_?\")": 1
+                "(Value=\"IsInLava_?\")": 1,
+                "(Value=\"BaseMovementSpeed_+%\")": -50
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Lava.BP_Modifier_Lava_C",
             "MergeType": "Replace",
@@ -6626,20 +6631,23 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_MiasmaticItem.T_Icon_MiasmaticItem'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierName\", \"Carrying Miasmic Items\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierDescription\", \"While carrying slowly drains health until cleaned.\")",
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierDescription\", \"While carrying diseased or infected items periodically take poison damage.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamageScale.BP_ModifierStateBehaviour_PoisonDamageScale_C",
             "ModifierVariables": {
                 "Damage": {
-                    "BaseValue": 1,
+                    "BaseValue": 5,
                     "Deviation": 1
                 }
             },
             "ShouldTick": true,
+            "TickOnApply": true,
             "ModifierTickRate": 10,
-            "MergeType": "Count"
+            "MergeType": "Count",
+            "SaveToDatabase": false
         },
         {
             "Name": "Shallow_Water",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_ShallowWater.T_ICON_ShallowWater'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierName\", \"Shallow Water\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierDescription\", \"Should have brought your waders\")",
             "VisibleToPlayer": false,
@@ -7604,6 +7612,62 @@
                 "EffectsSelf": false
             },
             "MergeType": "Stack"
+        },
+        {
+            "Name": "GeothermalPool_Wet",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GeothermalPool_Wet-ModifierName\", \"Geothermal Springs\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Geothermal Springs\")",
+            "GrantedStats": {
+                "(Value=\"BaseWarmupDegreePerMinute_+\")": 50,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1500,
+                "(Value=\"BaseStaminaRegen_+%\")": 150,
+                "(Value=\"BaseHealthRegen_+%\")": 150
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Wet.BP_Modifier_Wet_C",
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.InWater"
+                    },
+                    {
+                        "TagName": "ModifierState.ExtingishFire"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Lava"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.Lava )"
+            },
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Seed_Fatigue",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Plant_Fatigue.T_ICON_Plant_Fatigue'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fatigue-ModifierName\", \"Plant Fatigue\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fatigue-ModifierDescription\", \"After harvesting this plant it has reduced in growth speed and yield. Remove this plant and plant a new seed to remove this debuff. The effectiveness of this modifier will increase each time this plant is harvested.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -100,
+                "(Value=\"BasePlantedCropYield_+%\")": -50
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         }
     ]
 }

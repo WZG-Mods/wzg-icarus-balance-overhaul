@@ -6600,7 +6600,7 @@
         {
             "Name": "PRO_Story1_Escort_Loot",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_Story1_Escort_Loot.BPQ_Story1_Escort_Loot_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Loot-Description\", \"Loot the base of \\'Daisys\\' Owner\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Escort_Loot-Description\", \"Loot the base of \\'Daisy\\'s\\' Owner\")"
         },
         {
             "Name": "PRO_Story_2",
@@ -6705,6 +6705,17 @@
             "Name": "PRO_Story_3",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3.BPQ_PRO_Story3_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromShadowedIntro1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story3_Resupply",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story3/BPQ_PRO_Story3_Resupply.BPQ_PRO_Story3_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "PromShadowedIntro1",
@@ -8559,7 +8570,7 @@
             "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Base.BPQ_PRO_B_Extermination_Base_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination-Description\", \"EXTERMINATION: Volcanic\")",
             "LocationQuery": {
-                "RowName": "BW4_Boss3"
+                "RowName": "PRO_VolcanicFishing"
             }
         },
         {
@@ -8580,7 +8591,7 @@
         {
             "Name": "PRO_B_Extermination_GasFlyer",
             "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Hunt_GasFlier.BPQ_PRO_B_Extermination_Hunt_GasFlier_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_GasFlyer-Description\", \"{0} / {1} Lava Flyer\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_GasFlyer-Description\", \"{0} / {1} Drifter\")"
         },
         {
             "Name": "PRO_B_Extermination_Drake",
