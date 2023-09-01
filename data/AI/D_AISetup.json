@@ -56,7 +56,13 @@
         "BestiaryGroup": {
             "RowName": "None",
             "DataTableName": "D_BestiaryData"
-        }
+        },
+        "BlacklistBones": [
+            {
+                "BoneName": "RigRoot",
+                "AffectsChildren": false
+            }
+        ]
     },
     "Rows": [
         {
@@ -255,7 +261,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "Raccoon"
+                "RowName": "Roat"
             },
             "Loot": {
                 "RowName": "Roat_Carcass_Loot"
@@ -5985,6 +5991,142 @@
             }
         },
         {
+            "Name": "Crocodile_Grasslands",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Crocodile_Character.BP_NPC_Crocodile_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Crocodile"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Carnivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Crocodile"
+            },
+            "GOAPSetup": {
+                "RowName": "Crocodile"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_WaterOnly.NavFilter_WaterOnly_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumCarnivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Crocodile"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.666670024394989,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 50,
+                    "BrakingDeceleration": 25,
+                    "RotationRate": 50,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 50,
+                    "BrakingDeceleration": 25,
+                    "RotationRate": 50,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2.6666998863220215,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 2
+                },
+                "Run": {
+                    "MaxWalkSpeed": 2.6666998863220215,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 900,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 4
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 4
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 900,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 4
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Crocodile"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "Loot": {
+                "RowName": "Crocodile_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Large"
+            },
+            "BestiaryGroup": {
+                "RowName": "Crocodile"
+            }
+        },
+        {
             "Name": "Komodo",
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Komodo_Character.BP_NPC_Komodo_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
@@ -9509,7 +9651,7 @@
                 }
             ],
             "Audio": {
-                "RowName": "Raccoon"
+                "RowName": "Roat"
             },
             "Loot": {
                 "RowName": "Roat_Carcass_Loot"
@@ -11181,6 +11323,100 @@
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
             },
+            "BlacklistBones": [
+                {
+                    "BoneName": "RigRoot",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna12_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna12_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna13_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna13_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna23_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna23_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna24_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigAntenna24_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigElbow2_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigElbow2_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigElbow1_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigElbow1_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigHand2_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigHand2_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigHand1_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigHand1_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove2",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove3",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove4",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove5_L",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove5_R",
+                    "AffectsChildren": false
+                },
+                {
+                    "BoneName": "RigEggMove1",
+                    "AffectsChildren": false
+                }
+            ],
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -11803,6 +12039,275 @@
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
                 }
+            }
+        },
+        {
+            "Name": "Horse",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Horse_Character.BP_NPC_Horse_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Horse"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Horse"
+            },
+            "GOAPSetup": {
+                "RowName": "Zebra"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Neutral",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Horse"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6800000071525574,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2.3399999141693115,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 6.599999904632568,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 200,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 8.300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 300,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 4.210000038146973,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 4.210000038146973,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Horse"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck1",
+                "RigNeck3",
+                "RigChest",
+                "RigSpine2",
+                "RigSpine1",
+                "RigPelvis",
+                "RigHead",
+                "RigRBLeg1",
+                "RigLBLeg1"
+            ],
+            "Loot": {
+                "RowName": "Horse_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Medium"
+            },
+            "BestiaryGroup": {
+                "RowName": "Horse"
+            }
+        },
+        {
+            "Name": "Juvenile_Horse",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Horse_Juvenile_Character.BP_NPC_Horse_Juvenile_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Juvenile_Controller.BP_NPC_Juvenile_Controller_C",
+            "CreatureType": {
+                "RowName": "Juvenile_Horse"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_JuvieHorse"
+            },
+            "GOAPSetup": {
+                "RowName": "Juvenile_Default"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_JuvenileAI.NavFilter_JuvenileAI_C'",
+            "Relationships": {
+                "RowName": "DefaultSmallHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Juvenile_Horse"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6499999761581421,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "HorseJuvi"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck1",
+                "RigChest",
+                "RigSpine1"
+            ],
+            "Loot": {
+                "RowName": "Horse_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Medium"
+            },
+            "bUseSurvivalCharacterState": true,
+            "BestiaryGroup": {
+                "RowName": "Horse"
             }
         }
     ]

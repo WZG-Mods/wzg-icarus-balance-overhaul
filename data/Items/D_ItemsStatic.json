@@ -61,10 +61,6 @@
             "RowName": "None",
             "DataTableName": "D_Ballistic"
         },
-        "Vehicular": {
-            "RowName": "None",
-            "DataTableName": "D_Vehicular"
-        },
         "Fillable": {
             "RowName": "None",
             "DataTableName": "D_Fillable"
@@ -100663,6 +100659,77 @@
             }
         },
         {
+            "Name": "Wind_Turbine",
+            "Meshable": {
+                "RowName": "Mesh_Wind_Turbine"
+            },
+            "Itemable": {
+                "RowName": "Item_Wind_Turbine"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoInteract"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Wind_Turbine"
+            },
+            "Durable": {
+                "RowName": "Deployable_2500"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Generator": {
+                "RowName": "WindTurbine"
+            },
+            "Energy": {
+                "RowName": "WindTurbine"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Energy"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Basic_Turret",
             "Meshable": {
                 "RowName": "Mesh_Basic_Turret"
@@ -103327,7 +103394,7 @@
             "AdditionalStats": {
                 "(Value=\"BaseFrostDamage_+\")": 25,
                 "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
-                "(Value=\"BaseFrozenOreDropChance_%\")": 30
+                "(Value=\"BaseFrozenOrePerMinedResource_%\")": 20
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -103845,8 +103912,8 @@
             "AdditionalStats": {
                 "(Value=\"BaseFrostDamage_+\")": 40,
                 "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
-                "(Value=\"BaseFrozenOreDropChance_%\")": 30,
-                "(Value=\"BaseHardenedPointPenetration_%\")": 100
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100,
+                "(Value=\"BaseFrozenOrePerMinedResource_%\")": 20
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -104179,7 +104246,7 @@
         {
             "Name": "Raw_Iron_Wood",
             "Meshable": {
-                "RowName": "Mesh_Wood_Chopped"
+                "RowName": "Mesh_Raw_Iron_Wood"
             },
             "Itemable": {
                 "RowName": "Item_Raw_Iron_Wood"
@@ -104239,7 +104306,7 @@
         {
             "Name": "Refined_Iron_Wood",
             "Meshable": {
-                "RowName": "Mesh_Wood_Chopped"
+                "RowName": "Mesh_Refined_Iron_Wood"
             },
             "Itemable": {
                 "RowName": "Item_Refined_Iron_Wood"
@@ -105351,7 +105418,7 @@
         {
             "Name": "Infected_Bark",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Infected_Bark"
             },
             "Itemable": {
                 "RowName": "Item_Infected_Bard"
@@ -105414,7 +105481,7 @@
         {
             "Name": "Acidic_Glands",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Acidic_Glands"
             },
             "Itemable": {
                 "RowName": "Item_Acidic_Glands"
@@ -105477,7 +105544,7 @@
         {
             "Name": "Pyritic_Crust_Iron",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Iron"
@@ -105540,7 +105607,7 @@
         {
             "Name": "Pyritic_Crust_Gold",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Gold"
@@ -105603,7 +105670,7 @@
         {
             "Name": "Pyritic_Crust_Copper",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Copper"
@@ -105666,7 +105733,7 @@
         {
             "Name": "Pyritic_Crust_Silicon",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Silicon"
@@ -105729,7 +105796,7 @@
         {
             "Name": "Pyritic_Crust_Coal",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Coal"
@@ -105792,7 +105859,7 @@
         {
             "Name": "Pyritic_Crust_Sulfur",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Sulfur"
@@ -105855,7 +105922,7 @@
         {
             "Name": "Pyritic_Crust_Bauxite",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Bauxite"
@@ -105918,7 +105985,7 @@
         {
             "Name": "Pyritic_Crust_Oxite",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Oxite"
@@ -105981,7 +106048,7 @@
         {
             "Name": "Pyritic_Crust_Titanium",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Titanium"
@@ -106044,7 +106111,7 @@
         {
             "Name": "Pyritic_Crust_Platinum",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Platinum"
@@ -106107,7 +106174,7 @@
         {
             "Name": "Pyritic_Crust_Obsidian",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Obsidian"
@@ -106170,7 +106237,7 @@
         {
             "Name": "Pyritic_Crust_Scoria",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Scoria"
@@ -106233,7 +106300,7 @@
         {
             "Name": "Pyritic_Crust_Clay",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Clay"
@@ -106296,7 +106363,7 @@
         {
             "Name": "Pyritic_Crust_Purple_Exotic",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Purple_Exotic"
@@ -106359,7 +106426,7 @@
         {
             "Name": "Pyritic_Crust_Red_Exotic",
             "Meshable": {
-                "RowName": "Mesh_Fiber"
+                "RowName": "Mesh_Pyritic_Crust"
             },
             "Itemable": {
                 "RowName": "Pyritic_Crust_Red_Exotic"
@@ -109112,7 +109179,7 @@
                 "RowName": "Generic"
             },
             "Consumable": {
-                "RowName": "Meta_Bolt_Set_Larkwell_Standard"
+                "RowName": "Meta_Bolt_Set_Larkwell_Electroshock"
             },
             "Usable": {
                 "RowName": "Consume"
@@ -109200,7 +109267,7 @@
                 "RowName": "LightItem"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_MetaItem"
             },
             "Audio": {
                 "RowName": "Default"
@@ -109269,7 +109336,7 @@
                 "RowName": "Generic"
             },
             "Consumable": {
-                "RowName": "Meta_Bolt_Set_Larkwell_Standard"
+                "RowName": "Meta_Bolt_Set_Larkwell_Explosive"
             },
             "Usable": {
                 "RowName": "Consume"
@@ -109427,7 +109494,7 @@
                 "RowName": "Generic"
             },
             "Consumable": {
-                "RowName": "Meta_Bolt_Set_Larkwell_Standard"
+                "RowName": "Meta_Bolt_Set_Larkwell_Piercing"
             },
             "Usable": {
                 "RowName": "Consume"
@@ -110122,14 +110189,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Meta"
+                        "TagName": "Item.Meta.CreatureScanner"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Meta"
+                        "TagName": "Item.Meta.CreatureScanner"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -112951,6 +113018,293 @@
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
                 }
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Horse",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Horse"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Horse"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Animal_Carcass"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_JuvieHorse",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_JuvieHorse"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_JuvieHorse"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Animal_Carcass"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Horse_Mount",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Horse"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Horse"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_Mount"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Animal_Carcass"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Unknown_Ore",
+            "Itemable": {
+                "RowName": "Item_Unknown_Ore"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    }
+                ],
+                "ParentTags": []
             }
         }
     ]

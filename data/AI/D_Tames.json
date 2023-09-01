@@ -110,6 +110,33 @@
             },
             "PercentChanceToSpawnJuvenile": 75,
             "MaxNearbyAutoSpawnedJuveniles": 5
+        },
+        {
+            "Name": "Horse",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Horse"
+            },
+            "MatureCreatureType": {
+                "RowName": "Horse"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Horse"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50
         }
     ]
 }

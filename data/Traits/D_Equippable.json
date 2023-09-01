@@ -3,6 +3,7 @@
     "Defaults": {
         "EquippableModifier": "None",
         "GrantedStats": {},
+        "bStackedModifiersGiveDiminishingReturns": true,
         "GlobalStat_ActorClass": "None",
         "GlobalStat_GrantedStats": {},
         "bAppliesInAllInventories": false
@@ -28,7 +29,8 @@
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"CanSeeCompass_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Player_Tracker",
@@ -40,6 +42,7 @@
                 "(Value=\"MapCanSeeWaypoint_?\")": 1,
                 "(Value=\"MapCanMakeWaypoint_?\")": 1
             },
+            "bStackedModifiersGiveDiminishingReturns": false,
             "GlobalStat_ActorClass": "/Script/Icarus.IcarusPlayerCharacter",
             "GlobalStat_GrantedStats": {
                 "(Value=\"MapIsBroadcastingForMap_?\")": 1
@@ -52,7 +55,8 @@
                 "(Value=\"CanSeeStatuses_?\")": 1,
                 "(Value=\"CanSeeHealth_?\")": 1,
                 "(Value=\"CanSeeOtherPlayersBillboards_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Waypoint_Marker",
@@ -60,14 +64,16 @@
             "GrantedStats": {
                 "(Value=\"MapCanSeeWaypoint_?\")": 1,
                 "(Value=\"MapCanMakeWaypoint_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Creature_Tracker",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"MapCanSeeCreatures_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_MovementSpeed",
@@ -97,14 +103,16 @@
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseBackpackSlots_+\")": 2
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Slots2",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseBackpackSlots_+\")": 5
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Fire_Damage_Resistence",
@@ -125,7 +133,8 @@
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseWeightCapacity_+\")": 5
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Backpack_Basic",
@@ -134,7 +143,8 @@
                 "(Value=\"BaseWeightCapacity_+\")": 5,
                 "(Value=\"BaseOreCarryWeight_+%\")": -10,
                 "(Value=\"BaseBackpackSlots_+\")": 6
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Mining_Backpack",
@@ -143,7 +153,8 @@
                 "(Value=\"BaseOreCarryWeight_+%\")": -45,
                 "(Value=\"BaseWoodCarryWeight_+%\")": -45,
                 "(Value=\"BaseBackpackSlots_+\")": 6
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Basic_Quiver",
@@ -153,7 +164,8 @@
                 "(Value=\"BaseArrowProjectileSpeed_+%\")": 10,
                 "(Value=\"BaseBowAimDownSightsSpeed_+%\")": 10,
                 "(Value=\"BaseBackpackSlots_+\")": 6
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Basic_Bandolier",
@@ -162,35 +174,40 @@
                 "(Value=\"BaseFirearmCarryWeight_+%\")": -50,
                 "(Value=\"BaseFirearmItemWear_+%\")": -25,
                 "(Value=\"BaseFirearmReloadSpeed_+%\")": 25
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Equippable_Carcass_Small",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseAnimalCarryingMovementSpeed_+%\")": -10
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Equippable_Carcass_Medium",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseAnimalCarryingMovementSpeed_+%\")": -20
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Equippable_Carcass_Large",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseAnimalCarryingMovementSpeed_+%\")": -30
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Animal_Healthbar",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"CanTrackAnimalHealthbar_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Animal_Highlighting",
@@ -199,7 +216,8 @@
                 "(Value=\"HighlightMediumAnimalsWhenADS_?\")": 1,
                 "(Value=\"HighlightLargeAnimalsWhenADS_?\")": 1,
                 "(Value=\"HighlightSmallAnimalsWhenADS_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Basic_Survival_Backpack",
@@ -210,7 +228,8 @@
                 "(Value=\"BaseSprainModifierDuration_+%\")": -50,
                 "(Value=\"BaseBackpackSlots_+\")": 6,
                 "(Value=\"BaseMovementSpeed_+%\")": 5
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Larkwell_Backpack_Alpha",
@@ -219,35 +238,40 @@
                 "(Value=\"BaseShotgunAmmoCapacity_+%\")": 25,
                 "(Value=\"BaseShotgunReloadSpeed_+%\")": 25,
                 "(Value=\"BaseShotgunProjectileDamage_+%\")": 25
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Larkwell_Backpack_Beta",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseBackpackSlots_+\")": 12
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Alpha",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"GrantedAuraWeightReduction_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_Beta",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"GrantedAuraHealingAfflictions_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Module_World_Boss",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"MapCanSeeWorldBosses_?\")": 1
-            }
+            },
+            "bStackedModifiersGiveDiminishingReturns": false
         },
         {
             "Name": "Saddle_Standard",

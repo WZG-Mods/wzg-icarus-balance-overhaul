@@ -40,8 +40,16 @@
             "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Crits.Icon_BestTrait_Crits"
         },
         {
+            "Name": "Belly_CritSpot",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Belly_CritSpot-TraitName\", \"Critical Area: Belly\")",
+            "Type": {
+                "RowName": "CritSpot"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Crits.Icon_BestTrait_Crits"
+        },
+        {
             "Name": "Fire_Weakness",
-            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Fire_Weakness-TraitName\", \"Fire\")",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Fire_Weakness-TraitName\", \"Weak to Fire\")",
             "Type": {
                 "RowName": "Weakness"
             },
@@ -49,7 +57,7 @@
         },
         {
             "Name": "Jousting_Weakness",
-            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Jousting_Weakness-TraitName\", \"Jousting\")",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Jousting_Weakness-TraitName\", \"Charges Past Targets\")",
             "Type": {
                 "RowName": "Weakness"
             },
@@ -263,12 +271,132 @@
             "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Ranged.Icon_Ranged"
         },
         {
-            "Name": "Projectile_Enrage_Behavior",
-            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Projectile_Enrage_Behavior-TraitName\", \"Enraged by Projectiles\")",
+            "Name": "Enrage_Projectiles_Behavior",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Enrage_Projectiles_Behavior-TraitName\", \"Enraged by Projectiles\")",
             "Type": {
                 "RowName": "Behavior"
             },
             "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Ranged.Icon_Ranged"
+        },
+        {
+            "Name": "Enrage_Behavior",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Enrage_Behavior-TraitName\", \"Enrages Periodically\")",
+            "Type": {
+                "RowName": "Behavior"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Danger.Icon_Danger"
+        },
+        {
+            "Name": "Poison_Weakness",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Poison_Weakness-TraitName\", \"Weak to Poison\")",
+            "Type": {
+                "RowName": "Weakness"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack"
+        },
+        {
+            "Name": "Poison_Resist_Strength",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Poison_Resist_Strength-TraitName\", \"Resists Poison\")",
+            "Type": {
+                "RowName": "Strength"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack"
+        },
+        {
+            "Name": "Fire_DamageType",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Fire_DamageType-TraitName\", \"Fire Attack\")",
+            "Type": {
+                "RowName": "DamageType"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Fire.Icon_BestTrait_Fire"
+        },
+        {
+            "Name": "Fire_Resist_Strength",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Fire_Resist_Strength-TraitName\", \"Resists Fire\")",
+            "Type": {
+                "RowName": "Strength"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Fire.Icon_BestTrait_Fire"
+        },
+        {
+            "Name": "Frost_DamageType",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Frost_DamageType-TraitName\", \"Frost Attack\")",
+            "Type": {
+                "RowName": "DamageType"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold"
+        },
+        {
+            "Name": "Frost_Weakness",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Frost_Weakness-TraitName\", \"Weak to Frost\")",
+            "Type": {
+                "RowName": "Weakness"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold"
+        },
+        {
+            "Name": "Frost_Resist_Strength",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Frost_Resist_Strength-TraitName\", \"Resists Frost\")",
+            "Type": {
+                "RowName": "Strength"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Cold.Icon_Cold"
+        },
+        {
+            "Name": "Stalks_Prey_Behavior",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Stalks_Prey_Behavior-TraitName\", \"Stalks Prey\")",
+            "Type": {
+                "RowName": "Behavior"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoorVision.Icon_BestTrait_PoorVision"
+        },
+        {
+            "Name": "Reposition_Strength",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Reposition_Strength-TraitName\", \"Quiickly Repositions\")",
+            "Type": {
+                "RowName": "Strength"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Fast.Icon_BestTrait_Fast"
+        },
+        {
+            "Name": "Electric_DamageType",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Electric_DamageType-TraitName\", \"Electric Attack\")",
+            "Type": {
+                "RowName": "DamageType"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity"
+        },
+        {
+            "Name": "Electric_Resist_Strength",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Electric_Resist_Strength-TraitName\", \"Resists Electric\")",
+            "Type": {
+                "RowName": "Strength"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity"
+        },
+        {
+            "Name": "Electric_Weakness",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Electric_Weakness-TraitName\", \"Weak to Electric\")",
+            "Type": {
+                "RowName": "Weakness"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity"
+        },
+        {
+            "Name": "Concussion_DamageType",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Concussion_DamageType-TraitName\", \"Concussive Attack\")",
+            "Type": {
+                "RowName": "DamageType"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ConcussionDebuff.Icon_ConcussionDebuff"
+        },
+        {
+            "Name": "Trail_Behavior",
+            "TraitName": "NSLOCTEXT(\"D_BestiaryTraits\", \"Trail_Behavior-TraitName\", \"Slimy Trail\")",
+            "Type": {
+                "RowName": "Behavior"
+            },
+            "OverrideIcon": "/Game/Assets/2DArt/UI/Icons/T_ICON_ShallowWater.T_ICON_ShallowWater"
         }
     ]
 }

@@ -1185,9 +1185,11 @@
             "Name": "Wet",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Wet-ModifierName\", \"Wet\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet-ModifierDescription\", \"You are wet and your temperature has been decreased.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet-ModifierDescription\", \"You are wet and your temperature has been decreased. You take increased Electric and Frost damage.\")",
             "GrantedStats": {
-                "(Value=\"BaseExternalTemperatureModification_+\")": -1000
+                "(Value=\"BaseExternalTemperatureModification_+\")": -1000,
+                "(Value=\"BaseElectricDamageResistance_%\")": -50,
+                "(Value=\"BaseFrostDamageResistance_%\")": -50
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Wet.BP_Modifier_Wet_C",
             "ShouldTick": true,
@@ -1266,8 +1268,23 @@
             },
             "ShouldTick": true,
             "ModifierTickRate": 0.20000000298023224,
-            "MergeType": "Stack",
-            "MaxStackNum": 3
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3,
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Harvest.Node )"
+            }
         },
         {
             "Name": "Pinned",
@@ -4595,10 +4612,12 @@
             "Name": "Wet_Expire",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierName\", \"Wet\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierDescription\", \"You are wet.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet_Expire-ModifierDescription\", \"You are wet. You have reduced chance to be set on fire. You take increased Electric and Frost damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseExternalTemperatureModification_+\")": -1000,
-                "(Value=\"BaseBurnChance_%\")": -25
+                "(Value=\"BaseBurnChance_%\")": -25,
+                "(Value=\"BaseElectricDamageResistance_%\")": -50,
+                "(Value=\"BaseFrostDamageResistance_%\")": -50
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration",
@@ -6260,7 +6279,6 @@
             "Escalation": {
                 "RowName": "SwampParasites"
             },
-            "EscalationTime": 60,
             "MergeType": "LongestDuration",
             "MaxStackNum": 3
         },
@@ -6286,7 +6304,7 @@
                     "Value": "ParasiticModifierDuration_+%"
                 }
             ],
-            "MergeType": "LongestDuration",
+            "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
                     {
@@ -7138,8 +7156,8 @@
             "Name": "Exposure_Conifer_Rain",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/mediumdebuff-rain3.mediumdebuff-rain3'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierName\", \"Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierDescription\", \"Expsosure to a rain storm, reduces movement speed and cools.\")",
             "AudioData": {
                 "RowName": "Exposure_Dynamic"
             },
@@ -7552,10 +7570,10 @@
         },
         {
             "Name": "GasFlyer_Poison",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ConcussionDebuff.Icon_ConcussionDebuff'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierName\", \"Drifter Poison\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierDescription\", \"Description\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierName\", \"Drifter Concussive Gas\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GasFlyer_Poison-ModifierDescription\", \"A debilitating concussion that slows movement speed and stamina regeneration, and increases stamina usage and melee damage received\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
@@ -7567,23 +7585,49 @@
             },
             "ModifierEffectivenessAffectors": [
                 {
-                    "Value": "BasePoisonModifierDuration_+%"
+                    "Value": "BasePhysicalTraumaModifierDuration_+%"
                 }
             ],
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.PhysicalTrauma"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Bloodthinner.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Bloodthinner.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Bloodthinner.T2, ModifierState.Medicine.Bloodthinner.T3 )"
+            }
         },
         {
             "Name": "GrantedAura_LavaSpot",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureHot.ICON_TemperatureHot'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_LavaSpot-ModifierName\", \"Lava Spot Heat\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Lava Spot Heat\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_LavaSpot-ModifierName\", \"Lava Splash\")",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
             "bAura": true,
-            "AuraRange": 1000,
+            "AuraRange": 150,
             "AuraFlags": {
                 "EffectsSelf": false
             },
@@ -7593,31 +7637,44 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
             "TickOnApply": true,
-            "MergeType": "Stack"
+            "ModifierTickRate": 0.25,
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         },
         {
             "Name": "AuraEffect_LavaSpot",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureHot.ICON_TemperatureHot'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_LavaSpot-ModifierName\", \"Lava Spot Heat\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Lava Spot Heat\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_LavaSpot-ModifierName\", \"Lava Splash\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_LavaSpot-ModifierDescription\", \"Taking fire damage over time and slowed\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -30
+                "(Value=\"BaseMovementSpeed_+%\")": -50
             },
             "AuraRange": 1000,
             "AuraFlags": {
                 "EffectsSelf": false
             },
-            "MergeType": "Stack"
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 15,
+                    "Deviation": 2.5
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
         },
         {
             "Name": "GeothermalPool_Wet",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Wet.Icon_Wet'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GeothermalPool_Wet-ModifierName\", \"Geothermal Springs\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Geothermal Springs\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GeothermalPool_Wet-ModifierDescription\", \"Heated mineral water greatly increases health and stamina regeneration\")",
             "GrantedStats": {
                 "(Value=\"BaseWarmupDegreePerMinute_+\")": 50,
                 "(Value=\"BaseInternalTemperatureModification_+\")": 1500,
