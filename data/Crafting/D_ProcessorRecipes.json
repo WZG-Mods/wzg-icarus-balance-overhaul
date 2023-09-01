@@ -29,6 +29,25 @@
         ],
         "ResourceInputs": [],
         "bSelectOutputItemRandomly": false,
+        "ItemRandomSelect": {
+            "ItemStaticData": {
+                "RowName": "None",
+                "DataTableName": "D_ItemsStatic"
+            },
+            "ItemDynamicData": [],
+            "ItemCustomStats": [],
+            "CustomProperties": {
+                "StaticWorldStats": [],
+                "StaticWorldHeldStats": [],
+                "Stats": [],
+                "Alterations": []
+            },
+            "DatabaseGUID": "",
+            "ItemOwnerLookupId": -1,
+            "RuntimeTags": {
+                "GameplayTags": []
+            }
+        },
         "Outputs": [
             {
                 "Element": {
@@ -33744,7 +33763,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 25,
                     "DynamicProperties": []
                 },
                 {
@@ -33796,7 +33815,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 30,
                     "DynamicProperties": []
                 },
                 {
@@ -33848,7 +33867,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 30,
                     "DynamicProperties": []
                 },
                 {
@@ -33900,7 +33919,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -33908,7 +33927,7 @@
                         "RowName": "Tree_Sap",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 2,
                     "DynamicProperties": []
                 }
             ],
@@ -33952,7 +33971,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 15,
                     "DynamicProperties": []
                 },
                 {
@@ -33960,7 +33979,7 @@
                         "RowName": "Tree_Sap",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 3,
                     "DynamicProperties": []
                 }
             ],
@@ -34004,7 +34023,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -34012,7 +34031,7 @@
                         "RowName": "Tree_Sap",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 3,
                     "DynamicProperties": []
                 }
             ],
@@ -34056,7 +34075,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 30,
                     "DynamicProperties": []
                 },
                 {
@@ -34108,7 +34127,7 @@
                         "RowName": "Clay_Brick",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
+                    "Count": 15,
                     "DynamicProperties": []
                 },
                 {
@@ -34116,7 +34135,7 @@
                         "RowName": "Tree_Sap",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 3,
                     "DynamicProperties": []
                 }
             ],
@@ -43659,6 +43678,82 @@
             }
         },
         {
+            "Name": "Wind_Turbine",
+            "Requirement": {
+                "RowName": "Wind_Turbine"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 35,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Gold_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Carbon_Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Wind_Turbine",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
             "Name": "Fish_01",
             "RecipeSets": [
                 {
@@ -47301,10 +47396,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -47381,10 +47476,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -47450,10 +47545,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -47519,7 +47614,7 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -47591,10 +47686,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 4,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -47680,7 +47775,7 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Fur",
+                        "RowName": "Leather",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -47729,10 +47824,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -47794,20 +47889,20 @@
                         "RowName": "Leather",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
                     "Element": {
-                        "RowName": "Stick",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
                     "Element": {
-                        "RowName": "Obsidian",
+                        "RowName": "Shaped_Obsidian",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -47969,10 +48064,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 4,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -48046,10 +48141,10 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Wood",
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -48122,7 +48217,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -48198,7 +48293,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -48271,7 +48366,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -48345,7 +48440,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -48561,7 +48656,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -48693,14 +48788,6 @@
             "Inputs": [
                 {
                     "Element": {
-                        "RowName": "Refined_Copper",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
                         "RowName": "Cold_Steel_Ingot",
                         "DataTableName": "D_ItemsStatic"
                     },
@@ -48709,10 +48796,26 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Epoxy",
+                        "RowName": "Copper_Nail",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -48781,7 +48884,7 @@
                         "RowName": "Fur",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -48886,7 +48989,7 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Refined_Iron_Wood",
+                        "RowName": "Cold_Steel_Ingot",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 1,
@@ -48968,6 +49071,14 @@
                     },
                     "Count": 6,
                     "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
                 }
             ],
             "Outputs": [
@@ -49048,6 +49159,14 @@
                     },
                     "Count": 6,
                     "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
                 }
             ],
             "Outputs": [
@@ -49124,6 +49243,14 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -49203,6 +49330,14 @@
                     },
                     "Count": 3,
                     "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
                 }
             ],
             "Outputs": [
@@ -49247,7 +49382,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 2,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -49317,7 +49452,7 @@
                         "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 2,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -49411,6 +49546,14 @@
                 {
                     "Element": {
                         "RowName": "Refined_Iron_Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 5,
@@ -49594,10 +49737,10 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Wood_Refined",
+                        "RowName": "Carbon_Fiber",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 20,
+                    "Count": 6,
                     "DynamicProperties": []
                 },
                 {
@@ -49610,18 +49753,18 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Fur",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
                         "RowName": "Refined_Iron_Wood",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
                     "DynamicProperties": []
                 }
             ],
@@ -52471,6 +52614,11 @@
                 }
             ],
             "bSelectOutputItemRandomly": true,
+            "ItemRandomSelect": {
+                "ItemStaticData": {
+                    "RowName": "Unknown_Ore"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
@@ -52538,7 +52686,7 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Aluminium",
+                        "RowName": "Bauxite",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 5,
