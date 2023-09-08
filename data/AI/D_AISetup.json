@@ -12042,6 +12042,130 @@
             }
         },
         {
+            "Name": "Mount_Horse",
+            "ActorClass": "/Game/BP/Mounts/BP_Mount_Horse.BP_Mount_Horse_C",
+            "ControllerClass": "/Game/BP/AI/Basic/Mounts/BP_MountAIController.BP_MountAIController_C",
+            "CreatureType": {
+                "RowName": "Horse"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Horse_Mount"
+            },
+            "Relationships": {
+                "RowName": "Player"
+            },
+            "AIGrowth": {
+                "RowName": "Mount_Horse"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.13300000131130219,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 300,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 200,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 6.599999904632568,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 600,
+                    "BrakingDeceleration": 1350,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 8.300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 1800,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 6,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 600,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 800,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "Horse"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "Loot": {
+                "RowName": "Horse_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Medium"
+            },
+            "bUseSurvivalCharacterState": true,
+            "bStartWithSurvivalTickDisabled": false,
+            "BestiaryGroup": {
+                "RowName": "Horse"
+            },
+            "BlacklistBones": []
+        },
+        {
             "Name": "Horse",
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Horse_Character.BP_NPC_Horse_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
@@ -12050,7 +12174,7 @@
             },
             "Descriptors": [
                 {
-                    "RowName": "Passive",
+                    "RowName": "Neutral",
                     "DataTableName": "D_AIDescriptors"
                 },
                 {
@@ -12062,7 +12186,7 @@
                 "RowName": "AnimalCarcass_Horse"
             },
             "GOAPSetup": {
-                "RowName": "Zebra"
+                "RowName": "Horse"
             },
             "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
             "Relationships": {
@@ -12070,7 +12194,7 @@
             },
             "NotifiedNPCTypes": [
                 {
-                    "RowName": "NPC_Neutral",
+                    "RowName": "NPC_Passive",
                     "DataTableName": "D_TagQueries"
                 }
             ],
@@ -12100,45 +12224,45 @@
                     "MaxWalkSpeed": 1,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
+                    "MaxAcceleration": 200,
+                    "BrakingDeceleration": 800,
                     "RotationRate": 100,
                     "MaxSwimSpeed": 1
                 },
                 "Jog": {
-                    "MaxWalkSpeed": 2.3399999141693115,
+                    "MaxWalkSpeed": 3.818000078201294,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
+                    "BrakingDeceleration": 1000,
+                    "RotationRate": 125,
                     "MaxSwimSpeed": 1
                 },
                 "Run": {
-                    "MaxWalkSpeed": 6.599999904632568,
+                    "MaxWalkSpeed": 9.545000076293945,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 500,
-                    "BrakingDeceleration": 450,
-                    "RotationRate": 200,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 1500,
+                    "RotationRate": 150,
                     "MaxSwimSpeed": 1
                 },
                 "Sprint": {
-                    "MaxWalkSpeed": 8.300000190734863,
+                    "MaxWalkSpeed": 12.5,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 1800,
-                    "BrakingDeceleration": 500,
-                    "RotationRate": 300,
+                    "MaxAcceleration": 800,
+                    "BrakingDeceleration": 1800,
+                    "RotationRate": 200,
                     "MaxSwimSpeed": 1
                 },
                 "Attacking": {
-                    "MaxWalkSpeed": 4.210000038146973,
+                    "MaxWalkSpeed": 9.545000076293945,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
                     "MaxSwimSpeed": 1
                 },
                 "Undefined": {
@@ -12246,7 +12370,7 @@
                     "MaxSwimSpeed": 1
                 },
                 "Jog": {
-                    "MaxWalkSpeed": 3.2300000190734863,
+                    "MaxWalkSpeed": 3.75,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 300,
@@ -12255,7 +12379,7 @@
                     "MaxSwimSpeed": 1
                 },
                 "Run": {
-                    "MaxWalkSpeed": 7.690000057220459,
+                    "MaxWalkSpeed": 6,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 500,
@@ -12264,7 +12388,7 @@
                     "MaxSwimSpeed": 1
                 },
                 "Sprint": {
-                    "MaxWalkSpeed": 7.690000057220459,
+                    "MaxWalkSpeed": 6,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 1800,
@@ -12273,7 +12397,7 @@
                     "MaxSwimSpeed": 1
                 },
                 "Attacking": {
-                    "MaxWalkSpeed": 7.690000057220459,
+                    "MaxWalkSpeed": 6,
                     "GroundFriction": 8,
                     "BrakingFriction": 64,
                     "MaxAcceleration": 450,
