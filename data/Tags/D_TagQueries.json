@@ -3118,10 +3118,28 @@
             "Query": {
                 "TagDictionary": [
                     {
+                        "TagName": "Item.Attachment.Hammer"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Attachment.Hammer )"
+            }
+        },
+        {
+            "Name": "Any_Sledgehammer_Attachment",
+            "Query": {
+                "TagDictionary": [
+                    {
                         "TagName": "Item.Attachment.Melee"
                     },
                     {
-                        "TagName": "Item.Attachment.Hammer"
+                        "TagName": "Item.Attachment.Sledgehammer"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3132,7 +3150,7 @@
                     0,
                     1
                 ],
-                "AutoDescription": " ANY( Item.Attachment.Melee, Item.Attachment.Hammer )"
+                "AutoDescription": " ANY( Item.Attachment.Melee, Item.Attachment.Sledgehammer )"
             }
         },
         {
@@ -3565,6 +3583,40 @@
         },
         {
             "Name": "Any_Tamed_Herbivore_Food",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "Item.Plant"
+                    },
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Herbivore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    4,
+                    2,
+                    2,
+                    2,
+                    0,
+                    1,
+                    1,
+                    2,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore ) )"
+            }
+        },
+        {
+            "Name": "Any_Tamed_Creature_Food",
             "Query": {
                 "TagDictionary": [
                     {
