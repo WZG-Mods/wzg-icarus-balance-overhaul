@@ -7725,6 +7725,26 @@
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Drink_Energised",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sololightning1.icon-weather-sololightning1'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Drink_Energised-ModifierName\", \"Energised\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Drink_Energised-ModifierDescription\", \"Water filled with electrolytes decreases thirst and increases stamina recovery\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": -25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Drink.BP_Modifier_Drink_C",
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.CoolingDrink"
+                    }
+                ]
+            },
+            "bEffectsNPCs": false
         }
     ]
 }
