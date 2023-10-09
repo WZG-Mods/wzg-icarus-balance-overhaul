@@ -53,7 +53,8 @@
         "bEffectsObjects": false,
         "bEffectsNPCs": true,
         "bEffectsPlayers": true,
-        "SaveToDatabase": true
+        "SaveToDatabase": true,
+        "RemovedOnClick": false
     },
     "GenerateEnum": true,
     "Rows": [
@@ -1315,9 +1316,6 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ReducedOxygenConsumption-ModifierDescription\", \"Nearby allies\\' oxygen consumption is reduced.\")",
             "bAura": true,
             "AuraRange": 2000,
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
             "ModifierGrantedByAura": {
                 "RowName": "AuraEffect_ReducedOxygenConsumption"
             },
@@ -1336,10 +1334,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_AdditionalPhysicalDamageMitigation-ModifierName\", \"Aura: Reduced Physical Damage Taken\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_AdditionalPhysicalDamageMitigation-ModifierDescription\", \"Nearby allies receive additional physical damage resistance.\")",
             "bAura": true,
-            "AuraRange": 500,
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
+            "AuraRange": 1000,
             "ModifierGrantedByAura": {
                 "RowName": "AuraEffect_AdditionalPhysicalDamageMitigation"
             },
@@ -7224,6 +7219,18 @@
             "MergeType": "LongestDuration"
         },
         {
+            "Name": "LavaSlug_Burn",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"LavaSlug_Burn-ModifierName\", \"Lava Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"LavaSlug_Burn-ModifierDescription\", \"Drastically slows movement and burns. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -75
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Lava.BP_Modifier_Lava_C",
+            "MergeType": "LongestDuration"
+        },
+        {
             "Name": "Plant_Outside",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sun.icon-weather-sun'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierName\", \"Sunlight\")",
@@ -7756,6 +7763,37 @@
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "GrantedAura_HealthRegen",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen.Icon_HealthRegen'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierName\", \"Aura: Increased Health Regeneration\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierDescription\", \"Nearby allies receive additional health regeneration.\")",
+            "bAura": true,
+            "AuraRange": 1000,
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_HealthRegen"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_HealthRegen",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen.Icon_HealthRegen'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HealthRegen-ModifierName\", \"Aura Effect: Increased Health Regeneration\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HealthRegen-ModifierDescription\", \"Increased Heath Regeneration\")",
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 50
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }
