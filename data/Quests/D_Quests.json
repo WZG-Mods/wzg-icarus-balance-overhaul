@@ -725,11 +725,6 @@
             }
         },
         {
-            "Name": "BW3_Return",
-            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_InteractWithDropship.BP_InteractWithDropship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"BW3_Return-Description\", \"Return to Dropship\")"
-        },
-        {
             "Name": "BW4_Satellites",
             "Class": "/Game/BP/Quests/Implementations/Bw4_Satellites/BP_BW4_Satellites.BP_BW4_Satellites_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"BW4_Satellites-Description\", \"UDA : Retrieve Terraforming Technology\")",
@@ -844,8 +839,8 @@
         },
         {
             "Name": "OLY_Forest_Scan_Retrieve_Equipment",
-            "Class": "/Game/BP/Quests/Common/BPQ_Retrieve_Radar.BPQ_Retrieve_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Retrieve_Equipment-Description\", \"Collect a Radar from your Dropship\")"
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_CollectPod.BPQ_OLY_Forest_CollectPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Retrieve_Equipment-Description\", \"Collect a Radar from the Supply Pod\")"
         },
         {
             "Name": "OLY_Forest_Scan_Location_1",
@@ -1232,6 +1227,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Glacier_Extraction_0-Description\", \"Locate Exotics deposit\")",
             "LocationQuery": {
                 "RowName": "T2_Glacier_Extraction_ExoticNode"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Extraction2aOptionalObjective",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -1415,7 +1416,7 @@
         },
         {
             "Name": "OLY_Canyon_Expedition_CaveExit",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Expedition/BPQ_OLY_Canyon_Expedition_CaveExit.BPQ_OLY_Canyon_Expedition_CaveExit_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Expedition_CaveExit-Description\", \"Enter the Desert Canyon\")",
             "LocationQuery": {
                 "RowName": "T2_Canyon_Expedition_CaveExit"
@@ -1760,7 +1761,7 @@
         },
         {
             "Name": "OLY_Riverlands_Expedition_Travel_To_Riverlands",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Class": "/Game/BP/Quests/Olympus/Riverlands/Expedition/BPQ_OLY_Riverlands_Initial_Travel.BPQ_OLY_Riverlands_Initial_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition_Travel_To_Riverlands-Description\", \"Find a route to the Riverlands boundary (M)\")",
             "LocationQuery": {
                 "RowName": "T3_Riverlands_Expedition_Blocker_Entry"
@@ -1774,7 +1775,7 @@
         },
         {
             "Name": "OLY_Riverlands_Expedition_Blocker",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Class": "/Game/BP/Quests/Olympus/Riverlands/Expedition/BPQ_OLY_Riverlands_Blocker_Travel.BPQ_OLY_Riverlands_Blocker_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition_Blocker-Description\", \"Construct your way over the rock barrier\")",
             "LocationQuery": {
                 "RowName": "T3_Riverlands_Expedition_Blocker_Exit"
@@ -3922,17 +3923,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Defend_Waves-Description\", \"{0}% of Scorpions defeated\")"
         },
         {
-            "Name": "OLY_Desert_Recovery_Return",
-            "Class": "/Game/BP/Quests/Implementations/Bw5/BP_InteractWithDropship.BP_InteractWithDropship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_Return-Description\", \"Return to Dropship\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "FM1ResearchFinish",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
-        },
-        {
             "Name": "OLY_Riverlands_Extraction",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Extraction/BPQ_OLY_Riverlands_Extraction.BPQ_OLY_Riverlands_Extraction_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction-Description\", \"EXTRACTION: Raw Materials\")",
@@ -4258,15 +4248,20 @@
             }
         },
         {
-            "Name": "STYX_A_Expedition_Collect_From_Dropship",
+            "Name": "STYX_A_Expedition_Collect_Beacons",
             "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_Styx_A_Expedition_Collect_Beacons.BPQ_Styx_A_Expedition_Collect_Beacons_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Collect_From_Dropship-Description\", \"Collect Beacons From Dropship Storage\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Collect_Beacons-Description\", \"Collect Beacons From the Sinotai Supply Pod (M)\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "StyxIntroScoutLandingZones",
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "STYX_A_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Styx/A/Expedition/BPQ_STYX_A_Expedition_Resupply.BPQ_STYX_A_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_A_Expedition_Beacon_1",
@@ -4356,7 +4351,12 @@
         {
             "Name": "STYX_B_Expedition_Collect_From_Dropship",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BPQ_STYX_B_Expedition_Collect_Radar.BPQ_STYX_B_Expedition_Collect_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Collect_From_Dropship-Description\", \"Collect A Radar From Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Collect_From_Dropship-Description\", \"Collect a Radar from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "STYX_B_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Resupply.BPQ_STYX_C_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_B_Expedition_Scan_1",
@@ -4387,7 +4387,7 @@
         {
             "Name": "STYX_B_Expedition_Travel_To_Cave",
             "Class": "/Game/BP/Quests/Styx/B/Expedition/BP_STYX_B_Expedition_Travel_Blocker.BP_STYX_B_Expedition_Travel_Blocker_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Travel_To_Cave-Description\", \"Travel to the Cave Detected by the Station\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Expedition_Travel_To_Cave-Description\", \"Travel to the Cave Detected by the Station (M)\")",
             "LocationQuery": {
                 "RowName": "STYX_Blocker_Wall_DryRidge"
             },
@@ -4549,13 +4549,18 @@
         {
             "Name": "STYX_C_Expedition_Collect_Radar",
             "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Collect_Radar.BPQ_STYX_C_Expedition_Collect_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Collect_Radar-Description\", \"Collect A Radar from Dropship Storage\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Collect_Radar-Description\", \"Collect Supplies from the Sinotai Supply Pod (M)\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "StyxCExpeditionFindOasis",
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "STYX_C_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Resupply.BPQ_STYX_C_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_C_Expedition_Oasis_Parent",
@@ -4633,12 +4638,12 @@
         {
             "Name": "STYX_C_Expedition_Deploy_Drill",
             "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Deploy.BPQ_STYX_C_Expedition_Drill_Deploy_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Deploy_Drill-Description\", \"Place Drill\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Deploy_Drill-Description\", \"Place the Drill on the Cave Blocker\")"
         },
         {
             "Name": "STYX_C_Expedition_Fuel_Drill",
             "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Power.BPQ_STYX_C_Expedition_Drill_Power_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Fuel_Drill-Description\", \"Fuel and activate drill\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Fuel_Drill-Description\", \"Craft a Jerry Can (Machining Bench) and fill it with Biofuel (Composter), Then Place the Full Jerry Can in the Drill then Activate\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "StyxCExpeditionActivateDrill",
@@ -4649,7 +4654,7 @@
         {
             "Name": "STYX_C_Expedition_Defend_Drill",
             "Class": "/Game/BP/Quests/Styx/C/Expedition/BPQ_STYX_C_Expedition_Drill_Defend.BPQ_STYX_C_Expedition_Drill_Defend_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Defend_Drill-Description\", \"Defend the drill\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Expedition_Defend_Drill-Description\", \"Defend the Drill from Creatures Drawn to the Sound\")"
         },
         {
             "Name": "STYX_C_Expedition_Defend_Drill_Progress",
@@ -4769,7 +4774,7 @@
         {
             "Name": "STYX_C_Extermination_Collect_From_Dropship",
             "Class": "/Game/BP/Quests/Styx/C/Extermination/BPQ_STYX_C_Extermination_Collect_Equipment.BPQ_STYX_C_Extermination_Collect_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Collect_From_Dropship-Description\", \"Collect the Hunting Equipment from Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Extermination_Collect_From_Dropship-Description\", \"Collect the Hunting Equipment from the Sinotai Supply Pod (M)\")"
         },
         {
             "Name": "STYX_C_Extermination_Travel",
@@ -4823,7 +4828,12 @@
         {
             "Name": "STYX_D_Expedition_Collect_Radar_And_Beacon",
             "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Collect_Radar_Beacon.BPQ_STYX_D_Expedition_Collect_Radar_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect A Radar and A Beacon from Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Collect_Radar_And_Beacon-Description\", \"Collect Supplies from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "STYX_D_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Styx/D/Expedition/BPQ_STYX_D_Expedition_Resupply.BPQ_STYX_D_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_D_Expedition_Scan_1",
@@ -5067,7 +5077,7 @@
         },
         {
             "Name": "STYX_D_Research_Travel",
-            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Travel.BPQ_STYX_D_Research_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Travel-Description\", \"Investigate the nearby cave\")",
             "LocationQuery": {
                 "RowName": "STYX_River_TopLake_Cave"
@@ -5095,7 +5105,12 @@
         {
             "Name": "STYX_D_Research_Analyzer_Collect",
             "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Analyzer_Collect.BPQ_STYX_D_Research_Analyzer_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Collect-Description\", \"Collect the Analyzer from Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Analyzer_Collect-Description\", \"Collect the Analyzer from from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "STYX_D_Research_Resupply",
+            "Class": "/Game/BP/Quests/Styx/D/Research/BPQ_STYX_D_Research_Resupply.BPQ_STYX_D_Research_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_D_Research_Analyzer_Deploy",
@@ -5194,7 +5209,18 @@
         {
             "Name": "STYX_E_Expedition_Collect_From_Dropship",
             "Class": "/Game/BP/Quests/Styx/E/Expedition/BPQ_STYX_E_Expedition_Collect_Radar.BPQ_STYX_E_Expedition_Collect_Radar_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Collect_From_Dropship-Description\", \"Collect A Radar From Dropship Storage\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Collect_From_Dropship-Description\", \"Collect a Radar from the Sinotai Supply Pod (M)\")",
+            "DialoguePoolEvents": {
+                "QuestEnd": {
+                    "RowName": "Styx_E_Expedition_CollectRadar",
+                    "DataTableName": "D_DialoguePool"
+                }
+            }
+        },
+        {
+            "Name": "STYX_E_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Styx/E/Expedition/BPQ_STYX_E_Expedition_Resupply.BPQ_STYX_E_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
             "Name": "STYX_E_Expedition_Scan",
@@ -5280,7 +5306,7 @@
         {
             "Name": "STYX_E_Expedition_Blocker",
             "Class": "/Game/BP/Quests/Styx/E/Expedition/BPQ_STYX_E_Expedition_Blocker.BPQ_STYX_E_Expedition_Blocker_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker-Description\", \"Repair and test the Prototype Laser\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Blocker-Description\", \"Repair (Crafting Bench) and test the Prototype Laser\")"
         },
         {
             "Name": "STYX_E_Expedition_Blocker_Repair",
@@ -5608,7 +5634,7 @@
         {
             "Name": "STYX_A_Extermination_Track_Collect",
             "Class": "/Game/BP/Quests/Styx/A/Extermination/BPQ_STYX_A_Extermination_Track_Collect.BPQ_STYX_A_Extermination_Track_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the dropship\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the Sinotai Supply Pod (M)\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "AfterCombiningCollectedItems",
@@ -6001,7 +6027,7 @@
         {
             "Name": "STYX_D_Extermination_Track_Collect",
             "Class": "/Game/BP/Quests/Styx/D/Extermination/BPQ_STYX_D_Extermination_Track_Collect.BPQ_STYX_D_Extermination_Track_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the dropship\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Extermination_Track_Collect-Description\", \"Collect the Prototype Tracker from the Sinotai Delivery Pod (M)\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "AfterCombiningCollectedItems",
@@ -6288,12 +6314,12 @@
         {
             "Name": "STYX_B_Stockpile_Deposit_PolarBearPelt",
             "Class": "/Game/BP/Quests/Styx/B/Stockpile/BPQ_STYX_B_Stockpile_Deposit_PolarBearPelt.BPQ_STYX_B_Stockpile_Deposit_PolarBearPelt_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Stockpile_Deposit_PolarBearPelt-Description\", \"{0} / {1} Polar Bear Pelt\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Stockpile_Deposit_PolarBearPelt-Description\", \"{0} / {1} Arctic Pelt\")"
         },
         {
             "Name": "STYX_B_Stockpile_Deposit_Cocoa",
             "Class": "/Game/BP/Quests/Styx/B/Stockpile/BPQ_STYX_B_Stockpile_Deposit_Cocoa.BPQ_STYX_B_Stockpile_Deposit_Cocoa_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Stockpile_Deposit_Cocoa-Description\", \"{0} / {1} Cocoa Seeds\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Stockpile_Deposit_Cocoa-Description\", \"{0} / {1} Cocoa\")"
         },
         {
             "Name": "OLY_Forest_WS_Stockpile",
@@ -8621,6 +8647,56 @@
             "Name": "PRO_B_Extermination_Fish_4",
             "Class": "/Game/BP/Quests/Prometheus/B/Extermination/BPQ_PRO_B_Extermination_Fish_4.BPQ_PRO_B_Extermination_Fish_4_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_B_Extermination_Fish_4-Description\", \"{0} / {1} Neon Dory\")"
+        },
+        {
+            "Name": "STYX_E_Research_Resupply",
+            "Class": "/Game/BP/Quests/Styx/E/Research/BPQ_STYX_E_Research_Resupply.BPQ_STYX_E_Research_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Research_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "STYX_E_Survey_Resupply",
+            "Class": "/Game/BP/Quests/Styx/E/Survey/BPQ_STYX_E_Survey_Resupply.BPQ_STYX_E_Survey_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Survey_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Forest_Scan_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_Resupply.BPQ_OLY_Forest_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Canyon_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Expedition/BPQ_OLY_Canyon_Expedition_Resupply.BPQ_OLY_Canyon_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Glacier_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Glacier/Expedition/BPQ_OLY_Glacier_Resupply.BPQ_OLY_Glacier_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Glacier_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Riverlands_Expedition_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Riverlands/Expedition/BPQ_OLY_Riverlands_Expedition_Resupply.BPQ_OLY_Riverlands_Expedition_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Canyon_Survey_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Survey/BPQ_OLY_Canyon_Survey_Resupply.BPQ_OLY_Canyon_Survey_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Survey_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Desert_Survey_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Desert/Survey/BPQ_OLY_Desert_Survey_Resupply.BPQ_OLY_Desert_Survey_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Survey_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Canyon_Recovery_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Canyon/Recovery/BPQ_OLY_Canyon_Recovery_Resupply.BPQ_OLY_Canyon_Recovery_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Canyon_Recovery_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Riverlands_Extraction_Resupply",
+            "Class": "/Game/BP/Quests/Olympus/Riverlands/Extraction/BPQ_OLY_Riverlands_Extraction_Resupply.BPQ_OLY_Riverlands_Extraction_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         }
     ]
 }

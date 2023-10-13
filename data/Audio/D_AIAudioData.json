@@ -3298,6 +3298,80 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "ScorpionLarge",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Scorpion/SFX_FOOTSTEP_SCORPION_LARGE.SFX_FOOTSTEP_SCORPION_LARGE",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "ScorpionLargeAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "ScorpionLargeFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "ScorpionLargeDeath"
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "CaveBat",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Kea/SFX_FOOTSTEP_KEA.SFX_FOOTSTEP_KEA",
+            "FrontFootSocket": "RigPelvis",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigNeck",
+            "AttackVocalisation": {
+                "RowName": "CaveBatAttack"
+            },
+            "DeathVocalisation": {
+                "RowName": "PredatorBirdDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "CaveBatIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "PredatorBirdSpot",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 2000,
+            "FoliageCheckMaxDistance": 2000
         }
     ]
 }
