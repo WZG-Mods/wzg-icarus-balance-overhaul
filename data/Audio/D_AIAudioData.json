@@ -3337,9 +3337,6 @@
             "AttackVocalisation": {
                 "RowName": "CaveBatAttack"
             },
-            "DeathVocalisation": {
-                "RowName": "PredatorBirdDeath"
-            },
             "StateVocalisations": {
                 "Idle": {
                     "StateEnteredVocalisation": {
@@ -3357,11 +3354,57 @@
                 },
                 "Attacking": {
                     "StateEnteredVocalisation": {
-                        "RowName": "PredatorBirdSpot",
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
+                        "RowName": "CaveBatAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
                         "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 2000,
+            "FoliageCheckMaxDistance": 2000
+        },
+        {
+            "Name": "ArcticBat",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Kea/SFX_FOOTSTEP_KEA.SFX_FOOTSTEP_KEA",
+            "FrontFootSocket": "RigPelvis",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigNeck",
+            "AttackVocalisation": {
+                "RowName": "CaveBatAttack"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "ArcticBatIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "ArcticBatAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {

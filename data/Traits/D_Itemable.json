@@ -8557,7 +8557,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Clay_Brick_Halfpiece_0.ITEM_Clay_Brick_Halfpiece_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Clay_Brick_Halfpiece-Description\", \"A homely half-piece for your walls.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Clay_Brick_Halfpiece-FlavorText\", \"There are four main elements of clay on Earth, who knows what\\'s on Icarus?\")",
-            "Weight": 1250,
+            "Weight": 2500,
             "MaxStack": 20,
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -12092,7 +12092,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery.T_ITEM_AlienFossil_Pottery",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_AlienFossil_Pottery-Description\", \"An oddly-marked clay vessel, that has been damaged by something.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_AlienFossil_Pottery-FlavorText\", \"Who could have made this?\")",
-            "Weight": 3000,
+            "Weight": 1000,
             "MaxStack": 10
         },
         {
@@ -12101,7 +12101,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch.T_ITEM_AlienFossil_Conch",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_AlienFossil_Conch-Description\", \"A decorated conch shell etched with strange markings.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_AlienFossil_Conch-FlavorText\", \"Who could have made this?\")",
-            "Weight": 3000,
+            "Weight": 1000,
             "MaxStack": 5
         },
         {
@@ -14119,14 +14119,14 @@
         {
             "Name": "Item_Carcass_Tusker",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker-DisplayName\", \"Tusker Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker-Description\", \"A once proud beast, now lies dead at your feet.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_Tusker_Juvenile",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker_Juvenile-DisplayName\", \"Juvenile Tusker Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker_Juvenile-Description\", \"A juvenile Tusker which never quite made it to full adulthood.\")",
             "Weight": 4500
         },
@@ -14211,21 +14211,83 @@
             "MaxStack": 20
         },
         {
-            "Name": "Item_Iron_Frame",
-            "DisplayName": "INVTEXT(\"[DNT] Aluminium Frame\")",
-            "Weight": 100,
+            "Name": "Item_Ice_Wall",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-DisplayName\", \"Ice Wall\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-Description\", \"A well-constructed base for your base.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
             "MaxStack": 20
         },
         {
-            "Name": "Item_Clay_Brick_Frame",
-            "DisplayName": "INVTEXT(\"[DNT] Clay Brick Frame\")",
-            "Weight": 2500,
+            "Name": "Item_Ice_Floor",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-DisplayName\", \"Ice Floor\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-Description\", \"A solid and reliable foundation.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
             "MaxStack": 20
         },
         {
-            "Name": "Item_Scoria_Brick_Frame",
-            "DisplayName": "INVTEXT(\"[DNT] Scoria Brick Frame\")",
-            "Weight": 3000,
+            "Name": "Item_Ice_Ramp",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-DisplayName\", \"Ice Roof/Ramp\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-Description\", \"A solid option for any construction.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Wall_Angle",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall_Angle-DisplayName\", \"Ice Wall Angled\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall_Angle-Description\", \"A sturdy angled option.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Beam",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-DisplayName\", \"Ice Beam\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-Description\", \"A beam that provides rustic style and function.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Roof_Corner",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-DisplayName\", \"Ice Roof Corner\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-Description\", \"A resilient piece of roofing.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Roof_Half_Pitch",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Half_Pitch-DisplayName\", \"Ice Halfpitches\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Half_Pitch-Description\", \"A tidy roofing option.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Half_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Half_Piece-DisplayName\", \"Ice Halfpieces\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Half_Piece-Description\", \"A basic half-piece for your walls.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Stairs",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-DisplayName\", \"Ice Stairs\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-Description\", \"A basic set of stairs to welcome you home.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Ice_Floor_TrapDoor",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor_TrapDoor-DisplayName\", \"Ice Floor Trapdoor\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor_TrapDoor-Description\", \"A convenient hatch for your base.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Weight": 500,
             "MaxStack": 20
         }
     ]
