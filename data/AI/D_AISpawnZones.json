@@ -374,8 +374,20 @@
             "Creatures": {
                 "SpawnList": {
                     "(Value=\"Snow_Wolf\")": 10,
+                    "(Value=\"Snow_Rabbit\")": 5
+                }
+            },
+            "MinLevel": 10,
+            "MedianLevel": 25,
+            "MaxLevel": 40
+        },
+        {
+            "Name": "STYX_Arctic_Easy",
+            "Creatures": {
+                "SpawnList": {
+                    "(Value=\"Snow_Wolf\")": 10,
                     "(Value=\"Snow_Rabbit\")": 5,
-                    "(Value=\"Horse\")": 2
+                    "(Value=\"Tusker\")": 5
                 }
             },
             "MinLevel": 10,
@@ -405,10 +417,45 @@
             "MaxLevel": 100
         },
         {
+            "Name": "STYX_Arctic_Hard",
+            "Creatures": {
+                "SpawnList": {
+                    "(Value=\"Polar_Bear\")": 1,
+                    "(Value=\"Snow_Wolf\")": 10,
+                    "(Value=\"Mammoth_Arctic\")": 1,
+                    "(Value=\"Snow_Rabbit\")": 4,
+                    "(Value=\"SnowLeopard\")": 2,
+                    "(Value=\"Tusker\")": 5
+                },
+                "BiomeSpawnDensity": 10,
+                "RelevantAutonomousSpawners": [
+                    {
+                        "RowName": "Arctic_Bat",
+                        "DataTableName": "D_AutonomousSpawns"
+                    }
+                ]
+            },
+            "MinLevel": 60,
+            "MedianLevel": 80,
+            "MaxLevel": 100
+        },
+        {
             "Name": "Arctic_Bear_Easy",
             "Creatures": {
                 "SpawnList": {
                     "(Value=\"Polar_Bear\")": 2
+                }
+            },
+            "MinLevel": 20,
+            "MedianLevel": 50,
+            "MaxLevel": 80
+        },
+        {
+            "Name": "STYX_Arctic_Bear_Easy",
+            "Creatures": {
+                "SpawnList": {
+                    "(Value=\"Polar_Bear\")": 4,
+                    "(Value=\"Tusker\")": 2
                 }
             },
             "MinLevel": 20,
