@@ -4699,6 +4699,163 @@
                 ],
                 "AutoDescription": " ALL( Traits.Buildable, Building.Ice )"
             }
+        },
+        {
+            "Name": "Lava_BurnImmediately",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Building.Thatch"
+                    },
+                    {
+                        "TagName": "Building.Wood"
+                    },
+                    {
+                        "TagName": "Building.InteriorWood"
+                    },
+                    {
+                        "TagName": "Building.Ice"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "UserDescription": "Building parts that burn immediately in lava",
+                "AutoDescription": " ANY( Building.Thatch, Building.Wood, Building.InteriorWood, Building.Ice )"
+            }
+        },
+        {
+            "Name": "Lava_BurnDot",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Building.Stone"
+                    },
+                    {
+                        "TagName": "Building.Glass"
+                    },
+                    {
+                        "TagName": "Building.Aluminium"
+                    },
+                    {
+                        "TagName": "Building.Concrete"
+                    },
+                    {
+                        "TagName": "Building.ClayBrick"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    5,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "UserDescription": "Builing parts that take DOT in lava",
+                "AutoDescription": " ANY( Building.Stone, Building.Glass, Building.Aluminium, Building.Concrete, Building.ClayBrick )"
+            }
+        },
+        {
+            "Name": "Lava_WaterBody",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Lava"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "UserDescription": "Is this lake/river lava",
+                "AutoDescription": " ANY( Traits.Lava )"
+            }
+        },
+        {
+            "Name": "Attachment_Rank_IceMammoth",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Rank.IceMammoth"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Attachment.Rank.IceMammoth )"
+            }
+        },
+        {
+            "Name": "Attachment_Rank_Sandworm",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Rank.Sandworm"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Attachment.Rank.Sandworm )"
+            }
+        },
+        {
+            "Name": "Attachment_Rank_AlphaWolf",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Rank.AlphaWolf"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Attachment.Rank.AlphaWolf )"
+            }
+        },
+        {
+            "Name": "Attachment_Rank_Scorpion",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Rank.Scorpion"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Attachment.Rank.Scorpion )"
+            }
         }
     ]
 }

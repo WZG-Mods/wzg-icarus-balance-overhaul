@@ -971,8 +971,8 @@
         },
         {
             "Name": "OLY_Forest_Research_Equipment",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Equipment.BPQ_OLY_Forest_Research_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-Description\", \"Collect the UDA Supplies from your Dropship\")"
+            "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_CollectPod.BPQ_OLY_Forest_Research_CollectPod_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-Description\", \"Collect the UDA Supplies from the Supply Pod\")"
         },
         {
             "Name": "OLY_Forest_Research_Flora",
@@ -1860,7 +1860,10 @@
         {
             "Name": "OLY_Riverlands_Extermination_Investigate",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Extermination/BPQ_OLY_Riverlands_Extermination_Investigate.BPQ_OLY_Riverlands_Extermination_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extermination_Investigate-Description\", \"Search for signs of the animal\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extermination_Investigate-Description\", \"Search for signs of the animal\")",
+            "LocationQuery": {
+                "RowName": "T2_Riverlands_Extermination_Search1"
+            }
         },
         {
             "Name": "OLY_Riverlands_Extermination_Track",
@@ -2816,7 +2819,7 @@
         {
             "Name": "OLY_Arctic_Stockpile_PolarFur",
             "Class": "/Game/BP/Quests/Olympus/Arctic/Stockpile/BPQ_OLY_Arctic_Stockpile_Deposit_PolarFur.BPQ_OLY_Arctic_Stockpile_Deposit_PolarFur_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Stockpile_PolarFur-Description\", \"{0} / {1} Polar Bear Pelt\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Stockpile_PolarFur-Description\", \"{0} / {1} Arctic Pelt\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "ReturnItemsToDropship2",
@@ -3938,7 +3941,7 @@
         {
             "Name": "OLY_Riverlands_Extraction_Deliver",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Extraction/BPQ_OLY_Riverlands_Extraction_Collect.BPQ_OLY_Riverlands_Extraction_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Deliver-Description\", \"Collect and Deliver the Materials into the Experimental Mining Equipment Pod \")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Deliver-Description\", \"Collect and Deliver the Materials into the Supply Pod \")"
         },
         {
             "Name": "OLY_Riverlands_Extraction_Optional_Scanner",
