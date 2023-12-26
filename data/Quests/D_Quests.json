@@ -8700,6 +8700,64 @@
             "Name": "OLY_Riverlands_Extraction_Resupply",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Extraction/BPQ_OLY_Riverlands_Extraction_Resupply.BPQ_OLY_Riverlands_Extraction_Resupply_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "PRO_Ashlands",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
+            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ashlands\")"
+        },
+        {
+            "Name": "PRO_Ashlands_CraftBeacons",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_CraftBeacons.BPQ_PRO_Ashlands_Story_CraftBeacons_C",
+            "Description": "INVTEXT(\"[DNT] Craft at least 3 Beacons: {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_Ashlands_Beacon",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon.BPQ_PRO_Ashlands_Story_Beacon_C",
+            "Description": "INVTEXT(\"[DNT] Place Portable Beacon at Entrance to Ashlands.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Entrances"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Beacon_Chain",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
+            "Description": "INVTEXT(\"[DNT] Chain beacons until you find the scientists\\' outpost. (just travel, or place normal beacons for now)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Outpost_Percentage",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Outpost_Signal.BPQ_PRO_Ashlands_Story_Outpost_Signal_C",
+            "Description": "INVTEXT(\"[DNT] Detecting Signal from Outpost: {0}% Signal Strength\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Outpost_Clear",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
+            "Description": "INVTEXT(\"[DNT] Clear creatures from around the outpost.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Outpost_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashands_Story_Outpost_Collect.BPQ_PRO_Ashands_Story_Outpost_Collect_C",
+            "Description": "INVTEXT(\"[DNT] Find audio log in structure.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Beacon_Icesheets",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon_Icesheet.BPQ_PRO_Ashlands_Story_Beacon_Icesheet_C",
+            "Description": "INVTEXT(\"[DNT] Place the final beacon around the entrance to the Ice Sheet.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_IcesheetTransition"
+            }
         }
     ]
 }

@@ -1366,7 +1366,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_AdditionalPhysicalDamageMitigation-ModifierName\", \"Aura Effect: Reduced Physical Damage Taken\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_AdditionalPhysicalDamageMitigation-ModifierDescription\", \"Reduced physical damage.\")",
             "GrantedStats": {
-                "(Value=\"BasePhysicalDamageResistance_+%\")": 5
+                "(Value=\"BasePhysicalDamageResistance_%\")": 5
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
@@ -4652,12 +4652,9 @@
             "Name": "Weight_Reduction_Aura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction_Aura.Icon_Weight_Reduction_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierName\", \"Aura: Strength Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more. Does not apply to yourself.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more.\")",
             "bAura": true,
             "AuraRange": 1000,
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
             "ModifierGrantedByAura": {
                 "RowName": "Weight_Reduction"
             },
@@ -4677,8 +4674,8 @@
         },
         {
             "Name": "Healing_Modifier_Duration",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Healing Boost\")",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierName\", \"Aura Effect: Healing Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Duration-ModifierDescription\", \"Granted by a helpful prospector nearby.\")",
             "GrantedStats": {
                 "(Value=\"BaseBacterialModifierDuration_+%\")": -30,
@@ -4698,12 +4695,9 @@
             "Name": "Healing_Modifier_Aura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Aura: Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions. Does not apply to yourself.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "bAura": true,
             "AuraRange": 1000,
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
             "ModifierGrantedByAura": {
                 "RowName": "Healing_Modifier_Duration"
             },
@@ -7766,7 +7760,7 @@
         },
         {
             "Name": "GrantedAura_HealthRegen",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen.Icon_HealthRegen'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen_Aura.Icon_HealthRegen_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierName\", \"Aura: Increased Health Regeneration\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierDescription\", \"Nearby allies receive additional health regeneration.\")",
             "bAura": true,
@@ -7788,7 +7782,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HealthRegen-ModifierName\", \"Aura Effect: Increased Health Regeneration\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HealthRegen-ModifierDescription\", \"Increased Health Regeneration\")",
             "GrantedStats": {
-                "(Value=\"BaseHealthRegen_+%\")": 50
+                "(Value=\"BaseHealthRegen_+%\")": 100
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",

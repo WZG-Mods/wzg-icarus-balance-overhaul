@@ -19086,7 +19086,7 @@
             },
             "Position": {
                 "X": 2600,
-                "Y": 1000
+                "Y": 1150
             },
             "Size": {
                 "X": 250,
@@ -19366,7 +19366,7 @@
             },
             "Position": {
                 "X": 2600,
-                "Y": 550
+                "Y": 450
             },
             "Size": {
                 "X": 250,
@@ -32250,6 +32250,31 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Workshop_Backpack_Medic",
+            "ExtraData": {
+                "RowName": "Meta_Medic_Backpack",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Backpacks"
+            },
+            "Position": {
+                "X": 2600,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Larkwell_Backpack_Beta",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
             "Name": "Workshop_Backpack_Hunter",
             "ExtraData": {
                 "RowName": "Meta_Hunters_Backpack",
@@ -32273,6 +32298,10 @@
                 },
                 {
                     "RowName": "Workshop_Mining_Backpack",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Workshop_Backpack_Medic",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -32415,10 +32444,6 @@
                 {
                     "RowName": "Workshop_Backpack_Tech",
                     "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Workshop_Backpack_Medic",
-                    "DataTableName": "D_Talents"
                 }
             ],
             "bDefaultUnlocked": true,
@@ -32455,6 +32480,38 @@
                 }
             ],
             "RequiredLevel": 20
+        },
+        {
+            "Name": "Raw_Wood_Sign",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Raw_Wood_Sign-DisplayName\", \"Rustic Sign Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Raw_Wood_Sign-Description\", \"A Collection of Rustic Signs\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Raw_Wood_Sign_Trunk_A_Ground.T_ITEM_Raw_Wood_Sign_Trunk_A_Ground",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 6300,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Player_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_HuntingLocked"
+                }
+            ]
         }
     ]
 }
