@@ -3415,6 +3415,58 @@
             },
             "FootstepMaxDistance": 2000,
             "FoliageCheckMaxDistance": 2000
+        },
+        {
+            "Name": "Chicken",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Raccoon/SFX_FOOTSTEP_RACCOON.SFX_FOOTSTEP_RACCOON",
+            "FrontFootSocket": "RigLFLeg2",
+            "RearFootSocket": "RigTail2",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigJaw",
+            "DeathVocalisation": {
+                "RowName": "ChickenDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "ChickenIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "ChickenIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Boss"
+            },
+            "MusicConditionOverrideMinThreatLevel": 20,
+            "FootstepMaxDistance": 1500,
+            "FoliageCheckMaxDistance": 3500,
+            "bUsesShelter": false
         }
     ]
 }

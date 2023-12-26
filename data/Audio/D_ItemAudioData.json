@@ -30,6 +30,7 @@
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ARMOUR_BREAK.SFX_ARMOUR_BREAK",
+            "RepairedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_ARMOURBENCH.UI_CRAFT_RECIPE_ARMOURBENCH",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         },
         {
@@ -852,6 +853,12 @@
                     "FMODEvents": [
                         "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_CARRY.SFX_RIFLE_CARRY"
                     ]
+                },
+                "Lever": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_LEVEROUT.SFX_RIFLE_LEVEROUT",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_LEVERIN.SFX_RIFLE_LEVERIN"
+                    ]
                 }
             }
         },
@@ -1307,6 +1314,28 @@
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_SMALL_WOOD_DESTROY.SFX_DEP_SMALL_WOOD_DESTROY",
             "RepairedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD_REPAIR.SFX_BLD_WOOD_REPAIR",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+        },
+        {
+            "Name": "ScorpionRifle",
+            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/Guns/SFX_GUN_MOVE_PICKUP.SFX_GUN_MOVE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Carry": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_CARRY.SFX_RIFLE_CARRY"
+                    ]
+                },
+                "Lever": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SCORPION_RIFLE_LEVER1.SFX_SCORPION_RIFLE_LEVER1",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SCORPION_RIFLE_LEVER2.SFX_SCORPION_RIFLE_LEVER2"
+                    ]
+                }
+            }
         }
     ]
 }

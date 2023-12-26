@@ -2840,7 +2840,7 @@
         {
             "Name": "Item_Armor_Bench",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Armor_Bench-DisplayName\", \"Textiles Bench\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Armor_Bench.ITEM_Armor_Bench",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Bench.T_ITEM_Armor_Bench",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Armor_Bench-Description\", \"Craft and assemble various protective items and garments.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Armor_Bench-FlavorText\", \"Basic fabric, leatherwork and armorer\\'s tools allow you to fashion a range of clothing and protective wear from natural materials and fibres.\")",
             "Weight": 20000
@@ -7056,7 +7056,7 @@
         },
         {
             "Name": "Item_Rustic_DiningChair",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rustic_DiningChair-DisplayName\", \"Rustic Dining Room Chair\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rustic_DiningChair-DisplayName\", \"Rustic Dining Chair\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_DiningChair.ITEM_Rustic_DiningChair",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rustic_DiningChair-Description\", \"A basic dining chair for your home.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rustic_DiningChair-FlavorText\", \"Watch out for the splinters.\")",
@@ -11164,7 +11164,12 @@
         {
             "Name": "Item_Basic_Turret",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Basic_Turret-DisplayName\", \"Basic Turret\")",
-            "Weight": 8000
+            "Weight": 20000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "Item_Meta_Fishfinder",
@@ -13217,7 +13222,7 @@
         },
         {
             "Name": "Item_Medic_Backpack",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medic_Backpack-DisplayName\", \"Biomor Backpack\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medic_Backpack-DisplayName\", \"Biomore Backpack\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Medic_Backpack.T_ITEM_Medic_Backpack",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Medic_Backpack-Description\", \"A handy backpack to cover all your medical needs.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Medic_Backpack-FlavorText\", \"Just think of the possibilities...\")",
@@ -14077,7 +14082,7 @@
         },
         {
             "Name": "Item_Metal_Chair_Sitting",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Chair_Sitting-DisplayName\", \"Industrial Bench\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Chair_Sitting-DisplayName\", \"Industrial Sitting Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Metal_Chair_Sitting.T_ITEM_Metal_Chair_Sitting",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Chair_Sitting-Description\", \"A sleek and minimalist metal bench.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Chair_Sitting-FlavorText\", \"Designed for functionality and a touch of urban elegance.\")",
@@ -14203,21 +14208,24 @@
         },
         {
             "Name": "Item_Water_Purifier_T1",
-            "DisplayName": "INVTEXT(\"[DNT] Basic Water Purifier\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T1-DisplayName\", \"Basic Water Purifier\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T1_1.T_ITEM_Water_Purifier_T1_1",
-            "Description": "INVTEXT(\"[DNT] Has 2 Variations, one is placed in water, the other collects rain water\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T1-Description\", \"A simple water purifier that can be placed into a body of water or can collect rainwater.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T1-FlavorText\", \"Hydrate!\")",
             "Weight": 1000
         },
         {
             "Name": "Item_Water_Purifier_T2",
-            "DisplayName": "INVTEXT(\"[DNT] Water Purifier\")",
-            "Description": "INVTEXT(\"[DNT] This one is placed in water and can fill bottles\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T2-DisplayName\", \"Water Purifier\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T2-Description\", \"A water purifier that can be placed in a body of water to make it safe for human consumption.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T2-FlavorText\", \"Hydration is key.\")",
             "Weight": 2500
         },
         {
             "Name": "Item_Water_Purifier_T4",
-            "DisplayName": "INVTEXT(\"[DNT] Electric Water Purifier\")",
-            "Description": "INVTEXT(\"[DNT] This one can be placed anywhere and water piped in, fills bottles\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T4-DisplayName\", \"Electric Water Purifier\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T4-Description\", \"A water purifier that can refill bottles for you automatically.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Purifier_T4-FlavorText\", \"Hydrate!\")",
             "Weight": 5000
         },
         {
@@ -14298,80 +14306,90 @@
         {
             "Name": "Item_Ice_Wall",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-DisplayName\", \"Ice Wall\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-Description\", \"A well-constructed base for your base.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Wall_0.T_ITEM_Ice_Wall_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-Description\", \"A chilly base for your base.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Floor",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-DisplayName\", \"Ice Floor\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-Description\", \"A solid and reliable foundation.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Floor_0.T_ITEM_Ice_Floor_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-Description\", \"A solid but chilly foundation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Ramp",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-DisplayName\", \"Ice Roof/Ramp\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-Description\", \"A solid option for any construction.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Ramp_0.T_ITEM_Ice_Ramp_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-Description\", \"A chilly option for any construction.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Ramp-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Wall_Angle",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall_Angle-DisplayName\", \"Ice Wall Angled\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Wall_Angle_0.T_ITEM_Ice_Wall_Angle_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall_Angle-Description\", \"A sturdy angled option.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Wall_Angle-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Beam",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-DisplayName\", \"Ice Beam\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-Description\", \"A beam that provides rustic style and function.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Beam_0.T_ITEM_Ice_Beam_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-Description\", \"A beam that provides style and function.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Beam-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Roof_Corner",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-DisplayName\", \"Ice Roof Corner\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-Description\", \"A resilient piece of roofing.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Roof_Corner_0.T_ITEM_Ice_Roof_Corner_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-Description\", \"A chilly piece of roofing.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Corner-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Roof_Half_Pitch",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Half_Pitch-DisplayName\", \"Ice Halfpitches\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Half_Pitch_0.T_ITEM_Ice_Half_Pitch_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Half_Pitch-Description\", \"A tidy roofing option.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Roof_Half_Pitch-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Half_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Half_Piece-DisplayName\", \"Ice Halfpieces\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Halfpiece_0.T_ITEM_Ice_Halfpiece_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Half_Piece-Description\", \"A basic half-piece for your walls.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Half_Piece-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Stairs",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-DisplayName\", \"Ice Stairs\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-Description\", \"A basic set of stairs to welcome you home.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Ramp_2.T_ITEM_Ice_Ramp_2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-Description\", \"A chilly set of stairs to welcome you home.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Stairs-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_Ice_Floor_TrapDoor",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor_TrapDoor-DisplayName\", \"Ice Floor Trapdoor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Floor_1.T_ITEM_Ice_Floor_1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor_TrapDoor-Description\", \"A convenient hatch for your base.\")",
-            "FlavorText": "INVTEXT(\"[DNT] Ice Tier Flavor Text\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ice_Floor_TrapDoor-FlavorText\", \"There are sixteen different types of ice that have been recorded on Earth.\")",
             "Weight": 500,
             "MaxStack": 20
         },
@@ -14433,7 +14451,7 @@
         },
         {
             "Name": "Item_Brutalist_Bench_Sitting",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Brutalist_Bench_Sitting-DisplayName\", \"Brutalist Bench\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Brutalist_Bench_Sitting-DisplayName\", \"Brutalist Sitting Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Bench_Sitting.T_ITEM_Brutalist_Bench_Sitting",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Brutalist_Bench_Sitting-Description\", \"A robust bench crafted from a base of coarse concrete embodying the raw, minimalist essence of brutalist design.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Brutalist_Bench_Sitting-FlavorText\", \"Brutalist furniture design originated in the mid-20th century on Earth and is characterized by its use of raw materials, geometric forms, and a focus on function over ornamentation.\")",
@@ -14636,33 +14654,33 @@
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Sandworm",
-            "DisplayName": "INVTEXT(\"[DNT] Sandworm Heat Resistance Inhaler\")",
-            "Description": "INVTEXT(\"[DNT]\")",
-            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Sandworm-DisplayName\", \"Heat Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Sandworm-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with temperature regulation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Sandworm-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
             "MaxStack": 5
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_AlphaWolf",
-            "DisplayName": "INVTEXT(\"[DNT] Alpha Wolf Pheromone Inhaler\")",
-            "Description": "INVTEXT(\"[DNT]\")",
-            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-DisplayName\", \"Stamina Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with health and stamina regulation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
             "MaxStack": 5
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Scorpion",
-            "DisplayName": "INVTEXT(\"[DNT] Scorpion Health Inhaler\")",
-            "Description": "INVTEXT(\"[DNT]\")",
-            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-DisplayName\", \"Health Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with health restoration.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
             "MaxStack": 5
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_IceMammoth",
-            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Cold Resistance Inhaler\")",
-            "Description": "INVTEXT(\"[DNT]\")",
-            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_IceMammoth-DisplayName\", \"Cold Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_IceMammoth-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with temperature regulation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_IceMammoth-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
             "MaxStack": 5
         },
@@ -14772,7 +14790,7 @@
         },
         {
             "Name": "Item_Gold_Sitting_Bench",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Gold_Sitting_Bench-DisplayName\", \"Art Deco Bench\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Gold_Sitting_Bench-DisplayName\", \"Art Deco Sitting Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Gold_Sitting_Bench.T_ITEM_Gold_Sitting_Bench",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Gold_Sitting_Bench-Description\", \"A gilded bench that embodies the sleek, decorative essence of traditional Art Deco design.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Gold_Sitting_Bench-FlavorText\", \"Art Deco is a decorative art and architectural style characterized by bold geometric patterns, and sleek lines which emerged in the 1920s and 30s on Earth.\")",
@@ -14968,6 +14986,33 @@
             "Description": "INVTEXT(\"[DNT] 9Diamonds Shield. Be sure to note: Reflects damage to attackers while only using shield.\")",
             "FlavorText": "INVTEXT(\"[DNT] 9Diamonds Shield\")",
             "Weight": 2000
+        },
+        {
+            "Name": "Item_Supporters_Flag",
+            "DisplayName": "INVTEXT(\"[DNT] Supporters Flag\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Supporters_Flag_A.T_ITEM_Supporters_Flag_A",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Supporters_Sign",
+            "DisplayName": "INVTEXT(\"[DNT] Supporters Sign\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Supporters_Sign_A.T_ITEM_Supporters_Sign_A",
+            "Weight": 2000,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Mission_AudioLog_Prometheus_3",
+            "DisplayName": "INVTEXT(\"[DNT] Ashlands Audio Log\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.ITEM_Module_Compass",
+            "Description": "INVTEXT(\"[DNT] An audio log, detailing the discovery of an entrance to an arctic area, north of the outpost, along the west wall, over some lava.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Fur_Curtain_Door",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fur_Curtain_Door-DisplayName\", \"Fur Curtain Door\")",
+            "Weight": 1000,
+            "MaxStack": 20
         }
     ]
 }
