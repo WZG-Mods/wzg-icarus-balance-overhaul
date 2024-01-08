@@ -3296,6 +3296,60 @@
             }
         },
         {
+            "Name": "Lava_Slug",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Lava_Slug-CreatureName\", \"Ignari\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/Bestiary_LavaSlug.Bestiary_LavaSlug",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SLUG.UI_BESTIARY_CRE_SLUG",
+            "Biomes": [
+                {
+                    "RowName": "Volcanic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_019",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 1200,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Lava_Slug-Lore1\", \"These gentle creatures are often found in the hotter parts of Icarus, and are easily frightened by loud noises and disturbances in their vicinity. In most instances they will flee from humans.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Lava_Slug-Lore2\", \"The Ignari is generally harmless but can be highly territorial. They tend to leave slime trails around their territory. They have also been known to leave trails around man-made structures, this has resulted in a handful of contractors being evacuated to orbit with life-threatening injuries after accidentally stepping onto a trail.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Lava_Slug-Lore3\", \"\\\"Like a trail of snot, couldn\\'t believe it when I woke up and looked out my window and this lil fella was circling my base. Needless to say I got out of there pretty quickly, really miss that base though...\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Trail_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Fire_Resist_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Frost_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseFireDamageResistance_%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseVolcanicExposureResistance_+%\")": 5
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseLavaSlugExtraDamage_+%"
+                },
+                {
+                    "Value": "BaseLavaSlugExtraDamageResistance_+%"
+                }
+            ]
+        },
+        {
             "Name": "Rabbit_Variant",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit_Variant-CreatureName\", \"Pygmy Lop\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Rabbit.Bestiary_Rabbit",
