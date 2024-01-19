@@ -7334,6 +7334,126 @@
             "OnProspectAvailability": "Upgrade1"
         },
         {
+            "Name": "Tier4_Desert_Recovery_2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery_2-DropName\", \"RELOCATED: Recovery\")",
+            "DesignNotes": "[DNT] Find lost zebras and return them to the pen",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery_2-Description\", \"LOCATE LOST ANIMALS AND RETURN THEM TO THE SINOTAI ENCAMPMENT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Recovery_2-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Desert // BACKGROUND: Sinotai has been conducting experimentation and domestication of local wildlife. // MISSION: Locate the lost animals and return them into Sinotai custody. //TERMS: Flat fee. All safety and survival concerns are the responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSpear01_Large.T_Prospect_Desert_ScorpionSpear01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete10"
+            },
+            "RequiredTech": "Tier2",
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 2
+                }
+            },
+            "Forecast": {
+                "RowName": "Pulse"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_Desert_Recovery_2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 12,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 15,
+            "MetaDepositSpawns": [
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_C13"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_J14_3"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_N5"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                },
+                {
+                    "SpawnLocation": {
+                        "Value": "OLY_M8_2"
+                    },
+                    "MinMetaAmount": 180,
+                    "MaxMetaAmount": 220
+                }
+            ],
+            "NumMetaSpawnsMin": 2,
+            "NumMetaSpawnsMax": 2,
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertRecovery.GT_T016_Bounds_T4_DesertRecovery",
+            "OnProspectAvailability": "Upgrade1"
+        },
+        {
             "Name": "Tier4_Desert_Construction_0",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Tier4_Desert_Construction_0-DropName\", \"SANDBOX: Construction\")",
             "DesignNotes": "[DNT] Desert Construction",
@@ -11114,7 +11234,7 @@
             "Name": "PRO_B_Extermination",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_B_Extermination-DropName\", \"MAGMATIC : Extermination\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_B_Extermination-Description\", \"SPECIMEN RESEARCH IN VOLCANIC AREAS \")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_B_Extermination-FlavourText\", \"//OPERATOR: Lagos // BIOME: Swamp // BACKGROUND: The Operator is interested in potential habitation. // MISSION: Construct a living dwelling high in the treetops //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_B_Extermination-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Volcanic // BACKGROUND: The Operator requires the area to be cleared of local wildlife. // MISSION: Hunt and fish in the marked zone to reduce the population. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -12818,7 +12938,7 @@
                 "RowName": "Pulse"
             },
             "Terrain": {
-                "RowName": "Terrain_017"
+                "RowName": "Terrain_019"
             },
             "FactionMission": {
                 "RowName": "PRO_Ashlands_Story"
