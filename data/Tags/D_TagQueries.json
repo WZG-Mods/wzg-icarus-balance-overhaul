@@ -3596,6 +3596,9 @@
                     },
                     {
                         "TagName": "GOAP.Food.Herbivore"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Honey"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3608,11 +3611,12 @@
                     0,
                     1,
                     1,
+                    3,
                     2,
-                    2,
-                    3
+                    3,
+                    4
                 ],
-                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore ) )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore, Item.Consumable.Food.Honey ) )"
             }
         },
         {
@@ -3630,6 +3634,9 @@
                     },
                     {
                         "TagName": "GOAP.Food.Herbivore"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Honey"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3642,11 +3649,12 @@
                     0,
                     1,
                     1,
+                    3,
                     2,
-                    2,
-                    3
+                    3,
+                    4
                 ],
-                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore ) )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore, Item.Consumable.Food.Honey ) )"
             }
         },
         {
@@ -5435,6 +5443,184 @@
                     1
                 ],
                 "AutoDescription": " ANY( Item.Resource.Ore, FieldGuide.Ore )"
+            }
+        },
+        {
+            "Name": "BeehiveBreedingZone",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Beehive.Breeding"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Beehive.Breeding )"
+            }
+        },
+        {
+            "Name": "BeehiveExpansion_T3",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Beehive.Expansion.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Beehive.Expansion.T3 )"
+            }
+        },
+        {
+            "Name": "BeehiveExpansion_T4",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Beehive.Expansion.T4"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Beehive.Expansion.T4 )"
+            }
+        },
+        {
+            "Name": "BeehiveExtractor",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Beehive.Extractor"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Beehive.Extractor )"
+            }
+        },
+        {
+            "Name": "Any_Beehive_Upgrade",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Beehive.Breeding"
+                    },
+                    {
+                        "TagName": "Item.Beehive.Expansion.T3"
+                    },
+                    {
+                        "TagName": "Item.Beehive.Expansion.T4"
+                    },
+                    {
+                        "TagName": "Item.Beehive.Extractor"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ANY( Item.Beehive.Breeding, Item.Beehive.Expansion.T3, Item.Beehive.Expansion.T4, Item.Beehive.Extractor )"
+            }
+        },
+        {
+            "Name": "Any_Bee",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Bee"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Bee )"
+            }
+        },
+        {
+            "Name": "Queen_Bee",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Bee.Queen"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Bee.Queen )"
+            }
+        },
+        {
+            "Name": "Honeycomb",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Honeycomb"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Resource.Honeycomb )"
+            }
+        },
+        {
+            "Name": "Fuel_FatWax",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fuel.AnimalFat"
+                    },
+                    {
+                        "TagName": "Item.Fuel.Beeswax"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Fuel.AnimalFat, Item.Fuel.Beeswax )"
             }
         }
     ]

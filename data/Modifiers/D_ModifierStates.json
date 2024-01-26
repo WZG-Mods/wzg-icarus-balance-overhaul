@@ -18,7 +18,8 @@
         "AuraFlags": {
             "EffectsSelf": true,
             "EffectsPlayers": true,
-            "EffectsNPCs": false
+            "EffectsNPCs": false,
+            "EffectsDeployables": false
         },
         "ModifierGrantedByAura": {
             "RowName": "None",
@@ -2270,7 +2271,8 @@
             "bAura": true,
             "AuraRange": 2000,
             "AuraFlags": {
-                "EffectsSelf": false
+                "EffectsSelf": false,
+                "EffectsDeployables": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "Dehumidifier"
@@ -3568,7 +3570,8 @@
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 75,
-                "(Value=\"BaseProjectileDamage_+%\")": 5
+                "(Value=\"BaseProjectileDamage_+%\")": 5,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 50
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -8140,7 +8143,7 @@
             "Name": "Smoked_Meat_Generic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Generic_Meat_Smoked.T_ITEM_Generic_Meat_Smoked'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Meat_Generic-ModifierName\", \"Plain Jerky\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Meat_Generic-ModifierDescription\", \"Boosts health, stamina regeneration and exposure resistance, and slows hunger\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Meat_Generic-ModifierDescription\", \"Boosts health and health regeneration, and slows hunger\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumHealth_+\")": 150,
@@ -8158,6 +8161,239 @@
                 }
             ],
             "MergeType": "Replace"
+        },
+        {
+            "Name": "Honey_Jar",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Honey_Jar.T_ITEM_Honey_Jar'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Jar-ModifierName\", \"Jarred Honey\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Jar-ModifierDescription\", \"Boosts Stamina, Food Modifier Duration and Shared Experience.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                "(Value=\"BaseSharedExperience_+%\")": 20
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Honey",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Honey.T_ITEM_Honey'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey-ModifierName\", \"Honey\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey-ModifierDescription\", \"Small Stamina and Food Modifier Duration Boost\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 50,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Smoked_Bacon",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_SmokedBacon.ITEM_SmokedBacon'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Bacon-ModifierName\", \"Honey Smoked Bacon\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Bacon-ModifierDescription\", \"Boosts Stamina, Health Regen, Experiance. Also reduces food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseHealthRegen_+%\")": 20,
+                "(Value=\"BaseFoodConsumption_+%\")": -25,
+                "(Value=\"BaseExperience_+%\")": 15,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 20
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Honey_Pastry",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Honey_Glazed_Pastry.T_ITEM_Honey_Glazed_Pastry'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Pastry-ModifierName\", \"Honey Glazed Pastry\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Pastry-ModifierDescription\", \"Increases Experience, and Food Modifier Duration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Bee_Swarm",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Worker_Bee.T_ITEM_Worker_Bee'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bee_Swarm-ModifierName\", \"Bee Swarm\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bee_Swarm-ModifierDescription\", \"Bees are covering you and stinging you through your suit. Slows movement and attack speed.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -5,
+                "(Value=\"BaseAttackSpeed_+%\")": -5
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PureDamage.BP_ModifierStateBehaviour_PureDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 2,
+                    "Deviation": 1
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "ParasiticModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Parasitic"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antiparasitic.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antiparasitic.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antiparasitic.T2, ModifierState.Medicine.Antiparasitic.T3 )"
+            }
+        },
+        {
+            "Name": "Honey_Mead",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Honey_Mead.T_ITEM_Honey_Mead'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Mead-ModifierName\", \"Honey Mead\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Mead-ModifierDescription\", \"Boosts max stamina and food modifier duration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "Honey_Bar",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Honey_Bar.T_ITEM_Honey_Bar'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Bar-ModifierName\", \"Honeycomb Bar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Bar-ModifierDescription\", \"Boosts stamina, reduces stamina cost of tool actions and increases food modifiers\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Thermos_HoneyTea",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.ITEM_Thermos'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_HoneyTea-ModifierName\", \"Honey Tea\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_HoneyTea-ModifierDescription\", \"Keeps you warm, reduces parasitic and bacterial infection durations.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1000,
+                "(Value=\"BaseParasiticModifierDuration_+%\")": -25,
+                "(Value=\"BaseBacterialModifierDuration_+%\")": -25,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 20
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "GrantedAura_Beehive",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.T_ITEM_Queen_Bee'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierName\", \"Aura: Beehive\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierDescription\", \"Increased nearby crop growth yield\")",
+            "bAura": true,
+            "AuraRange": 600,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsPlayers": false,
+                "EffectsDeployables": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Beehive"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "AuraEffect_Beehive",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.T_ITEM_Queen_Bee'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Beehive-ModifierName\", \"Aura Effect: Nearby Beehive\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Beehive-ModifierDescription\", \"Increased Crop Yield\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 50
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plot"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Plot )"
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         }
     ]
 }
