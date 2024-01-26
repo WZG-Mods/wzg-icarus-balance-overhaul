@@ -1089,16 +1089,16 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Ammo"
+                "RowName": "Any_Bow_Attachment"
             },
             "StartingSlots": 2,
             "SlotOverrides": [
                 {
                     "Query": {
-                        "RowName": "Any_Bow_Attachment",
+                        "RowName": "Any_Ammo",
                         "DataTableName": "D_TagQueries"
                     },
-                    "Location": 1
+                    "Location": 0
                 }
             ]
         },
@@ -1567,6 +1567,83 @@
             },
             "StartingSlots": 4,
             "RemoveOnly": true
+        },
+        {
+            "Name": "BeehiveUpgrades",
+            "InventoryID": {
+                "Value": "BeehiveUpgrades"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Beehive_Upgrade"
+            },
+            "StartingSlots": 4,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "BeehiveExpansion_T3",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "BeehiveBreedingZone",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "BeehiveExpansion_T4",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
+                },
+                {
+                    "Query": {
+                        "RowName": "BeehiveExtractor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 3
+                }
+            ]
+        },
+        {
+            "Name": "BeehiveStorage",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 12
+        },
+        {
+            "Name": "BeeFuel",
+            "InventoryID": {
+                "Value": "Fuel"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Bee"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "BeeBreeding",
+            "InventoryID": {
+                "Value": "Upgrade"
+            },
+            "SlotTemplate": {
+                "RowName": "Queen_Bee"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Fuel_FatWax",
+            "InventoryID": {
+                "Value": "Fuel"
+            },
+            "SlotTemplate": {
+                "RowName": "Fuel_FatWax"
+            },
+            "StartingSlots": 1
         }
     ]
 }
