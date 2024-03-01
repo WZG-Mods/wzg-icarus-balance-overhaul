@@ -3,6 +3,7 @@
     "Defaults": {
         "WorldPressInteracts": [],
         "WorldHoldInteracts": [],
+        "WorldAltPressInteracts": [],
         "WorldAltHoldInteracts": [],
         "GenericData": []
     },
@@ -51,6 +52,15 @@
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -149,6 +159,15 @@
                 {
                     "InteractionRow": {
                         "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -601,14 +620,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Rain_Reservoir_Container",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Rain_Reservoir_Drink",
+                        "RowName": "Interact_GeneratorUI",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -624,7 +636,23 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_GeneratorUI",
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Drink",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -700,7 +728,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_Torch_Toggle",
+                        "RowName": "Interact_TorchUI",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -716,7 +744,7 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_TorchUI",
+                        "RowName": "Interact_Torch_Toggle",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -737,7 +765,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_Torch_Toggle",
+                        "RowName": "Interact_TorchUI",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -753,7 +781,7 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_TorchUI",
+                        "RowName": "Interact_Torch_Toggle",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -921,6 +949,13 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
+                        "RowName": "Interact_TorchUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
                         "RowName": "Pickup_Item",
                         "DataTableName": "D_Interactions"
                     },
@@ -930,7 +965,7 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_TorchUI",
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -951,7 +986,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_Light_Fire",
+                        "RowName": "Interact_TorchUI",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -967,7 +1002,7 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_TorchUI",
+                        "RowName": "Interact_Light_Fire",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1216,7 +1251,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_Deployable",
+                        "RowName": "Interact_GeneratorUI",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1232,7 +1267,7 @@
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_GeneratorUI",
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1364,6 +1399,59 @@
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": "Craft"
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Advanced_Alteration_Bench",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Alter_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Alter"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Craft_Attachment",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Craft"
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
                 }
             ],
             "WorldAltHoldInteracts": [
@@ -1512,6 +1600,13 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
+                        "RowName": "Interact_Sink_Fill_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
                         "RowName": "Interact_Sink",
                         "DataTableName": "D_Interactions"
                     },
@@ -1526,6 +1621,15 @@
                 }
             ],
             "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Sink_Inventory",
@@ -1645,12 +1749,19 @@
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_SpawnBlocker_T3_UI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
                 }
             ],
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_SpawnBlocker_T3_UI",
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1716,6 +1827,15 @@
                 }
             ],
             "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Crop_Plot_Remove_Seed",
@@ -1789,6 +1909,187 @@
                 {
                     "InteractionRow": {
                         "RowName": "Pickup_LandingPad_Cargo",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_TrailBeacon",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Link_Beacon",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Unlink_Beacon",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Flow_Meter",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Flow_Meter",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Switch_Flow_Meter",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Power_Toggle_Only",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Sprinkler",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_No_Power_Toggle",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

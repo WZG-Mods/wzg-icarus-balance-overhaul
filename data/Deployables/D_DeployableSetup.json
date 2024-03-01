@@ -184,8 +184,8 @@
         },
         {
             "Name": "Water_Barrel",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/LiquidContainers/BP_WaterBarrel.BP_WaterBarrel_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel.SM_DEP_Barrel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Water_Barrel.BP_Water_Barrel_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel_Wood.SM_DEP_Barrel_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false,
@@ -804,7 +804,6 @@
         },
         {
             "Name": "WoodBarrel",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/LiquidContainers/BP_WoodenBarrel.BP_WoodenBarrel_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel_Wood.SM_DEP_Barrel_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "SnapToSurfaceNormal": false,
@@ -5735,7 +5734,7 @@
         {
             "Name": "Water_Purifier_T2",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/WaterPurifier/BP_Water_Purifier_T2.BP_Water_Purifier_T2_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver.SM_DEP_Oxite_Dissolver",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterPurifier_T2/SM_DEP_WaterPurifier_T2.SM_DEP_WaterPurifier_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_WATER_ITEM.SFX_DEPLOY_WATER_ITEM",
             "WorldPlacementType": "WaterPlacement"
         },
@@ -6560,6 +6559,226 @@
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Rain_Reservoir_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_RainReservior_T3.BP_RainReservior_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Rain_Reservoir_Metal_Large.SM_DEP_Rain_Reservoir_Metal_Large",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Water_Pump_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Pump/BP_Biofuel_WaterPump.BP_Biofuel_WaterPump_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Water_Pump.SM_DEP_Water_Pump",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_WATER_ITEM.SFX_DEPLOY_WATER_ITEM",
+            "SnapToSurfaceNormal": false,
+            "WorldPlacementType": "WaterPlacement"
+        },
+        {
+            "Name": "Water_Borer",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Pump/BP_Water_Borer.BP_Water_Borer_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Ice_Borer2.SM_DEP_Ice_Borer2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Enzyme_Geyser"
+            ],
+            "SnapSocketsOrTags": [
+                "Enzyme_Geyser_Attachment"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Enzyme_Cannon_Hub",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/EnzymeCannon/BP_EnzymeCannon_Hub.BP_EnzymeCannon_Hub_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_EnzymeCannon_V2.SM_DEP_EnzymeCannon_V2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+        },
+        {
+            "Name": "Enzyme_Cannon_Arm",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/EnzymeCannon/BP_EnzymeCannon_Arm.BP_EnzymeCannon_Arm_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_EnzymeCannon_Arm_V2.SM_DEP_EnzymeCannon_Arm_V2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+        },
+        {
+            "Name": "Water_Trough_Large",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough_Large.BP_Water_Trough_Large_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Wood_Large.SM_DEP_Trough_Wood_Large",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Water_Trough_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough_T4.BP_Water_Trough_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_WaterPump.SM_DEP_Trough_WaterPump",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Water_Trough_Stone",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough_Stone.BP_Water_Trough_Stone_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Concrete.SM_DEP_Trough_Concrete",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Water_Trough_Metal",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough_Metal.BP_Water_Trough_Metal_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Raincatcher.SM_DEP_Trough_Raincatcher",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_IRON_DEPLOY.SFX_BLD_IRON_DEPLOY",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Water_Trough_Fountain",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Water_Trough_Fountion.BP_Water_Trough_Fountion_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Luxury.SM_DEP_Trough_Luxury",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC"
+        },
+        {
+            "Name": "Food_Trough_Large",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough_Large.BP_Food_Trough_Large_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Wood_Large.SM_DEP_Trough_Wood_Large",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Food_Trough_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough_T4.BP_Food_Trough_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Powered_Feeder.SM_DEP_Trough_Powered_Feeder",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+        },
+        {
+            "Name": "Food_Trough_Rustic",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough_Rustic.BP_Food_Trough_Rustic_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Rustic_Feeder.SM_DEP_Trough_Rustic_Feeder",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+        },
+        {
+            "Name": "Food_Trough_Metal",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough_Metal.BP_Food_Trough_Metal_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Iron_Feeder_SM_DEP_Trough_Iron_Feeder.SM_DEP_Trough_Iron_Feeder_SM_DEP_Trough_Iron_Feeder",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_IRON_DEPLOY.SFX_BLD_IRON_DEPLOY"
+        },
+        {
+            "Name": "Food_Trough_Glass",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Food_Trough_Glass.BP_Food_Trough_Glass_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trough_Luxury_Feeder.SM_DEP_Trough_Luxury_Feeder",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_GLASS_DEPLOY.SFX_BLD_GLASS_DEPLOY"
+        },
+        {
+            "Name": "Farming_Mound_Coconut",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage5_Var1.SM_HRB_CocoPalm_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_Mound_Bramble",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage5_Var1.SM_HRB_Bramble_Thorns_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "CropPlot"
+            ],
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Bramble",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Bramble.BP_Bramble_C",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage5_Var1.SM_HRB_Bramble_Thorns_Stage5_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
+            "SnapSocketsOrTags": [
+                "CropSnappingPoint"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Chicken_Trophy_A",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_A.BP_Trophy_Chicken_A_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_A-DeployableName\", \"White\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Chicken_Trophy_B",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_B.BP_Trophy_Chicken_B_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_B-DeployableName\", \"Black\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Chicken_Trophy_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_C.BP_Trophy_Chicken_C_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy.T_ITEM_Chicken_Trophy",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_C-DeployableName\", \"Red\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Sheep_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Flow_Meter",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Networks/BP_FlowMeter.BP_FlowMeter_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_FlowMeter.SM_DEP_FlowMeter",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }

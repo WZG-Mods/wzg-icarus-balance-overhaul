@@ -606,22 +606,6 @@
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         },
         {
-            "Name": "Shotgun",
-            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/Guns/SFX_GUN_MOVE_PICKUP.SFX_GUN_MOVE_PICKUP",
-            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
-            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
-            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
-            "AnimSounds": {
-                "Carry": {
-                    "FMODEvents": [
-                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_CARRY.SFX_SHOTGUN_CARRY"
-                    ]
-                }
-            }
-        },
-        {
             "Name": "Campfire",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
@@ -718,6 +702,29 @@
             "SlottedSound": "/Game/FMOD/Events/SFX/Deployable/Oxite_Dissolver/SFX_DEP_OXITE_DISSOLVER_ADD_TANK.SFX_DEP_OXITE_DISSOLVER_ADD_TANK",
             "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_OXY_TANK.SFX_CONSUME_OXY_TANK",
             "ConsumeFailedSound": "/Game/FMOD/Events/UI/Generic/UI_GENERIC_NEGATIVE_FEEDBACK.UI_GENERIC_NEGATIVE_FEEDBACK"
+        },
+        {
+            "Name": "Shotgun",
+            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/Guns/SFX_GUN_MOVE_PICKUP.SFX_GUN_MOVE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Carry": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_CARRY.SFX_SHOTGUN_CARRY"
+                    ]
+                },
+                "Pump": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_PUMP_A.SFX_SHOTGUN_PUMP_A",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_PUMP_B.SFX_SHOTGUN_PUMP_B",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_PUMP_B.SFX_SHOTGUN_PUMP_B"
+                    ]
+                }
+            }
         },
         {
             "Name": "Food_Meat",
@@ -1333,6 +1340,29 @@
                     "FMODEvents": [
                         "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SCORPION_RIFLE_LEVER1.SFX_SCORPION_RIFLE_LEVER1",
                         "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SCORPION_RIFLE_LEVER2.SFX_SCORPION_RIFLE_LEVER2"
+                    ]
+                }
+            }
+        },
+        {
+            "Name": "Shotgun_T4",
+            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/Guns/SFX_GUN_MOVE_PICKUP.SFX_GUN_MOVE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Carry": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_CARRY.SFX_SHOTGUN_CARRY"
+                    ]
+                },
+                "Pump": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_PUMP_A.SFX_SHOTGUN_T4_PUMP_A",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_PUMP_B.SFX_SHOTGUN_T4_PUMP_B",
+                        "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_PUMP_B_LAST.SFX_SHOTGUN_T4_PUMP_B_LAST"
                     ]
                 }
             }

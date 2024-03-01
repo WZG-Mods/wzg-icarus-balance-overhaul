@@ -165,6 +165,46 @@
             "bAutomaticallySpawnJuvenileWithParent": true,
             "PercentChanceToSpawnJuvenile": 30,
             "MaxNearbyAutoSpawnedJuveniles": 5
+        },
+        {
+            "Name": "Blueback",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_BlueBack"
+            },
+            "MatureCreatureType": {
+                "RowName": "BlueBack"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Blueback"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "Blueback_Lava",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "TamedAI": {
+                "RowName": "BlueBack_Lava"
+            },
+            "MatureCreatureType": {
+                "RowName": "BlueBack_Lava"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Blueback_Lava"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true
         }
     ]
 }

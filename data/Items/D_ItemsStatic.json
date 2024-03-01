@@ -129,21 +129,9 @@
             "RowName": "None",
             "DataTableName": "D_LivingItem"
         },
-        "Energy": {
+        "Resource": {
             "RowName": "None",
-            "DataTableName": "D_Energy"
-        },
-        "Water": {
-            "RowName": "None",
-            "DataTableName": "D_Water"
-        },
-        "Oxygen": {
-            "RowName": "None",
-            "DataTableName": "D_Oxygen"
-        },
-        "Fuel": {
-            "RowName": "None",
-            "DataTableName": "D_Fuel"
+            "DataTableName": "D_Resource"
         },
         "ToolDamage": {
             "RowName": "None",
@@ -687,6 +675,9 @@
             },
             "Weight": {
                 "RowName": "LightDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "Campfire"
@@ -5121,6 +5112,9 @@
             "FirearmData": {
                 "RowName": "Shotgun"
             },
+            "AdditionalStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 15
+            },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
@@ -5556,6 +5550,9 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "GenericDeployable"
             },
@@ -5623,7 +5620,7 @@
                 "RowName": "Item_Kit_Stone_Furnace"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -5660,6 +5657,9 @@
             },
             "Weight": {
                 "RowName": "HeavyDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -5734,7 +5734,7 @@
                 "RowName": "Item_Kit_Concrete_Furnace"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -5771,6 +5771,9 @@
             },
             "Weight": {
                 "RowName": "ExtremeDeployable"
+            },
+            "Resource": {
+                "RowName": "Generic_Furnace"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -5851,7 +5854,7 @@
                 "RowName": "Item_Concrete_Furnace_V2"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -5888,6 +5891,9 @@
             },
             "Weight": {
                 "RowName": "ExtremeDeployable"
+            },
+            "Resource": {
+                "RowName": "Generic_Furnace"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -5994,7 +6000,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Furnace"
             },
             "Audio": {
@@ -6059,9 +6065,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -6108,7 +6111,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Furnace"
             },
             "Audio": {
@@ -6167,9 +6170,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -6216,7 +6216,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Generator"
             },
             "Audio": {
@@ -6272,9 +6272,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -9058,9 +9055,6 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Generator": {
-                "RowName": "Fabricator_Generator"
-            },
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
@@ -10197,7 +10191,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Water": {
+            "Resource": {
                 "RowName": "Composter"
             },
             "Audio": {
@@ -10250,9 +10244,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -11024,7 +11015,7 @@
                 "RowName": "Item_Water_Pump"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -11050,11 +11041,8 @@
             "Generator": {
                 "RowName": "Water_Pump_Generator"
             },
-            "Energy": {
-                "RowName": "Water_Pump_Energy"
-            },
-            "Water": {
-                "RowName": "Pump"
+            "Resource": {
+                "RowName": "Water_Pump"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -11094,12 +11082,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -11400,6 +11382,9 @@
             },
             "Weight": {
                 "RowName": "HeavyDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -11976,8 +11961,8 @@
             "Farmable": {
                 "RowName": "Small_Planter"
             },
-            "Water": {
-                "RowName": "CropPlot"
+            "Resource": {
+                "RowName": "Crop_Plot"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -12032,9 +12017,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -12078,11 +12060,8 @@
             "Farmable": {
                 "RowName": "Small_Planter"
             },
-            "Energy": {
-                "RowName": "Meta_Crop_Plot"
-            },
-            "Water": {
-                "RowName": "CropPlot"
+            "Resource": {
+                "RowName": "Crop_Plot_Powered"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -12137,12 +12116,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -12192,7 +12165,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Material_Processor"
             },
             "Audio": {
@@ -12245,9 +12218,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -13300,8 +13270,8 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
-                "RowName": "Carpentry_Bench_T4"
+            "Resource": {
+                "RowName": "Electric_Carpentry_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -13353,9 +13323,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -15483,7 +15450,7 @@
                 "RowName": "Item_Worklamp_Directional"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -15506,8 +15473,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -15537,9 +15504,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -15554,7 +15518,7 @@
                 "RowName": "Item_Worklamp_OmniDirectional"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -15577,8 +15541,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -15608,9 +15572,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -16729,7 +16690,7 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Refrigerator"
             },
             "Audio": {
@@ -16788,9 +16749,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -20464,7 +20422,7 @@
                 "RowName": "Item_PotBellyStove"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -20501,6 +20459,9 @@
             },
             "Weight": {
                 "RowName": "MediumDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -20600,6 +20561,9 @@
             },
             "Generator": {
                 "RowName": "Rain_Reservoir"
+            },
+            "Resource": {
+                "RowName": "Rain_Reservior"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -21203,6 +21167,9 @@
             },
             "Weight": {
                 "RowName": "HeavyDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -22193,10 +22160,10 @@
                         "TagName": "Item.Equip.Quickbar"
                     },
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "FieldGuide.ResourceNetwork"
                     },
                     {
-                        "TagName": "FieldGuide.ResourceNetwork"
+                        "TagName": "Item.Tool.Wire"
                     }
                 ]
             },
@@ -22206,10 +22173,10 @@
                         "TagName": "Item.Equip.Quickbar"
                     },
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "FieldGuide.ResourceNetwork"
                     },
                     {
-                        "TagName": "FieldGuide.ResourceNetwork"
+                        "TagName": "Item.Tool.Wire"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -22262,10 +22229,10 @@
                         "TagName": "Item.Equip.Quickbar"
                     },
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
-                        "TagName": "FieldGuide.BlackList"
+                        "TagName": "Item.Tool.Wire"
                     }
                 ]
             },
@@ -22275,10 +22242,10 @@
                         "TagName": "Item.Equip.Quickbar"
                     },
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
-                        "TagName": "FieldGuide.BlackList"
+                        "TagName": "Item.Tool.Wire"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -22945,6 +22912,9 @@
             },
             "Weight": {
                 "RowName": "LightDeployable"
+            },
+            "Resource": {
+                "RowName": "Basic_Oxite_Dissolver"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -23948,7 +23918,7 @@
                 "RowName": "Item_Solar_Panel"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -23971,11 +23941,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Generator": {
-                "RowName": "SolarPanel_Generator"
-            },
-            "Energy": {
-                "RowName": "SolarPanel"
+            "Resource": {
+                "RowName": "Solar_Panel"
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -24012,9 +23979,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -24568,8 +24532,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Water": {
-                "RowName": "MasonryBench"
+            "Resource": {
+                "RowName": "Masonry_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -24621,9 +24585,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -24670,8 +24631,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Water": {
-                "RowName": "CementMixer"
+            "Resource": {
+                "RowName": "Cement_Mixer"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -24723,9 +24684,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -31867,8 +31825,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Energy": {
-                "RowName": "Repair_Bench_Energy"
+            "Resource": {
+                "RowName": "Electric_Repair_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -31920,9 +31878,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -34740,6 +34695,9 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "Campfire"
             },
@@ -35313,8 +35271,8 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Water": {
-                "RowName": "GlassworkingBench"
+            "Resource": {
+                "RowName": "Glassworking_Bench"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -35375,9 +35333,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -35427,8 +35382,8 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Water": {
-                "RowName": "GlassworkingBench"
+            "Resource": {
+                "RowName": "Glassworking_Bench"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -35480,9 +35435,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -35631,8 +35583,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Water": {
-                "RowName": "KitchenStove"
+            "Resource": {
+                "RowName": "Kitchen_Stove"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -35687,9 +35639,6 @@
                     },
                     {
                         "TagName": "Traits.Thermal"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -35829,8 +35778,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Water": {
-                "RowName": "KitchenBench"
+            "Resource": {
+                "RowName": "Kitchen_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -35885,9 +35834,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -38379,6 +38325,9 @@
             },
             "Generator": {
                 "RowName": "Faction_Mission_Drill"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -47967,7 +47916,7 @@
                 "RowName": "Meta_Arrow_Set_Shengong"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Shengong"
@@ -48769,7 +48718,7 @@
                 "RowName": "Meta_Arrow_Set_Printed_Alpha"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Printed"
@@ -48851,7 +48800,7 @@
                 "RowName": "Meta_Arrow_Set_Printed_Beta"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Printed"
@@ -48933,7 +48882,7 @@
                 "RowName": "Meta_Arrow_Set_Printed_Charlie"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Printed"
@@ -50281,7 +50230,7 @@
                 "RowName": "Item_Electric_Dehumidier"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -50307,7 +50256,7 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Dehumidifier"
             },
             "Audio": {
@@ -50357,9 +50306,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50374,7 +50320,7 @@
                 "RowName": "Item_Electric_Dehumidier_V2"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -50400,7 +50346,7 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Dehumidifier"
             },
             "Audio": {
@@ -50444,9 +50390,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50484,8 +50427,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Generic_Receiver"
+            "Resource": {
+                "RowName": "Faction_Mission_Device"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -50519,9 +50462,6 @@
                     },
                     {
                         "TagName": "Traits.Floatable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50536,7 +50476,7 @@
                 "RowName": "Item_Heater_Large"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -50565,8 +50505,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Heater_Large_Receiver"
+            "Resource": {
+                "RowName": "Electric_Heater"
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -50599,9 +50539,6 @@
                     },
                     {
                         "TagName": "Traits.Thermal"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50616,7 +50553,7 @@
                 "RowName": "Item_Cooler_Large"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -50645,8 +50582,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Cooler_Large_Receiver"
+            "Resource": {
+                "RowName": "Electric_Cooler"
             },
             "Generated_Tags": {
                 "GameplayTags": [
@@ -50679,9 +50616,6 @@
                     },
                     {
                         "TagName": "Traits.Thermal"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50722,14 +50656,11 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Generator": {
-                "RowName": "WaterWheel_Generator"
-            },
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
-                "RowName": "WaterWheel_Generator"
+            "Resource": {
+                "RowName": "Waterwheel_Generator"
             },
             "Audio": {
                 "RowName": "StoneDeployable"
@@ -50790,9 +50721,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -50980,7 +50908,7 @@
                 "RowName": "Meta_Coal"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -51114,7 +51042,7 @@
                 "RowName": "Item_Basic_Wall_Light"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -51137,8 +51065,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -51168,9 +51096,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -51185,7 +51110,7 @@
                 "RowName": "Item_Basic_Ceiling_Light"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -51208,8 +51133,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -51239,9 +51164,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -51294,7 +51216,7 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Chemistry_Bench"
             },
             "Audio": {
@@ -51350,9 +51272,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -51405,11 +51324,8 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
-                "RowName": "Masonry_Bench_T4"
-            },
-            "Water": {
-                "RowName": "ElectricMasonryBench"
+            "Resource": {
+                "RowName": "Electric_Masonry_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -51464,12 +51380,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -51516,11 +51426,8 @@
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Composter"
-            },
-            "Water": {
-                "RowName": "Composter"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -51572,12 +51479,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -51615,8 +51516,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Generic_Receiver"
+            "Resource": {
+                "RowName": "Faction_Mission_Device"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -51650,9 +51551,6 @@
                     },
                     {
                         "TagName": "Traits.Floatable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -52808,6 +52706,9 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "Campfire"
             },
@@ -53094,8 +52995,8 @@
             "Decayable": {
                 "RowName": "Decay_MetaItem"
             },
-            "Energy": {
-                "RowName": "Mining_Drill"
+            "Resource": {
+                "RowName": "Mining_Drill_Electric"
             },
             "AdditionalStats": {
                 "(Value=\"BaseDeepMiningDrillSpeed_+%\")": 33
@@ -53138,9 +53039,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -53183,6 +53081,9 @@
             },
             "Generator": {
                 "RowName": "Deep_Mining_Biofuel_Drill"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -53236,7 +53137,7 @@
                 "RowName": "Item_Water_Sprinkler"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Sprinkler"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -53254,7 +53155,7 @@
                 "RowName": "Water_Sprinkler"
             },
             "Durable": {
-                "RowName": "Deployable_750"
+                "RowName": "Deployable_1000"
             },
             "Decayable": {
                 "RowName": "Decay_General"
@@ -53262,7 +53163,7 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
-            "Water": {
+            "Resource": {
                 "RowName": "Sprinkler"
             },
             "Generated_Tags": {
@@ -53290,9 +53191,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -54640,7 +54538,7 @@
                 "RowName": "Meta_Arrow_Set_Inaris_Bravo"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Inaris_Bravo"
@@ -54803,7 +54701,7 @@
                 "RowName": "Meta_Arrow_Set_Inaris_Charlie"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Inaris_Bravo"
@@ -54966,7 +54864,7 @@
                 "RowName": "Meta_Arrow_Set_Inaris_Delta"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Inaris_Bravo"
@@ -56590,7 +56488,7 @@
                 "RowName": "Item_Meta_Furnace_Printed"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -56627,6 +56525,9 @@
             },
             "Weight": {
                 "RowName": "LightDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -56816,7 +56717,7 @@
                 "RowName": "Meta_Arrow_Set_Inaris_Alpha"
             },
             "Usable": {
-                "RowName": "Consume_Stack_FoodWater"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Inaris"
@@ -56895,7 +56796,7 @@
                 "RowName": "Meta_Corn_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -56967,7 +56868,7 @@
                 "RowName": "Meta_Pumpkin_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57039,7 +56940,7 @@
                 "RowName": "Meta_Squash_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57111,7 +57012,7 @@
                 "RowName": "Meta_Carrot_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57183,7 +57084,7 @@
                 "RowName": "Meta_Mushroom_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57255,7 +57156,7 @@
                 "RowName": "Meta_Berry_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57327,7 +57228,7 @@
                 "RowName": "Meta_Watermelon_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57399,7 +57300,7 @@
                 "RowName": "Meta_Wheat_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -57471,7 +57372,7 @@
                 "RowName": "Meta_Bean_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -60641,11 +60542,8 @@
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
-            "Energy": {
-                "RowName": "Electric_Composter"
-            },
-            "Water": {
-                "RowName": "Composter"
+            "Resource": {
+                "RowName": "Mission_Analyzer"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -60700,12 +60598,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -66366,6 +66258,9 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "Radar"
             },
@@ -66445,7 +66340,7 @@
                 "RowName": "Item_Radar_Electric"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_Backpack"
@@ -66474,8 +66369,8 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
-            "Energy": {
-                "RowName": "Manual_Reciever"
+            "Resource": {
+                "RowName": "Radar_Electric"
             },
             "Audio": {
                 "RowName": "Radar"
@@ -66541,9 +66436,6 @@
                     },
                     {
                         "TagName": "Traits.Floatable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -66697,6 +66589,9 @@
             "Generator": {
                 "RowName": "Extractor_Biofuel_Generator"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "MetalDeployable"
             },
@@ -66802,8 +66697,8 @@
             "Decayable": {
                 "RowName": "Decay_MetaItem"
             },
-            "Energy": {
-                "RowName": "Exotic_Electric_Drill"
+            "Resource": {
+                "RowName": "Exotic_Drill_Electric"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -66870,9 +66765,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -66918,6 +66810,9 @@
             },
             "Generator": {
                 "RowName": "Meta_Extractor"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -67091,7 +66986,7 @@
                 "RowName": "Item_Mission_Prototype_Laser"
             },
             "Interactable": {
-                "RowName": "Mission_Prototype_Laser"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -67116,6 +67011,9 @@
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
+            },
+            "Resource": {
+                "RowName": "Mission_Prototype_Laser"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -67492,8 +67390,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Generic_Receiver"
+            "Resource": {
+                "RowName": "Faction_Mission_Device"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -67545,9 +67443,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -67782,7 +67677,7 @@
                 "RowName": "Meta_Arrow_Set_Larkwell_Standard"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Larkwell_Standard"
@@ -67861,7 +67756,7 @@
                 "RowName": "Meta_Bolt_Set_Larkwell_Standard"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Bolt_Larkwell_Standard"
@@ -67940,7 +67835,7 @@
                 "RowName": "Meta_Arrow_Set_Larkwell_Ballistic"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Larkwell_Ballistic"
@@ -68023,7 +67918,7 @@
                 "RowName": "Meta_Arrow_Set_Larkwell_Bleed"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Larkwell_Bleed"
@@ -68105,7 +68000,7 @@
                 "RowName": "Meta_Arrow_Set_Larkwell_Tazer"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Arrow_Larkwell_Tazer"
@@ -70299,7 +70194,7 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Advanced_Alteration_Bench"
             },
             "Audio": {
@@ -70355,9 +70250,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -76554,8 +76446,8 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
-            "Energy": {
-                "RowName": "Electric_Armor_Bench"
+            "Resource": {
+                "RowName": "Electric_Armour_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -76613,9 +76505,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -77729,6 +77618,9 @@
             "Generator": {
                 "RowName": "Deep_Mining_Biofuel_Drill"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
@@ -77930,11 +77822,8 @@
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Electric_Composter"
-            },
-            "Water": {
-                "RowName": "Composter"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -77986,12 +77875,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -84164,8 +84047,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Water": {
-                "RowName": "Sink"
+            "Resource": {
+                "RowName": "Kitchen_Sink"
             },
             "Audio": {
                 "RowName": "WoodDeployable"
@@ -84214,9 +84097,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -84356,8 +84236,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Water": {
-                "RowName": "KitchenBench"
+            "Resource": {
+                "RowName": "Kitchen_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -84415,9 +84295,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -84467,11 +84344,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Energy": {
-                "RowName": "Generic_Receiver"
-            },
-            "Water": {
-                "RowName": "ElectricStove"
+            "Resource": {
+                "RowName": "Electric_Stove"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -84529,12 +84403,6 @@
                     },
                     {
                         "TagName": "Traits.Thermal"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -85684,6 +85552,103 @@
             }
         },
         {
+            "Name": "AnimalCarcass_Wooly_Zebra_Juvenile",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Wooly_Zebra_Juvenile"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_WoolyZebra_Juvenile"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Large"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Shoulders"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Carcass_Drop"
+            },
+            "Buildable": {
+                "DataTableName": "D_Actionable"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Exotic_Harvester",
             "Meshable": {
                 "RowName": "Mesh_Exotic_Harvester"
@@ -85724,8 +85689,8 @@
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
-            "Energy": {
-                "RowName": "Exotic_Electric_Drill"
+            "Resource": {
+                "RowName": "Exotic_Drill_Electric"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -85780,9 +85745,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -86684,6 +86646,9 @@
             "Generator": {
                 "RowName": "Aquarium_T3"
             },
+            "Resource": {
+                "RowName": "Biofuel_Aquarium"
+            },
             "Audio": {
                 "RowName": "Default"
             },
@@ -86769,11 +86734,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "Advanced_Aquarium"
-            },
-            "Water": {
-                "RowName": "Advanced_Aquarium"
+            "Resource": {
+                "RowName": "Aquarium"
             },
             "Audio": {
                 "RowName": "Default"
@@ -86809,12 +86771,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -86866,11 +86822,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "Advanced_Aquarium"
-            },
-            "Water": {
-                "RowName": "Large_Advanced_Aquarium"
+            "Resource": {
+                "RowName": "Aquarium_Large"
             },
             "Audio": {
                 "RowName": "Default"
@@ -86906,12 +86859,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -87129,7 +87076,7 @@
             "Weight": {
                 "RowName": "UnsupportedDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Thumper"
             },
             "Audio": {
@@ -87177,9 +87124,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -87467,7 +87411,7 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Deep_Freeze"
             },
             "Audio": {
@@ -87526,9 +87470,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -98586,7 +98527,7 @@
                 "RowName": "Item_Carved_Desk_Lamp"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -98615,8 +98556,8 @@
             "Flammable": {
                 "RowName": "Flammable_Building_Wood"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "SmallWoodDeployable"
@@ -98659,9 +98600,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -98704,6 +98642,9 @@
             },
             "Generator": {
                 "RowName": "SpawnBlocker_T2"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "Default"
@@ -98790,6 +98731,9 @@
             "Generator": {
                 "RowName": "SpawnBlocker_T3"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "Default"
             },
@@ -98846,7 +98790,7 @@
                 "RowName": "Item_Spawn_Blocker_T4"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -98869,8 +98813,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "SpawnBlocker"
+            "Resource": {
+                "RowName": "Electric_Spawn_Blocker"
             },
             "Audio": {
                 "RowName": "Default"
@@ -98911,9 +98855,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -100905,7 +100846,7 @@
                 "RowName": "Meta_Avocado_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -100977,7 +100918,7 @@
                 "RowName": "Meta_Rhubarb_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -101049,7 +100990,7 @@
                 "RowName": "Meta_Kumara_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -101121,7 +101062,7 @@
                 "RowName": "Meta_Strawberry_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -101639,7 +101580,7 @@
                 "RowName": "Item_Wind_Turbine"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Deployable_Power_Toggle_Only"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -101662,11 +101603,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Generator": {
-                "RowName": "WindTurbine"
-            },
-            "Energy": {
-                "RowName": "WindTurbine"
+            "Resource": {
+                "RowName": "Wind_Turbine"
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -101703,9 +101641,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -110251,7 +110186,7 @@
                 "RowName": "Meta_Bolt_Set_Larkwell_Electroshock"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Bolt_Larkwell_Electroshock"
@@ -110414,7 +110349,7 @@
                 "RowName": "Meta_Bolt_Set_Larkwell_Explosive"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Bolt_Larkwell_Explosive"
@@ -110578,7 +110513,7 @@
                 "RowName": "Meta_Bolt_Set_Larkwell_Piercing"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Ballistic": {
                 "RowName": "Meta_Bolt_Larkwell_Piercing"
@@ -112273,8 +112208,8 @@
             "Farmable": {
                 "RowName": "Small_Planter"
             },
-            "Water": {
-                "RowName": "CropPlot"
+            "Resource": {
+                "RowName": "Crop_Plot"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -112323,9 +112258,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -112369,11 +112301,8 @@
             "Farmable": {
                 "RowName": "Small_Planter"
             },
-            "Energy": {
-                "RowName": "Meta_Crop_Plot"
-            },
-            "Water": {
-                "RowName": "CropPlot"
+            "Resource": {
+                "RowName": "Crop_Plot_Powered"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -112422,12 +112351,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -112471,11 +112394,8 @@
             "Farmable": {
                 "RowName": "Small_Planter"
             },
-            "Energy": {
-                "RowName": "Meta_Crop_Plot"
-            },
-            "Water": {
-                "RowName": "CropPlot"
+            "Resource": {
+                "RowName": "Crop_Plot_Powered"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -112535,12 +112455,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -112789,6 +112703,9 @@
                     },
                     {
                         "TagName": "FieldGuide.Equipment"
+                    },
+                    {
+                        "TagName": "Item.Meta"
                     }
                 ]
             },
@@ -112799,6 +112716,9 @@
                     },
                     {
                         "TagName": "FieldGuide.Equipment"
+                    },
+                    {
+                        "TagName": "Item.Meta"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -113343,7 +113263,7 @@
                 "RowName": "Item_Anvil_Bench_T3"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -113380,6 +113300,9 @@
             },
             "Weight": {
                 "RowName": "HeavyDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -113474,7 +113397,7 @@
             "Weight": {
                 "RowName": "ExtremeDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Anvil_T4"
             },
             "Audio": {
@@ -113527,9 +113450,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -113579,8 +113499,8 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Water": {
-                "RowName": "MasonryBench"
+            "Resource": {
+                "RowName": "Masonry_Bench"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -113632,9 +113552,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Water"
                     }
                 ],
                 "ParentTags": []
@@ -113658,7 +113575,7 @@
                 "RowName": "Meta_Reed_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -113730,7 +113647,7 @@
                 "RowName": "Meta_Yeast_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -113802,7 +113719,7 @@
                 "RowName": "Meta_Lily_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -113874,7 +113791,7 @@
                 "RowName": "Meta_Cocao_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -113946,7 +113863,7 @@
                 "RowName": "Meta_Coffee_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114018,7 +113935,7 @@
                 "RowName": "Meta_GreenTea_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114090,7 +114007,7 @@
                 "RowName": "Meta_WildTea_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114162,7 +114079,7 @@
                 "RowName": "Meta_Fiber_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114234,7 +114151,7 @@
                 "RowName": "Meta_Tomato_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114311,7 +114228,7 @@
                 "RowName": "Meta_Potato_Seed"
             },
             "Usable": {
-                "RowName": "Consume_Stack_Food"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -114735,7 +114652,7 @@
                 "RowName": "Meta_Resource_Pack_Wood"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -114808,7 +114725,7 @@
                 "RowName": "Meta_Resource_Pack_Stone"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -114881,7 +114798,7 @@
                 "RowName": "Meta_Resource_Pack_Silica"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -114954,7 +114871,7 @@
                 "RowName": "Meta_Resource_Pack_Oxite"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115027,7 +114944,7 @@
                 "RowName": "Meta_Resource_Pack_Sulfur"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115100,7 +115017,7 @@
                 "RowName": "Meta_Resource_Pack_Iron"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115173,7 +115090,7 @@
                 "RowName": "Meta_Resource_Pack_Copper"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115246,7 +115163,7 @@
                 "RowName": "Meta_Resource_Pack_Gold"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115319,7 +115236,7 @@
                 "RowName": "Meta_Resource_Pack_Aluminium"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115392,7 +115309,7 @@
                 "RowName": "Meta_Resource_Pack_Platinum"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -115465,7 +115382,7 @@
                 "RowName": "Meta_Resource_Pack_Titanium"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack"
             },
             "Floatable": {
                 "RowName": "LightItem"
@@ -116139,7 +116056,7 @@
                 "RowName": "Item_Raw_Wood_Lamp"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -116168,8 +116085,8 @@
             "Flammable": {
                 "RowName": "Flammable_Building_Wood"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "SmallWoodDeployable"
@@ -116212,9 +116129,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -121381,6 +121295,9 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "MetalDeployable"
             },
@@ -123050,7 +122967,7 @@
                 "RowName": "Item_Metal_Lamp"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -123076,8 +122993,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -123123,9 +123040,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -126171,7 +126085,7 @@
                 "RowName": "Item_Brutalist_Lamp"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -126197,8 +126111,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -126244,9 +126158,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -126887,7 +126798,7 @@
                 "RowName": "Item_Gold_Standing_Lamp"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -126913,8 +126824,8 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -126960,9 +126871,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -128185,6 +128093,9 @@
             "Weight": {
                 "RowName": "HeavyDeployable"
             },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
             "Audio": {
                 "RowName": "StoneDeployable"
             },
@@ -128420,7 +128331,7 @@
                 "RowName": "Item_Gold_Chandelier"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -128455,8 +128366,8 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "Vase"
@@ -128502,9 +128413,6 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -128519,7 +128427,7 @@
                 "RowName": "Item_Gold_Wall_Light"
             },
             "Interactable": {
-                "RowName": "Deployable"
+                "RowName": "Deployable_No_Power_Toggle"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -128542,8 +128450,8 @@
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
             },
-            "Energy": {
-                "RowName": "Worklamp"
+            "Resource": {
+                "RowName": "Electric_Light"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -128583,9 +128491,6 @@
                     },
                     {
                         "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -129079,7 +128984,7 @@
             "Weight": {
                 "RowName": "MediumDeployable"
             },
-            "Energy": {
+            "Resource": {
                 "RowName": "Beehive"
             },
             "Audio": {
@@ -129123,9 +129028,6 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
-                    },
-                    {
-                        "TagName": "Traits.Energy"
                     }
                 ],
                 "ParentTags": []
@@ -129934,6 +129836,282 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Battery_T3",
+            "Meshable": {
+                "RowName": "Mesh_Battery_T3"
+            },
+            "Itemable": {
+                "RowName": "Item_Battery_T3"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Fillable": {
+                "RowName": "Battery_T3"
+            },
+            "Durable": {
+                "RowName": "Deployable_250"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Battery_Shelf_T3",
+            "Meshable": {
+                "RowName": "Mesh_Battery_T3"
+            },
+            "Itemable": {
+                "RowName": "Item_Battery_Shelf_T3"
+            },
+            "Interactable": {
+                "RowName": "Deployable_Power_Toggle_Only"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Battery_Shelf_T3"
+            },
+            "Fillable": {
+                "RowName": "Battery_Shelf_T3"
+            },
+            "Durable": {
+                "RowName": "Deployable_1000"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Resource": {
+                "RowName": "Battery"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Battery_T4",
+            "Meshable": {
+                "RowName": "Mesh_Battery_T4"
+            },
+            "Itemable": {
+                "RowName": "Item_Battery_T4"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Fillable": {
+                "RowName": "Battery_T4"
+            },
+            "Durable": {
+                "RowName": "Deployable_500"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Battery_Shelf_T4",
+            "Meshable": {
+                "RowName": "Mesh_Battery_T3"
+            },
+            "Itemable": {
+                "RowName": "Item_Battery_Shelf_T4"
+            },
+            "Interactable": {
+                "RowName": "Deployable_Power_Toggle_Only"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Battery_Shelf_T4"
+            },
+            "Fillable": {
+                "RowName": "Battery_Shelf_T4"
+            },
+            "Durable": {
+                "RowName": "Deployable_2500"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Resource": {
+                "RowName": "Battery_T4"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     }
                 ],
                 "ParentTags": []
@@ -131326,6 +131504,813 @@
                     },
                     {
                         "TagName": "Harvest.Knife.T2"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_MiniHippo",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_MiniHippo"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_MiniHippo"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Water_Barrel",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Crafting"
+            },
+            "Itemable": {
+                "RowName": "Item_Water_Barrel"
+            },
+            "Interactable": {
+                "RowName": "Deployable_Power_Toggle_Only"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Water_Barrel"
+            },
+            "Fillable": {
+                "RowName": "Water_Barrel"
+            },
+            "Durable": {
+                "RowName": "Deployable_1000"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Resource": {
+                "RowName": "Water_Barrel"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Biofuel_Water_Pump",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Machining"
+            },
+            "Itemable": {
+                "RowName": "Item_Biofuel_Water_Pump"
+            },
+            "Interactable": {
+                "RowName": "Deployable"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Water_Pump_T3"
+            },
+            "Durable": {
+                "RowName": "Deployable_2000"
+            },
+            "Inventory": {
+                "RowName": "Basic_Biofuel"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Generator": {
+                "RowName": "Water_Pump_Biofuel"
+            },
+            "Resource": {
+                "RowName": "Water_Pump_T3"
+            },
+            "Audio": {
+                "RowName": "MetalDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rain_Reservoir_T3",
+            "Meshable": {
+                "RowName": "Mesh_Rain_Reservoir"
+            },
+            "Itemable": {
+                "RowName": "Item_Rain_Reservoir_T3"
+            },
+            "Interactable": {
+                "RowName": "Rain_Reservoir"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Rain_Reservoir_T3"
+            },
+            "Fillable": {
+                "RowName": "Rain_Reservoir_T3"
+            },
+            "Durable": {
+                "RowName": "Deployable_1500"
+            },
+            "Inventory": {
+                "RowName": "Rain_Reservoir"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Generator": {
+                "RowName": "Rain_Reservoir"
+            },
+            "Resource": {
+                "RowName": "Rain_Reservior_T3"
+            },
+            "Audio": {
+                "RowName": "MetalDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Bench"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Bench"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Water_Borer",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Fabricator"
+            },
+            "Itemable": {
+                "RowName": "Item_Water_Borer"
+            },
+            "Interactable": {
+                "RowName": "Deployable_Power_Toggle_Only"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Water_Borer"
+            },
+            "Durable": {
+                "RowName": "Deployable_2000"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Generator": {
+                "RowName": "Water_Borer"
+            },
+            "Resource": {
+                "RowName": "Water_Borer"
+            },
+            "Audio": {
+                "RowName": "MetalDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.ResourceNetwork"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Shotgun_T4",
+            "Meshable": {
+                "RowName": "Mesh_Shotgun_T4"
+            },
+            "Itemable": {
+                "RowName": "Item_Shotgun_T4"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Gun_Shotgun"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Shotgun_SingleShot"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Shotgun"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "InventoryContainer": {
+                "RowName": "Shotgun_Ammo_Attachment"
+            },
+            "Audio": {
+                "RowName": "Shotgun_T4"
+            },
+            "FirearmData": {
+                "RowName": "Shotgun_T4"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 30
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Weapon.Firearm.Shotgun"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Weapon.Firearm.Shotgun"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Mange_Wolf",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Mange_Wolf"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Mange_Wolf"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Medium"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Wolf"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Carcass_Drop"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Mange_Wolf_Alpha",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Mange_Wolf_Alpha"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Mange_Wolf_Alpha"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Flow_Meter",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Fabricator"
+            },
+            "Itemable": {
+                "RowName": "Item_Flow_Meter"
+            },
+            "Interactable": {
+                "RowName": "Flow_Meter"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Flow_Meter"
+            },
+            "Durable": {
+                "RowName": "Deployable_750"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Resource": {
+                "RowName": "Flow_Meter"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Kiwi",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Kiwi"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Kiwi"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Large"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T1"
                     },
                     {
                         "TagName": "Traits.Meshable"
