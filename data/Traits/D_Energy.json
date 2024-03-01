@@ -1,259 +1,359 @@
 {
     "RowStruct": "/Script/Icarus.EnergyData",
     "Defaults": {
-        "Provider": false,
-        "Receiver": false,
+        "FlowType": "Consume",
+        "AlwaysActive": false,
         "AutoActivate": false,
-        "ResourceFlowRate": 1000
+        "ResourceFlowRate": 1000,
+        "bAllowPullingResourceFromInventory": false,
+        "bAllowPushingResourceToInventory": false,
+        "BrownOutModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "AutoShutoffFlowPercent": 0,
+        "bAllowAutoRestart": false,
+        "bIsOptional": false,
+        "OptionalFlowType": {
+            "RowName": "None",
+            "DataTableName": "D_OptionalResourceFlows"
+        }
     },
     "Rows": [
         {
+            "Name": "Auto_Shutoff_At_0",
+            "ResourceFlowRate": 0,
+            "bAllowAutoRestart": true
+        },
+        {
+            "Name": "Processor_Generic",
+            "ResourceFlowRate": 0,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
+        },
+        {
             "Name": "Generator",
-            "Provider": true,
-            "AutoActivate": true,
+            "FlowType": "Produce",
             "ResourceFlowRate": 5000
         },
         {
-            "Name": "Battery_Input",
-            "Receiver": true,
-            "AutoActivate": true
+            "Name": "Battery",
+            "FlowType": "Store",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 1500
         },
         {
             "Name": "Oxite_Dissolver",
-            "Provider": true,
-            "Receiver": true,
             "ResourceFlowRate": 500
         },
         {
             "Name": "Biofuel",
-            "Provider": true,
-            "Receiver": true,
             "ResourceFlowRate": 2500
         },
         {
             "Name": "Generic_Receiver",
-            "Receiver": true,
             "AutoActivate": true
         },
         {
             "Name": "Mining_Drill",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2000
+            "ResourceFlowRate": 2000,
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Internal_Generator",
-            "Provider": true,
-            "Receiver": true,
             "ResourceFlowRate": 2500
         },
         {
-            "Name": "Battery_Output",
-            "Provider": true
-        },
-        {
             "Name": "Extractor_Backpack",
-            "Provider": true,
-            "Receiver": true,
             "ResourceFlowRate": 250
         },
         {
             "Name": "Energy_Metal_Oxite_Dissolver",
-            "Provider": true,
-            "Receiver": true,
             "ResourceFlowRate": 500
         },
         {
             "Name": "Torch",
-            "Provider": true,
-            "Receiver": true,
             "AutoActivate": true,
             "ResourceFlowRate": 2000
         },
         {
             "Name": "Electric_Furnace",
-            "Receiver": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 0,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Electric_Dehumidifier",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 500
+            "ResourceFlowRate": 500,
+            "BrownOutModifier": {
+                "RowName": "Electronic_Aura_Brownout"
+            }
         },
         {
             "Name": "Thumper",
-            "Receiver": true,
-            "ResourceFlowRate": 1500
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 1500,
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "Refrigerator",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 500
+            "ResourceFlowRate": 500,
+            "bAllowAutoRestart": true
         },
         {
             "Name": "SolarPanel",
-            "Provider": true,
+            "FlowType": "Produce",
             "AutoActivate": true,
             "ResourceFlowRate": 5000
         },
         {
             "Name": "Heater_Large_Receiver",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 250
+            "ResourceFlowRate": 250,
+            "BrownOutModifier": {
+                "RowName": "Electronic_Aura_Brownout"
+            },
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Cooler_Large_Receiver",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 250
+            "ResourceFlowRate": 250,
+            "BrownOutModifier": {
+                "RowName": "Electronic_Aura_Brownout"
+            },
+            "bAllowAutoRestart": true
         },
         {
             "Name": "WaterWheel_Generator",
-            "Provider": true,
+            "FlowType": "Produce",
+            "AlwaysActive": true,
             "AutoActivate": true,
             "ResourceFlowRate": 2000
         },
         {
             "Name": "Worklamp",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 150
+            "ResourceFlowRate": 150,
+            "BrownOutModifier": {
+                "RowName": "Electronic_Light_Brownout"
+            },
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Carpentry_Bench_T4",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 2500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Chemistry_Bench",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 2500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Masonry_Bench_T4",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2000
+            "ResourceFlowRate": 2000,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Electric_Composter",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Material_Processor",
-            "Receiver": true,
             "AutoActivate": true,
             "ResourceFlowRate": 2500
         },
         {
-            "Name": "Manual_Reciever",
-            "Receiver": true
+            "Name": "Manual_Reciever"
         },
         {
             "Name": "Meta_Crop_Plot",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 100
+            "ResourceFlowRate": 100,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true
         },
         {
-            "Name": "Water_Pump_Energy",
-            "Receiver": true,
-            "AutoActivate": true
+            "Name": "Water_Pump_Energy"
         },
         {
             "Name": "Exotic_Electric_Drill",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Advanced_Alteration_Bench",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "Electric_Armor_Bench",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 2500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
         },
         {
             "Name": "MoDataDevice",
-            "Receiver": true,
             "AutoActivate": true,
             "ResourceFlowRate": 10000
         },
         {
             "Name": "Repair_Bench_Energy",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "AutoShutoffFlowPercent": 99,
+            "bIsOptional": true
         },
         {
             "Name": "Deep_Freeze",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 2500,
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Aquarium",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 500
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "Advanced_Aquarium",
-            "Receiver": true,
-            "AutoActivate": true
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "SpawnBlocker",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "WindTurbine",
-            "Provider": true,
-            "AutoActivate": true,
+            "FlowType": "Produce",
             "ResourceFlowRate": 1750
         },
         {
             "Name": "T4Communicator",
-            "Receiver": true,
             "AutoActivate": true,
             "ResourceFlowRate": 1500
         },
         {
             "Name": "Anvil_T4",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 2500
+            "ResourceFlowRate": 2500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Crafting"
+            }
+        },
+        {
+            "Name": "Faction_Mission_Device",
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Electric_Stove",
+            "AutoActivate": true
         },
         {
             "Name": "NeonSign",
-            "Receiver": true,
+            "AlwaysActive": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 200
+            "ResourceFlowRate": 200,
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Turret",
-            "Receiver": true,
             "AutoActivate": true,
-            "ResourceFlowRate": 1500
+            "ResourceFlowRate": 1500,
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "Beehive",
-            "Receiver": true,
-            "ResourceFlowRate": 500
+            "ResourceFlowRate": 500,
+            "bAllowAutoRestart": true,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "BeehiveExtractor"
+            }
+        },
+        {
+            "Name": "Electric_Radar",
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Mission_Ship_Battery",
+            "FlowType": "Store",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 10000
+        },
+        {
+            "Name": "Mission_Analyzer",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Mission_Mo_Data_Device",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 10000,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Mission_Prototype_Laser",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Battery_T4",
+            "FlowType": "Store",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 10000
+        },
+        {
+            "Name": "Enzyme_Cannon",
+            "ResourceFlowRate": 5000
         }
     ]
 }

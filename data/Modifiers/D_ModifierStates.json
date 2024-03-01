@@ -1190,6 +1190,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Wet-ModifierDescription\", \"You are wet and your temperature has been decreased. You take increased Electric and Frost damage.\")",
             "GrantedStats": {
                 "(Value=\"BaseExternalTemperatureModification_+\")": -1000,
+                "(Value=\"BaseBurnChance_%\")": -25,
                 "(Value=\"BaseElectricDamageResistance_%\")": -50,
                 "(Value=\"BaseFrostDamageResistance_%\")": -50
             },
@@ -2277,7 +2278,7 @@
             "ModifierGrantedByAura": {
                 "RowName": "Dehumidifier"
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_RangeModifiable.BP_Modifier_Aura_RangeModifiable_C",
             "ShouldTick": true,
             "MergeType": "Replace",
             "ModifierTags": {
@@ -2436,9 +2437,9 @@
         },
         {
             "Name": "IceBox_Spoil_Rate",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
             "ModifierName": "",
             "ModifierDescription": "",
-            "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -500
             },
@@ -2448,9 +2449,9 @@
         },
         {
             "Name": "Refrigerator_Spoil_Rate",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
             "ModifierName": "",
             "ModifierDescription": "",
-            "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -1000
             },
@@ -2460,9 +2461,9 @@
         },
         {
             "Name": "Minimal_Spoil_Rate",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
             "ModifierName": "",
             "ModifierDescription": "",
-            "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseInventoryCannotSpoil_?\")": 1
             },
@@ -4201,9 +4202,9 @@
         },
         {
             "Name": "WaterConnectionSpeedUp",
-            "ModifierName": "",
-            "ModifierDescription": "",
-            "VisibleToPlayer": false,
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
+            "ModifierName": "INVTEXT(\"[DNT] Water Speed\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Water is speeding crafting up\")",
             "GrantedStats": {
                 "(Value=\"BaseCraftingSpeed_+%\")": 50
             },
@@ -4215,9 +4216,9 @@
         },
         {
             "Name": "WaterConnectionSpeedUp_2x",
-            "ModifierName": "",
-            "ModifierDescription": "",
-            "VisibleToPlayer": false,
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
+            "ModifierName": "INVTEXT(\"[DNT] Water Speed\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Water is greatly speeding crafting up\")",
             "GrantedStats": {
                 "(Value=\"BaseCraftingSpeed_+%\")": 200
             },
@@ -5599,9 +5600,9 @@
         },
         {
             "Name": "Deep_Freeze_Spoil_Rate",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
             "ModifierName": "",
             "ModifierDescription": "",
-            "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseInventoryCannotSpoil_?\")": 1
             },
@@ -8212,6 +8213,11 @@
                 "(Value=\"BaseExperience_+%\")": 15,
                 "(Value=\"BaseFoodModifierDuration_+%\")": 20
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "DriedMeatModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -8393,6 +8399,110 @@
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Energy_Brownout_Crafting",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Crafting-ModifierName\", \"Energy Shortage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Crafting-ModifierDescription\", \"Insufficient Energy for this device to operate at full efficiency\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyBrownoutCraftingSpeed_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "BrownOut_ResourceNetwork",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"BrownOut_ResourceNetwork-ModifierName\", \"Energy Shortage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"BrownOut_ResourceNetwork-ModifierDescription\", \"Insufficient Energy for this device to operate at full efficiency\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Water_Brownout_Crafting",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Water.Icon_Water'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Water_Brownout_Crafting-ModifierName\", \"Water Shortage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Water_Brownout_Crafting-ModifierDescription\", \"Insufficient Water for this device to operate at full efficiency\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterBrownoutCraftingSpeed_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Low_Wind_Conditions",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Low_Wind_Conditions-ModifierName\", \"Low Wind\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Low_Wind_Conditions-ModifierDescription\", \"Low wind is causing less energy to be generated.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": -50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Electronic_Light_Brownout",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_LowPower.Icon_LowPower'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Light_Brownout-ModifierName\", \"Underpowered\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Light_Brownout-ModifierDescription\", \"Low power is causing lights to lose effectiveness.\")",
+            "GrantedStats": {
+                "(Value=\"BaseElectronicLightEffectiveness_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Electronic_Aura_Brownout",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_AuraRangeDebuff.Icon_AuraRangeDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Aura_Brownout-ModifierName\", \"Underpowered\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Aura_Brownout-ModifierDescription\", \"Low power is causing the Aura to be reduced.\")",
+            "GrantedStats": {
+                "(Value=\"BaseAuraRange_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Electronic_Spoil_Brownout",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime_Debuff.Icon_SpoilTime_Debuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Spoil_Brownout-ModifierName\", \"Underpowered\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Spoil_Brownout-ModifierDescription\", \"Low Power is causing spoil rate to be increased.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInventorySpoilRate_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         }
     ]
 }

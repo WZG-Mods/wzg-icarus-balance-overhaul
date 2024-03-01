@@ -1,21 +1,33 @@
 {
     "RowStruct": "/Script/Icarus.FuelData",
     "Defaults": {
-        "Provider": false,
-        "Receiver": false,
+        "FlowType": "Consume",
+        "AlwaysActive": false,
         "AutoActivate": false,
-        "ResourceFlowRate": 1000
+        "ResourceFlowRate": 1000,
+        "bAllowPullingResourceFromInventory": false,
+        "bAllowPushingResourceToInventory": false,
+        "BrownOutModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "AutoShutoffFlowPercent": 0,
+        "bAllowAutoRestart": false,
+        "bIsOptional": false,
+        "OptionalFlowType": {
+            "RowName": "None",
+            "DataTableName": "D_OptionalResourceFlows"
+        }
     },
     "Rows": [
         {
             "Name": "Composter",
-            "Provider": true,
+            "FlowType": "Produce",
             "AutoActivate": true,
             "ResourceFlowRate": 10
         },
         {
             "Name": "Generator",
-            "Receiver": true,
             "ResourceFlowRate": 10
         }
     ]

@@ -6,7 +6,8 @@
         "GenerationRatio": 1,
         "TransmutableItems": [],
         "TransmutableResources": [],
-        "RequiresManualActivation": true
+        "RequiresManualActivation": true,
+        "OutOfFuelThresholdPercent": 0
     },
     "Rows": [
         {
@@ -156,7 +157,12 @@
         },
         {
             "Name": "Water_Pump_Generator",
-            "Resource": "Water"
+            "Resource": "Water",
+            "TransmutableResources": [
+                "Energy"
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Dehumidifier",
@@ -415,7 +421,6 @@
         },
         {
             "Name": "Beehive",
-            "Resource": "Energy",
             "GenerationRate": 100,
             "TransmutableItems": [
                 {
@@ -428,6 +433,26 @@
                 }
             ],
             "RequiresManualActivation": false
+        },
+        {
+            "Name": "Water_Pump_Biofuel",
+            "Resource": "Energy",
+            "GenerationRate": 500,
+            "GenerationRatio": 450,
+            "TransmutableResources": [
+                "Fuel"
+            ]
+        },
+        {
+            "Name": "Water_Borer",
+            "Resource": "Water",
+            "GenerationRate": 2000,
+            "GenerationRatio": 2,
+            "TransmutableResources": [
+                "Energy"
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
         }
     ]
 }
