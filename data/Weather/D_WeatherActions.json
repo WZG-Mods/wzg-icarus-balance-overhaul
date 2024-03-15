@@ -16850,6 +16850,40 @@
                     "A": 0.20000000298023224
                 }
             },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
             "bEnableVisuals_Clouds": true,
             "Severity_CloudsEnd": 0.800000011920929,
             "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
@@ -16870,6 +16904,2012 @@
             "bEnableVisuals_Snow_Buildup": true,
             "Severity_Snow_BuildupEnd": 1,
             "Severity_Snow_StormEnd": 0.4000000059604645
+        },
+        {
+            "Name": "T4_Desert_Sand_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.5,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T4_Desert_Sand_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.5,
+            "Severity_DebrisEnd": 0.5,
+            "StormTier": 3,
+            "StormWindDamagePeriod": 3,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T4_Desert_Sand_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 4,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.5,
+            "Severity_DebrisEnd": 0.800000011920929,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 4.5,
+            "StormWindDamagePeriod": 0.5,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 4,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.800000011920929,
+            "Severity_SandEnd": 1,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T4_Desert_Sand_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.5,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T5_Desert_Sand_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T5_Desert_Sand_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.6000000238418579,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "StormTier": 4,
+            "StormWindDamagePeriod": 3,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T5_Desert_Sand_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 4,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 75
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 50
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.6000000238418579,
+            "Severity_DebrisEnd": 0.8999999761581421,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 5,
+            "StormWindDamagePeriod": 0.5,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 4,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.800000011920929,
+            "Severity_SandEnd": 1,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T5_Desert_Sand_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T1_Desert_Wind_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.10000000149011612
+        },
+        {
+            "Name": "T1_Desert_Wind_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "Severity_WindStart": 0.4000000059604645,
+            "Severity_WindEnd": 0.4000000059604645,
+            "StormTier": 0.5,
+            "StormWindDamagePeriod": 6,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T1_Desert_Wind_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 0.4000000059604645,
+            "Severity_CloudsEnd": 0.5,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.20000000298023224,
+            "Severity_DebrisEnd": 0.4000000059604645,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.4000000059604645,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Undulation_010.C_Weather_Generic_Undulation_010",
+            "StormTier": 1.5,
+            "StormWindDamagePeriod": 0.75,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 6,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.10000000149011612,
+            "Severity_SandEnd": 0.30000001192092896,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T1_Desert_Wind_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.10000000149011612
+        },
+        {
+            "Name": "T3_Desert_Wind_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.5,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.30000001192092896,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.10000000149011612
+        },
+        {
+            "Name": "T3_Desert_Wind_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "StormTier": 2,
+            "StormWindDamagePeriod": 6,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Desert_Wind_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 0.4000000059604645,
+            "Severity_CloudsEnd": 0.5,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.30000001192092896,
+            "Severity_DebrisEnd": 0.5,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.6000000238418579,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Undulation_010.C_Weather_Generic_Undulation_010",
+            "StormTier": 3,
+            "StormWindDamagePeriod": 0.75,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 6,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.10000000149011612,
+            "Severity_SandEnd": 0.30000001192092896,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T3_Desert_Wind_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.5,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.30000001192092896,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.10000000149011612
+        },
+        {
+            "Name": "T3_Desert_Heatwave_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-volcanic-Heatwave-start_stop.T_icon-weather-volcanic-Heatwave-start_stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 1700,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.10000000149011612,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Desert_Heatwave_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-volcanic-Heatwave-body.T_icon-weather-volcanic-Heatwave-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "StormWindDamagePeriod": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Desert_Heatwave_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-volcanic-Heatwave-chaos.T_icon-weather-volcanic-Heatwave-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.10000000149011612,
+            "Severity_WindEnd": 0.10000000149011612,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 4,
+            "TreeToppleStrengthThreshold": 0.5,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T3_Desert_Heatwave_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-volcanic-Heatwave-start_stop.T_icon-weather-volcanic-Heatwave-start_stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Heatwave",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 1700,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.10000000149011612,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T5_Desert_Wind_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.4000000059604645,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.30000001192092896
+        },
+        {
+            "Name": "T5_Desert_Wind_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind2.icon-weather-wind2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 3,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.4000000059604645,
+            "Severity_DebrisEnd": 0.4000000059604645,
+            "bEnableVisuals_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 0.800000011920929,
+            "StormTier": 3,
+            "StormWindDamagePeriod": 6,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 3,
+            "TreeToppleMaxInterval": 8,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.30000001192092896,
+            "Severity_SandEnd": 0.30000001192092896
+        },
+        {
+            "Name": "T5_Desert_Wind_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind3.icon-weather-wind3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 75
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 50
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 25
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 0.800000011920929,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.4000000059604645,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Undulation_010.C_Weather_Generic_Undulation_010",
+            "StormTier": 6,
+            "StormWindDamagePeriod": 0.75,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 6,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.30000001192092896,
+            "Severity_SandEnd": 0.4000000059604645,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T5_Desert_Wind_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Wind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.4000000059604645,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -800,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.30000001192092896
+        },
+        {
+            "Name": "T6_Desert_Sand_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.800000011920929,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 1200,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T6_Desert_Sand_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 75
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 50
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 25
+                }
+            },
+            "StormTier": 6,
+            "StormWindDamagePeriod": 3,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T6_Desert_Sand_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 3,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 120
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 90
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                }
+            },
+            "bGeneratesLightning": true,
+            "MinLightningInterval": 10,
+            "MaxLightningInterval": 20,
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.800000011920929,
+            "Severity_DebrisEnd": 1.100000023841858,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 6,
+            "StormWindDamagePeriod": 0.5,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 4,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.800000011920929,
+            "Severity_SandEnd": 1.2000000476837158,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T6_Desert_Sand_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.800000011920929,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 1200,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T2_Desert_Sand_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.5,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T2_Desert_Sand_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "StormTier": 1,
+            "StormWindDamagePeriod": 3,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T2_Desert_Sand_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.20000000298023224,
+            "Severity_DebrisEnd": 0.5,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 2,
+            "StormWindDamagePeriod": 0.5,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 2,
+            "TreeToppleMaxInterval": 4,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.6000000238418579,
+            "Severity_SandEnd": 0.800000011920929,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T2_Desert_Sand_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.5,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 800,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.800000011920929
+        },
+        {
+            "Name": "T0_Desert_Sand_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_Stagger_01.C_Weather_Generic_Stagger_01",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 600,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.30000001192092896
+        },
+        {
+            "Name": "T0_Desert_Sand_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                }
+            },
+            "StormWindDamagePeriod": 6,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.125,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T0_Desert_Sand_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "ThunderIntensity": 1,
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.4000000059604645,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.4000000059604645,
+            "Severity_WindEnd": 0.6000000238418579,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 1,
+            "StormWindDamagePeriod": 1,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 10,
+            "TreeToppleMaxInterval": 20,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.125,
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 2,
+            "Damage_Players_MaxInterval": 2,
+            "Damage_Players_Intensity": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandStart": 0.4000000059604645,
+            "Severity_SandEnd": 0.6000000238418579,
+            "Curve_Sand": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010"
+        },
+        {
+            "Name": "T0_Desert_Sand_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Desert_Sand",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": 600,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Sand": true,
+            "Severity_SandEnd": 0.30000001192092896
         }
     ]
 }
