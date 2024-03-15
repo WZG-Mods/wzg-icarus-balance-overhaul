@@ -19080,7 +19080,7 @@
             ]
         },
         {
-            "Name": "Coconut_Grown",
+            "Name": "Coconut_Crops",
             "Rewards": [
                 {
                     "Item": {
@@ -19113,7 +19113,7 @@
                         "RowName": "Coconut_Seed",
                         "DataTableName": "D_ItemTemplate"
                     },
-                    "DropChance": 0.75,
+                    "DropChance": 75,
                     "DropChanceAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19123,8 +19123,8 @@
                         "DataTableName": "D_Stats"
                     },
                     "MinRandomStackCount": 1,
-                    "MaxRandomStackCount": 3,
-                    "bRewardsScale": true,
+                    "MaxRandomStackCount": 2,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19137,34 +19137,8 @@
             ]
         },
         {
-            "Name": "Bramble_Grown",
+            "Name": "Bramble_Crops",
             "Rewards": [
-                {
-                    "Item": {
-                        "RowName": "Bramble_Seed",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "DropChance": 0.75,
-                    "DropChanceAdditiveStat": {
-                        "RowName": "None",
-                        "DataTableName": "D_Stats"
-                    },
-                    "RequiredStatToDrop": {
-                        "RowName": "None",
-                        "DataTableName": "D_Stats"
-                    },
-                    "MinRandomStackCount": 1,
-                    "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
-                    "StackAdditiveStat": {
-                        "RowName": "None",
-                        "DataTableName": "D_Stats"
-                    },
-                    "StackMultiplicativeStat": {
-                        "RowName": "None",
-                        "DataTableName": "D_Stats"
-                    }
-                },
                 {
                     "Item": {
                         "RowName": "Bramble",
@@ -19179,8 +19153,34 @@
                         "RowName": "None",
                         "DataTableName": "D_Stats"
                     },
+                    "MinRandomStackCount": 2,
+                    "MaxRandomStackCount": 4,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Bramble_Seed",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 75,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
                     "MinRandomStackCount": 1,
-                    "MaxRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
                     "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
@@ -19362,6 +19362,63 @@
                     },
                     "MinRandomStackCount": 2,
                     "MaxRandomStackCount": 4,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Bramble_Sickle",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 15,
+                    "MaxRandomStackCount": 20,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Bramble_Seed",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 75,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
                     "bRewardsScale": true,
                     "StackAdditiveStat": {
                         "RowName": "None",

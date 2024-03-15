@@ -510,6 +510,41 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
+            "Name": "Ice_Mammoth_Boss",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 1000,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseNPCAttackRadius_+\")": 1000,
+                "(Value=\"BaseNPCStompAttackRadius_+\")": 1000,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 500,
+                "(Value=\"BaseImmobiliseResistance_%\")": 100,
+                "(Value=\"BaseSlowResistance_%\")": 100,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 150,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BasePoisonDamageResistance_%\")": -100,
+                "(Value=\"BaseFrostDamageResistance_%\")": 50,
+                "(Value=\"BaseIceArmorMaximumHealth_+\")": 2000
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_MammothBossHealth.C_MammothBossHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MammothBossDamage.C_MammothBossDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_MammothBossMovementSpeed.C_MammothBossMovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
             "Name": "Rabbit",
             "Base": {
                 "(Value=\"BaseMovementSpeed_+\")": 220,
@@ -1801,7 +1836,7 @@
         {
             "Name": "Mount_WoolyZebra",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 190,
+                "(Value=\"BaseMovementSpeed_+\")": 180,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -2799,7 +2834,7 @@
             "CustomStats": [
                 {
                     "Stat": {
-                        "Value": "BaseAttacksCauseWound_%"
+                        "Value": "BaseAttacksCauseSlow_%"
                     },
                     "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
                 }
@@ -2873,7 +2908,7 @@
             "CustomStats": [
                 {
                     "Stat": {
-                        "Value": "BaseAttacksCauseWound_%"
+                        "Value": "BaseAttacksCauseBleed_%"
                     },
                     "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
                 }
@@ -2909,6 +2944,110 @@
             "Health": "CurveFloat'/Game/Data/AI/C_KiwiHealth.C_KiwiHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_KiwiMeleeDamage.C_KiwiMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "WoolyZebra",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 180,
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 175,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseFrostDamageResistance_%\")": 50,
+                "(Value=\"BasePoisonDamageResistance_%\")": -100
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_WoolyZebra_Health.C_WoolyZebra_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Ghost_Crocodile",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 100,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseCharacterMass_+\")": 400,
+                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 75,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 150,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 800,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 2750,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 750,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 5,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -25,
+                "(Value=\"BaseFrostDamageResistance_%\")": -100,
+                "(Value=\"BasePoisonDamageResistance_%\")": 50
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_GhostCrocodileHealth.C_GhostCrocodileHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_GhostCrocodileMeleeDamage.C_GhostCrocodileMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseDeepWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_CrocodileDeepWoundChance.C_CrocodileDeepWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Ape",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 50,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
+                "(Value=\"BaseCharacterMass_+\")": 600,
+                "(Value=\"BaseNPCAttackRadius_+\")": 400,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 100,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 33,
+                "(Value=\"BaseImmobiliseResistance_%\")": 33
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_ApeHealth.C_ApeHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ApeMeleeDamage.C_ApeMeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_ApeMovementSpeed.C_ApeMovementSpeed'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseDeepWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_BeerDeepWoundChance.C_BeerDeepWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }

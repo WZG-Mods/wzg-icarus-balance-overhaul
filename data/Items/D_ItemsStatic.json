@@ -66935,7 +66935,7 @@
                 "RowName": "Item_Mission_Prototype_Laser"
             },
             "Interactable": {
-                "RowName": "Deployable_Power_Toggle_Only"
+                "RowName": "Mission_Prototype_Laser"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -66960,9 +66960,6 @@
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
-            },
-            "Resource": {
-                "RowName": "Mission_Prototype_Laser"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -69463,6 +69460,9 @@
             },
             "Weight": {
                 "RowName": "LightDeployable"
+            },
+            "Resource": {
+                "RowName": "Basic_Oxite_Dissolver"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -112766,6 +112766,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Item.Mound"
                     }
                 ]
             },
@@ -112773,6 +112776,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Item.Mound"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -113475,7 +113481,7 @@
                 "RowName": "MediumDeployable"
             },
             "Resource": {
-                "RowName": "Masonry_Bench"
+                "RowName": "Masonry_Bench_T3"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -132008,6 +132014,156 @@
             }
         },
         {
+            "Name": "Bramble",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Seed"
+            },
+            "Itemable": {
+                "RowName": "Item_Bramble"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoPickup"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Bramble"
+            },
+            "Durable": {
+                "RowName": "Deployable_1000"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Defense"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Defense"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Meta_Bramble_Seed",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Seed"
+            },
+            "Itemable": {
+                "RowName": "Item_Meta_Bramble_Seed"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Meta_Bramble_Seed"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_MetaItem"
+            },
+            "Audio": {
+                "RowName": "Food_Crunch"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "AnimalCarcass_Mange_Wolf",
             "Meshable": {
                 "RowName": "Mesh_Carcass_Mange_Wolf"
@@ -132286,6 +132442,200 @@
                 "GameplayTags": [
                     {
                         "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "DEV_ResourceNetworkInspector",
+            "Meshable": {
+                "RowName": "Mesh_0_Placeholder_Invisible"
+            },
+            "Itemable": {
+                "RowName": "Item_Dev_ResourceNetworkInspector"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Dev_ResourceNetworkInspector"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Ghost_Crocodile",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Ghost_Crocodile"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Ghost_Crocodile"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Large"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 600,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Ape",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Ape"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Ape"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Large"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 600,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
                     },
                     {
                         "TagName": "Traits.Meshable"

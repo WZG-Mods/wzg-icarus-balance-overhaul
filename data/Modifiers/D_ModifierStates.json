@@ -6715,7 +6715,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierName\", \"Ash Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierDescription\", \"The ash storm is increasing your water and oxygen consumption, and reducing your processing speed. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6834,7 +6834,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierName\", \"Heatwave Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierDescription\", \"The heatwave is increasing your water consumption and significantly warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6893,7 +6893,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierName\", \"Acid Fog Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierDescription\", \"The acid fog storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you and your equipment.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -7146,10 +7146,10 @@
         },
         {
             "Name": "Exposure_Conifer_Rain",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/mediumdebuff-rain3.mediumdebuff-rain3'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-rain3.extremedebuff-rain3'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierName\", \"Rain Exposure\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierDescription\", \"Expsosure to a rain storm, reduces movement speed and cools.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierDescription\", \"The rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Dynamic"
             },
@@ -7170,6 +7170,7 @@
             "ShouldTick": true,
             "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
+            "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
@@ -8497,6 +8498,166 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Spoil_Brownout-ModifierDescription\", \"Low Power is causing spoil rate to be increased.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_ReducedEnergyGeneration",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_ReducedEnergyGeneration-ModifierName\", \"Exposed: Reduced Energy Generation\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_ReducedEnergyGeneration-ModifierDescription\", \"Energy generation is reduced due to current weather event.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_IncreasedEnergyGeneration",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_IncreasedEnergyGeneration-ModifierName\", \"Exposed: Increased Energy Generation\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_IncreasedEnergyGeneration-ModifierDescription\", \"Energy generation is increased due to current weather event.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": 100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_ReducedWaterGeneration",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Water.Icon_Water'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_ReducedWaterGeneration-ModifierName\", \"Exposed: Reduced Water Generation\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_ReducedWaterGeneration-ModifierDescription\", \"Water flow is reduced due to current weather event.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterNetworkModifier_+%\")": -100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_IncreasedWaterGeneration",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Water.Icon_Water'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_IncreasedWaterGeneration-ModifierName\", \"Exposed: Increased Water Generation\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_IncreasedWaterGeneration-ModifierDescription\", \"Water flow is increased due to current weather event.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterNetworkModifier_+%\")": 100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Desert_Sand",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-solosand3.extremedebuff-solosand3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Sand-ModifierName\", \"Sand Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Sand-ModifierDescription\", \"The sand storm is increasing your water consumption. Reduces your mobility, increases your stamina usage and significantly damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Desert_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-wind3.extremedebuff-wind3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Wind-ModifierName\", \"Wind Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Wind-ModifierDescription\", \"The wind storm is increasing your water consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Desert_Heatwave",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-volcanic-Heatwave-chaos-3.T_extremedebuff-weather-volcanic-Heatwave-chaos-3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Heatwave-ModifierName\", \"Heatwave Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Desert_Heatwave-ModifierDescription\", \"The heatwave is increasing your water consumption and significantly warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1200
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "WindTurbine_Damaged",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Tools.Icon_Tools'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"WindTurbine_Damaged-ModifierName\", \"Damaged Wind Turbine\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"WindTurbine_Damaged-ModifierDescription\", \"Energy generation is reduced due to damage caused by high speed winds or wildlife.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": -100
             },
             "MergeType": "Replace",
             "bEffectsObjects": true,
