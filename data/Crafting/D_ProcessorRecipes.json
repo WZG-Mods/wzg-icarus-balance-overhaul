@@ -27,9 +27,11 @@
                 "DynamicProperties": []
             }
         ],
+        "Container": "None",
         "ResourceInputs": [],
         "bSelectOutputItemRandomly": false,
-        "ItemRandomSelect": {
+        "bContainsContainer": false,
+        "ItemIconOverride": {
             "ItemStaticData": {
                 "RowName": "None",
                 "DataTableName": "D_ItemsStatic"
@@ -12716,11 +12718,37 @@
                     "DynamicProperties": []
                 }
             ],
-            "Outputs": [],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Thermos",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": [
+                        {
+                            "RowName": "Cooling",
+                            "DataTableName": "D_Alterations"
+                        },
+                        {
+                            "RowName": "Rain_Water",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
+                }
+            ],
             "ResourceOutputs": [
                 {
                     "Type": "Water",
-                    "RequiredUnits": 200
+                    "RequiredUnits": 100
                 }
             ],
             "Audio": {
@@ -24063,25 +24091,29 @@
                     },
                     "Count": 30,
                     "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos_GreenTea",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Green_Tea",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {
@@ -24121,25 +24153,29 @@
                     },
                     "Count": 40,
                     "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos_WildTea",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Wild_Tea",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {
@@ -24179,25 +24215,29 @@
                     },
                     "Count": 20,
                     "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos_Cocoa",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Cocoa",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {
@@ -24237,25 +24277,29 @@
                     },
                     "Count": 40,
                     "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos_Coffee",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Coffee",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {
@@ -24277,27 +24321,31 @@
                         "RowName": "Ice",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 50,
-                    "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
+                    "Count": 10,
                     "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos_IceWater",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Ice_Water",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {
@@ -55081,7 +55129,7 @@
                 }
             ],
             "bSelectOutputItemRandomly": true,
-            "ItemRandomSelect": {
+            "ItemIconOverride": {
                 "ItemStaticData": {
                     "RowName": "Unknown_Ore"
                 }
@@ -60248,6 +60296,238 @@
             }
         },
         {
+            "Name": "Water_Purifier_T1_Water",
+            "Requirement": {
+                "RowName": "Water_Purifier_T1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Charcoal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Water_Purifier_T1_Water",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Water_Purifier_T1_Ground",
+            "Requirement": {
+                "RowName": "Water_Purifier_T1"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Stick",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Charcoal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Water_Purifier_T1_Ground",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Water_Purifier_T2",
+            "Requirement": {
+                "RowName": "Water_Purifier_T2"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Water_Purifier_T2",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Water_Purifier_T4",
+            "Requirement": {
+                "RowName": "Water_Purifier_T4"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Titanium_Plate",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 14,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Water_Purifier_T4",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
             "Name": "Arctic_Scorpion_Trophy",
             "RecipeSets": [
                 {
@@ -63189,7 +63469,23 @@
                         "RowName": "Fur",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 0,
                     "DynamicProperties": []
                 }
             ],
@@ -65001,25 +65297,29 @@
                     },
                     "Count": 5,
                     "DynamicProperties": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Thermos",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": []
                 }
             ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Honey_Tea",
+                        "RowName": "Thermos",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": []
+                    "Alterations": [
+                        {
+                            "RowName": "Honey_Tea",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
                 }
             ],
             "Audio": {

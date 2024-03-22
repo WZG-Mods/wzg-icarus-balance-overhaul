@@ -1894,7 +1894,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 950,
+                "X": 1000,
                 "Y": 100
             },
             "Size": {
@@ -2358,7 +2358,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 300,
+                "X": 350,
                 "Y": 1050
             },
             "Size": {
@@ -15160,8 +15160,8 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 11050,
-                "Y": 900
+                "X": 11400,
+                "Y": 1200
             },
             "Size": {
                 "X": 184,
@@ -15185,7 +15185,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 6050,
+                "X": 5950,
                 "Y": 350
             },
             "Size": {
@@ -15258,7 +15258,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 6750,
+                "X": 6650,
                 "Y": 150
             },
             "Size": {
@@ -21206,7 +21206,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 1300,
+                "X": 1350,
                 "Y": 100
             },
             "Size": {
@@ -22678,7 +22678,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 1650,
+                "X": 1600,
                 "Y": 1200
             },
             "Size": {
@@ -25142,7 +25142,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 1650,
+                "X": 1700,
                 "Y": 100
             },
             "Size": {
@@ -25167,7 +25167,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 1050,
+                "X": 1100,
                 "Y": 1200
             },
             "Size": {
@@ -25486,8 +25486,8 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 11400,
-                "Y": 1200
+                "X": 11100,
+                "Y": 900
             },
             "Size": {
                 "X": 184,
@@ -25681,7 +25681,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 6400,
+                "X": 6300,
                 "Y": 150
             },
             "Size": {
@@ -25840,7 +25840,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 11750,
+                "X": 11100,
                 "Y": 1200
             },
             "Size": {
@@ -27328,7 +27328,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 500,
+                "X": 550,
                 "Y": 400
             },
             "Size": {
@@ -28621,8 +28621,8 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 1300,
-                "Y": 500
+                "X": 1350,
+                "Y": 550
             },
             "Size": {
                 "X": 0,
@@ -32600,6 +32600,81 @@
             "RequiredLevel": 20
         },
         {
+            "Name": "Water_Purifier_T1",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Water_Purifier_T1-DisplayName\", \"Basic Water Purifiers\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T1_2.T_ITEM_Water_Purifier_T1_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Re_route_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Water_Purifier_T2",
+            "ExtraData": {
+                "RowName": "Item_Water_Purifier_T2",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 7000,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "SplineTool_Water",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Purifier_T4",
+            "ExtraData": {
+                "RowName": "Item_Water_Purifier_T4",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 11750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T4_Water_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
             "Name": "Workshop_Backpack_Reroute",
             "bIsReroute": true,
             "TalentTree": {
@@ -33020,7 +33095,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 700,
+                "X": 750,
                 "Y": 1050
             },
             "Size": {
@@ -33041,7 +33116,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 500,
+                "X": 550,
                 "Y": 850
             },
             "Size": {
@@ -33069,24 +33144,6 @@
             "Position": {
                 "X": 3650,
                 "Y": 1150
-            },
-            "Size": {
-                "X": 250,
-                "Y": 250
-            }
-        },
-        {
-            "Name": "Workshop_CHAC_Shotgun",
-            "ExtraData": {
-                "RowName": "Meta_CHAC_Shotgun",
-                "DataTableName": "D_WorkshopItems"
-            },
-            "TalentTree": {
-                "RowName": "Workshop_Firearms"
-            },
-            "Position": {
-                "X": 500,
-                "Y": 800
             },
             "Size": {
                 "X": 250,
@@ -33128,7 +33185,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 5700,
+                "X": 5600,
                 "Y": 350
             },
             "Size": {
@@ -33153,7 +33210,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 6400,
+                "X": 6300,
                 "Y": 500
             },
             "Size": {
@@ -33178,7 +33235,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 6750,
+                "X": 6650,
                 "Y": 500
             },
             "Size": {
