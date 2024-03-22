@@ -12886,11 +12886,11 @@
             }
         },
         {
-            "Name": "PRO_Ashlands_Story1",
+            "Name": "PRO_Ashlands_Story",
             "DropName": "INVTEXT(\"[DNT] Ashlands Story\")",
             "Description": "INVTEXT(\"[DNT] Ashlands Story\")",
             "FlavourText": "INVTEXT(\"[DNT] Ashlands Story\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Large.T_Prospect_Desert_Angler01_Large'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -12942,6 +12942,81 @@
             },
             "FactionMission": {
                 "RowName": "PRO_Ashlands_Story"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 17,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Upgrade2",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Story",
+            "DropName": "INVTEXT(\"[DNT] Ice Sheet Story\")",
+            "Description": "INVTEXT(\"[DNT] Ice Sheet Story\")",
+            "FlavourText": "INVTEXT(\"[DNT] Ice Sheet Story\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Large.T_Prospect_Arctic_Storm01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "Pulse"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "PRO_Icesheet_Story"
             },
             "TimeDuration": {
                 "Days": {

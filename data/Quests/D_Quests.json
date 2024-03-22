@@ -8769,7 +8769,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Extraction_Resupply-Description\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
-            "Name": "PRO_Ashlands",
+            "Name": "PRO_Ashlands_Story",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
             "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ashlands\")"
         },
@@ -8786,7 +8786,7 @@
         {
             "Name": "PRO_Ashlands_Beacon",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon.BPQ_PRO_Ashlands_Story_Beacon_C",
-            "Description": "INVTEXT(\"[DNT] Place Trail Beacon at Entrance to Ashlands.\")",
+            "Description": "INVTEXT(\"[DNT] Place Trail Beacon at Entrance to Ashlands\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Entrances"
             }
@@ -8794,7 +8794,7 @@
         {
             "Name": "PRO_Ashlands_Beacon_Chain",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
-            "Description": "INVTEXT(\"[DNT] Chain beacons until you find the scientists\\' outpost.\")",
+            "Description": "INVTEXT(\"[DNT] Chain beacons until you find the scientists\\' outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             }
@@ -8810,7 +8810,7 @@
         {
             "Name": "PRO_Ashlands_Outpost_Clear",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
-            "Description": "INVTEXT(\"[DNT] Clear creatures from around the outpost.\")",
+            "Description": "INVTEXT(\"[DNT] Clear creatures from around the outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             }
@@ -8818,7 +8818,7 @@
         {
             "Name": "PRO_Ashlands_Outpost_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashands_Story_Outpost_Collect.BPQ_PRO_Ashands_Story_Outpost_Collect_C",
-            "Description": "INVTEXT(\"[DNT] Find audio log in structure.\")",
+            "Description": "INVTEXT(\"[DNT] Find audio log in structure\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             }
@@ -8826,10 +8826,62 @@
         {
             "Name": "PRO_Ashlands_Beacon_Icesheets",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon_Icesheet.BPQ_PRO_Ashlands_Story_Beacon_Icesheet_C",
-            "Description": "INVTEXT(\"[DNT] Place the final beacon around the entrance to the Ice Sheet.\")",
+            "Description": "INVTEXT(\"[DNT] Place the final beacon around the entrance to the Ice Sheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_IcesheetTransition"
             }
+        },
+        {
+            "Name": "PRO_Icesheet_Story",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story.BPQ_PRO_Icesheet_Story_C",
+            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ice Sheets\")"
+        },
+        {
+            "Name": "PRO_Icesheet_CraftTrailBeaconTool",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool.BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool_C",
+            "Description": "INVTEXT(\"[DNT] Craft a Trail Beacon Tool\")"
+        },
+        {
+            "Name": "PRO_Icesheet_CraftTrailBeacons",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_CraftTrailBeacons.BPQ_PRO_Icesheet_Story_CraftTrailBeacons_C",
+            "Description": "INVTEXT(\"[DNT] Craft Trail Beacons: {0} / {1}\")"
+        },
+        {
+            "Name": "PRO_Icesheet_Beacon",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Beacon.BPQ_PRO_Icesheet_Story_Beacon_C",
+            "Description": "INVTEXT(\"[DNT] Place Trail Beacon at Entrance to the Ice Sheet\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Entrance"
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Beacon_Chain",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Travel.BPQ_PRO_Icesheet_Story_Travel_C",
+            "Description": "INVTEXT(\"[DNT] Chain beacons until you find the scientists\\' outpost\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Outpost_Percentage",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Outpost_Signal.BPQ_PRO_Icesheet_Story_Outpost_Signal_C",
+            "Description": "INVTEXT(\"[DNT] Detecting Signal from Outpost: {0}% Signal Strength\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Outpost_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Outpost_Collect.BPQ_PRO_Icesheet_Story_Outpost_Collect_C",
+            "Description": "INVTEXT(\"[DNT] Search Bodies for Audio Log\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Outpost"
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Beacon_Final",
+            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_FindFinalCave.BPQ_PRO_Icesheet_Story_FindFinalCave_C",
+            "Description": "INVTEXT(\"[DNT] Search nearby caves to find where the Crazed Scientist may have gone: {0}/3\")"
         }
     ]
 }

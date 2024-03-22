@@ -7,6 +7,7 @@
         "ResourceFlowRate": 1000,
         "bAllowPullingResourceFromInventory": false,
         "bAllowPushingResourceToInventory": false,
+        "bStorageIsInFlowOnly": false,
         "BrownOutModifier": {
             "RowName": "None",
             "DataTableName": "D_ModifierStates"
@@ -199,14 +200,20 @@
             }
         },
         {
-            "Name": "T2_Water_Purifier",
-            "AutoActivate": true,
-            "ResourceFlowRate": 50
+            "Name": "Water_Purifier_T2",
+            "ResourceFlowRate": 200,
+            "AutoShutoffFlowPercent": -1
         },
         {
             "Name": "Water_Trough_T4",
-            "ResourceFlowRate": 50,
+            "ResourceFlowRate": 30,
             "bAllowPushingResourceToInventory": true
+        },
+        {
+            "Name": "Water_Purifier_T4",
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": -1
         }
     ]
 }
