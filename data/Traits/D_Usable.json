@@ -322,6 +322,33 @@
                     "bMustOwnInventory": true
                 }
             ]
+        },
+        {
+            "Name": "Consume_Empty",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Empty_Container",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
         }
     ]
 }

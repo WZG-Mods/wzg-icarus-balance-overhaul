@@ -3931,6 +3931,12 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2-Description\", \"RELOCATED: Recovery\")",
             "LocationQuery": {
                 "RowName": "ZebraBase"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RelocatedIntro",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -3946,17 +3952,35 @@
         {
             "Name": "OLY_Desert_Recovery_2_Camp_Clear",
             "Class": "/Game/BP/Quests/Olympus/Desert/Recovery2/BPQ_OLY_Desert_Recovery2_Camp_Clear.BPQ_OLY_Desert_Recovery2_Camp_Clear_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Camp_Clear-Description\", \"Clear the Encampment of Hostile Creatures {0}%\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Camp_Clear-Description\", \"Clear the Encampment of Hostile Creatures {0}%\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RelocatedEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "OLY_Desert_Recovery_2_Camp_Interact",
             "Class": "/Game/BP/Quests/Olympus/Desert/Recovery2/BPQ_OLY_Desert_Recovery2_Camp_Interact.BPQ_OLY_Desert_Recovery2_Camp_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Camp_Interact-Description\", \"Activate Domestic Creature Trackers by Interacting with the Terminal (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Camp_Interact-Description\", \"Activate Domestic Creature Trackers by Interacting with the Terminal (F)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RelocatedEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "OLY_Desert_Recovery_2_Creatures",
             "Class": "/Game/BP/Quests/Olympus/Desert/Recovery2/BPQ_OLY_Desert_Recovery2_Creatures.BPQ_OLY_Desert_Recovery2_Creatures_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Creatures-Description\", \"Locate and Return the Remaining Domesticated Creatures to the Pen (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Recovery_2_Creatures-Description\", \"Locate and Return the Remaining Domesticated Creatures to the Pen (M)\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RelocatedEvent4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "OLY_Desert_Recovery_2_Creatures_1",
@@ -6549,7 +6573,7 @@
         {
             "Name": "PRO_Story1_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from O.E.S.\")"
         },
         {
             "Name": "PRO_Story1_Recipe_Location",
@@ -6602,7 +6626,7 @@
         {
             "Name": "PRO_Story1_Mini_Quest_Collect_Seed",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Collect_Seed.BPQ_PRO_Story1_Mini_Quest_Collect_Seed_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Seed-Description\", \"Collected a Tomato and Farming Plot Sinotai Delivery Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Seed-Description\", \"Collected a Tomato and Farming Plot from the Sinotai Delivery Pod (M)\")"
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Plant",
@@ -8771,7 +8795,13 @@
         {
             "Name": "PRO_Ashlands_Story",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
-            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ashlands\")"
+            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ashlands\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "AshlandsIntro",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Ashlands_CraftTrailBeaconTool",
@@ -8789,6 +8819,12 @@
             "Description": "INVTEXT(\"[DNT] Place Trail Beacon at Entrance to Ashlands\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Entrances"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "AshlandsEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -8813,6 +8849,12 @@
             "Description": "INVTEXT(\"[DNT] Clear creatures from around the outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "AshlandsEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -8829,12 +8871,24 @@
             "Description": "INVTEXT(\"[DNT] Place the final beacon around the entrance to the Ice Sheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_IcesheetTransition"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "AshlandsEvent6",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Icesheet_Story",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story.BPQ_PRO_Icesheet_Story_C",
-            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ice Sheets\")"
+            "Description": "INVTEXT(\"[DNT] UNKNOWN VENTURE: Ice Sheets\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "IceSheetIntro",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Icesheet_CraftTrailBeaconTool",
@@ -8852,6 +8906,12 @@
             "Description": "INVTEXT(\"[DNT] Place Trail Beacon at Entrance to the Ice Sheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Entrance"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "IceSheetEvent2",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -8876,6 +8936,12 @@
             "Description": "INVTEXT(\"[DNT] Search Bodies for Audio Log\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Outpost"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "IceSheetEvent3",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
