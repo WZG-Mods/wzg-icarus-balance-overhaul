@@ -303,7 +303,10 @@
             "Name": "Turret",
             "AutoActivate": true,
             "ResourceFlowRate": 1500,
-            "AutoShutoffFlowPercent": 99
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Turret"
+            },
+            "bAllowAutoRestart": true
         },
         {
             "Name": "Beehive",
@@ -358,12 +361,17 @@
         },
         {
             "Name": "Water_Trough_T4",
-            "AutoShutoffFlowPercent": 99,
-            "bAllowAutoRestart": true
+            "AutoShutoffFlowPercent": 99
         },
         {
             "Name": "Purifier_T4",
             "AutoActivate": true
+        },
+        {
+            "Name": "Food_Trough_T4",
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": 99,
+            "bAllowAutoRestart": true
         }
     ]
 }

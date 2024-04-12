@@ -2209,16 +2209,28 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.Campfire"
+                    },
+                    {
+                        "TagName": "ModifierState.Dehumidified"
+                    },
+                    {
+                        "TagName": "ModifierState.Cooler"
+                    },
+                    {
+                        "TagName": "ModifierState.Heater"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    2,
                     1,
-                    0
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
                 ],
-                "AutoDescription": " ALL( ModifierState.Campfire )"
+                "AutoDescription": " ANY( ModifierState.Campfire, ModifierState.Dehumidified, ModifierState.Cooler, ModifierState.Heater )"
             }
         },
         {
@@ -2554,7 +2566,7 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "FactionMission.Item.Fuel"
+                        "TagName": "Item.Fuel.Biofuel"
                     }
                 ],
                 "QueryTokenStream": [
@@ -2564,7 +2576,7 @@
                     1,
                     0
                 ],
-                "AutoDescription": " ALL( FactionMission.Item.Fuel )"
+                "AutoDescription": " ALL( Item.Fuel.Biofuel )"
             }
         },
         {
@@ -3592,13 +3604,13 @@
                         "TagName": "Item.Plant"
                     },
                     {
-                        "TagName": "FactionMission.Item.AnimalFood"
-                    },
-                    {
                         "TagName": "GOAP.Food.Herbivore"
                     },
                     {
                         "TagName": "Item.Consumable.Food.Honey"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3616,7 +3628,7 @@
                     3,
                     4
                 ],
-                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore, Item.Consumable.Food.Honey ) )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( GOAP.Food.Herbivore, Item.Consumable.Food.Honey, Item.AnimalFeed ) )"
             }
         },
         {
@@ -3630,13 +3642,13 @@
                         "TagName": "Item.Plant"
                     },
                     {
-                        "TagName": "FactionMission.Item.AnimalFood"
-                    },
-                    {
                         "TagName": "GOAP.Food.Herbivore"
                     },
                     {
                         "TagName": "Item.Consumable.Food.Honey"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
                     }
                 ],
                 "QueryTokenStream": [
@@ -3654,7 +3666,7 @@
                     3,
                     4
                 ],
-                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore, Item.Consumable.Food.Honey ) )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( GOAP.Food.Herbivore, Item.Consumable.Food.Honey, Item.AnimalFeed ) )"
             }
         },
         {
@@ -4548,7 +4560,7 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "FactionMission.Item.AnimalFood"
+                        "TagName": "Item.AnimalFeed"
                     }
                 ],
                 "QueryTokenStream": [
@@ -4558,7 +4570,7 @@
                     1,
                     0
                 ],
-                "AutoDescription": " ALL( FactionMission.Item.AnimalFood )"
+                "AutoDescription": " ALL( Item.AnimalFeed )"
             }
         },
         {
@@ -5045,16 +5057,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "Item.Quest"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    2,
                     1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "AutoDescription": " ALL( Item.Quest )"
+                "AutoDescription": " ANY( Item.Quest, FactionMission.Item )"
             }
         },
         {

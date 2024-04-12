@@ -6732,6 +6732,7 @@
         {
             "Name": "Chicken_Trophy_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_A.BP_Trophy_Chicken_A_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_A.T_ITEM_Chicken_Trophy_A",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_A-DeployableName\", \"White\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
@@ -6741,6 +6742,7 @@
         {
             "Name": "Chicken_Trophy_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_B.BP_Trophy_Chicken_B_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_B.T_ITEM_Chicken_Trophy_B",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_B-DeployableName\", \"Black\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
@@ -6750,7 +6752,7 @@
         {
             "Name": "Chicken_Trophy_C",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chicken_C.BP_Trophy_Chicken_C_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy.T_ITEM_Chicken_Trophy",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_C.T_ITEM_Chicken_Trophy_C",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Chicken_Trophy_C-DeployableName\", \"Red\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
@@ -6760,8 +6762,11 @@
         {
             "Name": "Sheep_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Sheep_Trophy.T_ITEM_Sheep_Trophy",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Sheep/SM_DEP_Trophy_Sheep.SM_DEP_Trophy_Sheep",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -6908,14 +6913,123 @@
         {
             "Name": "Hitching_Post",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Hitching_Post-DeployableName\", \"None\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Hitching_Post/SM_DEP_Hitching_Post.SM_DEP_Hitching_Post",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false
         },
         {
             "Name": "Snare_Trap",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Snare_Trap-DeployableName\", \"None\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Snare.SM_DEP_Trap_Snare",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Animal_Bench",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Animal_Bench.BP_Animal_Bench_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Animal/SM_DEP_Bench_Animal.SM_DEP_Bench_Animal",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Cat_Bowl_Food",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Bowls/BP_CatBowl_Food.BP_CatBowl_Food_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cat_Bowl/SM_DEP_Cat_Bowl.SM_DEP_Cat_Bowl",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DOG_BOWL.SFX_DEP_DOG_BOWL",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Cat_Bowl_Water",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Bowls/BP_CatBowl_Water.BP_CatBowl_Water_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cat_Bowl/SM_DEP_Cat_Bowl.SM_DEP_Cat_Bowl",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DOG_BOWL.SFX_DEP_DOG_BOWL",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Bowl_Food",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Bowls/BP_DogBowl_Food.BP_DogBowl_Food_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Dog_Bowl/SM_DEP_Dog_Bowl.SM_DEP_Dog_Bowl",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DOG_BOWL.SFX_DEP_DOG_BOWL",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Bowl_Water",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Bowls/BP_DogBowl_Water.BP_DogBowl_Water_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Dog_Bowl/SM_DEP_Dog_Bowl.SM_DEP_Dog_Bowl",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DOG_BOWL.SFX_DEP_DOG_BOWL",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Horse_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Horse.BP_Trophy_Horse_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Horse_Trophy_A.T_ITEM_Horse_Trophy_A",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Horse/SM_DEP_Trophy_Horse.SM_DEP_Trophy_Horse",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Horse_Trophy_B",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Horse_B.BP_Trophy_Horse_B_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Horse_Trophy_B.T_ITEM_Horse_Trophy_B",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Horse/SM_DEP_Trophy_Horse.SM_DEP_Trophy_Horse",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Horse_Trophy_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Horse_C.BP_Trophy_Horse_C_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Horse_Trophy_C.T_ITEM_Horse_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Horse/SM_DEP_Trophy_Horse.SM_DEP_Trophy_Horse",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Cat_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Cat.BP_Trophy_Cat_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Cat_Trophy_A.T_ITEM_Cat_Trophy_A",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Cat/SM_DEP_Trophy_Cat.SM_DEP_Trophy_Cat",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Cat_Trophy_B",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Cat_B.BP_Trophy_Cat_B_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Cat_Trophy_B.T_ITEM_Cat_Trophy_B",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Cat/SM_DEP_Trophy_Cat.SM_DEP_Trophy_Cat",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Cat_Trophy_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Cat_C.BP_Trophy_Cat_C_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Cat_Trophy_C.T_ITEM_Cat_Trophy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Cat/SM_DEP_Trophy_Cat.SM_DEP_Trophy_Cat",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chicken/SM_DEP_Trophy_Chicken.SM_DEP_Trophy_Chicken",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }
