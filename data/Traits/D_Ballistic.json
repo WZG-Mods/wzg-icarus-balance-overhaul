@@ -15,6 +15,7 @@
         "PayloadDeploymentType": "OnProjectileMovementComplete",
         "PayloadDeploymentTimerDelay": 5,
         "TrailParticle": "None",
+        "bPlayHitEffects": true,
         "BreakChance": 0.25,
         "DurabilityDamage": 0,
         "PostDeployLifetime": 30,
@@ -2803,6 +2804,25 @@
             "bUseActorPooling": true
         },
         {
+            "Name": "Pistol_Round_Workshop",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 15,
+            "bHomingProjectile": false,
+            "bCanKillCam": true,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.0035000001080334187,
+            "AllowPickupAfterSettle": false,
+            "BreakChance": 1,
+            "PostDeployLifetime": 0,
+            "CullDistanceSquared": 400000000,
+            "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
+            "RotationFollowsVelocity": false,
+            "AudioData": {
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL.SFX_IMPACT_SMALL"
+            },
+            "bUseActorPooling": true
+        },
+        {
             "Name": "Pistol_Round_Explosive",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 15,
@@ -3353,6 +3373,38 @@
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_SPEAR_FLY.SFX_BALLISTIC_SPEAR_FLY",
                 "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_SPEAR_METAL_HIT.SFX_BALLISTIC_SPEAR_METAL_HIT"
+            }
+        },
+        {
+            "Name": "Stick",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 1,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 1,
+            "BreakChance": 0,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.25,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinFrictionFraction": 10,
+                "MinTimeBetweenBounces": 1
+            },
+            "OverrideStaticMesh": "/Game/ASS/ENV/TRE/CF_Stick/SM_CF_Stick_02.SM_CF_Stick_02",
+            "RotationFollowsVelocity": false,
+            "VelocityRotationOffset": {
+                "Yaw": 20
+            },
+            "AngularRotation": {
+                "Pitch": 5000,
+                "Yaw": 5000,
+                "Roll": 5000
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_THROW_STICK.SFX_BALLISTIC_THROW_STICK",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_STICK_HIT.SFX_BALLISTIC_STICK_HIT"
             }
         }
     ]

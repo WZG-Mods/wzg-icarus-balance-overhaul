@@ -18910,6 +18910,1682 @@
             "FireExtinguish_MaxInterval": 4,
             "bEnableVisuals_Sand": true,
             "Severity_SandEnd": 0.30000001192092896
+        },
+        {
+            "Name": "T3_Conifer_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.800000011920929,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Conifer_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "StormTier": 2,
+            "StormWindDamagePeriod": 6,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Conifer_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainStart": 0.800000011920929,
+            "Severity_RainEnd": 1,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 10,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 0.800000011920929,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.6000000238418579,
+            "Severity_DebrisEnd": 1,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 3,
+            "StormWindDamagePeriod": 0.75,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 1,
+            "TreeToppleMaxInterval": 2,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 3
+        },
+        {
+            "Name": "T3_Conifer_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.800000011920929,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 0.800000011920929,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T4_Conifer_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind"
+        },
+        {
+            "Name": "T4_Conifer_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "StormTier": 3,
+            "StormWindDamagePeriod": 6
+        },
+        {
+            "Name": "T4_Conifer_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 1,
+            "Severity_CloudsEnd": 1.2000000476837158,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.4000000059604645,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 4.5,
+            "StormWindDamagePeriod": 0.75,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 3
+        },
+        {
+            "Name": "T4_Conifer_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T0_Conifer_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 6,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T0_Conifer_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 8,
+            "MinLightningInterval": 20,
+            "MaxLightningInterval": 30,
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "StormWindDamagePeriod": 12,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 10,
+            "Damage_Deployables_MaxInterval": 20,
+            "Damage_Deployables_Intensity": 0.125,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T0_Conifer_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 0.6000000238418579,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T2_Conifer_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.6000000238418579,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 3,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T2_Conifer_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "StormTier": 1,
+            "StormWindDamagePeriod": 6,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896
+        },
+        {
+            "Name": "T2_Conifer_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "StormTier": 2,
+            "StormWindDamagePeriod": 2,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896
+        },
+        {
+            "Name": "T2_Conifer_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Conifer_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                }
+            },
+            "Severity_RainEnd": 0.20000000298023224,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Arctic_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.800000011920929,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Arctic_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 8,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "StormTier": 2,
+            "StormWindDamagePeriod": 6,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T3_Arctic_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainStart": 0.800000011920929,
+            "Severity_RainEnd": 1,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 10,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 0.800000011920929,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisStart": 0.6000000238418579,
+            "Severity_DebrisEnd": 1,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.800000011920929,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 3,
+            "StormWindDamagePeriod": 0.75,
+            "bWindTopplesTrees": true,
+            "TreeToppleMinInterval": 1,
+            "TreeToppleMaxInterval": 2,
+            "TreeToppleStrengthThreshold": 0.5,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 3
+        },
+        {
+            "Name": "T3_Arctic_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.800000011920929,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 0.800000011920929,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.800000011920929,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T4_Arctic_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind"
+        },
+        {
+            "Name": "T4_Arctic_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 45
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                }
+            },
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "StormTier": 3,
+            "StormWindDamagePeriod": 6
+        },
+        {
+            "Name": "T4_Arctic_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 60
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 40
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsStart": 1,
+            "Severity_CloudsEnd": 1.2000000476837158,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindStart": 0.4000000059604645,
+            "Severity_WindEnd": 1,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
+            "StormTier": 4.5,
+            "StormWindDamagePeriod": 0.75,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 2,
+            "Damage_Deployables_MaxInterval": 3,
+            "Damage_Deployables_Intensity": 0.5,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 3
+        },
+        {
+            "Name": "T4_Arctic_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.20000000298023224,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T0_Arctic_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 6,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T0_Arctic_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 8,
+            "MinLightningInterval": 20,
+            "MaxLightningInterval": 30,
+            "bGeneratesThunder": true,
+            "ThunderIntensity": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "StormWindDamagePeriod": 12,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 10,
+            "Damage_Deployables_MaxInterval": 20,
+            "Damage_Deployables_Intensity": 0.125,
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T0_Arctic_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 4
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 2
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 0.6000000238418579,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2
+        },
+        {
+            "Name": "T2_Arctic_Hail_Start_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Rain": true,
+            "Severity_RainEnd": 0.6000000238418579,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_End": 3,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "T2_Arctic_Hail_Body_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-body.T_icon-weather-Grassland-Hail-body",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 30
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 7
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "StormTier": 1,
+            "StormWindDamagePeriod": 6,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896
+        },
+        {
+            "Name": "T2_Arctic_Hail_Chaos_Rain",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1.5,
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 44
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 33
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 22
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 11
+                }
+            },
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "StormTier": 2,
+            "StormWindDamagePeriod": 2,
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896
+        },
+        {
+            "Name": "T2_Arctic_Hail_Stop_Rain",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-start-stop.T_icon-weather-Grassland-Hail-start-stop",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureModifiers": {
+                "0.010000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 20
+                },
+                "0.300000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 15
+                },
+                "0.600000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 10
+                },
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Arctic_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 5
+                }
+            },
+            "Severity_RainEnd": 0.20000000298023224,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "bEnableFillable_Rain": true,
+            "Rainfall_Millilitre_Start": 3,
+            "Rainfall_Millilitre_End": 3,
+            "bEnableVisuals_Clouds": true,
+            "Severity_CloudsEnd": 1,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 0.6000000238418579,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -5,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableFireExtinguish": true,
+            "FireExtinguish_RollChanceMulti": 0.30000001192092896,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
         }
     ]
 }

@@ -8,7 +8,10 @@
     "Rows": [
         {
             "Name": "Default",
-            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Generic/UI_CRAFT_RECIPE_DEFAULT.UI_CRAFT_RECIPE_DEFAULT"
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Generic/UI_CRAFT_RECIPE_DEFAULT.UI_CRAFT_RECIPE_DEFAULT",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Carpentry_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_CARPENTRYBENCH.UI_CRAFT_RECIPE_CARPENTRYBENCH"
+            }
         },
         {
             "Name": "LastOnly",
@@ -62,7 +65,10 @@
         },
         {
             "Name": "Glassbench",
-            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_GLASSBENCH.UI_CRAFT_RECIPE_GLASSBENCH"
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_GLASSBENCH.UI_CRAFT_RECIPE_GLASSBENCH",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Medicine_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH"
+            }
         },
         {
             "Name": "Ovens",
@@ -70,11 +76,18 @@
         },
         {
             "Name": "HerbalismBench",
-            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_HERBALISM.UI_CRAFT_RECIPE_HERBALISM"
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_HERBALISM.UI_CRAFT_RECIPE_HERBALISM",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Medicine_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH",
+                "(RowName=\"Chemistry_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_GLASSBENCH.UI_CRAFT_RECIPE_GLASSBENCH"
+            }
         },
         {
             "Name": "MortarPestle",
-            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MORTAR_PESTLE.UI_CRAFT_RECIPE_MORTAR_PESTLE"
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MORTAR_PESTLE.UI_CRAFT_RECIPE_MORTAR_PESTLE",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Material_Processor\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MACHINEBENCH.UI_CRAFT_RECIPE_MACHINEBENCH"
+            }
         },
         {
             "Name": "WoodComposter",
@@ -82,7 +95,11 @@
         },
         {
             "Name": "DryingRack",
-            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_DRYINGRACK.UI_CRAFT_RECIPE_DRYINGRACK"
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_DRYINGRACK.UI_CRAFT_RECIPE_DRYINGRACK",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Smoker_T3\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SMOKER.UI_CRAFT_RECIPE_SMOKER",
+                "(RowName=\"Smoker_T4\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SMOKER.UI_CRAFT_RECIPE_SMOKER"
+            }
         },
         {
             "Name": "AlterationsBench",
@@ -107,6 +124,10 @@
         {
             "Name": "AnimalsBench",
             "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_ANIMAL_BENCH.UI_CRAFT_RECIPE_ANIMAL_BENCH"
+        },
+        {
+            "Name": "MedicineBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH"
         }
     ]
 }

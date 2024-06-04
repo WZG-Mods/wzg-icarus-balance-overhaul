@@ -795,7 +795,7 @@
                 "(Value=\"BasePrimeMeatDropChance_%\")": 5
             },
             "StatsUnlock2": {
-                "(Value=\"BaseMammothTuskRewards_+%\")": 100
+                "(Value=\"BaseBoneHarvestedFromAnimals_+%\")": 15
             },
             "ProgressiveStat": [
                 {
@@ -2893,7 +2893,7 @@
             ],
             "TotalPointsRequired": 800,
             "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Striker-Lore1\", \"Arid Strikers are known for their extremely sharp claws, with an edge keen enough to gut a human in one blow, suit and all. \")",
-            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Striker-Lore2\", \"The Arid Striker is one of the reasons the UDA implemented the controversial \\'buddy\\' system. Prospectors with enough spare cash could choose a teammate to drop down with, in order to spot each other through Stalker territory. The costs for this were astronomical, and the program was quickly scrapped.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Striker-Lore2\", \"The Arid Striker is one of the reasons the UDA implemented the controversial \\'buddy\\' system. Prospectors with enough spare cash could choose a teammate to drop down with, in order to spot each other through Striker territory. The costs for this were astronomical, and the program was quickly scrapped.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Striker-Lore3\", \"\\\"I mean, have you SEEN the claws on those things?! I am never going into the Volcanic areas again. EVER.\\\"\")",
             "Traits": [
                 {
@@ -3461,7 +3461,7 @@
                 }
             ],
             "StatsUnlock1": {
-                "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 10
+                "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 5
             },
             "StatsUnlock2": {
                 "(Value=\"BaseWeightCapacity_+%\")": 10
@@ -3538,7 +3538,7 @@
                 "Y": -10
             },
             "BiomeImageType": "Small",
-            "CreatureSound": "/Game/FMOD/Events/Environment/Creatures/Flys/SFX_BEES_BUZZING_AGGRO.SFX_BEES_BUZZING_AGGRO",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEES.UI_BESTIARY_CRE_BEES",
             "Biomes": [
                 {
                     "RowName": "Conifer",
@@ -3597,6 +3597,345 @@
                 },
                 {
                     "Value": "BaseBeeExtraDamageResistance_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Sheep",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-CreatureName\", \"Sheep\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/Sheep_HB_MED.Sheep_HB_MED",
+            "Biomes": [
+                {
+                    "RowName": "Workshop",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Space",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 600,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-Lore1\", \"The humble Sheep is a mostly peaceful herbivore characterized by its thick fleece, providing insulation against the ever-changing weather of Icarus. Though larger and more robust than Earthen sheep, it retains the gentle demeanor and affinity for grazing common to its kind. Contractors may find solace in their presence, as their wool offers warmth and comfort amidst the harsh expanse of its habitat.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-Lore2\", \"This breed of Sheep was initially sourced from genetic material of animals from New Zealand. Known for its large Sheep population and wide, expansive farmland, New Zealand was considered the planet\\'s best site from which to draw from. Most contractors report that they are easy to work with, and show minimal signs of temper. Though depending on the weather, reports do show that they can be a bit stubborn.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-Lore3\", \"\\\"Ah c\\'mon Bessie there\\'s a good- no, no not that way, Bessie please, we\\'ve been over this. It\\'s just a haircut, it\\'s getting chillier and I need your wool- OOF. Hey, get back here!\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Farming",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseFoodConsumption_+%\")": -5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFurHarvestedFromAnimals_+%\")": 10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseExperience_+%"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Chicken",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chicken-CreatureName\", \"Chicken\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Chicken_HB_SML.Chicken_HB_SML",
+            "CreatureSound": "/Game/FMOD/Events/SFX/Creatures/Chicken/SFX_CRE_VOC_CHICKEN_IDLE.SFX_CRE_VOC_CHICKEN_IDLE",
+            "Biomes": [
+                {
+                    "RowName": "Workshop",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Space",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 600,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Chicken-Lore1\", \"Chickens may seem like an unlikely creature to exist on Icarus, but after their initial introduction, they have been found to thrive under the care of competent prospectors. They also have an uncanny ability to recognize humans, and hold grudges. Breeder beware!\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Chicken-Lore2\", \"Chickens were introduced on Icarus as part of the Prospector Retention Program. Initially they were provided as a source of nourishment however early trials showed that many prospectors refused to use the animals as food, bonding with them in their solitude on the surface.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Chicken-Lore3\", \"\\\"Henrietta here has made a huge difference in my time planetside. She\\'s been a cute clucky little companion and more importantly a good source of eggs. I know she\\'ll stop laying eventually but... we\\'ll cross that road when we get to it I guess.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Farming",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseForagingSeedRewards_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseTamedCreatureThreatModifier_+%\")": -10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseExperience_+%"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Cat",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Cat-CreatureName\", \"Cat\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/Cat_HB_SML.Cat_HB_SML",
+            "BiomeImageType": "Small",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAT.UI_BESTIARY_CRE_CAT",
+            "Biomes": [
+                {
+                    "RowName": "Workshop",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Space",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 600,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Cat-Lore1\", \"These cats are felines that have been cryogenically preserved, their sleek fur untouched by their time spent in space. Emerging from stasis, they retain their natural grace and keen senses, navigating their new home with a sense of curiosity and playfulness.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Cat-Lore2\", \"Introduced as part of the Contractor Companion Program, these cats were chosen for their bonding abilities and drive to hunt. Unfortunately, after the first round of trials, it was discovered that the cryo-sleep had destroyed the latter, resulting in some exceptionally lazy cats. However, most contractors reported that they didn\\'t mind this and were horrified when asked if they\\'d prefer a replacement. \")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Cat-Lore3\", \"\\\"They seem to be adapting well to th-jfghlk ijdpfg83h4nds iopsfldg WHISKERS! GET OFF THERE\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Companion",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseChanceToCatchCommonFish_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseAttacksCauseBleed_%\")": 5
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseExperience_+%"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Dog",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Dog-CreatureName\", \"Dog\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/Dogs_HB_MED.Dogs_HB_MED",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DOG.UI_BESTIARY_CRE_DOG",
+            "Biomes": [
+                {
+                    "RowName": "Workshop",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Space",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 600,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Dog-Lore1\", \"Dogs are loyal and beloved domesticated mammals known for their unwavering devotion and diverse breeds. With a keen sense of smell and boundless energy, these affectionate animals enrich the lives of humans as faithful companions and trusted helpers, embodying the timeless bond between humans and their four-legged friends back on Earth.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Dog-Lore2\", \"Introduced as part of the Contractor Companion Program, these dogs were chosen for their bonding abilities with humans. Icarus is known to be a harsh and unforgiving environment, where loneliness can set in quickly. These dogs were frozen in cryo-sleep and transported planetside where they were allocated to select contractors for preliminary trials. These were wildly successful, with many contractors refusing to return the animals at the end of the testing phase.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Dog-Lore3\", \"\\\"WOOF! WOOOOOOOF WOOF WOOOOOF WOOF WOOF- Bessie?! How on earth did you get in here- ARE THOSE MY SOCKS?!\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Companion",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BasePrimeMeatDropChance_%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseExperience_+%"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Horse_Standard",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Horse_Standard-CreatureName\", \"Horse\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/Horse_HB_LRG.Horse_HB_LRG",
+            "BiomeImageType": "Large",
+            "Biomes": [
+                {
+                    "RowName": "Workshop",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Space",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 600,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Horse_Standard-Lore1\", \"Horses are large, herbivorous mammals renowned for their domestication and utility across various civilizations throughout history on Earth. Characterized by a robust body, a flowing mane, and a distinctive gallop, horses are esteemed for their strength, agility, and adaptability. Upon Icarus, they are a welcome and familiar sight in a place of peril.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Horse_Standard-Lore2\", \"Horses were introducted to Icarus as part of the Contractor Companion Program, which was an attempt to encourage Prospectors to stay on Icarus for longer stretches and reduce the overall turnover rate by the UDA. It was fairly successful, and many contractors who received a Horse as part of the program chose to keep them at its conclusion. However, those who lost their companions in planetside accidents were more likely to leave Icarus for good, citing severe emotional distress in their exit interviews.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Horse_Standard-Lore3\", \"\\\"Reginald here isn\\'t just a steed, though he\\'s very handy at helping me move around the place. He\\'s got such a personality, I\\'d have never have bothered with getting myself a horse back home but now... now I see why so many people love them so darn much.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Aggressive_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseTamedCreatureStaminaRegen_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseTamedCreatureWeightCapacity_+%\")": 10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseExperience_+%"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Arctic_Moa",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-CreatureName\", \"Arctic Moa\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_Arctic_Moa.Bestiary_Arctic_Moa",
+            "PopupImageScale": 1.350000023841858,
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MOA.UI_BESTIARY_CRE_MOA",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_019",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 1800,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore1\", \"Found in icy terrazone environments. This previously extinct creature had many variants. Specifically found on Icarus is the Dinornis novaezealandiae, the second largest moa species in recorded history.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore2\", \"This large flightless bird is the result of genetic experimentation, preserved Moa DNA was found in amber near Tekapo, New Zealand. This was used to revive the extinct species.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore3\", \"\\\"Life will find a way... Directly into a prospectors stomach.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "ProtectYoung_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Poison_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Frost_Resist_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Fast_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMountedExposureResistance_+%\")": 5
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseMoaExtraDamage_+%"
+                },
+                {
+                    "Value": "BaseMoaExtraDamageResistance_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Eagle",
+            "CreatureName": "INVTEXT(\"[DNT] Eagle\")",
+            "PopupImageScale": 1.75,
+            "PopupImageOffset": {
+                "Y": 20
+            },
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KEA.UI_BESTIARY_CRE_KEA",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Eagle-Lore1\", \"A large, intelligent parrot, originally native to New Zealand. On Earth, the Kea population continues to steadily decline. Seeding on Icarus was seen as a way to keep the species alive. Genetically modified to handle harsher conditions.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Eagle-Lore2\", \"Dr Amelia Tohu personally oversaw this project, having spent time raising Kea in conservation sectors as a young girl. Tohu was uncompromising in her commitment to propagating the species.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Eagle-Lore3\", \"\\\"Careful of the cheeky buggers. They\\'re not dangerous or anything, but they\\'ll steal food right out from under ya nose. Hell, they\\'ll rip the seals right off your dropship windows.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Flying_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseKeaWhiteMeatDropChance_%\")": 25
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseProjectileAccuracy_+%\")": 10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseKeaExtraDamage_+%"
+                },
+                {
+                    "Value": "BaseKeaExtraDamageResistance_+%"
                 }
             ]
         }

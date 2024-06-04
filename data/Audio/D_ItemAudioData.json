@@ -68,7 +68,16 @@
             "Name": "Stick",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_STICK_PICKUP.SFX_STICK_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+            "HitSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "equip": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_STICK_EQUIP_1ST.SFX_ITEM_STICK_EQUIP_1ST",
+                        "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_STICK_EQUIP_3RD.SFX_ITEM_STICK_EQUIP_3RD"
+                    ]
+                }
+            }
         },
         {
             "Name": "GenericDeployable",
@@ -683,8 +692,7 @@
             "Name": "Bandage",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
-            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_BANDAGE.SFX_CONSUME_BANDAGE"
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         },
         {
             "Name": "Canteen",
@@ -1488,6 +1496,12 @@
                     ]
                 }
             }
+        },
+        {
+            "Name": "Vitamin_Pills",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_VITAMIN_PILL.SFX_CONSUME_VITAMIN_PILL"
         }
     ]
 }

@@ -927,6 +927,9 @@
             "Terrain": {
                 "RowName": "Terrain_016"
             },
+            "FactionMission": {
+                "RowName": "OLY_Open_World"
+            },
             "bIsPersistent": true,
             "bIsOpenWorld": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
@@ -2062,7 +2065,7 @@
             "MissionCompleteDialogue": {
                 "RowName": "MissionComplete3"
             },
-            "RequiredTech": "Tier3",
+            "RequiredTech": "Tier2",
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -9982,6 +9985,113 @@
             }
         },
         {
+            "Name": "STYX_D_Recovery",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Recovery-DropName\", \"GENESIS: Recovery\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Recovery-Description\", \"LOCATE AND RETRIEVE A LIVING BIOSAMPLES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Recovery-FlavourText\", \"//OPERATOR: Uniao // BIOME: Alpine Valley // BACKGROUND: The operator requires a very delicate biosample from the surface. // MISSION: Retrieve the required sample and ensure its safe return to orbit. Note that the sample will be highly sensitive to death. //TERMS: Flat fee. No acknowledgement will be given for damaged or unusable samples.\\t \")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Large.T_Prospect_Forest_Crossbow01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing4"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLanding4"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete2"
+            },
+            "RequiredTech": "Tier4",
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 3
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                },
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 2,
+                    "Y": 5
+                }
+            },
+            "Forecast": {
+                "RowName": "SlowBurn"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_D_Recovery"
+            },
+            "TimeDuration": {
+                "Hours": {
+                    "Min": 10,
+                    "Max": 10
+                }
+            },
+            "StartingTime": 12,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 13,
+            "NumMetaSpawnsMin": 2,
+            "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Upgrade1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
+        },
+        {
             "Name": "STYX_D_Research",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Research-DropName\", \"GOSSAMER: Research\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_D_Research-Description\", \"ASSIST IN THE RESEARCH OF NATIVE SPECIES\")",
@@ -12190,6 +12300,9 @@
             },
             "Terrain": {
                 "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_Open_World"
             },
             "bIsPersistent": true,
             "bIsOpenWorld": true,

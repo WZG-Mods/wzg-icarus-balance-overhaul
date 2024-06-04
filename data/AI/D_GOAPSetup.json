@@ -36,6 +36,10 @@
                 {
                     "RowName": "Tiredness",
                     "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Pacificity",
+                    "DataTableName": "D_GOAPMotivations"
                 }
             ],
             "Actions": [
@@ -62,6 +66,10 @@
                 {
                     "RowName": "Rest",
                     "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Become_Tamed",
+                    "DataTableName": "D_GOAPActions"
                 }
             ],
             "Goals": [
@@ -87,6 +95,10 @@
                 },
                 {
                     "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Become_Tamed",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
@@ -256,6 +268,14 @@
                 {
                     "RowName": "Anchored",
                     "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Attraction",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Pacificity",
+                    "DataTableName": "D_GOAPMotivations"
                 }
             ],
             "Actions": [
@@ -294,6 +314,14 @@
                 {
                     "RowName": "Goto_Anchor",
                     "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Approach_Attraction",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Become_Tamed",
+                    "DataTableName": "D_GOAPActions"
                 }
             ],
             "Goals": [
@@ -319,6 +347,14 @@
                 },
                 {
                     "RowName": "Return_to_Anchor",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Attraction",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Become_Tamed",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
@@ -1733,6 +1769,10 @@
                 {
                     "RowName": "Tiredness",
                     "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Pacificity",
+                    "DataTableName": "D_GOAPMotivations"
                 }
             ],
             "Actions": [
@@ -1763,6 +1803,14 @@
                 {
                     "RowName": "Relax_At_Last_Hostile_Location",
                     "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Become_Tamed",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Bait",
+                    "DataTableName": "D_GOAPActions"
                 }
             ],
             "Goals": [
@@ -1784,6 +1832,10 @@
                 },
                 {
                     "RowName": "Warn_Aggressor",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Become_Tamed",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
@@ -3800,94 +3852,11 @@
         },
         {
             "Name": "Chicken",
-            "Motivations": [
-                {
-                    "RowName": "Hunger",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Thirst",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Threat",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Cautious",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Tiredness",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Attraction",
-                    "DataTableName": "D_GOAPMotivations"
-                }
-            ],
-            "Actions": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Eat_Food_Foliage",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Drink_Water",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Run_For_Safety",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Be_Cautious",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Rest",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Approach_Attraction",
-                    "DataTableName": "D_GOAPActions"
-                }
-            ],
-            "Goals": [
-                {
-                    "RowName": "Wander",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Satisfy_Hunger",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Satisfy_Thirst",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Run_For_Safety",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Be_Cautious",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Rest",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Satisfy_Attraction",
-                    "DataTableName": "D_GOAPGoals"
-                }
-            ],
             "DefaultGoal": {
                 "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.Mount.IdleBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Tame_ChickenIdle.BT_Tame_ChickenIdle'"
             }
         },
         {
@@ -4187,6 +4156,169 @@
         },
         {
             "Name": "Ice_Mammoth_Boss",
+            "DefaultGoal": {
+                "RowName": "Wander"
+            }
+        },
+        {
+            "Name": "GhostCrocodile",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Aggression",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Protective",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Anchored",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander_Dormant",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Corpse",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Melee_Attack_Assailant",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Investigate_Last_Hostile_Stimulus",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Goto_Anchor",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Relax_At_Last_Hostile_Location",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Bait",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Warn_Aggressor",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Kill_Assailant",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Return_to_Anchor",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Warn_Aggressor",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.GOAP.Melee_Attack\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack_Ghost_Crocodile.BT_IcarusNPCGOAP_Melee_Attack_Ghost_Crocodile'"
+            }
+        },
+        {
+            "Name": "Dog",
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.Mount.IdleBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Tame_DogIdle.BT_Tame_DogIdle'",
+                "(TagName=\"BT.Mount.AttackBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Mount_Attack_Dog.BT_Mount_Attack_Dog'"
+            }
+        },
+        {
+            "Name": "Cat",
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.Mount.SleepBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Tame_CatSleep.BT_Tame_CatSleep'",
+                "(TagName=\"BT.Mount.IdleBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Tame_CatIdle.BT_Tame_CatIdle'"
+            }
+        },
+        {
+            "Name": "Eagle",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Thirst",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Foliage",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Container",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Drink_Water",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Thirst",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
             "DefaultGoal": {
                 "RowName": "Wander"
             }
