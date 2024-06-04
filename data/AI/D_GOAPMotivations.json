@@ -476,6 +476,28 @@
                 }
             ],
             "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_GOAPMotivation_Hunting.BP_GOAPMotivation_Hunting_C"
+        },
+        {
+            "Name": "Pacificity",
+            "Description": "Pacificity",
+            "MotivationTriggers": [
+                {
+                    "TriggerThreshold": 95,
+                    "ThresholdOutcome": {
+                        "Properties": [
+                            {
+                                "Property": {
+                                    "RowName": "Pacified",
+                                    "DataTableName": "D_GOAPProperties"
+                                },
+                                "Value": true
+                            }
+                        ]
+                    },
+                    "ThresholdStats": {}
+                }
+            ],
+            "MotivationBP": "/Game/BP/AI/GOAP/Motivations/BP_IcarusGOAPMotivation_Pacificity.BP_IcarusGOAPMotivation_Pacificity_C"
         }
     ]
 }

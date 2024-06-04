@@ -507,10 +507,10 @@
         {
             "Name": "Melee_Fists",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Generic_Melee.BP_ActionableBehaviour_Generic_Melee_C'",
-            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeSwingSlow_Montage.3RD_CHA_1HAxeSwingSlow_Montage",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_FIST_PUNCH_MONTAGE.3RD_CHA_FIST_PUNCH_MONTAGE",
             "TP_ActionFailMontageVariations": [
-                "Action_0_Fail",
-                "Action_1_Fail"
+                "Action_0",
+                "Action_1"
             ],
             "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Fist_Attack_Montage.1ST_CHA_Fist_Attack_Montage",
             "FP_ActionFailMontageVariations": [
@@ -528,6 +528,8 @@
         {
             "Name": "Bandage_Consumable",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Bandage_Consumable.BP_Actionable_Bandage_Consumable_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HBandage_Use_Montage.3RD_CHA_1HBandage_Use_Montage",
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Use_Montage.1ST_CHA_Bandage_Use_Montage",
             "ActionCooldown": 1
         },
         {
@@ -567,6 +569,25 @@
         {
             "Name": "Melee_2H_Shovel",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Shovel.BP_Actionable_Shovel_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShovelAttack_Montage.3RD_CHA_ShovelAttack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_ShovelAttack_Montage.1ST_CHA_ShovelAttack_Montage",
+            "FP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 1,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
+            "Name": "Melee_2H_Shovel_Dig",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Shovel_Dig.BP_Actionable_Shovel_Dig_C'",
             "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShovelAttack_Montage.3RD_CHA_ShovelAttack_Montage",
             "TP_ActionMissMontageVariations": [
                 "Action_0"
@@ -790,6 +811,35 @@
             "ActionCooldown": 0.5
         },
         {
+            "Name": "Shear_Wool",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Shear_Wool.BP_ActionableBehaviour_Shear_Wool_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Shear_Montage.3RD_CHA_Shear_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Shear_Montage.1ST_CHA_Shear_Montage",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Action_0"
+                    ]
+                }
+            ],
+            "ActionCooldown": 0.5
+        },
+        {
             "Name": "Beacon_Tool",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Deployable_BeaconTool.BP_ActionableBehaviour_Deployable_BeaconTool_C'",
             "ActionCooldown": 0.009999999776482582
@@ -821,6 +871,36 @@
                     ]
                 }
             ]
+        },
+        {
+            "Name": "Hold_Apply_To_Target_Bandage",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Apply_To_Target.BP_ActionableBehaviour_Apply_To_Target_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "Hold_Apply_To_Target_Tonic",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Apply_To_Target_Tonic.BP_ActionableBehaviour_Apply_To_Target_Tonic_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "Hold_Apply_To_Target_Pill",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Apply_To_Target_Pill.BP_ActionableBehaviour_Apply_To_Target_Pill_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "Pill_Consumable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Pill_Consumable.BP_Actionable_Pill_Consumable_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "Paste_Consumable",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Paste_Consumable.BP_Actionable_Paste_Consumable_C'",
+            "ActionCooldown": 1
+        },
+        {
+            "Name": "Hold_Apply_To_Target_Paste",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Apply_To_Target_Paste.BP_ActionableBehaviour_Apply_To_Target_Paste_C'",
+            "ActionCooldown": 1
         }
     ]
 }

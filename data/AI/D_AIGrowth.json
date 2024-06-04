@@ -1139,7 +1139,7 @@
         {
             "Name": "Mount_Buffalo",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 150,
+                "(Value=\"BaseMovementSpeed_+\")": 170,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 30,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -1160,7 +1160,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 400,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 1600,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 6000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 3000,
@@ -1169,16 +1168,27 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseMountCargoSlots_+\")": 4,
-                "(Value=\"BasePhysicalDamageResistance_%\")": 40
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15,
+                "(Value=\"BaseCartActiveMovementSpeed_+%\")": -15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Health.C_Mount_Buffalo_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Stamina.C_Mount_Buffalo_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -1247,7 +1257,7 @@
         {
             "Name": "Mount_Moa",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 250,
+                "(Value=\"BaseMovementSpeed_+\")": 235,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -1268,7 +1278,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 300,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
@@ -1277,15 +1286,26 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
-                "(Value=\"BasePhysicalDamageResistance_%\")": 40
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"IsMountPrimaryAttackDisabledByDefault_?\")": 1,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Stamina.C_Mount_Moa_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -1310,8 +1330,8 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
                 "(Value=\"BaseMaximumFood_+\")": 100,
                 "(Value=\"BaseMaximumWater_+\")": 100,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 20,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 0
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -1337,8 +1357,8 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
                 "(Value=\"BaseMaximumFood_+\")": 100,
                 "(Value=\"BaseMaximumWater_+\")": 100,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 20,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 0
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -1494,7 +1514,7 @@
         {
             "Name": "Mount_SwampBird",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 180,
+                "(Value=\"BaseMovementSpeed_+\")": 220,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -1515,7 +1535,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 300,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
@@ -1524,17 +1543,27 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
                 "(Value=\"BasePoisonDamageResistance_%\")": 80,
-                "(Value=\"BaseFireDamageResistance_%\")": -50
+                "(Value=\"BaseFireDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Stamina.C_Mount_Moa_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -1572,7 +1601,7 @@
         {
             "Name": "Mount_BlueBack",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 130,
+                "(Value=\"BaseMovementSpeed_+\")": 150,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -1599,7 +1628,12 @@
                 "(Value=\"BaseMaximumStamina_+\")": 300,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
-                "(Value=\"BaseStaminaRegenDelay_+\")": 2000
+                "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
+                "(Value=\"BaseFallDamageResistance_%\")": 15,
+                "(Value=\"BaseWeightCapacity_+\")": 300,
+                "(Value=\"BaseMaximumWater_+\")": 300,
+                "(Value=\"BaseMaximumFood_+\")": 300,
+                "(Value=\"BaseMaximumOxygen_+\")": 300
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Blueback_Health.C_Blueback_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
@@ -1685,10 +1719,10 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 10,
                 "(Value=\"BaseImmobiliseResistance_%\")": 10,
-                "(Value=\"BaseMovementSpeed_+\")": 500
+                "(Value=\"BaseMovementSpeed_+\")": 115
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_SpiderHealth.C_SpiderHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_SpiderMeleeDamage.C_SpiderMeleeDamage'",
             "CustomStats": [
                 {
                     "Stat": {
@@ -1764,7 +1798,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 300,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
@@ -1773,17 +1806,27 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
-                "(Value=\"BasePoisonDamageResistance_%\")": 90,
-                "(Value=\"BaseFireDamageResistance_%\")": -25
+                "(Value=\"BasePoisonDamageResistance_%\")": 50,
+                "(Value=\"BaseFireDamageResistance_%\")": -25,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Stamina.C_Mount_Moa_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -1810,7 +1853,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 300,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
@@ -1819,24 +1861,34 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
                 "(Value=\"NPCRunningAttackRequiresSimilarDirection_?\")": 1,
                 "(Value=\"BaseFireDamageResistance_%\")": -50,
-                "(Value=\"BaseFrostDamageResistance_%\")": 90
+                "(Value=\"BaseFrostDamageResistance_%\")": 90,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Stamina.C_Mount_Moa_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
             "Name": "Mount_WoolyZebra",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 180,
+                "(Value=\"BaseMovementSpeed_+\")": 190,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -1857,7 +1909,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 400,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 1800,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 3000,
@@ -1866,16 +1917,26 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseMountCargoSlots_+\")": 4,
-                "(Value=\"BasePhysicalDamageResistance_%\")": 40
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Health.C_Mount_Buffalo_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Stamina.C_Mount_Buffalo_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -2396,7 +2457,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 0,
                 "(Value=\"BaseMiningRadius_+\")": 0,
-                "(Value=\"BaseMaximumStamina_+\")": 350,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
@@ -2405,16 +2465,26 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
-                "(Value=\"BaseMountCargoSlots_+\")": 3
+                "(Value=\"BaseMountCargoSlots_+\")": 3,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Horse_Health.C_Mount_Horse_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Mount_Horse_MeleeDamage.C_Mount_Horse_MeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Horse_Stamina.C_Mount_Horse_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -2439,8 +2509,8 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
                 "(Value=\"BaseMaximumFood_+\")": 100,
                 "(Value=\"BaseMaximumWater_+\")": 100,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 20,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 0
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -2478,7 +2548,7 @@
         {
             "Name": "Mount_Tusker",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 130,
+                "(Value=\"BaseMovementSpeed_+\")": 160,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 40,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -2499,7 +2569,6 @@
                 "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 75,
-                "(Value=\"BaseMaximumStamina_+\")": 400,
                 "(Value=\"BaseStaminaRegenPerMinute_+\")": 2000,
                 "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 6000,
                 "(Value=\"BaseStaminaRegenDelay_+\")": 3000,
@@ -2508,17 +2577,28 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseMountCargoSlots_+\")": 4,
-                "(Value=\"BasePhysicalDamageResistance_%\")": 45,
-                "(Value=\"BaseAttacksCauseBleed_%\")": 75
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseAttacksCauseBleed_%\")": 50,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 15,
+                "(Value=\"BaseCartActiveMovementSpeed_+%\")": -10
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Tusker_Health.C_Mount_Tusker_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_TuskerMeleeDamage.C_TuskerMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumStamina_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Stamina.C_Mount_Buffalo_Stamina'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -2543,8 +2623,8 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
                 "(Value=\"BaseMaximumFood_+\")": 100,
                 "(Value=\"BaseMaximumWater_+\")": 100,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 20,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 0
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -2588,20 +2668,29 @@
             "Name": "Chicken",
             "Base": {
                 "(Value=\"BaseMovementSpeed_+\")": 50,
-                "(Value=\"BaseSwimSpeed_+\")": 220,
-                "(Value=\"BaseMaximumHealth_+\")": 25,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 3,
+                "(Value=\"BaseSwimSpeed_+\")": 50,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 5,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
                 "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
                 "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
-                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
-                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 2500,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 3750,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
-                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
-                "(Value=\"BaseCharacterMass_+\")": 40,
-                "(Value=\"BaseHealthRegenDelay_+\")": 2
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 3500,
+                "(Value=\"BaseCharacterMass_+\")": 5,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMaximumFood_+\")": 100,
+                "(Value=\"BaseMaximumWater_+\")": 100,
+                "(Value=\"BaseChickenFoodConsumedPerEgg_+\")": 15,
+                "(Value=\"BaseChickenWaterConsumedPerEgg_+\")": 15,
+                "(Value=\"BaseChickenTimeBetweenEggs_+\")": 1800,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseChickenResourcesConsumedPerEgg_+%\")": 50,
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ChickenHealth.C_ChickenHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
@@ -2658,13 +2747,15 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
-                "(Value=\"BaseMountCargoSlots_+\")": 3
+                "(Value=\"BaseMountCargoSlots_+\")": 3,
+                "(Value=\"BaseFallDamageResistance_%\")": 15,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Horse_Health.C_Mount_Horse_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Mount_Horse_MeleeDamage.C_Mount_Horse_MeleeDamage'",
@@ -2673,8 +2764,8 @@
         {
             "Name": "Sheep",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 100,
-                "(Value=\"BaseSwimSpeed_+\")": 200,
+                "(Value=\"BaseMovementSpeed_+\")": 50,
+                "(Value=\"BaseSwimSpeed_+\")": 150,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -2687,7 +2778,17 @@
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
                 "(Value=\"BaseCharacterMass_+\")": 175,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseFrostDamageResistance_%\")": -100
+                "(Value=\"BaseFrostDamageResistance_%\")": -100,
+                "(Value=\"BaseSheepFoodConsumedPerWoolTick_+\")": 10,
+                "(Value=\"BaseSheepWaterConsumedPerWoolTick_+\")": 10,
+                "(Value=\"BaseSheepWoolGrowthPerTick_+\")": 20,
+                "(Value=\"BaseSheepSecondsBetweenWoolTick_+\")": 540,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200
             },
             "Health": "CurveFloat'/Game/Data/AI/C_SheepHealth.C_SheepHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
@@ -2971,6 +3072,45 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
+            "Name": "Tame_Wolf",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 180,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Wolf_Health.C_Tame_Wolf_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Wolf_MeleeDamage.C_Tame_Wolf_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_WolfMovementSpeed.C_WolfMovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
             "Name": "Ghost_Crocodile",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 100,
@@ -3083,22 +3223,23 @@
                 "(Value=\"BaseMaximumFood_+\")": 300,
                 "(Value=\"BaseMaximumWater_+\")": 300,
                 "(Value=\"BaseStaminaConsumed_+%\")": 0,
-                "(Value=\"BaseFoodConsumptionPerMinute_+\")": 4,
-                "(Value=\"BaseWaterConsumptionPerMinute_+\")": 2,
-                "(Value=\"BaseOxygenConsumptionPerMinute_+\")": 0,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 240,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": 0,
                 "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
-                "(Value=\"BaseMountCargoSlots_+\")": 3
+                "(Value=\"BaseMountCargoSlots_+\")": 3,
+                "(Value=\"BaseFallDamageResistance_%\")": 15
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Horse_Health.C_Mount_Horse_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Mount_Horse_MeleeDamage.C_Mount_Horse_MeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
-            "Name": "Cat",
+            "Name": "Tame_Cat",
             "Base": {
-                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseSwimSpeed_+\")": 150,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -3117,19 +3258,21 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 10,
                 "(Value=\"BaseImmobiliseResistance_%\")": 10,
-                "(Value=\"BasePoisonDamageResistance_%\")": -50
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 100,
+                "(Value=\"BaseMaximumWater_+\")": 100,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
-            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_WolfMovementSpeed.C_WolfMovementSpeed'",
-            "CustomStats": [
-                {
-                    "Stat": {
-                        "Value": "BaseAttacksCauseWound_%"
-                    },
-                    "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
-                }
-            ],
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Wolf_Health.C_Tame_Wolf_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Wolf_MeleeDamage.C_Tame_Wolf_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_CatMovementSpeed.C_CatMovementSpeed'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
@@ -3154,20 +3297,223 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 10,
                 "(Value=\"BaseImmobiliseResistance_%\")": 10,
-                "(Value=\"BasePoisonDamageResistance_%\")": -50
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_WolfHealth.C_WolfHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_WolfMeleeDamage.C_WolfMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Dog_Health.C_Tame_Dog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Dog_MeleeDamage.C_Tame_Dog_MeleeDamage'",
             "MovementSpeed": "CurveFloat'/Game/Data/AI/C_WolfMovementSpeed.C_WolfMovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Dog_C",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 200,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Dog_Health.C_Tame_Dog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Dog_MeleeDamage.C_Tame_Dog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_Tame_Dog_C_MovementSpeed.C_Tame_Dog_C_MovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "MiniHippo_Quest",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 35,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 1000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 2000,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1250,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 10,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": -50,
+                "(Value=\"BaseMovementSpeed_+\")": 190,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseFrostDamageResistance_%\")": -50,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 50,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_MiniHippoHealth_Quest.C_MiniHippoHealth_Quest'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MiniHippoMeleeDamage.C_MiniHippoMeleeDamage'",
             "CustomStats": [
                 {
                     "Stat": {
-                        "Value": "BaseAttacksCauseWound_%"
+                        "Value": "BaseAttacksCauseSlow_%"
                     },
                     "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
                 }
             ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Tame_Wildboar",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 180,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseMovementSpeed_+\")": 140
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Boar_Health.C_Tame_Boar_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Boar_MeleeDamage.C_Tame_Boar_MeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Arctic_Moa",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 180,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1000,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 250,
+                "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": 50,
+                "(Value=\"BaseFrostDamageResistance_%\")": 50,
+                "(Value=\"BasePoisonDamageResistance_%\")": -100
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_MoaHealth.C_MoaHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MoaMeleeDamage.C_MoaMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Dog_D",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 250,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseWeightCapacity_+\")": 5
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Dog_Health.C_Tame_Dog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Dog_MeleeDamage.C_Tame_Dog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_Tame_Dog_D_MovementSpeed.C_Tame_Dog_D_MovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Eagle",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 50
+            },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
 }

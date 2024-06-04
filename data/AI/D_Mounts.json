@@ -11,6 +11,11 @@
         },
         "SupportedCombatStates": [],
         "SupportedMovementStates": [],
+        "SupportedConsumptionStates": [
+            "Any",
+            "Assigned",
+            "None"
+        ],
         "Animations": {},
         "InventoryPreviewCameraSettings": {
             "RowName": "Mount",
@@ -30,7 +35,27 @@
             "X": 0,
             "Y": 0,
             "Z": 0
-        }
+        },
+        "RelativeLightOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "MountTalentArchetype": {
+            "RowName": "None",
+            "DataTableName": "D_TalentArchetypes"
+        },
+        "GrowthCurve": {
+            "RowName": "AI",
+            "DataTableName": "D_CharacterGrowth"
+        },
+        "bUseTemperature": false,
+        "ComfortableTemperatureRange": {
+            "X": 8,
+            "Y": 42
+        },
+        "ColdTemperatureResistance": 0,
+        "HotTemperatureResistance": 0
     },
     "Rows": [
         {
@@ -76,6 +101,14 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Buffalo"
             }
         },
         {
@@ -99,7 +132,8 @@
                 "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Moa/Anims/Moa_Stand_Idle_Montage.Moa_Stand_Idle_Montage",
                 "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Moa/Anims/Moa_Rest_Montage.Moa_Rest_Montage",
                 "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Moa/Anims/Moa_Eat_Montage.Moa_Eat_Montage",
-                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage"
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Moa/Anims/Moa_Attack_Montage.Moa_Attack_Montage"
             },
             "InventoryPreviewCameraSettings": {
                 "RowName": "Mount_Moa"
@@ -125,6 +159,14 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Moa"
             }
         },
         {
@@ -174,6 +216,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
             }
         },
         {
@@ -223,6 +270,14 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Swamp_Quadruped"
             }
         },
         {
@@ -272,6 +327,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
             }
         },
         {
@@ -317,6 +377,14 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_WoolyZebra"
             }
         },
         {
@@ -362,6 +430,14 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Blueback"
             }
         },
         {
@@ -388,7 +464,8 @@
                 "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
                 "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
                 "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
-                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage"
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Pet\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage"
             },
             "InventoryPreviewCameraSettings": {
                 "RowName": "Mount_Horse"
@@ -414,6 +491,14 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Terrenus"
             }
         },
         {
@@ -461,6 +546,160 @@
                 "X": -10,
                 "Y": -17.5,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Tusker"
+            }
+        },
+        {
+            "Name": "Wolf",
+            "AISetup": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-0\", \"Arthur\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-1\", \"Merlin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-2\", \"Gawain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-3\", \"Galahad\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-4\", \"Bedivere\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-5\", \"Gareth\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-6\", \"Agravain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-7\", \"Lamorak\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-8\", \"Dagonet\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Snow_Wolf",
+            "AISetup": {
+                "RowName": "Tamed_Snow_Wolf"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-0\", \"Arthur\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-1\", \"Merlin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-2\", \"Gawain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-3\", \"Galahad\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-4\", \"Bedivere\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-5\", \"Gareth\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-6\", \"Agravain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-7\", \"Lamorak\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-8\", \"Dagonet\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Snow_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Wolf_Desert",
+            "AISetup": {
+                "RowName": "Tamed_Desert_Wolf"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-0\", \"Anansi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-1\", \"Tano\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-2\", \"Nyame\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-3\", \"Katarwiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-4\", \"Warumbe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-5\", \"Bosomtwe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-6\", \"Abu-Mehsu\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-7\", \"Nambi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-8\", \"Kitaka\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Desert_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
             }
         },
         {
@@ -513,6 +752,460 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Zebra"
+            }
+        },
+        {
+            "Name": "Mini_Hippo",
+            "AISetup": {
+                "RowName": "Mini_Hippo_Quest"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Baby_Wildboar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Attack_Montage.Boar_Attack_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Mini_Hippo-DefaultNames-0\", \"Snuffles\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            }
+        },
+        {
+            "Name": "Chicken",
+            "AISetup": {
+                "RowName": "Chicken"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_StandIdle_Montage.Chicken_StandIdle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Sleep_Montage.Chicken_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Eat_Montage.Chicken_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Jump_Montage.Chicken_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.LayEgg\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_LayEgg_Montage.Chicken_LayEgg_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-0\", \"Fowler\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-1\", \"Ginger\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-2\", \"Edwina\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-3\", \"Mac\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-4\", \"Babs\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-5\", \"Bunty\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-6\", \"Fletcher\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-7\", \"Rocky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-8\", \"Molly\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Chicken"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Sheep",
+            "AISetup": {
+                "RowName": "Sheep"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Idle_Montage.Sheep_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Rest_Montage.Sheep_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Jump_Montage.Sheep_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-0\", \"Shaun\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-1\", \"Shirley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-2\", \"Timmy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-3\", \"Nuts\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-4\", \"Hazel\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-5\", \"Rosie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-6\", \"Lucy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-7\", \"Dolly\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-8\", \"Shrek\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Sheep"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Wild_Boar",
+            "AISetup": {
+                "RowName": "Tamed_Wild_Boar"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Attack_Montage.Boar_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-0\", \"Thicket\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-1\", \"Bramble\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-2\", \"Hazel\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-3\", \"Fern\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-4\", \"Moss\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-5\", \"Willow\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-6\", \"Cypress\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-7\", \"Thorn\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-8\", \"Sage\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-9\", \"Birch\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Boar"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Dog",
+            "AISetup": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Sleep_Montage.Dog_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Dog_Eating_Montage_2.Dog_Eating_Montage_2",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Attack_Montage.Dog_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-0\", \"Lassie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-1\", \"Beethoven \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-2\", \"Toto \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-3\", \"Scooby\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-4\", \"Astro \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-5\", \"Frank \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-6\", \"Copper \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-7\", \"Laika\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-8\", \"Marley \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-9\", \"Buddy \")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-10\", \"Baxter\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "DogSmall",
+            "AISetup": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Sleep_Montage.Dog_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Small_Dog_Eating_Montage.Small_Dog_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Small_Dog_Drinking_Montage_3.Small_Dog_Drinking_Montage_3"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-0\", \"Lassie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-1\", \"Beethoven \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-2\", \"Toto \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-3\", \"Scooby\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-4\", \"Astro \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-5\", \"Frank \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-6\", \"Copper \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-7\", \"Laika\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-8\", \"Marley \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-9\", \"Buddy \")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-10\", \"Baxter\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Cat",
+            "AISetup": {
+                "RowName": "Tame_Cat_A1"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Cat/Anim/Cat_Idle_Montage.Cat_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Cat/Anim/Cat_Rest_Montage.Cat_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Eating_Montage_2.Cat_Eating_Montage_2",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Cougar/Animations/Cougar_Jump_Up_Montage.Cougar_Jump_Up_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Cougar/Animations/Lion_F_Attack_Montage.Lion_F_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Drinking_Montage_2.Cat_Drinking_Montage_2"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-0\", \"Marie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-1\", \"Duchess\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-2\", \"Toulouse\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-3\", \"Berlioz\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-4\", \"O\\'Malley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-5\", \"Bagheera\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-6\", \"Figaro\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-7\", \"Rajah\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-8\", \"Scar\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-9\", \"Tom\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Cat"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Horse_Standard",
+            "AISetup": {
+                "RowName": "Mount_Horse_Standard_A1"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Pet\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-0\", \"Sir Percival\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-1\", \"Lord Rutherford\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-2\", \"Cornelius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-3\", \"Bartholomew\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-4\", \"Octavius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-5\", \"Archibald\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-6\", \"Ignatius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-7\", \"Constantine\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-8\", \"Benedict\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Horse"
+            }
+        },
+        {
+            "Name": "Arctic_moa",
+            "AISetup": {
+                "RowName": "Mount_Arctic_Moa"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Moa/Anims/Moa_Stand_Idle_Montage.Moa_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Moa/Anims/Moa_Rest_Montage.Moa_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Moa/Anims/Moa_Eat_Montage.Moa_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Moa/Anims/Moa_Attack_Montage.Moa_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Moa"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_ArcticMoa"
             }
         }
     ]

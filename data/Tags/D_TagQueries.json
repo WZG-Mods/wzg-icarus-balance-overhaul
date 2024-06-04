@@ -4289,18 +4289,22 @@
                     },
                     {
                         "TagName": "NPC.Fish"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    3,
+                    4,
                     0,
                     1,
-                    2
+                    2,
+                    3
                 ],
-                "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice, NPC.Fish )"
+                "AutoDescription": " ANY( Item.Consumable.Food, Item.Resource.Ice, NPC.Fish, Item.AnimalFeed )"
             }
         },
         {
@@ -5658,6 +5662,42 @@
             }
         },
         {
+            "Name": "Trap_Bait",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Creature.Bait"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Creature.Bait )"
+            }
+        },
+        {
+            "Name": "Any_CharacterTrap",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Creature.Trap"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Creature.Trap )"
+            }
+        },
+        {
             "Name": "Any_FLOD_Burnt_Tree",
             "Query": {
                 "TagDictionary": [
@@ -5673,6 +5713,328 @@
                     0
                 ],
                 "AutoDescription": " ANY( Foliage.BurntTree )"
+            }
+        },
+        {
+            "Name": "Any_ComfyCatSpot",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.Bed"
+                    },
+                    {
+                        "TagName": "Item.Deployable.TameBed"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Deployable.Bed, Item.Deployable.TameBed )"
+            }
+        },
+        {
+            "Name": "Any_Hatchable_Egg",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.Egg"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.Egg )"
+            }
+        },
+        {
+            "Name": "Any_Thrown",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Spear.Thrown"
+                    },
+                    {
+                        "TagName": "Item.Tool.Thrown"
+                    },
+                    {
+                        "TagName": "Item.Tool.Knife.Thrown"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Spear.Thrown, Item.Tool.Thrown, Item.Tool.Knife.Thrown )"
+            }
+        },
+        {
+            "Name": "Any_Tamed_Creature_Food_Trough",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Carnivore"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Herbivore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ALL(  ANY( Item.Consumable.Food, Item.AnimalFeed, GOAP.Food.Carnivore, GOAP.Food.Herbivore ) )"
+            }
+        },
+        {
+            "Name": "Any_Tamed_Creature_Food_Trough_Edible",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Carnivore"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Herbivore"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Spoiled"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3,
+                    3,
+                    1,
+                    4
+                ],
+                "AutoDescription": " ALL(  ANY( Item.Consumable.Food, Item.AnimalFeed, GOAP.Food.Carnivore, GOAP.Food.Herbivore ),  NONE( Item.Consumable.Food.Spoiled ) )"
+            }
+        },
+        {
+            "Name": "Any_Workshop_Animal",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta.Animal"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Meta.Animal )"
+            }
+        },
+        {
+            "Name": "Building_Dirt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.Dirt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.Dirt )"
+            }
+        },
+        {
+            "Name": "Building_Limestone",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.Limestone"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.Limestone )"
+            }
+        },
+        {
+            "Name": "Building_Steel",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.Steel"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.Steel )"
+            }
+        },
+        {
+            "Name": "Any_Dirt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Dirt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Dirt )"
+            }
+        },
+        {
+            "Name": "Any_Battery_Powered_Object",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Powered.Battery"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Powered.Battery )"
+            }
+        },
+        {
+            "Name": "Any_Foliage_To_Restore",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Foliage.BurntTree"
+                    },
+                    {
+                        "TagName": "Foliage.Tree"
+                    },
+                    {
+                        "TagName": "Foliage.PermitRestore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    3,
+                    2,
+                    0,
+                    1,
+                    1,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ALL(  NONE( Foliage.BurntTree, Foliage.Tree ),  ANY( Foliage.PermitRestore ) )"
+            }
+        },
+        {
+            "Name": "Resource_Sticks_Item",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Stick"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Stick )"
+            }
+        },
+        {
+            "Name": "Any_Rocks_To_Restore",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Foliage.PermitRockRestore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Foliage.PermitRockRestore )"
             }
         }
     ]

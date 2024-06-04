@@ -994,7 +994,7 @@
                 "Modifier": {
                     "RowName": "Antibiotic_Vaccine"
                 },
-                "ModifierLifetime": 3600
+                "ModifierLifetime": 1800
             }
         },
         {
@@ -1003,7 +1003,7 @@
                 "Modifier": {
                     "RowName": "Antibiotic_Vaccine"
                 },
-                "ModifierLifetime": 10800
+                "ModifierLifetime": 7200
             }
         },
         {
@@ -1021,7 +1021,7 @@
                 "Modifier": {
                     "RowName": "Antipoison_Vaccine"
                 },
-                "ModifierLifetime": 3600
+                "ModifierLifetime": 1800
             }
         },
         {
@@ -1030,7 +1030,7 @@
                 "Modifier": {
                     "RowName": "Antipoison_Vaccine"
                 },
-                "ModifierLifetime": 10800
+                "ModifierLifetime": 7200
             }
         },
         {
@@ -1048,7 +1048,7 @@
                 "Modifier": {
                     "RowName": "Antiparasitic_Vaccine"
                 },
-                "ModifierLifetime": 3600
+                "ModifierLifetime": 1800
             }
         },
         {
@@ -1057,7 +1057,7 @@
                 "Modifier": {
                     "RowName": "Antiparasitic_Vaccine"
                 },
-                "ModifierLifetime": 10800
+                "ModifierLifetime": 7200
             }
         },
         {
@@ -1075,7 +1075,7 @@
                 "Modifier": {
                     "RowName": "Blood_Thinning_Vaccine"
                 },
-                "ModifierLifetime": 3600
+                "ModifierLifetime": 1800
             }
         },
         {
@@ -1084,7 +1084,7 @@
                 "Modifier": {
                     "RowName": "Blood_Thinning_Vaccine"
                 },
-                "ModifierLifetime": 10800
+                "ModifierLifetime": 7200
             }
         },
         {
@@ -1734,14 +1734,29 @@
             }
         },
         {
-            "Name": "Health_Enhancement_Tonic",
+            "Name": "Health_Remedy",
             "Stats": {
                 "(Value=\"BaseHealthRecovery_+\")": 100
             },
             "Modifier": {
-                "Modifier": {
-                    "RowName": "Health_Enhancement_Tonic"
-                },
+                "ModifierLifetime": 120
+            }
+        },
+        {
+            "Name": "Health_Enhancement_Tonic",
+            "Stats": {
+                "(Value=\"BaseHealthRecovery_+\")": 250
+            },
+            "Modifier": {
+                "ModifierLifetime": 120
+            }
+        },
+        {
+            "Name": "Health_Elixir",
+            "Stats": {
+                "(Value=\"BaseHealthRecovery_+\")": 500
+            },
+            "Modifier": {
                 "ModifierLifetime": 120
             }
         },
@@ -2595,6 +2610,30 @@
             }
         },
         {
+            "Name": "Food_Animal_Feed_Speed",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Animal_Feed_Speed"
+                },
+                "ModifierLifetime": 900
+            }
+        },
+        {
+            "Name": "Food_Animal_Feed_Carryweight",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Animal_Feed_CarryWeight"
+                },
+                "ModifierLifetime": 900
+            }
+        },
+        {
             "Name": "Smoked_Giant_Steak",
             "Stats": {
                 "(Value=\"BaseFoodRecovery_+\")": 200,
@@ -2937,7 +2976,13 @@
                 },
                 "ModifierLifetime": 1200
             },
-            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume.",
+            "Byproducts": [
+                {
+                    "RowName": "Glass_Jar",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
         },
         {
             "Name": "Big_Breakfast",
@@ -2989,7 +3034,7 @@
                 "Modifier": {
                     "RowName": "Roast_Chicken"
                 },
-                "ModifierLifetime": 1200
+                "ModifierLifetime": 1500
             },
             "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
         },
@@ -3001,6 +3046,19 @@
             "Modifier": {
                 "Modifier": {
                     "RowName": "Fried_Chicken"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Grilled_Chicken",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Grilled_Chicken"
                 },
                 "ModifierLifetime": 900
             },
@@ -3089,6 +3147,57 @@
                 },
                 "ModifierLifetime": 900
             }
+        },
+        {
+            "Name": "Vitamins",
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Vitamins"
+                },
+                "ModifierLifetime": 6000
+            }
+        },
+        {
+            "Name": "Dressing_Kit",
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Dressing_Kit"
+                },
+                "ModifierLifetime": 1
+            }
+        },
+        {
+            "Name": "Workshop_Dressing_Kit",
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Workshop_Dressing_Kit"
+                },
+                "ModifierLifetime": 1
+            }
+        },
+        {
+            "Name": "Workshop_Dressing_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Workshop_Dressing_Kit_x5",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Pistol_Ammo_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ammo_Pistol_Round_Workshop_x25",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
         }
     ]
 }

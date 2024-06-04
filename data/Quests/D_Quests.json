@@ -2871,7 +2871,7 @@
         {
             "Name": "OLY_Arctic_Stockpile_Med1",
             "Class": "/Game/BP/Quests/Olympus/Arctic/Stockpile/BPQ_OLY_Arctic_Stockpile_Deposit_Med1.BPQ_OLY_Arctic_Stockpile_Deposit_Med1_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Stockpile_Med1-Description\", \"{0} / {1} Health Enhancement Tonic\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Stockpile_Med1-Description\", \"{0} / {1} Health Recovery Tonic\")"
         },
         {
             "Name": "OLY_Arctic_Stockpile_Med2",
@@ -7986,7 +7986,7 @@
         {
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with SMPL3 Missions and Operations\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "OpenWorldIntroSRR",
@@ -8948,6 +8948,124 @@
             "Name": "PRO_Icesheet_Beacon_Final",
             "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_FindFinalCave.BPQ_PRO_Icesheet_Story_FindFinalCave_C",
             "Description": "INVTEXT(\"[DNT] Search nearby caves to find where the Crazed Scientist may have gone: {0}/3\")"
+        },
+        {
+            "Name": "STYX_D_Recovery",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery.BPQ_STYX_D_Recovery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery-Description\", \"GENESIS: Recovery\")",
+            "LocationQuery": {
+                "RowName": "STYX_MiniHippoEggs"
+            }
+        },
+        {
+            "Name": "STYX_D_Recovery_Site",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Site.BPQ_STYX_D_Recovery_Site_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Site-Description\", \"Find out the status of the Creature Research Site in the Desert Region\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Site_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Site_Travel-Description\", \"Head to the Site Location (M)\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Site_Hostiles",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Site_Hostiles.BPQ_STYX_D_Recovery_Site_Hostiles_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Site_Hostiles-Description\", \"Destroy the Nearby Hyena Dens ({0}/{1})\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Site_Boss",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Site_Boss.BPQ_STYX_D_Recovery_Site_Boss_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Site_Boss-Description\", \"Kill The Pack Leader\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Site_Collect",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Site_Collect.BPQ_STYX_D_Recovery_Site_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Site_Collect-Description\", \"Collect any of the Surviving Eggs\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch.BPQ_STYX_D_Recovery_Hatch_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch-Description\", \"Hatch the Egg\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_Incubator",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Incubator.BPQ_STYX_D_Recovery_Hatch_Incubator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_Incubator-Description\", \"Craft an Incubator (Fabricator)\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_Deploy",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Deploy.BPQ_STYX_D_Recovery_Hatch_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_Deploy-Description\", \"Deploy the Incubator\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_PlaceEgg",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Place.BPQ_STYX_D_Recovery_Hatch_Place_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_PlaceEgg-Description\", \"Place the Egg in the Incubator\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_Incubate",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Incubate.BPQ_STYX_D_Recovery_Hatch_Incubate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_Incubate-Description\", \"Hatch the Egg in the Incubator\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_Active",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Incubate_Incubator.BPQ_STYX_D_Recovery_Hatch_Incubate_Incubator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_Active-Description\", \"Incubator {0}\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Hatch_Progress",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Hatch_Incubate_Progress.BPQ_STYX_D_Recovery_Hatch_Incubate_Progress_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Hatch_Progress-Description\", \"{0}% Hatching Progress\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Alive",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Alive.BPQ_STYX_D_Recovery_Alive_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Alive-Description\", \"Keep the Creature Alive {0}/{1}\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Retrieval",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Retrieval.BPQ_STYX_D_Recovery_Retrieval_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Retrieval-Description\", \"Prepare the Creature for its Journey\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Retrieval_Thirst",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Retrieval_Thirst.BPQ_STYX_D_Recovery_Retrieval_Thirst_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Retrieval_Thirst-Description\", \"Thirst (>80%) {0}/100\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Retrieval_Hunger",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Retrieval_Hunger.BPQ_STYX_D_Recovery_Retrieval_Hunger_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Retrieval_Hunger-Description\", \"Hunger (>80%) {0}/100\")"
+        },
+        {
+            "Name": "STYX_D_Recovery_Escort",
+            "Class": "/Game/BP/Quests/Styx/D/Recovery/BPQ_STYX_D_Recovery_Escort.BPQ_STYX_D_Recovery_Escort_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Escort-Description\", \"Escort the Creature to the Sinotai Retrieval Pod (M)\")",
+            "LocationQuery": {
+                "RowName": "STYX_MiniHippoQuestEnd"
+            }
+        },
+        {
+            "Name": "STYX_Open_World",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Open_World-Description\", \"Welcome to Styx\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroStyx",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Open_World",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Open_World-Description\", \"Welcome to Olympus\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroOly",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         }
     ]
 }

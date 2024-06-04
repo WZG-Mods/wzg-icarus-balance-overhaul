@@ -1348,6 +1348,9 @@
             "Tag": {
                 "TagName": "NPC.Horse"
             },
+            "SpawnStat": {
+                "Value": "BearSpawnRate_+%"
+            },
             "AdditionalDamageStat": {
                 "Value": "HorseExtraDamage_+%"
             },
@@ -1656,6 +1659,57 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Horse_Standard-CreatureName\", \"Horse\")",
             "Tag": {
                 "TagName": "NPC.Horse_Standard"
+            }
+        },
+        {
+            "Name": "Arctic_Moa",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Arctic_Moa-CreatureName\", \"Arctic Moa\")",
+            "Tag": {
+                "TagName": "NPC.ArcticMoa"
+            },
+            "AdditionalDamageStat": {
+                "Value": "MoaExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "MoaExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Arctic_Moa"
+            }
+        },
+        {
+            "Name": "Juvenile_Arctic_Moa",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_Arctic_Moa-CreatureName\", \"Juvenile Arctic Moa\")",
+            "Tag": {
+                "TagName": "NPC.Juvenile.ArcticMoa"
+            },
+            "AdditionalDamageStat": {
+                "Value": "MoaExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "MoaExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Kill_Arctic_BabyMoa"
+            },
+            "ParentCreatureTag": {
+                "TagName": "NPC.ArcticMoa"
+            }
+        },
+        {
+            "Name": "Eagle",
+            "CreatureName": "INVTEXT(\"[DNT] Eagle\")",
+            "Tag": {
+                "TagName": "NPC.Eagle"
+            },
+            "AdditionalDamageStat": {
+                "Value": "KeaExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "KeaExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Eagle"
             }
         }
     ]
